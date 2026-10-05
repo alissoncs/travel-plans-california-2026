@@ -59,3 +59,15 @@ python scripts/servir.py                # abre o site localmente
 | Xotelo (`/list`, `/rates`) | Preços de hotel do Tripadvisor (Booking, Agoda, Trip.com…) | ✅ em uso, sem chave. `/search` exige RapidAPI |
 | NPS Data API | Alertas dos parques nacionais | Exige chave gratuita e não aceita chamadas do navegador. Candidata para o script |
 | Amadeus Self-Service | Hotéis | ❌ descontinuada em 17/07/2026 |
+
+## Deploy na Vercel
+
+O `site/index.html` é um fragmento no formato de Artifact, sem `<!doctype>`, charset e viewport. Para hospedar fora do claude.ai, `node scripts/build.mjs` gera `dist/` com o HTML completo, o JSON e as imagens. O `vercel.json` já configura isso:
+
+| Configuração | Valor |
+|---|---|
+| Framework Preset | Other |
+| Root Directory | *(vazio, raiz do repositório)* |
+| Build Command | `node scripts/build.mjs` (vem do `vercel.json`) |
+| Output Directory | `dist` (vem do `vercel.json`) |
+| Install Command | *(vazio)* |
