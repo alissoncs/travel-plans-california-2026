@@ -44,6 +44,14 @@
       "url": null,
       "arquivo": "transcricoes/2026-10-05_be-my-travel-muse_california-20-paradas.md",
       "data": "2026-10-05"
+    },
+    "yt-peterowen-norcal-top10": {
+      "tipo": "youtube",
+      "titulo": "Top 10 Places in Northern California + NorCal Road Trip Itinerary",
+      "canal": "Peter Owen",
+      "url": null,
+      "arquivo": "transcricoes/2026-10-05_peter-owen_norcal-top-10.md",
+      "data": "2026-10-05"
     }
   },
   "dias": {
@@ -283,6 +291,14 @@
             {
               "nome": "Entre pela West Entrance",
               "texto": "Fica na cidade de Joshua Tree e leva direto a Hidden Valley, Barker Dam e Keys View."
+            },
+            {
+              "nome": "Passe anual dos parques",
+              "texto": "O America the Beautiful só compensa visitando muitos parques. Aqui as entradas somam US$ 65 a 95 (Joshua Tree, Muir Woods e, no Plano A, Pinnacles), menos que o passe, que em 2026 ficou bem mais caro para quem não mora nos EUA.",
+              "fontes": [
+                "yt-peterowen-norcal-top10"
+              ],
+              "verificar": "Confirmar o preço do passe para estrangeiros"
             }
           ]
         }
@@ -1528,7 +1544,8 @@
               "nome": "Mirante do lado norte",
               "texto": "A foto clássica é do recuo ao norte da ponte.",
               "fontes": [
-                "yt-bmtm-california-20-paradas"
+                "yt-bmtm-california-20-paradas",
+                "yt-peterowen-norcal-top10"
               ]
             },
             {
@@ -1653,9 +1670,10 @@
             },
             {
               "nome": "Farol de Point Reyes",
-              "texto": "Outro farol histórico da costa, na ponta oeste de Point Reyes. Combina com a trilha num dia inteiro por lá.",
+              "texto": "Farol histórico na ponta oeste de Point Reyes, entre penhascos e praias desertas, com cervos e vida marinha pelo caminho. Combina com a trilha num dia inteiro por lá.",
               "fontes": [
-                "yt-ctml-pch-20-paradas"
+                "yt-ctml-pch-20-paradas",
+                "yt-peterowen-norcal-top10"
               ],
               "tempos": {
                 "yt-ctml-pch-20-paradas": 104
