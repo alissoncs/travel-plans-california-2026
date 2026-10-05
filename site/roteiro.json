@@ -1,0 +1,1335 @@
+{
+  "viagem": {
+    "titulo": "Califórnia 2026",
+    "subtitulo": "Deserto, montanha e Pacífico, de San Diego a San Francisco",
+    "inicio": "2026-11-17",
+    "fim": "2026-11-28",
+    "perfil": "Casal jovem e aventureiro · viagem relaxante, focada em natureza",
+    "capa": "bixby",
+    "plano_recomendado": "B"
+  },
+  "atualizado_em": "2026-10-05 16:12",
+  "planos": {
+    "A": {
+      "nome": "Plano A",
+      "resumo": "Mantém as reservas atuais. Inclui o caiaque nas cavernas das Channel Islands e sobe para SF pela US-101 em um dia."
+    },
+    "B": {
+      "nome": "Plano B",
+      "resumo": "Cancela a 3ª noite em LA e dorme em Cambria. Dois dias tranquilos pela costa de Big Sur, sem o dia de 8h de estrada."
+    }
+  },
+  "fases": [
+    {
+      "id": "sd",
+      "nome": "San Diego",
+      "detalhe": "Evento ADP · sem carro",
+      "inicio": "2026-11-17",
+      "fim": "2026-11-21"
+    },
+    {
+      "id": "road",
+      "nome": "Road trip",
+      "detalhe": "Carro Sixt · deserto, Malibu e costa",
+      "inicio": "2026-11-22",
+      "fim": "2026-11-26"
+    },
+    {
+      "id": "sf",
+      "nome": "San Francisco",
+      "detalhe": "Sem carro · bike, balsa e Uber",
+      "inicio": "2026-11-26",
+      "fim": "2026-11-28"
+    }
+  ],
+  "dias": [
+    {
+      "id": "dia-1",
+      "rotulo": "1",
+      "data": "2026-11-17",
+      "fase": "sd",
+      "planos": [
+        "A",
+        "B"
+      ],
+      "titulo": "Chegada em San Diego",
+      "regiao": "Coronado",
+      "coord": [
+        32.6809,
+        -117.1782
+      ],
+      "capa": "coronado",
+      "resumo": "Voo chega em SAN às 10:49. Uber de 15 minutos até o Hotel del Coronado e tarde livre na praia.",
+      "atividades": [
+        {
+          "tipo": "transporte",
+          "titulo": "Uber SAN → Hotel del Coronado",
+          "descricao": "Cerca de 15 minutos pela ponte de Coronado."
+        },
+        {
+          "tipo": "praia",
+          "titulo": "Coronado Beach",
+          "descricao": "Caminhada na areia em frente ao hotel até o pôr do sol.",
+          "lugar": "coronado"
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "info",
+          "texto": "Confirmar com a ADP se as despesas da acompanhante estão cobertas."
+        }
+      ],
+      "sol": {
+        "nascer": "06:19",
+        "por": "16:47"
+      }
+    },
+    {
+      "id": "dia-2-5",
+      "rotulo": "2–5",
+      "data": "2026-11-18",
+      "data_fim": "2026-11-21",
+      "fase": "sd",
+      "planos": [
+        "A",
+        "B"
+      ],
+      "titulo": "Evento ADP",
+      "regiao": "San Diego",
+      "coord": [
+        32.8503,
+        -117.2713
+      ],
+      "capa": "torrey",
+      "resumo": "Programação oficial do evento, com caiaque em La Jolla e visita ao San Diego Zoo. Nos momentos livres, falésias e leões-marinhos.",
+      "atividades": [
+        {
+          "tipo": "agua",
+          "titulo": "Caiaque em La Jolla",
+          "descricao": "Passeio incluído pela empresa.",
+          "lugar": "lajolla"
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Torrey Pines State Natural Reserve",
+          "descricao": "Guy Fleming (1,1 km) ou Razor Point (2,3 km), e descida pela Beach Trail no fim da tarde. Fecha no pôr do sol.",
+          "stats": "1–3 km",
+          "lugar": "torrey"
+        },
+        {
+          "tipo": "fauna",
+          "titulo": "Leões-marinhos em La Jolla Cove",
+          "descricao": "Focas e leões-marinhos nas pedras, a poucos metros da calçada.",
+          "lugar": "lajolla"
+        },
+        {
+          "tipo": "vista",
+          "titulo": "Pôr do sol em Sunset Cliffs",
+          "descricao": "Falésias de arenito em Point Loma."
+        }
+      ],
+      "alertas": [],
+      "sol": {
+        "nascer": "06:21",
+        "por": "16:47"
+      }
+    },
+    {
+      "id": "dia-6",
+      "rotulo": "6",
+      "data": "2026-11-22",
+      "fase": "road",
+      "planos": [
+        "A",
+        "B"
+      ],
+      "titulo": "Joshua Tree",
+      "regiao": "Deserto de Mojave",
+      "coord": [
+        33.9268,
+        -116.1876
+      ],
+      "capa": "joshua",
+      "estrada": [
+        {
+          "trecho": "SAN → Joshua Tree",
+          "tempo": "2h45"
+        },
+        {
+          "trecho": "Joshua Tree → LA",
+          "tempo": "3h+ (domingo)"
+        }
+      ],
+      "resumo": "Retirada do carro cedo e um dia inteiro entre rochas e Joshua trees, terminando no ponto mais alto do parque.",
+      "atividades": [
+        {
+          "tipo": "transporte",
+          "titulo": "Retirada do carro Sixt em SAN",
+          "descricao": "Pacote com proteção total e FasTrak."
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Barker Dam",
+          "descricao": "Loop curto entre pedras, com uma represa histórica e escalada leve.",
+          "stats": "1,8 km · fácil",
+          "lugar": "barker"
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Ryan Mountain",
+          "descricao": "Subida constante até a melhor vista panorâmica do parque.",
+          "stats": "4,8 km · +320 m",
+          "lugar": "joshua"
+        },
+        {
+          "tipo": "vista",
+          "titulo": "Pôr do sol em Keys View",
+          "descricao": "Mirante sobre o Coachella Valley e a falha de San Andreas.",
+          "lugar": "keys"
+        },
+        {
+          "tipo": "transporte",
+          "titulo": "Estrada até LA",
+          "descricao": "Check-in no The LINE Hotel, em Koreatown."
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "info",
+          "texto": "Entrada: US$ 35 por veículo. Levar casaco, porque à noite o deserto chega perto de 5°C."
+        },
+        {
+          "nivel": "info",
+          "texto": "Lua quase cheia: o céu estrelado fica mais fraco nesta noite."
+        }
+      ],
+      "sol": {
+        "nascer": "06:22",
+        "por": "16:39"
+      }
+    },
+    {
+      "id": "dia-7",
+      "rotulo": "7",
+      "data": "2026-11-23",
+      "fase": "road",
+      "planos": [
+        "A",
+        "B"
+      ],
+      "titulo": "Malibu",
+      "regiao": "Santa Monica Mountains",
+      "coord": [
+        34.1209,
+        -118.9325
+      ],
+      "capa": "sandstone",
+      "estrada": [
+        {
+          "trecho": "Koreatown → Sandstone Peak",
+          "tempo": "1h15"
+        }
+      ],
+      "resumo": "A foto do letreiro bem cedo e depois a montanha mais alta da serra, com o Pacífico lá embaixo.",
+      "atividades": [
+        {
+          "tipo": "cidade",
+          "titulo": "Foto do letreiro de Hollywood",
+          "descricao": "Lake Hollywood Park, cerca de 30 minutos, antes do trânsito.",
+          "lugar": "hollywood"
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Sandstone Peak",
+          "descricao": "Ponto mais alto das Santa Monica Mountains (948 m), com formações de arenito e escalada no final.",
+          "stats": "9,8 km · +450 m",
+          "lugar": "sandstone"
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Alternativa leve: Solstice Canyon",
+          "descricao": "Riacho, cachoeira e ruínas de uma casa de Paul R. Williams.",
+          "stats": "4,7 km · fácil",
+          "lugar": "solstice"
+        },
+        {
+          "tipo": "praia",
+          "titulo": "Pôr do sol em El Matador",
+          "descricao": "Praia com arcos e rochedos. Point Dume é a alternativa.",
+          "lugar": "matador"
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "info",
+          "texto": "O Griffith Observatory fecha às segundas; por isso ficou fora deste dia."
+        }
+      ],
+      "sol": {
+        "nascer": "06:34",
+        "por": "16:49"
+      }
+    },
+    {
+      "id": "dia-8-a",
+      "rotulo": "8",
+      "data": "2026-11-24",
+      "fase": "road",
+      "planos": [
+        "A"
+      ],
+      "titulo": "Channel Islands",
+      "regiao": "Santa Cruz Island",
+      "coord": [
+        34.049,
+        -119.556
+      ],
+      "capa": "channel",
+      "estrada": [
+        {
+          "trecho": "Koreatown → Ventura Harbor",
+          "tempo": "1h30"
+        },
+        {
+          "trecho": "Balsa até Scorpion Anchorage",
+          "tempo": "1h"
+        }
+      ],
+      "resumo": "Caiaque guiado por dentro das cavernas marinhas da ilha, que tem a maior concentração delas no mundo.",
+      "atividades": [
+        {
+          "tipo": "transporte",
+          "titulo": "Balsa da Island Packers",
+          "descricao": "Saída de Ventura Harbor de manhã."
+        },
+        {
+          "tipo": "agua",
+          "titulo": "Discovery Sea Caves Kayak",
+          "descricao": "Cavernas, florestas de algas e costões. US$ 159 por pessoa mais US$ 72 da balsa.",
+          "lugar": "channel"
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Cavern Point",
+          "descricao": "Trilha curta no alto da ilha enquanto espera a balsa de volta.",
+          "stats": "3 km"
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "aviso",
+          "texto": "No outono a balsa sai cerca de 4 dias por semana. Confirmar se há saída na terça, 24/11."
+        },
+        {
+          "nivel": "info",
+          "texto": "Plano reserva: Mugu Peak e o Griffith no pôr do sol."
+        }
+      ],
+      "sol": {
+        "nascer": "06:38",
+        "por": "16:51"
+      }
+    },
+    {
+      "id": "dia-8-b",
+      "rotulo": "8",
+      "data": "2026-11-24",
+      "fase": "road",
+      "planos": [
+        "B"
+      ],
+      "titulo": "Rumo à Costa Central",
+      "regiao": "Santa Barbara → Cambria",
+      "coord": [
+        35.37,
+        -120.867
+      ],
+      "capa": "morro",
+      "estrada": [
+        {
+          "trecho": "LA → Santa Barbara",
+          "tempo": "1h45"
+        },
+        {
+          "trecho": "Santa Barbara → Cambria",
+          "tempo": "2h15"
+        }
+      ],
+      "resumo": "Saída de LA sem pressa, café em Santa Barbara, lontras em Morro Bay e noite numa pousada à beira-mar.",
+      "atividades": [
+        {
+          "tipo": "cidade",
+          "titulo": "Santa Barbara",
+          "descricao": "Café e caminhada curta pelo centro."
+        },
+        {
+          "tipo": "fauna",
+          "titulo": "Morro Rock",
+          "descricao": "Lontras-marinhas na marina, ao pé da rocha vulcânica.",
+          "lugar": "morro"
+        },
+        {
+          "tipo": "hotel",
+          "titulo": "Pernoite em Cambria",
+          "descricao": "Opções com preço na seção Hospedagem."
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "aviso",
+          "texto": "Exige cancelar a 3ª noite do The LINE e reservar um hotel em Cambria."
+        }
+      ],
+      "sol": {
+        "nascer": "06:46",
+        "por": "16:54"
+      }
+    },
+    {
+      "id": "dia-9-a",
+      "rotulo": "9",
+      "data": "2026-11-25",
+      "fase": "road",
+      "planos": [
+        "A"
+      ],
+      "titulo": "LA → San Francisco",
+      "regiao": "US-101 e Monterey",
+      "coord": [
+        36.516,
+        -121.938
+      ],
+      "capa": "lobos",
+      "estrada": [
+        {
+          "trecho": "LA → SF pela US-101",
+          "tempo": "6h30 + paradas"
+        }
+      ],
+      "resumo": "Dia de estrada pela rota mais rápida, com uma única parada de natureza para esticar as pernas.",
+      "atividades": [
+        {
+          "tipo": "trilha",
+          "titulo": "Point Lobos",
+          "descricao": "Penhascos, enseadas, lontras e leões-marinhos.",
+          "stats": "3–5 km",
+          "lugar": "lobos"
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Ou: Pinnacles National Park",
+          "descricao": "Cavernas de rochas desabadas e condores-da-califórnia. Levar lanterna de cabeça.",
+          "stats": "4 km",
+          "lugar": "pinnacles"
+        },
+        {
+          "tipo": "hotel",
+          "titulo": "Check-in no Axiom Hotel",
+          "descricao": "Union Square."
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "aviso",
+          "texto": "Véspera do Thanksgiving: trânsito pesado. Não deixar bagagem visível no carro em SF."
+        },
+        {
+          "nivel": "info",
+          "texto": "O Axiom fica a poucas quadras do Tenderloin. À noite, use Uber mesmo para trajetos curtos."
+        }
+      ],
+      "sol": {
+        "nascer": "06:54",
+        "por": "16:55"
+      }
+    },
+    {
+      "id": "dia-9-b",
+      "rotulo": "9",
+      "data": "2026-11-25",
+      "fase": "road",
+      "planos": [
+        "B"
+      ],
+      "titulo": "Big Sur",
+      "regiao": "Highway 1",
+      "coord": [
+        36.158,
+        -121.672
+      ],
+      "capa": "mcway",
+      "estrada": [
+        {
+          "trecho": "Cambria → Big Sur → Carmel",
+          "tempo": "3h"
+        },
+        {
+          "trecho": "Carmel → SF",
+          "tempo": "2h15"
+        }
+      ],
+      "resumo": "O trecho mais bonito da costa: elefantes-marinhos, uma cachoeira que cai na praia e a ponte de Bixby Creek.",
+      "atividades": [
+        {
+          "tipo": "fauna",
+          "titulo": "Elefantes-marinhos em Piedras Blancas",
+          "descricao": "Colônia ao lado da estrada, sem trilha.",
+          "lugar": "seals"
+        },
+        {
+          "tipo": "vista",
+          "titulo": "McWay Falls",
+          "descricao": "Cachoeira de 24 m que cai direto na areia.",
+          "stats": "1 km",
+          "lugar": "mcway"
+        },
+        {
+          "tipo": "vista",
+          "titulo": "Bixby Creek Bridge",
+          "descricao": "Parada no mirante ao norte da ponte.",
+          "lugar": "bixby"
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Point Lobos",
+          "descricao": "Loop curto antes de seguir para SF.",
+          "stats": "3 km",
+          "lugar": "lobos"
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "aviso",
+          "texto": "Incêndios de 2026: a Highway 1 está aberta desde 14/09, mas alguns parques de Big Sur seguem fechados. Verificar perto da data."
+        },
+        {
+          "nivel": "info",
+          "texto": "O Axiom fica a poucas quadras do Tenderloin. À noite, use Uber mesmo para trajetos curtos."
+        }
+      ],
+      "sol": {
+        "nascer": "06:52",
+        "por": "16:55"
+      }
+    },
+    {
+      "id": "dia-10",
+      "rotulo": "10",
+      "data": "2026-11-26",
+      "fase": "road",
+      "planos": [
+        "A",
+        "B"
+      ],
+      "titulo": "Thanksgiving em Marin",
+      "regiao": "Muir Woods e Headlands",
+      "coord": [
+        37.897,
+        -122.5811
+      ],
+      "capa": "muir",
+      "estrada": [
+        {
+          "trecho": "Union Square → Muir Woods",
+          "tempo": "40 min"
+        }
+      ],
+      "resumo": "Sequoias costeiras logo cedo, a Golden Gate vista de cima e devolução do carro antes da ceia.",
+      "atividades": [
+        {
+          "tipo": "trilha",
+          "titulo": "Muir Woods às 8h",
+          "descricao": "Main Trail entre sequoias costeiras (redwoods), antes da lotação.",
+          "stats": "3 km · fácil",
+          "lugar": "muir"
+        },
+        {
+          "tipo": "vista",
+          "titulo": "Marin Headlands",
+          "descricao": "Hawk Hill, com a ponte de cima, e Rodeo Beach.",
+          "lugar": "headlands"
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Alternativa: Tomales Point",
+          "descricao": "Alces-de-tule em Point Reyes, a cerca de 1h30 de SF.",
+          "stats": "3 / 10 / 15 km",
+          "lugar": "tomales"
+        },
+        {
+          "tipo": "transporte",
+          "titulo": "Devolução do carro",
+          "descricao": "Confirmar horário da loja no feriado. Alternativa: SFO."
+        },
+        {
+          "tipo": "comida",
+          "titulo": "Ceia de Thanksgiving",
+          "descricao": "Reservar com antecedência."
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "urgente",
+          "texto": "Reservar estacionamento em GoMuirWoods.com e a ceia."
+        }
+      ],
+      "sol": {
+        "nascer": "07:01",
+        "por": "16:54"
+      }
+    },
+    {
+      "id": "dia-11",
+      "rotulo": "11",
+      "data": "2026-11-27",
+      "fase": "sf",
+      "planos": [
+        "A",
+        "B"
+      ],
+      "titulo": "Golden Gate de bike",
+      "regiao": "San Francisco e Sausalito",
+      "coord": [
+        37.8199,
+        -122.4783
+      ],
+      "capa": "goldengate",
+      "resumo": "Atravessar a ponte pedalando, almoçar em Sausalito, voltar de balsa e terminar no pôr do sol de Lands End.",
+      "atividades": [
+        {
+          "tipo": "bike",
+          "titulo": "Golden Gate Bridge de bicicleta",
+          "descricao": "Aluguel perto de Fisherman's Wharf até Sausalito.",
+          "stats": "13 km",
+          "lugar": "goldengate"
+        },
+        {
+          "tipo": "agua",
+          "titulo": "Balsa Sausalito → SF",
+          "descricao": "Passa por Alcatraz e chega ao Ferry Building.",
+          "lugar": "sausalito"
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Pôr do sol em Lands End",
+          "descricao": "Trilha costeira com ruínas e vista da ponte.",
+          "stats": "5 km",
+          "lugar": "landsend"
+        },
+        {
+          "tipo": "cidade",
+          "titulo": "Opcional: Alcatraz",
+          "descricao": "Se conseguir ingresso para a Black Friday.",
+          "lugar": "alcatraz"
+        }
+      ],
+      "alertas": [],
+      "sol": {
+        "nascer": "07:01",
+        "por": "16:53"
+      }
+    },
+    {
+      "id": "dia-12",
+      "rotulo": "12",
+      "data": "2026-11-28",
+      "fase": "sf",
+      "planos": [
+        "A",
+        "B"
+      ],
+      "titulo": "Voo de volta",
+      "regiao": "SFO",
+      "coord": [
+        37.6213,
+        -122.379
+      ],
+      "resumo": "Uber às 04:30 para chegar ao SFO às 05:00. Voo Delta DL 1598 às 07:05, com conexão.",
+      "atividades": [
+        {
+          "tipo": "transporte",
+          "titulo": "Axiom → SFO",
+          "descricao": "Uber, cerca de 25 minutos de madrugada."
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "info",
+          "texto": "Sábado pós-Thanksgiving: o aeroporto fica cheio."
+        }
+      ],
+      "sol": {
+        "nascer": "07:01",
+        "por": "16:53"
+      }
+    }
+  ],
+  "lugares": {
+    "coronado": {
+      "nome": "Hotel del Coronado",
+      "wiki": "Coronado_Beach",
+      "resumo_wiki": "",
+      "wiki_url": null,
+      "credito": {
+        "autor": "William Henry Jackson",
+        "licenca": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Hotel_Del_c1900b.jpg"
+      },
+      "busca": "Hotel del Coronado beach",
+      "imagem": "img/coronado.jpg"
+    },
+    "torrey": {
+      "nome": "Torrey Pines",
+      "wiki": "Torrey_Pines_State_Natural_Reserve",
+      "imagem": "img/torrey.jpg",
+      "resumo_wiki": "Torrey Pines State Natural Reserve is a coastal state park in San Diego, California. The reserve is one of the wildest stretches of land on the Southern California coast, covering 2,000 acres (810 ha). It is bordered immediately to the south by Torrey Pines Golf Course and to the north by the city of Del Mar. The reserve was designated a National Natural Landmark in 1977.",
+      "wiki_url": "https://en.wikipedia.org/wiki/Torrey_Pines_State_Natural_Reserve",
+      "credito": {
+        "autor": "User:Nauticashades.",
+        "licenca": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Torrey_Pines_State_Park_Valley.jpg"
+      }
+    },
+    "lajolla": {
+      "nome": "La Jolla Cove",
+      "wiki": "La_Jolla_Cove",
+      "imagem": "img/lajolla.jpg",
+      "resumo_wiki": "La Jolla Cove is a small cove with a beach that is surrounded by cliffs in La Jolla, a community of San Diego, California. Point La Jolla forms the south side of the cove. The area is protected as part of a marine reserve and is popular with snorkelers, swimmers and scuba divers.",
+      "wiki_url": "https://en.wikipedia.org/wiki/La_Jolla_Cove",
+      "credito": {
+        "autor": "Ajay Suresh from New York, NY, USA",
+        "licenca": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:LaJolla-2_%2845716612345%29.jpg"
+      }
+    },
+    "joshua": {
+      "nome": "Joshua Tree National Park",
+      "wiki": "Joshua_Tree_National_Park",
+      "imagem": "img/joshua.jpg",
+      "resumo_wiki": "Joshua Tree National Park is a US National Park located in southeastern California, straddling north-central Riverside County and part of southern San Bernardino County. Named after the endemic Joshua tree, found in the park and surrounding areas, Joshua Tree is situated some 130 miles (211 km) east of the city of Los Angeles and roughly 78 mi (125 km) east of the city of San Bernardino. Among som",
+      "wiki_url": "https://en.wikipedia.org/wiki/Joshua_Tree_National_Park",
+      "credito": {
+        "autor": "Jarek Tuszyński",
+        "licenca": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Joshua_Tree_-_Cyclops_%2B_Potato_Head_-_Sunrise.jpg"
+      }
+    },
+    "barker": {
+      "nome": "Barker Dam",
+      "wiki": "Barker_Dam",
+      "busca": "Barker Dam Joshua Tree",
+      "imagem": "img/barker.jpg",
+      "resumo_wiki": "Barker Dam may refer to:Barker Dam (California), listed on the U.S. National Register of Historic Places\nBarker Dam at Barker Meadow Reservoir, Colorado",
+      "wiki_url": "https://en.wikipedia.org/wiki/Barker_Dam",
+      "credito": {
+        "autor": "Tuxyso",
+        "licenca": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Joschua_Tree_National_Park_Rock_formation_near_Barker_Dam_2013.jpg"
+      }
+    },
+    "keys": {
+      "nome": "Keys View",
+      "wiki": "Keys_View",
+      "busca": "Keys View Joshua Tree",
+      "imagem": "img/keys.jpg",
+      "resumo_wiki": "",
+      "wiki_url": null,
+      "credito": {
+        "autor": "Mfield, Matthew Field, http://www.photography.mattfield.com",
+        "licenca": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Joshua_tree_keys_view_pano_more_vertical.jpg"
+      }
+    },
+    "hollywood": {
+      "nome": "Letreiro de Hollywood",
+      "wiki": "Hollywood_Sign",
+      "imagem": "img/hollywood.jpg",
+      "resumo_wiki": "The Hollywood Sign is an American landmark and cultural icon overlooking Hollywood, Los Angeles. Originally the Hollywoodland Sign, it is on Mount Lee, above Beachwood Canyon in the Santa Monica Mountains. It was originally erected in 1923 as a temporary advertisement for a local real estate development, and spelled out \"HOLLYWOODLAND\" in 50-foot-tall (15.2 m) white uppercase letters in a word 450",
+      "wiki_url": "https://en.wikipedia.org/wiki/Hollywood_Sign",
+      "credito": {
+        "autor": "Wikimedia Commons",
+        "licenca": "",
+        "url": "https://commons.wikimedia.org/wiki/File:Hollywood_sign_%288485145044%29.jpg"
+      }
+    },
+    "sandstone": {
+      "nome": "Sandstone Peak",
+      "wiki": "Sandstone_Peak",
+      "imagem": "img/sandstone.jpg",
+      "resumo_wiki": "Sandstone Peak, also known as Mount Allen, is a mountain in Ventura County, California. It is the highest summit in the Santa Monica Mountains, with an elevation of 3,114 feet (949 m). Located near the western edge of the Santa Monica Mountains National Recreation Area, the summit provides panoramic views of Malibu, the Pacific Ocean, the Conejo Valley, and four of the Channel Islands.",
+      "wiki_url": "https://en.wikipedia.org/wiki/Sandstone_Peak",
+      "credito": {
+        "autor": "IvyMike",
+        "licenca": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Looking_at_Sandstone_Peak_from_Inspiration_Point.jpg"
+      }
+    },
+    "solstice": {
+      "nome": "Solstice Canyon",
+      "wiki": "Solstice_Canyon",
+      "imagem": "img/solstice.jpg",
+      "resumo_wiki": "Solstice Canyon is a park within the Santa Monica Mountains National Recreation Area in Malibu, California. Located off Corral Canyon Road from Pacific Coast Highway, the canyon runs north-to-south about a mile east of Point Dume. Solstice Canyon opened on June 20, 1988 and was created out of land owned by Fred and Florence Roberts. Before becoming a park the land was known as Roberts Ranch from 1",
+      "wiki_url": "https://en.wikipedia.org/wiki/Solstice_Canyon",
+      "credito": {
+        "autor": "DocFreeman24",
+        "licenca": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Solstice_Canyon.jpg"
+      }
+    },
+    "matador": {
+      "nome": "El Matador State Beach",
+      "wiki": "El_Matador_State_Beach",
+      "imagem": "img/matador.jpg",
+      "resumo_wiki": "Robert H. Meyer Memorial State Beach is a state beach of California, located in northern Malibu, Southern California. \nThe park is part of the Santa Monica Mountains National Recreation Area.",
+      "wiki_url": "https://en.wikipedia.org/wiki/Robert_H._Meyer_Memorial_State_Beach",
+      "credito": {
+        "autor": "Graham",
+        "licenca": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:El_matador_beach_malibu.jpg"
+      }
+    },
+    "channel": {
+      "nome": "Channel Islands",
+      "wiki": "Painted_Cave_(Santa_Cruz_Island)",
+      "resumo_wiki": "",
+      "wiki_url": null,
+      "credito": {
+        "autor": "myself, PatríciaR",
+        "licenca": "CC BY-SA 2.5",
+        "url": "https://commons.wikimedia.org/wiki/File:Scorpion_Anchorage_Santa_Cruz_island.JPG"
+      },
+      "busca": "Santa Cruz Island Scorpion Anchorage",
+      "imagem": "img/channel.jpg"
+    },
+    "morro": {
+      "nome": "Morro Rock",
+      "wiki": "Morro_Rock",
+      "imagem": "img/morro.jpg",
+      "resumo_wiki": "Morro Rock is a volcanic plug in Morro Bay, California, on the Pacific Coast at the entrance to Morro Bay harbor. A causeway connects it with the shore, making it a tied island. The rock is protected as the Morro Rock State Preserve.",
+      "wiki_url": "https://en.wikipedia.org/wiki/Morro_Rock",
+      "credito": {
+        "autor": "No machine-readable author provided. Kjkolb assumed (based on copyright claims).",
+        "licenca": "CC BY 2.5",
+        "url": "https://commons.wikimedia.org/wiki/File:Morro_Rock_1.jpg"
+      }
+    },
+    "seals": {
+      "nome": "Piedras Blancas",
+      "wiki": "Piedras_Blancas_Light_Station",
+      "imagem": "img/seals.jpg",
+      "resumo_wiki": "Piedras Blancas Light Station is located at Point Piedras Blancas, about 5.5 miles (9 km) west by northwest of San Simeon, California. It was added to the California Coastal National Monument in 2017.",
+      "wiki_url": "https://en.wikipedia.org/wiki/Piedras_Blancas_Light_Station",
+      "credito": {
+        "autor": "Whiterocks",
+        "licenca": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Piedras_Blancas_Light_Station_2012.jpeg"
+      }
+    },
+    "mcway": {
+      "nome": "McWay Falls",
+      "wiki": "McWay_Falls",
+      "imagem": "img/mcway.jpg",
+      "resumo_wiki": "McWay Falls is an 80-foot-tall (24 m) waterfall on the coast of Big Sur in central California that flows year-round from McWay Creek in Julia Pfeiffer Burns State Park, about 37 miles (60 km) south of Carmel, into the Pacific Ocean. During high tide, it is a tidefall, a waterfall that empties directly into the ocean. The only other tidefall in California is Alamere Falls.",
+      "wiki_url": "https://en.wikipedia.org/wiki/McWay_Falls",
+      "credito": {
+        "autor": "Wikimedia Commons",
+        "licenca": "",
+        "url": "https://commons.wikimedia.org/wiki/File:McWay_Falls_Big_Sur_September_2012_002.jpg"
+      }
+    },
+    "bixby": {
+      "nome": "Bixby Creek Bridge",
+      "wiki": "Bixby_Creek_Bridge",
+      "imagem": "img/bixby.jpg",
+      "resumo_wiki": "Bixby Bridge, also known as Bixby Creek Bridge, on the Big Sur coast of California, is one of the most photographed bridges in California due to its aesthetic design, \"graceful architecture and magnificent setting\". It is a reinforced concrete open-spandrel arch bridge. The bridge is 120 miles (190 km) south of San Francisco and 13 miles (21 km) south of Carmel in Monterey County on State Route 1.",
+      "wiki_url": "https://en.wikipedia.org/wiki/Bixby_Bridge",
+      "credito": {
+        "autor": "Diliff",
+        "licenca": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Bixby_Creek_Bridge%2C_California%2C_USA_-_May_2013.jpg"
+      }
+    },
+    "lobos": {
+      "nome": "Point Lobos",
+      "wiki": "Point_Lobos",
+      "imagem": "img/lobos.jpg",
+      "resumo_wiki": "Point Lobos and the Point Lobos State Natural Reserve is a state park in Central California, on the Pacific coast between the Carmel highlands and Big Sur. Adjoining Point Lobos is \"one of the richest marine habitats in California\", which is safeguarded by two marine protected areas: Point Lobos State Marine Conservation Area and the Point Lobos State Marine Reserve. The sea near Point Lobos is co",
+      "wiki_url": "https://en.wikipedia.org/wiki/Point_Lobos",
+      "credito": {
+        "autor": "Diliff",
+        "licenca": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Whaler%27s_Cove%2C_Point_Lobos%2C_CA%2C_US_-_May_2013.jpg"
+      }
+    },
+    "pinnacles": {
+      "nome": "Pinnacles National Park",
+      "wiki": "Pinnacles_National_Park",
+      "imagem": "img/pinnacles.jpg",
+      "resumo_wiki": "Pinnacles National Park is a national park of the United States protecting a mountainous area located east of the Salinas Valley in Central California, about five miles (8 km) east of Soledad and 80 miles (130 km) southeast of San Jose. The park's namesake pinnacles are the eroded leftovers of the western half of an extinct volcano that has moved 200 miles (320 km) from its original location on th",
+      "wiki_url": "https://en.wikipedia.org/wiki/Pinnacles_National_Park",
+      "credito": {
+        "autor": "Brocken Inaglory",
+        "licenca": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Rock_formations_at_Pinnacles_National_Park.jpg"
+      }
+    },
+    "muir": {
+      "nome": "Muir Woods",
+      "wiki": "Muir_Woods_National_Monument",
+      "imagem": "img/muir.jpg",
+      "resumo_wiki": "Muir Woods National Monument is a United States national monument managed by the National Park Service and named after naturalist John Muir. It is located on Mount Tamalpais near the Pacific coast in southwestern Marin County, California. The Monument is part of the Golden Gate National Recreation Area, and is 12 miles (19 km) north of San Francisco. It protects 554 acres (224 ha), of which 240 ac",
+      "wiki_url": "https://en.wikipedia.org/wiki/Muir_Woods_National_Monument",
+      "credito": {
+        "autor": "Matthew Dillon from Hollywood, CA, USA",
+        "licenca": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Muir_Woods_National_Monument_%2847879029461%29.jpg"
+      }
+    },
+    "headlands": {
+      "nome": "Marin Headlands",
+      "wiki": "Marin_Headlands",
+      "imagem": "img/headlands.jpg",
+      "resumo_wiki": "The Marin Headlands are a hilly peninsula at the southernmost end of Marin County, California, United States, located just north of San Francisco across the Golden Gate Bridge, which connects the two counties and peninsulas. The entire area is part of the Golden Gate National Recreation Area. The Headlands are famous for their views of the Bay Area, especially of the Golden Gate Bridge.",
+      "wiki_url": "https://en.wikipedia.org/wiki/Marin_Headlands",
+      "credito": {
+        "autor": "Christopher Beland",
+        "licenca": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Marin-headlands-3jul2005.jpg"
+      }
+    },
+    "tomales": {
+      "nome": "Tomales Point",
+      "wiki": "Tule_Elk_Reserve_Tomales_Point",
+      "resumo_wiki": "",
+      "wiki_url": null,
+      "credito": {
+        "autor": "Frank Schulenburg",
+        "licenca": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Cervus_canadensis_nannodes_at_Tomales_Point.jpg"
+      },
+      "busca": "Tule elk Tomales Point",
+      "imagem": "img/tomales.jpg"
+    },
+    "goldengate": {
+      "nome": "Golden Gate Bridge",
+      "wiki": "Golden_Gate_Bridge",
+      "imagem": "img/goldengate.jpg",
+      "resumo_wiki": "The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide (1.6 km) strait connecting San Francisco Bay and the Pacific Ocean in California, United States. The structure links San Francisco—the northern tip of the San Francisco Peninsula—to Marin County, carrying both U.S. Route 101 and California State Route 1 across the strait. It also carries pedestrian and bicycl",
+      "wiki_url": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
+      "credito": {
+        "autor": "Frank Schulenburg",
+        "licenca": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Battery_East.jpg"
+      }
+    },
+    "sausalito": {
+      "nome": "Sausalito",
+      "wiki": "Sausalito,_California",
+      "imagem": "img/sausalito.jpg",
+      "resumo_wiki": "Sausalito is a city in Marin County, California, United States, located 1.5 miles southeast of Marin City, 8 miles (13 km) south-southeast of San Rafael, and about 4 miles (6 km) north of San Francisco from the Golden Gate Bridge.",
+      "wiki_url": "https://en.wikipedia.org/wiki/Sausalito%2C_California",
+      "credito": {
+        "autor": "Wikimedia Commons",
+        "licenca": "",
+        "url": "https://commons.wikimedia.org/wiki/File:Sausalito.jpg"
+      }
+    },
+    "landsend": {
+      "nome": "Lands End",
+      "wiki": "Lands_End_(San_Francisco)",
+      "imagem": "img/landsend.jpg",
+      "resumo_wiki": "Lands End is a park in San Francisco within the larger Golden Gate National Recreation Area. It is also the geographic name of a specific promontory next to the Pacific Ocean on the northwest side of the park. The park is in large part a rocky and windswept shoreline at the mouth of the Golden Gate, situated between the Sutro District and Lincoln Park and abutting Fort Miley Military Reservation. ",
+      "wiki_url": "https://en.wikipedia.org/wiki/Lands_End_(San_Francisco)",
+      "credito": {
+        "autor": "Pi.1415926535",
+        "licenca": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Coastal_Trail_and_Golden_Gate_Bridge%2C_April_2019.JPG"
+      }
+    },
+    "alcatraz": {
+      "nome": "Alcatraz",
+      "wiki": "Alcatraz_Island",
+      "imagem": "img/alcatraz.jpg",
+      "resumo_wiki": "Alcatraz Island is a small island about 1.25 miles offshore from San Francisco in San Francisco Bay, California, near the Golden Gate strait. The island was developed in the mid-19th century with facilities for a lighthouse, a military fortification, and a military prison. In 1934, the island was converted into a federal prison, Alcatraz Federal Penitentiary. The strong tidal currents around the i",
+      "wiki_url": "https://en.wikipedia.org/wiki/Alcatraz_Island",
+      "credito": {
+        "autor": "Chris6d",
+        "licenca": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Alcatraz_2021.jpg"
+      }
+    }
+  },
+  "hospedagens": [
+    {
+      "id": "coronado",
+      "nome": "Hotel del Coronado",
+      "cidade": "San Diego",
+      "checkin": "2026-11-17",
+      "checkout": "2026-11-22",
+      "status": "Pago pela ADP",
+      "planos": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "line",
+      "nome": "The LINE LA",
+      "cidade": "Los Angeles · Koreatown",
+      "checkin": "2026-11-22",
+      "checkout": "2026-11-25",
+      "status": "Reservado",
+      "planos": [
+        "A"
+      ],
+      "xotelo_key": "g32655-d77852",
+      "precos": [
+        {
+          "site": "Booking.com",
+          "diaria": 156
+        },
+        {
+          "site": "Trip.com",
+          "diaria": 169
+        },
+        {
+          "site": "Vio.com",
+          "diaria": 170
+        },
+        {
+          "site": "Agoda.com",
+          "diaria": 189
+        }
+      ],
+      "precos_em": "2026-10-05"
+    },
+    {
+      "id": "line-b",
+      "nome": "The LINE LA",
+      "cidade": "Los Angeles · Koreatown",
+      "checkin": "2026-11-22",
+      "checkout": "2026-11-24",
+      "status": "Reservado · cancelar a 3ª noite",
+      "planos": [
+        "B"
+      ],
+      "xotelo_key": "g32655-d77852",
+      "precos": [
+        {
+          "site": "Booking.com",
+          "diaria": 156
+        },
+        {
+          "site": "Trip.com",
+          "diaria": 169
+        },
+        {
+          "site": "Vio.com",
+          "diaria": 175
+        },
+        {
+          "site": "Agoda.com",
+          "diaria": 189
+        }
+      ],
+      "precos_em": "2026-10-05"
+    },
+    {
+      "id": "axiom",
+      "nome": "Axiom Hotel",
+      "cidade": "San Francisco · Union Square",
+      "checkin": "2026-11-25",
+      "checkout": "2026-11-28",
+      "status": "Reservado",
+      "planos": [
+        "A",
+        "B"
+      ],
+      "xotelo_key": "g60713-d7624213",
+      "precos": [
+        {
+          "site": "Agoda.com",
+          "diaria": 122
+        },
+        {
+          "site": "Booking.com",
+          "diaria": 134
+        },
+        {
+          "site": "Vio.com",
+          "diaria": 135
+        },
+        {
+          "site": "Trip.com",
+          "diaria": 157
+        }
+      ],
+      "precos_em": "2026-10-05"
+    }
+  ],
+  "busca_hoteis": [
+    {
+      "id": "cambria",
+      "titulo": "Hotel em Cambria (Plano B)",
+      "planos": [
+        "B"
+      ],
+      "location_key": "g32148",
+      "checkin": "2026-11-24",
+      "checkout": "2026-11-25",
+      "limite": 6,
+      "busca_externa": [
+        {
+          "nome": "Booking",
+          "url": "https://www.booking.com/searchresults.html?ss=Cambria%2C+CA&checkin=2026-11-24&checkout=2026-11-25&group_adults=2"
+        },
+        {
+          "nome": "Tripadvisor",
+          "url": "https://www.tripadvisor.com/Hotels-g32148-Cambria_San_Luis_Obispo_County_California-Hotels.html"
+        }
+      ],
+      "opcoes": [
+        {
+          "nome": "Creekside Inn",
+          "nota": 4.8,
+          "avaliacoes": 247,
+          "url": "https://www.tripadvisor.com/Hotel_Review-g32148-d119655-Reviews-Creekside_Inn-Cambria_San_Luis_Obispo_County_California.html",
+          "coord": [
+            35.5662,
+            -121.07846
+          ],
+          "diaria_min": 113,
+          "site_min": "Agoda.com"
+        },
+        {
+          "nome": "FogCatcher Inn",
+          "nota": 4.3,
+          "avaliacoes": 3162,
+          "url": "https://www.tripadvisor.com/Hotel_Review-g32148-d113954-Reviews-FogCatcher_Inn-Cambria_San_Luis_Obispo_County_California.html",
+          "coord": [
+            35.575817,
+            -121.11319
+          ],
+          "diaria_min": 199,
+          "site_min": "Booking.com"
+        },
+        {
+          "nome": "Fireside Inn",
+          "nota": 4.2,
+          "avaliacoes": 2153,
+          "url": "https://www.tripadvisor.com/Hotel_Review-g32148-d76301-Reviews-Fireside_Inn-Cambria_San_Luis_Obispo_County_California.html",
+          "coord": [
+            35.578766,
+            -121.11587
+          ],
+          "diaria_min": 208,
+          "site_min": "Vio.com"
+        },
+        {
+          "nome": "Pelican Inn & Suites",
+          "nota": 4.3,
+          "avaliacoes": 2294,
+          "url": "https://www.tripadvisor.com/Hotel_Review-g32148-d259664-Reviews-Pelican_Inn_Suites-Cambria_San_Luis_Obispo_County_California.html",
+          "coord": [
+            35.57482,
+            -121.11249
+          ],
+          "diaria_min": 217,
+          "site_min": "Vio.com"
+        },
+        {
+          "nome": "Cambria Pines Lodge",
+          "nota": 4.4,
+          "avaliacoes": 9879,
+          "url": "https://www.tripadvisor.com/Hotel_Review-g32148-d76303-Reviews-Cambria_Pines_Lodge-Cambria_San_Luis_Obispo_County_California.html",
+          "coord": [
+            35.559387,
+            -121.080444
+          ],
+          "diaria_min": 222,
+          "site_min": "Agoda.com"
+        },
+        {
+          "nome": "Moonstone Landing",
+          "nota": 4.5,
+          "avaliacoes": 872,
+          "url": "https://www.tripadvisor.com/Hotel_Review-g32148-d562116-Reviews-Moonstone_Landing-Cambria_San_Luis_Obispo_County_California.html",
+          "coord": [
+            35.573353,
+            -121.11225
+          ],
+          "diaria_min": 249,
+          "site_min": "Booking.com"
+        }
+      ],
+      "precos_em": "2026-10-05"
+    }
+  ],
+  "reservas": [
+    {
+      "id": "plano",
+      "prioridade": "urgente",
+      "item": "Decidir Plano A ou Plano B",
+      "detalhe": "Muda hotéis e reservas dos dias 8 e 9."
+    },
+    {
+      "id": "ceia",
+      "prioridade": "urgente",
+      "item": "Ceia de Thanksgiving em SF",
+      "detalhe": "Menu fixo costuma custar US$ 100–150 por pessoa."
+    },
+    {
+      "id": "muir",
+      "prioridade": "urgente",
+      "item": "Estacionamento em Muir Woods",
+      "detalhe": "GoMuirWoods.com, 26/11 às 8h.",
+      "url": "https://gomuirwoods.com"
+    },
+    {
+      "id": "channel",
+      "prioridade": "urgente",
+      "item": "Balsa e caiaque nas Channel Islands",
+      "detalhe": "Só no Plano A. Confirmar saída em 24/11.",
+      "url": "https://www.islandpackers.com/kayaking/",
+      "planos": [
+        "A"
+      ]
+    },
+    {
+      "id": "cambria",
+      "prioridade": "urgente",
+      "item": "Hotel em Cambria e cancelar a 3ª noite do LINE",
+      "detalhe": "Só no Plano B.",
+      "planos": [
+        "B"
+      ]
+    },
+    {
+      "id": "sixt",
+      "prioridade": "importante",
+      "item": "Sixt: devolução no Thanksgiving",
+      "detalhe": "Confirmar loja e horário. Conferir diárias e taxa one-way."
+    },
+    {
+      "id": "adp",
+      "prioridade": "importante",
+      "item": "ADP: cobertura da acompanhante",
+      "detalhe": "Refeições, passeios e o dia 17/11."
+    },
+    {
+      "id": "alcatraz",
+      "prioridade": "antes",
+      "item": "Alcatraz (opcional)",
+      "detalhe": "Black Friday esgota.",
+      "url": "https://www.alcatrazcitycruises.com"
+    },
+    {
+      "id": "waymo",
+      "prioridade": "antes",
+      "item": "Testar o app Waymo",
+      "detalhe": "Pode não estar na loja brasileira. Uber como reserva."
+    },
+    {
+      "id": "equip",
+      "prioridade": "antes",
+      "item": "Equipamento",
+      "detalhe": "Lanterna de cabeça, casaco para o deserto, tênis de trilha."
+    },
+    {
+      "id": "coronado",
+      "prioridade": "feito",
+      "item": "Hotel del Coronado",
+      "detalhe": "Pago pela ADP."
+    },
+    {
+      "id": "line",
+      "prioridade": "feito",
+      "item": "The LINE LA",
+      "detalhe": "22 a 25/11."
+    },
+    {
+      "id": "axiom",
+      "prioridade": "feito",
+      "item": "Axiom Hotel",
+      "detalhe": "25 a 28/11."
+    },
+    {
+      "id": "carro",
+      "prioridade": "feito",
+      "item": "Carro Sixt",
+      "detalhe": "SAN 22/11 → SF 26/11."
+    },
+    {
+      "id": "voo",
+      "prioridade": "feito",
+      "item": "Voo de volta DL 1598",
+      "detalhe": "SFO 28/11, 07:05."
+    }
+  ],
+  "orcamento": {
+    "taxa_brl": 5.62,
+    "planos": {
+      "A": {
+        "total_usd": 2047.0,
+        "opcionais_usd": 90.5,
+        "itens_a_verificar": 6,
+        "categorias": {
+          "alimentacao": 835.0,
+          "passeio": 552.0,
+          "estacionamento": 215.0,
+          "gasolina": 200.0,
+          "transporte": 140.0,
+          "ingresso": 105.0,
+          "carro": 0.0
+        }
+      },
+      "B": {
+        "total_usd": 1765.0,
+        "opcionais_usd": 90.5,
+        "itens_a_verificar": 5,
+        "categorias": {
+          "alimentacao": 875.0,
+          "gasolina": 205.0,
+          "hospedagem": 200.0,
+          "estacionamento": 170.0,
+          "transporte": 140.0,
+          "passeio": 90.0,
+          "ingresso": 85.0,
+          "carro": 0.0
+        }
+      }
+    }
+  },
+  "fontes": [
+    {
+      "nome": "Caltrans: Highway 1",
+      "url": "https://dot.ca.gov/caltrans-near-me/district-5/d5-news/d5-news-1-14-26"
+    },
+    {
+      "nome": "See Monterey: alertas de viagem",
+      "url": "https://www.seemonterey.com/plan-your-visit/travel-alert/"
+    },
+    {
+      "nome": "Island Packers: caiaque",
+      "url": "https://www.islandpackers.com/kayaking/"
+    },
+    {
+      "nome": "NPS: Joshua Tree",
+      "url": "https://www.nps.gov/jotr/"
+    }
+  ],
+  "creditos_api": [
+    {
+      "nome": "Wikipedia / Wikimedia Commons",
+      "uso": "Fotos dos lugares"
+    },
+    {
+      "nome": "Sunrise-Sunset.org",
+      "uso": "Horário do pôr do sol"
+    },
+    {
+      "nome": "Xotelo (Tripadvisor)",
+      "uso": "Preços de hotel"
+    }
+  ]
+}

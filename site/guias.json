@@ -1,0 +1,1774 @@
+{
+  "fontes": {
+    "pesquisa-2026-10": {
+      "tipo": "pesquisa",
+      "titulo": "Pesquisa na web (Tripadvisor, Yelp, NPS, Island Packers, guias locais)",
+      "data": "2026-10-05"
+    },
+    "yt-spv-sf-1-dia": {
+      "tipo": "youtube",
+      "titulo": "San Francisco: o que fazer em 1 dia! Nosso relato sincero",
+      "canal": "Só Preciso Viajar",
+      "url": null,
+      "arquivo": "transcricoes/2026-10-05_so-preciso-viajar_sf-1-dia.md",
+      "data": "2026-10-05"
+    },
+    "yt-rota1nv-sf-1-dia": {
+      "tipo": "youtube",
+      "titulo": "San Francisco em 1 dia (EUA)",
+      "canal": "Rota 1 NV",
+      "url": null,
+      "arquivo": "transcricoes/2026-10-05_rota-1-nv_sf-1-dia.md",
+      "data": "2026-10-05"
+    },
+    "yt-rota360-sf-2-dias": {
+      "tipo": "youtube",
+      "titulo": "O que fazer em San Francisco: 10 paradas certeiras (roteiro de 2 dias)",
+      "canal": "Rota 360 Viagens",
+      "url": null,
+      "arquivo": "transcricoes/2026-10-05_rota-360-viagens_sf-2-dias.md",
+      "data": "2026-10-05"
+    },
+    "yt-ctml-pch-20-paradas": {
+      "tipo": "youtube",
+      "titulo": "Pacific Coast Highway: 20 Great Stops on the Road Trip",
+      "canal": "California Through My Lens",
+      "url": null,
+      "arquivo": "transcricoes/2026-10-05_california-through-my-lens_pch-20-paradas.md",
+      "data": "2026-10-05"
+    },
+    "yt-bmtm-california-20-paradas": {
+      "tipo": "youtube",
+      "titulo": "The Ultimate California Road Trip (20 Stops)",
+      "canal": "Be My Travel Muse",
+      "url": null,
+      "arquivo": "transcricoes/2026-10-05_be-my-travel-muse_california-20-paradas.md",
+      "data": "2026-10-05"
+    }
+  },
+  "dias": {
+    "dia-1": {
+      "intro": [
+        "O primeiro dia é para desacelerar do voo. Coronado é uma península com cara de cidade pequena, ligada a San Diego por uma ponte alta e por uma balsa curta.",
+        "O Hotel del Coronado fica de frente para uma das praias mais largas da Califórnia. A areia brilha por causa da mica, um mineral que reflete o sol."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Orange Avenue a pé",
+              "texto": "A rua principal de Coronado, com lojas, sorveterias e cafés. Do hotel até o Ferry Landing são cerca de 2 km.",
+              "onde": "Coronado"
+            },
+            {
+              "nome": "Pôr do sol no Ferry Landing",
+              "texto": "Vista do skyline de San Diego do outro lado da baía. Dá para atravessar de balsa e voltar.",
+              "onde": "Coronado Ferry Landing"
+            },
+            {
+              "nome": "Balboa Park",
+              "texto": "Do plano original: jardins, o Botanical Building e o Alcazar Garden. Fica a 15 minutos de Uber.",
+              "onde": "Balboa Park, San Diego"
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Clayton's Coffee Shop",
+              "texto": "Lanchonete clássica com café da manhã servido o dia todo. Os cinnamon rolls e a rabanada de frutas vermelhas são os pedidos mais elogiados.",
+              "onde": "Orange Ave, Coronado"
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "Little Italy",
+              "texto": "Bairro de restaurantes do outro lado da ponte. O plano original sugeria a cervejaria Ballast Point para o chopp artesanal.",
+              "onde": "Little Italy, San Diego"
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Contra o jet lag",
+              "texto": "Fique no sol e caminhe na praia à tarde. Evite cochilar antes das 20h."
+            },
+            {
+              "nome": "Some Like It Hot",
+              "texto": "O hotel de 1888 foi cenário do filme com Marilyn Monroe. Vale entrar no lobby de madeira mesmo sem estar hospedado."
+            }
+          ]
+        }
+      ]
+    },
+    "dia-2-5": {
+      "intro": [
+        "Nos dias do evento, os momentos livres costumam ser cedo pela manhã ou no fim da tarde. Sem carro, o melhor é escolher um lugar por vez e ir de Uber.",
+        "A costa de La Jolla junta falésias, piscinas naturais e animais marinhos a poucos metros da calçada."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Children's Pool",
+              "texto": "Pequena praia ao sul de La Jolla Cove onde focas descansam na areia. Fica a 5 minutos a pé dos leões-marinhos.",
+              "onde": "Children's Pool, La Jolla"
+            },
+            {
+              "nome": "Sunny Jim Cave",
+              "texto": "Escadaria por dentro da falésia até uma caverna marinha, com entrada pela Cave Store. Passeio curto e diferente.",
+              "onde": "La Jolla Cove"
+            },
+            {
+              "nome": "Warwick's",
+              "texto": "Livraria de família em La Jolla, citada no plano original. Boa parada antes do café.",
+              "onde": "Girard Ave, La Jolla"
+            },
+            {
+              "nome": "Piscinas naturais em Cabrillo",
+              "texto": "As marés mais baixas do outono e do inverno revelam polvos, estrelas e anêmonas. Confira a tábua de marés antes de ir.",
+              "onde": "Cabrillo National Monument"
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Bird Rock Coffee Roasters",
+              "texto": "Torrefação premiada de San Diego. O sanduíche de café da manhã é o mais pedido.",
+              "onde": "5627 La Jolla Blvd, La Jolla"
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Distância dos animais",
+              "texto": "Leões-marinhos e focas são protegidos por lei federal. Fique a vários metros e nunca fique entre eles e o mar."
+            },
+            {
+              "nome": "O cheiro é normal",
+              "texto": "As pedras de La Jolla Cove têm cheiro forte por causa das aves e dos leões-marinhos."
+            },
+            {
+              "nome": "Vá de Uber",
+              "texto": "Estacionar em La Jolla é difícil. Sem carro nesses dias, o Uber resolve."
+            }
+          ]
+        }
+      ]
+    },
+    "dia-6": {
+      "intro": [
+        "Joshua Tree fica onde dois desertos se encontram, o Mojave e o Colorado. As árvores que dão nome ao parque são, na verdade, uma espécie de iúca que só cresce nesta região.",
+        "Em novembro o calor já passou: dias por volta de 18°C e noites frias. É a melhor época para trilhas entre os blocos de granito."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Cholla Cactus Garden",
+              "texto": "Trilha curta entre milhares de cactos que brilham com o sol baixo. Não encoste: os espinhos se soltam com facilidade.",
+              "onde": "Cholla Cactus Garden, Joshua Tree"
+            },
+            {
+              "nome": "Skull Rock",
+              "texto": "Rocha em forma de caveira à beira da estrada. Parada de 10 minutos.",
+              "onde": "Skull Rock, Joshua Tree"
+            },
+            {
+              "nome": "Arch Rock",
+              "texto": "Arco natural de granito numa trilha de 2 km perto do White Tank.",
+              "onde": "Arch Rock, Joshua Tree"
+            },
+            {
+              "nome": "Alternativa: Anza-Borrego",
+              "texto": "Parque estadual no deserto a leste de San Diego, com esculturas gigantes de metal espalhadas por Borrego Springs e um dos céus mais escuros da Califórnia. Ir por lá até Joshua Tree acrescenta cerca de 1h30 ao dia.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ],
+              "onde": "Borrego Springs",
+              "verificar": "Avaliar se cabe no dia"
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Joshua Tree Coffee Company",
+              "texto": "Torrefação na cidade de Joshua Tree, a caminho da entrada oeste. A melhor opção antes de entrar no parque.",
+              "onde": "Joshua Tree, CA"
+            },
+            {
+              "nome": "Frontier Cafe",
+              "texto": "Bebidas orgânicas, sanduíches e doces feitos na casa.",
+              "onde": "Yucca Valley, CA"
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "Crossroads Cafe",
+              "texto": "Café da manhã e almoço clássicos na cidade de Joshua Tree. Bom para levar sanduíches para o parque.",
+              "onde": "Joshua Tree, CA"
+            },
+            {
+              "nome": "La Copine",
+              "texto": "Brunch muito elogiado em Yucca Valley. Funciona em poucos dias da semana.",
+              "onde": "Yucca Valley, CA",
+              "verificar": "Confirmar se abre no domingo"
+            }
+          ]
+        },
+        {
+          "tipo": "levar",
+          "titulo": "O que levar",
+          "itens": [
+            {
+              "nome": "Água",
+              "texto": "Pelo menos 3 litros por pessoa. Dentro do parque não há água nem lanchonete."
+            },
+            {
+              "nome": "Camadas de roupa",
+              "texto": "Pode estar 18°C ao meio-dia e perto de 5°C depois do pôr do sol.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ]
+            },
+            {
+              "nome": "Lanterna",
+              "texto": "Para a volta das trilhas no fim da tarde e para ver as estrelas."
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Mapa offline",
+              "texto": "Quase não há sinal de celular no parque. Baixe a região no Google Maps antes de sair."
+            },
+            {
+              "nome": "Abasteça antes",
+              "texto": "Encha o tanque em Yucca Valley ou Joshua Tree. Não há posto dentro do parque.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ]
+            },
+            {
+              "nome": "Entre pela West Entrance",
+              "texto": "Fica na cidade de Joshua Tree e leva direto a Hidden Valley, Barker Dam e Keys View."
+            }
+          ]
+        }
+      ]
+    },
+    "dia-7": {
+      "intro": [
+        "Malibu é conhecida pelas praias, mas o melhor dela está nas montanhas logo atrás. As Santa Monica Mountains descem direto até o Pacífico.",
+        "Em uma segunda-feira de novembro as trilhas ficam vazias e os estacionamentos têm vaga."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Point Dume",
+              "texto": "Caminhada curta no alto de um promontório, com vista de Zuma Beach e da baía de Santa Monica. É o cenário do final de O Planeta dos Macacos.",
+              "onde": "Point Dume, Malibu",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 510
+              }
+            },
+            {
+              "nome": "Zuma Beach",
+              "texto": "Praia larga e aberta para caminhar no fim da tarde.",
+              "onde": "Zuma Beach, Malibu"
+            },
+            {
+              "nome": "Malibu Pier",
+              "texto": "Píer histórico com surfistas dos dois lados.",
+              "onde": "Malibu Pier"
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Alfred Coffee",
+              "texto": "Fica dentro do The LINE e abre às 6:30. Ideal para sair cedo para a trilha.",
+              "onde": "3515 Wilshire Blvd, Koreatown"
+            },
+            {
+              "nome": "Caffe Luxxe",
+              "texto": "Café de bairro com pátio e estacionamento fácil ao longo da PCH.",
+              "onde": "Malibu"
+            },
+            {
+              "nome": "Sunlife Organics",
+              "texto": "Smoothies e bowls de açaí para depois da trilha.",
+              "onde": "3835 Cross Creek Rd, Malibu"
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "Malibu Farm Pier Cafe",
+              "texto": "Almoço na ponta do píer, com o mar dos dois lados.",
+              "onde": "Malibu Pier"
+            },
+            {
+              "nome": "Neptune's Net",
+              "texto": "Barraca de frutos do mar na divisa de condados, perto de Point Mugu. Ponto clássico de motociclistas.",
+              "onde": "PCH, County Line",
+              "verificar": "Confirmar horário"
+            }
+          ]
+        },
+        {
+          "tipo": "levar",
+          "titulo": "O que levar",
+          "itens": [
+            {
+              "nome": "2 litros de água por pessoa",
+              "texto": "Sandstone Peak tem pouca sombra."
+            },
+            {
+              "nome": "Tênis com boa sola",
+              "texto": "O trecho final até o cume é uma escalada curta em rocha."
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Saia antes das 7h",
+              "texto": "Sair de Koreatown antes do horário de pico economiza até uma hora."
+            },
+            {
+              "nome": "Trailhead certo",
+              "texto": "Sandstone Peak começa no estacionamento Mishe Mokwa, na Yerba Buena Road."
+            },
+            {
+              "nome": "Estacionar na PCH",
+              "texto": "Leia as placas. Muitas praias têm estacionamento pago ou horário restrito."
+            }
+          ]
+        }
+      ]
+    },
+    "dia-8-a": {
+      "intro": [
+        "As Channel Islands são chamadas de Galápagos da América do Norte. O isolamento criou espécies que só existem lá, como a raposa-da-ilha, do tamanho de um gato.",
+        "Na travessia de uma hora é comum ver golfinhos e, com sorte, baleias."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Cavern Point Loop",
+              "texto": "Loop de 3 km no alto das falésias, com vista das cavernas onde vocês remaram.",
+              "stats": "3 km",
+              "onde": "Scorpion Anchorage"
+            },
+            {
+              "nome": "Potato Harbor",
+              "texto": "Trilha mais longa até um mirante sobre uma enseada em forma de batata.",
+              "stats": "8 km ida e volta",
+              "onde": "Santa Cruz Island"
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Freedom Coffee",
+              "texto": "Fica dentro do prédio de check-in da Island Packers. Lattes, chocolate quente e mingau.",
+              "onde": "Ventura Harbor"
+            },
+            {
+              "nome": "Harbor Cove Cafe",
+              "texto": "Burritos de café da manhã e lanches para levar. Dá para encomendar a marmita 24h antes. Abre às 7:30.",
+              "onde": "1867 Spinnaker Dr, Ventura"
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "Andria's Seafood",
+              "texto": "Fish and chips no porto de Ventura, para a volta da ilha.",
+              "onde": "Ventura Harbor",
+              "verificar": "Confirmar horário"
+            }
+          ]
+        },
+        {
+          "tipo": "levar",
+          "titulo": "O que levar",
+          "itens": [
+            {
+              "nome": "Almoço e água para o dia todo",
+              "texto": "Não há lanchonete na ilha e quase não há água potável."
+            },
+            {
+              "nome": "Remédio para enjoo",
+              "texto": "O canal pode ficar agitado. Tome antes de embarcar."
+            },
+            {
+              "nome": "Saco estanque e camadas",
+              "texto": "Para o celular no caiaque e para o vento frio na volta."
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Chegue 1h antes",
+              "texto": "Check-in da balsa, check-in do caiaque e café tomam tempo."
+            },
+            {
+              "nome": "Entre cedo na fila",
+              "texto": "A fila do barco começa 20 a 30 minutos antes. Os primeiros escolhem os lugares no deck."
+            },
+            {
+              "nome": "Não alimente as raposas",
+              "texto": "Elas circulam perto da área de piquenique e roubam comida de mochilas abertas."
+            }
+          ]
+        }
+      ]
+    },
+    "dia-8-b": {
+      "intro": [
+        "Um dia sem pressa pela Costa Central, a parte da Califórnia entre LA e Big Sur que muita gente pula.",
+        "Termina em Cambria, uma vila de pinheiros à beira-mar, a meia hora dos elefantes-marinhos."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Santa Barbara County Courthouse",
+              "texto": "Tribunal de 1929 em estilo colonial espanhol, com murais e uma torre do relógio aberta ao público com vista 360° da cidade. Entrada gratuita.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 344
+              },
+              "onde": "Santa Barbara County Courthouse",
+              "verificar": "Confirmar horário da torre"
+            },
+            {
+              "nome": "Montaña de Oro State Park",
+              "texto": "Bluff Trail no alto de falésias recortadas, ao sul de Morro Bay. Uma das trilhas costeiras mais bonitas do estado.",
+              "stats": "5 km",
+              "onde": "Montaña de Oro, Los Osos",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ]
+            },
+            {
+              "nome": "El Capitán State Beach",
+              "texto": "Praia entre falésias logo ao norte de Santa Barbara, pela US-101. Golfinhos costumam nadar perto da arrebentação.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ],
+              "onde": "El Capitán State Beach"
+            },
+            {
+              "nome": "Caiaque em Morro Bay",
+              "texto": "Remar na baía tranquila entre lontras-marinhas, com a Morro Rock ao fundo.",
+              "onde": "Morro Bay State Park Marina"
+            },
+            {
+              "nome": "Moonstone Beach Boardwalk",
+              "texto": "Passarela de madeira sobre as pedras em Cambria. Ótima para o pôr do sol.",
+              "onde": "Moonstone Beach, Cambria"
+            },
+            {
+              "nome": "Missão de Santa Barbara",
+              "texto": "A rainha das missões espanholas, a 5 minutos do Handlebar.",
+              "onde": "Old Mission Santa Barbara"
+            },
+            {
+              "nome": "Naufrágio de Cayucos",
+              "texto": "O barco de pesca Point San Luis encalhou na praia em 2017. Parada rápida entre Morro Bay e Cambria.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 614
+              },
+              "onde": "Cayucos",
+              "verificar": "Confirmar se o casco ainda está na praia"
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Handlebar Coffee Roasters",
+              "texto": "Um dos dois cafés mais bem avaliados de Santa Barbara, com pátio ao sol.",
+              "onde": "Downtown Santa Barbara"
+            },
+            {
+              "nome": "Dune Coffee Roasters",
+              "texto": "Torrefação local com clima bem Santa Barbara.",
+              "onde": "State St, Santa Barbara"
+            },
+            {
+              "nome": "Buttercup Bakery",
+              "texto": "Padaria aconchegante no centro de Morro Bay, aberta das 7h às 15h.",
+              "onde": "Morro Bay"
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "Splash Café",
+              "texto": "Clam chowder, a sopa cremosa de mariscos da costa, servida dentro de um pão sourdough. O vídeo sugere com molho de pimenta.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 212
+              },
+              "onde": "Pismo Beach"
+            },
+            {
+              "nome": "Giovanni's Fish Market",
+              "texto": "Fish and chips e mariscos na beira do cais, com leões-marinhos por perto.",
+              "onde": "Embarcadero, Morro Bay"
+            },
+            {
+              "nome": "Linn's Restaurant",
+              "texto": "Famoso pela torta de olallieberry, uma amora típica da região. Bom para jantar ou para o café da manhã seguinte.",
+              "onde": "Main St, Cambria"
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Pegue a US-101 até San Luis Obispo",
+              "texto": "É o trecho mais rápido. A Highway 1 fica para o dia seguinte."
+            },
+            {
+              "nome": "Reserve o hotel",
+              "texto": "As opções com preço estão na página Hotéis."
+            }
+          ]
+        }
+      ]
+    },
+    "dia-9-a": {
+      "intro": [
+        "Dia de estrada pela rota mais rápida. A ideia é escolher uma única parada boa para esticar as pernas, sem tentar ver tudo.",
+        "Point Lobos é mar e falésia; Pinnacles é rocha vulcânica, cavernas e condores."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Cypress Grove Trail",
+              "texto": "Loop curto em Point Lobos entre ciprestes de Monterey, uma das duas florestas naturais da espécie.",
+              "stats": "1,3 km",
+              "onde": "Point Lobos"
+            },
+            {
+              "nome": "17-Mile Drive",
+              "texto": "Estrada cênica paga entre Pacific Grove e Carmel, com campos de golfe, costões e o cipreste solitário, o Lone Cypress.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ],
+              "onde": "17-Mile Drive, Pebble Beach",
+              "verificar": "Confirmar o valor da entrada por carro"
+            },
+            {
+              "nome": "Monterey Bay Aquarium",
+              "texto": "Um dos aquários mais famosos do mundo, com a floresta de algas e as lontras resgatadas. Bom se o tempo estiver ruim na costa.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ],
+              "onde": "Monterey Bay Aquarium",
+              "verificar": "Comprar ingresso e confirmar horário em 25/11"
+            },
+            {
+              "nome": "Balconies Cave",
+              "texto": "Caverna de rochas desabadas pela entrada oeste de Pinnacles. Pode fechar depois de chuva forte.",
+              "stats": "4 km",
+              "onde": "Pinnacles West Entrance"
+            },
+            {
+              "nome": "Elkhorn Slough",
+              "texto": "Estuário com lontras-marinhas perto de Moss Landing, a caminho de SF.",
+              "onde": "Moss Landing"
+            },
+            {
+              "nome": "Opção: voltar a SF pela Highway 1",
+              "texto": "Em vez da US-101, siga a costa por Santa Cruz: Natural Bridges State Beach (arco natural e piscinas de maré), o farol de Pigeon Point e a Devil's Slide Trail, antiga estrada transformada em calçadão. Acrescenta cerca de 1 hora, e é véspera do Thanksgiving.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 70
+              },
+              "onde": "Natural Bridges State Beach, Santa Cruz"
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Carmel Coffee House & Roasting Co",
+              "texto": "Café torrado na casa, no centro de Carmel.",
+              "onde": "Ocean Ave, Carmel-by-the-Sea"
+            },
+            {
+              "nome": "Café Carmel",
+              "texto": "Padaria e café na avenida principal.",
+              "onde": "Ocean Ave, Carmel-by-the-Sea"
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "La Plaza Bakery & Cafe",
+              "texto": "Padaria mexicana com pan dulce e pratos de café da manhã. Para quem for a Pinnacles.",
+              "onde": "Soledad"
+            },
+            {
+              "nome": "Taqueria Pacheco",
+              "texto": "Tacos simples em Soledad, perto da entrada oeste do parque.",
+              "onde": "Soledad"
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Point Lobos enche cedo",
+              "texto": "O estacionamento interno é pequeno. Se lotar, estacione no acostamento da Highway 1 e entre a pé."
+            },
+            {
+              "nome": "Lanterna para Pinnacles",
+              "texto": "Nas cavernas a lanterna de cabeça é obrigatória."
+            },
+            {
+              "nome": "Union Square à noite",
+              "texto": "O Axiom fica a poucas quadras do Tenderloin. O vídeo relata ruas vazias, pessoas em situação de rua e uso de drogas no centro. À noite, prefira Uber mesmo para trajetos curtos.",
+              "fontes": [
+                "yt-spv-sf-1-dia"
+              ]
+            },
+            {
+              "nome": "Nada visível no carro",
+              "texto": "Arrombamentos de carros são comuns em SF, inclusive em mirantes. Não deixe malas nem mochilas no carro estacionado, nem por poucos minutos.",
+              "fontes": [
+                "yt-spv-sf-1-dia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "dia-9-b": {
+      "intro": [
+        "O trecho de Big Sur entre Cambria e Carmel tem cerca de 150 km de curvas sobre o Pacífico. Não há cidades, quase não há sinal e cada mirante pede uma parada.",
+        "Saindo cedo, dá para fazer tudo sem pressa e chegar a SF antes de escurecer."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Hearst Castle",
+              "texto": "Mansão do magnata William Randolph Hearst em San Simeon, com piscinas de azulejos e jardins. Só com tour reservado, e ocupa a manhã toda.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas",
+                "yt-bmtm-california-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 642
+              },
+              "onde": "Hearst Castle, San Simeon",
+              "verificar": "Reservar e confirmar horários; avaliar se cabe no dia"
+            },
+            {
+              "nome": "Ragged Point",
+              "texto": "Primeiro grande mirante vindo do sul, no início de Big Sur.",
+              "onde": "Ragged Point"
+            },
+            {
+              "nome": "Sand Dollar Beach",
+              "texto": "Praia em meia-lua com escada curta, uma das maiores de Big Sur.",
+              "onde": "Sand Dollar Beach"
+            },
+            {
+              "nome": "Pfeiffer Beach",
+              "texto": "Areia com tons roxos, por causa da granada, e o Keyhole Arch, rocha com um portal por onde passam ondas e a luz do fim da tarde. A estrada de acesso é estreita.",
+              "onde": "Pfeiffer Beach",
+              "verificar": "Confirmar acesso depois dos incêndios",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 677
+              }
+            },
+            {
+              "nome": "Garrapata State Park",
+              "texto": "Soberanes Point: trilha curta sobre falésias, já perto de Carmel.",
+              "onde": "Garrapata State Park"
+            },
+            {
+              "nome": "Point Sur Lighthouse",
+              "texto": "Farol de 1889 no alto de uma rocha em Big Sur. Visita só com tour guiado, em dias específicos.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 104
+              },
+              "onde": "Point Sur State Historic Park",
+              "verificar": "Confirmar se há tour em 25/11"
+            },
+            {
+              "nome": "Opção: voltar a SF pela Highway 1",
+              "texto": "Em vez da US-101, siga a costa por Santa Cruz: Natural Bridges State Beach (arco natural e piscinas de maré), o farol de Pigeon Point e a Devil's Slide Trail, antiga estrada transformada em calçadão. Acrescenta cerca de 1 hora, e é véspera do Thanksgiving.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 70
+              },
+              "onde": "Natural Bridges State Beach, Santa Cruz"
+            },
+            {
+              "nome": "17-Mile Drive",
+              "texto": "Desvio pago entre Carmel e Pacific Grove, com costões e o Lone Cypress. Só vale se sobrar luz do dia.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ],
+              "onde": "17-Mile Drive, Pebble Beach",
+              "verificar": "Confirmar o valor da entrada por carro"
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Big Sur Bakery",
+              "texto": "Padaria numa casa de rancho dos anos 30. Abre de quarta a segunda, das 9h às 14h. O dia 25/11 é uma quarta.",
+              "onde": "47540 CA-1, Big Sur"
+            },
+            {
+              "nome": "Café Kevah",
+              "texto": "Terraço embaixo do Nepenthe, com vista do litoral. Reabriu em setembro de 2026, depois dos incêndios.",
+              "onde": "Nepenthe, Big Sur"
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "Nepenthe",
+              "texto": "Restaurante de 1949 no alto de uma falésia. O almoço com vista é um clássico de Big Sur.",
+              "onde": "Big Sur"
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Encha o tanque em Cambria",
+              "texto": "Os poucos postos de Big Sur cobram bem mais caro.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ]
+            },
+            {
+              "nome": "Use os pullouts",
+              "texto": "Se houver fila atrás de vocês, encostem nos recuos e deixem passar."
+            },
+            {
+              "nome": "Sem sinal",
+              "texto": "Baixe o mapa offline e tire print das reservas."
+            },
+            {
+              "nome": "Union Square à noite",
+              "texto": "O Axiom fica a poucas quadras do Tenderloin. O vídeo relata ruas vazias, pessoas em situação de rua e uso de drogas no centro. À noite, prefira Uber mesmo para trajetos curtos.",
+              "fontes": [
+                "yt-spv-sf-1-dia"
+              ]
+            },
+            {
+              "nome": "Nada visível no carro",
+              "texto": "Arrombamentos de carros são comuns em SF, inclusive em mirantes. Não deixe malas nem mochilas no carro estacionado, nem por poucos minutos.",
+              "fontes": [
+                "yt-spv-sf-1-dia"
+              ]
+            },
+            {
+              "nome": "Vocês vão de sul para norte",
+              "texto": "Nesse sentido o mar fica do outro lado da pista. Só entre nos mirantes do lado do mar quando der para cruzar com segurança; muitos têm um par do lado de vocês logo adiante.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "dia-10": {
+      "intro": [
+        "Thanksgiving é o maior feriado americano. As cidades esvaziam de manhã, o que deixa as trilhas de Marin mais tranquilas.",
+        "Muir Woods guarda uma das últimas florestas antigas de sequoias costeiras perto de SF. Algumas árvores passam de 70 metros e têm mais de mil anos."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Muir Beach Overlook",
+              "texto": "Mirante sobre o oceano a 10 minutos de Muir Woods.",
+              "onde": "Muir Beach Overlook"
+            },
+            {
+              "nome": "Tennessee Valley Trail",
+              "texto": "Trilha plana por um vale até uma praia escondida.",
+              "stats": "6 km ida e volta",
+              "onde": "Tennessee Valley, Mill Valley"
+            },
+            {
+              "nome": "Battery Spencer",
+              "texto": "O mirante mais famoso da Golden Gate, bem acima da ponte.",
+              "onde": "Battery Spencer, Marin Headlands",
+              "fontes": [
+                "yt-rota360-sf-2-dias"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Equator Coffees, Tam Junction",
+              "texto": "Café numa antiga loja de surfe, exatamente no caminho para Muir Woods.",
+              "onde": "244 Shoreline Hwy, Mill Valley",
+              "verificar": "Confirmar se abre no Thanksgiving"
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "Muir Woods Trading Company",
+              "texto": "Café na entrada do parque, para um lanche depois da trilha.",
+              "onde": "Muir Woods"
+            },
+            {
+              "nome": "Ceia: The Waterfront Restaurant",
+              "texto": "Em 2025 ofereceu menu de três pratos por US$ 90, com peru e torta de abóbora.",
+              "onde": "Embarcadero, SF",
+              "verificar": "Confirmar menu de 2026 e reservar"
+            },
+            {
+              "nome": "Ceia: Caché",
+              "texto": "Em 2025 teve menu fixo de US$ 75, com sopa de abóbora e peru ou halibute.",
+              "onde": "Inner Sunset, SF",
+              "verificar": "Confirmar menu de 2026 e reservar"
+            },
+            {
+              "nome": "Hog Island Oyster Co., Tomales Bay",
+              "texto": "Ostras frescas na beira da baía onde são cultivadas, com molho hogwash e raiz-forte. Combina com a alternativa de Tomales Point.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 284
+              },
+              "onde": "Hog Island Oyster Co., Marshall",
+              "verificar": "Confirmar se abre no Thanksgiving e reservar"
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Sem sinal em Muir Woods",
+              "texto": "Tire print da reserva de estacionamento antes de sair do hotel."
+            },
+            {
+              "nome": "Devolução do carro",
+              "texto": "Confira porta-malas e porta-luvas e devolva com o tanque cheio."
+            },
+            {
+              "nome": "Hog Island fecha",
+              "texto": "O restaurante de ostras do Ferry Building não abre no Thanksgiving."
+            },
+            {
+              "nome": "Nada visível no carro",
+              "texto": "Arrombamentos de carros são comuns em SF, inclusive em mirantes. Não deixe malas nem mochilas no carro estacionado, nem por poucos minutos.",
+              "fontes": [
+                "yt-spv-sf-1-dia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "dia-11": {
+      "intro": [
+        "Atravessar a Golden Gate de bicicleta é a forma mais bonita de conhecer a ponte. O percurso até Sausalito é quase todo plano, com uma descida no final.",
+        "Na Black Friday o centro lota. A beira-mar e Lands End continuam tranquilos."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Leões-marinhos no Pier 39",
+              "texto": "Perto de onde se alugam as bicicletas, em Fisherman's Wharf. Vale passar antes de pedalar.",
+              "onde": "Pier 39, SF",
+              "fontes": [
+                "yt-spv-sf-1-dia",
+                "yt-rota1nv-sf-1-dia",
+                "yt-rota360-sf-2-dias"
+              ]
+            },
+            {
+              "nome": "Crissy Field e Warming Hut",
+              "texto": "Ciclovia à beira da baía dentro do Presidio, antiga base militar virada parque, até o pé da ponte. Parada para chocolate quente no Warming Hut.",
+              "onde": "Crissy Field, SF",
+              "fontes": [
+                "yt-rota360-sf-2-dias",
+                "yt-bmtm-california-20-paradas"
+              ]
+            },
+            {
+              "nome": "Welcome Center da Golden Gate",
+              "texto": "Mirante com a ponte e a baía ao fundo, na cabeceira sul, onde as bicicletas sobem para a ponte.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 337
+              },
+              "onde": "Golden Gate Bridge Welcome Center"
+            },
+            {
+              "nome": "Palace of Fine Arts",
+              "texto": "Rotunda de 1915 com lago, no caminho entre Fisherman's Wharf e Crissy Field. Parada rápida de bicicleta.",
+              "onde": "Palace of Fine Arts, SF",
+              "fontes": [
+                "yt-rota360-sf-2-dias"
+              ]
+            },
+            {
+              "nome": "Casas flutuantes de Sausalito",
+              "texto": "Comunidade de casas-barco coloridas no norte da cidade.",
+              "onde": "Sausalito Houseboats"
+            },
+            {
+              "nome": "Sutro Baths e o labirinto",
+              "texto": "Trilha de cerca de 5 km nos penhascos, passando pelas ruínas dos banhos públicos de 1896, pela Mile Rock Beach e por um labirinto de pedras. Vários mirantes para a Golden Gate.",
+              "onde": "Lands End, SF",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 445
+              }
+            },
+            {
+              "nome": "Se sobrar tempo: cartões-postais",
+              "texto": "Lombard Street, as Painted Ladies da Alamo Square e Chinatown, com o Dragon Gate e uma fábrica de biscoitos da sorte. Chinatown fica a poucas quadras do Axiom. Agrupe os pontos próximos e vá de Uber entre eles.",
+              "onde": "San Francisco",
+              "fontes": [
+                "yt-spv-sf-1-dia",
+                "yt-rota1nv-sf-1-dia",
+                "yt-rota360-sf-2-dias"
+              ]
+            },
+            {
+              "nome": "Cable car",
+              "texto": "Os bondes históricos sobem as ladeiras até Fisherman's Wharf. Compre o bilhete antes, no aplicativo oficial, para não pegar a fila do ponto inicial.",
+              "onde": "Powell & Hyde, SF",
+              "fontes": [
+                "yt-rota1nv-sf-1-dia",
+                "yt-rota360-sf-2-dias"
+              ]
+            },
+            {
+              "nome": "Twin Peaks",
+              "texto": "Mirante no centro geográfico da cidade, a 15 minutos de Uber. Se a neblina cobrir, espere: as aberturas acontecem em janelas curtas.",
+              "onde": "Twin Peaks, SF",
+              "fontes": [
+                "yt-rota360-sf-2-dias"
+              ]
+            },
+            {
+              "nome": "Golden Gate Park",
+              "texto": "Parque maior que o Central Park, com o Japanese Tea Garden e o de Young Museum. Alternativa para uma manhã sem bicicleta.",
+              "onde": "Golden Gate Park, SF",
+              "fontes": [
+                "yt-rota360-sf-2-dias"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Equator Coffees Sausalito",
+              "texto": "Na Bridgeway, de frente para a baía.",
+              "onde": "Bridgeway, Sausalito"
+            },
+            {
+              "nome": "Sausalito Bakery & Cafe",
+              "texto": "Mesas na beira d'água para ver o movimento.",
+              "onde": "Sausalito"
+            },
+            {
+              "nome": "Blue Bottle Coffee",
+              "texto": "No Ferry Building, onde a balsa de volta chega.",
+              "onde": "Ferry Building, SF"
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "Ferry Building Marketplace",
+              "texto": "Mercado com padarias, queijos e quiosques, ótimo para um almoço de petiscos.",
+              "onde": "Ferry Building, SF"
+            },
+            {
+              "nome": "Buena Vista Cafe",
+              "texto": "Onde o Irish coffee foi popularizado nos EUA. Fica perto do ponto final do cable car.",
+              "onde": "Hyde St, SF"
+            },
+            {
+              "nome": "Sourdough e chocolate Ghirardelli",
+              "texto": "O pão de fermentação natural é símbolo da cidade. A Ghirardelli Square, ao lado do ponto final do cable car na Hyde, tem a loja original de chocolates.",
+              "onde": "Ghirardelli Square, SF",
+              "fontes": [
+                "yt-rota1nv-sf-1-dia"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Lado da ponte",
+              "texto": "O lado liberado para bicicletas muda conforme o dia e o horário. Sigam as placas."
+            },
+            {
+              "nome": "Vento frio",
+              "texto": "Mesmo com sol, o vento na ponte é gelado e a cidade tem microclimas: a temperatura cai de repente. Vistam-se em camadas e levem corta-vento.",
+              "fontes": [
+                "yt-spv-sf-1-dia",
+                "yt-rota1nv-sf-1-dia",
+                "yt-rota360-sf-2-dias"
+              ]
+            },
+            {
+              "nome": "Fila da balsa",
+              "texto": "À tarde a fila em Sausalito cresce. Comprem o bilhete assim que chegarem."
+            },
+            {
+              "nome": "Centro e Market Street",
+              "texto": "Na volta da balsa, evite atravessar a pé o Tenderloin e o trecho da Market Street perto dele, principalmente à noite.",
+              "fontes": [
+                "yt-spv-sf-1-dia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "dia-12": {
+      "intro": [
+        "Último dia, com voo cedo. Deixe tudo pronto na noite anterior."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Agende o Uber na véspera",
+              "texto": "Às 4h30 há menos carros. O agendamento garante a corrida."
+            },
+            {
+              "nome": "Malas na noite anterior",
+              "texto": "Separe documentos e o que vai na bagagem de mão antes de dormir."
+            },
+            {
+              "nome": "Café no aeroporto",
+              "texto": "Os quiosques do SFO abrem cedo. Tome café depois do controle de segurança."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "lugares": {
+    "coronado": {
+      "intro": [
+        "Hotel vitoriano de 1888, todo de madeira branca e telhados vermelhos. Já recebeu presidentes e foi cenário de Quanto Mais Quente Melhor."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Lobby e varanda",
+              "texto": "Abertos ao público. Vale ver o salão de madeira e o pôr do sol na varanda."
+            },
+            {
+              "nome": "Areia brilhante",
+              "texto": "A praia em frente tem mica, que faz a areia cintilar no sol."
+            }
+          ]
+        }
+      ]
+    },
+    "torrey": {
+      "intro": [
+        "Reserva no alto de falésias de arenito ao norte de La Jolla. Protege o Torrey pine, o pinheiro mais raro dos Estados Unidos."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Sem comida na reserva",
+              "texto": "Na parte alta só é permitido levar água. Faça o lanche antes ou na praia."
+            },
+            {
+              "nome": "Fecha no pôr do sol",
+              "texto": "Os portões abrem às 7:15 e fecham ao escurecer."
+            },
+            {
+              "nome": "Desça pela Beach Trail",
+              "texto": "Termine na areia e volte pela praia na maré baixa."
+            }
+          ]
+        }
+      ]
+    },
+    "lajolla": {
+      "intro": [
+        "Pequena enseada cercada de falésias, com águas protegidas como reserva marinha. Leões-marinhos ocupam as pedras o ano todo."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Cedo é melhor",
+              "texto": "De manhã há menos gente e a luz é boa para fotos."
+            },
+            {
+              "nome": "Mantenha distância",
+              "texto": "Os animais são protegidos por lei. Nada de selfies colado neles."
+            }
+          ]
+        }
+      ]
+    },
+    "joshua": {
+      "intro": [
+        "Parque nacional onde se encontram os desertos de Mojave e do Colorado. É famoso pelas Joshua trees e pelos blocos de granito empilhados."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Ryan Mountain",
+              "texto": "Subida constante, sem sombra. Comece até as 14h para descer com luz."
+            },
+            {
+              "nome": "Água",
+              "texto": "Não há água no parque. Leve pelo menos 3 litros por pessoa."
+            }
+          ]
+        }
+      ]
+    },
+    "barker": {
+      "intro": [
+        "Represa construída por criadores de gado por volta de 1900, escondida entre rochas. Quando tem água, atrai aves e carneiros selvagens."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Petróglifos",
+              "texto": "Perto do fim do loop há gravuras indígenas, repintadas décadas atrás para um filme."
+            },
+            {
+              "nome": "Cedo ou tarde",
+              "texto": "Animais aparecem mais no começo da manhã e no fim da tarde."
+            }
+          ]
+        }
+      ]
+    },
+    "keys": {
+      "intro": [
+        "Mirante a 1.581 m de altitude, o ponto mais alto acessível de carro no parque. Dá para ver o Coachella Valley, o Salton Sea e a falha de San Andreas."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Chegue 30 min antes do pôr do sol",
+              "texto": "O estacionamento é pequeno e lota no fim da tarde."
+            },
+            {
+              "nome": "Venta muito",
+              "texto": "Leve casaco, porque a temperatura cai rápido."
+            }
+          ]
+        }
+      ]
+    },
+    "hollywood": {
+      "intro": [
+        "Construído em 1923 como propaganda do loteamento Hollywoodland. Não é permitido chegar até as letras."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Lake Hollywood Park",
+              "texto": "Gramado de bairro com a vista mais próxima do letreiro. Vá cedo, antes dos ônibus de turismo."
+            },
+            {
+              "nome": "Respeite o bairro",
+              "texto": "É área residencial. Estacione só onde as placas permitem."
+            }
+          ]
+        }
+      ]
+    },
+    "sandstone": {
+      "intro": [
+        "O cume das Santa Monica Mountains, a 948 m. O loop Mishe Mokwa passa por formações de arenito como a Balanced Rock e a Split Rock."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Faça o loop no sentido horário",
+              "texto": "Pela Mishe Mokwa primeiro: subida mais suave e o mar aparece no final."
+            },
+            {
+              "nome": "Escalada final",
+              "texto": "Os últimos metros até o cume são em rocha. Use as mãos e vá com calma."
+            }
+          ]
+        }
+      ]
+    },
+    "solstice": {
+      "intro": [
+        "Cânion sombreado com riacho, cachoeira e as ruínas de uma casa projetada pelo arquiteto Paul R. Williams, destruída num incêndio em 1982."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Keller House",
+              "texto": "Logo no começo fica uma cabana de pedra de 1903, uma das construções mais antigas de Malibu."
+            }
+          ]
+        }
+      ]
+    },
+    "matador": {
+      "intro": [
+        "Pequena praia de enseadas e arcos de rocha ao norte de Malibu, entre as mais fotografadas da Califórnia."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Maré baixa",
+              "texto": "Com a maré alta quase não sobra areia. Confira a tábua de marés."
+            },
+            {
+              "nome": "Escada íngreme",
+              "texto": "A descida é por uma trilha e uma escada no penhasco."
+            }
+          ]
+        }
+      ]
+    },
+    "channel": {
+      "intro": [
+        "Cinco ilhas formam o parque nacional. Santa Cruz é a maior e tem a maior concentração de cavernas marinhas do mundo, incluindo a Painted Cave."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Raposa-da-ilha",
+              "texto": "Espécie endêmica do tamanho de um gato. Aparece perto da área de acampamento de Scorpion."
+            },
+            {
+              "nome": "Leve tudo",
+              "texto": "Não há lojas nem lanchonetes na ilha."
+            }
+          ]
+        }
+      ]
+    },
+    "morro": {
+      "intro": [
+        "Domo vulcânico de 23 milhões de anos na entrada da baía de Morro Bay. É reserva de falcões-peregrinos, que fazem ninho no topo."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Lontras na marina",
+              "texto": "Procure no canal entre a rocha e o porto. Elas boiam de costas comendo mariscos.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 409
+              }
+            },
+            {
+              "nome": "Não é permitido escalar",
+              "texto": "A rocha é área protegida."
+            }
+          ]
+        }
+      ]
+    },
+    "seals": {
+      "intro": [
+        "Desde 1990 uma colônia de elefantes-marinhos ocupa as praias ao norte de San Simeon. Os mirantes ficam ao lado da Highway 1."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "O que ver em novembro",
+              "texto": "Jovens descansando e os primeiros machos adultos chegando. Os nascimentos começam em dezembro.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas",
+                "yt-bmtm-california-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 178
+              }
+            },
+            {
+              "nome": "Fique no mirante",
+              "texto": "Os animais são enormes e protegidos. Não desça para a areia."
+            }
+          ]
+        }
+      ]
+    },
+    "mcway": {
+      "intro": [
+        "Cachoeira de 24 m que cai direto na areia de uma enseada de água turquesa. A praia é inacessível, o que mantém a cena intacta."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Trilha pelo túnel",
+              "texto": "A trilha até o mirante passa por um túnel sob a Highway 1 e leva 10 minutos.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas",
+                "yt-bmtm-california-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 579
+              }
+            },
+            {
+              "nome": "Situação após os incêndios",
+              "texto": "O parque Julia Pfeiffer Burns estava parcialmente aberto em outubro de 2026.",
+              "verificar": "Confirmar perto da data"
+            }
+          ]
+        }
+      ]
+    },
+    "bixby": {
+      "intro": [
+        "Ponte de concreto de 1932, com 218 m de comprimento sobre um cânion de 79 m. É o cartão-postal de Big Sur."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Mirante do lado norte",
+              "texto": "A foto clássica é do recuo ao norte da ponte.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ]
+            },
+            {
+              "nome": "Estacione só nos recuos",
+              "texto": "Parar no acostamento é perigoso e dá multa."
+            }
+          ]
+        }
+      ]
+    },
+    "lobos": {
+      "intro": [
+        "Considerado a joia dos parques estaduais da Califórnia. Enseadas de água verde, ciprestes retorcidos e muita vida marinha."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "China Cove",
+              "texto": "Enseada de água esmeralda vista do alto da escada. Uma das paradas mais bonitas."
+            },
+            {
+              "nome": "Chegue cedo",
+              "texto": "O estacionamento interno lota. Se acontecer, entre a pé pela Highway 1."
+            }
+          ]
+        }
+      ]
+    },
+    "pinnacles": {
+      "intro": [
+        "Restos de um vulcão antigo, transformado em parque nacional em 2013. É um dos poucos lugares onde condores-da-califórnia voam livres."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Duas entradas sem ligação",
+              "texto": "Leste e oeste não se conectam por estrada. Vindo da US-101, use a oeste, por Soledad."
+            },
+            {
+              "nome": "Lanterna",
+              "texto": "Obrigatória nas cavernas Balconies e Bear Gulch."
+            }
+          ]
+        }
+      ]
+    },
+    "muir": {
+      "intro": [
+        "Floresta de sequoias costeiras preservada em 1908 e batizada em homenagem ao naturalista John Muir. As árvores chegam a 79 m."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Cathedral Grove",
+              "texto": "Trecho de silêncio pedido aos visitantes. Vale parar e ouvir a floresta."
+            },
+            {
+              "nome": "Reserva obrigatória",
+              "texto": "Estacionamento ou ônibus só com reserva em GoMuirWoods.com."
+            },
+            {
+              "nome": "Trilha acessível",
+              "texto": "A trilha principal é plana e pavimentada, com passarelas de madeira sob as sequoias.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 145
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "headlands": {
+      "intro": [
+        "Colinas do outro lado da Golden Gate, com antigas baterias militares, praias e as melhores vistas da ponte."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Hawk Hill",
+              "texto": "Mirante mais alto, com a ponte e a cidade ao fundo. No outono passam aves de rapina migrando."
+            },
+            {
+              "nome": "Rodeo Beach",
+              "texto": "Praia de pedrinhas coloridas entre colinas, boa para o fim da manhã."
+            }
+          ]
+        }
+      ]
+    },
+    "tomales": {
+      "intro": [
+        "Ponta norte de Point Reyes, entre o oceano e a baía de Tomales. Os alces-de-tule foram reintroduzidos ali em 1978."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Vá cedo",
+              "texto": "De manhã a manada costuma estar perto da trilha."
+            },
+            {
+              "nome": "Point Reyes Station",
+              "texto": "Na volta, pare na Bovine Bakery e na Cowgirl Creamery, na vila.",
+              "verificar": "Confirmar se abrem no feriado"
+            },
+            {
+              "nome": "Farol de Point Reyes",
+              "texto": "Outro farol histórico da costa, na ponta oeste de Point Reyes. Combina com a trilha num dia inteiro por lá.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 104
+              },
+              "onde": "Point Reyes Lighthouse",
+              "verificar": "Confirmar horário de visita"
+            }
+          ]
+        }
+      ]
+    },
+    "goldengate": {
+      "intro": [
+        "Inaugurada em 1937, com 2,7 km de extensão. A cor laranja internacional foi escolhida para aparecer na neblina."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Neblina",
+              "texto": "Em novembro a ponte costuma estar limpa de manhã. Se encobrir, espere: a neblina muda rápido.",
+              "fontes": [
+                "yt-rota360-sf-2-dias"
+              ]
+            },
+            {
+              "nome": "Melhores mirantes",
+              "texto": "Battery Spencer, do lado de Marin, e Crissy Field, do lado da cidade.",
+              "fontes": [
+                "yt-rota360-sf-2-dias",
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 316
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "sausalito": {
+      "intro": [
+        "Vila à beira da baía, do lado de Marin, com casas nas encostas e uma comunidade de casas flutuantes."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Volta de balsa",
+              "texto": "Balsas para o Ferry Building e o Pier 41. Dá para levar a bicicleta."
+            }
+          ]
+        }
+      ]
+    },
+    "landsend": {
+      "intro": [
+        "Trilha costeira no canto noroeste de SF, com ruínas, ciprestes e vista da Golden Gate pelo lado do oceano."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Comece no Sutro Baths",
+              "texto": "Estacione no Lands End Lookout, veja as ruínas e siga a trilha para o leste.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 445
+              }
+            },
+            {
+              "nome": "Labirinto em Eagle's Point",
+              "texto": "Desvio curto até um labirinto de pedras num penhasco."
+            }
+          ]
+        }
+      ]
+    },
+    "alcatraz": {
+      "intro": [
+        "Prisão federal de segurança máxima entre 1934 e 1963. O tour com áudio, narrado por ex-guardas e ex-presos, é excelente."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Compre com semanas de antecedência",
+              "texto": "Os ingressos esgotam, principalmente em feriados como a Black Friday.",
+              "fontes": [
+                "yt-rota360-sf-2-dias"
+              ]
+            },
+            {
+              "nome": "Só pelo site oficial",
+              "texto": "Ingressos só pela Alcatraz City Cruises. Revendas cobram muito mais."
+            },
+            {
+              "nome": "Jardins da ilha",
+              "texto": "Além da prisão, há jardins históricos e colônias de aves marinhas."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

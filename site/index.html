@@ -1,0 +1,679 @@
+<title>Califórnia 2026</title>
+<meta name="description" content="Roteiro da viagem de 17 a 28 de novembro de 2026, de San Diego a San Francisco.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: app de bolso. Barra superior com título e plano, abas fixas embaixo no celular
+   (no topo em telas largas), uma página por assunto e uma página por dia e por lugar. */
+:root {
+  --bg: #f6f7f6;
+  --surface: #ffffff;
+  --ink: #121a1a;
+  --muted: #687472;
+  --line: #e2e6e4;
+  --accent: #0f6a6e;        /* Pacífico */
+  --accent-soft: #e2efee;
+  --warm: #b8520b;          /* pôr do sol */
+  --urgente: #b42318; --urgente-bg: #fdeeec;
+  --aviso: #8a5300;   --aviso-bg: #fbf2e2;
+  --info: #0f6a6e;    --info-bg: #e2efee;
+  --font: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --gutter: 16px;
+  --maxw: 720px;
+  --radius: 14px;
+  --nav-h: 64px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c1111; --surface: #141b1b; --ink: #e7edeb; --muted: #93a19e; --line: #233030;
+    --accent: #5fb9b6; --accent-soft: #15302f; --warm: #f0a062;
+    --urgente: #ff8f80; --urgente-bg: #3a1b18; --aviso: #f0b45c; --aviso-bg: #31260f; --info: #7cc6c3; --info-bg: #13302f;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1111; --surface: #141b1b; --ink: #e7edeb; --muted: #93a19e; --line: #233030;
+  --accent: #5fb9b6; --accent-soft: #15302f; --warm: #f0a062;
+  --urgente: #ff8f80; --urgente-bg: #3a1b18; --aviso: #f0b45c; --aviso-bg: #31260f; --info: #7cc6c3; --info-bg: #13302f;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.55 var(--font); -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); text-decoration: none; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+h1, h2, h3, h4 { margin: 0; line-height: 1.2; text-wrap: balance; font-weight: 700; letter-spacing: -.015em; }
+p { margin: 0; }
+.num { font-variant-numeric: tabular-nums; }
+.wrap { max-width: var(--maxw); margin-inline: auto; padding-inline: var(--gutter); }
+.ico { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.muted { color: var(--muted); }
+.small { font-size: 14px; }
+.label { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+/* ---------- Barra superior ---------- */
+.appbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid transparent; transition: border-color .2s; }
+.appbar.scrolled { border-bottom-color: var(--line); }
+.appbar .wrap { display: flex; align-items: center; gap: 8px; height: 56px; }
+.appbar h1 { font-size: 17px; font-weight: 600; letter-spacing: 0; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.back { display: inline-grid; place-items: center; width: 36px; height: 36px; margin-left: -8px; border-radius: 50%; color: var(--ink); }
+.back:hover { background: var(--line); }
+.seg { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--line); flex: none; }
+.seg button { border: 0; background: transparent; padding: 5px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; color: var(--muted); cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgb(0 0 0 / .08); }
+.topnav { display: none; gap: 2px; }
+.topnav a { padding: 7px 12px; border-radius: 8px; font-size: 14px; font-weight: 500; color: var(--muted); }
+.topnav a[aria-current="page"] { color: var(--ink); background: var(--line); }
+
+/* ---------- Abas inferiores ---------- */
+.tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--surface); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom, 0px); }
+.tabbar .wrap { display: grid; grid-template-columns: repeat(5, 1fr); height: var(--nav-h); padding-inline: 4px; }
+.tabbar a { display: grid; justify-items: center; align-content: center; gap: 3px; font-size: 11px; font-weight: 500; color: var(--muted); }
+.tabbar a[aria-current="page"] { color: var(--accent); }
+.tabbar a[aria-current="page"] .ico { stroke-width: 2.1; }
+main { padding-block: 8px calc(var(--nav-h) + 40px + env(safe-area-inset-bottom, 0px)); }
+@media (min-width: 820px) {
+  .topnav { display: flex; }
+  .tabbar { display: none; }
+  main { padding-bottom: 64px; }
+  .appbar h1.page-title { display: none; }
+  .appbar .spacer { flex: 1; }
+}
+@media (max-width: 819px) { .appbar .spacer { display: none; } }
+
+.view { display: grid; gap: 28px; animation: entra .22s ease-out; }
+@keyframes entra { from { opacity: .4; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .view { animation: none; } }
+.page-head { display: grid; gap: 4px; padding-top: 8px; }
+.page-head h2 { font-size: 28px; }
+.section { display: grid; gap: 12px; }
+.section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.section-head h3 { font-size: 18px; }
+.section-head a { font-size: 14px; font-weight: 500; }
+
+/* ---------- Listas ---------- */
+.list { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.row { display: flex; align-items: center; gap: 14px; padding: 12px 14px; color: var(--ink); border-top: 1px solid var(--line); min-width: 0; }
+.row:first-child { border-top: 0; }
+a.row:hover { background: color-mix(in srgb, var(--line) 40%, transparent); }
+.row .thumb { width: 56px; height: 56px; border-radius: 10px; object-fit: cover; flex: none; background: var(--line); }
+.row .thumb-ph { width: 56px; height: 56px; border-radius: 10px; flex: none; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; }
+.row .txt { flex: 1; min-width: 0; display: grid; gap: 1px; }
+.row .t { font-weight: 600; }
+.row .s { font-size: 14px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.row .chev { color: var(--muted); }
+.row .end { text-align: right; flex: none; }
+.tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); vertical-align: 1px; margin-left: 4px; }
+
+/* ---------- Início ---------- */
+.cover { position: relative; border-radius: 18px; overflow: hidden; aspect-ratio: 4 / 3; max-width: 100%; background: #233; color: #fff; }
+.cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cover::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 35%, rgb(5 12 14 / .78)); }
+.cover .over { position: absolute; left: 20px; right: 20px; bottom: 18px; z-index: 1; display: grid; gap: 4px; }
+.cover h2 { font-size: clamp(30px, 8vw, 44px); }
+.cover p { color: rgb(255 255 255 / .88); }
+@media (min-width: 620px) { .cover { aspect-ratio: 2 / 1; } }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; display: grid; gap: 2px; }
+.stat b { font-size: 26px; font-weight: 700; letter-spacing: -.02em; }
+.stat span { font-size: 13px; color: var(--muted); }
+.plan { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: grid; gap: 6px; }
+.plan h3 { font-size: 17px; display: flex; align-items: center; gap: 8px; }
+
+/* ---------- Dia ---------- */
+.hero-img { border-radius: var(--radius); overflow: hidden; aspect-ratio: 16 / 10; max-width: 100%; background: var(--line); position: relative; }
+.hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-img figcaption { position: absolute; right: 8px; bottom: 6px; font-size: 10px; color: rgb(255 255 255 / .8); text-shadow: 0 1px 2px rgb(0 0 0 / .6); max-width: 75%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+figure { margin: 0; }
+.title-block { display: grid; gap: 6px; }
+.title-block h2 { font-size: 30px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 7px 11px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); font-size: 14px; color: var(--ink); }
+.chip.sun { color: var(--warm); }
+.chip .ico { width: 17px; height: 17px; }
+a.chip:hover { border-color: var(--muted); }
+.lead { font-size: 18px; line-height: 1.5; }
+.acts { list-style: none; margin: 0; padding: 0; }
+.acts li { display: grid; grid-template-columns: 36px 1fr; gap: 12px; padding: 14px; border-top: 1px solid var(--line); }
+.acts li:first-child { border-top: 0; }
+.act-ico { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); }
+.acts h4 { font-size: 16px; font-weight: 600; letter-spacing: 0; }
+.acts .meta { font-size: 13px; font-weight: 600; color: var(--warm); margin-top: 2px; }
+.acts p { color: var(--muted); font-size: 15px; margin-top: 3px; }
+.acts a { font-size: 14px; font-weight: 500; }
+.alert { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: 12px; font-size: 15px; }
+.alert .ico { margin-top: 1px; }
+.alert[data-nivel="urgente"] { background: var(--urgente-bg); color: var(--urgente); }
+.alert[data-nivel="aviso"] { background: var(--aviso-bg); color: var(--aviso); }
+.alert[data-nivel="info"] { background: var(--info-bg); color: var(--info); }
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.pager a { display: grid; gap: 2px; padding: 12px 14px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); min-width: 0; }
+.pager a.next { text-align: right; grid-column: 2; }
+.pager span { font-size: 13px; color: var(--muted); }
+.pager b { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* ---------- Lugares ---------- */
+.filters { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.filters::-webkit-scrollbar { display: none; }
+.filters button { flex: none; border: 1px solid var(--line); background: var(--surface); padding: 7px 13px; border-radius: 999px; font-size: 14px; font-weight: 500; cursor: pointer; color: var(--ink); }
+.filters button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (min-width: 620px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.place { display: grid; gap: 8px; color: var(--ink); min-width: 0; }
+.place .img { aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; background: var(--line); max-width: 100%; }
+.place img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
+.place:hover img { transform: scale(1.03); }
+@media (prefers-reduced-motion: reduce) { .place:hover img { transform: none; } }
+.place b { font-weight: 600; font-size: 15px; line-height: 1.25; }
+.place span { font-size: 13px; color: var(--muted); }
+.wiki { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: grid; gap: 8px; }
+.wiki p { color: var(--muted); font-size: 15px; }
+
+/* ---------- Hotéis ---------- */
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: grid; gap: 10px; min-width: 0; }
+.card-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.card-head h3 { font-size: 18px; }
+.nights { text-align: right; flex: none; }
+.nights b { font-size: 24px; display: block; line-height: 1; }
+.nights span { font-size: 12px; color: var(--muted); }
+.status { justify-self: start; font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+.prices { display: flex; flex-wrap: wrap; gap: 6px; }
+.prices span { font-size: 13px; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line); }
+.prices span:first-child { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+.fine { font-size: 12px; color: var(--muted); }
+.rate { font-weight: 700; font-size: 18px; }
+.rate small { display: block; font-size: 12px; font-weight: 400; color: var(--muted); }
+.btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn { display: inline-flex; align-items: center; gap: 6px; padding: 9px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); font-size: 14px; font-weight: 500; }
+
+/* ---------- Reservas ---------- */
+.check li { list-style: none; }
+.check { margin: 0; padding: 0; }
+.check label { display: flex; gap: 12px; align-items: flex-start; padding: 13px 14px; border-top: 1px solid var(--line); cursor: pointer; }
+.check li:first-child label { border-top: 0; }
+.check input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--accent); flex: none; }
+.check .txt { min-width: 0; display: grid; gap: 1px; }
+.check strong { font-weight: 600; }
+.check span { font-size: 14px; color: var(--muted); }
+.check .done strong { text-decoration: line-through; color: var(--muted); }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 8px; vertical-align: 2px; }
+.progress { height: 6px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.progress i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+
+/* ---------- Orçamento ---------- */
+.total b { font-size: 40px; font-weight: 700; letter-spacing: -.02em; display: block; line-height: 1.1; }
+.bars { display: grid; gap: 12px; }
+.bar-row { display: grid; gap: 5px; }
+.bar-row div:first-child { display: flex; justify-content: space-between; font-size: 14px; }
+.bar-row div:first-child b { font-weight: 600; }
+.track { height: 8px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.track i { display: block; height: 100%; border-radius: 999px; background: var(--accent); }
+
+/* ---------- Post (dia e lugar) ---------- */
+.prose { display: grid; gap: 14px; max-width: 65ch; }
+.prose p { font-size: 17px; line-height: 1.7; }
+.prose p:first-child::first-letter { font-size: 1.15em; font-weight: 700; }
+.toc { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.toc::-webkit-scrollbar { display: none; }
+.toc span { flex: none; align-self: center; font-size: 13px; color: var(--muted); margin-right: 2px; }
+.toc button { flex: none; display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--surface); padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 500; cursor: pointer; color: var(--ink); }
+.toc button .ico { width: 15px; height: 15px; color: var(--accent); }
+.post-sec { scroll-margin-top: 72px; }
+.post-sec > h3 { display: flex; align-items: center; gap: 10px; font-size: 20px; }
+.post-sec > h3 .ico { color: var(--accent); }
+.tips { list-style: none; margin: 0; padding: 0; }
+.tips li { padding: 14px 16px; border-top: 1px solid var(--line); display: grid; gap: 4px; }
+.tips li:first-child { border-top: 0; }
+.tips h4 { font-size: 16px; font-weight: 600; letter-spacing: 0; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.tips h4 .meta { font-size: 13px; font-weight: 600; color: var(--warm); }
+.tips p { color: var(--muted); font-size: 15px; }
+.tip-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 13px; margin-top: 2px; }
+.tip-meta a { display: inline-flex; align-items: center; gap: 4px; font-weight: 500; }
+.tip-meta .ico { width: 15px; height: 15px; }
+.badge-warn { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 999px; background: var(--aviso-bg); color: var(--aviso); font-weight: 500; }
+.badge-src { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 999px; background: var(--urgente-bg); color: var(--urgente); font-weight: 600; }
+.group-head { display: flex; align-items: center; gap: 12px; color: var(--ink); }
+.group-head img { width: 40px; height: 40px; border-radius: 8px; object-fit: cover; }
+.group-head b { font-weight: 600; }
+.group-head span { font-size: 13px; color: var(--muted); display: block; }
+
+.foot { display: grid; gap: 6px; font-size: 13px; color: var(--muted); padding-top: 8px; border-top: 1px solid var(--line); }
+.foot ul { margin: 0; padding-left: 18px; }
+.erro { margin: 48px auto; max-width: 520px; padding: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); display: grid; gap: 10px; }
+.erro code { background: var(--bg); padding: 2px 6px; border-radius: 4px; }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-trilha" viewBox="0 0 24 24"><path d="M3 20l6-11 4 6 3-4 5 9z"/></symbol>
+  <symbol id="i-praia" viewBox="0 0 24 24"><path d="M2 16c2 0 2-1.5 4-1.5S8 16 10 16s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 20c2 0 2-1.5 4-1.5S8 20 10 20s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/><circle cx="16" cy="7" r="3"/></symbol>
+  <symbol id="i-vista" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+  <symbol id="i-fauna" viewBox="0 0 24 24"><circle cx="5" cy="10" r="1.8"/><circle cx="9" cy="5.5" r="1.8"/><circle cx="15" cy="5.5" r="1.8"/><circle cx="19" cy="10" r="1.8"/><path d="M12 11c-3 0-6 4-6 7 0 2 2 2.5 3 2.5s2-.5 3-.5 2 .5 3 .5 3-.5 3-2.5c0-3-3-7-6-7z"/></symbol>
+  <symbol id="i-agua" viewBox="0 0 24 24"><path d="M2 17c3 0 3-1.5 5-1.5s3 1.5 5 1.5 3-1.5 5-1.5 2 1.5 5 1.5M4 12l16-6M15 4l3 5"/></symbol>
+  <symbol id="i-transporte" viewBox="0 0 24 24"><path d="M5 17h14v-5l-2-5H7l-2 5zM5 12h14"/><circle cx="8" cy="17" r="1.5"/><circle cx="16" cy="17" r="1.5"/></symbol>
+  <symbol id="i-cidade" viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l5-3v15M10 21V4l9 4v13M13 10h3M13 14h3"/></symbol>
+  <symbol id="i-comida" viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 1-3 4-3 7h3v11"/></symbol>
+  <symbol id="i-hotel" viewBox="0 0 24 24"><path d="M3 19V6M3 15h18v4M21 15v-3a3 3 0 00-3-3h-7v6"/><circle cx="7" cy="11" r="2"/></symbol>
+  <symbol id="i-bike" viewBox="0 0 24 24"><circle cx="6" cy="16" r="3.5"/><circle cx="18" cy="16" r="3.5"/><path d="M6 16l4-8h5l3 8M10 8l4 8M9 6h3"/></symbol>
+  <symbol id="i-sol" viewBox="0 0 24 24"><path d="M3 18h18M7 18a5 5 0 0110 0M12 7v3M5 11l2 1.5M19 11l-2 1.5"/></symbol>
+  <symbol id="i-estrada" viewBox="0 0 24 24"><path d="M8 3L4 21M16 3l4 18M12 4v3M12 11v3M12 18v2"/></symbol>
+  <symbol id="i-alerta" viewBox="0 0 24 24"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18v.01"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9a1 1 0 01-1 1h-4v-6h-6v6H5a1 1 0 01-1-1z"/></symbol>
+  <symbol id="i-roteiro" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="17" rx="2"/><path d="M4 9h16M9 2v4M15 2v4M8 13h3M8 17h6"/></symbol>
+  <symbol id="i-lugares" viewBox="0 0 24 24"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-dinheiro" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></symbol>
+  <symbol id="i-cafe" viewBox="0 0 24 24"><path d="M4 9h13v5a6 6 0 01-6 6h-1a6 6 0 01-6-6z"/><path d="M17 11h1.5a2.5 2.5 0 010 5H17M8 2.5c-.6 1 .6 2-.2 3M12 2.5c-.6 1 .6 2-.2 3"/></symbol>
+  <symbol id="i-fazer" viewBox="0 0 24 24"><path d="M12 3l2.4 5.2 5.6.6-4.2 3.8 1.2 5.6L12 15.4 7 18.2l1.2-5.6L4 8.8l5.6-.6z"/></symbol>
+  <symbol id="i-dica" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0012 3z"/></symbol>
+  <symbol id="i-levar" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0112 0v11a2 2 0 01-2 2H8a2 2 0 01-2-2z"/><path d="M9 4.5V3h6v1.5M9 14h6M9 21v-4h6v4"/></symbol>
+  <symbol id="i-foto" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></symbol>
+</svg>
+
+<header class="appbar" id="appbar"><div class="wrap" id="appbar-inner"></div></header>
+<main class="wrap" id="view"><p class="muted" style="padding-top:40px">Carregando o roteiro…</p></main>
+<nav class="tabbar" aria-label="Seções"><div class="wrap" id="tabbar"></div></nav>
+
+<script>
+(() => {
+  const $view = document.getElementById("view");
+  const $bar = document.getElementById("appbar-inner");
+  const $tabs = document.getElementById("tabbar");
+
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const ico = (n) => `<svg class="ico" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+  const dt = (iso) => new Date(iso + "T12:00:00Z");
+  const fmt = (iso, o) => dt(iso).toLocaleDateString("pt-BR", { timeZone: "UTC", ...o }).replace(/\./g, "");
+  const semana = (iso) => fmt(iso, { weekday: "short" });
+  const diaMes = (iso) => fmt(iso, { day: "numeric", month: "short" }).replace(" de ", " ");
+  const quando = (d) => d.data_fim ? `${diaMes(d.data)} – ${diaMes(d.data_fim)}` : `${semana(d.data)}, ${diaMes(d.data)}`;
+  const usd = (v) => "US$ " + Number(v).toLocaleString("pt-BR", { maximumFractionDigits: 2 });
+  const brl = (v) => "R$ " + Number(v).toLocaleString("pt-BR", { maximumFractionDigits: 0 });
+  const noites = (a, b) => Math.round((dt(b) - dt(a)) / 864e5);
+  const mapaCoord = (c) => `https://www.google.com/maps/search/?api=1&query=${c[0]},${c[1]}`;
+  const mapaNome = (n) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(n + ", California")}`;
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+  };
+
+  const TIPOS = { trilha: "Trilhas", praia: "Praias", vista: "Mirantes", fauna: "Vida selvagem", agua: "Na água", cidade: "Cidade", bike: "Bike", transporte: "Deslocamento", comida: "Comida", hotel: "Hotel" };
+  const CAT = { alimentacao: "Alimentação", gasolina: "Gasolina", estacionamento: "Estacionamento", passeio: "Passeios", ingresso: "Ingressos", transporte: "Transporte", hospedagem: "Hotel extra", carro: "Carro" };
+  const PRIO = [["urgente", "Fazer já", "var(--urgente)"], ["importante", "Esta semana", "var(--aviso)"], ["antes", "Antes de viajar", "var(--info)"], ["feito", "Feito", "var(--muted)"]];
+  const ABAS = [["inicio", "Início", "home"], ["roteiro", "Roteiro", "roteiro"], ["lugares", "Lugares", "lugares"], ["hoteis", "Hotéis", "hotel"], ["reservas", "Reservas", "check"]];
+
+  const SECOES = { fazer: ["Mais para fazer", "fazer"], cafe: ["Café", "cafe"], comer: ["Onde comer", "comida"], levar: ["O que levar", "levar"], foto: ["Fotos", "foto"], dica: ["Dicas práticas", "dica"] };
+
+  let D, G = { fontes: {}, dias: {}, lugares: {} }, plano, filtro = "todos", filtroComer = "todos";
+
+  // ---------- guias (posts) ----------
+  function badgeFonte(id, tempo) {
+    const f = G.fontes[id];
+    if (!f || f.tipo !== "youtube") return "";
+    const href = f.url ? f.url + (tempo ? (f.url.includes("?") ? "&" : "?") + "t=" + tempo : "") : "#videos";
+    const ts = tempo ? ` · ${Math.floor(tempo / 60)}:${String(tempo % 60).padStart(2, "0")}` : "";
+    return `<a class="badge-src" href="${esc(href)}" ${f.url ? 'target="_blank" rel="noopener"' : ""}>${ico("video")} ${esc(f.canal)}${ts}</a>`;
+  }
+  function itemDica(it) {
+    const q = it.onde ? `${it.nome}, ${it.onde}` : null;
+    const fontes = (it.fontes || []).map((id) => badgeFonte(id, it.tempos?.[id])).join("");
+    return `<li>
+      <h4>${esc(it.nome)} ${it.stats ? `<span class="meta num">${esc(it.stats)}</span>` : ""}</h4>
+      <p>${esc(it.texto)}</p>
+      ${q || it.verificar || fontes || it.url ? `<div class="tip-meta">
+        ${q ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}" target="_blank" rel="noopener">${ico("pin")} ${esc(it.onde)}</a>` : ""}
+        ${it.url ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">Site</a>` : ""}
+        ${it.verificar ? `<span class="badge-warn">${ico("alerta")} ${esc(typeof it.verificar === "string" ? it.verificar : "Verificar")}</span>` : ""}
+        ${fontes}
+      </div>` : ""}
+    </li>`;
+  }
+  function postSecoes(guia, extra = []) {
+    const secs = [...extra, ...(guia?.secoes || []).filter((s) => s.itens?.length).map((s, i) => ({ id: `sec-${s.tipo}-${i}`, titulo: s.titulo || SECOES[s.tipo]?.[0], icone: SECOES[s.tipo]?.[1] || "fazer", html: `<ul class="tips list">${s.itens.map(itemDica).join("")}</ul>` }))];
+    const toc = secs.length > 1 ? `<nav class="toc" aria-label="Neste post"><span>Neste post</span>${secs.map((s) => `<button type="button" data-scroll="${s.id}">${ico(s.icone)} ${esc(s.titulo)}</button>`).join("")}</nav>` : "";
+    const corpo = secs.map((s) => `<section class="section post-sec" id="${s.id}"><h3>${ico(s.icone)} ${esc(s.titulo)}</h3>${s.html}</section>`).join("");
+    return { toc, corpo };
+  }
+  const intro = (guia) => guia?.intro?.length ? `<div class="prose">${guia.intro.map((p) => `<p>${esc(p)}</p>`).join("")}</div>` : "";
+  function todasDicas() {
+    const out = [];
+    for (const d of diasDoPlano()) for (const s of G.dias[d.id]?.secoes || []) for (const it of s.itens) out.push({ it, s, onde: { tipo: "dia", d } });
+    for (const [k, gl] of Object.entries(G.lugares)) for (const s of gl.secoes || []) for (const it of s.itens) out.push({ it, s, onde: { tipo: "lugar", k } });
+    return out;
+  }
+
+  // ---------- dados derivados ----------
+  const diasDoPlano = () => D.dias.filter((d) => d.planos.includes(plano));
+  const img = (chave) => D.lugares[chave]?.imagem;
+  const credito = (l) => l?.credito ? `Foto: ${esc(l.credito.autor)}${l.credito.licenca ? " · " + esc(l.credito.licenca) : ""}` : "";
+  function lugaresDoPlano() {
+    const mapa = new Map();
+    for (const d of diasDoPlano()) {
+      for (const a of d.atividades) {
+        if (!a.lugar || !D.lugares[a.lugar]) continue;
+        const e = mapa.get(a.lugar) || { chave: a.lugar, ...D.lugares[a.lugar], dias: [], atividades: [], tipos: new Set() };
+        if (!e.dias.includes(d)) e.dias.push(d);
+        e.atividades.push(a); e.tipos.add(a.tipo);
+        mapa.set(a.lugar, e);
+      }
+    }
+    return [...mapa.values()];
+  }
+  function contagem() {
+    const hoje = new Date(); hoje.setUTCHours(12, 0, 0, 0);
+    const ini = dt(D.viagem.inicio), fim = dt(D.viagem.fim);
+    const n = Math.round((ini - hoje) / 864e5);
+    if (n > 1) return [n, "dias para a viagem"];
+    if (n === 1) return [1, "dia para a viagem"];
+    if (hoje <= fim) return [Math.round((hoje - ini) / 864e5) + 1, "º dia de viagem"];
+    return ["✓", "viagem concluída"];
+  }
+
+  // ---------- partes ----------
+  function linhaDia(d) {
+    const i = img(d.capa);
+    const so = d.planos.length === 1 ? `<span class="tag">Plano ${d.planos[0]}</span>` : "";
+    return `<a class="row" href="#${d.id}">
+      ${i ? `<img class="thumb" src="${esc(i)}" alt="" loading="lazy">` : `<span class="thumb-ph">${ico("transporte")}</span>`}
+      <span class="txt"><span class="s num">Dia ${esc(d.rotulo)} · ${quando(d)}</span><span class="t">${esc(d.titulo)}${so}</span><span class="s">${esc(d.regiao)}</span></span>
+      <span class="chev">${ico("chev")}</span></a>`;
+  }
+  function alertas(lista) {
+    return lista?.length ? `<div class="section">${lista.map((a) => `<div class="alert" data-nivel="${esc(a.nivel)}">${ico(a.nivel === "info" ? "info" : "alerta")}<span>${esc(a.texto)}</span></div>`).join("")}</div>` : "";
+  }
+
+  // ---------- páginas ----------
+  const PAGINAS = {
+    inicio() {
+      const capa = D.lugares[D.viagem.capa];
+      const [n, txt] = contagem();
+      const dias = diasDoPlano();
+      const trilhas = dias.flatMap((d) => d.atividades).filter((a) => a.tipo === "trilha").length;
+      const urg = D.reservas.filter((r) => r.prioridade === "urgente" && (!r.planos || r.planos.includes(plano)) && !store.get("reservas-feitas", {})[r.id]);
+      const o = D.orcamento?.planos[plano];
+      const p = D.planos[plano];
+      return `
+        <figure class="cover">
+          ${capa?.imagem ? `<img src="${esc(capa.imagem)}" alt="${esc(capa.nome)}">` : ""}
+          <figcaption class="over"><span class="label" style="color:rgb(255 255 255/.8)">${diaMes(D.viagem.inicio)} – ${diaMes(D.viagem.fim)} 2026</span><h2>${esc(D.viagem.titulo)}</h2><p>${esc(D.viagem.subtitulo)}</p></figcaption>
+        </figure>
+        <div class="stats">
+          <div class="stat"><b class="num">${n}</b><span>${txt}</span></div>
+          <div class="stat"><b class="num">12</b><span>dias no total</span></div>
+          <div class="stat"><b class="num">${trilhas}</b><span>trilhas no plano</span></div>
+        </div>
+        <div class="plan">
+          <h3>${esc(p.nome)} ${D.viagem.plano_recomendado === plano ? `<span class="tag">Recomendado</span>` : ""}</h3>
+          <p class="muted small">${esc(p.resumo)}</p>
+          <p class="small">Troque o plano no seletor <b>A / B</b> no topo.</p>
+        </div>
+        <div class="section">
+          <div class="section-head"><h3>Etapas</h3><a href="#roteiro">Ver roteiro</a></div>
+          <div class="list">${D.fases.map((f) => {
+            const primeiro = dias.find((d) => d.fase === f.id);
+            return `<a class="row" href="#${primeiro?.id || "roteiro"}">
+              ${primeiro && img(primeiro.capa) ? `<img class="thumb" src="${esc(img(primeiro.capa))}" alt="" loading="lazy">` : `<span class="thumb-ph">${ico("pin")}</span>`}
+              <span class="txt"><span class="t">${esc(f.nome)}</span><span class="s num">${diaMes(f.inicio)} – ${diaMes(f.fim)} · ${esc(f.detalhe)}</span></span><span class="chev">${ico("chev")}</span></a>`;
+          }).join("")}</div>
+        </div>
+        <div class="section">
+          <div class="section-head"><h3>Guias</h3></div>
+          <div class="list">
+            <a class="row" href="#comer"><span class="thumb-ph">${ico("cafe")}</span><span class="txt"><span class="t">Cafés e restaurantes</span><span class="s">Onde tomar café e comer em cada dia</span></span><span class="chev">${ico("chev")}</span></a>
+            <a class="row" href="#videos"><span class="thumb-ph">${ico("video")}</span><span class="txt"><span class="t">Dicas dos vídeos</span><span class="s num">${Object.values(G.fontes).filter((f) => f.tipo === "youtube").length} vídeo(s) transcrito(s)</span></span><span class="chev">${ico("chev")}</span></a>
+          </div>
+        </div>
+        ${urg.length ? `<div class="section">
+          <div class="section-head"><h3>Para resolver já</h3><a href="#reservas">Checklist</a></div>
+          <div class="list">${urg.map((r) => `<a class="row" href="#reservas"><span class="txt"><span class="t"><span class="dot" style="background:var(--urgente)"></span>${esc(r.item)}</span><span class="s">${esc(r.detalhe)}</span></span><span class="chev">${ico("chev")}</span></a>`).join("")}</div>
+        </div>` : ""}
+        ${o ? `<a class="row list" href="#orcamento"><span class="thumb-ph">${ico("dinheiro")}</span><span class="txt"><span class="s">Gastos previstos do próprio bolso</span><span class="t num">${usd(o.total_usd)} <span class="muted small">≈ ${brl(o.total_usd * D.orcamento.taxa_brl)}</span></span></span><span class="chev">${ico("chev")}</span></a>` : ""}`;
+    },
+
+    roteiro() {
+      const dias = diasDoPlano();
+      return `<div class="page-head"><span class="label">${esc(D.planos[plano].nome)}</span><h2>Roteiro</h2></div>
+        ${D.fases.map((f) => {
+          const ds = dias.filter((d) => d.fase === f.id);
+          return ds.length ? `<div class="section"><div class="section-head"><h3>${esc(f.nome)}</h3><span class="muted small num">${diaMes(f.inicio)} – ${diaMes(f.fim)}</span></div><div class="list">${ds.map(linhaDia).join("")}</div></div>` : "";
+        }).join("")}`;
+    },
+
+    dia(id) {
+      const dias = diasDoPlano();
+      const i = dias.findIndex((d) => d.id === id);
+      const d = dias[i];
+      const capa = D.lugares[d.capa];
+      const ant = dias[i - 1], prox = dias[i + 1];
+      const lugares = [...new Set(d.atividades.map((a) => a.lugar).filter((k) => k && D.lugares[k]))];
+      const programa = `<ul class="acts list">${d.atividades.map((a) => `<li>
+            <span class="act-ico" title="${esc(TIPOS[a.tipo] || "")}">${ico(a.tipo)}</span>
+            <div><h4>${esc(a.titulo)}</h4>${a.stats ? `<div class="meta num">${esc(a.stats)}</div>` : ""}<p>${esc(a.descricao)}</p>
+            ${a.lugar && D.lugares[a.lugar] ? `<a href="#lugar-${a.lugar}">Ler sobre o lugar</a>` : ""}</div></li>`).join("")}</ul>`;
+      const post = postSecoes(G.dias[d.id], [{ id: "sec-programa", titulo: "Roteiro do dia", icone: "roteiro", html: programa }]);
+      return `
+        ${capa?.imagem ? `<figure class="hero-img"><img src="${esc(capa.imagem)}" alt="${esc(capa.nome)}"><figcaption>${credito(capa)}</figcaption></figure>` : ""}
+        <div class="title-block">
+          <span class="label num">Dia ${esc(d.rotulo)} · ${quando(d)}${d.planos.length === 1 ? ` · Plano ${d.planos[0]}` : ""}</span>
+          <h2>${esc(d.titulo)}</h2>
+          <span class="muted">${esc(d.regiao)}</span>
+        </div>
+        <div class="chips">
+          ${d.sol ? `<span class="chip sun num">${ico("sol")} Pôr do sol ${d.sol.por}</span>` : ""}
+          <a class="chip" href="${mapaCoord(d.coord)}" target="_blank" rel="noopener">${ico("pin")} Mapa</a>
+          ${(d.estrada || []).map((e) => `<span class="chip">${ico("estrada")} ${esc(e.trecho)} · <b class="num">${esc(e.tempo)}</b></span>`).join("")}
+        </div>
+        <p class="lead">${esc(d.resumo)}</p>
+        ${post.toc}
+        ${intro(G.dias[d.id])}
+        ${post.corpo}
+        ${alertas(d.alertas)}
+        ${lugares.length ? `<div class="section"><h3>Lugares do dia</h3><div class="grid">${lugares.map((k) => cardLugar({ chave: k, ...D.lugares[k] }, "")).join("")}</div></div>` : ""}
+        <nav class="pager" aria-label="Outros dias">
+          ${ant ? `<a href="#${ant.id}"><span>← Dia ${esc(ant.rotulo)}</span><b>${esc(ant.titulo)}</b></a>` : ""}
+          ${prox ? `<a class="next" href="#${prox.id}"><span>Dia ${esc(prox.rotulo)} →</span><b>${esc(prox.titulo)}</b></a>` : ""}
+        </nav>`;
+    },
+
+    lugares() {
+      const todos = lugaresDoPlano();
+      const tipos = [...new Set(todos.flatMap((l) => [...l.tipos]))].filter((t) => !["transporte", "hotel", "comida"].includes(t));
+      if (filtro !== "todos" && !tipos.includes(filtro)) filtro = "todos";
+      const lista = filtro === "todos" ? todos : todos.filter((l) => l.tipos.has(filtro));
+      return `<div class="page-head"><span class="label">${todos.length} lugares no ${esc(D.planos[plano].nome)}</span><h2>Lugares</h2></div>
+        <div class="filters" role="group" aria-label="Filtrar por tipo">
+          <button type="button" data-filtro="todos" aria-pressed="${filtro === "todos"}">Todos</button>
+          ${tipos.map((t) => `<button type="button" data-filtro="${t}" aria-pressed="${filtro === t}">${esc(TIPOS[t] || t)}</button>`).join("")}
+        </div>
+        <div class="grid">${lista.map((l) => cardLugar(l, l.dias.map((d) => "Dia " + d.rotulo).join(", "))).join("")}</div>`;
+    },
+
+    lugar(chave) {
+      const l = lugaresDoPlano().find((x) => x.chave === chave) || { chave, ...D.lugares[chave], dias: [], atividades: [] };
+      const extra = l.atividades.length ? [{ id: "sec-fazer-roteiro", titulo: "No roteiro", icone: "roteiro", html: `<ul class="acts list">${l.atividades.map((a) => `<li><span class="act-ico">${ico(a.tipo)}</span><div><h4>${esc(a.titulo)}</h4>${a.stats ? `<div class="meta num">${esc(a.stats)}</div>` : ""}<p>${esc(a.descricao)}</p></div></li>`).join("")}</ul>` }] : [];
+      const post = postSecoes(G.lugares[chave], extra);
+      return `
+        ${l.imagem ? `<figure class="hero-img"><img src="${esc(l.imagem)}" alt="${esc(l.nome)}"><figcaption>${credito(l)}</figcaption></figure>` : ""}
+        <div class="title-block"><span class="label">Lugar</span><h2>${esc(l.nome)}</h2></div>
+        <div class="chips">
+          <a class="chip" href="${mapaNome(l.nome)}" target="_blank" rel="noopener">${ico("pin")} Mapa</a>
+          ${l.wiki_url ? `<a class="chip" href="${esc(l.wiki_url)}" target="_blank" rel="noopener">${ico("info")} Wikipedia</a>` : ""}
+        </div>
+        ${post.toc}
+        ${intro(G.lugares[chave])}
+        ${post.corpo}
+        ${l.dias.length ? `<div class="section"><h3>Em quais dias</h3><div class="list">${l.dias.map(linhaDia).join("")}</div></div>` : `<p class="muted">Este lugar não está no ${esc(D.planos[plano].nome)}.</p>`}
+        ${l.resumo_wiki ? `<div class="wiki"><span class="label">Da Wikipedia, em inglês</span><p>${esc(l.resumo_wiki)}${l.resumo_wiki.length >= 399 ? "…" : ""}</p></div>` : ""}`;
+    },
+
+    comer() {
+      const grupos = diasDoPlano().map((d) => ({ d, secs: (G.dias[d.id]?.secoes || []).filter((s) => ["cafe", "comer"].includes(s.tipo) && (filtroComer === "todos" || s.tipo === filtroComer)) })).filter((g) => g.secs.length);
+      const total = grupos.reduce((n, g) => n + g.secs.reduce((m, s) => m + s.itens.length, 0), 0);
+      return `<div class="page-head"><span class="label num">${total} lugares no ${esc(D.planos[plano].nome)}</span><h2>Cafés e restaurantes</h2></div>
+        <div class="filters" role="group" aria-label="Filtrar">
+          ${[["todos", "Todos"], ["cafe", "Café"], ["comer", "Onde comer"]].map(([k, n]) => `<button type="button" data-filtro-comer="${k}" aria-pressed="${filtroComer === k}">${n}</button>`).join("")}
+        </div>
+        ${grupos.map(({ d, secs }) => `<div class="section">
+          <a class="group-head" href="#${d.id}">${img(d.capa) ? `<img src="${esc(img(d.capa))}" alt="" loading="lazy">` : ""}<div><b>Dia ${esc(d.rotulo)} · ${esc(d.titulo)}</b><span class="num">${quando(d)} · ${esc(d.regiao)}</span></div></a>
+          <ul class="tips list">${secs.flatMap((s) => s.itens).map(itemDica).join("")}</ul>
+        </div>`).join("")}`;
+    },
+
+    videos() {
+      const vids = Object.entries(G.fontes).filter(([, f]) => f.tipo === "youtube");
+      const dicas = todasDicas().filter(({ it }) => (it.fontes || []).some((id) => G.fontes[id]?.tipo === "youtube"));
+      return `<div class="page-head"><span class="label num">${vids.length} vídeo${vids.length === 1 ? "" : "s"} · ${dicas.length} dicas</span><h2>Dicas dos vídeos</h2></div>
+        <div class="list">${vids.map(([id, f]) => `<div class="row"><span class="thumb-ph">${ico("video")}</span><span class="txt"><span class="t">${esc(f.titulo)}</span><span class="s">${esc(f.canal)} · ${dicas.filter(({ it }) => it.fontes.includes(id)).length} dicas</span></span>${f.url ? `<a class="btn" href="${esc(f.url)}" target="_blank" rel="noopener">Assistir</a>` : ""}</div>`).join("") || `<p class="row muted">Nenhum vídeo ainda.</p>`}</div>
+        ${dicas.length ? `<div class="section"><h3>Onde as dicas entraram</h3><div class="list">${dicas.map(({ it, onde }) => {
+          const href = onde.tipo === "dia" ? `#${onde.d.id}` : `#lugar-${onde.k}`;
+          const rot = onde.tipo === "dia" ? `Dia ${onde.d.rotulo} · ${onde.d.titulo}` : D.lugares[onde.k]?.nome;
+          return `<a class="row" href="${href}"><span class="txt"><span class="t">${esc(it.nome)}</span><span class="s">${esc(rot)}</span></span><span class="chev">${ico("chev")}</span></a>`;
+        }).join("")}</div></div>` : ""}
+        <p class="fine">Para incluir um vídeo, salve a transcrição ou o resumo em <b>transcricoes/</b> no projeto e peça ao Claude para extrair as dicas.</p>`;
+    },
+
+    hoteis() {
+      const stays = D.hospedagens.filter((h) => h.planos.includes(plano));
+      const buscas = (D.busca_hoteis || []).filter((b) => b.planos.includes(plano));
+      return `<div class="page-head"><span class="label">${esc(D.planos[plano].nome)}</span><h2>Hotéis</h2></div>
+        <div class="section">${stays.map((h) => `<div class="card">
+          <div class="card-head"><div><h3>${esc(h.nome)}</h3><p class="muted small">${esc(h.cidade)}</p></div>
+          <div class="nights"><b class="num">${noites(h.checkin, h.checkout)}</b><span>noites</span></div></div>
+          <p class="small num">${semana(h.checkin)}, ${diaMes(h.checkin)} → ${semana(h.checkout)}, ${diaMes(h.checkout)}</p>
+          <span class="status">${esc(h.status)}</span>
+          ${h.precos?.length ? `<div class="prices">${h.precos.map((p) => `<span class="num">${esc(p.site)} ${usd(p.diaria)}</span>`).join("")}</div>
+          <p class="fine">Diária para 2 adultos, consultada em ${fmt(h.precos_em, { day: "2-digit", month: "2-digit" })} (Tripadvisor via Xotelo).</p>` : ""}
+        </div>`).join("")}</div>
+        ${buscas.map((b) => `<div class="section">
+          <div class="section-head"><h3>${esc(b.titulo)}</h3><span class="muted small num">${diaMes(b.checkin)}</span></div>
+          ${b.opcoes?.length ? `<div class="list">${b.opcoes.map((o) => `<a class="row" href="${esc(o.url)}" target="_blank" rel="noopener">
+            <span class="txt"><span class="t">${esc(o.nome)}</span><span class="s num">Nota ${o.nota} · ${o.avaliacoes.toLocaleString("pt-BR")} avaliações</span></span>
+            <span class="end rate num">${usd(o.diaria_min)}<small>${esc(o.site_min)}</small></span></a>`).join("")}</div>
+          <p class="fine">Menor diária por hotel, consultada em ${fmt(b.precos_em, { day: "2-digit", month: "2-digit" })}. Preços mudam com frequência.</p>` : `<p class="muted">Sem preços ainda.</p>`}
+          ${b.busca_externa?.length ? `<div class="btns">${b.busca_externa.map((l) => `<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">Buscar no ${esc(l.nome)}</a>`).join("")}</div>` : ""}
+        </div>`).join("")}`;
+    },
+
+    reservas() {
+      const feitos = store.get("reservas-feitas", {});
+      const itens = D.reservas.filter((r) => !r.planos || r.planos.includes(plano));
+      const ok = itens.filter((r) => r.prioridade === "feito" || feitos[r.id]).length;
+      return `<div class="page-head"><span class="label num">${ok} de ${itens.length} resolvidos</span><h2>Reservas</h2></div>
+        <div class="progress"><i style="width:${(ok / itens.length) * 100}%"></i></div>
+        ${PRIO.map(([k, nome, cor]) => {
+          const g = itens.filter((r) => r.prioridade === k);
+          return g.length ? `<div class="section"><h3><span class="dot" style="background:${cor}"></span>${nome}</h3><ul class="check list">${g.map((r) => {
+            const done = k === "feito" || feitos[r.id];
+            return `<li class="${done ? "done" : ""}"><label for="r-${esc(r.id)}">
+              <input type="checkbox" id="r-${esc(r.id)}" data-res="${esc(r.id)}" ${done ? "checked" : ""} ${k === "feito" ? "disabled" : ""}>
+              <span class="txt"><strong>${esc(r.item)}</strong><span>${esc(r.detalhe)}</span>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener" class="small">Abrir site</a>` : ""}</span></label></li>`;
+          }).join("")}</ul></div>` : "";
+        }).join("")}
+        <p class="fine">As marcações ficam salvas apenas neste navegador.</p>`;
+    },
+
+    orcamento() {
+      const o = D.orcamento; const p = o.planos[plano];
+      const max = Math.max(...Object.values(p.categorias));
+      return `<div class="page-head"><span class="label">${esc(D.planos[plano].nome)} · dias 6 a 12</span><h2>Orçamento</h2></div>
+        <div class="card total"><span class="muted small">Total previsto do próprio bolso</span><b class="num">${usd(p.total_usd)}</b><span class="muted num">≈ ${brl(p.total_usd * o.taxa_brl)} · câmbio R$ ${o.taxa_brl.toLocaleString("pt-BR")}</span></div>
+        <div class="card"><h3 style="font-size:17px">Por categoria</h3><div class="bars">
+          ${Object.entries(p.categorias).filter(([, v]) => v > 0).map(([k, v]) => `<div class="bar-row"><div><span>${esc(CAT[k] || k)}</span><b class="num">${usd(v)}</b></div><div class="track"><i style="width:${(v / max) * 100}%"></i></div></div>`).join("")}
+        </div></div>
+        ${p.itens_a_verificar ? `<div class="alert" data-nivel="aviso">${ico("alerta")}<span>${p.itens_a_verificar} valores ainda são estimativas a confirmar, como estacionamentos e a taxa one-way da Sixt.</span></div>` : ""}
+        <p class="fine">Não inclui hotéis já reservados nem o aluguel do carro.${p.opcionais_usd ? ` Opcionais fora do total: ${usd(p.opcionais_usd)}.` : ""}</p>
+        <div class="foot"><span class="label">Fontes e dados</span><ul>
+          ${D.fontes.map((f) => `<li><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.nome)}</a></li>`).join("")}
+          ${D.creditos_api.map((c) => `<li>${esc(c.nome)}: ${esc(c.uso)}</li>`).join("")}
+        </ul>${D.atualizado_em ? `<span class="num">Atualizado em ${esc(D.atualizado_em)}</span>` : ""}</div>`;
+    },
+  };
+
+  function cardLugar(l, sub) {
+    return `<a class="place" href="#lugar-${esc(l.chave)}">
+      <span class="img">${l.imagem ? `<img src="${esc(l.imagem)}" alt="" loading="lazy">` : ""}</span>
+      <b>${esc(l.nome)}</b>${sub ? `<span>${esc(sub)}</span>` : ""}</a>`;
+  }
+
+  // ---------- rotas ----------
+  function rota() {
+    const h = decodeURIComponent(location.hash.slice(1)) || "inicio";
+    if (h.startsWith("lugar-") && D.lugares[h.slice(6)]) return { pagina: "lugar", arg: h.slice(6), aba: "lugares", titulo: D.lugares[h.slice(6)].nome, voltar: "#lugares" };
+    const dia = D.dias.find((d) => d.id === h);
+    if (dia) {
+      if (!dia.planos.includes(plano)) {
+        const par = diasDoPlano().find((d) => d.rotulo === dia.rotulo);
+        if (par) { history.replaceState(null, "", "#" + par.id); return rota(); }
+      }
+      return { pagina: "dia", arg: h, aba: "roteiro", titulo: `Dia ${dia.rotulo}`, voltar: "#roteiro" };
+    }
+    if (h === "orcamento") return { pagina: "orcamento", aba: "inicio", titulo: "Orçamento", voltar: "#inicio" };
+    if (h === "comer") return { pagina: "comer", aba: "inicio", titulo: "Cafés e restaurantes", voltar: "#inicio" };
+    if (h === "videos") return { pagina: "videos", aba: "inicio", titulo: "Dicas dos vídeos", voltar: "#inicio" };
+    const aba = ABAS.find(([k]) => k === h);
+    if (aba) return { pagina: h, aba: h, titulo: aba[1] };
+    return { pagina: "inicio", aba: "inicio", titulo: "Início" };
+  }
+
+  const scrolls = {};
+  let atual = null;
+  function render(manterScroll) {
+    if (atual) scrolls[atual] = window.scrollY;
+    const r = rota();
+    const chave = location.hash || "#inicio";
+    $bar.innerHTML = `
+      ${r.voltar ? `<a class="back" href="${r.voltar}" aria-label="Voltar">${ico("back")}</a>` : ""}
+      <h1 class="${r.voltar ? "" : "page-title"}">${r.voltar ? esc(r.titulo) : (r.pagina === "inicio" ? esc(D.viagem.titulo) : esc(r.titulo))}</h1>
+      <span class="spacer"></span>
+      <nav class="topnav" aria-label="Seções">${ABAS.map(([k, n]) => `<a href="#${k}" ${r.aba === k ? 'aria-current="page"' : ""}>${n}</a>`).join("")}</nav>
+      <div class="seg" role="group" aria-label="Plano">${Object.keys(D.planos).map((k) => `<button type="button" data-plano="${k}" aria-pressed="${k === plano}">${k}</button>`).join("")}</div>`;
+    $tabs.innerHTML = ABAS.map(([k, n, i]) => `<a href="#${k}" ${r.aba === k ? 'aria-current="page"' : ""}>${ico(i)}<span>${n}</span></a>`).join("");
+    $view.innerHTML = `<div class="view">${PAGINAS[r.pagina](r.arg)}</div>`;
+    document.title = r.pagina === "inicio" ? D.viagem.titulo : `${r.titulo} · ${D.viagem.titulo}`;
+    if (!manterScroll) window.scrollTo(0, scrolls[chave] && ["roteiro", "lugares", "hoteis", "reservas", "inicio"].includes(r.pagina) ? scrolls[chave] : 0);
+    atual = chave;
+  }
+
+  document.addEventListener("click", (e) => {
+    const p = e.target.closest("[data-plano]");
+    if (p) { plano = p.dataset.plano; store.set("plano", plano); render(true); return; }
+    const f = e.target.closest("[data-filtro]");
+    if (f) { filtro = f.dataset.filtro; render(true); return; }
+    const fc = e.target.closest("[data-filtro-comer]");
+    if (fc) { filtroComer = fc.dataset.filtroComer; render(true); return; }
+    const s = e.target.closest("[data-scroll]");
+    if (s) document.getElementById(s.dataset.scroll)?.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  });
+  document.addEventListener("change", (e) => {
+    const c = e.target.closest("[data-res]");
+    if (!c) return;
+    const feitos = store.get("reservas-feitas", {});
+    feitos[c.dataset.res] = c.checked; store.set("reservas-feitas", feitos);
+    render(true);
+  });
+  window.addEventListener("hashchange", () => render(false));
+  window.addEventListener("scroll", () => document.getElementById("appbar").classList.toggle("scrolled", window.scrollY > 4), { passive: true });
+
+  const guias = fetch("guias.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+  fetch("roteiro.json", { cache: "no-cache" })
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(async (json) => {
+      D = json;
+      const g = await guias;
+      if (g) G = { fontes: g.fontes || {}, dias: g.dias || {}, lugares: g.lugares || {} };
+      plano = store.get("plano", D.viagem.plano_recomendado);
+      if (!D.planos[plano]) plano = D.viagem.plano_recomendado;
+      render(false);
+    })
+    .catch(() => {
+      $view.innerHTML = `<div class="erro"><h2>Não foi possível carregar o roteiro</h2>
+        <p>O arquivo <code>roteiro.json</code> precisa ser servido por HTTP. Na pasta do projeto, rode <code>python scripts/servir.py</code> e abra <code>http://localhost:8000</code>.</p></div>`;
+    });
+})();
+</script>
