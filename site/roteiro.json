@@ -69,7 +69,8 @@
         {
           "tipo": "transporte",
           "titulo": "Uber SAN → Hotel del Coronado",
-          "descricao": "Cerca de 15 minutos pela ponte de Coronado."
+          "descricao": "Cerca de 15 minutos pela ponte de Coronado.",
+          "onde": "Hotel del Coronado"
         },
         {
           "tipo": "praia",
@@ -131,7 +132,8 @@
         {
           "tipo": "vista",
           "titulo": "Pôr do sol em Sunset Cliffs",
-          "descricao": "Falésias de arenito em Point Loma."
+          "descricao": "Falésias de arenito em Point Loma.",
+          "onde": "Sunset Cliffs Natural Park, San Diego"
         }
       ],
       "alertas": [],
@@ -172,7 +174,8 @@
         {
           "tipo": "transporte",
           "titulo": "Retirada do carro Sixt em SAN",
-          "descricao": "Pacote com proteção total e FasTrak."
+          "descricao": "Pacote com proteção total e FasTrak.",
+          "onde": "Sixt, San Diego International Airport"
         },
         {
           "tipo": "trilha",
@@ -197,7 +200,8 @@
         {
           "tipo": "transporte",
           "titulo": "Estrada até LA",
-          "descricao": "Check-in no The LINE Hotel, em Koreatown."
+          "descricao": "Check-in no The LINE Hotel, em Koreatown.",
+          "onde": "The LINE Hotel, Koreatown, Los Angeles"
         }
       ],
       "alertas": [
@@ -362,7 +366,8 @@
         {
           "tipo": "transporte",
           "titulo": "Balsa da Island Packers",
-          "descricao": "Saída de Ventura Harbor de manhã."
+          "descricao": "Saída de Ventura Harbor de manhã.",
+          "onde": "Island Packers, Ventura Harbor"
         },
         {
           "tipo": "agua",
@@ -374,7 +379,8 @@
           "tipo": "trilha",
           "titulo": "Cavern Point",
           "descricao": "Trilha curta no alto da ilha enquanto espera a balsa de volta.",
-          "stats": "3 km"
+          "stats": "3 km",
+          "onde": "Cavern Point, Santa Cruz Island"
         }
       ],
       "alertas": [
@@ -463,7 +469,8 @@
         {
           "tipo": "cidade",
           "titulo": "Santa Barbara",
-          "descricao": "Café e caminhada curta pelo centro."
+          "descricao": "Café e caminhada curta pelo centro.",
+          "onde": "State Street, Santa Barbara"
         },
         {
           "tipo": "fauna",
@@ -551,7 +558,8 @@
         {
           "tipo": "hotel",
           "titulo": "Check-in no Axiom Hotel",
-          "descricao": "Union Square."
+          "descricao": "Union Square.",
+          "onde": "Axiom Hotel, San Francisco"
         }
       ],
       "alertas": [
@@ -829,7 +837,8 @@
         {
           "tipo": "hotel",
           "titulo": "Check-in no Axiom Hotel",
-          "descricao": "Union Square."
+          "descricao": "Union Square.",
+          "onde": "Axiom Hotel, San Francisco"
         }
       ],
       "alertas": [
@@ -1061,7 +1070,8 @@
         {
           "tipo": "transporte",
           "titulo": "Axiom → SFO",
-          "descricao": "Uber, cerca de 25 minutos de madrugada."
+          "descricao": "Uber, cerca de 25 minutos de madrugada.",
+          "onde": "San Francisco International Airport"
         }
       ],
       "alertas": [

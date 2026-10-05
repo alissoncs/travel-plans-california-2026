@@ -352,7 +352,8 @@
               "fontes": [
                 "yt-la-travel-guide-10-lugares"
               ],
-              "onde": "Koreatown, Los Angeles"
+              "onde": "Koreatown, Los Angeles",
+              "maps": "taco truck, Koreatown, Los Angeles"
             }
           ]
         },
@@ -394,7 +395,12 @@
             },
             {
               "nome": "Entre pela West Entrance",
-              "texto": "Fica na cidade de Joshua Tree e leva direto a Hidden Valley, Barker Dam e Keys View."
+              "texto": "Fica na cidade de Joshua Tree e leva direto a Hidden Valley, Barker Dam e Keys View.",
+              "onde": "Joshua Tree West Entrance Station",
+              "coord": [
+                34.0779,
+                -116.2381
+              ]
             },
             {
               "nome": "Passe anual dos parques",
@@ -551,7 +557,8 @@
             },
             {
               "nome": "Trailhead certo",
-              "texto": "Sandstone Peak começa no estacionamento Mishe Mokwa, na Yerba Buena Road."
+              "texto": "Sandstone Peak começa no estacionamento Mishe Mokwa, na Yerba Buena Road.",
+              "onde": "Sandstone Peak Trailhead, Yerba Buena Rd"
             },
             {
               "nome": "Estacionar na PCH",
@@ -1029,7 +1036,9 @@
               "texto": "A rede de hambúrguer clássica da Califórnia aparece ao longo da US-101. Peça o Animal Style, com cebola grelhada e molho da casa.",
               "fontes": [
                 "yt-la-travel-guide-10-lugares"
-              ]
+              ],
+              "onde": "Gilroy, CA",
+              "maps": "In-N-Out Burger, Gilroy, CA"
             }
           ]
         },
@@ -1488,9 +1497,30 @@
               ]
             },
             {
-              "nome": "Se sobrar tempo: cartões-postais",
-              "texto": "Lombard Street, as Painted Ladies da Alamo Square e Chinatown, com o Dragon Gate e uma fábrica de biscoitos da sorte. Chinatown fica a poucas quadras do Axiom. Agrupe os pontos próximos e vá de Uber entre eles.",
-              "onde": "San Francisco",
+              "nome": "Se sobrar tempo: Lombard Street",
+              "texto": "O trecho de ladeira em zigue-zague entre jardins, perto de Russian Hill. Agrupe os cartões-postais próximos e vá de Uber entre eles.",
+              "onde": "Lombard Street, San Francisco",
+              "fontes": [
+                "yt-spv-sf-1-dia",
+                "yt-rota1nv-sf-1-dia",
+                "yt-rota360-sf-2-dias"
+              ]
+            },
+            {
+              "nome": "Se sobrar tempo: Painted Ladies",
+              "texto": "As casas vitorianas coloridas da Alamo Square, com o centro da cidade ao fundo.",
+              "onde": "Painted Ladies, Alamo Square, San Francisco",
+              "fontes": [
+                "yt-spv-sf-1-dia",
+                "yt-rota1nv-sf-1-dia",
+                "yt-rota360-sf-2-dias"
+              ]
+            },
+            {
+              "nome": "Se sobrar tempo: Chinatown",
+              "texto": "Entrada pelo Dragon Gate e uma fábrica de biscoitos da sorte. Fica a poucas quadras do Axiom.",
+              "onde": "Dragon Gate, Chinatown, San Francisco",
+              "maps": "Chinatown Gate, San Francisco",
               "fontes": [
                 "yt-spv-sf-1-dia",
                 "yt-rota1nv-sf-1-dia",
@@ -1703,7 +1733,9 @@
               "fontes": [
                 "yt-yosemite-3-videos"
               ],
-              "verificar": "Lua quase cheia nesta noite"
+              "verificar": "Lua quase cheia nesta noite",
+              "onde": "Yosemite Valley",
+              "maps": "El Capitan Meadow, Yosemite"
             }
           ]
         },
@@ -2082,7 +2114,8 @@
           "itens": [
             {
               "nome": "Lake Hollywood Park",
-              "texto": "Gramado de bairro com a vista mais próxima do letreiro. Vá cedo, antes dos ônibus de turismo."
+              "texto": "Gramado de bairro com a vista mais próxima do letreiro. Vá cedo, antes dos ônibus de turismo.",
+              "onde": "Lake Hollywood Park, Los Angeles"
             },
             {
               "nome": "Respeite o bairro",
@@ -2094,6 +2127,11 @@
               "fontes": [
                 "yt-la-travel-guide-10-lugares",
                 "yt-unseen-california"
+              ],
+              "onde": "Griffith Observatory, Los Angeles",
+              "coord": [
+                34.11843,
+                -118.30039
               ]
             }
           ]
@@ -2132,7 +2170,9 @@
           "itens": [
             {
               "nome": "Keller House",
-              "texto": "Logo no começo fica uma cabana de pedra de 1903, uma das construções mais antigas de Malibu."
+              "texto": "Logo no começo fica uma cabana de pedra de 1903, uma das construções mais antigas de Malibu.",
+              "onde": "Solstice Canyon, Malibu",
+              "maps": "Keller House, Solstice Canyon, Malibu"
             }
           ]
         }
@@ -2304,7 +2344,9 @@
           "itens": [
             {
               "nome": "China Cove",
-              "texto": "Enseada de água esmeralda vista do alto da escada. Uma das paradas mais bonitas."
+              "texto": "Enseada de água esmeralda vista do alto da escada. Uma das paradas mais bonitas.",
+              "onde": "Point Lobos State Natural Reserve",
+              "maps": "China Cove, Point Lobos"
             },
             {
               "nome": "Chegue cedo",
@@ -2346,7 +2388,9 @@
           "itens": [
             {
               "nome": "Cathedral Grove",
-              "texto": "Trecho de silêncio pedido aos visitantes. Vale parar e ouvir a floresta."
+              "texto": "Trecho de silêncio pedido aos visitantes. Vale parar e ouvir a floresta.",
+              "onde": "Muir Woods National Monument",
+              "maps": "Cathedral Grove, Muir Woods"
             },
             {
               "nome": "Reserva obrigatória",
@@ -2377,11 +2421,13 @@
           "itens": [
             {
               "nome": "Hawk Hill",
-              "texto": "Mirante mais alto, com a ponte e a cidade ao fundo. No outono passam aves de rapina migrando."
+              "texto": "Mirante mais alto, com a ponte e a cidade ao fundo. No outono passam aves de rapina migrando.",
+              "onde": "Hawk Hill, Marin Headlands"
             },
             {
               "nome": "Rodeo Beach",
-              "texto": "Praia de pedrinhas coloridas entre colinas, boa para o fim da manhã."
+              "texto": "Praia de pedrinhas coloridas entre colinas, boa para o fim da manhã.",
+              "onde": "Rodeo Beach, Marin Headlands"
             }
           ]
         }
@@ -2403,7 +2449,8 @@
             {
               "nome": "Point Reyes Station",
               "texto": "Na volta, pare na Bovine Bakery e na Cowgirl Creamery, na vila.",
-              "verificar": "Confirmar se abrem no feriado"
+              "verificar": "Confirmar se abrem no feriado",
+              "onde": "Point Reyes Station, CA"
             },
             {
               "nome": "Farol de Point Reyes",
@@ -2491,11 +2538,13 @@
               ],
               "tempos": {
                 "yt-ctml-pch-20-paradas": 445
-              }
+              },
+              "onde": "Lands End Lookout, San Francisco"
             },
             {
               "nome": "Labirinto em Eagle's Point",
-              "texto": "Desvio curto até um labirinto de pedras num penhasco."
+              "texto": "Desvio curto até um labirinto de pedras num penhasco.",
+              "onde": "Lands End Labyrinth, San Francisco"
             }
           ]
         }
@@ -2588,7 +2637,8 @@
               "texto": "Passarelas planas sobre o campo, com vista de Half Dome e Yosemite Falls.",
               "fontes": [
                 "yt-yosemite-3-videos"
-              ]
+              ],
+              "onde": "Cook's Meadow, Yosemite"
             }
           ]
         }
@@ -2628,7 +2678,8 @@
               "texto": "Leve binóculo para ver os escaladores na parede.",
               "fontes": [
                 "yt-yosemite-3-videos"
-              ]
+              ],
+              "onde": "El Capitan Meadow, Yosemite"
             },
             {
               "nome": "Firefall",

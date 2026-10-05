@@ -36,6 +36,12 @@ def main():
                     for f in it.get("fontes", []):
                         if f not in g.get("fontes", {}):
                             erros.append(f"{onde} · '{it.get('nome')}': fonte '{f}' não cadastrada")
+                    if s.get("tipo") in ("fazer", "cafe", "comer") and not (it.get("onde") or it.get("maps")):
+                        avisos.append(f"{onde} · {it.get('nome')}: lugar sem `onde` (sem link do Google Maps)")
+                    if (it.get("onde") or s.get("tipo") in ("fazer", "cafe", "comer")) and not it.get("foto") and not it.get("sem_foto"):
+                        avisos.append(f"{onde} · {it.get('nome')}: sem foto (rode scripts/enriquecer.py --so fotos)")
+                    elif it.get("foto") and not (SITE / it["foto"]).exists():
+                        erros.append(f"{onde} · {it.get('nome')}: arquivo {it['foto']} não existe")
                     if it.get("verificar"):
                         avisos.append(f"{onde} · {it['nome']}: {it['verificar'] if isinstance(it['verificar'], str) else 'verificar'}")
 

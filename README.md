@@ -48,6 +48,7 @@
 ```bash
 python scripts/enriquecer.py            # atualiza fotos, pôr do sol, preços e orçamento no JSON
 python scripts/enriquecer.py --so hoteis # só os preços de hotel
+python scripts/enriquecer.py --so fotos  # fotos dos cafés, restaurantes e passeios das dicas (site/img/dicas/)
 python scripts/validar.py               # confere guias.json
 python scripts/servir.py                # abre o site localmente
 ```
