@@ -52,6 +52,22 @@
       "url": null,
       "arquivo": "transcricoes/2026-10-05_peter-owen_norcal-top-10.md",
       "data": "2026-10-05"
+    },
+    "yt-la-travel-guide-10-lugares": {
+      "tipo": "youtube",
+      "titulo": "Los Angeles Travel Guide: 10 Best Places to Visit",
+      "canal": "Los Angeles Travel Guide",
+      "url": null,
+      "arquivo": "transcricoes/2026-10-05_la-travel-guide_10-lugares.md",
+      "data": "2026-10-05"
+    },
+    "yt-unseen-california": {
+      "tipo": "youtube",
+      "titulo": "Unseen California: Most Amazing Places and Hidden Gems",
+      "canal": "Unseen California",
+      "url": null,
+      "arquivo": "transcricoes/2026-10-05_unseen-california_hidden-gems.md",
+      "data": "2026-10-05"
     }
   },
   "dias": {
@@ -249,6 +265,14 @@
               "texto": "Brunch muito elogiado em Yucca Valley. Funciona em poucos dias da semana.",
               "onde": "Yucca Valley, CA",
               "verificar": "Confirmar se abre no domingo"
+            },
+            {
+              "nome": "Jantar de chegada: tacos",
+              "texto": "Depois de 3 horas de estrada, um taco truck perto do hotel resolve o jantar. Há vários espalhados pela cidade.",
+              "fontes": [
+                "yt-la-travel-guide-10-lugares"
+              ],
+              "onde": "Koreatown, Los Angeles"
             }
           ]
         },
@@ -334,6 +358,15 @@
               "nome": "Malibu Pier",
               "texto": "Píer histórico com surfistas dos dois lados.",
               "onde": "Malibu Pier"
+            },
+            {
+              "nome": "Na volta: Venice Canals e a ciclovia",
+              "texto": "Os canais de Venice são um bairro tranquilo de pontes e casas à beira d'água. Dá para alugar bicicleta e seguir pela ciclovia da praia até o Santa Monica Pier, com a roda-gigante movida a energia solar.",
+              "fontes": [
+                "yt-la-travel-guide-10-lugares",
+                "yt-unseen-california"
+              ],
+              "onde": "Venice Canals, Los Angeles"
             }
           ]
         },
@@ -395,7 +428,10 @@
           "itens": [
             {
               "nome": "Saia antes das 7h",
-              "texto": "Sair de Koreatown antes do horário de pico economiza até uma hora."
+              "texto": "Sair de Koreatown antes do horário de pico economiza até uma hora. LA é enorme: agrupe os passeios por região para passar menos tempo no trânsito.",
+              "fontes": [
+                "yt-la-travel-guide-10-lugares"
+              ]
             },
             {
               "nome": "Trailhead certo",
@@ -430,6 +466,34 @@
               "texto": "Trilha mais longa até um mirante sobre uma enseada em forma de batata.",
               "stats": "8 km ida e volta",
               "onde": "Santa Cruz Island"
+            },
+            {
+              "nome": "Alternativa: Santa Catalina Island",
+              "texto": "Ilha a 35 km da costa, com balsa saindo de San Pedro ou Long Beach. Águas claras com florestas de algas, o Casino de Avalon, de 1929, e bisões soltos nas colinas. Serve de plano B se a balsa das Channel Islands não sair na terça.",
+              "onde": "Avalon, Santa Catalina Island",
+              "fontes": [
+                "yt-unseen-california"
+              ],
+              "verificar": "Confirmar horários da balsa em 24/11"
+            },
+            {
+              "nome": "Plano reserva: Griffith Observatory",
+              "texto": "Se a balsa não sair, termine o dia no observatório: vista da cidade inteira e um dos melhores ângulos para fotografar o letreiro de Hollywood. Na terça o prédio abre.",
+              "fontes": [
+                "yt-la-travel-guide-10-lugares",
+                "yt-unseen-california"
+              ],
+              "onde": "Griffith Observatory, Los Angeles"
+            },
+            {
+              "nome": "Plano reserva: Getty Center",
+              "texto": "Museu no alto de uma colina, com arquitetura marcante e jardins com vista. Entrada gratuita, estacionamento pago.",
+              "fontes": [
+                "yt-la-travel-guide-10-lugares",
+                "yt-unseen-california"
+              ],
+              "onde": "Getty Center, Los Angeles",
+              "verificar": "Fecha às segundas; confirmar horário e reserva"
             }
           ]
         },
@@ -513,7 +577,8 @@
               "nome": "Santa Barbara County Courthouse",
               "texto": "Tribunal de 1929 em estilo colonial espanhol, com murais e uma torre do relógio aberta ao público com vista 360° da cidade. Entrada gratuita.",
               "fontes": [
-                "yt-ctml-pch-20-paradas"
+                "yt-ctml-pch-20-paradas",
+                "yt-unseen-california"
               ],
               "tempos": {
                 "yt-ctml-pch-20-paradas": 344
@@ -718,6 +783,13 @@
               "nome": "Taqueria Pacheco",
               "texto": "Tacos simples em Soledad, perto da entrada oeste do parque.",
               "onde": "Soledad"
+            },
+            {
+              "nome": "In-N-Out Burger",
+              "texto": "A rede de hambúrguer clássica da Califórnia aparece ao longo da US-101. Peça o Animal Style, com cebola grelhada e molho da casa.",
+              "fontes": [
+                "yt-la-travel-guide-10-lugares"
+              ]
             }
           ]
         },
@@ -1362,6 +1434,14 @@
             {
               "nome": "Respeite o bairro",
               "texto": "É área residencial. Estacione só onde as placas permitem."
+            },
+            {
+              "nome": "Outro ângulo: Griffith Observatory",
+              "texto": "O terraço do observatório tem vista do letreiro e da cidade. Às segundas o prédio fecha, mas o terraço e as trilhas ficam abertos.",
+              "fontes": [
+                "yt-la-travel-guide-10-lugares",
+                "yt-unseen-california"
+              ]
             }
           ]
         }
@@ -1416,7 +1496,10 @@
           "itens": [
             {
               "nome": "Maré baixa",
-              "texto": "Com a maré alta quase não sobra areia. Confira a tábua de marés."
+              "texto": "Com a maré alta quase não sobra areia. Confira a tábua de marés.",
+              "fontes": [
+                "yt-la-travel-guide-10-lugares"
+              ]
             },
             {
               "nome": "Escada íngreme",
@@ -1545,7 +1628,8 @@
               "texto": "A foto clássica é do recuo ao norte da ponte.",
               "fontes": [
                 "yt-bmtm-california-20-paradas",
-                "yt-peterowen-norcal-top10"
+                "yt-peterowen-norcal-top10",
+                "yt-unseen-california"
               ]
             },
             {

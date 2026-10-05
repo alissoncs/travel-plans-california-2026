@@ -18,3 +18,5 @@ Transcrições com marcação de tempo (`12:34`) permitem que o site leve direto
 | [2026-10-05_california-through-my-lens_pch-20-paradas.md](2026-10-05_california-through-my-lens_pch-20-paradas.md) | California Through My Lens: PCH, 20 paradas | 05/10/2026 |
 | [2026-10-05_be-my-travel-muse_california-20-paradas.md](2026-10-05_be-my-travel-muse_california-20-paradas.md) | Be My Travel Muse: road trip pela Califórnia, 20 paradas | 05/10/2026 |
 | [2026-10-05_peter-owen_norcal-top-10.md](2026-10-05_peter-owen_norcal-top-10.md) | Peter Owen: top 10 do norte da Califórnia | 05/10/2026 |
+| [2026-10-05_la-travel-guide_10-lugares.md](2026-10-05_la-travel-guide_10-lugares.md) | Los Angeles Travel Guide: 10 lugares | 05/10/2026 |
+| [2026-10-05_unseen-california_hidden-gems.md](2026-10-05_unseen-california_hidden-gems.md) | Unseen California: lugares e joias escondidas | 05/10/2026 |
