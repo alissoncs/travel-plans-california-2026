@@ -32,8 +32,8 @@ description: Extrai dicas de transcrições ou resumos de vídeos do YouTube (pa
 - Avisos de segurança ou logística que mudam o roteiro (por exemplo, a região do hotel) também viram `alertas` do dia em `site/roteiro.json`.
 
 ## 4. Fechar
-1. Rode `python scripts/validar.py` e corrija os erros.
+1. Rode `python scripts/enriquecer.py --so mapa` para geocodificar as dicas novas (as que falharem podem receber `coord` à mão) e depois `python scripts/validar.py`, corrigindo os erros.
 2. No arquivo da transcrição, preencha `processado:` e liste onde cada dica entrou.
 3. Atualize a tabela de `transcricoes/README.md`.
-4. Republique o site: Artifact com `site/index.html` e `files` `["guias.json", "roteiro.json"]` (root `site`).
+4. Republique o site: Artifact com `site/index.html` e `files` `["guias.json", "roteiro.json", "rotas.json"]` (root `site`), mais commit e push.
 5. Responda ao usuário com um resumo curto: quantas dicas entraram e em quais páginas, o que foi descartado e por quê, e o que ficou para verificar.

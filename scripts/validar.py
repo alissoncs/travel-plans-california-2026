@@ -39,6 +39,15 @@ def main():
                     if it.get("verificar"):
                         avisos.append(f"{onde} · {it['nome']}: {it['verificar'] if isinstance(it['verificar'], str) else 'verificar'}")
 
+    rotas_path = SITE / "rotas.json"
+    rotas = json.loads(rotas_path.read_text(encoding="utf-8")) if rotas_path.exists() else {}
+    for k, l in r["lugares"].items():
+        if not l.get("coord"):
+            avisos.append(f"lugar {k}: sem coordenada (rode scripts/enriquecer.py --so mapa)")
+    for d in r["dias"]:
+        if d.get("trajeto") and d["id"] not in rotas:
+            avisos.append(f"{d['id']}: tem trajeto mas não tem rota em rotas.json (rode scripts/enriquecer.py --so mapa)")
+
     sem_post = sorted(dias - set(g.get("dias", {}))) + sorted(f"lugar:{k}" for k in lugares - set(g.get("lugares", {})))
     for f, meta in g.get("fontes", {}).items():
         if meta.get("tipo") == "youtube" and not meta.get("url"):

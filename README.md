@@ -25,7 +25,9 @@
 | [transcricoes/](transcricoes/) | Transcrições e resumos de vídeos do YouTube usados nos posts |
 | [scripts/validar.py](scripts/validar.py) | Confere se `guias.json` bate com `roteiro.json` e lista o que falta verificar |
 | [site/index.html](site/index.html) | Site mobile do roteiro (renderiza o JSON). Publicado em https://claude.ai/artifact/2yfew8tQhbBMp9dwLTVD3d |
-| [scripts/enriquecer.py](scripts/enriquecer.py) | Preenche o JSON com APIs públicas: fotos (Wikipedia/Commons), pôr do sol (Sunrise-Sunset.org), preços de hotel (Xotelo), totais do orçamento |
+| [scripts/enriquecer.py](scripts/enriquecer.py) | Preenche o JSON com APIs públicas: fotos (Wikipedia/Commons), pôr do sol (Sunrise-Sunset.org), preços de hotel (Xotelo), totais do orçamento e, com `--so mapa`, coordenadas (Wikipedia, Nominatim), rotas (OSRM) e o fundo vetorial do mapa |
+| [site/rotas.json](site/rotas.json) | Rotas de carro, bike e balsa de cada dia, geradas a partir do campo `trajeto` dos dias |
+| [site/mapa-base.json](site/mapa-base.json) | Contorno da Califórnia e vizinhos (Natural Earth), usado quando os tiles do mapa não carregam, como no Artifact |
 | [scripts/servir.py](scripts/servir.py) | Serve o site em http://localhost:8000 (e no celular, no mesmo Wi-Fi) |
 | [roteiro.md](roteiro.md) | Versão em texto do roteiro, para leitura |
 | [reservas.md](reservas.md) | Reservas feitas, pendentes e prazos |
@@ -50,6 +52,12 @@ python scripts/validar.py               # confere guias.json
 python scripts/servir.py                # abre o site localmente
 ```
 
+## Mapa
+
+O site tem um mapa Leaflet. No computador, a partir de 1100px de largura, ele fica fixo à direita; no celular, abre na página `#mapa`, pelo botão "Mapa" ou pelo chip "Ver no mapa" de cada dia e lugar. Marca a rota de cada dia, os dias, os lugares, as dicas, cafés e restaurantes e os hotéis, e acompanha a página aberta. Os tiles são os mapas cinza da Esri (claro e escuro). Onde eles são bloqueados, como no Artifact do claude.ai, o mapa usa `mapa-base.json`.
+
+Para mudar uma rota, edite o `trajeto` do dia em `roteiro.json` (pontos de passagem e `modo`: `carro`, `bike` ou `balsa`) e rode `python scripts/enriquecer.py --so mapa`.
+
 ## APIs públicas avaliadas
 
 | API | Uso | Situação |
@@ -57,6 +65,9 @@ python scripts/servir.py                # abre o site localmente
 | Wikipedia REST + Wikimedia Commons | Fotos e créditos dos lugares | ✅ em uso, sem chave |
 | Sunrise-Sunset.org | Pôr do sol por dia e coordenada | ✅ em uso, sem chave |
 | Xotelo (`/list`, `/rates`) | Preços de hotel do Tripadvisor (Booking, Agoda, Trip.com…) | ✅ em uso, sem chave. `/search` exige RapidAPI |
+| Wikipedia (coordenadas) e Nominatim (OSM) | Coordenadas dos lugares e das dicas | ✅ em uso, sem chave (Nominatim: 1 requisição por segundo) |
+| OSRM (`router.project-osrm.org`, `routing.openstreetmap.de`) | Rotas de carro e bike | ✅ em uso, sem chave |
+| Esri World Gray Canvas | Tiles do mapa | ✅ em uso, com atribuição. O CARTO passou a exigir chave |
 | NPS Data API | Alertas dos parques nacionais | Exige chave gratuita e não aceita chamadas do navegador. Candidata para o script |
 | Amadeus Self-Service | Hotéis | ❌ descontinuada em 17/07/2026 |
 

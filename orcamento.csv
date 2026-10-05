@@ -1,15 +1,15 @@
 #taxa,5.62
-# plano: AB = ambos, A = só Plano A, B = só Plano B | status: estimado, confirmado, opcional, verificar
+# plano: letras dos planos em que a linha vale (ABC = todos; A, B ou C = só aquele plano) | status: estimado, confirmado, opcional, verificar
 # Exclui hotéis já reservados e aluguel do carro. San Diego (dias 1-5) coberto pela ADP.
 dia,data,plano,categoria,item,usd,status
-6,22/11,AB,ingresso,Joshua Tree NP (veículo),35,confirmado
-6,22/11,AB,gasolina,SAN -> Joshua Tree -> LA,50,estimado
-6,22/11,AB,alimentacao,Refeições do dia,80,estimado
-6,22/11,AB,estacionamento,The LINE Hotel (noite 22),45,verificar
-7,23/11,AB,alimentacao,Refeições do dia,100,estimado
-7,23/11,AB,gasolina,LA <-> Malibu,25,estimado
-7,23/11,AB,estacionamento,Trilha / praia em Malibu,15,estimado
-7,23/11,AB,estacionamento,The LINE Hotel (noite 23),45,verificar
+6,22/11,ABC,ingresso,Joshua Tree NP (veículo),35,confirmado
+6,22/11,ABC,gasolina,SAN -> Joshua Tree -> LA,50,estimado
+6,22/11,ABC,alimentacao,Refeições do dia,80,estimado
+6,22/11,ABC,estacionamento,The LINE Hotel (noite 22),45,verificar
+7,23/11,ABC,alimentacao,Refeições do dia,100,estimado
+7,23/11,ABC,gasolina,LA <-> Malibu,25,estimado
+7,23/11,ABC,estacionamento,Trilha / praia em Malibu,15,estimado
+7,23/11,ABC,estacionamento,The LINE Hotel (noite 23),45,verificar
 8,24/11,A,passeio,Channel Islands: balsa + caiaque (2x US$ 231),462,verificar
 8,24/11,A,alimentacao,Refeições do dia,70,estimado
 8,24/11,A,gasolina,LA <-> Ventura,25,estimado
@@ -23,17 +23,23 @@ dia,data,plano,categoria,item,usd,status
 9,25/11,B,gasolina,Cambria -> Big Sur -> SF,60,estimado
 9,25/11,B,ingresso,Point Lobos (estacionamento),10,estimado
 9,25/11,B,alimentacao,Refeições do dia,100,estimado
-9,25/11,AB,estacionamento,Axiom Hotel (noite 25),65,verificar
-10,26/11,AB,ingresso,Muir Woods (2x US$ 15) + reserva de estacionamento,40,estimado
-10,26/11,AB,gasolina,Marin + reabastecer na devolução,30,estimado
-10,26/11,AB,alimentacao,Café da manhã e almoço,50,estimado
-10,26/11,AB,alimentacao,Ceia de Thanksgiving (2 pessoas),300,estimado
-10,26/11,AB,transporte,Uber/Waymo à noite,25,estimado
-11,27/11,AB,passeio,Aluguel de bike (2 pessoas),90,estimado
-11,27/11,AB,transporte,Balsa Sausalito -> SF (2 pessoas),30,estimado
-11,27/11,AB,alimentacao,Refeições do dia,120,estimado
-11,27/11,AB,transporte,Uber/Waymo,30,estimado
-11,27/11,AB,passeio,Alcatraz (2x US$ 45.25),90.50,opcional
-12,28/11,AB,transporte,Uber até o SFO,55,estimado
-12,28/11,AB,alimentacao,Lanche no aeroporto,25,estimado
-0,-,AB,carro,Taxa one-way Sixt + serviço de pedágio,0,verificar
+9,25/11,ABC,estacionamento,Axiom Hotel (noite 25),65,verificar
+8,24/11,C,ingresso,Yosemite: entrada do veículo + taxa de estrangeiros,235,verificar
+8,24/11,C,hospedagem,Hotel extra em Yosemite,250,verificar
+8,24/11,C,gasolina,LA -> Yosemite,65,estimado
+8,24/11,C,alimentacao,Refeições do dia,100,estimado
+9,25/11,C,gasolina,Yosemite -> SF,45,estimado
+9,25/11,C,alimentacao,Refeições do dia,90,estimado
+10,26/11,ABC,ingresso,Muir Woods (2x US$ 15) + reserva de estacionamento,40,estimado
+10,26/11,ABC,gasolina,Marin + reabastecer na devolução,30,estimado
+10,26/11,ABC,alimentacao,Café da manhã e almoço,50,estimado
+10,26/11,ABC,alimentacao,Ceia de Thanksgiving (2 pessoas),300,estimado
+10,26/11,ABC,transporte,Uber/Waymo à noite,25,estimado
+11,27/11,ABC,passeio,Aluguel de bike (2 pessoas),90,estimado
+11,27/11,ABC,transporte,Balsa Sausalito -> SF (2 pessoas),30,estimado
+11,27/11,ABC,alimentacao,Refeições do dia,120,estimado
+11,27/11,ABC,transporte,Uber/Waymo,30,estimado
+11,27/11,ABC,passeio,Alcatraz (2x US$ 45.25),90.50,opcional
+12,28/11,ABC,transporte,Uber até o SFO,55,estimado
+12,28/11,ABC,alimentacao,Lanche no aeroporto,25,estimado
+0,-,ABC,carro,Taxa one-way Sixt + serviço de pedágio,0,verificar

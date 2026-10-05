@@ -14,7 +14,9 @@
 
 | Prioridade | Item | Detalhe |
 |---|---|---|
-| 🔴 | Decidir Plano A × Plano B | Ver [roteiro.md](roteiro.md) |
+| 🔴 | Decidir entre os Planos A, B e C | Ver [roteiro.md](roteiro.md) |
+| 🔴 | Hotel em Yosemite (só Plano C) | 24/11 + cancelar a 3ª noite do LINE. Dentro do vale esgota cedo |
+| 🟠 | Yosemite: correntes e taxa (só Plano C) | Política de correntes da Sixt, carro com tração integral, taxa de entrada para estrangeiros |
 | 🔴 | Ceia de Thanksgiving (26/11) em SF | Restaurantes lotam; menu fixo costuma custar US$ 100–150/pessoa |
 | 🔴 | Muir Woods: estacionamento | GoMuirWoods.com, 26/11 às 8h |
 | 🔴 | Channel Islands (só Plano A) | islandpackers.com: balsa + caiaque para 24/11. Confirmar se há saída na terça |

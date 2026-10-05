@@ -20,3 +20,4 @@ Transcrições com marcação de tempo (`12:34`) permitem que o site leve direto
 | [2026-10-05_peter-owen_norcal-top-10.md](2026-10-05_peter-owen_norcal-top-10.md) | Peter Owen: top 10 do norte da Califórnia | 05/10/2026 |
 | [2026-10-05_la-travel-guide_10-lugares.md](2026-10-05_la-travel-guide_10-lugares.md) | Los Angeles Travel Guide: 10 lugares | 05/10/2026 |
 | [2026-10-05_unseen-california_hidden-gems.md](2026-10-05_unseen-california_hidden-gems.md) | Unseen California: lugares e joias escondidas | 05/10/2026 |
+| [2026-10-05_yosemite_3-videos.md](2026-10-05_yosemite_3-videos.md) | Três vídeos sobre Yosemite (virou o Plano C) | 05/10/2026 |

@@ -1,6 +1,7 @@
 # Roteiro dia a dia
 
-> Última revisão: 05/10/2026. Decisão pendente entre **Plano A** (mantém reservas) e **Plano B** (recomendado, mais relaxante).
+> Última revisão: 05/10/2026. Decisão pendente entre **Plano A** (mantém reservas), **Plano B** (recomendado, mais relaxante) e **Plano C** (Yosemite).
+> A versão estruturada, que alimenta o site e o mapa, é `site/roteiro.json`.
 > Pôr do sol ~16:45. Lua cheia ~24/11 (céu estrelado em Joshua Tree fica mais fraco em 22/11).
 
 ## Parte 1 — San Diego (evento ADP) · 17 a 21/11
@@ -47,6 +48,13 @@
 |---|---|---|
 | 8 | 24/11 Ter | Check-out LA sem pressa → Santa Barbara (café/caminhada) → Morro Bay. Pernoite em **Cambria / San Simeon**. ⚠️ hotel a reservar. |
 | 9 | 25/11 Qua | Elefantes-marinhos em **Piedras Blancas** → **Big Sur** pela Highway 1 (McWay Falls, Limekiln) → **Point Lobos** → SF no fim da tarde. ⚠️ verificar estrada e parques (incêndios Timber/Plaskett 2026). |
+
+### PLANO C — Yosemite (cancelar a 3ª noite em LA)
+
+| Dia | Data | Programa |
+|---|---|---|
+| 8 | 24/11 Ter | LA às 6h → Mariposa Grove (sequoias gigantes, Grizzly Giant) → Tunnel View no pôr do sol. Noite em Yosemite. ⚠️ hotel a reservar; correntes e taxa de estrangeiros a confirmar. |
+| 9 | 25/11 Qua | Cook's Meadow, Lower Yosemite Fall, El Capitan Meadow, Bridalveil → SF (sair até 13h). Half Dome, Glacier Point e Tioga costumam estar fechados. |
 
 Trade-off: Plano B troca as Channel Islands por dois dias tranquilos na costa mais bonita e elimina o dia de 8–9h de estrada.
 

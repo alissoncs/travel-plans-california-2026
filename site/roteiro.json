@@ -8,7 +8,7 @@
     "capa": "bixby",
     "plano_recomendado": "B"
   },
-  "atualizado_em": "2026-10-05 16:12",
+  "atualizado_em": "2026-10-05 18:16",
   "planos": {
     "A": {
       "nome": "Plano A",
@@ -17,6 +17,10 @@
     "B": {
       "nome": "Plano B",
       "resumo": "Cancela a 3ª noite em LA e dorme em Cambria. Dois dias tranquilos pela costa de Big Sur, sem o dia de 8h de estrada."
+    },
+    "C": {
+      "nome": "Plano C",
+      "resumo": "Troca a costa central por Yosemite. Sequoias gigantes em Mariposa Grove, uma noite no vale entre os paredões de granito e volta para SF pela serra."
     }
   },
   "fases": [
@@ -50,7 +54,8 @@
       "fase": "sd",
       "planos": [
         "A",
-        "B"
+        "B",
+        "C"
       ],
       "titulo": "Chegada em San Diego",
       "regiao": "Coronado",
@@ -92,7 +97,8 @@
       "fase": "sd",
       "planos": [
         "A",
-        "B"
+        "B",
+        "C"
       ],
       "titulo": "Evento ADP",
       "regiao": "San Diego",
@@ -141,7 +147,8 @@
       "fase": "road",
       "planos": [
         "A",
-        "B"
+        "B",
+        "C"
       ],
       "titulo": "Joshua Tree",
       "regiao": "Deserto de Mojave",
@@ -206,7 +213,34 @@
       "sol": {
         "nascer": "06:22",
         "por": "16:39"
-      }
+      },
+      "trajeto": [
+        {
+          "modo": "carro",
+          "pontos": [
+            [
+              32.7338,
+              -117.1933
+            ],
+            [
+              34.0935,
+              -116.2623
+            ],
+            [
+              34.0255,
+              -116.1418
+            ],
+            [
+              33.9268,
+              -116.1876
+            ],
+            [
+              34.0617,
+              -118.3046
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "dia-7",
@@ -215,7 +249,8 @@
       "fase": "road",
       "planos": [
         "A",
-        "B"
+        "B",
+        "C"
       ],
       "titulo": "Malibu",
       "regiao": "Santa Monica Mountains",
@@ -268,7 +303,34 @@
       "sol": {
         "nascer": "06:34",
         "por": "16:49"
-      }
+      },
+      "trajeto": [
+        {
+          "modo": "carro",
+          "pontos": [
+            [
+              34.0617,
+              -118.3046
+            ],
+            [
+              34.1266,
+              -118.3289
+            ],
+            [
+              34.1215,
+              -118.9303
+            ],
+            [
+              34.0384,
+              -118.8749
+            ],
+            [
+              34.0617,
+              -118.3046
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "dia-8-a",
@@ -328,7 +390,48 @@
       "sol": {
         "nascer": "06:38",
         "por": "16:51"
-      }
+      },
+      "trajeto": [
+        {
+          "modo": "carro",
+          "pontos": [
+            [
+              34.0617,
+              -118.3046
+            ],
+            [
+              34.2486,
+              -119.2667
+            ]
+          ]
+        },
+        {
+          "modo": "balsa",
+          "pontos": [
+            [
+              34.2486,
+              -119.2667
+            ],
+            [
+              34.049,
+              -119.556
+            ]
+          ]
+        },
+        {
+          "modo": "carro",
+          "pontos": [
+            [
+              34.2486,
+              -119.2667
+            ],
+            [
+              34.0617,
+              -118.3046
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "dia-8-b",
@@ -383,7 +486,30 @@
       "sol": {
         "nascer": "06:46",
         "por": "16:54"
-      }
+      },
+      "trajeto": [
+        {
+          "modo": "carro",
+          "pontos": [
+            [
+              34.0617,
+              -118.3046
+            ],
+            [
+              34.4208,
+              -119.6982
+            ],
+            [
+              35.3709,
+              -120.8664
+            ],
+            [
+              35.5641,
+              -121.0807
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "dia-9-a",
@@ -441,7 +567,26 @@
       "sol": {
         "nascer": "06:54",
         "por": "16:55"
-      }
+      },
+      "trajeto": [
+        {
+          "modo": "carro",
+          "pontos": [
+            [
+              34.0617,
+              -118.3046
+            ],
+            [
+              36.5156,
+              -121.9387
+            ],
+            [
+              37.7849,
+              -122.408
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "dia-9-b",
@@ -510,6 +655,215 @@
       "sol": {
         "nascer": "06:52",
         "por": "16:55"
+      },
+      "trajeto": [
+        {
+          "modo": "carro",
+          "pontos": [
+            [
+              35.5641,
+              -121.0807
+            ],
+            [
+              35.663,
+              -121.258
+            ],
+            [
+              36.1579,
+              -121.6721
+            ],
+            [
+              36.3728,
+              -121.902
+            ],
+            [
+              36.5156,
+              -121.9387
+            ],
+            [
+              37.7849,
+              -122.408
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dia-8-c",
+      "rotulo": "8",
+      "data": "2026-11-24",
+      "fase": "road",
+      "planos": [
+        "C"
+      ],
+      "titulo": "Sequoias gigantes",
+      "regiao": "Mariposa Grove → Yosemite Valley",
+      "coord": [
+        37.7456,
+        -119.5936
+      ],
+      "capa": "mariposa",
+      "estrada": [
+        {
+          "trecho": "LA → Mariposa Grove",
+          "tempo": "4h45"
+        },
+        {
+          "trecho": "Mariposa Grove → Yosemite Valley",
+          "tempo": "1h15"
+        }
+      ],
+      "resumo": "Saída de LA bem cedo rumo à Sierra Nevada. À tarde, as sequoias gigantes de Mariposa Grove; no fim do dia, a vista clássica do vale no Tunnel View.",
+      "atividades": [
+        {
+          "tipo": "transporte",
+          "titulo": "Estrada até a entrada sul",
+          "descricao": "Sair às 6h pela I-5 e CA-99, passando por Fresno."
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Mariposa Grove",
+          "descricao": "O maior bosque de sequoias gigantes do parque. Big Trees Loop e o Grizzly Giant, com cerca de 1.800 anos.",
+          "stats": "3–3,5 km",
+          "lugar": "mariposa"
+        },
+        {
+          "tipo": "vista",
+          "titulo": "Tunnel View no pôr do sol",
+          "descricao": "El Capitan, Bridalveil Fall e Half Dome na mesma moldura.",
+          "lugar": "tunnelview"
+        },
+        {
+          "tipo": "hotel",
+          "titulo": "Noite em Yosemite",
+          "descricao": "Opções com preço na página Hotéis."
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "aviso",
+          "texto": "Fim de novembro na serra: pode haver neve e exigência de correntes. Confirmar a política da Sixt e pedir carro com tração integral."
+        },
+        {
+          "nivel": "aviso",
+          "texto": "Em 2026 Yosemite passou a cobrar uma taxa extra de estrangeiros. Confirmar o valor da entrada."
+        }
+      ],
+      "trajeto": [
+        {
+          "modo": "carro",
+          "pontos": [
+            [
+              34.0617,
+              -118.3046
+            ],
+            [
+              37.5067,
+              -119.608
+            ],
+            [
+              37.7156,
+              -119.677
+            ],
+            [
+              37.743,
+              -119.598
+            ]
+          ]
+        }
+      ],
+      "sol": {
+        "nascer": "06:46",
+        "por": "16:43"
+      }
+    },
+    {
+      "id": "dia-9-c",
+      "rotulo": "9",
+      "data": "2026-11-25",
+      "fase": "road",
+      "planos": [
+        "C"
+      ],
+      "titulo": "Yosemite Valley",
+      "regiao": "Vale → San Francisco",
+      "coord": [
+        37.7456,
+        -119.5936
+      ],
+      "capa": "elcapitan",
+      "estrada": [
+        {
+          "trecho": "Yosemite Valley → SF",
+          "tempo": "4h+ (véspera do feriado)"
+        }
+      ],
+      "resumo": "Manhã no vale, entre campos, cachoeiras e os paredões de granito. Saída depois do almoço para chegar a SF à noite.",
+      "atividades": [
+        {
+          "tipo": "trilha",
+          "titulo": "Cook's Meadow ao amanhecer",
+          "descricao": "Passarelas de madeira sobre o campo, com Half Dome e Yosemite Falls ao fundo.",
+          "stats": "1,6 km · plano",
+          "lugar": "yosemitevalley"
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Lower Yosemite Fall",
+          "descricao": "Loop curto até a base da cachoeira mais alta da América do Norte.",
+          "stats": "1,6 km",
+          "lugar": "yosemitefalls"
+        },
+        {
+          "tipo": "vista",
+          "titulo": "El Capitan Meadow",
+          "descricao": "Campo aos pés do paredão de 900 m. Com binóculo dá para ver os escaladores.",
+          "lugar": "elcapitan"
+        },
+        {
+          "tipo": "vista",
+          "titulo": "Bridalveil Fall",
+          "descricao": "Trilha de 20 minutos até a base, na saída do vale.",
+          "lugar": "bridalveil"
+        },
+        {
+          "tipo": "hotel",
+          "titulo": "Check-in no Axiom Hotel",
+          "descricao": "Union Square."
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "aviso",
+          "texto": "Véspera do Thanksgiving: sair do vale até as 13h. Não deixar bagagem visível no carro em SF."
+        },
+        {
+          "nivel": "info",
+          "texto": "O Axiom fica a poucas quadras do Tenderloin. À noite, use Uber mesmo para trajetos curtos."
+        }
+      ],
+      "trajeto": [
+        {
+          "modo": "carro",
+          "pontos": [
+            [
+              37.743,
+              -119.598
+            ],
+            [
+              37.7593,
+              -119.8065
+            ],
+            [
+              37.7849,
+              -122.408
+            ]
+          ]
+        }
+      ],
+      "sol": {
+        "nascer": "06:47",
+        "por": "16:43"
       }
     },
     {
@@ -519,7 +873,8 @@
       "fase": "road",
       "planos": [
         "A",
-        "B"
+        "B",
+        "C"
       ],
       "titulo": "Thanksgiving em Marin",
       "regiao": "Muir Woods e Headlands",
@@ -576,7 +931,30 @@
       "sol": {
         "nascer": "07:01",
         "por": "16:54"
-      }
+      },
+      "trajeto": [
+        {
+          "modo": "carro",
+          "pontos": [
+            [
+              37.7849,
+              -122.408
+            ],
+            [
+              37.892,
+              -122.5714
+            ],
+            [
+              37.8255,
+              -122.499
+            ],
+            [
+              37.7849,
+              -122.408
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "dia-11",
@@ -585,7 +963,8 @@
       "fase": "sf",
       "planos": [
         "A",
-        "B"
+        "B",
+        "C"
       ],
       "titulo": "Golden Gate de bike",
       "regiao": "San Francisco e Sausalito",
@@ -627,7 +1006,39 @@
       "sol": {
         "nascer": "07:01",
         "por": "16:53"
-      }
+      },
+      "trajeto": [
+        {
+          "modo": "bike",
+          "pontos": [
+            [
+              37.808,
+              -122.4177
+            ],
+            [
+              37.8077,
+              -122.475
+            ],
+            [
+              37.8591,
+              -122.4853
+            ]
+          ]
+        },
+        {
+          "modo": "balsa",
+          "pontos": [
+            [
+              37.8591,
+              -122.4853
+            ],
+            [
+              37.7955,
+              -122.3937
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "dia-12",
@@ -636,7 +1047,8 @@
       "fase": "sf",
       "planos": [
         "A",
-        "B"
+        "B",
+        "C"
       ],
       "titulo": "Voo de volta",
       "regiao": "SFO",
@@ -676,7 +1088,11 @@
         "url": "https://commons.wikimedia.org/wiki/File:Hotel_Del_c1900b.jpg"
       },
       "busca": "Hotel del Coronado beach",
-      "imagem": "img/coronado.jpg"
+      "imagem": "img/coronado.jpg",
+      "coord": [
+        32.67998,
+        -117.17843
+      ]
     },
     "torrey": {
       "nome": "Torrey Pines",
@@ -688,7 +1104,11 @@
         "autor": "User:Nauticashades.",
         "licenca": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Torrey_Pines_State_Park_Valley.jpg"
-      }
+      },
+      "coord": [
+        32.921,
+        -117.2532
+      ]
     },
     "lajolla": {
       "nome": "La Jolla Cove",
@@ -700,7 +1120,11 @@
         "autor": "Ajay Suresh from New York, NY, USA",
         "licenca": "CC BY 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:LaJolla-2_%2845716612345%29.jpg"
-      }
+      },
+      "coord": [
+        32.85056,
+        -117.27222
+      ]
     },
     "joshua": {
       "nome": "Joshua Tree National Park",
@@ -712,7 +1136,11 @@
         "autor": "Jarek Tuszyński",
         "licenca": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Joshua_Tree_-_Cyclops_%2B_Potato_Head_-_Sunrise.jpg"
-      }
+      },
+      "coord": [
+        34.1,
+        -116.27
+      ]
     },
     "barker": {
       "nome": "Barker Dam",
@@ -725,7 +1153,11 @@
         "autor": "Tuxyso",
         "licenca": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Joschua_Tree_National_Park_Rock_formation_near_Barker_Dam_2013.jpg"
-      }
+      },
+      "coord": [
+        34.03088,
+        -116.14634
+      ]
     },
     "keys": {
       "nome": "Keys View",
@@ -738,7 +1170,11 @@
         "autor": "Mfield, Matthew Field, http://www.photography.mattfield.com",
         "licenca": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Joshua_tree_keys_view_pano_more_vertical.jpg"
-      }
+      },
+      "coord": [
+        33.9264,
+        -116.18723
+      ]
     },
     "hollywood": {
       "nome": "Letreiro de Hollywood",
@@ -750,7 +1186,11 @@
         "autor": "Wikimedia Commons",
         "licenca": "",
         "url": "https://commons.wikimedia.org/wiki/File:Hollywood_sign_%288485145044%29.jpg"
-      }
+      },
+      "coord": [
+        34.13406,
+        -118.32159
+      ]
     },
     "sandstone": {
       "nome": "Sandstone Peak",
@@ -762,7 +1202,11 @@
         "autor": "IvyMike",
         "licenca": "CC BY 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Looking_at_Sandstone_Peak_from_Inspiration_Point.jpg"
-      }
+      },
+      "coord": [
+        34.12031,
+        -118.93198
+      ]
     },
     "solstice": {
       "nome": "Solstice Canyon",
@@ -774,7 +1218,11 @@
         "autor": "DocFreeman24",
         "licenca": "CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Solstice_Canyon.jpg"
-      }
+      },
+      "coord": [
+        34.0391,
+        -118.7548
+      ]
     },
     "matador": {
       "nome": "El Matador State Beach",
@@ -786,7 +1234,11 @@
         "autor": "Graham",
         "licenca": "CC BY 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:El_matador_beach_malibu.jpg"
-      }
+      },
+      "coord": [
+        34.03861,
+        -118.875
+      ]
     },
     "channel": {
       "nome": "Channel Islands",
@@ -799,7 +1251,11 @@
         "url": "https://commons.wikimedia.org/wiki/File:Scorpion_Anchorage_Santa_Cruz_island.JPG"
       },
       "busca": "Santa Cruz Island Scorpion Anchorage",
-      "imagem": "img/channel.jpg"
+      "imagem": "img/channel.jpg",
+      "coord": [
+        33.9658,
+        -120.0919
+      ]
     },
     "morro": {
       "nome": "Morro Rock",
@@ -811,7 +1267,11 @@
         "autor": "No machine-readable author provided. Kjkolb assumed (based on copyright claims).",
         "licenca": "CC BY 2.5",
         "url": "https://commons.wikimedia.org/wiki/File:Morro_Rock_1.jpg"
-      }
+      },
+      "coord": [
+        35.36943,
+        -120.86755
+      ]
     },
     "seals": {
       "nome": "Piedras Blancas",
@@ -823,7 +1283,11 @@
         "autor": "Whiterocks",
         "licenca": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Piedras_Blancas_Light_Station_2012.jpeg"
-      }
+      },
+      "coord": [
+        35.66564,
+        -121.28433
+      ]
     },
     "mcway": {
       "nome": "McWay Falls",
@@ -835,7 +1299,11 @@
         "autor": "Wikimedia Commons",
         "licenca": "",
         "url": "https://commons.wikimedia.org/wiki/File:McWay_Falls_Big_Sur_September_2012_002.jpg"
-      }
+      },
+      "coord": [
+        36.15781,
+        -121.67214
+      ]
     },
     "bixby": {
       "nome": "Bixby Creek Bridge",
@@ -847,7 +1315,11 @@
         "autor": "Diliff",
         "licenca": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Bixby_Creek_Bridge%2C_California%2C_USA_-_May_2013.jpg"
-      }
+      },
+      "coord": [
+        36.37139,
+        -121.90194
+      ]
     },
     "lobos": {
       "nome": "Point Lobos",
@@ -859,7 +1331,11 @@
         "autor": "Diliff",
         "licenca": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whaler%27s_Cove%2C_Point_Lobos%2C_CA%2C_US_-_May_2013.jpg"
-      }
+      },
+      "coord": [
+        36.5171,
+        -121.9426
+      ]
     },
     "pinnacles": {
       "nome": "Pinnacles National Park",
@@ -871,7 +1347,11 @@
         "autor": "Brocken Inaglory",
         "licenca": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rock_formations_at_Pinnacles_National_Park.jpg"
-      }
+      },
+      "coord": [
+        36.48694,
+        -121.16694
+      ]
     },
     "muir": {
       "nome": "Muir Woods",
@@ -883,7 +1363,11 @@
         "autor": "Matthew Dillon from Hollywood, CA, USA",
         "licenca": "CC BY 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Muir_Woods_National_Monument_%2847879029461%29.jpg"
-      }
+      },
+      "coord": [
+        37.89194,
+        -122.57083
+      ]
     },
     "headlands": {
       "nome": "Marin Headlands",
@@ -895,7 +1379,11 @@
         "autor": "Christopher Beland",
         "licenca": "Public domain",
         "url": "https://commons.wikimedia.org/wiki/File:Marin-headlands-3jul2005.jpg"
-      }
+      },
+      "coord": [
+        37.82778,
+        -122.50611
+      ]
     },
     "tomales": {
       "nome": "Tomales Point",
@@ -908,7 +1396,11 @@
         "url": "https://commons.wikimedia.org/wiki/File:Cervus_canadensis_nannodes_at_Tomales_Point.jpg"
       },
       "busca": "Tule elk Tomales Point",
-      "imagem": "img/tomales.jpg"
+      "imagem": "img/tomales.jpg",
+      "coord": [
+        38.22997,
+        -122.98616
+      ]
     },
     "goldengate": {
       "nome": "Golden Gate Bridge",
@@ -920,7 +1412,11 @@
         "autor": "Frank Schulenburg",
         "licenca": "CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Battery_East.jpg"
-      }
+      },
+      "coord": [
+        37.81972,
+        -122.47861
+      ]
     },
     "sausalito": {
       "nome": "Sausalito",
@@ -932,7 +1428,11 @@
         "autor": "Wikimedia Commons",
         "licenca": "",
         "url": "https://commons.wikimedia.org/wiki/File:Sausalito.jpg"
-      }
+      },
+      "coord": [
+        37.85917,
+        -122.48528
+      ]
     },
     "landsend": {
       "nome": "Lands End",
@@ -944,7 +1444,11 @@
         "autor": "Pi.1415926535",
         "licenca": "CC BY-SA 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Coastal_Trail_and_Golden_Gate_Bridge%2C_April_2019.JPG"
-      }
+      },
+      "coord": [
+        37.78493,
+        -122.50553
+      ]
     },
     "alcatraz": {
       "nome": "Alcatraz",
@@ -956,7 +1460,109 @@
         "autor": "Chris6d",
         "licenca": "CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Alcatraz_2021.jpg"
-      }
+      },
+      "coord": [
+        37.82667,
+        -122.42278
+      ]
+    },
+    "mariposa": {
+      "nome": "Mariposa Grove",
+      "wiki": "Mariposa_Grove",
+      "resumo_wiki": "Mariposa Grove is a sequoia grove located near Wawona, California, United States, in the southernmost part of Yosemite National Park. It is the largest grove of giant sequoias in the park, with several hundred mature specimens. Two of its trees are among the 30 largest giant sequoias in the world. The grove attracts about one million visitors annually. Part of the natural area is old-growth forest",
+      "wiki_url": "https://en.wikipedia.org/wiki/Mariposa_Grove",
+      "credito": {
+        "autor": "Marty Aligata",
+        "licenca": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Grizzly_Giant_in_Yosemite_July_2023.jpg"
+      },
+      "coord": [
+        37.51389,
+        -119.59833
+      ],
+      "foto_wiki": "Grizzly_Giant",
+      "imagem": "img/mariposa.jpg"
+    },
+    "tunnelview": {
+      "nome": "Tunnel View",
+      "wiki": "Tunnel_View",
+      "imagem": "img/tunnelview.jpg",
+      "resumo_wiki": "Tunnel View is a scenic viewpoint located on California State Route 41 in Yosemite National Park, United States. Since its opening in 1933, it has offered visitors iconic, expansive views of Yosemite Valley, making it one of the park's most renowned viewpoints.",
+      "wiki_url": "https://en.wikipedia.org/wiki/Tunnel_View",
+      "credito": {
+        "autor": "Diliff",
+        "licenca": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Tunnel_View%2C_Yosemite_Valley%2C_Yosemite_NP_-_Diliff.jpg"
+      },
+      "coord": [
+        37.71576,
+        -119.67718
+      ]
+    },
+    "yosemitevalley": {
+      "nome": "Yosemite Valley",
+      "wiki": "Yosemite_Valley",
+      "resumo_wiki": "Yosemite Valley is a glacial valley in Yosemite National Park in the western Sierra Nevada mountains of Central California, United States. The valley is about 7.5 mi (12.1 km) long and 3,000–3,500 ft (910–1,070 m) deep, surrounded by high granite summits such as Half Dome and El Capitan, and densely forested with pines. The valley is drained by the Merced River, and a multitude of streams and wate",
+      "wiki_url": "https://en.wikipedia.org/wiki/Yosemite_Valley",
+      "credito": {
+        "autor": "Thomas Wolf, www.foto-tw.de",
+        "licenca": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Half_Dome_with_Eastern_Yosemite_Valley_%28Zuschnitt%29.jpg"
+      },
+      "coord": [
+        37.72167,
+        -119.64639
+      ],
+      "foto_wiki": "Half_Dome",
+      "imagem": "img/yosemitevalley.jpg"
+    },
+    "yosemitefalls": {
+      "nome": "Yosemite Falls",
+      "wiki": "Yosemite_Falls",
+      "imagem": "img/yosemitefalls.jpg",
+      "resumo_wiki": "Yosemite Falls is the highest waterfall in Yosemite National Park, dropping a total of 2,425 feet (739 m) from the top of the upper fall to the base of the lower fall. Located in the Sierra Nevada of California, it is a major attraction in the park, especially in late spring when the water flow is at its peak.",
+      "wiki_url": "https://en.wikipedia.org/wiki/Yosemite_Falls",
+      "credito": {
+        "autor": "chensiyuan",
+        "licenca": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Yosemite_falls_winter_2010.JPG"
+      },
+      "coord": [
+        37.75684,
+        -119.59678
+      ]
+    },
+    "elcapitan": {
+      "nome": "El Capitan",
+      "wiki": "El_Capitan",
+      "imagem": "img/elcapitan.jpg",
+      "resumo_wiki": "El Capitan is a vertical rock formation in Yosemite National Park, on the north side of Yosemite Valley, near its western end. The granite monolith is about 3,000 feet (914 m) from base to summit along its tallest face and is a world-famous location for big wall climbing, including the disciplines of aid climbing, free climbing, and more recently for free solo climbing.",
+      "wiki_url": "https://en.wikipedia.org/wiki/El_Capitan",
+      "credito": {
+        "autor": "Clementp.fr",
+        "licenca": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:El_Capitan_en_Californie.jpg"
+      },
+      "coord": [
+        37.74222,
+        -119.63583
+      ]
+    },
+    "bridalveil": {
+      "nome": "Bridalveil Fall",
+      "wiki": "Bridalveil_Fall",
+      "imagem": "img/bridalveil.jpg",
+      "resumo_wiki": "Bridalveil Fall is one of the most prominent waterfalls in the Yosemite Valley in California. \nThe waterfall is 188 metres (617 ft) in height and flows year round.",
+      "wiki_url": "https://en.wikipedia.org/wiki/Bridalveil_Fall",
+      "credito": {
+        "autor": "Asamudra",
+        "licenca": "CC BY 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Bridelveil_Falls_Yosemite.jpg"
+      },
+      "coord": [
+        37.71675,
+        -119.64651
+      ]
     }
   },
   "hospedagens": [
@@ -969,7 +1575,12 @@
       "status": "Pago pela ADP",
       "planos": [
         "A",
-        "B"
+        "B",
+        "C"
+      ],
+      "coord": [
+        32.6809,
+        -117.1782
       ]
     },
     {
@@ -1001,7 +1612,11 @@
           "diaria": 189
         }
       ],
-      "precos_em": "2026-10-05"
+      "precos_em": "2026-10-05",
+      "coord": [
+        34.0617,
+        -118.3046
+      ]
     },
     {
       "id": "line-b",
@@ -1011,7 +1626,8 @@
       "checkout": "2026-11-24",
       "status": "Reservado · cancelar a 3ª noite",
       "planos": [
-        "B"
+        "B",
+        "C"
       ],
       "xotelo_key": "g32655-d77852",
       "precos": [
@@ -1032,7 +1648,11 @@
           "diaria": 189
         }
       ],
-      "precos_em": "2026-10-05"
+      "precos_em": "2026-10-05",
+      "coord": [
+        34.0617,
+        -118.3046
+      ]
     },
     {
       "id": "axiom",
@@ -1043,7 +1663,8 @@
       "status": "Reservado",
       "planos": [
         "A",
-        "B"
+        "B",
+        "C"
       ],
       "xotelo_key": "g60713-d7624213",
       "precos": [
@@ -1064,7 +1685,11 @@
           "diaria": 157
         }
       ],
-      "precos_em": "2026-10-05"
+      "precos_em": "2026-10-05",
+      "coord": [
+        37.784912,
+        -122.40804
+      ]
     }
   ],
   "busca_hoteis": [
@@ -1162,14 +1787,76 @@
           "site_min": "Booking.com"
         }
       ],
-      "precos_em": "2026-10-05"
+      "precos_em": "2026-10-05",
+      "cidade": "Cambria, CA"
+    },
+    {
+      "id": "yosemite",
+      "titulo": "Hotel em Yosemite (Plano C)",
+      "planos": [
+        "C"
+      ],
+      "location_key": "g61000",
+      "checkin": "2026-11-24",
+      "checkout": "2026-11-25",
+      "limite": 6,
+      "busca_externa": [
+        {
+          "nome": "Booking",
+          "url": "https://www.booking.com/searchresults.html?ss=Yosemite+National+Park&checkin=2026-11-24&checkout=2026-11-25&group_adults=2"
+        },
+        {
+          "nome": "Tripadvisor",
+          "url": "https://www.tripadvisor.com/Hotels-g61000-Yosemite_National_Park_California-Hotels.html"
+        }
+      ],
+      "opcoes": [
+        {
+          "nome": "Curry Village",
+          "nota": 3.8,
+          "avaliacoes": 4318,
+          "url": "https://www.tripadvisor.com/Hotel_Review-g61000-d286612-Reviews-Curry_Village-Yosemite_National_Park_California.html",
+          "coord": [
+            37.737648,
+            -119.57203
+          ],
+          "diaria_min": 150,
+          "site_min": "Booking.com"
+        },
+        {
+          "nome": "Yosemite Valley Lodge",
+          "nota": 3.7,
+          "avaliacoes": 4881,
+          "url": "https://www.tripadvisor.com/Hotel_Review-g61000-d119523-Reviews-Yosemite_Valley_Lodge-Yosemite_National_Park_California.html",
+          "coord": [
+            37.74336,
+            -119.59811
+          ],
+          "diaria_min": 525,
+          "site_min": "Vio.com"
+        },
+        {
+          "nome": "The Ahwahnee",
+          "nota": 3.9,
+          "avaliacoes": 3485,
+          "url": "https://www.tripadvisor.com/Hotel_Review-g61000-d119543-Reviews-The_Ahwahnee-Yosemite_National_Park_California.html",
+          "coord": [
+            37.746166,
+            -119.57433
+          ],
+          "diaria_min": 1014,
+          "site_min": "Vio.com"
+        }
+      ],
+      "precos_em": "2026-10-05",
+      "cidade": "Yosemite National Park, CA"
     }
   ],
   "reservas": [
     {
       "id": "plano",
       "prioridade": "urgente",
-      "item": "Decidir Plano A ou Plano B",
+      "item": "Decidir entre os Planos A, B e C",
       "detalhe": "Muda hotéis e reservas dos dias 8 e 9."
     },
     {
@@ -1202,6 +1889,25 @@
       "detalhe": "Só no Plano B.",
       "planos": [
         "B"
+      ]
+    },
+    {
+      "id": "yosemite-hotel",
+      "prioridade": "urgente",
+      "item": "Hotel em Yosemite e cancelar a 3ª noite do LINE",
+      "detalhe": "Só no Plano C. Dentro do vale (Yosemite Valley Lodge, Curry Village) esgota cedo.",
+      "planos": [
+        "C"
+      ]
+    },
+    {
+      "id": "yosemite-estrada",
+      "prioridade": "importante",
+      "item": "Yosemite: correntes e condições das estradas",
+      "detalhe": "Confirmar a política de correntes da Sixt e pedir carro com tração integral. Conferir a taxa de entrada para estrangeiros.",
+      "url": "https://www.nps.gov/yose/planyourvisit/conditions.htm",
+      "planos": [
+        "C"
       ]
     },
     {
@@ -1245,7 +1951,7 @@
       "id": "line",
       "prioridade": "feito",
       "item": "The LINE LA",
-      "detalhe": "22 a 25/11."
+      "detalhe": "22 a 25/11 (nos Planos B e C, cancelar a 3ª noite)."
     },
     {
       "id": "axiom",
@@ -1295,6 +2001,21 @@
           "transporte": 140.0,
           "passeio": 90.0,
           "ingresso": 85.0,
+          "carro": 0.0
+        }
+      },
+      "C": {
+        "total_usd": 2040.0,
+        "opcionais_usd": 90.5,
+        "itens_a_verificar": 6,
+        "categorias": {
+          "alimentacao": 865.0,
+          "ingresso": 310.0,
+          "hospedagem": 250.0,
+          "gasolina": 215.0,
+          "estacionamento": 170.0,
+          "transporte": 140.0,
+          "passeio": 90.0,
           "carro": 0.0
         }
       }

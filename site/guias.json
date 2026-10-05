@@ -68,6 +68,14 @@
       "url": null,
       "arquivo": "transcricoes/2026-10-05_unseen-california_hidden-gems.md",
       "data": "2026-10-05"
+    },
+    "yt-yosemite-3-videos": {
+      "tipo": "youtube",
+      "titulo": "Yosemite: resumo de três vídeos",
+      "canal": "Três vídeos sobre Yosemite",
+      "url": null,
+      "arquivo": "transcricoes/2026-10-05_yosemite_3-videos.md",
+      "data": "2026-10-05"
     }
   },
   "dias": {
@@ -84,17 +92,29 @@
             {
               "nome": "Orange Avenue a pé",
               "texto": "A rua principal de Coronado, com lojas, sorveterias e cafés. Do hotel até o Ferry Landing são cerca de 2 km.",
-              "onde": "Coronado"
+              "onde": "Coronado",
+              "coord": [
+                32.685,
+                -117.179
+              ]
             },
             {
               "nome": "Pôr do sol no Ferry Landing",
               "texto": "Vista do skyline de San Diego do outro lado da baía. Dá para atravessar de balsa e voltar.",
-              "onde": "Coronado Ferry Landing"
+              "onde": "Coronado Ferry Landing",
+              "coord": [
+                32.69777,
+                -117.17009
+              ]
             },
             {
               "nome": "Balboa Park",
               "texto": "Do plano original: jardins, o Botanical Building e o Alcazar Garden. Fica a 15 minutos de Uber.",
-              "onde": "Balboa Park, San Diego"
+              "onde": "Balboa Park, San Diego",
+              "coord": [
+                32.73168,
+                -117.14653
+              ]
             }
           ]
         },
@@ -105,7 +125,11 @@
             {
               "nome": "Clayton's Coffee Shop",
               "texto": "Lanchonete clássica com café da manhã servido o dia todo. Os cinnamon rolls e a rabanada de frutas vermelhas são os pedidos mais elogiados.",
-              "onde": "Orange Ave, Coronado"
+              "onde": "Orange Ave, Coronado",
+              "coord": [
+                32.69816,
+                -117.17257
+              ]
             }
           ]
         },
@@ -116,7 +140,11 @@
             {
               "nome": "Little Italy",
               "texto": "Bairro de restaurantes do outro lado da ponte. O plano original sugeria a cervejaria Ballast Point para o chopp artesanal.",
-              "onde": "Little Italy, San Diego"
+              "onde": "Little Italy, San Diego",
+              "coord": [
+                32.72099,
+                -117.16666
+              ]
             }
           ]
         },
@@ -149,22 +177,38 @@
             {
               "nome": "Children's Pool",
               "texto": "Pequena praia ao sul de La Jolla Cove onde focas descansam na areia. Fica a 5 minutos a pé dos leões-marinhos.",
-              "onde": "Children's Pool, La Jolla"
+              "onde": "Children's Pool, La Jolla",
+              "coord": [
+                32.84755,
+                -117.2786
+              ]
             },
             {
               "nome": "Sunny Jim Cave",
               "texto": "Escadaria por dentro da falésia até uma caverna marinha, com entrada pela Cave Store. Passeio curto e diferente.",
-              "onde": "La Jolla Cove"
+              "onde": "La Jolla Cove",
+              "coord": [
+                32.85045,
+                -117.27299
+              ]
             },
             {
               "nome": "Warwick's",
               "texto": "Livraria de família em La Jolla, citada no plano original. Boa parada antes do café.",
-              "onde": "Girard Ave, La Jolla"
+              "onde": "Girard Ave, La Jolla",
+              "coord": [
+                32.84543,
+                -117.27432
+              ]
             },
             {
               "nome": "Piscinas naturais em Cabrillo",
               "texto": "As marés mais baixas do outono e do inverno revelam polvos, estrelas e anêmonas. Confira a tábua de marés antes de ir.",
-              "onde": "Cabrillo National Monument"
+              "onde": "Cabrillo National Monument",
+              "coord": [
+                32.67223,
+                -117.24094
+              ]
             }
           ]
         },
@@ -175,7 +219,11 @@
             {
               "nome": "Bird Rock Coffee Roasters",
               "texto": "Torrefação premiada de San Diego. O sanduíche de café da manhã é o mais pedido.",
-              "onde": "5627 La Jolla Blvd, La Jolla"
+              "onde": "5627 La Jolla Blvd, La Jolla",
+              "coord": [
+                32.82594,
+                -117.27666
+              ]
             }
           ]
         },
@@ -212,17 +260,29 @@
             {
               "nome": "Cholla Cactus Garden",
               "texto": "Trilha curta entre milhares de cactos que brilham com o sol baixo. Não encoste: os espinhos se soltam com facilidade.",
-              "onde": "Cholla Cactus Garden, Joshua Tree"
+              "onde": "Cholla Cactus Garden, Joshua Tree",
+              "coord": [
+                33.9254,
+                -115.9289
+              ]
             },
             {
               "nome": "Skull Rock",
               "texto": "Rocha em forma de caveira à beira da estrada. Parada de 10 minutos.",
-              "onde": "Skull Rock, Joshua Tree"
+              "onde": "Skull Rock, Joshua Tree",
+              "coord": [
+                33.9989,
+                -116.0597
+              ]
             },
             {
               "nome": "Arch Rock",
               "texto": "Arco natural de granito numa trilha de 2 km perto do White Tank.",
-              "onde": "Arch Rock, Joshua Tree"
+              "onde": "Arch Rock, Joshua Tree",
+              "coord": [
+                33.9853,
+                -116.0169
+              ]
             },
             {
               "nome": "Alternativa: Anza-Borrego",
@@ -231,7 +291,11 @@
                 "yt-bmtm-california-20-paradas"
               ],
               "onde": "Borrego Springs",
-              "verificar": "Avaliar se cabe no dia"
+              "verificar": "Avaliar se cabe no dia",
+              "coord": [
+                33.25486,
+                -116.35695
+              ]
             }
           ]
         },
@@ -242,12 +306,20 @@
             {
               "nome": "Joshua Tree Coffee Company",
               "texto": "Torrefação na cidade de Joshua Tree, a caminho da entrada oeste. A melhor opção antes de entrar no parque.",
-              "onde": "Joshua Tree, CA"
+              "onde": "Joshua Tree, CA",
+              "coord": [
+                34.12338,
+                -116.31287
+              ]
             },
             {
               "nome": "Frontier Cafe",
               "texto": "Bebidas orgânicas, sanduíches e doces feitos na casa.",
-              "onde": "Yucca Valley, CA"
+              "onde": "Yucca Valley, CA",
+              "coord": [
+                34.11958,
+                -116.44607
+              ]
             }
           ]
         },
@@ -258,13 +330,21 @@
             {
               "nome": "Crossroads Cafe",
               "texto": "Café da manhã e almoço clássicos na cidade de Joshua Tree. Bom para levar sanduíches para o parque.",
-              "onde": "Joshua Tree, CA"
+              "onde": "Joshua Tree, CA",
+              "coord": [
+                34.13468,
+                -116.31697
+              ]
             },
             {
               "nome": "La Copine",
               "texto": "Brunch muito elogiado em Yucca Valley. Funciona em poucos dias da semana.",
               "onde": "Yucca Valley, CA",
-              "verificar": "Confirmar se abre no domingo"
+              "verificar": "Confirmar se abre no domingo",
+              "coord": [
+                34.23833,
+                -116.44003
+              ]
             },
             {
               "nome": "Jantar de chegada: tacos",
@@ -347,17 +427,29 @@
               ],
               "tempos": {
                 "yt-ctml-pch-20-paradas": 510
-              }
+              },
+              "coord": [
+                34.00163,
+                -118.80668
+              ]
             },
             {
               "nome": "Zuma Beach",
               "texto": "Praia larga e aberta para caminhar no fim da tarde.",
-              "onde": "Zuma Beach, Malibu"
+              "onde": "Zuma Beach, Malibu",
+              "coord": [
+                34.02144,
+                -118.83103
+              ]
             },
             {
               "nome": "Malibu Pier",
               "texto": "Píer histórico com surfistas dos dois lados.",
-              "onde": "Malibu Pier"
+              "onde": "Malibu Pier",
+              "coord": [
+                34.03643,
+                -118.67614
+              ]
             },
             {
               "nome": "Na volta: Venice Canals e a ciclovia",
@@ -366,7 +458,11 @@
                 "yt-la-travel-guide-10-lugares",
                 "yt-unseen-california"
               ],
-              "onde": "Venice Canals, Los Angeles"
+              "onde": "Venice Canals, Los Angeles",
+              "coord": [
+                33.98691,
+                -118.47359
+              ]
             }
           ]
         },
@@ -377,17 +473,29 @@
             {
               "nome": "Alfred Coffee",
               "texto": "Fica dentro do The LINE e abre às 6:30. Ideal para sair cedo para a trilha.",
-              "onde": "3515 Wilshire Blvd, Koreatown"
+              "onde": "3515 Wilshire Blvd, Koreatown",
+              "coord": [
+                34.06203,
+                -118.30114
+              ]
             },
             {
               "nome": "Caffe Luxxe",
               "texto": "Café de bairro com pátio e estacionamento fácil ao longo da PCH.",
-              "onde": "Malibu"
+              "onde": "Malibu",
+              "coord": [
+                34.036,
+                -118.6865
+              ]
             },
             {
               "nome": "Sunlife Organics",
               "texto": "Smoothies e bowls de açaí para depois da trilha.",
-              "onde": "3835 Cross Creek Rd, Malibu"
+              "onde": "3835 Cross Creek Rd, Malibu",
+              "coord": [
+                34.03607,
+                -118.68581
+              ]
             }
           ]
         },
@@ -398,13 +506,21 @@
             {
               "nome": "Malibu Farm Pier Cafe",
               "texto": "Almoço na ponta do píer, com o mar dos dois lados.",
-              "onde": "Malibu Pier"
+              "onde": "Malibu Pier",
+              "coord": [
+                34.03563,
+                -118.67564
+              ]
             },
             {
               "nome": "Neptune's Net",
               "texto": "Barraca de frutos do mar na divisa de condados, perto de Point Mugu. Ponto clássico de motociclistas.",
               "onde": "PCH, County Line",
-              "verificar": "Confirmar horário"
+              "verificar": "Confirmar horário",
+              "coord": [
+                34.0446,
+                -118.9666
+              ]
             }
           ]
         },
@@ -459,13 +575,21 @@
               "nome": "Cavern Point Loop",
               "texto": "Loop de 3 km no alto das falésias, com vista das cavernas onde vocês remaram.",
               "stats": "3 km",
-              "onde": "Scorpion Anchorage"
+              "onde": "Scorpion Anchorage",
+              "coord": [
+                34.04936,
+                -119.55551
+              ]
             },
             {
               "nome": "Potato Harbor",
               "texto": "Trilha mais longa até um mirante sobre uma enseada em forma de batata.",
               "stats": "8 km ida e volta",
-              "onde": "Santa Cruz Island"
+              "onde": "Santa Cruz Island",
+              "coord": [
+                34.01846,
+                -119.7751
+              ]
             },
             {
               "nome": "Alternativa: Santa Catalina Island",
@@ -474,7 +598,11 @@
               "fontes": [
                 "yt-unseen-california"
               ],
-              "verificar": "Confirmar horários da balsa em 24/11"
+              "verificar": "Confirmar horários da balsa em 24/11",
+              "coord": [
+                33.3428,
+                -118.3282
+              ]
             },
             {
               "nome": "Plano reserva: Griffith Observatory",
@@ -483,7 +611,11 @@
                 "yt-la-travel-guide-10-lugares",
                 "yt-unseen-california"
               ],
-              "onde": "Griffith Observatory, Los Angeles"
+              "onde": "Griffith Observatory, Los Angeles",
+              "coord": [
+                34.11822,
+                -118.30029
+              ]
             },
             {
               "nome": "Plano reserva: Getty Center",
@@ -493,7 +625,11 @@
                 "yt-unseen-california"
               ],
               "onde": "Getty Center, Los Angeles",
-              "verificar": "Fecha às segundas; confirmar horário e reserva"
+              "verificar": "Fecha às segundas; confirmar horário e reserva",
+              "coord": [
+                34.07702,
+                -118.47401
+              ]
             }
           ]
         },
@@ -504,12 +640,20 @@
             {
               "nome": "Freedom Coffee",
               "texto": "Fica dentro do prédio de check-in da Island Packers. Lattes, chocolate quente e mingau.",
-              "onde": "Ventura Harbor"
+              "onde": "Ventura Harbor",
+              "coord": [
+                34.24945,
+                -119.26483
+              ]
             },
             {
               "nome": "Harbor Cove Cafe",
               "texto": "Burritos de café da manhã e lanches para levar. Dá para encomendar a marmita 24h antes. Abre às 7:30.",
-              "onde": "1867 Spinnaker Dr, Ventura"
+              "onde": "1867 Spinnaker Dr, Ventura",
+              "coord": [
+                34.24781,
+                -119.26636
+              ]
             }
           ]
         },
@@ -521,7 +665,11 @@
               "nome": "Andria's Seafood",
               "texto": "Fish and chips no porto de Ventura, para a volta da ilha.",
               "onde": "Ventura Harbor",
-              "verificar": "Confirmar horário"
+              "verificar": "Confirmar horário",
+              "coord": [
+                34.24945,
+                -119.26483
+              ]
             }
           ]
         },
@@ -584,7 +732,11 @@
                 "yt-ctml-pch-20-paradas": 344
               },
               "onde": "Santa Barbara County Courthouse",
-              "verificar": "Confirmar horário da torre"
+              "verificar": "Confirmar horário da torre",
+              "coord": [
+                34.42433,
+                -119.70251
+              ]
             },
             {
               "nome": "Montaña de Oro State Park",
@@ -593,6 +745,10 @@
               "onde": "Montaña de Oro, Los Osos",
               "fontes": [
                 "yt-bmtm-california-20-paradas"
+              ],
+              "coord": [
+                35.29381,
+                -120.86156
               ]
             },
             {
@@ -601,22 +757,38 @@
               "fontes": [
                 "yt-bmtm-california-20-paradas"
               ],
-              "onde": "El Capitán State Beach"
+              "onde": "El Capitán State Beach",
+              "coord": [
+                34.48737,
+                -120.01255
+              ]
             },
             {
               "nome": "Caiaque em Morro Bay",
               "texto": "Remar na baía tranquila entre lontras-marinhas, com a Morro Rock ao fundo.",
-              "onde": "Morro Bay State Park Marina"
+              "onde": "Morro Bay State Park Marina",
+              "coord": [
+                35.354,
+                -120.844
+              ]
             },
             {
               "nome": "Moonstone Beach Boardwalk",
               "texto": "Passarela de madeira sobre as pedras em Cambria. Ótima para o pôr do sol.",
-              "onde": "Moonstone Beach, Cambria"
+              "onde": "Moonstone Beach, Cambria",
+              "coord": [
+                35.57491,
+                -121.1137
+              ]
             },
             {
               "nome": "Missão de Santa Barbara",
               "texto": "A rainha das missões espanholas, a 5 minutos do Handlebar.",
-              "onde": "Old Mission Santa Barbara"
+              "onde": "Old Mission Santa Barbara",
+              "coord": [
+                34.5982,
+                -120.13084
+              ]
             },
             {
               "nome": "Naufrágio de Cayucos",
@@ -628,7 +800,11 @@
                 "yt-ctml-pch-20-paradas": 614
               },
               "onde": "Cayucos",
-              "verificar": "Confirmar se o casco ainda está na praia"
+              "verificar": "Confirmar se o casco ainda está na praia",
+              "coord": [
+                35.43701,
+                -120.88311
+              ]
             }
           ]
         },
@@ -639,17 +815,29 @@
             {
               "nome": "Handlebar Coffee Roasters",
               "texto": "Um dos dois cafés mais bem avaliados de Santa Barbara, com pátio ao sol.",
-              "onde": "Downtown Santa Barbara"
+              "onde": "Downtown Santa Barbara",
+              "coord": [
+                34.42711,
+                -119.71064
+              ]
             },
             {
               "nome": "Dune Coffee Roasters",
               "texto": "Torrefação local com clima bem Santa Barbara.",
-              "onde": "State St, Santa Barbara"
+              "onde": "State St, Santa Barbara",
+              "coord": [
+                34.4224,
+                -119.70343
+              ]
             },
             {
               "nome": "Buttercup Bakery",
               "texto": "Padaria aconchegante no centro de Morro Bay, aberta das 7h às 15h.",
-              "onde": "Morro Bay"
+              "onde": "Morro Bay",
+              "coord": [
+                35.3667,
+                -120.8496
+              ]
             }
           ]
         },
@@ -666,17 +854,29 @@
               "tempos": {
                 "yt-ctml-pch-20-paradas": 212
               },
-              "onde": "Pismo Beach"
+              "onde": "Pismo Beach",
+              "coord": [
+                35.14006,
+                -120.64235
+              ]
             },
             {
               "nome": "Giovanni's Fish Market",
               "texto": "Fish and chips e mariscos na beira do cais, com leões-marinhos por perto.",
-              "onde": "Embarcadero, Morro Bay"
+              "onde": "Embarcadero, Morro Bay",
+              "coord": [
+                35.37243,
+                -120.85962
+              ]
             },
             {
               "nome": "Linn's Restaurant",
               "texto": "Famoso pela torta de olallieberry, uma amora típica da região. Bom para jantar ou para o café da manhã seguinte.",
-              "onde": "Main St, Cambria"
+              "onde": "Main St, Cambria",
+              "coord": [
+                35.56433,
+                -121.0819
+              ]
             }
           ]
         },
@@ -710,7 +910,11 @@
               "nome": "Cypress Grove Trail",
               "texto": "Loop curto em Point Lobos entre ciprestes de Monterey, uma das duas florestas naturais da espécie.",
               "stats": "1,3 km",
-              "onde": "Point Lobos"
+              "onde": "Point Lobos",
+              "coord": [
+                36.5173,
+                -121.94776
+              ]
             },
             {
               "nome": "17-Mile Drive",
@@ -719,7 +923,11 @@
                 "yt-bmtm-california-20-paradas"
               ],
               "onde": "17-Mile Drive, Pebble Beach",
-              "verificar": "Confirmar o valor da entrada por carro"
+              "verificar": "Confirmar o valor da entrada por carro",
+              "coord": [
+                36.60845,
+                -121.95308
+              ]
             },
             {
               "nome": "Monterey Bay Aquarium",
@@ -728,18 +936,30 @@
                 "yt-bmtm-california-20-paradas"
               ],
               "onde": "Monterey Bay Aquarium",
-              "verificar": "Comprar ingresso e confirmar horário em 25/11"
+              "verificar": "Comprar ingresso e confirmar horário em 25/11",
+              "coord": [
+                36.61809,
+                -121.90167
+              ]
             },
             {
               "nome": "Balconies Cave",
               "texto": "Caverna de rochas desabadas pela entrada oeste de Pinnacles. Pode fechar depois de chuva forte.",
               "stats": "4 km",
-              "onde": "Pinnacles West Entrance"
+              "onde": "Pinnacles West Entrance",
+              "coord": [
+                36.47714,
+                -121.22646
+              ]
             },
             {
               "nome": "Elkhorn Slough",
               "texto": "Estuário com lontras-marinhas perto de Moss Landing, a caminho de SF.",
-              "onde": "Moss Landing"
+              "onde": "Moss Landing",
+              "coord": [
+                36.81247,
+                -121.77582
+              ]
             },
             {
               "nome": "Opção: voltar a SF pela Highway 1",
@@ -750,7 +970,11 @@
               "tempos": {
                 "yt-ctml-pch-20-paradas": 70
               },
-              "onde": "Natural Bridges State Beach, Santa Cruz"
+              "onde": "Natural Bridges State Beach, Santa Cruz",
+              "coord": [
+                36.95208,
+                -122.05713
+              ]
             }
           ]
         },
@@ -761,12 +985,20 @@
             {
               "nome": "Carmel Coffee House & Roasting Co",
               "texto": "Café torrado na casa, no centro de Carmel.",
-              "onde": "Ocean Ave, Carmel-by-the-Sea"
+              "onde": "Ocean Ave, Carmel-by-the-Sea",
+              "coord": [
+                36.55515,
+                -121.92052
+              ]
             },
             {
               "nome": "Café Carmel",
               "texto": "Padaria e café na avenida principal.",
-              "onde": "Ocean Ave, Carmel-by-the-Sea"
+              "onde": "Ocean Ave, Carmel-by-the-Sea",
+              "coord": [
+                36.55527,
+                -121.92142
+              ]
             }
           ]
         },
@@ -777,12 +1009,20 @@
             {
               "nome": "La Plaza Bakery & Cafe",
               "texto": "Padaria mexicana com pan dulce e pratos de café da manhã. Para quem for a Pinnacles.",
-              "onde": "Soledad"
+              "onde": "Soledad",
+              "coord": [
+                36.4247,
+                -121.3263
+              ]
             },
             {
               "nome": "Taqueria Pacheco",
               "texto": "Tacos simples em Soledad, perto da entrada oeste do parque.",
-              "onde": "Soledad"
+              "onde": "Soledad",
+              "coord": [
+                36.42826,
+                -121.33094
+              ]
             },
             {
               "nome": "In-N-Out Burger",
@@ -844,17 +1084,29 @@
                 "yt-ctml-pch-20-paradas": 642
               },
               "onde": "Hearst Castle, San Simeon",
-              "verificar": "Reservar e confirmar horários; avaliar se cabe no dia"
+              "verificar": "Reservar e confirmar horários; avaliar se cabe no dia",
+              "coord": [
+                35.65092,
+                -121.18566
+              ]
             },
             {
               "nome": "Ragged Point",
               "texto": "Primeiro grande mirante vindo do sul, no início de Big Sur.",
-              "onde": "Ragged Point"
+              "onde": "Ragged Point",
+              "coord": [
+                35.7816,
+                -121.32978
+              ]
             },
             {
               "nome": "Sand Dollar Beach",
               "texto": "Praia em meia-lua com escada curta, uma das maiores de Big Sur.",
-              "onde": "Sand Dollar Beach"
+              "onde": "Sand Dollar Beach",
+              "coord": [
+                35.92387,
+                -121.46835
+              ]
             },
             {
               "nome": "Pfeiffer Beach",
@@ -866,12 +1118,20 @@
               ],
               "tempos": {
                 "yt-ctml-pch-20-paradas": 677
-              }
+              },
+              "coord": [
+                36.23936,
+                -121.81761
+              ]
             },
             {
               "nome": "Garrapata State Park",
               "texto": "Soberanes Point: trilha curta sobre falésias, já perto de Carmel.",
-              "onde": "Garrapata State Park"
+              "onde": "Garrapata State Park",
+              "coord": [
+                36.47359,
+                -121.90559
+              ]
             },
             {
               "nome": "Point Sur Lighthouse",
@@ -883,7 +1143,11 @@
                 "yt-ctml-pch-20-paradas": 104
               },
               "onde": "Point Sur State Historic Park",
-              "verificar": "Confirmar se há tour em 25/11"
+              "verificar": "Confirmar se há tour em 25/11",
+              "coord": [
+                36.30691,
+                -121.89838
+              ]
             },
             {
               "nome": "Opção: voltar a SF pela Highway 1",
@@ -894,7 +1158,11 @@
               "tempos": {
                 "yt-ctml-pch-20-paradas": 70
               },
-              "onde": "Natural Bridges State Beach, Santa Cruz"
+              "onde": "Natural Bridges State Beach, Santa Cruz",
+              "coord": [
+                36.95208,
+                -122.05713
+              ]
             },
             {
               "nome": "17-Mile Drive",
@@ -903,7 +1171,11 @@
                 "yt-bmtm-california-20-paradas"
               ],
               "onde": "17-Mile Drive, Pebble Beach",
-              "verificar": "Confirmar o valor da entrada por carro"
+              "verificar": "Confirmar o valor da entrada por carro",
+              "coord": [
+                36.60845,
+                -121.95308
+              ]
             }
           ]
         },
@@ -914,12 +1186,20 @@
             {
               "nome": "Big Sur Bakery",
               "texto": "Padaria numa casa de rancho dos anos 30. Abre de quarta a segunda, das 9h às 14h. O dia 25/11 é uma quarta.",
-              "onde": "47540 CA-1, Big Sur"
+              "onde": "47540 CA-1, Big Sur",
+              "coord": [
+                36.28889,
+                -121.8466
+              ]
             },
             {
               "nome": "Café Kevah",
               "texto": "Terraço embaixo do Nepenthe, com vista do litoral. Reabriu em setembro de 2026, depois dos incêndios.",
-              "onde": "Nepenthe, Big Sur"
+              "onde": "Nepenthe, Big Sur",
+              "coord": [
+                36.22181,
+                -121.75966
+              ]
             }
           ]
         },
@@ -930,7 +1210,11 @@
             {
               "nome": "Nepenthe",
               "texto": "Restaurante de 1949 no alto de uma falésia. O almoço com vista é um clássico de Big Sur.",
-              "onde": "Big Sur"
+              "onde": "Big Sur",
+              "coord": [
+                36.22181,
+                -121.75966
+              ]
             }
           ]
         },
@@ -991,13 +1275,21 @@
             {
               "nome": "Muir Beach Overlook",
               "texto": "Mirante sobre o oceano a 10 minutos de Muir Woods.",
-              "onde": "Muir Beach Overlook"
+              "onde": "Muir Beach Overlook",
+              "coord": [
+                37.86281,
+                -122.58572
+              ]
             },
             {
               "nome": "Tennessee Valley Trail",
               "texto": "Trilha plana por um vale até uma praia escondida.",
               "stats": "6 km ida e volta",
-              "onde": "Tennessee Valley, Mill Valley"
+              "onde": "Tennessee Valley, Mill Valley",
+              "coord": [
+                37.8607,
+                -122.5357
+              ]
             },
             {
               "nome": "Battery Spencer",
@@ -1005,6 +1297,10 @@
               "onde": "Battery Spencer, Marin Headlands",
               "fontes": [
                 "yt-rota360-sf-2-dias"
+              ],
+              "coord": [
+                37.8297,
+                -122.4826
               ]
             }
           ]
@@ -1017,7 +1313,11 @@
               "nome": "Equator Coffees, Tam Junction",
               "texto": "Café numa antiga loja de surfe, exatamente no caminho para Muir Woods.",
               "onde": "244 Shoreline Hwy, Mill Valley",
-              "verificar": "Confirmar se abre no Thanksgiving"
+              "verificar": "Confirmar se abre no Thanksgiving",
+              "coord": [
+                37.88166,
+                -122.52442
+              ]
             }
           ]
         },
@@ -1028,19 +1328,31 @@
             {
               "nome": "Muir Woods Trading Company",
               "texto": "Café na entrada do parque, para um lanche depois da trilha.",
-              "onde": "Muir Woods"
+              "onde": "Muir Woods",
+              "coord": [
+                37.89639,
+                -122.58022
+              ]
             },
             {
               "nome": "Ceia: The Waterfront Restaurant",
               "texto": "Em 2025 ofereceu menu de três pratos por US$ 90, com peru e torta de abóbora.",
               "onde": "Embarcadero, SF",
-              "verificar": "Confirmar menu de 2026 e reservar"
+              "verificar": "Confirmar menu de 2026 e reservar",
+              "coord": [
+                37.79286,
+                -122.39691
+              ]
             },
             {
               "nome": "Ceia: Caché",
               "texto": "Em 2025 teve menu fixo de US$ 75, com sopa de abóbora e peru ou halibute.",
               "onde": "Inner Sunset, SF",
-              "verificar": "Confirmar menu de 2026 e reservar"
+              "verificar": "Confirmar menu de 2026 e reservar",
+              "coord": [
+                37.76145,
+                -122.46764
+              ]
             },
             {
               "nome": "Hog Island Oyster Co., Tomales Bay",
@@ -1052,7 +1364,11 @@
                 "yt-ctml-pch-20-paradas": 284
               },
               "onde": "Hog Island Oyster Co., Marshall",
-              "verificar": "Confirmar se abre no Thanksgiving e reservar"
+              "verificar": "Confirmar se abre no Thanksgiving e reservar",
+              "coord": [
+                38.16216,
+                -122.89352
+              ]
             }
           ]
         },
@@ -1101,6 +1417,10 @@
                 "yt-spv-sf-1-dia",
                 "yt-rota1nv-sf-1-dia",
                 "yt-rota360-sf-2-dias"
+              ],
+              "coord": [
+                37.81001,
+                -122.41048
               ]
             },
             {
@@ -1110,6 +1430,10 @@
               "fontes": [
                 "yt-rota360-sf-2-dias",
                 "yt-bmtm-california-20-paradas"
+              ],
+              "coord": [
+                37.8046,
+                -122.46661
               ]
             },
             {
@@ -1121,7 +1445,11 @@
               "tempos": {
                 "yt-ctml-pch-20-paradas": 337
               },
-              "onde": "Golden Gate Bridge Welcome Center"
+              "onde": "Golden Gate Bridge Welcome Center",
+              "coord": [
+                37.8077,
+                -122.475
+              ]
             },
             {
               "nome": "Palace of Fine Arts",
@@ -1129,12 +1457,20 @@
               "onde": "Palace of Fine Arts, SF",
               "fontes": [
                 "yt-rota360-sf-2-dias"
+              ],
+              "coord": [
+                37.80292,
+                -122.4484
               ]
             },
             {
               "nome": "Casas flutuantes de Sausalito",
               "texto": "Comunidade de casas-barco coloridas no norte da cidade.",
-              "onde": "Sausalito Houseboats"
+              "onde": "Sausalito Houseboats",
+              "coord": [
+                37.8753,
+                -122.5087
+              ]
             },
             {
               "nome": "Sutro Baths e o labirinto",
@@ -1145,7 +1481,11 @@
               ],
               "tempos": {
                 "yt-ctml-pch-20-paradas": 445
-              }
+              },
+              "coord": [
+                37.78384,
+                -122.50675
+              ]
             },
             {
               "nome": "Se sobrar tempo: cartões-postais",
@@ -1164,6 +1504,10 @@
               "fontes": [
                 "yt-rota1nv-sf-1-dia",
                 "yt-rota360-sf-2-dias"
+              ],
+              "coord": [
+                37.7845,
+                -122.4078
               ]
             },
             {
@@ -1172,6 +1516,10 @@
               "onde": "Twin Peaks, SF",
               "fontes": [
                 "yt-rota360-sf-2-dias"
+              ],
+              "coord": [
+                37.75241,
+                -122.44759
               ]
             },
             {
@@ -1180,6 +1528,10 @@
               "onde": "Golden Gate Park, SF",
               "fontes": [
                 "yt-rota360-sf-2-dias"
+              ],
+              "coord": [
+                37.76937,
+                -122.48218
               ]
             }
           ]
@@ -1191,17 +1543,29 @@
             {
               "nome": "Equator Coffees Sausalito",
               "texto": "Na Bridgeway, de frente para a baía.",
-              "onde": "Bridgeway, Sausalito"
+              "onde": "Bridgeway, Sausalito",
+              "coord": [
+                37.86007,
+                -122.48692
+              ]
             },
             {
               "nome": "Sausalito Bakery & Cafe",
               "texto": "Mesas na beira d'água para ver o movimento.",
-              "onde": "Sausalito"
+              "onde": "Sausalito",
+              "coord": [
+                37.85373,
+                -122.4791
+              ]
             },
             {
               "nome": "Blue Bottle Coffee",
               "texto": "No Ferry Building, onde a balsa de volta chega.",
-              "onde": "Ferry Building, SF"
+              "onde": "Ferry Building, SF",
+              "coord": [
+                37.796,
+                -122.39384
+              ]
             }
           ]
         },
@@ -1212,12 +1576,20 @@
             {
               "nome": "Ferry Building Marketplace",
               "texto": "Mercado com padarias, queijos e quiosques, ótimo para um almoço de petiscos.",
-              "onde": "Ferry Building, SF"
+              "onde": "Ferry Building, SF",
+              "coord": [
+                37.79555,
+                -122.39347
+              ]
             },
             {
               "nome": "Buena Vista Cafe",
               "texto": "Onde o Irish coffee foi popularizado nos EUA. Fica perto do ponto final do cable car.",
-              "onde": "Hyde St, SF"
+              "onde": "Hyde St, SF",
+              "coord": [
+                37.79052,
+                -122.41732
+              ]
             },
             {
               "nome": "Sourdough e chocolate Ghirardelli",
@@ -1225,6 +1597,10 @@
               "onde": "Ghirardelli Square, SF",
               "fontes": [
                 "yt-rota1nv-sf-1-dia"
+              ],
+              "coord": [
+                37.80587,
+                -122.42295
               ]
             }
           ]
@@ -1281,6 +1657,283 @@
             {
               "nome": "Café no aeroporto",
               "texto": "Os quiosques do SFO abrem cedo. Tome café depois do controle de segurança."
+            }
+          ]
+        }
+      ]
+    },
+    "dia-8-c": {
+      "intro": [
+        "Yosemite é o parque que fez nascer a ideia de parque nacional nos Estados Unidos. Em novembro o vale fica mais vazio, com as árvores ainda amarelas e, às vezes, neve nos paredões.",
+        "As sequoias gigantes de Mariposa Grove são as árvores que o plano original chamava de sequoias: troncos de mais de 8 metros de diâmetro, diferentes das redwoods altas e finas da costa."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Grizzly Giant",
+              "texto": "A sequoia mais famosa de Mariposa Grove, com cerca de 1.800 anos. Fica no meio do Big Trees Loop.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ],
+              "onde": "Mariposa Grove, Yosemite",
+              "stats": "3,2 km ida e volta",
+              "coord": [
+                37.5149,
+                -119.6009
+              ]
+            },
+            {
+              "nome": "Bridalveil Fall",
+              "texto": "Trilha de 20 minutos até a base, logo na entrada do vale. Boa parada antes do Tunnel View.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ],
+              "onde": "Bridalveil Fall, Yosemite",
+              "coord": [
+                37.7166,
+                -119.6464
+              ]
+            },
+            {
+              "nome": "Céu estrelado",
+              "texto": "Sem poluição luminosa, o vale é ótimo para ver estrelas. Saia do hotel uns minutos e olhe para cima.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ],
+              "verificar": "Lua quase cheia nesta noite"
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "Base Camp Eatery",
+              "texto": "Praça de alimentação do Yosemite Valley Lodge, prática para o jantar da chegada.",
+              "onde": "Yosemite Valley Lodge",
+              "coord": [
+                37.74326,
+                -119.59842
+              ]
+            },
+            {
+              "nome": "The Ahwahnee",
+              "texto": "Hotel histórico de 1927 com um salão de jantar de pé-direito altíssimo. Vale ao menos um drinque no bar.",
+              "onde": "The Ahwahnee, Yosemite Valley",
+              "verificar": "Reservar o jantar",
+              "coord": [
+                37.7461,
+                -119.5753
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "levar",
+          "titulo": "O que levar",
+          "itens": [
+            {
+              "nome": "Roupa de frio",
+              "texto": "À noite o vale fica abaixo de zero em novembro. Leve gorro, luvas e casaco."
+            },
+            {
+              "nome": "Tênis de trilha",
+              "texto": "Os caminhos podem ter gelo nas partes sombreadas.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ]
+            },
+            {
+              "nome": "Comida para a estrada",
+              "texto": "Entre Fresno e o parque há poucas opções. Dentro do vale não há posto de gasolina."
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Correntes e tração",
+              "texto": "Com neve, o parque exige correntes ou carro 4x4 com pneus adequados. Pergunte à Sixt se o contrato permite correntes e peça um carro com tração integral.",
+              "verificar": "Conferir condições na semana da viagem"
+            },
+            {
+              "nome": "Mariposa Grove no inverno",
+              "texto": "Quando neva, a estrada até o bosque fecha para carros e a subida a partir do estacionamento é a pé, cerca de 3 km.",
+              "verificar": "Confirmar acesso e ônibus em 24/11"
+            },
+            {
+              "nome": "Taxa para estrangeiros",
+              "texto": "Em 2026 Yosemite passou a cobrar uma taxa extra de visitantes estrangeiros, além da entrada do carro.",
+              "verificar": "Confirmar valor no site do NPS"
+            },
+            {
+              "nome": "Abasteça em Oakhurst",
+              "texto": "É a última cidade grande antes da entrada sul. Dentro do vale não há posto.",
+              "onde": "Oakhurst",
+              "coord": [
+                37.328,
+                -119.6493
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "dia-9-c": {
+      "intro": [
+        "O vale de Yosemite tem 11 km de comprimento e é cercado por paredões de granito de quase 1 km de altura. Numa manhã dá para ver os pontos clássicos sem pressa.",
+        "Em novembro as cachoeiras estão no ponto mais baixo do ano, e algumas podem estar secas. Em compensação, o vale fica tranquilo e a luz do outono é bonita."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Mist Trail até a ponte de Vernal Fall",
+              "texto": "Subida curta até a ponte com vista para a cachoeira. Com pouca água em novembro, molha menos que na primavera.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ],
+              "onde": "Mist Trail, Yosemite",
+              "stats": "2,6 km · +120 m",
+              "verificar": "Pode ter gelo",
+              "coord": [
+                37.7275,
+                -119.545
+              ]
+            },
+            {
+              "nome": "Bicicleta no vale",
+              "texto": "Ciclovias planas ligam os pontos do vale. O aluguel fica no Curry Village e no Yosemite Valley Lodge.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ],
+              "onde": "Curry Village, Yosemite",
+              "verificar": "Confirmar se o aluguel funciona em novembro",
+              "coord": [
+                37.73745,
+                -119.57136
+              ]
+            },
+            {
+              "nome": "Patinação no gelo no Curry Village",
+              "texto": "Pista ao ar livre com vista para o Half Dome, que costuma abrir em meados de novembro.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ],
+              "onde": "Curry Village, Yosemite",
+              "verificar": "Confirmar abertura",
+              "coord": [
+                37.73745,
+                -119.57136
+              ]
+            },
+            {
+              "nome": "Tuolumne Grove na volta",
+              "texto": "Bosque de sequoias gigantes menos movimentado, no caminho para SF pela Big Oak Flat Road. A trilha desce e volta subindo.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ],
+              "onde": "Tuolumne Grove, Yosemite",
+              "stats": "4 km · +150 m",
+              "verificar": "Confirmar acesso pela Tioga Road no inverno",
+              "coord": [
+                37.759,
+                -119.807
+              ]
+            },
+            {
+              "nome": "Ansel Adams Gallery",
+              "texto": "Galeria do fotógrafo que imortalizou o parque, no Yosemite Village.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ],
+              "onde": "Ansel Adams Gallery, Yosemite",
+              "coord": [
+                37.74856,
+                -119.58687
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Degnan's Kitchen",
+              "texto": "Delicatessen no Yosemite Village, com café e sanduíches para levar na estrada.",
+              "onde": "Yosemite Village",
+              "coord": [
+                37.74802,
+                -119.58547
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Fechado ou fora de época em novembro",
+          "itens": [
+            {
+              "nome": "Half Dome",
+              "texto": "Os cabos de aço do trecho final são retirados em outubro, e a subida exige permissão por sorteio. Não dá para fazer nesta época.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ]
+            },
+            {
+              "nome": "Glacier Point e Tioga Pass",
+              "texto": "As estradas costumam fechar com a primeira neve, entre novembro e maio.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ],
+              "verificar": "Confirmar situação da Glacier Point Road"
+            },
+            {
+              "nome": "Firefall",
+              "texto": "O fenômeno do pôr do sol na Horsetail Fall acontece só em fevereiro.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ]
+            },
+            {
+              "nome": "Rafting e banho no rio",
+              "texto": "Só de maio a julho.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ]
+            },
+            {
+              "nome": "Esqui em Badger Pass",
+              "texto": "A temporada começa em dezembro.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Saia até as 13h",
+              "texto": "São mais de 4 horas até SF na véspera do Thanksgiving, e escurece às 16:45."
+            },
+            {
+              "nome": "Binóculo",
+              "texto": "Em El Capitan Meadow dá para acompanhar os escaladores, que passam dias no paredão.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ]
             }
           ]
         }
@@ -1763,7 +2416,11 @@
                 "yt-ctml-pch-20-paradas": 104
               },
               "onde": "Point Reyes Lighthouse",
-              "verificar": "Confirmar horário de visita"
+              "verificar": "Confirmar horário de visita",
+              "coord": [
+                37.99562,
+                -123.02315
+              ]
             }
           ]
         }
@@ -1867,6 +2524,138 @@
             {
               "nome": "Jardins da ilha",
               "texto": "Além da prisão, há jardins históricos e colônias de aves marinhas."
+            }
+          ]
+        }
+      ]
+    },
+    "mariposa": {
+      "intro": [
+        "O maior bosque de sequoias gigantes de Yosemite, com mais de 500 árvores maduras perto da entrada sul do parque."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Vá cedo",
+              "texto": "O estacionamento do Welcome Plaza enche no meio do dia.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ]
+            },
+            {
+              "nome": "Inverno",
+              "texto": "Com neve, a subida até o bosque é a pé.",
+              "verificar": "Confirmar em 24/11"
+            }
+          ]
+        }
+      ]
+    },
+    "tunnelview": {
+      "intro": [
+        "Mirante na saída do túnel da Wawona Road, com a vista mais famosa do vale: El Capitan, Bridalveil Fall e Half Dome."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Pôr do sol",
+              "texto": "A luz do fim da tarde ilumina El Capitan. Chegue 30 minutos antes.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "yosemitevalley": {
+      "intro": [
+        "O coração do parque: um vale glacial cortado pelo rio Merced, com campos abertos entre paredões de granito."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Cook's Meadow",
+              "texto": "Passarelas planas sobre o campo, com vista de Half Dome e Yosemite Falls.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "yosemitefalls": {
+      "intro": [
+        "Com 739 m somando as três quedas, é a cachoeira mais alta da América do Norte."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Época da água",
+              "texto": "O volume é máximo de abril a junho. Em novembro pode estar quase seca.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "elcapitan": {
+      "intro": [
+        "Monólito de granito de quase 900 m, o paredão mais famoso do mundo para escalada."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "El Capitan Meadow",
+              "texto": "Leve binóculo para ver os escaladores na parede.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ]
+            },
+            {
+              "nome": "Firefall",
+              "texto": "Em fevereiro, o pôr do sol faz a Horsetail Fall parecer fogo. Fora de época nesta viagem.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "bridalveil": {
+      "intro": [
+        "Cachoeira de 188 m na entrada do vale, que nunca seca por completo."
+      ],
+      "secoes": [
+        {
+          "tipo": "dica",
+          "titulo": "Dicas",
+          "itens": [
+            {
+              "nome": "Trilha curta",
+              "texto": "Cerca de 20 minutos até a base pela trilha pavimentada.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ]
             }
           ]
         }
