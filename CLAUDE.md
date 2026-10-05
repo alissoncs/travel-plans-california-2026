@@ -13,10 +13,10 @@ Projeto de planejamento de viagem (não é código). Responder e escrever sempre
 - `site/guias.json` — posts de cada dia e lugar (café, comer, fazer, levar, dicas) e as fontes (vídeos). Dicas de vídeos entram pela skill `extrair-dicas`; material bruto fica em `transcricoes/`.
 - `orcamento.csv` — gastos (os totais do JSON são gerados por `scripts/enriquecer.py`).
 - `roteiro.md` e `reservas.md` — versões em texto; manter alinhadas ao JSON.
-- O site é publicado como Artifact em https://claude.ai/artifact/2yfew8tQhbBMp9dwLTVD3d — republicar `site/index.html` com `roteiro.json`, `guias.json`, `rotas.json`, `mapa-base.json`, `img/*` e `img/dicas/*` como `files` (root `site`) após mudanças.
+- O site é publicado como Artifact em https://claude.ai/artifact/2yfew8tQhbBMp9dwLTVD3d — republicar `site/index.html` com `roteiro.json`, `guias.json`, `rotas.json`, `mapa-base.json` e `img/*` como `files` (root `site`) após mudanças.
 - `site/index.html` é um fragmento (sem `<!doctype>`/`<head>`/`<body>`), no formato de Artifact; localmente use `python scripts/servir.py`. Na Vercel (Root Directory `site`), `site/build.mjs` gera `site/dist/` com o HTML completo; não transformar o `index.html` em documento completo.
 - Mapa: `site/rotas.json` e `site/mapa-base.json` são gerados por `python scripts/enriquecer.py --so mapa` a partir do `trajeto` dos dias e dos campos `coord`. Nunca editar `rotas.json` à mão.
-- Fotos das dicas: todo item que é um lugar (café, restaurante, passeio, atividade com `onde`) tem `foto` em `site/img/dicas/`, gerada por `python scripts/enriquecer.py --so fotos` (Wikipedia/Commons ou og:image do site oficial, com `foto_credito`). Foto errada → `foto_fonte` no item ("File:X.jpg", "wiki:Título" ou URL) e rode com `--forcar-imagens`. Nome descritivo em português → `maps` com a busca do Google Maps.
+- Itens que são lugares (café, restaurante, passeio) têm `onde`; o site gera os botões do Google Maps e do Google Imagens a partir de `nome` + `onde`. Se o nome for descritivo em português, ponha em `maps` a busca certa (ex.: "Morro Bay State Park Marina").
 - Planos: A, B e C (Yosemite). Um dia exclusivo de um plano tem id com sufixo (`dia-8-c`).
 - `referencia/` é histórico: **não editar**.
 - Ao mudar o roteiro, manter os três arquivos consistentes (use a skill `atualizar-roteiro`).

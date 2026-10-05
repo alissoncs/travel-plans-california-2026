@@ -276,21 +276,15 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
 .tips { list-style: none; margin: 0; padding: 0; }
 .tips li { padding: 14px 16px; border-top: 1px solid var(--line); display: grid; gap: 4px; }
 .tips li:first-child { border-top: 0; }
-.tips li.com-foto { grid-template-columns: minmax(0, 1fr) auto; column-gap: 14px; }
-.tips li.com-foto > :not(.thumb) { grid-column: 1; }
-.tips li.com-foto > .thumb { grid-column: 2; grid-row: 1 / span 3; align-self: start; }
-.thumb { width: 88px; height: 88px; padding: 0; border: 0; border-radius: 12px; overflow: hidden; background: var(--line); cursor: zoom-in; flex: none; display: block; }
-.thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-@media (min-width: 620px) { .thumb { width: 112px; height: 112px; } }
-.acts li.com-foto { grid-template-columns: 36px minmax(0, 1fr) auto; }
-.foto-dlg { border: 0; padding: 0; border-radius: var(--radius); background: var(--surface); color: var(--ink); width: min(680px, calc(100vw - 32px)); max-height: calc(100vh - 32px); overflow: auto; box-shadow: 0 10px 40px rgb(0 0 0 / .35); }
-.foto-dlg::backdrop { background: rgb(0 0 0 / .65); }
-.foto-dlg img { width: 100%; max-height: 70vh; object-fit: contain; display: block; background: #000; }
-.foto-dlg .pe { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; padding: 12px 16px; font-size: 14px; }
-.foto-dlg .pe b { font-weight: 600; flex: 1 1 100%; font-size: 16px; }
-.foto-dlg .pe small { color: var(--muted); font-size: 12px; flex: 1 1 100%; }
-.foto-dlg .pe a { display: inline-flex; align-items: center; gap: 4px; font-weight: 500; }
-.foto-dlg .fechar { position: absolute; top: 8px; right: 8px; width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgb(0 0 0 / .55); color: #fff; font-size: 22px; line-height: 1; cursor: pointer; }
+.tips li.com-acoes { grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; }
+.tips li.com-acoes > :not(.acoes) { grid-column: 1; }
+.tips li.com-acoes > .acoes { grid-column: 2; grid-row: 1 / span 3; }
+.acts li.com-acoes { grid-template-columns: 36px minmax(0, 1fr) auto; }
+.acoes { display: flex; gap: 6px; align-self: start; }
+.acoes a { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--line); background: var(--bg); color: var(--accent); }
+.acoes a:hover { border-color: var(--accent); background: var(--accent-soft); }
+.acoes .ico { width: 18px; height: 18px; }
+.tip-meta .onde { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); }
 .tips h4 { font-size: 16px; font-weight: 600; letter-spacing: 0; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
 .tips h4 .meta { font-size: 13px; font-weight: 600; color: var(--warm); }
 .tips p { color: var(--muted); font-size: 15px; }
@@ -348,7 +342,6 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
 </div>
 <a class="map-fab" id="map-fab" href="#mapa"><svg class="ico" aria-hidden="true"><use href="#i-lugares"/></svg> Mapa</a>
 <nav class="tabbar" aria-label="Seções"><div class="wrap" id="tabbar"></div></nav>
-<dialog class="foto-dlg" id="foto-dlg" aria-label="Foto"><button type="button" class="fechar" aria-label="Fechar">×</button><img alt=""><div class="pe"></div></dialog>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
 <script>
@@ -393,18 +386,21 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
   }
   // "Alternativa: Anza-Borrego" → "Anza-Borrego"; `maps` no item substitui a busca quando o nome é descritivo.
   const semPrefixo = (n) => n.replace(/^(Alternativa|Plano reserva|Opção|Ceia|Na volta|Se sobrar tempo|Outro ângulo)\s*:\s*/i, "");
-  const mapsDe = (it) => it.maps ? gmaps(it.maps) : gmaps(semPrefixo(it.nome || it.titulo), it.onde);
-  const creditoTxt = (c) => c ? `Foto: ${c.autor}${c.licenca ? " · " + c.licenca : ""}` : "";
-  const miniatura = (foto, nome, cred, gm) => `<button type="button" class="thumb" data-foto="${esc(foto)}" data-nome="${esc(nome)}" data-credito="${esc(creditoTxt(cred))}" data-fonte="${esc(cred?.url || "")}" data-gm="${esc(gm || "")}" aria-label="Ampliar foto: ${esc(nome)}"><img src="${esc(foto)}" alt="" loading="lazy"></button>`;
+  const mapsDe = (it) => gmaps(buscaDe(it));
+  const gimagens = (q) => `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(q)}`;
+  const buscaDe = (it) => it.maps || [semPrefixo(it.nome || it.titulo), it.onde].filter(Boolean).join(", ");
+  const acoes = (q, nome) => `<span class="acoes">
+      <a href="${gimagens(q)}" target="_blank" rel="noopener" title="Fotos no Google Imagens" aria-label="Fotos de ${esc(nome)} no Google Imagens">${ico("foto")}</a>
+      <a href="${gmaps(q)}" target="_blank" rel="noopener" title="Abrir no Google Maps" aria-label="${esc(nome)} no Google Maps">${ico("pin")}</a></span>`;
   function itemDica(it) {
     const q = it.onde || it.maps;
     const fontes = (it.fontes || []).map((id) => badgeFonte(id, it.tempos?.[id])).join("");
-    return `<li${it.foto ? ' class="com-foto"' : ""}>
-      ${it.foto ? miniatura(it.foto, semPrefixo(it.nome), it.foto_credito, q && mapsDe(it)) : ""}
+    return `<li${q ? ' class="com-acoes"' : ""}>
+      ${q ? acoes(buscaDe(it), semPrefixo(it.nome)) : ""}
       <h4>${esc(it.nome)} ${it.stats ? `<span class="meta num">${esc(it.stats)}</span>` : ""}</h4>
       <p>${esc(it.texto)}</p>
-      ${q || it.verificar || fontes || it.url ? `<div class="tip-meta">
-        ${q ? `<a href="${mapsDe(it)}" target="_blank" rel="noopener">${ico("pin")} ${esc(it.onde || "Google Maps")}</a>` : ""}
+      ${it.onde || it.verificar || fontes || it.url ? `<div class="tip-meta">
+        ${it.onde ? `<span class="onde">${ico("pin")} ${esc(it.onde)}</span>` : ""}
         ${it.url ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">Site</a>` : ""}
         ${it.verificar ? `<span class="badge-warn">${ico("alerta")} ${esc(typeof it.verificar === "string" ? it.verificar : "Verificar")}</span>` : ""}
         ${fontes}
@@ -531,12 +527,11 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
       const lugares = [...new Set(d.atividades.map((a) => a.lugar).filter((k) => k && D.lugares[k]))];
       const programa = `<ul class="acts list">${d.atividades.map((a) => {
         const l = a.lugar && D.lugares[a.lugar];
-        const gm = l ? gmaps(l.nome, "California") : a.onde ? gmaps(a.onde) : "";
-        const foto = a.foto ? miniatura(a.foto, a.titulo, a.foto_credito, gm) : l?.imagem ? miniatura(l.imagem, l.nome, l.credito, gm) : "";
-        return `<li${foto ? ' class="com-foto"' : ""}>
+        const q = l ? `${l.nome}, California` : a.onde;
+        return `<li${q ? ' class="com-acoes"' : ""}>
             <span class="act-ico" title="${esc(TIPOS[a.tipo] || "")}">${ico(a.tipo)}</span>
             <div><h4>${esc(a.titulo)}</h4>${a.stats ? `<div class="meta num">${esc(a.stats)}</div>` : ""}<p>${esc(a.descricao)}</p>
-            ${l || gm ? `<div class="tip-meta">${l ? `<a href="#lugar-${a.lugar}">Ler sobre o lugar</a>` : ""}<a href="${gm}" target="_blank" rel="noopener">${ico("pin")} Google Maps</a></div>` : ""}</div>${foto}</li>`;
+            ${l ? `<div class="tip-meta"><a href="#lugar-${a.lugar}">Ler sobre o lugar</a></div>` : ""}</div>${q ? acoes(q, l ? l.nome : a.titulo) : ""}</li>`;
       }).join("")}</ul>`;
       const post = postSecoes(G.dias[d.id], [{ id: "sec-programa", titulo: "Roteiro do dia", icone: "roteiro", html: programa }]);
       return `
@@ -786,7 +781,7 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
           if (!it.coord) continue;
           const comida = s.tipo === "cafe" || s.tipo === "comer";
           add(comida ? "comida" : "dicas", it.coord, pino(comida ? "pin-comida" : "pin-dica", svg(comida ? (s.tipo === "cafe" ? "cafe" : "comida") : "fazer")),
-            { titulo: it.nome, sub: `Dia ${d.rotulo} · ${SECOES[s.tipo]?.[0] || ""}`, imagem: it.foto, href: `#${d.id}`, gm: mapsDe(it) });
+            { titulo: it.nome, sub: `Dia ${d.rotulo} · ${SECOES[s.tipo]?.[0] || ""}`, href: `#${d.id}`, gm: mapsDe(it) });
         }
       }
     }
@@ -796,7 +791,7 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
         { titulo: l.nome, sub: l.dias.map((d) => `Dia ${d.rotulo}`).join(", "), imagem: l.imagem, href: `#lugar-${l.chave}`, gm: gmaps(l.nome, "California") }, `lugar-${l.chave}`);
       for (const s of G.lugares[l.chave]?.secoes || []) {
         for (const it of s.itens) {
-          if (it.coord) add("dicas", it.coord, pino("pin-dica", svg("fazer")), { titulo: it.nome, sub: l.nome, imagem: it.foto, href: `#lugar-${l.chave}`, gm: it.onde || it.maps ? mapsDe(it) : gmaps(it.nome, l.nome) });
+          if (it.coord) add("dicas", it.coord, pino("pin-dica", svg("fazer")), { titulo: it.nome, sub: l.nome, href: `#lugar-${l.chave}`, gm: it.onde || it.maps ? mapsDe(it) : gmaps(it.nome, l.nome) });
         }
       }
     }
@@ -914,20 +909,7 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
     atual = chave;
   }
 
-  const $foto = document.getElementById("foto-dlg");
-  function abrirFoto({ foto, nome, credito, fonte, gm }) {
-    const im = $foto.querySelector("img");
-    im.src = foto; im.alt = nome;
-    $foto.querySelector(".pe").innerHTML = `<b>${esc(nome)}</b>
-      ${gm ? `<a href="${esc(gm)}" target="_blank" rel="noopener">${ico("pin")} Google Maps</a>` : ""}
-      ${credito ? `<small>${fonte ? `<a href="${esc(fonte)}" target="_blank" rel="noopener">${esc(credito)}</a>` : esc(credito)}</small>` : ""}`;
-    $foto.showModal();
-  }
-  $foto.addEventListener("click", (e) => { if (e.target === $foto || e.target.closest(".fechar")) $foto.close(); });
-
   document.addEventListener("click", (e) => {
-    const ft = e.target.closest("[data-foto]");
-    if (ft) { abrirFoto(ft.dataset); return; }
     const p = e.target.closest("[data-plano]");
     if (p) { plano = p.dataset.plano; store.set("plano", plano); render(true); return; }
     const f = e.target.closest("[data-filtro]");

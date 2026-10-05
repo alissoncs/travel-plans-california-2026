@@ -14,7 +14,7 @@ description: Regras para alterar o roteiro da viagem Califórnia 2026 mantendo r
 6. **Propagar a mudança:**
    - `site/roteiro.json`: fonte da verdade estruturada. Um dia só de um plano tem `planos: ["A"]` ou `["B"]` e id com sufixo (`dia-8-a`). Atividades usam `tipo` (trilha, praia, vista, fauna, agua, transporte, cidade, comida, hotel, bike) e `lugar` (chave em `lugares`, com `wiki` = título da página na Wikipedia em inglês).
    - Dia de estrada novo ou alterado: ajustar o `trajeto` (pontos `[lat, lng]` e `modo`: carro, bike ou balsa).
-   - Rodar `python scripts/enriquecer.py` para baixar fotos de lugares novos, atualizar o pôr do sol, os preços, os totais do orçamento, as coordenadas e as rotas do mapa (`--so mapa` faz só a última parte) e as fotos das dicas (`--so fotos`).
+   - Rodar `python scripts/enriquecer.py` para baixar fotos de lugares novos, atualizar o pôr do sol, os preços, os totais do orçamento, as coordenadas e as rotas do mapa (`--so mapa` faz só a última parte).
    - `roteiro.md`: versão em texto para leitura.
    - `reservas.md`: o que precisa ser reservado ou cancelado e com qual prioridade.
    - `orcamento.csv`: adicione ou remova linhas e depois rode a skill `orcamento`.

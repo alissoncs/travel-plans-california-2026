@@ -96,7 +96,8 @@
               "coord": [
                 32.685,
                 -117.179
-              ]
+              ],
+              "maps": "Orange Avenue, Coronado, CA"
             },
             {
               "nome": "Pôr do sol no Ferry Landing",
@@ -105,7 +106,8 @@
               "coord": [
                 32.69777,
                 -117.17009
-              ]
+              ],
+              "maps": "Coronado Ferry Landing"
             },
             {
               "nome": "Balboa Park",
@@ -144,7 +146,8 @@
               "coord": [
                 32.72099,
                 -117.16666
-              ]
+              ],
+              "maps": "Little Italy, San Diego"
             }
           ]
         },
@@ -208,7 +211,8 @@
               "coord": [
                 32.67223,
                 -117.24094
-              ]
+              ],
+              "maps": "Cabrillo National Monument Tide Pools"
             }
           ]
         },
@@ -295,7 +299,8 @@
               "coord": [
                 33.25486,
                 -116.35695
-              ]
+              ],
+              "maps": "Anza-Borrego Desert State Park Visitor Center"
             }
           ]
         },
@@ -400,7 +405,8 @@
               "coord": [
                 34.0779,
                 -116.2381
-              ]
+              ],
+              "maps": "Joshua Tree West Entrance Station"
             },
             {
               "nome": "Passe anual dos parques",
@@ -468,7 +474,8 @@
               "coord": [
                 33.98691,
                 -118.47359
-              ]
+              ],
+              "maps": "Venice Canals, Los Angeles"
             }
           ]
         },
@@ -558,7 +565,8 @@
             {
               "nome": "Trailhead certo",
               "texto": "Sandstone Peak começa no estacionamento Mishe Mokwa, na Yerba Buena Road.",
-              "onde": "Sandstone Peak Trailhead, Yerba Buena Rd"
+              "onde": "Sandstone Peak Trailhead, Yerba Buena Rd",
+              "maps": "Sandstone Peak Trailhead, Malibu"
             },
             {
               "nome": "Estacionar na PCH",
@@ -777,7 +785,8 @@
               "coord": [
                 35.354,
                 -120.844
-              ]
+              ],
+              "maps": "Morro Bay State Park Marina"
             },
             {
               "nome": "Moonstone Beach Boardwalk",
@@ -795,7 +804,8 @@
               "coord": [
                 34.5982,
                 -120.13084
-              ]
+              ],
+              "maps": "Old Mission Santa Barbara"
             },
             {
               "nome": "Naufrágio de Cayucos",
@@ -811,7 +821,8 @@
               "coord": [
                 35.43701,
                 -120.88311
-              ]
+              ],
+              "maps": "Point San Luis shipwreck, Cayucos"
             }
           ]
         },
@@ -981,7 +992,8 @@
               "coord": [
                 36.95208,
                 -122.05713
-              ]
+              ],
+              "maps": "Natural Bridges State Beach, Santa Cruz"
             }
           ]
         },
@@ -1171,7 +1183,8 @@
               "coord": [
                 36.95208,
                 -122.05713
-              ]
+              ],
+              "maps": "Natural Bridges State Beach, Santa Cruz"
             },
             {
               "nome": "17-Mile Drive",
@@ -1430,7 +1443,8 @@
               "coord": [
                 37.81001,
                 -122.41048
-              ]
+              ],
+              "maps": "Pier 39 sea lions, San Francisco"
             },
             {
               "nome": "Crissy Field e Warming Hut",
@@ -1443,7 +1457,8 @@
               "coord": [
                 37.8046,
                 -122.46661
-              ]
+              ],
+              "maps": "Warming Hut, Crissy Field, San Francisco"
             },
             {
               "nome": "Welcome Center da Golden Gate",
@@ -1458,7 +1473,8 @@
               "coord": [
                 37.8077,
                 -122.475
-              ]
+              ],
+              "maps": "Golden Gate Bridge Welcome Center"
             },
             {
               "nome": "Palace of Fine Arts",
@@ -1479,7 +1495,8 @@
               "coord": [
                 37.8753,
                 -122.5087
-              ]
+              ],
+              "maps": "Sausalito Houseboats"
             },
             {
               "nome": "Sutro Baths e o labirinto",
@@ -1494,7 +1511,8 @@
               "coord": [
                 37.78384,
                 -122.50675
-              ]
+              ],
+              "maps": "Sutro Baths, San Francisco"
             },
             {
               "nome": "Se sobrar tempo: Lombard Street",
@@ -1538,7 +1556,8 @@
               "coord": [
                 37.7845,
                 -122.4078
-              ]
+              ],
+              "maps": "Powell Street Cable Car Turnaround, San Francisco"
             },
             {
               "nome": "Twin Peaks",
@@ -1631,7 +1650,8 @@
               "coord": [
                 37.80587,
                 -122.42295
-              ]
+              ],
+              "maps": "Ghirardelli Square, San Francisco"
             }
           ]
         },
@@ -1811,7 +1831,8 @@
               "coord": [
                 37.328,
                 -119.6493
-              ]
+              ],
+              "maps": "gas station, Oakhurst, CA"
             }
           ]
         }
@@ -1839,7 +1860,8 @@
               "coord": [
                 37.7275,
                 -119.545
-              ]
+              ],
+              "maps": "Vernal Fall Footbridge, Yosemite"
             },
             {
               "nome": "Bicicleta no vale",
@@ -1852,7 +1874,8 @@
               "coord": [
                 37.73745,
                 -119.57136
-              ]
+              ],
+              "maps": "Curry Village Bike Rental, Yosemite"
             },
             {
               "nome": "Patinação no gelo no Curry Village",
@@ -1865,7 +1888,8 @@
               "coord": [
                 37.73745,
                 -119.57136
-              ]
+              ],
+              "maps": "Curry Village Ice Rink, Yosemite"
             },
             {
               "nome": "Tuolumne Grove na volta",
@@ -1879,7 +1903,8 @@
               "coord": [
                 37.759,
                 -119.807
-              ]
+              ],
+              "maps": "Tuolumne Grove Trailhead, Yosemite"
             },
             {
               "nome": "Ansel Adams Gallery",
@@ -2467,7 +2492,8 @@
               "coord": [
                 37.99562,
                 -123.02315
-              ]
+              ],
+              "maps": "Point Reyes Lighthouse"
             }
           ]
         }
@@ -2539,12 +2565,14 @@
               "tempos": {
                 "yt-ctml-pch-20-paradas": 445
               },
-              "onde": "Lands End Lookout, San Francisco"
+              "onde": "Lands End Lookout, San Francisco",
+              "maps": "Lands End Lookout, San Francisco"
             },
             {
               "nome": "Labirinto em Eagle's Point",
               "texto": "Desvio curto até um labirinto de pedras num penhasco.",
-              "onde": "Lands End Labyrinth, San Francisco"
+              "onde": "Lands End Labyrinth, San Francisco",
+              "maps": "Lands End Labyrinth, San Francisco"
             }
           ]
         }

@@ -7,12 +7,8 @@
 - orcamento.csv: totais por plano e categoria.
 - Mapa: coordenadas dos lugares (Wikipedia) e das dicas (Nominatim), rotas de carro/bike (OSRM)
   em site/rotas.json e um fundo vetorial (site/mapa-base.json) para quando os tiles não carregam.
-- Fotos das dicas: cada item que é um lugar (cafés, restaurantes, passeios, atividades com `onde`)
-  ganha uma foto em site/img/dicas/, da Wikipedia/Commons ou da imagem de divulgação do site
-  oficial (og:image). Para trocar uma foto, ponha no item `foto_fonte`: "File:Nome.jpg" (Commons),
-  "wiki:Título" (Wikipedia) ou uma URL (página com og:image ou a própria imagem) e rode de novo.
 
-Uso: python scripts/enriquecer.py [--so imagens|sol|hoteis|orcamento|mapa|fotos] [--forcar-imagens]
+Uso: python scripts/enriquecer.py [--so imagens|sol|hoteis|orcamento|mapa] [--forcar-imagens]
 """
 import argparse
 import csv
@@ -302,199 +298,6 @@ def mapa(d):
         print(f"  ✓ mapa-base.json: {len(feats)} estados, {BASE.stat().st_size // 1024} KB")
 
 
-FOTOS = IMG / "dicas"
-LARGURA_DICA = 640
-PREFIXOS = re.compile(r"^(alternativa|plano reserva|opção|opcao|ceia|na volta|se sobrar tempo|outro ângulo)\s*:\s*", re.I)
-VAZIAS = {"the", "and", "of", "de", "do", "da", "dos", "das", "em", "no", "na", "e", "a", "o", "ca", "sf", "co", "inc",
-          "cafe", "café", "coffee", "restaurant", "state", "park", "beach", "trail", "san", "santa", "los", "angeles",
-          "francisco", "diego", "barbara", "california", "national", "valley", "yosemite"}
-
-
-def chave_foto(nome):
-    import unicodedata
-    s = unicodedata.normalize("NFKD", PREFIXOS.sub("", nome)).encode("ascii", "ignore").decode().lower()
-    return re.sub(r"[^a-z0-9]+", "-", s).strip("-")[:50]
-
-
-def fichas(nome):
-    import unicodedata
-    s = unicodedata.normalize("NFKD", nome).encode("ascii", "ignore").decode().lower()
-    return {t for t in re.findall(r"[a-z0-9]+", s) if len(t) > 2 and t not in VAZIAS}
-
-
-def distancia_km(a, b):
-    import math
-    (la1, lo1), (la2, lo2) = a, b
-    x = math.radians(lo2 - lo1) * math.cos(math.radians((la1 + la2) / 2))
-    return 6371 * math.hypot(x, math.radians(la2 - la1))
-
-
-def foto_commons(arquivo):
-    """URL da miniatura e crédito de um arquivo do Commons ("Nome.jpg", sem o prefixo File:)."""
-    q = urllib.parse.urlencode({"action": "query", "titles": f"File:{arquivo}", "prop": "imageinfo",
-                                "iiprop": "url", "iiurlwidth": LARGURA_DICA, "format": "json", "redirects": 1})
-    info = next(iter(get(f"https://commons.wikimedia.org/w/api.php?{q}")["query"]["pages"].values())).get("imageinfo")
-    return (info[0].get("thumburl") or info[0]["url"], credito(arquivo)) if info else None
-
-
-def foto_wiki(q, nome, coord, exigir_nome=True):
-    """Imagem principal de um artigo da Wikipedia que bata com o nome (e fique perto, se houver coordenada)."""
-    p = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": q, "gsrlimit": 5,
-                                "prop": "pageimages|coordinates", "piprop": "name", "format": "json"})
-    paginas = get(f"https://en.wikipedia.org/w/api.php?{p}").get("query", {}).get("pages", {})
-    alvo = fichas(nome)
-    for pg in sorted(paginas.values(), key=lambda x: x.get("index", 99)):
-        arq = pg.get("pageimage", "")
-        if not arq.lower().endswith((".jpg", ".jpeg")):
-            continue
-        if exigir_nome and not (alvo & fichas(pg["title"])):
-            continue
-        c = pg.get("coordinates")
-        if coord and c and distancia_km(coord, (c[0]["lat"], c[0]["lon"])) > 15:
-            continue
-        r = foto_commons(arq)
-        if r:
-            return r
-    return None
-
-
-def foto_busca_commons(q, nome, minimo=1):
-    p = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": f"{q} filetype:bitmap",
-                                "gsrnamespace": 6, "gsrlimit": 10, "format": "json"})
-    paginas = get(f"https://commons.wikimedia.org/w/api.php?{p}").get("query", {}).get("pages", {})
-    alvo = fichas(nome)
-    for pg in sorted(paginas.values(), key=lambda x: x.get("index", 99)):
-        t = pg["title"].removeprefix("File:")
-        if t.lower().endswith((".jpg", ".jpeg")) and len(alvo & fichas(t)) >= min(minimo, len(alvo)):
-            return foto_commons(t)
-    return None
-
-
-def foto_site(url):
-    """og:image de uma página; se a URL já for uma imagem, usa direto."""
-    if re.search(r"\.(jpe?g|png|webp)(\?|$)", url, re.I):
-        img = url
-    else:
-        req = urllib.request.Request(url, headers={**UA, "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"})
-        with urllib.request.urlopen(req, timeout=20) as r:
-            html = r.read(600_000).decode("utf-8", "ignore")
-        m = (re.search(r'<meta[^>]+property=["\']og:image(?::url)?["\'][^>]+content=["\']([^"\']+)', html, re.I)
-             or re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image', html, re.I))
-        if not m:
-            return None
-        img = urllib.parse.urljoin(url, m.group(1).replace("&amp;", "&"))
-    dominio = urllib.parse.urlparse(url).netloc.removeprefix("www.")
-    return img, {"autor": dominio, "licenca": "imagem de divulgação", "url": url}
-
-
-def site_osm(nome, coord):
-    """Site oficial do estabelecimento pelo OpenStreetMap (tag website), num raio de 300 m."""
-    if not coord:
-        return None
-    palavra = max(fichas(nome) or {""}, key=len)
-    if not palavra:
-        return None
-    q = f'[out:json][timeout:20];nwr(around:300,{coord[0]},{coord[1]})["name"~"{palavra}",i];out tags 5;'
-    time.sleep(1)
-    r = get("https://overpass-api.de/api/interpreter?" + urllib.parse.urlencode({"data": q}))
-    for el in r.get("elements", []):
-        t = el.get("tags", {})
-        site = t.get("website") or t.get("contact:website")
-        if site:
-            return site
-    return None
-
-
-def salvar_foto(url, destino):
-    from PIL import Image
-    req = urllib.request.Request(url, headers={**UA, "User-Agent": UA["User-Agent"] + " Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        im = Image.open(io.BytesIO(r.read()))
-    im = im.convert("RGB")
-    if im.width > LARGURA_DICA:
-        im = im.resize((LARGURA_DICA, round(im.height * LARGURA_DICA / im.width)), Image.LANCZOS)
-    if im.height > im.width * 1.4:  # retrato muito alto: corta o centro
-        topo = (im.height - round(im.width * 1.4)) // 2
-        im = im.crop((0, topo, im.width, topo + round(im.width * 1.4)))
-    im.save(destino, "JPEG", quality=74, optimize=True, progressive=True)
-
-
-def itens_com_lugar(d, g):
-    """Todos os itens que representam um lugar: dicas dos posts e atividades com `onde` sem `lugar`."""
-    for grupo in ("dias", "lugares"):
-        for post in g[grupo].values():
-            for s in post.get("secoes", []):
-                for it in s["itens"]:
-                    if it.get("onde") or s["tipo"] in ("fazer", "cafe", "comer"):
-                        yield it, s["tipo"], it["nome"]
-    for dia in d["dias"]:
-        for a in dia["atividades"]:
-            if a.get("onde") and not a.get("lugar"):
-                yield a, a["tipo"], a["titulo"]
-
-
-def fotos(d, forcar):
-    FOTOS.mkdir(parents=True, exist_ok=True)
-    g = json.loads(GUIAS.read_text(encoding="utf-8"))
-    feitas, falhas = {}, []
-    for it, tipo, nome in itens_com_lugar(d, g):
-        if it.get("sem_foto"):
-            continue
-        chave = it.get("foto_chave") or chave_foto(nome)
-        destino = FOTOS / f"{chave}.jpg"
-        if chave in feitas:  # mesmo lugar em outro dia
-            it["foto"], it["foto_credito"] = feitas[chave]
-            continue
-        if destino.exists() and it.get("foto") and not forcar:
-            feitas[chave] = (it["foto"], it.get("foto_credito"))
-            continue
-        limpo = PREFIXOS.sub("", nome)
-        consulta = f"{limpo} {it.get('onde', '')}".strip()
-        coord = it.get("coord")
-        negocio = tipo in ("cafe", "comer", "hotel", "comida")
-        achado, via = None, ""
-        try:
-            fonte = it.get("foto_fonte")
-            if fonte:
-                if fonte.startswith("File:"):
-                    achado, via = foto_commons(fonte.removeprefix("File:")), "commons"
-                elif fonte.startswith("wiki:"):
-                    achado, via = foto_wiki(fonte[5:], fonte[5:], None, exigir_nome=False), "wikipedia"
-                else:
-                    achado, via = foto_site(fonte), "site"
-            else:
-                passos = ([("site", lambda: (s := it.get("url") or site_osm(limpo, coord)) and foto_site(s)),
-                           ("commons", lambda: foto_busca_commons(consulta, limpo, minimo=2)),
-                           ("wikipedia", lambda: foto_wiki(consulta, limpo, coord))]
-                          if negocio else
-                          [("wikipedia", lambda: foto_wiki(consulta, limpo, coord)),
-                           ("commons", lambda: foto_busca_commons(consulta, limpo)),
-                           ("commons", lambda: foto_busca_commons(limpo, limpo))])
-                for via, passo in passos:
-                    try:
-                        achado = passo()
-                    except Exception as e:
-                        print(f"    ({via}: {e})")
-                        achado = None
-                    if achado:
-                        break
-            if not achado:
-                falhas.append(nome)
-                print(f"  - {nome}: sem foto")
-                continue
-            salvar_foto(achado[0], destino)
-            it["foto"] = f"img/dicas/{chave}.jpg"
-            it["foto_credito"] = achado[1]
-            feitas[chave] = (it["foto"], it["foto_credito"])
-            print(f"  ✓ {nome} [{via}] {achado[1]['url']}")
-            time.sleep(1)
-        except Exception as e:
-            falhas.append(nome)
-            print(f"  ✗ {nome}: {e}")
-    GUIAS.write_text(json.dumps(g, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"  fotos: {len(feitas)} · sem foto ({len(falhas)}): {', '.join(falhas) or 'nenhuma'}")
-
-
 def orcamento(d):
     taxa, linhas = None, []
     for linha in CSV.read_text(encoding="utf-8").splitlines(keepends=True):
@@ -527,14 +330,13 @@ def orcamento(d):
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
     p = argparse.ArgumentParser()
-    p.add_argument("--so", choices=["imagens", "sol", "hoteis", "orcamento", "mapa", "fotos"])
+    p.add_argument("--so", choices=["imagens", "sol", "hoteis", "orcamento", "mapa"])
     p.add_argument("--forcar-imagens", action="store_true")
     args = p.parse_args()
 
     d = json.loads(JSON.read_text(encoding="utf-8"))
     etapas = {"imagens": lambda: imagens(d, args.forcar_imagens), "sol": lambda: por_do_sol(d),
-              "hoteis": lambda: hoteis(d), "orcamento": lambda: orcamento(d), "mapa": lambda: mapa(d),
-              "fotos": lambda: fotos(d, args.forcar_imagens)}
+              "hoteis": lambda: hoteis(d), "orcamento": lambda: orcamento(d), "mapa": lambda: mapa(d)}
     for nome, fn in etapas.items():
         if args.so in (None, nome):
             print(f"[{nome}]")
