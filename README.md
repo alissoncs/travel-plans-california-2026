@@ -62,12 +62,12 @@ python scripts/servir.py                # abre o site localmente
 
 ## Deploy na Vercel
 
-O `site/index.html` é um fragmento no formato de Artifact, sem `<!doctype>`, charset e viewport. Para hospedar fora do claude.ai, `node scripts/build.mjs` gera `dist/` com o HTML completo, o JSON e as imagens. O `vercel.json` já configura isso:
+Tudo fica em `site/`. O `site/index.html` é um fragmento no formato de Artifact, sem `<!doctype>`, charset e viewport. No deploy, `site/build.mjs` gera `site/dist/` com o HTML completo, o JSON e as imagens. O `site/vercel.json` já configura isso.
 
-| Configuração | Valor |
+| Configuração no painel | Valor |
 |---|---|
+| Root Directory | `site` |
 | Framework Preset | Other |
-| Root Directory | *(vazio, raiz do repositório)* |
-| Build Command | `node scripts/build.mjs` (vem do `vercel.json`) |
-| Output Directory | `dist` (vem do `vercel.json`) |
-| Install Command | *(vazio)* |
+| Build, Output e Install Command | sem override (vêm do `site/vercel.json`: `node build.mjs`, `dist` e nenhum install) |
+
+Para testar localmente: `cd site && node build.mjs && python -m http.server -d dist 8000`.

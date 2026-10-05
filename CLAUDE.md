@@ -14,7 +14,7 @@ Projeto de planejamento de viagem (não é código). Responder e escrever sempre
 - `orcamento.csv` — gastos (os totais do JSON são gerados por `scripts/enriquecer.py`).
 - `roteiro.md` e `reservas.md` — versões em texto; manter alinhadas ao JSON.
 - O site é publicado como Artifact em https://claude.ai/artifact/2yfew8tQhbBMp9dwLTVD3d — republicar `site/index.html` com `roteiro.json`, `guias.json` e `img/*` como `files` (root `site`) após mudanças.
-- `site/index.html` é um fragmento (sem `<!doctype>`/`<head>`/`<body>`), no formato de Artifact; localmente use `python scripts/servir.py`.
+- `site/index.html` é um fragmento (sem `<!doctype>`/`<head>`/`<body>`), no formato de Artifact; localmente use `python scripts/servir.py`. Na Vercel (Root Directory `site`), `site/build.mjs` gera `site/dist/` com o HTML completo; não transformar o `index.html` em documento completo.
 - `referencia/` é histórico: **não editar**.
 - Ao mudar o roteiro, manter os três arquivos consistentes (use a skill `atualizar-roteiro`).
 
