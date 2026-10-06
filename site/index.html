@@ -73,7 +73,7 @@ p { margin: 0; }
 
 /* ---------- Abas inferiores ---------- */
 .tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--surface); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom, 0px); }
-.tabbar .wrap { display: grid; grid-template-columns: repeat(5, 1fr); height: var(--nav-h); padding-inline: 4px; }
+.tabbar .wrap { display: grid; grid-template-columns: repeat(6, 1fr); height: var(--nav-h); padding-inline: 4px; }
 .tabbar a { display: grid; justify-items: center; align-content: center; gap: 3px; font-size: 11px; font-weight: 500; color: var(--muted); }
 .tabbar a[aria-current="page"] { color: var(--accent); }
 .tabbar a[aria-current="page"] .ico { stroke-width: 2.1; }
@@ -274,6 +274,19 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
 .post-sec > h3 { display: flex; align-items: center; gap: 10px; font-size: 20px; }
 .post-sec > h3 .ico { color: var(--accent); }
 .tips { list-style: none; margin: 0; padding: 0; }
+.custo { display: inline-block; margin-left: 6px; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; vertical-align: 2px; }
+.custo.opc { background: var(--line); color: var(--muted); }
+.gastos { list-style: none; margin: 0; padding: 0; }
+.gastos li { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 11px 16px; border-top: 1px solid var(--line); }
+.gastos li:first-child { border-top: 0; }
+.gastos li > a { display: flex; justify-content: space-between; gap: 12px; align-items: center; flex: 1; color: var(--ink); min-width: 0; }
+.gastos .txt { display: grid; gap: 1px; min-width: 0; }
+.gastos .t { font-size: 15px; }
+.gastos .s { font-size: 13px; color: var(--muted); }
+.gastos b { font-weight: 600; white-space: nowrap; }
+.gastos b.opc { color: var(--muted); font-weight: 500; }
+.gastos .tot { background: var(--bg); font-weight: 600; }
+.stat small { font-size: 12px; color: var(--muted); }
 .tips li { padding: 14px 16px; border-top: 1px solid var(--line); display: grid; gap: 4px; }
 .tips li:first-child { border-top: 0; }
 .tips li.com-acoes { grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; }
@@ -368,9 +381,9 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
   };
 
   const TIPOS = { trilha: "Trilhas", praia: "Praias", vista: "Mirantes", fauna: "Vida selvagem", agua: "Na água", cidade: "Cidade", bike: "Bike", transporte: "Deslocamento", comida: "Comida", hotel: "Hotel" };
-  const CAT = { alimentacao: "Alimentação", gasolina: "Gasolina", estacionamento: "Estacionamento", passeio: "Passeios", ingresso: "Ingressos", transporte: "Transporte", hospedagem: "Hotel extra", carro: "Carro" };
+  const CAT = { alimentacao: "Alimentação", gasolina: "Gasolina", estacionamento: "Estacionamento", passeio: "Passeios", ingresso: "Ingressos", transporte: "Transporte", hospedagem: "Hotéis", carro: "Aluguel do carro" };
   const PRIO = [["urgente", "Fazer já", "var(--urgente)"], ["importante", "Esta semana", "var(--aviso)"], ["antes", "Antes de viajar", "var(--info)"], ["feito", "Feito", "var(--muted)"]];
-  const ABAS = [["inicio", "Início", "home"], ["roteiro", "Roteiro", "roteiro"], ["lugares", "Lugares", "lugares"], ["hoteis", "Hotéis", "hotel"], ["reservas", "Reservas", "check"]];
+  const ABAS = [["inicio", "Início", "home"], ["roteiro", "Roteiro", "roteiro"], ["lugares", "Lugares", "lugares"], ["hoteis", "Hotéis", "hotel"], ["reservas", "Reservas", "check"], ["gastos", "Gastos", "dinheiro"]];
 
   const SECOES = { fazer: ["Mais para fazer", "fazer"], cafe: ["Café", "cafe"], comer: ["Onde comer", "comida"], levar: ["O que levar", "levar"], foto: ["Fotos", "foto"], dica: ["Dicas práticas", "dica"] };
 
@@ -421,6 +434,22 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
     return out;
   }
 
+  // ---------- gastos (orcamento.csv → roteiro.json via enriquecer.py) ----------
+  const gastosDoPlano = () => (D.orcamento?.itens || []).filter((g) => g.planos.includes(plano));
+  const gastosDoDia = (d) => gastosDoPlano().filter((g) => g.data && g.data >= d.data && g.data <= (d.data_fim || d.data));
+  const soma = (lista) => lista.filter((g) => g.status !== "opcional").reduce((n, g) => n + g.usd, 0);
+  const STATUS = { estimado: "estimativa", confirmado: "confirmado", verificar: "a confirmar", opcional: "opcional, fora do total" };
+  function custoAtiv(d, a) {
+    const gs = gastosDoDia(d).filter((g) => g.atividade === a.titulo);
+    if (!gs.length) return "";
+    if (gs.every((g) => g.status === "opcional")) return `<span class="custo opc num">opcional · ${usd(gs.reduce((n, g) => n + g.usd, 0))}</span>`;
+    const v = soma(gs);
+    const aprox = gs.some((g) => g.status !== "confirmado") ? "≈ " : "";
+    return `<span class="custo num">${v ? aprox + usd(v) : "incluído"}</span>`;
+  }
+  const linhaGasto = (g) => `<li><span class="txt"><span class="t">${esc(g.item)}</span><span class="s">${esc(CAT[g.categoria] || g.categoria)} · ${STATUS[g.status] || g.status}</span></span><b class="num${g.status === "opcional" ? " opc" : ""}">${g.usd ? usd(g.usd) : g.status === "verificar" ? "a definir" : "incluído"}</b></li>`;
+  const listaGastos = (lista, rotulo) => `<ul class="gastos list">${lista.map(linhaGasto).join("")}<li class="tot"><span>${rotulo}</span><b class="num">${usd(soma(lista))}</b></li></ul>`;
+
   // ---------- dados derivados ----------
   const diasDoPlano = () => D.dias.filter((d) => d.planos.includes(plano));
   const img = (chave) => D.lugares[chave]?.imagem;
@@ -454,7 +483,7 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
     const so = d.planos.length === 1 ? `<span class="tag">Plano ${d.planos[0]}</span>` : "";
     return `<a class="row" href="#${d.id}">
       ${i ? `<img class="thumb" src="${esc(i)}" alt="" loading="lazy">` : `<span class="thumb-ph">${ico("transporte")}</span>`}
-      <span class="txt"><span class="s num">Dia ${esc(d.rotulo)} · ${quando(d)}</span><span class="t">${esc(d.titulo)}${so}</span><span class="s">${esc(d.regiao)}</span></span>
+      <span class="txt"><span class="s num">Dia ${esc(d.rotulo)} · ${quando(d)}${soma(gastosDoDia(d)) ? ` · ≈ ${usd(soma(gastosDoDia(d)))}` : ""}</span><span class="t">${esc(d.titulo)}${so}</span><span class="s">${esc(d.regiao)}</span></span>
       <span class="chev">${ico("chev")}</span></a>`;
   }
   function alertas(lista) {
@@ -484,7 +513,7 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
         <div class="plan">
           <h3>${esc(p.nome)} ${D.viagem.plano_recomendado === plano ? `<span class="tag">Recomendado</span>` : ""}</h3>
           <p class="muted small">${esc(p.resumo)}</p>
-          <p class="small">Troque o plano no seletor <b>A / B / C</b> no topo.</p>
+          <p class="small">Troque o plano no seletor <b>${Object.keys(D.planos).join(" / ")}</b> no topo.</p>
         </div>
         <div class="section">
           <div class="section-head"><h3>Etapas</h3><a href="#roteiro">Ver roteiro</a></div>
@@ -506,7 +535,7 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
           <div class="section-head"><h3>Para resolver já</h3><a href="#reservas">Checklist</a></div>
           <div class="list">${urg.map((r) => `<a class="row" href="#reservas"><span class="txt"><span class="t"><span class="dot" style="background:var(--urgente)"></span>${esc(r.item)}</span><span class="s">${esc(r.detalhe)}</span></span><span class="chev">${ico("chev")}</span></a>`).join("")}</div>
         </div>` : ""}
-        ${o ? `<a class="row list" href="#orcamento"><span class="thumb-ph">${ico("dinheiro")}</span><span class="txt"><span class="s">Gastos previstos do próprio bolso</span><span class="t num">${usd(o.total_usd)} <span class="muted small">≈ ${brl(o.total_usd * D.orcamento.taxa_brl)}</span></span></span><span class="chev">${ico("chev")}</span></a>` : ""}`;
+        ${o ? `<a class="row list" href="#gastos"><span class="thumb-ph">${ico("dinheiro")}</span><span class="txt"><span class="s">Gastos previstos (hotéis, carro, passeios e refeições)</span><span class="t num">${usd(soma(gastosDoPlano()))} <span class="muted small">≈ ${brl(soma(gastosDoPlano()) * D.orcamento.taxa_brl)}</span></span></span><span class="chev">${ico("chev")}</span></a>` : ""}`;
     },
 
     roteiro() {
@@ -530,10 +559,12 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
         const q = l ? `${l.nome}, California` : a.onde;
         return `<li${q ? ' class="com-acoes"' : ""}>
             <span class="act-ico" title="${esc(TIPOS[a.tipo] || "")}">${ico(a.tipo)}</span>
-            <div><h4>${esc(a.titulo)}</h4>${a.stats ? `<div class="meta num">${esc(a.stats)}</div>` : ""}<p>${esc(a.descricao)}</p>
+            <div><h4>${esc(a.titulo)}${custoAtiv(d, a)}</h4>${a.stats ? `<div class="meta num">${esc(a.stats)}</div>` : ""}<p>${esc(a.descricao)}</p>
             ${l ? `<div class="tip-meta"><a href="#lugar-${a.lugar}">Ler sobre o lugar</a></div>` : ""}</div>${q ? acoes(q, l ? l.nome : a.titulo) : ""}</li>`;
       }).join("")}</ul>`;
-      const post = postSecoes(G.dias[d.id], [{ id: "sec-programa", titulo: "Roteiro do dia", icone: "roteiro", html: programa }]);
+      const gd = gastosDoDia(d);
+      const gastos = gd.length ? [{ id: "sec-gastos", titulo: "Gastos previstos", icone: "dinheiro", html: `${listaGastos(gd, "Total do dia")}<p class="fine" style="margin-top:8px">Estimativa para o casal. Refeições com imposto e gorjeta. <a href="#gastos">Ver todos os gastos</a></p>` }] : [];
+      const post = postSecoes(G.dias[d.id], [{ id: "sec-programa", titulo: "Roteiro do dia", icone: "roteiro", html: programa }, ...gastos]);
       return `
         ${capa?.imagem ? `<figure class="hero-img"><img src="${esc(capa.imagem)}" alt="${esc(capa.nome)}"><figcaption>${credito(capa)}</figcaption></figure>` : ""}
         <div class="title-block">
@@ -659,16 +690,32 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
 
     mapa() { return ""; },
 
-    orcamento() {
-      const o = D.orcamento; const p = o.planos[plano];
-      const max = Math.max(...Object.values(p.categorias));
-      return `<div class="page-head"><span class="label">${esc(D.planos[plano].nome)} · dias 6 a 12</span><h2>Orçamento</h2></div>
-        <div class="card total"><span class="muted small">Total previsto do próprio bolso</span><b class="num">${usd(p.total_usd)}</b><span class="muted num">≈ ${brl(p.total_usd * o.taxa_brl)} · câmbio R$ ${o.taxa_brl.toLocaleString("pt-BR")}</span></div>
+    gastos() {
+      const o = D.orcamento, itens = gastosDoPlano();
+      const total = soma(itens);
+      const porCat = (c) => itens.filter((g) => g.categoria === c);
+      const noites = porCat("hospedagem").filter((g) => g.usd > 0).length;
+      const destaques = [
+        ["Hotéis", soma(porCat("hospedagem")), `${noites} noites · Coronado pago pela ADP`],
+        ["Aluguel do carro", soma(porCat("carro")), "4 diárias, com impostos"],
+        ["Gasolina", soma(porCat("gasolina")), "estimativa"],
+      ];
+      const cats = Object.entries(itens.filter((g) => g.status !== "opcional").reduce((m, g) => ({ ...m, [g.categoria]: (m[g.categoria] || 0) + g.usd }), {})).filter(([, v]) => v > 0).sort((a, b) => b[1] - a[1]);
+      const max = Math.max(...cats.map(([, v]) => v));
+      const dias = diasDoPlano().map((d) => ({ d, v: soma(gastosDoDia(d)) }));
+      const verif = itens.filter((g) => g.status === "verificar");
+      const opc = itens.filter((g) => g.status === "opcional");
+      const precosEm = D.hospedagens.find((h) => h.precos_em)?.precos_em;
+      return `<div class="page-head"><span class="label">${esc(D.planos[plano].nome)} · 17 a 28/11</span><h2>Gastos</h2></div>
+        <div class="card total"><span class="muted small">Total previsto para o casal</span><b class="num">${usd(total)}</b><span class="muted num">≈ ${brl(total * o.taxa_brl)} · câmbio R$ ${o.taxa_brl.toLocaleString("pt-BR")}</span></div>
+        <div class="stats">${destaques.map(([n, v, s]) => `<div class="stat"><span>${n}</span><b class="num" style="font-size:20px">${usd(v)}</b><small>${esc(s)}</small></div>`).join("")}</div>
         <div class="card"><h3 style="font-size:17px">Por categoria</h3><div class="bars">
-          ${Object.entries(p.categorias).filter(([, v]) => v > 0).map(([k, v]) => `<div class="bar-row"><div><span>${esc(CAT[k] || k)}</span><b class="num">${usd(v)}</b></div><div class="track"><i style="width:${(v / max) * 100}%"></i></div></div>`).join("")}
+          ${cats.map(([k, v]) => `<div class="bar-row"><div><span>${esc(CAT[k] || k)}</span><b class="num">${usd(v)}</b></div><div class="track"><i style="width:${(v / max) * 100}%"></i></div></div>`).join("")}
         </div></div>
-        ${p.itens_a_verificar ? `<div class="alert" data-nivel="aviso">${ico("alerta")}<span>${p.itens_a_verificar} valores ainda são estimativas a confirmar, como estacionamentos e a taxa one-way da Sixt.</span></div>` : ""}
-        <p class="fine">Não inclui hotéis já reservados nem o aluguel do carro.${p.opcionais_usd ? ` Opcionais fora do total: ${usd(p.opcionais_usd)}.` : ""}</p>
+        <div class="section"><h3>Por dia</h3><ul class="gastos list">${dias.map(({ d, v }) => `<li><a href="#${d.id}"><span class="txt"><span class="t">Dia ${esc(d.rotulo)} · ${esc(d.titulo)}</span><span class="s num">${quando(d)}</span></span><b class="num">${v ? usd(v) : "—"}</b></a></li>`).join("")}<li class="tot"><span>Total</span><b class="num">${usd(total)}</b></li></ul></div>
+        ${verif.length ? `<div class="section"><h3>A confirmar</h3>${listaGastos(verif, "Soma dos valores a confirmar")}</div>` : ""}
+        ${opc.length ? `<div class="section"><h3>Opcionais (fora do total)</h3><ul class="gastos list">${opc.map(linhaGasto).join("")}</ul></div>` : ""}
+        <p class="fine">Previsão estimada para duas pessoas. Hotéis: diária do Booking${precosEm ? ` em ${precosEm.split("-").reverse().join("/")}` : ""} mais ~16% de impostos, a confirmar com o valor da reserva. Refeições incluem imposto e gorjeta. San Diego: hotel e evento pagos pela ADP.</p>
         <div class="foot"><span class="label">Fontes e dados</span><ul>
           ${D.fontes.map((f) => `<li><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.nome)}</a></li>`).join("")}
           ${D.creditos_api.map((c) => `<li>${esc(c.nome)}: ${esc(c.uso)}</li>`).join("")}
@@ -878,7 +925,7 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
       }
       return { pagina: "dia", arg: h, aba: "roteiro", titulo: `Dia ${dia.rotulo}`, voltar: "#roteiro" };
     }
-    if (h === "orcamento") return { pagina: "orcamento", aba: "inicio", titulo: "Orçamento", voltar: "#inicio" };
+    if (h === "orcamento") { history.replaceState(null, "", "#gastos"); return rota(); }
     if (h === "comer") return { pagina: "comer", aba: "inicio", titulo: "Cafés e restaurantes", voltar: "#inicio" };
     if (h === "videos") return { pagina: "videos", aba: "inicio", titulo: "Dicas dos vídeos", voltar: "#inicio" };
     const aba = ABAS.find(([k]) => k === h);

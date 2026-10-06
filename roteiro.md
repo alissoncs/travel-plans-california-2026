@@ -1,7 +1,8 @@
 # Roteiro dia a dia
 
-> Última revisão: 05/10/2026. Decisão pendente entre **Plano A** (mantém reservas), **Plano B** (recomendado, mais relaxante) e **Plano C** (Yosemite).
+> Última revisão: 05/10/2026. Decisão pendente entre **Plano A** (mantém reservas) e **Plano B** (recomendado, mais relaxante). O Plano C (Yosemite) foi descartado; ver o fim do arquivo.
 > A versão estruturada, que alimenta o site e o mapa, é `site/roteiro.json`.
+> Gastos previstos por dia e por atividade: `orcamento.csv` (página **Gastos** do site).
 > Pôr do sol ~16:45. Lua cheia ~24/11 (céu estrelado em Joshua Tree fica mais fraco em 22/11).
 
 ## Parte 1 — San Diego (evento ADP) · 17 a 21/11
@@ -47,14 +48,7 @@
 | Dia | Data | Programa |
 |---|---|---|
 | 8 | 24/11 Ter | Check-out LA sem pressa → Santa Barbara (café/caminhada) → Morro Bay. Pernoite em **Cambria / San Simeon**. ⚠️ hotel a reservar. |
-| 9 | 25/11 Qua | Elefantes-marinhos em **Piedras Blancas** → **Big Sur** pela Highway 1 (McWay Falls, Limekiln) → **Point Lobos** → SF no fim da tarde. ⚠️ verificar estrada e parques (incêndios Timber/Plaskett 2026). |
-
-### PLANO C — Yosemite (cancelar a 3ª noite em LA)
-
-| Dia | Data | Programa |
-|---|---|---|
-| 8 | 24/11 Ter | LA às 6h → Mariposa Grove (sequoias gigantes, Grizzly Giant) → Tunnel View no pôr do sol. Noite em Yosemite. ⚠️ hotel a reservar; correntes e taxa de estrangeiros a confirmar. |
-| 9 | 25/11 Qua | Cook's Meadow, Lower Yosemite Fall, El Capitan Meadow, Bridalveil → SF (sair até 13h). Half Dome, Glacier Point e Tioga costumam estar fechados. |
+| 9 | 25/11 Qua | Elefantes-marinhos em **Piedras Blancas** → **Big Sur** pela Highway 1 (McWay Falls, Limekiln ⚠️ verificar se reabriu) → **Point Lobos** → SF no fim da tarde. ⚠️ verificar estrada e parques (incêndios Timber/Plaskett 2026). |
 
 Trade-off: Plano B troca as Channel Islands por dois dias tranquilos na costa mais bonita e elimina o dia de 8–9h de estrada.
 
@@ -76,3 +70,12 @@ Trade-off: Plano B troca as Channel Islands por dois dias tranquilos na costa ma
 
 ### Dia 12 · 28/11 Sáb — Volta
 - Uber ~04:30 → SFO (chegar ~05:00). Voo DL 1598 07:05 (conexão — ⚠️ verificar).
+
+---
+
+## Descartado
+
+### Plano C — Yosemite (descartado em 05/10/2026)
+Dia 8: LA às 6h → Mariposa Grove → Tunnel View no pôr do sol, noite em Yosemite. Dia 9: Cook's Meadow, Lower Yosemite Fall, El Capitan Meadow e Bridalveil → SF.
+
+**Motivo:** decisão do casal. Eram quase 9h de estrada em dois dias (com a volta na véspera do Thanksgiving), risco de neve e correntes no fim de novembro, taxa extra para estrangeiros e um hotel a mais para reservar. As dicas dos vídeos sobre Yosemite ficam em `transcricoes/2026-10-05_yosemite_3-videos.md`; os posts e as fotos estão no histórico do git.

@@ -33,6 +33,8 @@ processado: 2026-10-05
 - **Reservas com antecedência:** passeios guiados de bonde aberto pelo vale, passeios a cavalo/mula em Wawona e ingressos para eventos do National Park Service devem ser agendados meses antes.
 
 ## Onde as dicas entraram
+> **05/10/2026: Plano C descartado pelo casal.** Os dias, posts e fotos abaixo foram removidos do site e ficam no histórico do git (commit anterior a "Remove o Plano C"). Motivo em `roteiro.md`, seção "Descartado".
+
 - **Novo Plano C** em `site/roteiro.json`, substituindo os dias 8 e 9: `dia-8-c` (LA → Mariposa Grove → Tunnel View, noite em Yosemite) e `dia-9-c` (Cook's Meadow, Lower Yosemite Fall, El Capitan Meadow, Bridalveil → SF).
 - Posts em `site/guias.json`: `dia-8-c`, `dia-9-c` e os lugares `mariposa`, `tunnelview`, `yosemitevalley`, `yosemitefalls`, `elcapitan`, `bridalveil`.
 - Adaptado para o fim de novembro: Half Dome (cabos retirados), Glacier Point e Tioga (estradas costumam fechar), Firefall (fevereiro), rafting (maio a julho) e Badger Pass (dezembro) entraram na seção "Fechado ou fora de época". Cachoeiras com pouca água; patinação no Curry Village e aluguel de bicicletas marcados para verificar.

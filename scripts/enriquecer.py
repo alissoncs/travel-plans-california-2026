@@ -323,6 +323,13 @@ def orcamento(d):
             "itens_a_verificar": verificar,
             "categorias": dict(sorted(cat.items(), key=lambda kv: -kv[1])),
         }
+    # linhas para o site: gastos de cada dia e de cada atividade (a data liga a linha ao dia do plano)
+    ano = d["viagem"]["inicio"][:4]
+    resultado["itens"] = [{
+        "data": f"{ano}-{i['data'][3:5]}-{i['data'][:2]}" if i["data"] != "-" else None,
+        "planos": list(i["plano"]), "categoria": i["categoria"], "item": i["item"],
+        "usd": float(i["usd"]), "status": i["status"], "atividade": i.get("atividade") or None,
+    } for i in itens]
     d["orcamento"] = resultado
     print("  ✓ " + " · ".join(f"{k}: US$ {v['total_usd']}" for k, v in resultado["planos"].items()))
 

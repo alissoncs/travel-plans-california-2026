@@ -358,7 +358,8 @@
                 "yt-la-travel-guide-10-lugares"
               ],
               "onde": "Koreatown, Los Angeles",
-              "maps": "taco truck, Koreatown, Los Angeles"
+              "maps": "taco truck, Koreatown, Los Angeles",
+              "sem_coord": true
             }
           ]
         },
@@ -566,7 +567,8 @@
               "nome": "Trailhead certo",
               "texto": "Sandstone Peak começa no estacionamento Mishe Mokwa, na Yerba Buena Road.",
               "onde": "Sandstone Peak Trailhead, Yerba Buena Rd",
-              "maps": "Sandstone Peak Trailhead, Malibu"
+              "maps": "Sandstone Peak Trailhead, Malibu",
+              "coord": [34.1209, -118.9319]
             },
             {
               "nome": "Estacionar na PCH",
@@ -640,7 +642,7 @@
                 "yt-unseen-california"
               ],
               "onde": "Getty Center, Los Angeles",
-              "verificar": "Fecha às segundas; confirmar horário e reserva",
+              "verificar": "Confirmar horário e reserva (24/11 é terça; o Getty fecha às segundas)",
               "coord": [
                 34.07702,
                 -118.47401
@@ -1050,7 +1052,11 @@
                 "yt-la-travel-guide-10-lugares"
               ],
               "onde": "Gilroy, CA",
-              "maps": "In-N-Out Burger, Gilroy, CA"
+              "maps": "In-N-Out Burger, Gilroy, CA",
+              "coord": [
+                37.02379,
+                -121.56419
+              ]
             }
           ]
         },
@@ -1522,6 +1528,10 @@
                 "yt-spv-sf-1-dia",
                 "yt-rota1nv-sf-1-dia",
                 "yt-rota360-sf-2-dias"
+              ],
+              "coord": [
+                37.8021,
+                -122.4188
               ]
             },
             {
@@ -1532,6 +1542,10 @@
                 "yt-spv-sf-1-dia",
                 "yt-rota1nv-sf-1-dia",
                 "yt-rota360-sf-2-dias"
+              ],
+              "coord": [
+                37.77622,
+                -122.43279
               ]
             },
             {
@@ -1543,6 +1557,10 @@
                 "yt-spv-sf-1-dia",
                 "yt-rota1nv-sf-1-dia",
                 "yt-rota360-sf-2-dias"
+              ],
+              "coord": [
+                37.79069,
+                -122.40559
               ]
             },
             {
@@ -1711,290 +1729,6 @@
           ]
         }
       ]
-    },
-    "dia-8-c": {
-      "intro": [
-        "Yosemite é o parque que fez nascer a ideia de parque nacional nos Estados Unidos. Em novembro o vale fica mais vazio, com as árvores ainda amarelas e, às vezes, neve nos paredões.",
-        "As sequoias gigantes de Mariposa Grove são as árvores que o plano original chamava de sequoias: troncos de mais de 8 metros de diâmetro, diferentes das redwoods altas e finas da costa."
-      ],
-      "secoes": [
-        {
-          "tipo": "fazer",
-          "titulo": "Mais para fazer",
-          "itens": [
-            {
-              "nome": "Grizzly Giant",
-              "texto": "A sequoia mais famosa de Mariposa Grove, com cerca de 1.800 anos. Fica no meio do Big Trees Loop.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Mariposa Grove, Yosemite",
-              "stats": "3,2 km ida e volta",
-              "coord": [
-                37.5149,
-                -119.6009
-              ]
-            },
-            {
-              "nome": "Bridalveil Fall",
-              "texto": "Trilha de 20 minutos até a base, logo na entrada do vale. Boa parada antes do Tunnel View.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Bridalveil Fall, Yosemite",
-              "coord": [
-                37.7166,
-                -119.6464
-              ]
-            },
-            {
-              "nome": "Céu estrelado",
-              "texto": "Sem poluição luminosa, o vale é ótimo para ver estrelas. Saia do hotel uns minutos e olhe para cima.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "verificar": "Lua quase cheia nesta noite",
-              "onde": "Yosemite Valley",
-              "maps": "El Capitan Meadow, Yosemite"
-            }
-          ]
-        },
-        {
-          "tipo": "comer",
-          "titulo": "Onde comer",
-          "itens": [
-            {
-              "nome": "Base Camp Eatery",
-              "texto": "Praça de alimentação do Yosemite Valley Lodge, prática para o jantar da chegada.",
-              "onde": "Yosemite Valley Lodge",
-              "coord": [
-                37.74326,
-                -119.59842
-              ]
-            },
-            {
-              "nome": "The Ahwahnee",
-              "texto": "Hotel histórico de 1927 com um salão de jantar de pé-direito altíssimo. Vale ao menos um drinque no bar.",
-              "onde": "The Ahwahnee, Yosemite Valley",
-              "verificar": "Reservar o jantar",
-              "coord": [
-                37.7461,
-                -119.5753
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "levar",
-          "titulo": "O que levar",
-          "itens": [
-            {
-              "nome": "Roupa de frio",
-              "texto": "À noite o vale fica abaixo de zero em novembro. Leve gorro, luvas e casaco."
-            },
-            {
-              "nome": "Tênis de trilha",
-              "texto": "Os caminhos podem ter gelo nas partes sombreadas.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            },
-            {
-              "nome": "Comida para a estrada",
-              "texto": "Entre Fresno e o parque há poucas opções. Dentro do vale não há posto de gasolina."
-            }
-          ]
-        },
-        {
-          "tipo": "dica",
-          "titulo": "Dicas práticas",
-          "itens": [
-            {
-              "nome": "Correntes e tração",
-              "texto": "Com neve, o parque exige correntes ou carro 4x4 com pneus adequados. Pergunte à Sixt se o contrato permite correntes e peça um carro com tração integral.",
-              "verificar": "Conferir condições na semana da viagem"
-            },
-            {
-              "nome": "Mariposa Grove no inverno",
-              "texto": "Quando neva, a estrada até o bosque fecha para carros e a subida a partir do estacionamento é a pé, cerca de 3 km.",
-              "verificar": "Confirmar acesso e ônibus em 24/11"
-            },
-            {
-              "nome": "Taxa para estrangeiros",
-              "texto": "Em 2026 Yosemite passou a cobrar uma taxa extra de visitantes estrangeiros, além da entrada do carro.",
-              "verificar": "Confirmar valor no site do NPS"
-            },
-            {
-              "nome": "Abasteça em Oakhurst",
-              "texto": "É a última cidade grande antes da entrada sul. Dentro do vale não há posto.",
-              "onde": "Oakhurst",
-              "coord": [
-                37.328,
-                -119.6493
-              ],
-              "maps": "gas station, Oakhurst, CA"
-            }
-          ]
-        }
-      ]
-    },
-    "dia-9-c": {
-      "intro": [
-        "O vale de Yosemite tem 11 km de comprimento e é cercado por paredões de granito de quase 1 km de altura. Numa manhã dá para ver os pontos clássicos sem pressa.",
-        "Em novembro as cachoeiras estão no ponto mais baixo do ano, e algumas podem estar secas. Em compensação, o vale fica tranquilo e a luz do outono é bonita."
-      ],
-      "secoes": [
-        {
-          "tipo": "fazer",
-          "titulo": "Mais para fazer",
-          "itens": [
-            {
-              "nome": "Mist Trail até a ponte de Vernal Fall",
-              "texto": "Subida curta até a ponte com vista para a cachoeira. Com pouca água em novembro, molha menos que na primavera.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Mist Trail, Yosemite",
-              "stats": "2,6 km · +120 m",
-              "verificar": "Pode ter gelo",
-              "coord": [
-                37.7275,
-                -119.545
-              ],
-              "maps": "Vernal Fall Footbridge, Yosemite"
-            },
-            {
-              "nome": "Bicicleta no vale",
-              "texto": "Ciclovias planas ligam os pontos do vale. O aluguel fica no Curry Village e no Yosemite Valley Lodge.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Curry Village, Yosemite",
-              "verificar": "Confirmar se o aluguel funciona em novembro",
-              "coord": [
-                37.73745,
-                -119.57136
-              ],
-              "maps": "Curry Village Bike Rental, Yosemite"
-            },
-            {
-              "nome": "Patinação no gelo no Curry Village",
-              "texto": "Pista ao ar livre com vista para o Half Dome, que costuma abrir em meados de novembro.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Curry Village, Yosemite",
-              "verificar": "Confirmar abertura",
-              "coord": [
-                37.73745,
-                -119.57136
-              ],
-              "maps": "Curry Village Ice Rink, Yosemite"
-            },
-            {
-              "nome": "Tuolumne Grove na volta",
-              "texto": "Bosque de sequoias gigantes menos movimentado, no caminho para SF pela Big Oak Flat Road. A trilha desce e volta subindo.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Tuolumne Grove, Yosemite",
-              "stats": "4 km · +150 m",
-              "verificar": "Confirmar acesso pela Tioga Road no inverno",
-              "coord": [
-                37.759,
-                -119.807
-              ],
-              "maps": "Tuolumne Grove Trailhead, Yosemite"
-            },
-            {
-              "nome": "Ansel Adams Gallery",
-              "texto": "Galeria do fotógrafo que imortalizou o parque, no Yosemite Village.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Ansel Adams Gallery, Yosemite",
-              "coord": [
-                37.74856,
-                -119.58687
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "cafe",
-          "titulo": "Café",
-          "itens": [
-            {
-              "nome": "Degnan's Kitchen",
-              "texto": "Delicatessen no Yosemite Village, com café e sanduíches para levar na estrada.",
-              "onde": "Yosemite Village",
-              "coord": [
-                37.74802,
-                -119.58547
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "dica",
-          "titulo": "Fechado ou fora de época em novembro",
-          "itens": [
-            {
-              "nome": "Half Dome",
-              "texto": "Os cabos de aço do trecho final são retirados em outubro, e a subida exige permissão por sorteio. Não dá para fazer nesta época.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            },
-            {
-              "nome": "Glacier Point e Tioga Pass",
-              "texto": "As estradas costumam fechar com a primeira neve, entre novembro e maio.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "verificar": "Confirmar situação da Glacier Point Road"
-            },
-            {
-              "nome": "Firefall",
-              "texto": "O fenômeno do pôr do sol na Horsetail Fall acontece só em fevereiro.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            },
-            {
-              "nome": "Rafting e banho no rio",
-              "texto": "Só de maio a julho.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            },
-            {
-              "nome": "Esqui em Badger Pass",
-              "texto": "A temporada começa em dezembro.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "dica",
-          "titulo": "Dicas práticas",
-          "itens": [
-            {
-              "nome": "Saia até as 13h",
-              "texto": "São mais de 4 horas até SF na véspera do Thanksgiving, e escurece às 16:45."
-            },
-            {
-              "nome": "Binóculo",
-              "texto": "Em El Capitan Meadow dá para acompanhar os escaladores, que passam dias no paredão.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            }
-          ]
-        }
-      ]
     }
   },
   "lugares": {
@@ -2140,7 +1874,11 @@
             {
               "nome": "Lake Hollywood Park",
               "texto": "Gramado de bairro com a vista mais próxima do letreiro. Vá cedo, antes dos ônibus de turismo.",
-              "onde": "Lake Hollywood Park, Los Angeles"
+              "onde": "Lake Hollywood Park, Los Angeles",
+              "coord": [
+                34.12689,
+                -118.32592
+              ]
             },
             {
               "nome": "Respeite o bairro",
@@ -2197,7 +1935,11 @@
               "nome": "Keller House",
               "texto": "Logo no começo fica uma cabana de pedra de 1903, uma das construções mais antigas de Malibu.",
               "onde": "Solstice Canyon, Malibu",
-              "maps": "Keller House, Solstice Canyon, Malibu"
+              "maps": "Keller House, Solstice Canyon, Malibu",
+              "coord": [
+                34.04286,
+                -118.75324
+              ]
             }
           ]
         }
@@ -2371,7 +2113,11 @@
               "nome": "China Cove",
               "texto": "Enseada de água esmeralda vista do alto da escada. Uma das paradas mais bonitas.",
               "onde": "Point Lobos State Natural Reserve",
-              "maps": "China Cove, Point Lobos"
+              "maps": "China Cove, Point Lobos",
+              "coord": [
+                36.51473,
+                -121.94279
+              ]
             },
             {
               "nome": "Chegue cedo",
@@ -2415,7 +2161,11 @@
               "nome": "Cathedral Grove",
               "texto": "Trecho de silêncio pedido aos visitantes. Vale parar e ouvir a floresta.",
               "onde": "Muir Woods National Monument",
-              "maps": "Cathedral Grove, Muir Woods"
+              "maps": "Cathedral Grove, Muir Woods",
+              "coord": [
+                37.89639,
+                -122.58022
+              ]
             },
             {
               "nome": "Reserva obrigatória",
@@ -2447,12 +2197,14 @@
             {
               "nome": "Hawk Hill",
               "texto": "Mirante mais alto, com a ponte e a cidade ao fundo. No outono passam aves de rapina migrando.",
-              "onde": "Hawk Hill, Marin Headlands"
+              "onde": "Hawk Hill, Marin Headlands",
+              "coord": [37.8253, -122.4994]
             },
             {
               "nome": "Rodeo Beach",
               "texto": "Praia de pedrinhas coloridas entre colinas, boa para o fim da manhã.",
-              "onde": "Rodeo Beach, Marin Headlands"
+              "onde": "Rodeo Beach, Marin Headlands",
+              "coord": [37.8322, -122.5378]
             }
           ]
         }
@@ -2475,7 +2227,11 @@
               "nome": "Point Reyes Station",
               "texto": "Na volta, pare na Bovine Bakery e na Cowgirl Creamery, na vila.",
               "verificar": "Confirmar se abrem no feriado",
-              "onde": "Point Reyes Station, CA"
+              "onde": "Point Reyes Station, CA",
+              "coord": [
+                38.08751,
+                -122.81449
+              ]
             },
             {
               "nome": "Farol de Point Reyes",
@@ -2566,13 +2322,18 @@
                 "yt-ctml-pch-20-paradas": 445
               },
               "onde": "Lands End Lookout, San Francisco",
-              "maps": "Lands End Lookout, San Francisco"
+              "maps": "Lands End Lookout, San Francisco",
+              "coord": [
+                37.77976,
+                -122.5116
+              ]
             },
             {
               "nome": "Labirinto em Eagle's Point",
               "texto": "Desvio curto até um labirinto de pedras num penhasco.",
               "onde": "Lands End Labyrinth, San Francisco",
-              "maps": "Lands End Labyrinth, San Francisco"
+              "maps": "Lands End Labyrinth, San Francisco",
+              "coord": [37.7877, -122.5054]
             }
           ]
         }
@@ -2601,140 +2362,6 @@
             {
               "nome": "Jardins da ilha",
               "texto": "Além da prisão, há jardins históricos e colônias de aves marinhas."
-            }
-          ]
-        }
-      ]
-    },
-    "mariposa": {
-      "intro": [
-        "O maior bosque de sequoias gigantes de Yosemite, com mais de 500 árvores maduras perto da entrada sul do parque."
-      ],
-      "secoes": [
-        {
-          "tipo": "dica",
-          "titulo": "Dicas",
-          "itens": [
-            {
-              "nome": "Vá cedo",
-              "texto": "O estacionamento do Welcome Plaza enche no meio do dia.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            },
-            {
-              "nome": "Inverno",
-              "texto": "Com neve, a subida até o bosque é a pé.",
-              "verificar": "Confirmar em 24/11"
-            }
-          ]
-        }
-      ]
-    },
-    "tunnelview": {
-      "intro": [
-        "Mirante na saída do túnel da Wawona Road, com a vista mais famosa do vale: El Capitan, Bridalveil Fall e Half Dome."
-      ],
-      "secoes": [
-        {
-          "tipo": "dica",
-          "titulo": "Dicas",
-          "itens": [
-            {
-              "nome": "Pôr do sol",
-              "texto": "A luz do fim da tarde ilumina El Capitan. Chegue 30 minutos antes.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "yosemitevalley": {
-      "intro": [
-        "O coração do parque: um vale glacial cortado pelo rio Merced, com campos abertos entre paredões de granito."
-      ],
-      "secoes": [
-        {
-          "tipo": "dica",
-          "titulo": "Dicas",
-          "itens": [
-            {
-              "nome": "Cook's Meadow",
-              "texto": "Passarelas planas sobre o campo, com vista de Half Dome e Yosemite Falls.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Cook's Meadow, Yosemite"
-            }
-          ]
-        }
-      ]
-    },
-    "yosemitefalls": {
-      "intro": [
-        "Com 739 m somando as três quedas, é a cachoeira mais alta da América do Norte."
-      ],
-      "secoes": [
-        {
-          "tipo": "dica",
-          "titulo": "Dicas",
-          "itens": [
-            {
-              "nome": "Época da água",
-              "texto": "O volume é máximo de abril a junho. Em novembro pode estar quase seca.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "elcapitan": {
-      "intro": [
-        "Monólito de granito de quase 900 m, o paredão mais famoso do mundo para escalada."
-      ],
-      "secoes": [
-        {
-          "tipo": "dica",
-          "titulo": "Dicas",
-          "itens": [
-            {
-              "nome": "El Capitan Meadow",
-              "texto": "Leve binóculo para ver os escaladores na parede.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "El Capitan Meadow, Yosemite"
-            },
-            {
-              "nome": "Firefall",
-              "texto": "Em fevereiro, o pôr do sol faz a Horsetail Fall parecer fogo. Fora de época nesta viagem.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "bridalveil": {
-      "intro": [
-        "Cachoeira de 188 m na entrada do vale, que nunca seca por completo."
-      ],
-      "secoes": [
-        {
-          "tipo": "dica",
-          "titulo": "Dicas",
-          "itens": [
-            {
-              "nome": "Trilha curta",
-              "texto": "Cerca de 20 minutos até a base pela trilha pavimentada.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
             }
           ]
         }

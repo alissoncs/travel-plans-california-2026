@@ -8,7 +8,7 @@
     "capa": "bixby",
     "plano_recomendado": "B"
   },
-  "atualizado_em": "2026-10-05 18:16",
+  "atualizado_em": "2026-10-05 22:43",
   "planos": {
     "A": {
       "nome": "Plano A",
@@ -17,10 +17,6 @@
     "B": {
       "nome": "Plano B",
       "resumo": "Cancela a 3ª noite em LA e dorme em Cambria. Dois dias tranquilos pela costa de Big Sur, sem o dia de 8h de estrada."
-    },
-    "C": {
-      "nome": "Plano C",
-      "resumo": "Troca a costa central por Yosemite. Sequoias gigantes em Mariposa Grove, uma noite no vale entre os paredões de granito e volta para SF pela serra."
     }
   },
   "fases": [
@@ -54,8 +50,7 @@
       "fase": "sd",
       "planos": [
         "A",
-        "B",
-        "C"
+        "B"
       ],
       "titulo": "Chegada em San Diego",
       "regiao": "Coronado",
@@ -98,8 +93,7 @@
       "fase": "sd",
       "planos": [
         "A",
-        "B",
-        "C"
+        "B"
       ],
       "titulo": "Evento ADP",
       "regiao": "San Diego",
@@ -149,8 +143,7 @@
       "fase": "road",
       "planos": [
         "A",
-        "B",
-        "C"
+        "B"
       ],
       "titulo": "Joshua Tree",
       "regiao": "Deserto de Mojave",
@@ -253,8 +246,7 @@
       "fase": "road",
       "planos": [
         "A",
-        "B",
-        "C"
+        "B"
       ],
       "titulo": "Malibu",
       "regiao": "Santa Monica Mountains",
@@ -648,6 +640,12 @@
           "descricao": "Loop curto antes de seguir para SF.",
           "stats": "3 km",
           "lugar": "lobos"
+        },
+        {
+          "tipo": "hotel",
+          "titulo": "Check-in no Axiom Hotel",
+          "descricao": "Union Square, no fim da tarde.",
+          "onde": "Axiom Hotel, San Francisco"
         }
       ],
       "alertas": [
@@ -697,193 +695,13 @@
       ]
     },
     {
-      "id": "dia-8-c",
-      "rotulo": "8",
-      "data": "2026-11-24",
-      "fase": "road",
-      "planos": [
-        "C"
-      ],
-      "titulo": "Sequoias gigantes",
-      "regiao": "Mariposa Grove → Yosemite Valley",
-      "coord": [
-        37.7456,
-        -119.5936
-      ],
-      "capa": "mariposa",
-      "estrada": [
-        {
-          "trecho": "LA → Mariposa Grove",
-          "tempo": "4h45"
-        },
-        {
-          "trecho": "Mariposa Grove → Yosemite Valley",
-          "tempo": "1h15"
-        }
-      ],
-      "resumo": "Saída de LA bem cedo rumo à Sierra Nevada. À tarde, as sequoias gigantes de Mariposa Grove; no fim do dia, a vista clássica do vale no Tunnel View.",
-      "atividades": [
-        {
-          "tipo": "transporte",
-          "titulo": "Estrada até a entrada sul",
-          "descricao": "Sair às 6h pela I-5 e CA-99, passando por Fresno."
-        },
-        {
-          "tipo": "trilha",
-          "titulo": "Mariposa Grove",
-          "descricao": "O maior bosque de sequoias gigantes do parque. Big Trees Loop e o Grizzly Giant, com cerca de 1.800 anos.",
-          "stats": "3–3,5 km",
-          "lugar": "mariposa"
-        },
-        {
-          "tipo": "vista",
-          "titulo": "Tunnel View no pôr do sol",
-          "descricao": "El Capitan, Bridalveil Fall e Half Dome na mesma moldura.",
-          "lugar": "tunnelview"
-        },
-        {
-          "tipo": "hotel",
-          "titulo": "Noite em Yosemite",
-          "descricao": "Opções com preço na página Hotéis."
-        }
-      ],
-      "alertas": [
-        {
-          "nivel": "aviso",
-          "texto": "Fim de novembro na serra: pode haver neve e exigência de correntes. Confirmar a política da Sixt e pedir carro com tração integral."
-        },
-        {
-          "nivel": "aviso",
-          "texto": "Em 2026 Yosemite passou a cobrar uma taxa extra de estrangeiros. Confirmar o valor da entrada."
-        }
-      ],
-      "trajeto": [
-        {
-          "modo": "carro",
-          "pontos": [
-            [
-              34.0617,
-              -118.3046
-            ],
-            [
-              37.5067,
-              -119.608
-            ],
-            [
-              37.7156,
-              -119.677
-            ],
-            [
-              37.743,
-              -119.598
-            ]
-          ]
-        }
-      ],
-      "sol": {
-        "nascer": "06:46",
-        "por": "16:43"
-      }
-    },
-    {
-      "id": "dia-9-c",
-      "rotulo": "9",
-      "data": "2026-11-25",
-      "fase": "road",
-      "planos": [
-        "C"
-      ],
-      "titulo": "Yosemite Valley",
-      "regiao": "Vale → San Francisco",
-      "coord": [
-        37.7456,
-        -119.5936
-      ],
-      "capa": "elcapitan",
-      "estrada": [
-        {
-          "trecho": "Yosemite Valley → SF",
-          "tempo": "4h+ (véspera do feriado)"
-        }
-      ],
-      "resumo": "Manhã no vale, entre campos, cachoeiras e os paredões de granito. Saída depois do almoço para chegar a SF à noite.",
-      "atividades": [
-        {
-          "tipo": "trilha",
-          "titulo": "Cook's Meadow ao amanhecer",
-          "descricao": "Passarelas de madeira sobre o campo, com Half Dome e Yosemite Falls ao fundo.",
-          "stats": "1,6 km · plano",
-          "lugar": "yosemitevalley"
-        },
-        {
-          "tipo": "trilha",
-          "titulo": "Lower Yosemite Fall",
-          "descricao": "Loop curto até a base da cachoeira mais alta da América do Norte.",
-          "stats": "1,6 km",
-          "lugar": "yosemitefalls"
-        },
-        {
-          "tipo": "vista",
-          "titulo": "El Capitan Meadow",
-          "descricao": "Campo aos pés do paredão de 900 m. Com binóculo dá para ver os escaladores.",
-          "lugar": "elcapitan"
-        },
-        {
-          "tipo": "vista",
-          "titulo": "Bridalveil Fall",
-          "descricao": "Trilha de 20 minutos até a base, na saída do vale.",
-          "lugar": "bridalveil"
-        },
-        {
-          "tipo": "hotel",
-          "titulo": "Check-in no Axiom Hotel",
-          "descricao": "Union Square.",
-          "onde": "Axiom Hotel, San Francisco"
-        }
-      ],
-      "alertas": [
-        {
-          "nivel": "aviso",
-          "texto": "Véspera do Thanksgiving: sair do vale até as 13h. Não deixar bagagem visível no carro em SF."
-        },
-        {
-          "nivel": "info",
-          "texto": "O Axiom fica a poucas quadras do Tenderloin. À noite, use Uber mesmo para trajetos curtos."
-        }
-      ],
-      "trajeto": [
-        {
-          "modo": "carro",
-          "pontos": [
-            [
-              37.743,
-              -119.598
-            ],
-            [
-              37.7593,
-              -119.8065
-            ],
-            [
-              37.7849,
-              -122.408
-            ]
-          ]
-        }
-      ],
-      "sol": {
-        "nascer": "06:47",
-        "por": "16:43"
-      }
-    },
-    {
       "id": "dia-10",
       "rotulo": "10",
       "data": "2026-11-26",
       "fase": "road",
       "planos": [
         "A",
-        "B",
-        "C"
+        "B"
       ],
       "titulo": "Thanksgiving em Marin",
       "regiao": "Muir Woods e Headlands",
@@ -972,8 +790,7 @@
       "fase": "sf",
       "planos": [
         "A",
-        "B",
-        "C"
+        "B"
       ],
       "titulo": "Golden Gate de bike",
       "regiao": "San Francisco e Sausalito",
@@ -1056,8 +873,7 @@
       "fase": "sf",
       "planos": [
         "A",
-        "B",
-        "C"
+        "B"
       ],
       "titulo": "Voo de volta",
       "regiao": "SFO",
@@ -1475,104 +1291,6 @@
         37.82667,
         -122.42278
       ]
-    },
-    "mariposa": {
-      "nome": "Mariposa Grove",
-      "wiki": "Mariposa_Grove",
-      "resumo_wiki": "Mariposa Grove is a sequoia grove located near Wawona, California, United States, in the southernmost part of Yosemite National Park. It is the largest grove of giant sequoias in the park, with several hundred mature specimens. Two of its trees are among the 30 largest giant sequoias in the world. The grove attracts about one million visitors annually. Part of the natural area is old-growth forest",
-      "wiki_url": "https://en.wikipedia.org/wiki/Mariposa_Grove",
-      "credito": {
-        "autor": "Marty Aligata",
-        "licenca": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Grizzly_Giant_in_Yosemite_July_2023.jpg"
-      },
-      "coord": [
-        37.51389,
-        -119.59833
-      ],
-      "foto_wiki": "Grizzly_Giant",
-      "imagem": "img/mariposa.jpg"
-    },
-    "tunnelview": {
-      "nome": "Tunnel View",
-      "wiki": "Tunnel_View",
-      "imagem": "img/tunnelview.jpg",
-      "resumo_wiki": "Tunnel View is a scenic viewpoint located on California State Route 41 in Yosemite National Park, United States. Since its opening in 1933, it has offered visitors iconic, expansive views of Yosemite Valley, making it one of the park's most renowned viewpoints.",
-      "wiki_url": "https://en.wikipedia.org/wiki/Tunnel_View",
-      "credito": {
-        "autor": "Diliff",
-        "licenca": "CC BY-SA 3.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Tunnel_View%2C_Yosemite_Valley%2C_Yosemite_NP_-_Diliff.jpg"
-      },
-      "coord": [
-        37.71576,
-        -119.67718
-      ]
-    },
-    "yosemitevalley": {
-      "nome": "Yosemite Valley",
-      "wiki": "Yosemite_Valley",
-      "resumo_wiki": "Yosemite Valley is a glacial valley in Yosemite National Park in the western Sierra Nevada mountains of Central California, United States. The valley is about 7.5 mi (12.1 km) long and 3,000–3,500 ft (910–1,070 m) deep, surrounded by high granite summits such as Half Dome and El Capitan, and densely forested with pines. The valley is drained by the Merced River, and a multitude of streams and wate",
-      "wiki_url": "https://en.wikipedia.org/wiki/Yosemite_Valley",
-      "credito": {
-        "autor": "Thomas Wolf, www.foto-tw.de",
-        "licenca": "CC BY-SA 3.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Half_Dome_with_Eastern_Yosemite_Valley_%28Zuschnitt%29.jpg"
-      },
-      "coord": [
-        37.72167,
-        -119.64639
-      ],
-      "foto_wiki": "Half_Dome",
-      "imagem": "img/yosemitevalley.jpg"
-    },
-    "yosemitefalls": {
-      "nome": "Yosemite Falls",
-      "wiki": "Yosemite_Falls",
-      "imagem": "img/yosemitefalls.jpg",
-      "resumo_wiki": "Yosemite Falls is the highest waterfall in Yosemite National Park, dropping a total of 2,425 feet (739 m) from the top of the upper fall to the base of the lower fall. Located in the Sierra Nevada of California, it is a major attraction in the park, especially in late spring when the water flow is at its peak.",
-      "wiki_url": "https://en.wikipedia.org/wiki/Yosemite_Falls",
-      "credito": {
-        "autor": "chensiyuan",
-        "licenca": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Yosemite_falls_winter_2010.JPG"
-      },
-      "coord": [
-        37.75684,
-        -119.59678
-      ]
-    },
-    "elcapitan": {
-      "nome": "El Capitan",
-      "wiki": "El_Capitan",
-      "imagem": "img/elcapitan.jpg",
-      "resumo_wiki": "El Capitan is a vertical rock formation in Yosemite National Park, on the north side of Yosemite Valley, near its western end. The granite monolith is about 3,000 feet (914 m) from base to summit along its tallest face and is a world-famous location for big wall climbing, including the disciplines of aid climbing, free climbing, and more recently for free solo climbing.",
-      "wiki_url": "https://en.wikipedia.org/wiki/El_Capitan",
-      "credito": {
-        "autor": "Clementp.fr",
-        "licenca": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:El_Capitan_en_Californie.jpg"
-      },
-      "coord": [
-        37.74222,
-        -119.63583
-      ]
-    },
-    "bridalveil": {
-      "nome": "Bridalveil Fall",
-      "wiki": "Bridalveil_Fall",
-      "imagem": "img/bridalveil.jpg",
-      "resumo_wiki": "Bridalveil Fall is one of the most prominent waterfalls in the Yosemite Valley in California. \nThe waterfall is 188 metres (617 ft) in height and flows year round.",
-      "wiki_url": "https://en.wikipedia.org/wiki/Bridalveil_Fall",
-      "credito": {
-        "autor": "Asamudra",
-        "licenca": "CC BY 3.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Bridelveil_Falls_Yosemite.jpg"
-      },
-      "coord": [
-        37.71675,
-        -119.64651
-      ]
     }
   },
   "hospedagens": [
@@ -1585,8 +1303,7 @@
       "status": "Pago pela ADP",
       "planos": [
         "A",
-        "B",
-        "C"
+        "B"
       ],
       "coord": [
         32.6809,
@@ -1636,8 +1353,7 @@
       "checkout": "2026-11-24",
       "status": "Reservado · cancelar a 3ª noite",
       "planos": [
-        "B",
-        "C"
+        "B"
       ],
       "xotelo_key": "g32655-d77852",
       "precos": [
@@ -1673,8 +1389,7 @@
       "status": "Reservado",
       "planos": [
         "A",
-        "B",
-        "C"
+        "B"
       ],
       "xotelo_key": "g60713-d7624213",
       "precos": [
@@ -1799,74 +1514,13 @@
       ],
       "precos_em": "2026-10-05",
       "cidade": "Cambria, CA"
-    },
-    {
-      "id": "yosemite",
-      "titulo": "Hotel em Yosemite (Plano C)",
-      "planos": [
-        "C"
-      ],
-      "location_key": "g61000",
-      "checkin": "2026-11-24",
-      "checkout": "2026-11-25",
-      "limite": 6,
-      "busca_externa": [
-        {
-          "nome": "Booking",
-          "url": "https://www.booking.com/searchresults.html?ss=Yosemite+National+Park&checkin=2026-11-24&checkout=2026-11-25&group_adults=2"
-        },
-        {
-          "nome": "Tripadvisor",
-          "url": "https://www.tripadvisor.com/Hotels-g61000-Yosemite_National_Park_California-Hotels.html"
-        }
-      ],
-      "opcoes": [
-        {
-          "nome": "Curry Village",
-          "nota": 3.8,
-          "avaliacoes": 4318,
-          "url": "https://www.tripadvisor.com/Hotel_Review-g61000-d286612-Reviews-Curry_Village-Yosemite_National_Park_California.html",
-          "coord": [
-            37.737648,
-            -119.57203
-          ],
-          "diaria_min": 150,
-          "site_min": "Booking.com"
-        },
-        {
-          "nome": "Yosemite Valley Lodge",
-          "nota": 3.7,
-          "avaliacoes": 4881,
-          "url": "https://www.tripadvisor.com/Hotel_Review-g61000-d119523-Reviews-Yosemite_Valley_Lodge-Yosemite_National_Park_California.html",
-          "coord": [
-            37.74336,
-            -119.59811
-          ],
-          "diaria_min": 525,
-          "site_min": "Vio.com"
-        },
-        {
-          "nome": "The Ahwahnee",
-          "nota": 3.9,
-          "avaliacoes": 3485,
-          "url": "https://www.tripadvisor.com/Hotel_Review-g61000-d119543-Reviews-The_Ahwahnee-Yosemite_National_Park_California.html",
-          "coord": [
-            37.746166,
-            -119.57433
-          ],
-          "diaria_min": 1014,
-          "site_min": "Vio.com"
-        }
-      ],
-      "precos_em": "2026-10-05",
-      "cidade": "Yosemite National Park, CA"
     }
   ],
   "reservas": [
     {
       "id": "plano",
       "prioridade": "urgente",
-      "item": "Decidir entre os Planos A, B e C",
+      "item": "Decidir entre os Planos A e B",
       "detalhe": "Muda hotéis e reservas dos dias 8 e 9."
     },
     {
@@ -1899,25 +1553,6 @@
       "detalhe": "Só no Plano B.",
       "planos": [
         "B"
-      ]
-    },
-    {
-      "id": "yosemite-hotel",
-      "prioridade": "urgente",
-      "item": "Hotel em Yosemite e cancelar a 3ª noite do LINE",
-      "detalhe": "Só no Plano C. Dentro do vale (Yosemite Valley Lodge, Curry Village) esgota cedo.",
-      "planos": [
-        "C"
-      ]
-    },
-    {
-      "id": "yosemite-estrada",
-      "prioridade": "importante",
-      "item": "Yosemite: correntes e condições das estradas",
-      "detalhe": "Confirmar a política de correntes da Sixt e pedir carro com tração integral. Conferir a taxa de entrada para estrangeiros.",
-      "url": "https://www.nps.gov/yose/planyourvisit/conditions.htm",
-      "planos": [
-        "C"
       ]
     },
     {
@@ -1961,7 +1596,7 @@
       "id": "line",
       "prioridade": "feito",
       "item": "The LINE LA",
-      "detalhe": "22 a 25/11 (nos Planos B e C, cancelar a 3ª noite)."
+      "detalhe": "22 a 25/11 (no Plano B, cancelar a 3ª noite)."
     },
     {
       "id": "axiom",
@@ -1973,7 +1608,7 @@
       "id": "carro",
       "prioridade": "feito",
       "item": "Carro Sixt",
-      "detalhe": "SAN 22/11 → SF 26/11."
+      "detalhe": "SAN 22/11 → SF 26/11. US$ 376,22 por 4 diárias, com impostos."
     },
     {
       "id": "voo",
@@ -1986,50 +1621,669 @@
     "taxa_brl": 5.62,
     "planos": {
       "A": {
-        "total_usd": 2047.0,
-        "opcionais_usd": 90.5,
-        "itens_a_verificar": 6,
+        "total_usd": 3608.22,
+        "opcionais_usd": 370.5,
+        "itens_a_verificar": 12,
         "categorias": {
-          "alimentacao": 835.0,
+          "hospedagem": 1005.0,
+          "alimentacao": 875.0,
           "passeio": 552.0,
+          "carro": 376.22,
+          "transporte": 300.0,
           "estacionamento": 215.0,
           "gasolina": 200.0,
-          "transporte": 140.0,
-          "ingresso": 105.0,
-          "carro": 0.0
+          "ingresso": 85.0
         }
       },
       "B": {
-        "total_usd": 1765.0,
-        "opcionais_usd": 90.5,
-        "itens_a_verificar": 5,
+        "total_usd": 3201.22,
+        "opcionais_usd": 340.5,
+        "itens_a_verificar": 11,
         "categorias": {
-          "alimentacao": 875.0,
+          "hospedagem": 1025.0,
+          "alimentacao": 935.0,
+          "carro": 376.22,
+          "transporte": 300.0,
           "gasolina": 205.0,
-          "hospedagem": 200.0,
-          "estacionamento": 170.0,
-          "transporte": 140.0,
-          "passeio": 90.0,
-          "ingresso": 85.0,
-          "carro": 0.0
-        }
-      },
-      "C": {
-        "total_usd": 2040.0,
-        "opcionais_usd": 90.5,
-        "itens_a_verificar": 6,
-        "categorias": {
-          "alimentacao": 865.0,
-          "ingresso": 310.0,
-          "hospedagem": 250.0,
-          "gasolina": 215.0,
-          "estacionamento": 170.0,
-          "transporte": 140.0,
-          "passeio": 90.0,
-          "carro": 0.0
+          "estacionamento": 175.0,
+          "ingresso": 95.0,
+          "passeio": 90.0
         }
       }
-    }
+    },
+    "itens": [
+      {
+        "data": "2026-11-17",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "transporte",
+        "item": "Uber SAN -> Hotel del Coronado",
+        "usd": 25.0,
+        "status": "estimado",
+        "atividade": "Uber SAN → Hotel del Coronado"
+      },
+      {
+        "data": "2026-11-17",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "hospedagem",
+        "item": "Hotel del Coronado (17 a 22/11)",
+        "usd": 0.0,
+        "status": "confirmado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-17",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "alimentacao",
+        "item": "Refeições da acompanhante (se a ADP não cobrir)",
+        "usd": 50.0,
+        "status": "opcional",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-18",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "passeio",
+        "item": "Caiaque em La Jolla (incluído no evento)",
+        "usd": 0.0,
+        "status": "confirmado",
+        "atividade": "Caiaque em La Jolla"
+      },
+      {
+        "data": "2026-11-18",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "transporte",
+        "item": "Uber até Torrey Pines (ida e volta)",
+        "usd": 50.0,
+        "status": "estimado",
+        "atividade": "Torrey Pines State Natural Reserve"
+      },
+      {
+        "data": "2026-11-18",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "transporte",
+        "item": "Uber até La Jolla Cove (ida e volta)",
+        "usd": 35.0,
+        "status": "estimado",
+        "atividade": "Leões-marinhos em La Jolla Cove"
+      },
+      {
+        "data": "2026-11-18",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "transporte",
+        "item": "Uber até Sunset Cliffs (ida e volta)",
+        "usd": 40.0,
+        "status": "estimado",
+        "atividade": "Pôr do sol em Sunset Cliffs"
+      },
+      {
+        "data": "2026-11-18",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "alimentacao",
+        "item": "Refeições da acompanhante nos dias 18 a 21 (se a ADP não cobrir)",
+        "usd": 200.0,
+        "status": "opcional",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-22",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "carro",
+        "item": "Aluguel Sixt (4 diárias com impostos)",
+        "usd": 376.22,
+        "status": "confirmado",
+        "atividade": "Retirada do carro Sixt em SAN"
+      },
+      {
+        "data": "2026-11-22",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "ingresso",
+        "item": "Joshua Tree NP (veículo)",
+        "usd": 35.0,
+        "status": "confirmado",
+        "atividade": "Barker Dam"
+      },
+      {
+        "data": "2026-11-22",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "gasolina",
+        "item": "SAN -> Joshua Tree -> LA",
+        "usd": 50.0,
+        "status": "estimado",
+        "atividade": "Estrada até LA"
+      },
+      {
+        "data": "2026-11-22",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "hospedagem",
+        "item": "The LINE Hotel (noite 22)",
+        "usd": 180.0,
+        "status": "verificar",
+        "atividade": "Estrada até LA"
+      },
+      {
+        "data": "2026-11-22",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "The LINE Hotel (noite 22)",
+        "usd": 45.0,
+        "status": "verificar",
+        "atividade": "Estrada até LA"
+      },
+      {
+        "data": "2026-11-22",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "alimentacao",
+        "item": "Refeições do dia",
+        "usd": 80.0,
+        "status": "estimado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-23",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "gasolina",
+        "item": "LA <-> Malibu",
+        "usd": 25.0,
+        "status": "estimado",
+        "atividade": "Sandstone Peak"
+      },
+      {
+        "data": "2026-11-23",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "Praia em Malibu",
+        "usd": 15.0,
+        "status": "estimado",
+        "atividade": "Pôr do sol em El Matador"
+      },
+      {
+        "data": "2026-11-23",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "hospedagem",
+        "item": "The LINE Hotel (noite 23)",
+        "usd": 180.0,
+        "status": "verificar",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-23",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "The LINE Hotel (noite 23)",
+        "usd": 45.0,
+        "status": "verificar",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-23",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "alimentacao",
+        "item": "Refeições do dia",
+        "usd": 100.0,
+        "status": "estimado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-24",
+        "planos": [
+          "A"
+        ],
+        "categoria": "passeio",
+        "item": "Channel Islands: balsa + caiaque (2x US$ 231)",
+        "usd": 462.0,
+        "status": "verificar",
+        "atividade": "Discovery Sea Caves Kayak"
+      },
+      {
+        "data": "2026-11-24",
+        "planos": [
+          "A"
+        ],
+        "categoria": "gasolina",
+        "item": "LA <-> Ventura",
+        "usd": 25.0,
+        "status": "estimado",
+        "atividade": "Balsa da Island Packers"
+      },
+      {
+        "data": "2026-11-24",
+        "planos": [
+          "A"
+        ],
+        "categoria": "hospedagem",
+        "item": "The LINE Hotel (noite 24)",
+        "usd": 180.0,
+        "status": "verificar",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-24",
+        "planos": [
+          "A"
+        ],
+        "categoria": "estacionamento",
+        "item": "The LINE Hotel (noite 24)",
+        "usd": 45.0,
+        "status": "verificar",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-24",
+        "planos": [
+          "A"
+        ],
+        "categoria": "alimentacao",
+        "item": "Refeições do dia",
+        "usd": 70.0,
+        "status": "estimado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-24",
+        "planos": [
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "Centro de Santa Barbara",
+        "usd": 5.0,
+        "status": "estimado",
+        "atividade": "Santa Barbara"
+      },
+      {
+        "data": "2026-11-24",
+        "planos": [
+          "B"
+        ],
+        "categoria": "gasolina",
+        "item": "LA -> Cambria",
+        "usd": 40.0,
+        "status": "estimado",
+        "atividade": "Morro Rock"
+      },
+      {
+        "data": "2026-11-24",
+        "planos": [
+          "B"
+        ],
+        "categoria": "hospedagem",
+        "item": "Hotel em Cambria (noite 24)",
+        "usd": 200.0,
+        "status": "verificar",
+        "atividade": "Pernoite em Cambria"
+      },
+      {
+        "data": "2026-11-24",
+        "planos": [
+          "B"
+        ],
+        "categoria": "alimentacao",
+        "item": "Refeições do dia",
+        "usd": 100.0,
+        "status": "estimado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-25",
+        "planos": [
+          "A"
+        ],
+        "categoria": "gasolina",
+        "item": "LA -> SF pela US-101",
+        "usd": 70.0,
+        "status": "estimado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-25",
+        "planos": [
+          "A"
+        ],
+        "categoria": "ingresso",
+        "item": "Point Lobos (estacionamento)",
+        "usd": 10.0,
+        "status": "estimado",
+        "atividade": "Point Lobos"
+      },
+      {
+        "data": "2026-11-25",
+        "planos": [
+          "A"
+        ],
+        "categoria": "ingresso",
+        "item": "Pinnacles NP (veículo)",
+        "usd": 30.0,
+        "status": "opcional",
+        "atividade": "Ou: Pinnacles National Park"
+      },
+      {
+        "data": "2026-11-25",
+        "planos": [
+          "A"
+        ],
+        "categoria": "alimentacao",
+        "item": "Refeições do dia",
+        "usd": 90.0,
+        "status": "estimado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-25",
+        "planos": [
+          "B"
+        ],
+        "categoria": "gasolina",
+        "item": "Cambria -> Big Sur -> SF",
+        "usd": 60.0,
+        "status": "estimado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-25",
+        "planos": [
+          "B"
+        ],
+        "categoria": "ingresso",
+        "item": "Julia Pfeiffer Burns (uso diário)",
+        "usd": 10.0,
+        "status": "verificar",
+        "atividade": "McWay Falls"
+      },
+      {
+        "data": "2026-11-25",
+        "planos": [
+          "B"
+        ],
+        "categoria": "ingresso",
+        "item": "Point Lobos (estacionamento)",
+        "usd": 10.0,
+        "status": "estimado",
+        "atividade": "Point Lobos"
+      },
+      {
+        "data": "2026-11-25",
+        "planos": [
+          "B"
+        ],
+        "categoria": "alimentacao",
+        "item": "Refeições do dia (almoço no Nepenthe)",
+        "usd": 120.0,
+        "status": "estimado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-25",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "hospedagem",
+        "item": "Axiom Hotel (noite 25)",
+        "usd": 155.0,
+        "status": "verificar",
+        "atividade": "Check-in no Axiom Hotel"
+      },
+      {
+        "data": "2026-11-25",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "Axiom Hotel (noite 25)",
+        "usd": 65.0,
+        "status": "verificar",
+        "atividade": "Check-in no Axiom Hotel"
+      },
+      {
+        "data": "2026-11-26",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "ingresso",
+        "item": "Muir Woods (2x US$ 15) + reserva de estacionamento",
+        "usd": 40.0,
+        "status": "estimado",
+        "atividade": "Muir Woods às 8h"
+      },
+      {
+        "data": "2026-11-26",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "transporte",
+        "item": "Pedágio da Golden Gate (volta para SF)",
+        "usd": 10.0,
+        "status": "estimado",
+        "atividade": "Marin Headlands"
+      },
+      {
+        "data": "2026-11-26",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "gasolina",
+        "item": "Marin + reabastecer na devolução",
+        "usd": 30.0,
+        "status": "estimado",
+        "atividade": "Devolução do carro"
+      },
+      {
+        "data": "2026-11-26",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "alimentacao",
+        "item": "Café da manhã e almoço",
+        "usd": 50.0,
+        "status": "estimado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-26",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "alimentacao",
+        "item": "Ceia de Thanksgiving (2 pessoas)",
+        "usd": 340.0,
+        "status": "estimado",
+        "atividade": "Ceia de Thanksgiving"
+      },
+      {
+        "data": "2026-11-26",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "transporte",
+        "item": "Uber/Waymo para a ceia",
+        "usd": 25.0,
+        "status": "estimado",
+        "atividade": "Ceia de Thanksgiving"
+      },
+      {
+        "data": "2026-11-26",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "hospedagem",
+        "item": "Axiom Hotel (noite 26)",
+        "usd": 155.0,
+        "status": "verificar",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-27",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "passeio",
+        "item": "Aluguel de bike (2 pessoas)",
+        "usd": 90.0,
+        "status": "estimado",
+        "atividade": "Golden Gate Bridge de bicicleta"
+      },
+      {
+        "data": "2026-11-27",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "transporte",
+        "item": "Balsa Sausalito -> SF (2 pessoas)",
+        "usd": 30.0,
+        "status": "estimado",
+        "atividade": "Balsa Sausalito → SF"
+      },
+      {
+        "data": "2026-11-27",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "transporte",
+        "item": "Uber/Waymo até Lands End e volta",
+        "usd": 30.0,
+        "status": "estimado",
+        "atividade": "Pôr do sol em Lands End"
+      },
+      {
+        "data": "2026-11-27",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "passeio",
+        "item": "Alcatraz (2x US$ 45.25)",
+        "usd": 90.5,
+        "status": "opcional",
+        "atividade": "Opcional: Alcatraz"
+      },
+      {
+        "data": "2026-11-27",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "hospedagem",
+        "item": "Axiom Hotel (noite 27)",
+        "usd": 155.0,
+        "status": "verificar",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-27",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "alimentacao",
+        "item": "Refeições do dia",
+        "usd": 120.0,
+        "status": "estimado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-28",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "transporte",
+        "item": "Uber até o SFO",
+        "usd": 55.0,
+        "status": "estimado",
+        "atividade": "Axiom → SFO"
+      },
+      {
+        "data": "2026-11-28",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "alimentacao",
+        "item": "Lanche no aeroporto",
+        "usd": 25.0,
+        "status": "estimado",
+        "atividade": null
+      },
+      {
+        "data": null,
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "carro",
+        "item": "Taxa one-way Sixt e serviço de pedágio (se não estiverem no total)",
+        "usd": 0.0,
+        "status": "verificar",
+        "atividade": null
+      }
+    ]
   },
   "fontes": [
     {

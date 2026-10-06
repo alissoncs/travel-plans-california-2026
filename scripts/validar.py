@@ -50,7 +50,16 @@ def main():
         if d.get("trajeto") and d["id"] not in rotas:
             avisos.append(f"{d['id']}: tem trajeto mas não tem rota em rotas.json (rode scripts/enriquecer.py --so mapa)")
 
-    sem_post = sorted(dias - set(g.get("dias", {}))) + sorted(f"lugar:{k}" for k in lugares - set(g.get("lugares", {})))
+    # gastos do orcamento.csv ligados a atividades: o título precisa existir no dia
+    for i in r.get("orcamento", {}).get("itens", []):
+        if not i.get("atividade") or not i.get("data"):
+            continue
+        for p in i["planos"]:
+            dias_p = [d for d in r["dias"] if p in d["planos"] and d["data"] <= i["data"] <= d.get("data_fim", d["data"])]
+            if dias_p and not any(a["titulo"] == i["atividade"] for d in dias_p for a in d["atividades"]):
+                erros.append(f"orcamento.csv · '{i['item']}': atividade '{i['atividade']}' não existe no dia {i['data']} do Plano {p}")
+
+    sem_post =sorted(dias - set(g.get("dias", {}))) + sorted(f"lugar:{k}" for k in lugares - set(g.get("lugares", {})))
     for f, meta in g.get("fontes", {}).items():
         if meta.get("tipo") == "youtube" and not meta.get("url"):
             avisos.append(f"fonte {f}: sem link do vídeo")

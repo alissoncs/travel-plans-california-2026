@@ -7,21 +7,20 @@
 - [x] Hotel del Coronado, 17–22/11 (pago pela ADP)
 - [x] The LINE Hotel LA, 22–25/11
 - [x] Axiom Hotel SF, 25–28/11
-- [x] Carro Sixt: retirada SAN 22/11, devolução SF 26/11
+- [x] Carro Sixt: retirada SAN 22/11, devolução SF 26/11 — US$ 376,22 por 4 diárias, com impostos
 - [x] Voo volta DL 1598, SFO 28/11 07:05
 
 ## Pendentes
 
 | Prioridade | Item | Detalhe |
 |---|---|---|
-| 🔴 | Decidir entre os Planos A, B e C | Ver [roteiro.md](roteiro.md) |
-| 🔴 | Hotel em Yosemite (só Plano C) | 24/11 + cancelar a 3ª noite do LINE. Dentro do vale esgota cedo |
-| 🟠 | Yosemite: correntes e taxa (só Plano C) | Política de correntes da Sixt, carro com tração integral, taxa de entrada para estrangeiros |
+| 🔴 | Decidir entre os Planos A e B | Ver [roteiro.md](roteiro.md) |
+| 🟠 | Valor real das reservas do LINE e do Axiom | O orçamento usa a diária do Booking + ~16% de impostos; trocar pelo valor da reserva em `orcamento.csv` |
 | 🔴 | Ceia de Thanksgiving (26/11) em SF | Restaurantes lotam; menu fixo costuma custar US$ 100–150/pessoa |
 | 🔴 | Muir Woods: estacionamento | GoMuirWoods.com, 26/11 às 8h |
 | 🔴 | Channel Islands (só Plano A) | islandpackers.com: balsa + caiaque para 24/11. Confirmar se há saída na terça |
 | 🔴 | Hotel em Cambria/San Simeon (só Plano B) | 24/11 + cancelar a 3ª noite do LINE (ver política de cancelamento) |
-| 🟠 | Sixt: horário de devolução no Thanksgiving | Confirmar loja/horário; alternativa SFO. Confirmar diárias (22→26 = 4) e taxa one-way |
+| 🟠 | Sixt: horário de devolução no Thanksgiving | Confirmar loja/horário; alternativa SFO. Confirmar se o total de US$ 376,22 já inclui a taxa one-way e o serviço de pedágio |
 | 🟠 | ADP: cobertura da acompanhante | Refeições e passeios dela em San Diego, e o dia 17/11 |
 | 🟡 | Alcatraz (opcional) | alcatrazcitycruises.com, 27/11 — Black Friday esgota |
 | 🟡 | App Waymo | Testar se baixa na loja brasileira e aceita o cartão; senão usar Uber |

@@ -17,7 +17,8 @@ Projeto de planejamento de viagem (não é código). Responder e escrever sempre
 - `site/index.html` é um fragmento (sem `<!doctype>`/`<head>`/`<body>`), no formato de Artifact; localmente use `python scripts/servir.py`. Na Vercel (Root Directory `site`), `site/build.mjs` gera `site/dist/` com o HTML completo; não transformar o `index.html` em documento completo.
 - Mapa: `site/rotas.json` e `site/mapa-base.json` são gerados por `python scripts/enriquecer.py --so mapa` a partir do `trajeto` dos dias e dos campos `coord`. Nunca editar `rotas.json` à mão.
 - Itens que são lugares (café, restaurante, passeio) têm `onde`; o site gera os botões do Google Maps e do Google Imagens a partir de `nome` + `onde`. Se o nome for descritivo em português, ponha em `maps` a busca certa (ex.: "Morro Bay State Park Marina").
-- Planos: A, B e C (Yosemite). Um dia exclusivo de um plano tem id com sufixo (`dia-8-c`).
+- Planos: A e B (o Plano C, Yosemite, foi descartado em 05/10/2026). Um dia exclusivo de um plano tem id com sufixo (`dia-8-b`).
+- Gastos: cada linha do `orcamento.csv` pode ter `atividade` (título exato da atividade do dia em `roteiro.json`); o site mostra o valor na atividade, o total de cada dia e a página Gastos. Depois de editar o CSV, rode `python scripts/enriquecer.py --so orcamento` e `python scripts/validar.py`. Carro: US$ 376,22 (4 diárias, com impostos), confirmado.
 - `referencia/` é histórico: **não editar**.
 - Ao mudar o roteiro, manter os três arquivos consistentes (use a skill `atualizar-roteiro`).
 

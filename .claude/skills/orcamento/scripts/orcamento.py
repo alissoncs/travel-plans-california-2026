@@ -1,6 +1,6 @@
 """Soma o orcamento.csv da viagem por dia e categoria, em USD e BRL.
 
-Uso: python orcamento.py [--plano A|B|C] [--com-opcionais] [--arquivo CAMINHO]
+Uso: python orcamento.py [--plano A|B] [--com-opcionais] [--arquivo CAMINHO]
 """
 import argparse
 import csv
@@ -29,7 +29,7 @@ def carregar(caminho):
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
     p = argparse.ArgumentParser()
-    p.add_argument("--plano", choices=["A", "B", "C"], default="A")
+    p.add_argument("--plano", choices=["A", "B"], default="A")
     p.add_argument("--com-opcionais", action="store_true")
     p.add_argument("--arquivo", default=str(PADRAO))
     args = p.parse_args()
