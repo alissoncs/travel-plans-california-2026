@@ -1,7 +1,7 @@
 #taxa,5.62
 # plano: letras dos planos em que a linha vale (AB = ambos; A ou B = só aquele plano) | status: estimado, confirmado, opcional, verificar
 # atividade: título exato da atividade do dia em site/roteiro.json (vazio = gasto do dia, como refeições)
-# Previsão para o casal (2 pessoas). Refeições já incluem imposto (~9%) e gorjeta (18-20%).
+# Previsão para o casal (2 pessoas). Refeições já incluem imposto (~9%) e gorjeta (18-20%). Teto: US$ 3.000 por plano (viagem.teto_usd).
 # San Diego (dias 1-5): hotel e evento pagos pela ADP; refeições da acompanhante ficam como opcionais até a ADP confirmar.
 # Hotéis: diária do Booking (05/10/2026) + ~16% de impostos de hospedagem; confirmar o valor real da reserva.
 dia,data,plano,categoria,item,usd,status,atividade
@@ -19,43 +19,45 @@ dia,data,plano,categoria,item,usd,status,atividade
 6,22/11,AB,hospedagem,The LINE Hotel (noite 22),180,verificar,Estrada até LA
 6,22/11,AB,estacionamento,The LINE Hotel (noite 22),45,verificar,Estrada até LA
 6,22/11,AB,alimentacao,Refeições do dia,80,estimado,
-7,23/11,AB,gasolina,LA <-> Malibu,25,estimado,Sandstone Peak
-7,23/11,AB,estacionamento,Praia em Malibu,15,estimado,Pôr do sol em El Matador
+7,23/11,AB,gasolina,Koreatown -> Griffith -> Santa Monica,15,estimado,Venice e Santa Monica
+7,23/11,AB,estacionamento,Griffith Observatory,20,estimado,Trilha do Griffith Park até o Mount Hollywood
+7,23/11,AB,estacionamento,Santa Monica,15,estimado,Venice e Santa Monica
 7,23/11,AB,hospedagem,The LINE Hotel (noite 23),180,verificar,
 7,23/11,AB,estacionamento,The LINE Hotel (noite 23),45,verificar,
-7,23/11,AB,alimentacao,Refeições do dia,100,estimado,
-8,24/11,A,passeio,Channel Islands: balsa + caiaque (2x US$ 231),462,verificar,Discovery Sea Caves Kayak
-8,24/11,A,gasolina,LA <-> Ventura,25,estimado,Balsa da Island Packers
+7,23/11,AB,alimentacao,Refeições do dia,85,estimado,
+8,24/11,A,passeio,Channel Islands: balsa + caiaque (2x US$ 231),462,opcional,Trocar pelo dia na ilha: Channel Islands
+8,24/11,A,estacionamento,Praias e trilhas de Malibu,15,estimado,Pôr do sol em El Matador
+8,24/11,A,gasolina,LA <-> Malibu,25,estimado,Solstice Canyon
 8,24/11,A,hospedagem,The LINE Hotel (noite 24),180,verificar,
 8,24/11,A,estacionamento,The LINE Hotel (noite 24),45,verificar,
-8,24/11,A,alimentacao,Refeições do dia,70,estimado,
+8,24/11,A,alimentacao,Refeições do dia,85,estimado,
 8,24/11,B,estacionamento,Centro de Santa Barbara,5,estimado,Santa Barbara
 8,24/11,B,gasolina,LA -> Cambria,40,estimado,Morro Rock
 8,24/11,B,hospedagem,Hotel em Cambria (noite 24),200,verificar,Pernoite em Cambria
-8,24/11,B,alimentacao,Refeições do dia,100,estimado,
+8,24/11,B,alimentacao,Refeições do dia,85,estimado,
 9,25/11,A,gasolina,LA -> SF pela US-101,70,estimado,
 9,25/11,A,ingresso,Point Lobos (estacionamento),10,estimado,Point Lobos
 9,25/11,A,ingresso,Pinnacles NP (veículo),30,opcional,Ou: Pinnacles National Park
 9,25/11,A,alimentacao,Refeições do dia,90,estimado,
 9,25/11,B,gasolina,Cambria -> Big Sur -> SF,60,estimado,
 9,25/11,B,ingresso,Julia Pfeiffer Burns (uso diário),10,verificar,McWay Falls
-9,25/11,B,ingresso,Point Lobos (estacionamento),10,estimado,Point Lobos
-9,25/11,B,alimentacao,Refeições do dia (almoço no Nepenthe),120,estimado,
+9,25/11,B,ingresso,Point Lobos (estacionamento),10,opcional,Point Lobos
+9,25/11,B,alimentacao,Refeições do dia (almoço no Nepenthe),100,estimado,
 9,25/11,AB,hospedagem,Axiom Hotel (noite 25),155,verificar,Check-in no Axiom Hotel
 9,25/11,AB,estacionamento,Axiom Hotel (noite 25),65,verificar,Check-in no Axiom Hotel
 10,26/11,AB,ingresso,Muir Woods (2x US$ 15) + reserva de estacionamento,40,estimado,Muir Woods às 8h
 10,26/11,AB,transporte,Pedágio da Golden Gate (volta para SF),10,estimado,Marin Headlands
 10,26/11,AB,gasolina,Marin + reabastecer na devolução,30,estimado,Devolução do carro
 10,26/11,AB,alimentacao,Café da manhã e almoço,50,estimado,
-10,26/11,AB,alimentacao,Ceia de Thanksgiving (2 pessoas),340,estimado,Ceia de Thanksgiving
+10,26/11,AB,alimentacao,Ceia de Thanksgiving (2 pessoas; menu fixo de ~US$ 75-90 por pessoa),200,estimado,Ceia de Thanksgiving
 10,26/11,AB,transporte,Uber/Waymo para a ceia,25,estimado,Ceia de Thanksgiving
 10,26/11,AB,hospedagem,Axiom Hotel (noite 26),155,verificar,
 11,27/11,AB,passeio,Aluguel de bike (2 pessoas),90,estimado,Golden Gate Bridge de bicicleta
-11,27/11,AB,transporte,Balsa Sausalito -> SF (2 pessoas),30,estimado,Balsa Sausalito → SF
+11,27/11,AB,transporte,Balsa Sausalito -> SF (2 pessoas),30,opcional,Balsa Sausalito → SF
 11,27/11,AB,transporte,Uber/Waymo até Lands End e volta,30,estimado,Pôr do sol em Lands End
-11,27/11,AB,passeio,Alcatraz (2x US$ 45.25),90.50,opcional,Opcional: Alcatraz
+11,27/11,AB,passeio,Alcatraz (2x US$ 45.25),90.50,opcional,Alcatraz
 11,27/11,AB,hospedagem,Axiom Hotel (noite 27),155,verificar,
-11,27/11,AB,alimentacao,Refeições do dia,120,estimado,
+11,27/11,AB,alimentacao,Refeições do dia,100,estimado,
 12,28/11,AB,transporte,Uber até o SFO,55,estimado,Axiom → SFO
 12,28/11,AB,alimentacao,Lanche no aeroporto,25,estimado,
 0,-,AB,carro,Taxa one-way Sixt e serviço de pedágio (se não estiverem no total),0,verificar,

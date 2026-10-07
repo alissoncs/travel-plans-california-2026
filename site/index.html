@@ -136,6 +136,15 @@ figure { margin: 0; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip { display: inline-flex; align-items: center; gap: 6px; padding: 7px 11px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); font-size: 14px; color: var(--ink); }
 .chip.sun { color: var(--warm); }
+.chip.ocup { font-weight: 600; }
+.chip.ocup[data-nivel="leve"] { color: var(--accent); background: var(--accent-soft); border-color: transparent; }
+.chip.ocup[data-nivel="medio"] { color: var(--aviso); background: var(--aviso-bg); border-color: transparent; }
+.chip.ocup[data-nivel="cheio"] { color: var(--urgente); background: var(--urgente-bg); border-color: transparent; }
+.ocup-bar { height: 6px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.ocup-bar i { display: block; height: 100%; border-radius: 999px; background: var(--accent); }
+.acts li.acts-sub { display: block; padding: 10px 14px; font-size: 13px; font-weight: 600; color: var(--muted); background: var(--bg); }
+.acts li.opc .act-ico { background: var(--line); color: var(--muted); }
+.acts li.opc h4 { color: var(--muted); }
 .chip .ico { width: 17px; height: 17px; }
 a.chip:hover { border-color: var(--muted); }
 .lead { font-size: 18px; line-height: 1.5; }
@@ -345,6 +354,7 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
   <symbol id="i-dica" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0012 3z"/></symbol>
   <symbol id="i-levar" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0112 0v11a2 2 0 01-2 2H8a2 2 0 01-2-2z"/><path d="M9 4.5V3h6v1.5M9 14h6M9 21v-4h6v4"/></symbol>
   <symbol id="i-foto" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
   <symbol id="i-video" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></symbol>
 </svg>
 
@@ -450,6 +460,22 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
   const linhaGasto = (g) => `<li><span class="txt"><span class="t">${esc(g.item)}</span><span class="s">${esc(CAT[g.categoria] || g.categoria)} · ${STATUS[g.status] || g.status}</span></span><b class="num${g.status === "opcional" ? " opc" : ""}">${g.usd ? usd(g.usd) : g.status === "verificar" ? "a definir" : "incluído"}</b></li>`;
   const listaGastos = (lista, rotulo) => `<ul class="gastos list">${lista.map(linhaGasto).join("")}<li class="tot"><span>${rotulo}</span><b class="num">${usd(soma(lista))}</b></li></ul>`;
 
+  // ---------- ocupação do dia: horas das atividades (sem as opcionais) + estrada, sobre 12h (8h às 20h) ----------
+  const JANELA_H = 12;
+  const fmtH = (h) => `${(Math.round(h * 2) / 2).toLocaleString("pt-BR")}h`;
+  function ocupacao(d) {
+    if (d.evento) return null;
+    const h = d.atividades.filter((a) => !a.opcional).reduce((n, a) => n + (a.horas || 0), 0) + (d.estrada || []).reduce((n, e) => n + (e.horas || 0), 0);
+    if (!h) return null;
+    const pct = Math.min(100, Math.round((h / JANELA_H) * 100));
+    return { h, pct, livres: Math.max(0, JANELA_H - h), nivel: pct <= 50 ? "leve" : pct <= 70 ? "medio" : "cheio" };
+  }
+  function chipOcupacao(d) {
+    if (d.evento) return `<span class="chip ocup" data-nivel="medio">${ico("relogio")} Dias do evento</span>`;
+    const o = ocupacao(d);
+    return o ? `<span class="chip ocup num" data-nivel="${o.nivel}" title="${fmtH(o.h)} de programa e estrada, entre 8h e 20h">${ico("relogio")} ${o.pct}% do dia · ~${fmtH(o.livres)} livres</span>` : "";
+  }
+
   // ---------- dados derivados ----------
   const diasDoPlano = () => D.dias.filter((d) => d.planos.includes(plano));
   const img = (chave) => D.lugares[chave]?.imagem;
@@ -483,7 +509,7 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
     const so = d.planos.length === 1 ? `<span class="tag">Plano ${d.planos[0]}</span>` : "";
     return `<a class="row" href="#${d.id}">
       ${i ? `<img class="thumb" src="${esc(i)}" alt="" loading="lazy">` : `<span class="thumb-ph">${ico("transporte")}</span>`}
-      <span class="txt"><span class="s num">Dia ${esc(d.rotulo)} · ${quando(d)}${soma(gastosDoDia(d)) ? ` · ≈ ${usd(soma(gastosDoDia(d)))}` : ""}</span><span class="t">${esc(d.titulo)}${so}</span><span class="s">${esc(d.regiao)}</span></span>
+      <span class="txt"><span class="s num">Dia ${esc(d.rotulo)} · ${quando(d)}${ocupacao(d) ? ` · ${ocupacao(d).pct}% do dia` : ""}${soma(gastosDoDia(d)) ? ` · ≈ ${usd(soma(gastosDoDia(d)))}` : ""}</span><span class="t">${esc(d.titulo)}${so}</span><span class="s">${esc(d.regiao)}</span></span>
       <span class="chev">${ico("chev")}</span></a>`;
   }
   function alertas(lista) {
@@ -554,14 +580,18 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
       const capa = D.lugares[d.capa];
       const ant = dias[i - 1], prox = dias[i + 1];
       const lugares = [...new Set(d.atividades.map((a) => a.lugar).filter((k) => k && D.lugares[k]))];
-      const programa = `<ul class="acts list">${d.atividades.map((a) => {
+      const linhaAtiv = (a) => {
         const l = a.lugar && D.lugares[a.lugar];
         const q = l ? `${l.nome}, California` : a.onde;
-        return `<li${q ? ' class="com-acoes"' : ""}>
+        const meta = [a.stats, a.horas ? `~${fmtH(a.horas)}` : ""].filter(Boolean).join(" · ");
+        return `<li class="${[q ? "com-acoes" : "", a.opcional ? "opc" : ""].join(" ").trim()}">
             <span class="act-ico" title="${esc(TIPOS[a.tipo] || "")}">${ico(a.tipo)}</span>
-            <div><h4>${esc(a.titulo)}${custoAtiv(d, a)}</h4>${a.stats ? `<div class="meta num">${esc(a.stats)}</div>` : ""}<p>${esc(a.descricao)}</p>
+            <div><h4>${esc(a.titulo)}${custoAtiv(d, a)}</h4>${meta ? `<div class="meta num">${esc(meta)}</div>` : ""}<p>${esc(a.descricao)}</p>
             ${l ? `<div class="tip-meta"><a href="#lugar-${a.lugar}">Ler sobre o lugar</a></div>` : ""}</div>${q ? acoes(q, l ? l.nome : a.titulo) : ""}</li>`;
-      }).join("")}</ul>`;
+      };
+      const opcionais = d.atividades.filter((a) => a.opcional);
+      const programa = `<ul class="acts list">${d.atividades.filter((a) => !a.opcional).map(linhaAtiv).join("")}
+        ${opcionais.length ? `<li class="acts-sub">Opcional, se der vontade (fora do % do dia e dos gastos)</li>${opcionais.map(linhaAtiv).join("")}` : ""}</ul>`;
       const gd = gastosDoDia(d);
       const gastos = gd.length ? [{ id: "sec-gastos", titulo: "Gastos previstos", icone: "dinheiro", html: `${listaGastos(gd, "Total do dia")}<p class="fine" style="margin-top:8px">Estimativa para o casal. Refeições com imposto e gorjeta. <a href="#gastos">Ver todos os gastos</a></p>` }] : [];
       const post = postSecoes(G.dias[d.id], [{ id: "sec-programa", titulo: "Roteiro do dia", icone: "roteiro", html: programa }, ...gastos]);
@@ -573,6 +603,7 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
           <span class="muted">${esc(d.regiao)}</span>
         </div>
         <div class="chips">
+          ${chipOcupacao(d)}
           ${d.sol ? `<span class="chip sun num">${ico("sol")} Pôr do sol ${d.sol.por}</span>` : ""}
           <a class="chip so-celular" href="#mapa-${d.id}">${ico("lugares")} Ver no mapa</a>
           <a class="chip" href="${gmaps(d.regiao, "California")}" target="_blank" rel="noopener">${ico("pin")} Google Maps</a>
@@ -691,7 +722,7 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
     mapa() { return ""; },
 
     gastos() {
-      const o = D.orcamento, itens = gastosDoPlano();
+      const o = D.orcamento, itens = gastosDoPlano(), teto = D.viagem.teto_usd;
       const total = soma(itens);
       const porCat = (c) => itens.filter((g) => g.categoria === c);
       const noites = porCat("hospedagem").filter((g) => g.usd > 0).length;
@@ -707,7 +738,9 @@ body.modo-mapa main, body.modo-mapa .map-fab { display: none; }
       const opc = itens.filter((g) => g.status === "opcional");
       const precosEm = D.hospedagens.find((h) => h.precos_em)?.precos_em;
       return `<div class="page-head"><span class="label">${esc(D.planos[plano].nome)} · 17 a 28/11</span><h2>Gastos</h2></div>
-        <div class="card total"><span class="muted small">Total previsto para o casal</span><b class="num">${usd(total)}</b><span class="muted num">≈ ${brl(total * o.taxa_brl)} · câmbio R$ ${o.taxa_brl.toLocaleString("pt-BR")}</span></div>
+        <div class="card total"><span class="muted small">Total previsto para o casal</span><b class="num">${usd(total)}</b><span class="muted num">≈ ${brl(total * o.taxa_brl)} · câmbio R$ ${o.taxa_brl.toLocaleString("pt-BR")}</span>
+          ${teto ? `<div class="ocup-bar" style="margin-top:6px"><i style="width:${Math.min(100, (total / teto) * 100)}%;${total > teto ? "background:var(--urgente)" : ""}"></i></div>
+          <span class="small num" style="color:${total > teto ? "var(--urgente)" : "var(--accent)"}">${total > teto ? `Passa ${usd(total - teto)} do teto de ${usd(teto)}` : `Dentro do teto de ${usd(teto)} · sobram ${usd(teto - total)}`}</span>` : ""}</div>
         <div class="stats">${destaques.map(([n, v, s]) => `<div class="stat"><span>${n}</span><b class="num" style="font-size:20px">${usd(v)}</b><small>${esc(s)}</small></div>`).join("")}</div>
         <div class="card"><h3 style="font-size:17px">Por categoria</h3><div class="bars">
           ${cats.map(([k, v]) => `<div class="bar-row"><div><span>${esc(CAT[k] || k)}</span><b class="num">${usd(v)}</b></div><div class="track"><i style="width:${(v / max) * 100}%"></i></div></div>`).join("")}

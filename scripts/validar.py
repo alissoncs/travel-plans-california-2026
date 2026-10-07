@@ -59,7 +59,24 @@ def main():
             if dias_p and not any(a["titulo"] == i["atividade"] for d in dias_p for a in d["atividades"]):
                 erros.append(f"orcamento.csv · '{i['item']}': atividade '{i['atividade']}' não existe no dia {i['data']} do Plano {p}")
 
-    sem_post =sorted(dias - set(g.get("dias", {}))) + sorted(f"lugar:{k}" for k in lugares - set(g.get("lugares", {})))
+    # ritmo: horas por atividade e % do dia comprometido (janela de 12h, como no site)
+    for d in r["dias"]:
+        if d.get("evento"):
+            continue
+        sem_h = [a["titulo"] for a in d["atividades"] if "horas" not in a]
+        if sem_h:
+            avisos.append(f"{d['id']}: atividades sem `horas` (não entram no % do dia): {', '.join(sem_h)}")
+        h = sum(a.get("horas", 0) for a in d["atividades"] if not a.get("opcional")) + sum(e.get("horas", 0) for e in d.get("estrada", []))
+        if h / 12 > 0.75:
+            avisos.append(f"{d['id']}: dia {round(h / 12 * 100)}% comprometido ({h:g}h), pesado para o ritmo da viagem")
+
+    # teto de gastos por plano
+    teto = r["viagem"].get("teto_usd")
+    for p, o in r.get("orcamento", {}).get("planos", {}).items():
+        if teto and o["total_usd"] > teto:
+            erros.append(f"Plano {p}: total US$ {o['total_usd']:.2f} passa do teto de US$ {teto}")
+
+    sem_post = sorted(dias - set(g.get("dias", {}))) + sorted(f"lugar:{k}" for k in lugares - set(g.get("lugares", {})))
     for f, meta in g.get("fontes", {}).items():
         if meta.get("tipo") == "youtube" and not meta.get("url"):
             avisos.append(f"fonte {f}: sem link do vídeo")

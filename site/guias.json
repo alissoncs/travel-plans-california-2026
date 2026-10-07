@@ -423,6 +423,84 @@
     },
     "dia-7": {
       "intro": [
+        "No último dia em LA, a cidade pelo lado de que vocês mais gostam: o Griffith Park, um dos maiores parques urbanos dos EUA, cheio de trilhas, e a costa de Venice e Santa Monica.",
+        "Em uma segunda-feira de novembro as trilhas ficam vazias e a orla, tranquila."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Griffith Observatory",
+              "texto": "Na segunda o prédio fecha, mas o terraço com vista da cidade e do letreiro fica aberto, e é dali que sai a trilha.",
+              "fontes": [
+                "yt-la-travel-guide-10-lugares",
+                "yt-unseen-california"
+              ],
+              "onde": "Griffith Observatory, Los Angeles",
+              "coord": [
+                34.11822,
+                -118.30029
+              ]
+            },
+            {
+              "nome": "Venice Canals e a ciclovia",
+              "texto": "Pontes e casas sobre os canais, a poucas quadras da praia. Dali a ciclovia segue pela areia até o píer de Santa Monica.",
+              "fontes": [
+                "yt-la-travel-guide-10-lugares",
+                "yt-unseen-california"
+              ],
+              "onde": "Venice Canals, Los Angeles",
+              "coord": [
+                33.98691,
+                -118.47359
+              ],
+              "maps": "Venice Canals, Los Angeles"
+            },
+            {
+              "nome": "Santa Monica Pier",
+              "texto": "O píer de 1909, com a roda-gigante sobre o mar. Fim natural da ciclovia que vem de Venice.",
+              "onde": "Santa Monica Pier",
+              "coord": [
+                34.0089,
+                -118.4974
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Alfred Coffee",
+              "texto": "Fica dentro do The LINE e abre às 6:30. Ideal para sair cedo para a trilha.",
+              "onde": "3515 Wilshire Blvd, Koreatown",
+              "coord": [
+                34.06203,
+                -118.30114
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Agrupe por região",
+              "texto": "LA é enorme. De manhã o lado do Griffith, à tarde a costa: assim vocês atravessam a cidade uma vez só e fogem do trânsito.",
+              "fontes": [
+                "yt-la-travel-guide-10-lugares"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "dia-8-a": {
+      "intro": [
         "Malibu é conhecida pelas praias, mas o melhor dela está nas montanhas logo atrás. As Santa Monica Mountains descem direto até o Pacífico.",
         "Em uma segunda-feira de novembro as trilhas ficam vazias e os estacionamentos têm vaga."
       ],
@@ -431,21 +509,6 @@
           "tipo": "fazer",
           "titulo": "Mais para fazer",
           "itens": [
-            {
-              "nome": "Point Dume",
-              "texto": "Caminhada curta no alto de um promontório, com vista de Zuma Beach e da baía de Santa Monica. É o cenário do final de O Planeta dos Macacos.",
-              "onde": "Point Dume, Malibu",
-              "fontes": [
-                "yt-ctml-pch-20-paradas"
-              ],
-              "tempos": {
-                "yt-ctml-pch-20-paradas": 510
-              },
-              "coord": [
-                34.00163,
-                -118.80668
-              ]
-            },
             {
               "nome": "Zuma Beach",
               "texto": "Praia larga e aberta para caminhar no fim da tarde.",
@@ -463,20 +526,6 @@
                 34.03643,
                 -118.67614
               ]
-            },
-            {
-              "nome": "Na volta: Venice Canals e a ciclovia",
-              "texto": "Os canais de Venice são um bairro tranquilo de pontes e casas à beira d'água. Dá para alugar bicicleta e seguir pela ciclovia da praia até o Santa Monica Pier, com a roda-gigante movida a energia solar.",
-              "fontes": [
-                "yt-la-travel-guide-10-lugares",
-                "yt-unseen-california"
-              ],
-              "onde": "Venice Canals, Los Angeles",
-              "coord": [
-                33.98691,
-                -118.47359
-              ],
-              "maps": "Venice Canals, Los Angeles"
             }
           ]
         },
@@ -484,15 +533,6 @@
           "tipo": "cafe",
           "titulo": "Café",
           "itens": [
-            {
-              "nome": "Alfred Coffee",
-              "texto": "Fica dentro do The LINE e abre às 6:30. Ideal para sair cedo para a trilha.",
-              "onde": "3515 Wilshire Blvd, Koreatown",
-              "coord": [
-                34.06203,
-                -118.30114
-              ]
-            },
             {
               "nome": "Caffe Luxxe",
               "texto": "Café de bairro com pátio e estacionamento fácil ao longo da PCH.",
@@ -557,36 +597,24 @@
           "titulo": "Dicas práticas",
           "itens": [
             {
-              "nome": "Saia antes das 7h",
-              "texto": "Sair de Koreatown antes do horário de pico economiza até uma hora. LA é enorme: agrupe os passeios por região para passar menos tempo no trânsito.",
-              "fontes": [
-                "yt-la-travel-guide-10-lugares"
-              ]
-            },
-            {
               "nome": "Trailhead certo",
               "texto": "Sandstone Peak começa no estacionamento Mishe Mokwa, na Yerba Buena Road.",
               "onde": "Sandstone Peak Trailhead, Yerba Buena Rd",
               "maps": "Sandstone Peak Trailhead, Malibu",
-              "coord": [34.1209, -118.9319]
+              "coord": [
+                34.1209,
+                -118.9319
+              ]
             },
             {
               "nome": "Estacionar na PCH",
               "texto": "Leia as placas. Muitas praias têm estacionamento pago ou horário restrito."
             }
           ]
-        }
-      ]
-    },
-    "dia-8-a": {
-      "intro": [
-        "As Channel Islands são chamadas de Galápagos da América do Norte. O isolamento criou espécies que só existem lá, como a raposa-da-ilha, do tamanho de um gato.",
-        "Na travessia de uma hora é comum ver golfinhos e, com sorte, baleias."
-      ],
-      "secoes": [
+        },
         {
           "tipo": "fazer",
-          "titulo": "Mais para fazer",
+          "titulo": "Se trocarem pela ilha (Channel Islands)",
           "itens": [
             {
               "nome": "Cavern Point Loop",
@@ -622,79 +650,6 @@
               ]
             },
             {
-              "nome": "Plano reserva: Griffith Observatory",
-              "texto": "Se a balsa não sair, termine o dia no observatório: vista da cidade inteira e um dos melhores ângulos para fotografar o letreiro de Hollywood. Na terça o prédio abre.",
-              "fontes": [
-                "yt-la-travel-guide-10-lugares",
-                "yt-unseen-california"
-              ],
-              "onde": "Griffith Observatory, Los Angeles",
-              "coord": [
-                34.11822,
-                -118.30029
-              ]
-            },
-            {
-              "nome": "Plano reserva: Getty Center",
-              "texto": "Museu no alto de uma colina, com arquitetura marcante e jardins com vista. Entrada gratuita, estacionamento pago.",
-              "fontes": [
-                "yt-la-travel-guide-10-lugares",
-                "yt-unseen-california"
-              ],
-              "onde": "Getty Center, Los Angeles",
-              "verificar": "Confirmar horário e reserva (24/11 é terça; o Getty fecha às segundas)",
-              "coord": [
-                34.07702,
-                -118.47401
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "cafe",
-          "titulo": "Café",
-          "itens": [
-            {
-              "nome": "Freedom Coffee",
-              "texto": "Fica dentro do prédio de check-in da Island Packers. Lattes, chocolate quente e mingau.",
-              "onde": "Ventura Harbor",
-              "coord": [
-                34.24945,
-                -119.26483
-              ]
-            },
-            {
-              "nome": "Harbor Cove Cafe",
-              "texto": "Burritos de café da manhã e lanches para levar. Dá para encomendar a marmita 24h antes. Abre às 7:30.",
-              "onde": "1867 Spinnaker Dr, Ventura",
-              "coord": [
-                34.24781,
-                -119.26636
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "comer",
-          "titulo": "Onde comer",
-          "itens": [
-            {
-              "nome": "Andria's Seafood",
-              "texto": "Fish and chips no porto de Ventura, para a volta da ilha.",
-              "onde": "Ventura Harbor",
-              "verificar": "Confirmar horário",
-              "coord": [
-                34.24945,
-                -119.26483
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "levar",
-          "titulo": "O que levar",
-          "itens": [
-            {
               "nome": "Almoço e água para o dia todo",
               "texto": "Não há lanchonete na ilha e quase não há água potável."
             },
@@ -705,13 +660,7 @@
             {
               "nome": "Saco estanque e camadas",
               "texto": "Para o celular no caiaque e para o vento frio na volta."
-            }
-          ]
-        },
-        {
-          "tipo": "dica",
-          "titulo": "Dicas práticas",
-          "itens": [
+            },
             {
               "nome": "Chegue 1h antes",
               "texto": "Check-in da balsa, check-in do caiaque e café tomam tempo."
@@ -2198,13 +2147,19 @@
               "nome": "Hawk Hill",
               "texto": "Mirante mais alto, com a ponte e a cidade ao fundo. No outono passam aves de rapina migrando.",
               "onde": "Hawk Hill, Marin Headlands",
-              "coord": [37.8253, -122.4994]
+              "coord": [
+                37.8253,
+                -122.4994
+              ]
             },
             {
               "nome": "Rodeo Beach",
               "texto": "Praia de pedrinhas coloridas entre colinas, boa para o fim da manhã.",
               "onde": "Rodeo Beach, Marin Headlands",
-              "coord": [37.8322, -122.5378]
+              "coord": [
+                37.8322,
+                -122.5378
+              ]
             }
           ]
         }
@@ -2333,7 +2288,10 @@
               "texto": "Desvio curto até um labirinto de pedras num penhasco.",
               "onde": "Lands End Labyrinth, San Francisco",
               "maps": "Lands End Labyrinth, San Francisco",
-              "coord": [37.7877, -122.5054]
+              "coord": [
+                37.7877,
+                -122.5054
+              ]
             }
           ]
         }

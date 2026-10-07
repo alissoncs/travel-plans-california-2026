@@ -12,7 +12,8 @@ Projeto de planejamento de viagem (não é código). Responder e escrever sempre
 - `site/roteiro.json` — fonte estruturada do roteiro, hotéis e reservas; o site (`site/index.html`) só renderiza esse JSON.
 - `site/guias.json` — posts de cada dia e lugar (café, comer, fazer, levar, dicas) e as fontes (vídeos). Dicas de vídeos entram pela skill `extrair-dicas`; material bruto fica em `transcricoes/`.
 - `orcamento.csv` — gastos (os totais do JSON são gerados por `scripts/enriquecer.py`).
-- `roteiro.md` e `reservas.md` — versões em texto; manter alinhadas ao JSON.
+- `roteiro.md` e `reservas.md` — versões em texto, secundárias. O foco é o JSON que o site renderiza; só atualizar os `.md` quando o usuário pedir.
+- Ritmo: cada atividade tem `horas` e cada trecho de `estrada` também; o site mostra o % do dia comprometido (janela de 12h). Atividades com `opcional: true` ficam fora do % e dos gastos. Preferências do casal: animais, trilhas, parques e costa; uma atividade paga por dia; o último dia em LA e em SF é na cidade; dias tranquilos (meta ≤ 65%); teto de US$ 3.000 por plano (`viagem.teto_usd`).
 - O site é publicado como Artifact em https://claude.ai/artifact/2yfew8tQhbBMp9dwLTVD3d — republicar `site/index.html` com `roteiro.json`, `guias.json`, `rotas.json`, `mapa-base.json` e `img/*` como `files` (root `site`) após mudanças.
 - `site/index.html` é um fragmento (sem `<!doctype>`/`<head>`/`<body>`), no formato de Artifact; localmente use `python scripts/servir.py`. Na Vercel (Root Directory `site`), `site/build.mjs` gera `site/dist/` com o HTML completo; não transformar o `index.html` em documento completo.
 - Mapa: `site/rotas.json` e `site/mapa-base.json` são gerados por `python scripts/enriquecer.py --so mapa` a partir do `trajeto` dos dias e dos campos `coord`. Nunca editar `rotas.json` à mão.

@@ -6,17 +6,18 @@
     "fim": "2026-11-28",
     "perfil": "Casal jovem e aventureiro · viagem relaxante, focada em natureza",
     "capa": "bixby",
-    "plano_recomendado": "B"
+    "plano_recomendado": "B",
+    "teto_usd": 3000
   },
-  "atualizado_em": "2026-10-05 22:43",
+  "atualizado_em": "2026-10-05 23:19",
   "planos": {
     "A": {
       "nome": "Plano A",
-      "resumo": "Mantém as reservas atuais. Inclui o caiaque nas cavernas das Channel Islands e sobe para SF pela US-101 em um dia."
+      "resumo": "Mantém as 3 noites em LA: um dia na cidade e um em Malibu (com a ilha das Channel Islands como troca opcional). Sobe para SF pela US-101 em um dia só."
     },
     "B": {
       "nome": "Plano B",
-      "resumo": "Cancela a 3ª noite em LA e dorme em Cambria. Dois dias tranquilos pela costa de Big Sur, sem o dia de 8h de estrada."
+      "resumo": "Cancela a 3ª noite em LA e dorme em Cambria. Dois dias tranquilos pela costa até SF, com lontras, elefantes-marinhos e Big Sur."
     }
   },
   "fases": [
@@ -65,13 +66,15 @@
           "tipo": "transporte",
           "titulo": "Uber SAN → Hotel del Coronado",
           "descricao": "Cerca de 15 minutos pela ponte de Coronado.",
-          "onde": "Hotel del Coronado"
+          "onde": "Hotel del Coronado",
+          "horas": 0.5
         },
         {
           "tipo": "praia",
           "titulo": "Coronado Beach",
           "descricao": "Caminhada na areia em frente ao hotel até o pôr do sol.",
-          "lugar": "coronado"
+          "lugar": "coronado",
+          "horas": 2
         }
       ],
       "alertas": [
@@ -108,33 +111,38 @@
           "tipo": "agua",
           "titulo": "Caiaque em La Jolla",
           "descricao": "Passeio incluído pela empresa.",
-          "lugar": "lajolla"
+          "lugar": "lajolla",
+          "horas": 3
         },
         {
           "tipo": "trilha",
           "titulo": "Torrey Pines State Natural Reserve",
           "descricao": "Guy Fleming (1,1 km) ou Razor Point (2,3 km), e descida pela Beach Trail no fim da tarde. Fecha no pôr do sol.",
           "stats": "1–3 km",
-          "lugar": "torrey"
+          "lugar": "torrey",
+          "horas": 2.5
         },
         {
           "tipo": "fauna",
           "titulo": "Leões-marinhos em La Jolla Cove",
           "descricao": "Focas e leões-marinhos nas pedras, a poucos metros da calçada.",
-          "lugar": "lajolla"
+          "lugar": "lajolla",
+          "horas": 1.5
         },
         {
           "tipo": "vista",
           "titulo": "Pôr do sol em Sunset Cliffs",
           "descricao": "Falésias de arenito em Point Loma.",
-          "onde": "Sunset Cliffs Natural Park, San Diego"
+          "onde": "Sunset Cliffs Natural Park, San Diego",
+          "horas": 1.5
         }
       ],
       "alertas": [],
       "sol": {
         "nascer": "06:21",
         "por": "16:47"
-      }
+      },
+      "evento": true
     },
     {
       "id": "dia-6",
@@ -155,46 +163,54 @@
       "estrada": [
         {
           "trecho": "SAN → Joshua Tree",
-          "tempo": "2h45"
+          "tempo": "2h45",
+          "horas": 2.75
         },
         {
           "trecho": "Joshua Tree → LA",
-          "tempo": "3h+ (domingo)"
+          "tempo": "3h (domingo)",
+          "horas": 3
         }
       ],
-      "resumo": "Retirada do carro cedo e um dia inteiro entre rochas e Joshua trees, terminando no ponto mais alto do parque.",
+      "resumo": "Dia de estrada com o deserto no meio: o loop de Barker Dam entre rochas e Joshua trees e o pôr do sol em Keys View. Ryan Mountain fica opcional, para sobrar fôlego.",
       "atividades": [
         {
           "tipo": "transporte",
           "titulo": "Retirada do carro Sixt em SAN",
           "descricao": "Pacote com proteção total e FasTrak.",
-          "onde": "Sixt, San Diego International Airport"
+          "onde": "Sixt, San Diego International Airport",
+          "horas": 0.5
         },
         {
           "tipo": "trilha",
           "titulo": "Barker Dam",
           "descricao": "Loop curto entre pedras, com uma represa histórica e escalada leve.",
           "stats": "1,8 km · fácil",
-          "lugar": "barker"
+          "lugar": "barker",
+          "horas": 1.5
         },
         {
           "tipo": "trilha",
           "titulo": "Ryan Mountain",
           "descricao": "Subida constante até a melhor vista panorâmica do parque.",
           "stats": "4,8 km · +320 m",
-          "lugar": "joshua"
+          "lugar": "joshua",
+          "horas": 2.5,
+          "opcional": true
         },
         {
           "tipo": "vista",
           "titulo": "Pôr do sol em Keys View",
           "descricao": "Mirante sobre o Coachella Valley e a falha de San Andreas.",
-          "lugar": "keys"
+          "lugar": "keys",
+          "horas": 1
         },
         {
           "tipo": "transporte",
           "titulo": "Estrada até LA",
           "descricao": "Check-in no The LINE Hotel, em Koreatown.",
-          "onde": "The LINE Hotel, Koreatown, Los Angeles"
+          "onde": "The LINE Hotel, Koreatown, Los Angeles",
+          "horas": 0
         }
       ],
       "alertas": [
@@ -248,52 +264,42 @@
         "A",
         "B"
       ],
-      "titulo": "Malibu",
-      "regiao": "Santa Monica Mountains",
+      "titulo": "Los Angeles",
+      "regiao": "Griffith Park e a costa de Santa Monica",
       "coord": [
-        34.1209,
-        -118.9325
+        34.1184,
+        -118.3004
       ],
-      "capa": "sandstone",
+      "capa": "hollywood",
       "estrada": [
         {
-          "trecho": "Koreatown → Sandstone Peak",
-          "tempo": "1h15"
+          "trecho": "Koreatown → Griffith → Santa Monica → Koreatown",
+          "tempo": "1h30 no total",
+          "horas": 1.5
         }
       ],
-      "resumo": "A foto do letreiro bem cedo e depois a montanha mais alta da serra, com o Pacífico lá embaixo.",
+      "resumo": "Último dia em LA, para conhecer a cidade pelo lado verde e pela costa: trilha no Griffith Park com vista do letreiro e, à tarde, Venice e Santa Monica até o pôr do sol.",
       "atividades": [
         {
-          "tipo": "cidade",
-          "titulo": "Foto do letreiro de Hollywood",
-          "descricao": "Lake Hollywood Park, cerca de 30 minutos, antes do trânsito.",
-          "lugar": "hollywood"
-        },
-        {
           "tipo": "trilha",
-          "titulo": "Sandstone Peak",
-          "descricao": "Ponto mais alto das Santa Monica Mountains (948 m), com formações de arenito e escalada no final.",
-          "stats": "9,8 km · +450 m",
-          "lugar": "sandstone"
-        },
-        {
-          "tipo": "trilha",
-          "titulo": "Alternativa leve: Solstice Canyon",
-          "descricao": "Riacho, cachoeira e ruínas de uma casa de Paul R. Williams.",
-          "stats": "4,7 km · fácil",
-          "lugar": "solstice"
+          "titulo": "Trilha do Griffith Park até o Mount Hollywood",
+          "descricao": "Sai do Griffith Observatory e sobe até o Mount Hollywood, com o letreiro de perto, a cidade inteira e, em dia limpo, o mar. Cervos e coiotes aparecem no começo da manhã.",
+          "stats": "~4,5 km · +150 m",
+          "lugar": "hollywood",
+          "horas": 2.5
         },
         {
           "tipo": "praia",
-          "titulo": "Pôr do sol em El Matador",
-          "descricao": "Praia com arcos e rochedos. Point Dume é a alternativa.",
-          "lugar": "matador"
+          "titulo": "Venice e Santa Monica",
+          "descricao": "Canais de Venice a pé, a ciclovia pela areia e o pôr do sol no píer de Santa Monica.",
+          "onde": "Venice Canals, Los Angeles",
+          "horas": 3.5
         }
       ],
       "alertas": [
         {
           "nivel": "info",
-          "texto": "O Griffith Observatory fecha às segundas; por isso ficou fora deste dia."
+          "texto": "Segunda-feira: o prédio do Griffith Observatory fecha, mas o terraço, o estacionamento e as trilhas ficam abertos. ⚠️ verificar perto da data."
         }
       ],
       "sol": {
@@ -309,16 +315,16 @@
               -118.3046
             ],
             [
-              34.1266,
-              -118.3289
+              34.1184,
+              -118.3004
             ],
             [
-              34.1215,
-              -118.9303
+              33.9847,
+              -118.4662
             ],
             [
-              34.0384,
-              -118.8749
+              34.0094,
+              -118.4973
             ],
             [
               34.0617,
@@ -336,53 +342,71 @@
       "planos": [
         "A"
       ],
-      "titulo": "Channel Islands",
-      "regiao": "Santa Cruz Island",
+      "titulo": "Malibu",
+      "regiao": "Santa Monica Mountains e a costa",
       "coord": [
-        34.049,
-        -119.556
+        34.0378,
+        -118.7486
       ],
-      "capa": "channel",
+      "capa": "solstice",
       "estrada": [
         {
-          "trecho": "Koreatown → Ventura Harbor",
-          "tempo": "1h30"
+          "trecho": "Koreatown → Malibu",
+          "tempo": "1h15",
+          "horas": 1.25
         },
         {
-          "trecho": "Balsa até Scorpion Anchorage",
-          "tempo": "1h"
+          "trecho": "Malibu → Koreatown",
+          "tempo": "1h15",
+          "horas": 1.25
         }
       ],
-      "resumo": "Caiaque guiado por dentro das cavernas marinhas da ilha, que tem a maior concentração delas no mundo.",
+      "resumo": "Dia de natureza em Malibu: trilha fácil em Solstice Canyon, leões-marinhos em Point Dume e o pôr do sol entre os arcos de El Matador. O dia na ilha das Channel Islands fica como troca opcional.",
       "atividades": [
         {
-          "tipo": "transporte",
-          "titulo": "Balsa da Island Packers",
-          "descricao": "Saída de Ventura Harbor de manhã.",
-          "onde": "Island Packers, Ventura Harbor"
+          "tipo": "trilha",
+          "titulo": "Solstice Canyon",
+          "descricao": "Trilha fácil por um vale com riacho, cachoeira e as ruínas de uma casa de Paul R. Williams.",
+          "stats": "4,7 km · fácil",
+          "lugar": "solstice",
+          "horas": 2.5
         },
         {
-          "tipo": "agua",
-          "titulo": "Discovery Sea Caves Kayak",
-          "descricao": "Cavernas, florestas de algas e costões. US$ 159 por pessoa mais US$ 72 da balsa.",
-          "lugar": "channel"
+          "tipo": "fauna",
+          "titulo": "Point Dume",
+          "descricao": "Caminhada curta no alto do promontório. Leões-marinhos nas pedras e, com sorte, golfinhos e baleias.",
+          "onde": "Point Dume, Malibu",
+          "horas": 1
+        },
+        {
+          "tipo": "praia",
+          "titulo": "Pôr do sol em El Matador",
+          "descricao": "Praia com arcos e rochedos, descida por uma escada no penhasco.",
+          "lugar": "matador",
+          "horas": 1.5
         },
         {
           "tipo": "trilha",
-          "titulo": "Cavern Point",
-          "descricao": "Trilha curta no alto da ilha enquanto espera a balsa de volta.",
-          "stats": "3 km",
-          "onde": "Cavern Point, Santa Cruz Island"
+          "titulo": "Sandstone Peak",
+          "descricao": "Ponto mais alto das Santa Monica Mountains (948 m), com formações de arenito e escalada no final. Puxada: ocupa a manhã toda.",
+          "stats": "9,8 km · +450 m",
+          "lugar": "sandstone",
+          "horas": 4,
+          "opcional": true
+        },
+        {
+          "tipo": "agua",
+          "titulo": "Trocar pelo dia na ilha: Channel Islands",
+          "descricao": "Balsa de Ventura a Santa Cruz Island (US$ 72 por pessoa) e trilha até Cavern Point, com raposas-da-ilha. O caiaque nas cavernas custa mais US$ 159 por pessoa. Ocupa o dia todo.",
+          "lugar": "channel",
+          "horas": 9,
+          "opcional": true
         }
       ],
       "alertas": [
         {
-          "nivel": "aviso",
-          "texto": "No outono a balsa sai cerca de 4 dias por semana. Confirmar se há saída na terça, 24/11."
-        },
-        {
           "nivel": "info",
-          "texto": "Plano reserva: Mugu Peak e o Griffith no pôr do sol."
+          "texto": "Se trocarem pela ilha: no outono a balsa sai cerca de 4 dias por semana. Confirmar se há saída na terça, 24/11."
         }
       ],
       "sol": {
@@ -398,30 +422,16 @@
               -118.3046
             ],
             [
-              34.2486,
-              -119.2667
-            ]
-          ]
-        },
-        {
-          "modo": "balsa",
-          "pontos": [
-            [
-              34.2486,
-              -119.2667
+              34.0378,
+              -118.7486
             ],
             [
-              34.049,
-              -119.556
-            ]
-          ]
-        },
-        {
-          "modo": "carro",
-          "pontos": [
+              34.0011,
+              -118.8065
+            ],
             [
-              34.2486,
-              -119.2667
+              34.0384,
+              -118.8749
             ],
             [
               34.0617,
@@ -449,31 +459,36 @@
       "estrada": [
         {
           "trecho": "LA → Santa Barbara",
-          "tempo": "1h45"
+          "tempo": "1h45",
+          "horas": 1.75
         },
         {
           "trecho": "Santa Barbara → Cambria",
-          "tempo": "2h15"
+          "tempo": "2h15",
+          "horas": 2.25
         }
       ],
-      "resumo": "Saída de LA sem pressa, café em Santa Barbara, lontras em Morro Bay e noite numa pousada à beira-mar.",
+      "resumo": "Estrada sem pressa pela costa: café em Santa Barbara, lontras-marinhas em Morro Rock e noite numa pousada à beira-mar em Cambria.",
       "atividades": [
         {
           "tipo": "cidade",
           "titulo": "Santa Barbara",
           "descricao": "Café e caminhada curta pelo centro.",
-          "onde": "State Street, Santa Barbara"
+          "onde": "State Street, Santa Barbara",
+          "horas": 1.5
         },
         {
           "tipo": "fauna",
           "titulo": "Morro Rock",
           "descricao": "Lontras-marinhas na marina, ao pé da rocha vulcânica.",
-          "lugar": "morro"
+          "lugar": "morro",
+          "horas": 1.5
         },
         {
           "tipo": "hotel",
           "titulo": "Pernoite em Cambria",
-          "descricao": "Opções com preço na seção Hospedagem."
+          "descricao": "Opções com preço na seção Hospedagem.",
+          "horas": 0
         }
       ],
       "alertas": [
@@ -527,31 +542,36 @@
       "capa": "lobos",
       "estrada": [
         {
-          "trecho": "LA → SF pela US-101",
-          "tempo": "6h30 + paradas"
+          "trecho": "LA → SF pela US-101, com desvio a Point Lobos",
+          "tempo": "7h15",
+          "horas": 7.25
         }
       ],
-      "resumo": "Dia de estrada pela rota mais rápida, com uma única parada de natureza para esticar as pernas.",
+      "resumo": "Dia de estrada pela rota mais rápida, com uma parada em Point Lobos para ver lontras e leões-marinhos e esticar as pernas.",
       "atividades": [
         {
           "tipo": "trilha",
           "titulo": "Point Lobos",
           "descricao": "Penhascos, enseadas, lontras e leões-marinhos.",
           "stats": "3–5 km",
-          "lugar": "lobos"
+          "lugar": "lobos",
+          "horas": 1.5
         },
         {
           "tipo": "trilha",
           "titulo": "Ou: Pinnacles National Park",
           "descricao": "Cavernas de rochas desabadas e condores-da-califórnia. Levar lanterna de cabeça.",
           "stats": "4 km",
-          "lugar": "pinnacles"
+          "lugar": "pinnacles",
+          "horas": 3,
+          "opcional": true
         },
         {
           "tipo": "hotel",
           "titulo": "Check-in no Axiom Hotel",
           "descricao": "Union Square.",
-          "onde": "Axiom Hotel, San Francisco"
+          "onde": "Axiom Hotel, San Francisco",
+          "horas": 0
         }
       ],
       "alertas": [
@@ -606,46 +626,54 @@
       "estrada": [
         {
           "trecho": "Cambria → Big Sur → Carmel",
-          "tempo": "3h"
+          "tempo": "3h",
+          "horas": 3
         },
         {
-          "trecho": "Carmel → SF",
-          "tempo": "2h15"
+          "trecho": "Carmel → SF (véspera do feriado)",
+          "tempo": "2h45",
+          "horas": 2.75
         }
       ],
-      "resumo": "O trecho mais bonito da costa: elefantes-marinhos, uma cachoeira que cai na praia e a ponte de Bixby Creek.",
+      "resumo": "Elefantes-marinhos logo cedo e depois a Highway 1 por Big Sur sem pressa, parando em McWay Falls e na ponte de Bixby Creek. Point Lobos fica opcional.",
       "atividades": [
         {
           "tipo": "fauna",
           "titulo": "Elefantes-marinhos em Piedras Blancas",
           "descricao": "Colônia ao lado da estrada, sem trilha.",
-          "lugar": "seals"
+          "lugar": "seals",
+          "horas": 0.5
         },
         {
           "tipo": "vista",
           "titulo": "McWay Falls",
           "descricao": "Cachoeira de 24 m que cai direto na areia.",
           "stats": "1 km",
-          "lugar": "mcway"
+          "lugar": "mcway",
+          "horas": 0.75
         },
         {
           "tipo": "vista",
           "titulo": "Bixby Creek Bridge",
           "descricao": "Parada no mirante ao norte da ponte.",
-          "lugar": "bixby"
+          "lugar": "bixby",
+          "horas": 0.25
         },
         {
           "tipo": "trilha",
           "titulo": "Point Lobos",
           "descricao": "Loop curto antes de seguir para SF.",
           "stats": "3 km",
-          "lugar": "lobos"
+          "lugar": "lobos",
+          "horas": 1.5,
+          "opcional": true
         },
         {
           "tipo": "hotel",
           "titulo": "Check-in no Axiom Hotel",
           "descricao": "Union Square, no fim da tarde.",
-          "onde": "Axiom Hotel, San Francisco"
+          "onde": "Axiom Hotel, San Francisco",
+          "horas": 0
         }
       ],
       "alertas": [
@@ -712,41 +740,48 @@
       "capa": "muir",
       "estrada": [
         {
-          "trecho": "Union Square → Muir Woods",
-          "tempo": "40 min"
+          "trecho": "Union Square → Muir Woods e volta",
+          "tempo": "1h30 no total",
+          "horas": 1.5
         }
       ],
-      "resumo": "Sequoias costeiras logo cedo, a Golden Gate vista de cima e devolução do carro antes da ceia.",
+      "resumo": "Sequoias costeiras logo cedo, a Golden Gate vista de cima na volta e a tarde livre depois de devolver o carro. À noite, a ceia de Thanksgiving.",
       "atividades": [
         {
           "tipo": "trilha",
           "titulo": "Muir Woods às 8h",
           "descricao": "Main Trail entre sequoias costeiras (redwoods), antes da lotação.",
           "stats": "3 km · fácil",
-          "lugar": "muir"
+          "lugar": "muir",
+          "horas": 2
         },
         {
           "tipo": "vista",
           "titulo": "Marin Headlands",
-          "descricao": "Hawk Hill, com a ponte de cima, e Rodeo Beach.",
-          "lugar": "headlands"
+          "descricao": "Parada curta em Hawk Hill, com a ponte de cima, e em Rodeo Beach, no caminho de volta.",
+          "lugar": "headlands",
+          "horas": 0.75
         },
         {
           "tipo": "trilha",
           "titulo": "Alternativa: Tomales Point",
           "descricao": "Alces-de-tule em Point Reyes, a cerca de 1h30 de SF.",
           "stats": "3 / 10 / 15 km",
-          "lugar": "tomales"
+          "lugar": "tomales",
+          "horas": 4,
+          "opcional": true
         },
         {
           "tipo": "transporte",
           "titulo": "Devolução do carro",
-          "descricao": "Confirmar horário da loja no feriado. Alternativa: SFO."
+          "descricao": "Confirmar horário da loja no feriado. Alternativa: SFO.",
+          "horas": 1
         },
         {
           "tipo": "comida",
           "titulo": "Ceia de Thanksgiving",
-          "descricao": "Reservar com antecedência."
+          "descricao": "Reservar com antecedência.",
+          "horas": 2.5
         }
       ],
       "alertas": [
@@ -792,40 +827,53 @@
         "A",
         "B"
       ],
-      "titulo": "Golden Gate de bike",
-      "regiao": "San Francisco e Sausalito",
+      "titulo": "San Francisco pela orla",
+      "regiao": "Pier 39, Crissy Field e Lands End",
       "coord": [
         37.8199,
         -122.4783
       ],
       "capa": "goldengate",
-      "resumo": "Atravessar a ponte pedalando, almoçar em Sausalito, voltar de balsa e terminar no pôr do sol de Lands End.",
+      "resumo": "Último dia em SF, para conhecer a cidade pela orla: leões-marinhos no Pier 39, bike pela Marina e por Crissy Field até a Golden Gate e o pôr do sol na trilha de Lands End.",
       "atividades": [
+        {
+          "tipo": "fauna",
+          "titulo": "Leões-marinhos no Pier 39",
+          "descricao": "Os leões-marinhos ocupam as plataformas do píer o ano todo. Vale ir cedo, antes do movimento.",
+          "onde": "Pier 39, San Francisco",
+          "horas": 1
+        },
         {
           "tipo": "bike",
           "titulo": "Golden Gate Bridge de bicicleta",
-          "descricao": "Aluguel perto de Fisherman's Wharf até Sausalito.",
-          "stats": "13 km",
-          "lugar": "goldengate"
-        },
-        {
-          "tipo": "agua",
-          "titulo": "Balsa Sausalito → SF",
-          "descricao": "Passa por Alcatraz e chega ao Ferry Building.",
-          "lugar": "sausalito"
+          "descricao": "Do Fisherman's Wharf pela Marina e por Crissy Field até a ponte, atravessando até o mirante do outro lado e voltando. Quem quiser segue até Sausalito e volta de balsa.",
+          "stats": "~13 km ida e volta",
+          "lugar": "goldengate",
+          "horas": 3
         },
         {
           "tipo": "trilha",
           "titulo": "Pôr do sol em Lands End",
           "descricao": "Trilha costeira com ruínas e vista da ponte.",
           "stats": "5 km",
-          "lugar": "landsend"
+          "lugar": "landsend",
+          "horas": 2
+        },
+        {
+          "tipo": "agua",
+          "titulo": "Balsa Sausalito → SF",
+          "descricao": "Se esticarem a bike até Sausalito: a balsa volta ao Ferry Building passando por Alcatraz.",
+          "lugar": "sausalito",
+          "opcional": true,
+          "horas": 1
         },
         {
           "tipo": "cidade",
-          "titulo": "Opcional: Alcatraz",
+          "titulo": "Alcatraz",
           "descricao": "Se conseguir ingresso para a Black Friday.",
-          "lugar": "alcatraz"
+          "lugar": "alcatraz",
+          "opcional": true,
+          "horas": 3
         }
       ],
       "alertas": [],
@@ -842,25 +890,20 @@
               -122.4177
             ],
             [
-              37.8077,
-              -122.475
+              37.8037,
+              -122.465
             ],
             [
-              37.8591,
-              -122.4853
-            ]
-          ]
-        },
-        {
-          "modo": "balsa",
-          "pontos": [
-            [
-              37.8591,
-              -122.4853
+              37.8324,
+              -122.4795
             ],
             [
-              37.7955,
-              -122.3937
+              37.8037,
+              -122.465
+            ],
+            [
+              37.808,
+              -122.4177
             ]
           ]
         }
@@ -887,7 +930,8 @@
           "tipo": "transporte",
           "titulo": "Axiom → SFO",
           "descricao": "Uber, cerca de 25 minutos de madrugada.",
-          "onde": "San Francisco International Airport"
+          "onde": "San Francisco International Airport",
+          "horas": 0.5
         }
       ],
       "alertas": [
@@ -1621,33 +1665,33 @@
     "taxa_brl": 5.62,
     "planos": {
       "A": {
-        "total_usd": 3608.22,
-        "opcionais_usd": 370.5,
-        "itens_a_verificar": 12,
+        "total_usd": 2981.22,
+        "opcionais_usd": 862.5,
+        "itens_a_verificar": 11,
         "categorias": {
           "hospedagem": 1005.0,
-          "alimentacao": 875.0,
-          "passeio": 552.0,
+          "alimentacao": 715.0,
           "carro": 376.22,
-          "transporte": 300.0,
-          "estacionamento": 215.0,
-          "gasolina": 200.0,
+          "transporte": 270.0,
+          "estacionamento": 250.0,
+          "gasolina": 190.0,
+          "passeio": 90.0,
           "ingresso": 85.0
         }
       },
       "B": {
-        "total_usd": 3201.22,
-        "opcionais_usd": 340.5,
+        "total_usd": 2961.22,
+        "opcionais_usd": 380.5,
         "itens_a_verificar": 11,
         "categorias": {
           "hospedagem": 1025.0,
-          "alimentacao": 935.0,
+          "alimentacao": 725.0,
           "carro": 376.22,
-          "transporte": 300.0,
-          "gasolina": 205.0,
-          "estacionamento": 175.0,
-          "ingresso": 95.0,
-          "passeio": 90.0
+          "transporte": 270.0,
+          "gasolina": 195.0,
+          "estacionamento": 195.0,
+          "passeio": 90.0,
+          "ingresso": 85.0
         }
       }
     },
@@ -1827,10 +1871,10 @@
           "B"
         ],
         "categoria": "gasolina",
-        "item": "LA <-> Malibu",
-        "usd": 25.0,
+        "item": "Koreatown -> Griffith -> Santa Monica",
+        "usd": 15.0,
         "status": "estimado",
-        "atividade": "Sandstone Peak"
+        "atividade": "Venice e Santa Monica"
       },
       {
         "data": "2026-11-23",
@@ -1839,10 +1883,22 @@
           "B"
         ],
         "categoria": "estacionamento",
-        "item": "Praia em Malibu",
+        "item": "Griffith Observatory",
+        "usd": 20.0,
+        "status": "estimado",
+        "atividade": "Trilha do Griffith Park até o Mount Hollywood"
+      },
+      {
+        "data": "2026-11-23",
+        "planos": [
+          "A",
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "Santa Monica",
         "usd": 15.0,
         "status": "estimado",
-        "atividade": "Pôr do sol em El Matador"
+        "atividade": "Venice e Santa Monica"
       },
       {
         "data": "2026-11-23",
@@ -1876,7 +1932,7 @@
         ],
         "categoria": "alimentacao",
         "item": "Refeições do dia",
-        "usd": 100.0,
+        "usd": 85.0,
         "status": "estimado",
         "atividade": null
       },
@@ -1888,8 +1944,19 @@
         "categoria": "passeio",
         "item": "Channel Islands: balsa + caiaque (2x US$ 231)",
         "usd": 462.0,
-        "status": "verificar",
-        "atividade": "Discovery Sea Caves Kayak"
+        "status": "opcional",
+        "atividade": "Trocar pelo dia na ilha: Channel Islands"
+      },
+      {
+        "data": "2026-11-24",
+        "planos": [
+          "A"
+        ],
+        "categoria": "estacionamento",
+        "item": "Praias e trilhas de Malibu",
+        "usd": 15.0,
+        "status": "estimado",
+        "atividade": "Pôr do sol em El Matador"
       },
       {
         "data": "2026-11-24",
@@ -1897,10 +1964,10 @@
           "A"
         ],
         "categoria": "gasolina",
-        "item": "LA <-> Ventura",
+        "item": "LA <-> Malibu",
         "usd": 25.0,
         "status": "estimado",
-        "atividade": "Balsa da Island Packers"
+        "atividade": "Solstice Canyon"
       },
       {
         "data": "2026-11-24",
@@ -1931,7 +1998,7 @@
         ],
         "categoria": "alimentacao",
         "item": "Refeições do dia",
-        "usd": 70.0,
+        "usd": 85.0,
         "status": "estimado",
         "atividade": null
       },
@@ -1975,7 +2042,7 @@
         ],
         "categoria": "alimentacao",
         "item": "Refeições do dia",
-        "usd": 100.0,
+        "usd": 85.0,
         "status": "estimado",
         "atividade": null
       },
@@ -2053,7 +2120,7 @@
         "categoria": "ingresso",
         "item": "Point Lobos (estacionamento)",
         "usd": 10.0,
-        "status": "estimado",
+        "status": "opcional",
         "atividade": "Point Lobos"
       },
       {
@@ -2063,7 +2130,7 @@
         ],
         "categoria": "alimentacao",
         "item": "Refeições do dia (almoço no Nepenthe)",
-        "usd": 120.0,
+        "usd": 100.0,
         "status": "estimado",
         "atividade": null
       },
@@ -2146,8 +2213,8 @@
           "B"
         ],
         "categoria": "alimentacao",
-        "item": "Ceia de Thanksgiving (2 pessoas)",
-        "usd": 340.0,
+        "item": "Ceia de Thanksgiving (2 pessoas; menu fixo de ~US$ 75-90 por pessoa)",
+        "usd": 200.0,
         "status": "estimado",
         "atividade": "Ceia de Thanksgiving"
       },
@@ -2196,7 +2263,7 @@
         "categoria": "transporte",
         "item": "Balsa Sausalito -> SF (2 pessoas)",
         "usd": 30.0,
-        "status": "estimado",
+        "status": "opcional",
         "atividade": "Balsa Sausalito → SF"
       },
       {
@@ -2221,7 +2288,7 @@
         "item": "Alcatraz (2x US$ 45.25)",
         "usd": 90.5,
         "status": "opcional",
-        "atividade": "Opcional: Alcatraz"
+        "atividade": "Alcatraz"
       },
       {
         "data": "2026-11-27",
@@ -2243,7 +2310,7 @@
         ],
         "categoria": "alimentacao",
         "item": "Refeições do dia",
-        "usd": 120.0,
+        "usd": 100.0,
         "status": "estimado",
         "atividade": null
       },
