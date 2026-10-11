@@ -43,7 +43,7 @@
 | 8 | 24/11 Ter | **Channel Islands** (balsa Ventura → Santa Cruz Island, caiaque nas cavernas marinhas). ⚠️ verificar se há balsa nesse dia. Plano reserva: Point Mugu (Mugu Peak) + Griffith no pôr do sol. Volta a LA. |
 | 9 | 25/11 Qua | LA → SF pela **US-101** (mais rápida) com **uma** parada de natureza: Point Lobos **ou** Pinnacles NP (cavernas + condores; levar lanterna). Chegada SF e check-in Axiom. |
 
-### PLANO B — recomendado (cancelar a 3ª noite em LA)
+### PLANO B — recomendado (só 2 noites em LA)
 
 | Dia | Data | Programa |
 |---|---|---|

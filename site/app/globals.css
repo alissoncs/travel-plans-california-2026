@@ -18,7 +18,7 @@
   --glass-edge: rgb(255 255 255 / .75);
   --glass-shadow: 0 10px 34px rgb(30 60 130 / .14), 0 1px 3px rgb(30 60 130 / .08);
   --glow-1: rgb(74 144 255 / .55); --glow-2: rgb(52 211 220 / .45); --glow-3: rgb(255 138 76 / .38);
-  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", var(--font-figtree), system-ui, sans-serif;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Figtree Variable", system-ui, sans-serif;
   --gutter: 16px;
   --maxw: 720px;
   --radius: 22px;

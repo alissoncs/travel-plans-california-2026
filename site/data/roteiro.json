@@ -17,7 +17,7 @@
     },
     "B": {
       "nome": "Plano B",
-      "resumo": "Cancela a 3ª noite em LA e dorme em Cambria. Dois dias tranquilos pela costa até SF, com lontras, elefantes-marinhos e Big Sur."
+      "resumo": "Fica só 2 noites em LA e dorme em Cambria. Dois dias tranquilos pela costa até SF, com lontras, elefantes-marinhos e Big Sur."
     }
   },
   "fases": [
@@ -494,7 +494,7 @@
       "alertas": [
         {
           "nivel": "aviso",
-          "texto": "Exige cancelar a 3ª noite do The LINE e reservar um hotel em Cambria."
+          "texto": "Exige reservar só 2 noites no The LINE e um hotel em Cambria."
         }
       ],
       "sol": {
@@ -1360,7 +1360,7 @@
       "cidade": "Los Angeles · Koreatown",
       "checkin": "2026-11-22",
       "checkout": "2026-11-25",
-      "status": "Reservado",
+      "status": "A reservar",
       "planos": [
         "A"
       ],
@@ -1395,7 +1395,7 @@
       "cidade": "Los Angeles · Koreatown",
       "checkin": "2026-11-22",
       "checkout": "2026-11-24",
-      "status": "Reservado · cancelar a 3ª noite",
+      "status": "A reservar · só 2 noites (22 a 24/11)",
       "planos": [
         "B"
       ],
@@ -1430,7 +1430,7 @@
       "cidade": "San Francisco · Union Square",
       "checkin": "2026-11-25",
       "checkout": "2026-11-28",
-      "status": "Reservado",
+      "status": "A reservar",
       "planos": [
         "A",
         "B"
@@ -1593,7 +1593,7 @@
     {
       "id": "cambria",
       "prioridade": "urgente",
-      "item": "Hotel em Cambria e cancelar a 3ª noite do LINE",
+      "item": "Hotel em Cambria (24/11)",
       "detalhe": "Só no Plano B.",
       "planos": [
         "B"
@@ -1638,15 +1638,15 @@
     },
     {
       "id": "line",
-      "prioridade": "feito",
-      "item": "The LINE LA",
-      "detalhe": "22 a 25/11 (no Plano B, cancelar a 3ª noite)."
+      "prioridade": "urgente",
+      "item": "Hotel The LINE LA",
+      "detalhe": "Ainda não reservado. Plano B: 22 a 24/11 (2 noites)."
     },
     {
       "id": "axiom",
-      "prioridade": "feito",
-      "item": "Axiom Hotel",
-      "detalhe": "25 a 28/11."
+      "prioridade": "urgente",
+      "item": "Hotel Axiom (SF)",
+      "detalhe": "Ainda não reservado. 25 a 28/11."
     },
     {
       "id": "carro",

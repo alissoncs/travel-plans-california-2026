@@ -1,12 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Figtree } from "next/font/google";
+import "@fontsource-variable/figtree";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
 import Shell from "@/components/Shell";
 import { TripProvider } from "@/components/TripProvider";
 import { guides, itinerary } from "@/lib/data";
-
-const figtree = Figtree({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-figtree" });
 
 export const metadata: Metadata = {
   title: { default: "Califórnia 2026", template: "%s · Califórnia 2026" },
@@ -16,7 +14,7 @@ export const viewport: Viewport = { width: "device-width", initialScale: 1, view
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={figtree.variable}>
+    <html lang="pt-BR">
       <body>
         <TripProvider itinerary={itinerary} guides={guides}>
           <Shell>{children}</Shell>
