@@ -1,4 +1,0 @@
-export const TIPOS: Record<string, string> = { trilha: "Trilhas", praia: "Praias", vista: "Mirantes", fauna: "Vida selvagem", agua: "Na água", cidade: "Cidade", bike: "Bike", transporte: "Deslocamento", comida: "Comida", hotel: "Hotel" };
-export const CAT: Record<string, string> = { alimentacao: "Alimentação", gasolina: "Gasolina", estacionamento: "Estacionamento", passeio: "Passeios", ingresso: "Ingressos", transporte: "Transporte", hospedagem: "Hotéis", carro: "Aluguel do carro" };
-export const STATUS: Record<string, string> = { estimado: "estimativa", confirmado: "confirmado", verificar: "a confirmar", opcional: "opcional, fora do total" };
-export const SECOES: Record<string, [string, string]> = { fazer: ["Mais para fazer", "fazer"], cafe: ["Café", "cafe"], comer: ["Onde comer", "comida"], levar: ["O que levar", "levar"], foto: ["Fotos", "foto"], dica: ["Dicas práticas", "dica"] };

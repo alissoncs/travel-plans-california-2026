@@ -1,7 +1,8 @@
+// Os campos em português espelham os JSON em data/, que os scripts Python também usam.
 export type Coord = [number, number];
-export type PlanoId = string;
+export type PlanId = string;
 
-export interface Atividade {
+export interface Activity {
   tipo: string;
   titulo: string;
   descricao: string;
@@ -12,81 +13,70 @@ export interface Atividade {
   opcional?: boolean;
 }
 
-export interface Dia {
+export interface Day {
   id: string;
   rotulo: string;
   data: string;
   data_fim?: string;
   fase: string;
-  planos: PlanoId[];
+  planos: PlanId[];
   titulo: string;
   regiao: string;
   coord: Coord;
   capa: string;
   resumo: string;
-  atividades: Atividade[];
+  atividades: Activity[];
   estrada?: { trecho: string; tempo: string; horas?: number }[];
   alertas?: { nivel: "urgente" | "aviso" | "info"; texto: string }[];
   sol?: { nascer: string; por: string };
   evento?: boolean;
 }
 
-export interface Lugar {
+export interface Place {
   nome: string;
-  wiki?: string;
   resumo_wiki?: string;
   wiki_url?: string | null;
-  credito?: { autor: string; licenca?: string; url?: string };
+  credito?: { autor: string; licenca?: string };
   imagem?: string;
   coord?: Coord;
 }
 
-export interface Hospedagem {
+export interface Lodging {
   id: string;
   nome: string;
   cidade: string;
   checkin: string;
   checkout: string;
   status: string;
-  planos: PlanoId[];
+  planos: PlanId[];
   coord?: Coord;
   precos?: { site: string; diaria: number }[];
   precos_em?: string;
 }
 
-export interface OpcaoHotel {
-  nome: string;
-  nota: number;
-  avaliacoes: number;
-  url: string;
-  coord?: Coord;
-  diaria_min: number;
-  site_min: string;
-}
-
-export interface BuscaHoteis {
+export interface HotelSearch {
   id: string;
   titulo: string;
-  planos: PlanoId[];
+  planos: PlanId[];
   cidade: string;
   checkin: string;
   precos_em?: string;
   busca_externa?: { nome: string; url: string }[];
-  opcoes?: OpcaoHotel[];
+  opcoes?: { nome: string; nota: number; avaliacoes: number; url: string; coord?: Coord; diaria_min: number; site_min: string }[];
 }
 
-export interface Reserva {
+export interface Booking {
   id: string;
   prioridade: "urgente" | "importante" | "antes" | "feito";
   item: string;
   detalhe: string;
   url?: string;
-  planos?: PlanoId[];
+  planos?: PlanId[];
 }
 
-export interface Gasto {
+export interface Expense {
   data?: string;
-  planos: PlanoId[];
+  planos: PlanId[];
   categoria: string;
   item: string;
   usd: number;
@@ -94,30 +84,22 @@ export interface Gasto {
   atividade?: string;
 }
 
-export interface Roteiro {
-  viagem: {
-    titulo: string;
-    subtitulo: string;
-    inicio: string;
-    fim: string;
-    capa: string;
-    plano_recomendado: PlanoId;
-    teto_usd?: number;
-  };
+export interface Itinerary {
+  viagem: { titulo: string; subtitulo: string; inicio: string; fim: string; capa: string; plano_recomendado: PlanId; teto_usd?: number };
   atualizado_em?: string;
-  planos: Record<PlanoId, { nome: string; resumo: string }>;
+  planos: Record<PlanId, { nome: string; resumo: string }>;
   fases: { id: string; nome: string; detalhe: string; inicio: string; fim: string }[];
-  dias: Dia[];
-  lugares: Record<string, Lugar>;
-  hospedagens: Hospedagem[];
-  busca_hoteis?: BuscaHoteis[];
-  reservas: Reserva[];
-  orcamento?: { taxa_brl: number; planos: Record<PlanoId, unknown>; itens: Gasto[] };
+  dias: Day[];
+  lugares: Record<string, Place>;
+  hospedagens: Lodging[];
+  busca_hoteis?: HotelSearch[];
+  reservas: Booking[];
+  orcamento?: { taxa_brl: number; itens: Expense[] };
   fontes: { nome: string; url: string }[];
   creditos_api: { nome: string; uso: string }[];
 }
 
-export interface ItemGuia {
+export interface GuideItem {
   nome: string;
   texto: string;
   onde?: string;
@@ -130,34 +112,34 @@ export interface ItemGuia {
   tempos?: Record<string, number>;
 }
 
-export interface SecaoGuia {
+export interface GuideSection {
   tipo: string;
   titulo?: string;
-  itens: ItemGuia[];
+  itens: GuideItem[];
 }
 
-export interface Guia {
+export interface Guide {
   intro?: string[];
-  secoes?: SecaoGuia[];
+  secoes?: GuideSection[];
 }
 
-export interface Fonte {
+export interface GuideSource {
   tipo: string;
   titulo: string;
   canal?: string;
   url?: string | null;
 }
 
-export interface Guias {
-  fontes: Record<string, Fonte>;
-  dias: Record<string, Guia>;
-  lugares: Record<string, Guia>;
+export interface Guides {
+  fontes: Record<string, GuideSource>;
+  dias: Record<string, Guide>;
+  lugares: Record<string, Guide>;
 }
 
-export interface Trecho {
+export interface RouteSegment {
   modo: "carro" | "bike" | "balsa";
   linha: Coord[];
   km?: number;
   min?: number;
 }
-export type Rotas = Record<string, Trecho[]>;
+export type DayRoutes = Record<string, RouteSegment[]>;

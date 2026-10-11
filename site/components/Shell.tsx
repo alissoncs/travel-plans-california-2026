@@ -2,49 +2,48 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Ico, Sprite } from "./Icones";
-import MapaPainel from "./Mapa";
-import { useViagem } from "./Viagem";
-import { ABAS, focoDaRota, hrefAba, rotaDe } from "@/lib/rotas";
+import { Icon, Sprite } from "./Icons";
+import TripMap from "./map/TripMap";
+import { useTrip } from "./TripProvider";
+import { focusOf, hrefs, routeOf, TABS } from "@/lib/routes";
 
 export default function Shell({ children }: { children: React.ReactNode }) {
-  const { D, plano, setPlano, pronto } = useViagem();
-  const rota = rotaDe(usePathname(), D);
-  const [rolou, setRolou] = useState(false);
+  const { itinerary, plan, setPlan, ready } = useTrip();
+  const route = routeOf(usePathname(), itinerary);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const f = () => setRolou(window.scrollY > 4);
-    f();
-    window.addEventListener("scroll", f, { passive: true });
-    return () => window.removeEventListener("scroll", f);
+    const update = () => setScrolled(window.scrollY > 4);
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    return () => window.removeEventListener("scroll", update);
   }, []);
 
-  const foco = focoDaRota(rota);
-  const titulo = rota.voltar ? rota.titulo : rota.pagina === "inicio" ? D.viagem.titulo : rota.titulo;
+  const title = route.page === "home" ? itinerary.viagem.titulo : route.title;
 
   return (
-    <div className={rota.pagina === "mapa" ? "app modo-mapa" : "app"} data-pronto={pronto ? "" : undefined}>
+    <div className={route.page === "map" ? "app map-mode" : "app"} data-ready={ready ? "" : undefined}>
       <Sprite />
-      <header className={rolou ? "appbar scrolled" : "appbar"}>
+      <header className={scrolled ? "appbar scrolled" : "appbar"}>
         <div className="wrap">
-          {rota.voltar && (
-            <Link className="back" href={rota.voltar} aria-label="Voltar">
-              <Ico n="back" />
+          {route.back && (
+            <Link className="back" href={route.back} aria-label="Voltar">
+              <Icon name="back" />
             </Link>
           )}
-          <h1 className={rota.voltar ? "" : "page-title"}>{titulo}</h1>
+          <h1 className={route.back ? "" : "page-title"}>{title}</h1>
           <span className="spacer" />
           <nav className="topnav" aria-label="Seções">
-            {ABAS.map(([k, n]) => (
-              <Link key={k} href={hrefAba(k)} aria-current={rota.aba === k ? "page" : undefined}>
-                {n}
+            {TABS.map((tab) => (
+              <Link key={tab.page} href={tab.href} aria-current={route.tab === tab.page ? "page" : undefined}>
+                {tab.label}
               </Link>
             ))}
           </nav>
           <div className="seg" role="group" aria-label="Plano">
-            {Object.keys(D.planos).map((k) => (
-              <button key={k} type="button" aria-pressed={k === plano} onClick={() => setPlano(k)}>
-                {k}
+            {Object.keys(itinerary.planos).map((id) => (
+              <button key={id} type="button" aria-pressed={id === plan} onClick={() => setPlan(id)}>
+                {id}
               </button>
             ))}
           </div>
@@ -53,18 +52,18 @@ export default function Shell({ children }: { children: React.ReactNode }) {
       <div className="shell">
         <main className="wrap">{children}</main>
         <aside className="map-panel" aria-label="Mapa da viagem">
-          <MapaPainel rota={rota} />
+          <TripMap route={route} />
         </aside>
       </div>
-      <Link className="map-fab" href={foco ? `/mapa/${foco}` : "/mapa"}>
-        <Ico n="lugares" /> Mapa
+      <Link className="map-fab" href={hrefs.map(focusOf(route))}>
+        <Icon name="lugares" /> Mapa
       </Link>
       <nav className="tabbar" aria-label="Seções">
         <div className="wrap">
-          {ABAS.map(([k, n, i]) => (
-            <Link key={k} href={hrefAba(k)} aria-current={rota.aba === k ? "page" : undefined}>
-              <Ico n={i} />
-              <span>{n}</span>
+          {TABS.map((tab) => (
+            <Link key={tab.page} href={tab.href} aria-current={route.tab === tab.page ? "page" : undefined}>
+              <Icon name={tab.icon} />
+              <span>{tab.label}</span>
             </Link>
           ))}
         </div>

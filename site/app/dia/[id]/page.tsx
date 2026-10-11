@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import Dia from "@/components/paginas/Dia";
-import roteiro from "@/data/roteiro.json";
+import Day from "@/components/pages/Day";
+import { dayIds, itinerary } from "@/lib/data";
+
+type Params = { params: Promise<{ id: string }> };
 
 export const dynamicParams = false;
-export const generateStaticParams = () => roteiro.dias.map((d) => ({ id: d.id }));
+export const generateStaticParams = () => dayIds.map((id) => ({ id }));
 
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { id } = await params;
-  const d = roteiro.dias.find((x) => x.id === id);
-  return { title: d ? `Dia ${d.rotulo} · ${d.titulo}` : "Dia" };
+  const day = itinerary.dias.find((d) => d.id === id);
+  return { title: day ? `Dia ${day.rotulo} · ${day.titulo}` : "Dia" };
 }
 
-export default async function Page({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  return <Dia id={id} />;
+export default async function Page({ params }: Params) {
+  return <Day id={(await params).id} />;
 }

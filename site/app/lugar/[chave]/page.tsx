@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import Lugar from "@/components/paginas/Lugar";
-import roteiro from "@/data/roteiro.json";
+import Place from "@/components/pages/Place";
+import { itinerary, placeKeys } from "@/lib/data";
+
+type Params = { params: Promise<{ chave: string }> };
 
 export const dynamicParams = false;
-export const generateStaticParams = () => Object.keys(roteiro.lugares).map((chave) => ({ chave }));
+export const generateStaticParams = () => placeKeys.map((chave) => ({ chave }));
 
-export async function generateMetadata({ params }: { params: Promise<{ chave: string }> }): Promise<Metadata> {
-  const { chave } = await params;
-  return { title: (roteiro.lugares as Record<string, { nome: string }>)[chave]?.nome ?? "Lugar" };
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  return { title: itinerary.lugares[(await params).chave]?.nome ?? "Lugar" };
 }
 
-export default async function Page({ params }: { params: Promise<{ chave: string }> }) {
-  const { chave } = await params;
-  return <Lugar chave={chave} />;
+export default async function Page({ params }: Params) {
+  return <Place placeKey={(await params).chave} />;
 }

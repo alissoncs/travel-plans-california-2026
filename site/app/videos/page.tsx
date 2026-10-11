@@ -1,4 +1,4 @@
-import Videos from "@/components/paginas/Videos";
+import Videos from "@/components/pages/Videos";
 
 export const metadata = { title: "Dicas dos vídeos" };
 

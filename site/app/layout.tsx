@@ -3,10 +3,8 @@ import { Figtree } from "next/font/google";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
 import Shell from "@/components/Shell";
-import { ViagemProvider } from "@/components/Viagem";
-import roteiro from "@/data/roteiro.json";
-import guias from "@/data/guias.json";
-import type { Guias, Roteiro } from "@/lib/types";
+import { TripProvider } from "@/components/TripProvider";
+import { guides, itinerary } from "@/lib/data";
 
 const figtree = Figtree({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-figtree" });
 
@@ -20,9 +18,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR" className={figtree.variable}>
       <body>
-        <ViagemProvider roteiro={roteiro as unknown as Roteiro} guias={guias as unknown as Guias}>
+        <TripProvider itinerary={itinerary} guides={guides}>
           <Shell>{children}</Shell>
-        </ViagemProvider>
+        </TripProvider>
       </body>
     </html>
   );

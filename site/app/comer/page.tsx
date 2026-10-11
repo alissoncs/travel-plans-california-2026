@@ -1,7 +1,7 @@
-import Comer from "@/components/paginas/Comer";
+import Eat from "@/components/pages/Eat";
 
 export const metadata = { title: "Cafés e restaurantes" };
 
 export default function Page() {
-  return <Comer />;
+  return <Eat />;
 }

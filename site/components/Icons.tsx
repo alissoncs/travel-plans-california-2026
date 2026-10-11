@@ -34,10 +34,10 @@ export function Sprite() {
   );
 }
 
-export function Ico({ n }: { n: string }) {
+export function Icon({ name }: { name: string }) {
   return (
     <svg className="ico" aria-hidden="true">
-      <use href={`#i-${n}`} />
+      <use href={`#i-${name}`} />
     </svg>
   );
 }

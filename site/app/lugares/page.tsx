@@ -1,7 +1,7 @@
-import Lugares from "@/components/paginas/Lugares";
+import Places from "@/components/pages/Places";
 
 export const metadata = { title: "Lugares" };
 
 export default function Page() {
-  return <Lugares />;
+  return <Places />;
 }
