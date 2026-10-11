@@ -1,4 +1,4 @@
-"""Valida site/guias.json contra site/roteiro.json.
+"""Valida site/data/guias.json contra site/data/roteiro.json.
 
 Confere se cada post aponta para um dia ou lugar que existe, se as seções têm tipo
 conhecido, se os itens têm nome e texto e se toda fonte citada está cadastrada.
@@ -10,7 +10,7 @@ import json
 import sys
 from pathlib import Path
 
-SITE = Path(__file__).resolve().parents[1] / "site"
+SITE = Path(__file__).resolve().parents[1] / "site" / "data"
 TIPOS = {"fazer", "cafe", "comer", "levar", "foto", "dica"}
 
 

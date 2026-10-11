@@ -16,22 +16,31 @@
 | Escolha Plano A × Plano B | ⏳ Pendente |
 | Reservas urgentes (Alcatraz, Muir Woods, ceia, Channel Islands) | ⏳ Ver [reservas.md](reservas.md) |
 
+## Primeiros passos
+
+- **Pré-requisitos:** Python 3 (só biblioteca padrão, sem `pip install`) e Node 20+ (para o site Next.js em `site/`). O `enriquecer.py` precisa de internet; o Nominatim aceita 1 requisição por segundo, então o `--so mapa` é lento.
+- **Ver o site:** `cd site && npm install && npm run dev` e abra http://localhost:3000. Para conferir o build: `npm run typecheck && npm run build`.
+- **Depois de editar qualquer JSON ou o CSV:** `python scripts/enriquecer.py` (ou `--so <parte>`) e `python scripts/validar.py`. Só termine com `OK`; avisos `⚠️` são para olhar, não bloqueiam.
+- **Publicar:** a Vercel faz o build do `site/` sozinha (seção Deploy). O Artifact antigo (https://claude.ai/artifact/2yfew8tQhbBMp9dwLTVD3d) não é mais atualizado.
+- **Esquema dos dados:** [docs/estrutura-dados.md](docs/estrutura-dados.md).
+- **Estado atual:** o Plano C (Yosemite) foi descartado em 05/10/2026; falta o casal decidir entre A e B (o JSON recomenda o B).
+
 ## Estrutura
 
 | Arquivo | Conteúdo |
 |---|---|
-| [site/roteiro.json](site/roteiro.json) | **Fonte da verdade estruturada**: dias, atividades, lugares, hotéis, reservas. Alimenta o site |
-| [site/guias.json](site/guias.json) | Posts estilo blog de cada dia e lugar: mais para fazer, café, onde comer, o que levar, dicas. Inclui as dicas dos vídeos, com crédito |
+| [site/data/roteiro.json](site/data/roteiro.json) | **Fonte da verdade estruturada**: dias, atividades, lugares, hotéis, reservas. Alimenta o site |
+| [site/data/guias.json](site/data/guias.json) | Posts estilo blog de cada dia e lugar: mais para fazer, café, onde comer, o que levar, dicas. Inclui as dicas dos vídeos, com crédito |
 | [transcricoes/](transcricoes/) | Transcrições e resumos de vídeos do YouTube usados nos posts |
 | [scripts/validar.py](scripts/validar.py) | Confere se `guias.json` bate com `roteiro.json` e lista o que falta verificar |
-| [site/index.html](site/index.html) | Site mobile do roteiro (renderiza o JSON). Publicado em https://claude.ai/artifact/2yfew8tQhbBMp9dwLTVD3d |
+| [site/](site/) | Site do roteiro em Next.js (React + TypeScript, App Router): `app/` tem as rotas, `components/` as páginas e o mapa, `lib/` os helpers; só renderiza os JSON de `site/data/` |
 | [scripts/enriquecer.py](scripts/enriquecer.py) | Preenche o JSON com APIs públicas: fotos (Wikipedia/Commons), pôr do sol (Sunrise-Sunset.org), preços de hotel (Xotelo), totais do orçamento e, com `--so mapa`, coordenadas (Wikipedia, Nominatim), rotas (OSRM) e o fundo vetorial do mapa |
-| [site/rotas.json](site/rotas.json) | Rotas de carro, bike e balsa de cada dia, geradas a partir do campo `trajeto` dos dias |
-| [site/mapa-base.json](site/mapa-base.json) | Contorno da Califórnia e vizinhos (Natural Earth), usado quando os tiles do mapa não carregam, como no Artifact |
-| [scripts/servir.py](scripts/servir.py) | Serve o site em http://localhost:8000 (e no celular, no mesmo Wi-Fi) |
+| [site/data/rotas.json](site/data/rotas.json) | Rotas de carro, bike e balsa de cada dia, geradas a partir do campo `trajeto` dos dias |
+| [site/data/mapa-base.json](site/data/mapa-base.json) | Contorno da Califórnia e vizinhos (Natural Earth), usado quando os tiles do mapa não carregam |
 | [roteiro.md](roteiro.md) | Versão em texto do roteiro, para leitura |
 | [reservas.md](reservas.md) | Reservas feitas, pendentes e prazos |
 | [orcamento.csv](orcamento.csv) | Orçamento linha a linha (do bolso) — somar com a skill `orcamento` |
+| [docs/estrutura-dados.md](docs/estrutura-dados.md) | **Esquema** de `roteiro.json`, `guias.json` e `orcamento.csv`: campos, valores aceitos e o que é gerado por script |
 | [docs/analise-plano-original.md](docs/analise-plano-original.md) | Problemas encontrados no plano original do Gemini |
 | [docs/pesquisa-natureza.md](docs/pesquisa-natureza.md) | Passeios de natureza pesquisados, com fontes |
 | [referencia/plan-trip-us.gemini.md](referencia/plan-trip-us.gemini.md) | Plano original (Gemini) — **somente leitura**, histórico |
@@ -49,12 +58,12 @@
 python scripts/enriquecer.py            # atualiza fotos, pôr do sol, preços e orçamento no JSON
 python scripts/enriquecer.py --so hoteis # só os preços de hotel
 python scripts/validar.py               # confere guias.json
-python scripts/servir.py                # abre o site localmente
+(cd site && npm run dev)                # abre o site em http://localhost:3000
 ```
 
 ## Mapa
 
-O site tem um mapa Leaflet. No computador, a partir de 1100px de largura, ele fica fixo à direita; no celular, abre na página `#mapa`, pelo botão "Mapa" ou pelo chip "Ver no mapa" de cada dia e lugar. Marca a rota de cada dia, os dias, os lugares, as dicas, cafés e restaurantes e os hotéis, e acompanha a página aberta. Os tiles são os mapas cinza da Esri (claro e escuro). Onde eles são bloqueados, como no Artifact do claude.ai, o mapa usa `mapa-base.json`.
+O site tem um mapa Leaflet. No computador, a partir de 1100px de largura, ele fica fixo à direita; no celular, abre na página `/mapa`, pelo botão "Mapa" ou pelo chip "Ver no mapa" de cada dia e lugar. Marca a rota de cada dia, os dias, os lugares, as dicas, cafés e restaurantes e os hotéis, e acompanha a página aberta. Os tiles são os mapas cinza da Esri (claro e escuro). Onde eles são bloqueados, o mapa usa `mapa-base.json`.
 
 Para mudar uma rota, edite o `trajeto` do dia em `roteiro.json` (pontos de passagem e `modo`: `carro`, `bike` ou `balsa`) e rode `python scripts/enriquecer.py --so mapa`.
 
@@ -73,12 +82,12 @@ Para mudar uma rota, edite o `trajeto` do dia em `roteiro.json` (pontos de passa
 
 ## Deploy na Vercel
 
-Tudo fica em `site/`. O `site/index.html` é um fragmento no formato de Artifact, sem `<!doctype>`, charset e viewport. No deploy, `site/build.mjs` gera `site/dist/` com o HTML completo, o JSON e as imagens. O `site/vercel.json` já configura isso.
+Tudo fica em `site/`, um projeto Next.js. As páginas são geradas estaticamente no build (`next build`) a partir dos JSON de `site/data/`; o plano escolhido e as marcações ficam no navegador.
 
 | Configuração no painel | Valor |
 |---|---|
 | Root Directory | `site` |
-| Framework Preset | Other |
-| Build, Output e Install Command | sem override (vêm do `site/vercel.json`: `node build.mjs`, `dist` e nenhum install) |
+| Framework Preset | Next.js (detectado) |
+| Build, Output e Install Command | sem override |
 
-Para testar localmente: `cd site && node build.mjs && python -m http.server -d dist 8000`.
+Para testar o build localmente: `cd site && npm run build && npm start`.

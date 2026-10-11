@@ -1,12 +1,12 @@
-"""Enriquece site/roteiro.json com dados de APIs públicas (sem chave).
+"""Enriquece site/data/roteiro.json com dados de APIs públicas (sem chave).
 
-- Wikipedia REST + Wikimedia Commons: baixa a foto de cada lugar em site/img/ e guarda o crédito.
+- Wikipedia REST + Wikimedia Commons: baixa a foto de cada lugar em site/public/img/ e guarda o crédito.
 - Sunrise-Sunset.org: horário do pôr do sol de cada dia, na coordenada do dia.
 - Xotelo (preços do Tripadvisor): diária das hospedagens com `xotelo_key` e opções de hotel
   para cada item de `busca_hoteis` (via `location_key`).
 - orcamento.csv: totais por plano e categoria.
 - Mapa: coordenadas dos lugares (Wikipedia) e das dicas (Nominatim), rotas de carro/bike (OSRM)
-  em site/rotas.json e um fundo vetorial (site/mapa-base.json) para quando os tiles não carregam.
+  em site/data/rotas.json e um fundo vetorial (site/data/mapa-base.json) para quando os tiles não carregam.
 
 Uso: python scripts/enriquecer.py [--so imagens|sol|hoteis|orcamento|mapa] [--forcar-imagens]
 """
@@ -25,8 +25,8 @@ from collections import defaultdict
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
-JSON = RAIZ / "site" / "roteiro.json"
-IMG = RAIZ / "site" / "img"
+JSON = RAIZ / "site" / "data" / "roteiro.json"
+IMG = RAIZ / "site" / "public" / "img"
 CSV = RAIZ / "orcamento.csv"
 UA = {"User-Agent": "trip-california-2026/1.0 (planejamento pessoal de viagem)"}
 LARGURA = 960  # largura padrão de miniatura do Wikimedia
@@ -173,9 +173,9 @@ def hoteis(d):
         print(f"  ✓ {b['id']}: {len(opcoes)} opções com preço")
 
 
-GUIAS = RAIZ / "site" / "guias.json"
-ROTAS = RAIZ / "site" / "rotas.json"
-BASE = RAIZ / "site" / "mapa-base.json"
+GUIAS = RAIZ / "site" / "data" / "guias.json"
+ROTAS = RAIZ / "site" / "data" / "rotas.json"
+BASE = RAIZ / "site" / "data" / "mapa-base.json"
 CA_VIEWBOX = "-124.6,42.1,-114.0,32.4"  # lon_min,lat_max,lon_max,lat_min
 GENERICOS = {"city", "town", "village", "hamlet", "administrative", "county", "state", "suburb", "neighbourhood", "postcode"}
 ESTADOS_BASE = {"California", "Nevada", "Arizona", "Oregon", "Baja California", "Sonora"}
@@ -274,7 +274,7 @@ def mapa(d):
         except Exception as e:
             print(f"  ✗ rota {dia['id']}: {e}")
     ROTAS.write_text(json.dumps(rotas, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
-    # 4. fundo vetorial para quando os tiles não carregam (Artifact)
+    # 4. fundo vetorial para quando os tiles não carregam 
     if not BASE.exists():
         estados = get("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_1_states_provinces.geojson")
         feats = []

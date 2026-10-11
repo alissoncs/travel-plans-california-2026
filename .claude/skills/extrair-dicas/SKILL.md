@@ -7,14 +7,14 @@ description: Extrai dicas de transcrições ou resumos de vídeos do YouTube (pa
 
 ## 1. Guardar o material
 - Se o usuário colou o texto na conversa, salve-o em `transcricoes/AAAA-MM-DD_canal_assunto.md`, seguindo `transcricoes/_modelo.md`, com o texto sem alterações.
-- Cadastre a fonte em `site/guias.json` → `fontes`:
+- Cadastre a fonte em `site/data/guias.json` → `fontes`:
   ```json
   "yt-canal-assunto": { "tipo": "youtube", "titulo": "...", "canal": "...", "url": "https://youtu.be/...", "arquivo": "transcricoes/....md", "data": "AAAA-MM-DD" }
   ```
   Sem link, use `"url": null` e peça o link ao usuário no final.
 
 ## 2. Escolher as dicas
-- Fique só com o que serve para **esta** viagem: lugares do roteiro (`site/roteiro.json` → `dias`, `lugares`), as cidades por onde vocês passam e o perfil do casal (natureza, trilhas, cafés, ritmo tranquilo).
+- Fique só com o que serve para **esta** viagem: lugares do roteiro (`site/data/roteiro.json` → `dias`, `lugares`), as cidades por onde vocês passam e o perfil do casal (natureza, trilhas, cafés, ritmo tranquilo).
 - Para cada dica, decida:
   - **Onde ela entra.** Um dia (`dias.<id>`) quando depende da data ou da logística; um lugar (`lugares.<chave>`) quando vale em qualquer dia. Um dia exclusivo de um plano (`dia-8-a`, `dia-8-b`) só recebe dicas daquele trecho; se a dica servir aos dois planos, coloque nos dois.
   - **O tipo de seção:** `fazer`, `cafe`, `comer`, `levar`, `foto` ou `dica`. Se a seção não existir no post, crie com o título padrão: "Mais para fazer", "Café", "Onde comer", "O que levar", "Fotos" ou "Dicas práticas".
@@ -29,11 +29,11 @@ description: Extrai dicas de transcrições ou resumos de vídeos do YouTube (pa
 - `tempos` mapeia cada fonte ao segundo do vídeo em que a dica aparece (ex.: `{"yt-x": 754}` para 12:34). Use quando a transcrição tiver marcação de tempo.
 - **Duplicatas:** se já existir um item com o mesmo lugar ou conselho, não crie outro. Acrescente o id do vídeo em `fontes` e complete o `texto` se o vídeo trouxer algo novo.
 - **Desatualização:** marque `verificar` quando o vídeo for antigo (anterior a 2025), quando citar preço, horário ou algo que costuma fechar, ou quando contradisser a pesquisa (veja `docs/pesquisa-natureza.md`). Exemplos: o Louis' (Lands End) fechou em 2020; parques de Big Sur foram afetados pelos incêndios de 2026.
-- Avisos de segurança ou logística que mudam o roteiro (por exemplo, a região do hotel) também viram `alertas` do dia em `site/roteiro.json`.
+- Avisos de segurança ou logística que mudam o roteiro (por exemplo, a região do hotel) também viram `alertas` do dia em `site/data/roteiro.json`.
 
 ## 4. Fechar
 1. Todo item que é um lugar precisa de `onde` (e `maps` se o nome for descritivo em português). Rode `python scripts/enriquecer.py --so mapa` para geocodificar as dicas novas (as que falharem podem receber `coord` à mão) e depois `python scripts/validar.py`, corrigindo os erros.
 2. No arquivo da transcrição, preencha `processado:` e liste onde cada dica entrou.
 3. Atualize a tabela de `transcricoes/README.md`.
-4. Republique o site: Artifact com `site/index.html` e `files` `["guias.json", "roteiro.json", "rotas.json"]` (root `site`), mais commit e push.
+4. Rode `python scripts/validar.py` e `cd site && npm run build`, depois commit e push (a Vercel publica).
 5. Responda ao usuário com um resumo curto: quantas dicas entraram e em quais páginas, o que foi descartado e por quê, e o que ficou para verificar.

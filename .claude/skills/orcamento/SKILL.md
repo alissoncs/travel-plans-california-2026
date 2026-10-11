@@ -13,7 +13,7 @@ dia,data,plano,categoria,item,usd,status,atividade
 
 - `plano`: `AB` (ambos), `A` ou `B`.
 - `categoria`: alimentacao, gasolina, estacionamento, passeio, ingresso, transporte, hospedagem (hotéis, uma linha por noite) ou carro.
-- `atividade`: título exato da atividade do dia em `site/roteiro.json`. O site mostra o valor ao lado da atividade; sem esse campo, o gasto aparece só no total do dia (como as refeições). O `validar.py` acusa título que não existe.
+- `atividade`: título exato da atividade do dia em `site/data/roteiro.json`. O site mostra o valor ao lado da atividade; sem esse campo, o gasto aparece só no total do dia (como as refeições). O `validar.py` acusa título que não existe.
 - Refeições já incluem imposto e gorjeta. Valores são para o casal.
 - `status`: `estimado`, `confirmado`, `opcional` (fica fora do total, a menos que se passe `--com-opcionais`) ou `verificar` (valor incerto, que o script lista no final).
 - A taxa de câmbio fica na linha `#taxa,<valor>`. Atualize a linha quando o câmbio mudar.

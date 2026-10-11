@@ -1,7 +1,7 @@
 # Roteiro dia a dia
 
 > Última revisão: 05/10/2026. Decisão pendente entre **Plano A** (mantém reservas) e **Plano B** (recomendado, mais relaxante). O Plano C (Yosemite) foi descartado; ver o fim do arquivo.
-> A versão estruturada, que alimenta o site e o mapa, é `site/roteiro.json`.
+> A versão estruturada, que alimenta o site e o mapa, é `site/data/roteiro.json`.
 > Gastos previstos por dia e por atividade: `orcamento.csv` (página **Gastos** do site).
 > Pôr do sol ~16:45. Lua cheia ~24/11 (céu estrelado em Joshua Tree fica mais fraco em 22/11).
 

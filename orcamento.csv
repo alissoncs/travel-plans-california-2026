@@ -1,6 +1,6 @@
 #taxa,5.62
 # plano: letras dos planos em que a linha vale (AB = ambos; A ou B = só aquele plano) | status: estimado, confirmado, opcional, verificar
-# atividade: título exato da atividade do dia em site/roteiro.json (vazio = gasto do dia, como refeições)
+# atividade: título exato da atividade do dia em site/data/roteiro.json (vazio = gasto do dia, como refeições)
 # Previsão para o casal (2 pessoas). Refeições já incluem imposto (~9%) e gorjeta (18-20%). Teto: US$ 3.000 por plano (viagem.teto_usd).
 # San Diego (dias 1-5): hotel e evento pagos pela ADP; refeições da acompanhante ficam como opcionais até a ADP confirmar.
 # Hotéis: diária do Booking (05/10/2026) + ~16% de impostos de hospedagem; confirmar o valor real da reserva.

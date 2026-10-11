@@ -5,3 +5,4 @@ Thumbs.db
 .claude/settings.local.json
 dist/
 .vercel/
+.next/
