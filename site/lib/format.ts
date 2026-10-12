@@ -17,6 +17,10 @@ export const formatMinutes = (minutes: number) => (minutes >= 60 ? `${Math.floor
 
 export const gmaps = (name: string, context?: string) =>
   `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent([name, context].filter(Boolean).join(", "))}`;
+export const bookingSearch = (query: string, checkin: string, checkout: string) =>
+  `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(query)}&checkin=${checkin}&checkout=${checkout}&group_adults=2&no_rooms=1`;
+export const airbnbSearch = (place: string, checkin: string, checkout: string) =>
+  `https://www.airbnb.com/s/${encodeURIComponent(place)}/homes?checkin=${checkin}&checkout=${checkout}&adults=2`;
 export const gmapsInCalifornia = (name: string) => gmaps(name, "California");
 export const googleImages = (query: string) => `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(query)}`;
 

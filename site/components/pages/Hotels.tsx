@@ -1,7 +1,7 @@
 "use client";
 import { Icon } from "../Icons";
 import { useTrip } from "../TripProvider";
-import { cityOf, dayMonth, dayMonthNumeric, gmaps, nightsBetween, usd, weekday } from "@/lib/format";
+import { airbnbSearch, bookingSearch, cityOf, dayMonth, dayMonthNumeric, gmaps, nightsBetween, usd, weekday } from "@/lib/format";
 
 export default function Hotels() {
   const { itinerary, plan } = useTrip();
@@ -31,10 +31,37 @@ export default function Hotels() {
             </p>
             <div className="tip-meta">
               <span className="status">{lodging.status}</span>
-              <a href={gmaps(lodging.nome, cityOf(lodging))} target="_blank" rel="noopener">
+              <a href={gmaps(lodging.endereco ?? lodging.nome, lodging.endereco ? undefined : cityOf(lodging))} target="_blank" rel="noopener">
                 <Icon name="pin" /> Google Maps
               </a>
+              {!lodging.reservado && (
+                <>
+                  <a href={bookingSearch(`${lodging.nome}, ${cityOf(lodging)}`, lodging.checkin, lodging.checkout)} target="_blank" rel="noopener">
+                    Buscar no Booking
+                  </a>
+                  <a href={airbnbSearch(`${cityOf(lodging)}, CA`, lodging.checkin, lodging.checkout)} target="_blank" rel="noopener">
+                    Buscar no Airbnb
+                  </a>
+                </>
+              )}
             </div>
+            {lodging.reservado && (
+              <ul className="small booked-details">
+                {lodging.endereco && <li>{lodging.endereco}</li>}
+                {(lodging.checkin_hora || lodging.checkout_hora) && (
+                  <li className="num">
+                    {[lodging.checkin_hora && `Entrada ${lodging.checkin_hora}`, lodging.checkout_hora && `saída ${lodging.checkout_hora}`].filter(Boolean).join(" · ")}
+                  </li>
+                )}
+                {lodging.pago_usd !== undefined && (
+                  <li className="num">
+                    {lodging.pago_usd > 0 ? `Pago: ${usd(lodging.pago_usd)} no total` : "Pago pela ADP"}
+                    {lodging.reembolsavel === false ? " · não reembolsável" : ""}
+                  </li>
+                )}
+                {lodging.obs && <li>{lodging.obs}</li>}
+              </ul>
+            )}
             {!!lodging.precos?.length && (
               <>
                 <div className="prices">
@@ -84,6 +111,9 @@ export default function Hotels() {
           )}
           {!!search.busca_externa?.length && (
             <div className="btns">
+              <a className="btn" href={airbnbSearch(search.cidade, search.checkin, search.checkout)} target="_blank" rel="noopener">
+                Buscar no Airbnb
+              </a>
               {search.busca_externa.map((link) => (
                 <a key={link.nome} className="btn" href={link.url} target="_blank" rel="noopener">
                   Buscar no {link.nome}

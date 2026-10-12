@@ -64,7 +64,6 @@ export function DayRow({ day }: { day: Day }) {
         </span>
         <span className="t">
           {day.titulo}
-          {day.planos.length === 1 && <span className="tag">Plano {day.planos[0]}</span>}
         </span>
         <span className="s">{day.regiao}</span>
       </span>

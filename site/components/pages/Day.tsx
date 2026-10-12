@@ -77,7 +77,6 @@ export default function Day({ id }: { id: string }) {
       <div className="title-block">
         <span className="label num">
           Dia {day.rotulo} · {whenOf(day)}
-          {day.planos.length === 1 ? ` · Plano ${day.planos[0]}` : ""}
         </span>
         <h2>{day.titulo}</h2>
         <span className="muted">{day.regiao}</span>

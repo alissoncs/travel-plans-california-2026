@@ -40,13 +40,15 @@ export default function Shell({ children }: { children: React.ReactNode }) {
               </Link>
             ))}
           </nav>
-          <div className="seg" role="group" aria-label="Plano">
-            {Object.keys(itinerary.planos).map((id) => (
-              <button key={id} type="button" aria-pressed={id === plan} onClick={() => setPlan(id)}>
-                {id}
-              </button>
-            ))}
-          </div>
+          {Object.keys(itinerary.planos).length > 1 && (
+            <div className="seg" role="group" aria-label="Plano">
+              {Object.keys(itinerary.planos).map((id) => (
+                <button key={id} type="button" aria-pressed={id === plan} onClick={() => setPlan(id)}>
+                  {id}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </header>
       <div className="shell">

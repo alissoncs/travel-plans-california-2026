@@ -17,8 +17,8 @@ Guia dos arquivos que alimentam o site. Os exemplos vêm dos arquivos reais; na 
 Chaves de topo: `viagem`, `atualizado_em` 🤖, `planos`, `fases`, `dias`, `lugares`, `hospedagens`, `busca_hoteis`, `reservas`, `orcamento` 🤖, `fontes`, `creditos_api`.
 
 ### `viagem`, `planos`, `fases`
-- `viagem`: `titulo`, `subtitulo`, `inicio`, `fim` (ISO), `perfil`, `capa` (chave de `lugares`), `plano_recomendado` (`"A"`/`"B"`; recomendado não é o mesmo que decidido) e `teto_usd` (limite por plano; o `validar.py` dá erro se o total passar).
-- `planos`: `A` e `B`, cada um com `nome` e `resumo`. O Plano C foi descartado.
+- `viagem`: `titulo`, `subtitulo`, `inicio`, `fim` (ISO), `perfil`, `capa` (chave de `lugares`), `plano_recomendado` (hoje `"B"`, o único plano) e `teto_usd` (limite por plano; o `validar.py` dá erro se o total passar).
+- `planos`: hoje só `B`, com `nome` e `resumo`. Os Planos A e C foram descartados. O site esconde o seletor enquanto houver um plano só.
 - `fases`: `sd` (San Diego, evento ADP), `road` (carro) e `sf`, com `inicio` e `fim`.
 
 ### `dias[]`
@@ -28,7 +28,7 @@ Chaves de topo: `viagem`, `atualizado_em` 🤖, `planos`, `fases`, `dias`, `luga
 | `rotulo` | Texto exibido ("2–5") |
 | `data`, `data_fim` | ISO. `data_fim` só em dias que cobrem vários dias (o evento) |
 | `fase` | `sd`, `road` ou `sf` |
-| `planos` | `["A","B"]`, `["A"]` ou `["B"]` |
+| `planos` | hoje sempre `["B"]` (com mais de um plano: `["A","B"]` para dia comum, `["A"]` para dia exclusivo) |
 | `titulo`, `regiao`, `resumo` | Textos |
 | `coord` | `[lat, lng]`, ponto do dia no mapa |
 | `capa` | Chave de `lugares` cuja foto abre o dia (opcional) |
@@ -56,8 +56,8 @@ Chaves de topo: `viagem`, `atualizado_em` 🤖, `planos`, `fases`, `dias`, `luga
 Chave curta (`torrey`, `lajolla`…). Campos: `nome`, `wiki` (título da página na Wikipedia em inglês, usado para foto e coordenada), `busca` (termo alternativo para o Commons), `coord` 🤖, `imagem` 🤖 (`img/<chave>.jpg`), `credito` 🤖, `resumo_wiki` 🤖, `wiki_url` 🤖. Lugar novo: crie com `nome` e `wiki` e rode o `enriquecer.py`.
 
 ### `hospedagens[]`, `busca_hoteis[]`, `reservas[]`
-- `hospedagens`: `id`, `nome`, `cidade`, `checkin`, `checkout`, `status` (texto livre), `planos`, `coord`. `xotelo_key` (opcional) faz o script buscar a diária.
-- `busca_hoteis`: opções de hotel ainda não reservado. `id`, `titulo`, `planos`, `location_key` (Tripadvisor, `gNNNN`), `checkin`, `checkout`, `limite`, `busca_externa[]` (links Booking/Tripadvisor); `opcoes[]` 🤖 vem do Xotelo.
+- `hospedagens`: `id`, `nome`, `cidade`, `checkin`, `checkout`, `status` (texto curto), `planos`, `coord`; se já reservado: `reservado: true`, `endereco`, `pago_usd`, `reembolsavel`, `checkin_hora`, `checkout_hora`, `obs`. A página Hotéis esconde a busca e mostra esses dados nas reservadas. `xotelo_key` (opcional) faz o script buscar a diária.
+- `busca_hoteis`: opções de hotel ainda não reservado. `id`, `titulo`, `planos`, `location_key` (Tripadvisor, `gNNNN`), `checkin`, `checkout`, `limite`, `busca_externa[]` (links Booking/Tripadvisor); `opcoes[]` 🤖 vem do Xotelo. Sem `location_key` (ex.: busca no Airbnb) o script pula o item.
 - `reservas`: checklist da página Reservas. `id`, `prioridade` (`urgente`, `importante`, `antes` ou `feito`), `item`, `detalhe`. Espelha o `reservas.md`.
 
 ### `orcamento` 🤖, `fontes`, `creditos_api`
@@ -81,7 +81,7 @@ Primeiras linhas especiais: `#taxa,<BRL por USD>` e comentários começando com 
 ```
 dia,data,plano,categoria,item,usd,status,atividade
 ```
-- `data`: `DD/MM`. `plano`: `AB`, `A` ou `B`.
+- `data`: `DD/MM`. `plano`: hoje sempre `B` (com mais planos: `AB`, `A` ou `B`).
 - `categoria`: `hospedagem`, `alimentacao`, `carro`, `transporte`, `estacionamento`, `gasolina`, `passeio`, `ingresso`.
 - `status`: `estimado`, `confirmado`, `opcional` (fora do total, somado em `opcionais_usd`) ou `verificar`.
 - `atividade` (opcional): título exato da atividade; sem ela, o gasto é do dia (refeições).

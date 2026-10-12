@@ -1,9 +1,9 @@
 # Roteiro dia a dia
 
-> Última revisão: 05/10/2026. Decisão pendente entre **Plano A** (mantém reservas) e **Plano B** (recomendado, mais relaxante). O Plano C (Yosemite) foi descartado; ver o fim do arquivo.
+> Última revisão: 11/10/2026. Plano escolhido: **B** (3 noites em LA, no The Kinney (Venice); costa central depois). Os Planos A e C foram descartados; ver o fim do arquivo.
 > A versão estruturada, que alimenta o site e o mapa, é `site/data/roteiro.json`.
 > Gastos previstos por dia e por atividade: `orcamento.csv` (página **Gastos** do site).
-> Pôr do sol ~16:45. Lua cheia ~24/11 (céu estrelado em Joshua Tree fica mais fraco em 22/11).
+> Pôr do sol ~16:45. Lua cheia ~24/11 (céu estrelado em Joshua Tree fica mais fraco em 21/11).
 
 ## Parte 1 — San Diego (evento ADP) · 17 a 21/11
 
@@ -19,40 +19,38 @@
 
 ---
 
-## Parte 2 — Road trip · 22 a 26/11
+## Parte 2 — Road trip · 21 a 26/11
 
-### Dia 6 · 22/11 Dom — Joshua Tree → LA (igual nos dois planos)
-- Manhã: retirada do carro Sixt em SAN, estrada até o parque (~2h45).
-- Trilhas: **Barker Dam** (curta, rochas) + **Ryan Mountain** (~4,8 km, melhor panorama) ou **Hidden Valley** (1,6 km, leve). Cholla Cactus Garden se der tempo.
-- Pôr do sol em **Keys View** (~16:40).
-- Noite: estrada até LA (contar 3h+ com trânsito de domingo). Check-in The LINE Hotel.
-- Entrada: US$ 35/veículo.
+### Dia 5 · 21/11 Sáb — Joshua Tree de bate e volta → LA
+- Checkout no Coronado e Uber até SAN. **Retirada do carro Sixt às ~9h** (a reserva hoje é de 22/11: antecipar para 21/11, 5 diárias).
+- Estrada até o parque (~2h45). **Barker Dam** (1,8 km, fácil) e, se der tempo, Skull Rock.
+- Pôr do sol em **Keys View** (~16:40). Sair do parque até ~17h.
+- Noite: estrada até LA (~3h), chegada ~20h. Check-in no **The Kinney** (Venice), avisando o hotel da chegada tarde.
+- Entrada: US$ 35/veículo, válida por 7 dias. Dia pesado: ~5h45 de direção (73% do dia).
+- Perto do hotel (opcional, chegada tarde): taco truck **La Isla Bonita** (Rose Ave) ou **3 Square Cafe** na Abbot Kinney. ⚠️ verificar horário.
 
-### Dia 7 · 23/11 Seg — Malibu (igual nos dois planos)
-- Cedo: foto do letreiro no Lake Hollywood Park (~30 min).
-- **Sandstone Peak** (loop 9,8 km, ~450 m de subida, final com escalada leve) — ou **Solstice Canyon** (leve, cachoeira e ruínas).
-- Pôr do sol: **El Matador State Beach** ou **Point Dume**.
-- ℹ️ Griffith Observatory fecha às segundas — por isso fica fora deste dia.
+### Dia 6 · 22/11 Dom — Malibu, sem pressa
+- **Solstice Canyon** (4,7 km, fácil, cachoeira e ruínas) logo cedo.
+- **Point Dume** (leões-marinhos) e pôr do sol em **El Matador**.
+- Domingo: PCH e estacionamentos enchem à tarde. Ritmo ~54%.
+- Café perto do hotel: **Menotti's Coffee Stop** (Windward Ave) ou **Groundwork Coffee** (Rose Ave); **Gjusta** (Sunset Ave) para levar sanduíches e pães.
+
+### Dia 7 · 23/11 Seg — Último dia em LA, sem pressa
+- Manhã tranquila, sem horário fixo. Por volta das 9h30: **caminhada leve no Griffith Park** (~2–3 km, pouca subida) até um mirante com o letreiro. Mount Hollywood (~4,5 km) é opcional.
+- Almoço sem pressa em **Venice**, volta curta pelos canais ou pela ciclovia da areia.
+- Pôr do sol sentados na praia de **Santa Monica** (~16:49), jantar leve e volta ao hotel, a poucos minutos de Abbot Kinney.
+- ℹ️ Segunda: o prédio do Griffith Observatory fecha (terraço e trilhas abertos). ⚠️ verificar.
+- Ritmo: ~50% do dia (meta ≤ 65%).
+- Perto do hotel, a pé: **Abbot Kinney Blvd**, **Venice Sign** (Windward Ave) e a **Ocean Front Walk**.
 
 ---
 
-### PLANO A — mantendo as reservas atuais
-
-| Dia | Data | Programa |
-|---|---|---|
-| 8 | 24/11 Ter | **Channel Islands** (balsa Ventura → Santa Cruz Island, caiaque nas cavernas marinhas). ⚠️ verificar se há balsa nesse dia. Plano reserva: Point Mugu (Mugu Peak) + Griffith no pôr do sol. Volta a LA. |
-| 9 | 25/11 Qua | LA → SF pela **US-101** (mais rápida) com **uma** parada de natureza: Point Lobos **ou** Pinnacles NP (cavernas + condores; levar lanterna). Chegada SF e check-in Axiom. |
-
-### PLANO B — recomendado (só 2 noites em LA)
+### Dias 8 e 9 — costa central
 
 | Dia | Data | Programa |
 |---|---|---|
 | 8 | 24/11 Ter | Check-out LA sem pressa → Santa Barbara (café/caminhada) → Morro Bay. Pernoite em **Cambria / San Simeon**. ⚠️ hotel a reservar. |
-| 9 | 25/11 Qua | Elefantes-marinhos em **Piedras Blancas** → **Big Sur** pela Highway 1 (McWay Falls, Limekiln ⚠️ verificar se reabriu) → **Point Lobos** → SF no fim da tarde. ⚠️ verificar estrada e parques (incêndios Timber/Plaskett 2026). |
-
-Trade-off: Plano B troca as Channel Islands por dois dias tranquilos na costa mais bonita e elimina o dia de 8–9h de estrada.
-
----
+| 9 | 25/11 Qua | Elefantes-marinhos em **Piedras Blancas** → **Big Sur** pela Highway 1 (McWay Falls, Limekiln ⚠️ verificar se reabriu) → **Point Lobos** → SF no fim da tarde. ⚠️ verificar estrada e parques (incêndios Timber/Plaskett 2026). Jantar a pé do **Seaside Inn**: **The Grove** (Chestnut St) ou **Home Plate** (Lombard St). |
 
 ### Dia 10 · 26/11 Qui — Thanksgiving: Marin
 - **Muir Woods** às 8h (reserva de estacionamento obrigatória em GoMuirWoods.com). Sequoias costeiras (redwoods) — não são as "sequoias gigantes" da Sierra.
@@ -60,6 +58,7 @@ Trade-off: Plano B troca as Channel Islands por dois dias tranquilos na costa ma
 - Alternativa mais aventureira: **Point Reyes — Tomales Point** (alces-de-tule; 3/10/15 km), ~1h30 de SF.
 - Tarde: **devolução do carro**. ⚠️ confirmar horário da loja Sixt no feriado; plano B = devolver no SFO.
 - Noite: ceia de Thanksgiving (reservar!).
+- Café cedo perto do hotel: **Peet's Coffee** (Chestnut St). ⚠️ verificar se abre no feriado.
 
 ## Parte 3 — San Francisco sem carro · 27 a 28/11
 
@@ -67,13 +66,19 @@ Trade-off: Plano B troca as Channel Islands por dois dias tranquilos na costa ma
 - **Golden Gate de bicicleta** → Sausalito → volta de balsa.
 - Alternativa/complemento: Alcatraz (se conseguir ingresso).
 - Pôr do sol na trilha **Lands End**.
+- Café antes da bike (perto do Seaside Inn): **Equator Coffees** no Fort Mason, **Chestnut Street Coffee Roastery** ou **Wrecking Ball** (Union St); café da manhã no **Home Plate**. ⚠️ verificar horários.
 
 ### Dia 12 · 28/11 Sáb — Volta
-- Uber ~04:30 → SFO (chegar ~05:00). Voo DL 1598 07:05 (conexão — ⚠️ verificar).
+- Acordar 03:45 · Uber do Seaside Inn às **04:30** (pedir às 04:20; limite 04:45) · SFO ~04:55 · mala e segurança · embarque ~06:25 (⚠️ verificar) · voo DL 1598 **07:05** (conexão — ⚠️ verificar terminal). BART não opera nesse horário.
 
 ---
 
 ## Descartado
+
+### Plano A — 3 noites em LA (descartado em 11/10/2026)
+Dia 8 (24/11): Malibu ou **Channel Islands** (balsa Ventura → Santa Cruz Island, caiaque), com volta a LA e 3ª noite no The LINE. Dia 9 (25/11): LA → SF pela US-101 (~6h) com uma parada, Point Lobos ou Pinnacles.
+
+**Motivo:** decisão do casal pelo Plano B, mais relaxante. Troca as Channel Islands por dois dias na costa central e elimina o dia longo de estrada. Os posts e as fotos ficam no histórico do git.
 
 ### Plano C — Yosemite (descartado em 05/10/2026)
 Dia 8: LA às 6h → Mariposa Grove → Tunnel View no pôr do sol, noite em Yosemite. Dia 9: Cook's Meadow, Lower Yosemite Fall, El Capitan Meadow e Bridalveil → SF.

@@ -9,12 +9,8 @@
     "plano_recomendado": "B",
     "teto_usd": 3000
   },
-  "atualizado_em": "2026-10-05 23:19",
+  "atualizado_em": "2026-10-11 22:08",
   "planos": {
-    "A": {
-      "nome": "Plano A",
-      "resumo": "Mantém as 3 noites em LA: um dia na cidade e um em Malibu (com a ilha das Channel Islands como troca opcional). Sobe para SF pela US-101 em um dia só."
-    },
     "B": {
       "nome": "Plano B",
       "resumo": "Fica só 2 noites em LA e dorme em Cambria. Dois dias tranquilos pela costa até SF, com lontras, elefantes-marinhos e Big Sur."
@@ -26,13 +22,13 @@
       "nome": "San Diego",
       "detalhe": "Evento ADP · sem carro",
       "inicio": "2026-11-17",
-      "fim": "2026-11-21"
+      "fim": "2026-11-20"
     },
     {
       "id": "road",
       "nome": "Road trip",
       "detalhe": "Carro Sixt · deserto, Malibu e costa",
-      "inicio": "2026-11-22",
+      "inicio": "2026-11-21",
       "fim": "2026-11-26"
     },
     {
@@ -50,7 +46,6 @@
       "data": "2026-11-17",
       "fase": "sd",
       "planos": [
-        "A",
         "B"
       ],
       "titulo": "Chegada em San Diego",
@@ -89,13 +84,12 @@
       }
     },
     {
-      "id": "dia-2-5",
-      "rotulo": "2–5",
+      "id": "dia-2-4",
+      "rotulo": "2–4",
       "data": "2026-11-18",
-      "data_fim": "2026-11-21",
+      "data_fim": "2026-11-20",
       "fase": "sd",
       "planos": [
-        "A",
         "B"
       ],
       "titulo": "Evento ADP",
@@ -145,15 +139,14 @@
       "evento": true
     },
     {
-      "id": "dia-6",
-      "rotulo": "6",
-      "data": "2026-11-22",
+      "id": "dia-5",
+      "rotulo": "5",
+      "data": "2026-11-21",
       "fase": "road",
       "planos": [
-        "A",
         "B"
       ],
-      "titulo": "Joshua Tree",
+      "titulo": "Joshua Tree → Los Angeles",
       "regiao": "Deserto de Mojave",
       "coord": [
         33.9268,
@@ -162,40 +155,39 @@
       "capa": "joshua",
       "estrada": [
         {
-          "trecho": "SAN → Joshua Tree",
-          "tempo": "2h45",
+          "trecho": "Coronado → SAN → Joshua Tree",
+          "tempo": "2h45 (depois da retirada do carro)",
           "horas": 2.75
         },
         {
           "trecho": "Joshua Tree → LA",
-          "tempo": "3h (domingo)",
+          "tempo": "3h (sábado à noite)",
           "horas": 3
         }
       ],
-      "resumo": "Dia de estrada com o deserto no meio: o loop de Barker Dam entre rochas e Joshua trees e o pôr do sol em Keys View. Ryan Mountain fica opcional, para sobrar fôlego.",
+      "resumo": "Checkout no Coronado, carro no aeroporto e estrada até o deserto. Barker Dam à tarde e pôr do sol em Keys View, sem dormir lá: ao escurecer, volta-se para LA (~3h) e o check-in é no The Kinney, em Venice.",
       "atividades": [
         {
           "tipo": "transporte",
           "titulo": "Retirada do carro Sixt em SAN",
-          "descricao": "Pacote com proteção total e FasTrak.",
+          "descricao": "Pacote com proteção total e FasTrak. Chegar ao balcão por volta das 9h.",
           "onde": "Sixt, San Diego International Airport",
           "horas": 0.5
         },
         {
           "tipo": "trilha",
           "titulo": "Barker Dam",
-          "descricao": "Loop curto entre pedras, com uma represa histórica e escalada leve.",
+          "descricao": "Loop curto entre pedras, com uma represa histórica e escalada leve. Almoço no caminho ou levado do hotel.",
           "stats": "1,8 km · fácil",
           "lugar": "barker",
           "horas": 1.5
         },
         {
-          "tipo": "trilha",
-          "titulo": "Ryan Mountain",
-          "descricao": "Subida constante até a melhor vista panorâmica do parque.",
-          "stats": "4,8 km · +320 m",
-          "lugar": "joshua",
-          "horas": 2.5,
+          "tipo": "vista",
+          "titulo": "Skull Rock",
+          "descricao": "Rocha em forma de caveira à beira da estrada. Parada de 10 minutos.",
+          "onde": "Skull Rock, Joshua Tree",
+          "horas": 0.5,
           "opcional": true
         },
         {
@@ -208,24 +200,36 @@
         {
           "tipo": "transporte",
           "titulo": "Estrada até LA",
-          "descricao": "Check-in no The LINE Hotel, em Koreatown.",
-          "onde": "The LINE Hotel, Koreatown, Los Angeles",
+          "descricao": "Sai de Keys View logo depois do pôr do sol. Check-in no The Kinney (a partir das 15h); avisar o hotel da chegada por volta das 20h.",
+          "onde": "The Kinney, 737 Washington Blvd, Venice",
           "horas": 0
+        },
+        {
+          "tipo": "comida",
+          "titulo": "Jantar tarde em Venice",
+          "descricao": "Taco truck ou restaurante na Abbot Kinney perto do hotel, sem pegar mais estrada. Ver as sugestões no post do dia.",
+          "onde": "La Isla Bonita taco truck, Rose Ave, Venice",
+          "horas": 1,
+          "opcional": true
         }
       ],
       "alertas": [
         {
-          "nivel": "info",
-          "texto": "Entrada: US$ 35 por veículo. Levar casaco, porque à noite o deserto chega perto de 5°C."
+          "nivel": "aviso",
+          "texto": "Dia de estrada pesado (~5h45 de direção): saia do Coronado cedo, pegue o carro às 9h e deixe Keys View até ~17h para estar em LA por volta das 20h. Evite dirigir o trecho final com sono."
+        },
+        {
+          "nivel": "aviso",
+          "texto": "O carro Sixt precisa ser retirado em 21/11 (a reserva é de 22/11). Confirmar o valor da diária extra."
         },
         {
           "nivel": "info",
-          "texto": "Lua quase cheia: o céu estrelado fica mais fraco nesta noite."
+          "texto": "Entrada: US$ 35 por veículo, válida por 7 dias. Levar casaco: à noite o deserto chega perto de 5°C. Lua quase cheia enfraquece as estrelas."
         }
       ],
       "sol": {
-        "nascer": "06:22",
-        "por": "16:39"
+        "nascer": "06:21",
+        "por": "16:40"
       },
       "trajeto": [
         {
@@ -248,99 +252,20 @@
               -116.1876
             ],
             [
-              34.0617,
-              -118.3046
+              33.9866,
+              -118.4687
             ]
           ]
         }
       ]
     },
     {
-      "id": "dia-7",
-      "rotulo": "7",
-      "data": "2026-11-23",
+      "id": "dia-6",
+      "rotulo": "6",
+      "data": "2026-11-22",
       "fase": "road",
       "planos": [
-        "A",
         "B"
-      ],
-      "titulo": "Los Angeles",
-      "regiao": "Griffith Park e a costa de Santa Monica",
-      "coord": [
-        34.1184,
-        -118.3004
-      ],
-      "capa": "hollywood",
-      "estrada": [
-        {
-          "trecho": "Koreatown → Griffith → Santa Monica → Koreatown",
-          "tempo": "1h30 no total",
-          "horas": 1.5
-        }
-      ],
-      "resumo": "Último dia em LA, para conhecer a cidade pelo lado verde e pela costa: trilha no Griffith Park com vista do letreiro e, à tarde, Venice e Santa Monica até o pôr do sol.",
-      "atividades": [
-        {
-          "tipo": "trilha",
-          "titulo": "Trilha do Griffith Park até o Mount Hollywood",
-          "descricao": "Sai do Griffith Observatory e sobe até o Mount Hollywood, com o letreiro de perto, a cidade inteira e, em dia limpo, o mar. Cervos e coiotes aparecem no começo da manhã.",
-          "stats": "~4,5 km · +150 m",
-          "lugar": "hollywood",
-          "horas": 2.5
-        },
-        {
-          "tipo": "praia",
-          "titulo": "Venice e Santa Monica",
-          "descricao": "Canais de Venice a pé, a ciclovia pela areia e o pôr do sol no píer de Santa Monica.",
-          "onde": "Venice Canals, Los Angeles",
-          "horas": 3.5
-        }
-      ],
-      "alertas": [
-        {
-          "nivel": "info",
-          "texto": "Segunda-feira: o prédio do Griffith Observatory fecha, mas o terraço, o estacionamento e as trilhas ficam abertos. ⚠️ verificar perto da data."
-        }
-      ],
-      "sol": {
-        "nascer": "06:34",
-        "por": "16:49"
-      },
-      "trajeto": [
-        {
-          "modo": "carro",
-          "pontos": [
-            [
-              34.0617,
-              -118.3046
-            ],
-            [
-              34.1184,
-              -118.3004
-            ],
-            [
-              33.9847,
-              -118.4662
-            ],
-            [
-              34.0094,
-              -118.4973
-            ],
-            [
-              34.0617,
-              -118.3046
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "dia-8-a",
-      "rotulo": "8",
-      "data": "2026-11-24",
-      "fase": "road",
-      "planos": [
-        "A"
       ],
       "titulo": "Malibu",
       "regiao": "Santa Monica Mountains e a costa",
@@ -351,18 +276,26 @@
       "capa": "solstice",
       "estrada": [
         {
-          "trecho": "Koreatown → Malibu",
-          "tempo": "1h15",
-          "horas": 1.25
+          "trecho": "Venice → Malibu",
+          "tempo": "45 min",
+          "horas": 0.75
         },
         {
-          "trecho": "Malibu → Koreatown",
-          "tempo": "1h15",
-          "horas": 1.25
+          "trecho": "Malibu → Venice",
+          "tempo": "45 min",
+          "horas": 0.75
         }
       ],
-      "resumo": "Dia de natureza em Malibu: trilha fácil em Solstice Canyon, leões-marinhos em Point Dume e o pôr do sol entre os arcos de El Matador. O dia na ilha das Channel Islands fica como troca opcional.",
+      "resumo": "Domingo de natureza em Malibu, sem pressa: trilha fácil em Solstice Canyon, leões-marinhos em Point Dume e o pôr do sol entre os arcos de El Matador.",
       "atividades": [
+        {
+          "tipo": "comida",
+          "titulo": "Café da manhã em Venice",
+          "descricao": "Cortado e pão na Windward Ave antes de sair para Malibu.",
+          "onde": "Menotti's Coffee Stop, Windward Ave, Venice",
+          "horas": 0.5,
+          "opcional": true
+        },
         {
           "tipo": "trilha",
           "titulo": "Solstice Canyon",
@@ -384,42 +317,25 @@
           "descricao": "Praia com arcos e rochedos, descida por uma escada no penhasco.",
           "lugar": "matador",
           "horas": 1.5
-        },
-        {
-          "tipo": "trilha",
-          "titulo": "Sandstone Peak",
-          "descricao": "Ponto mais alto das Santa Monica Mountains (948 m), com formações de arenito e escalada no final. Puxada: ocupa a manhã toda.",
-          "stats": "9,8 km · +450 m",
-          "lugar": "sandstone",
-          "horas": 4,
-          "opcional": true
-        },
-        {
-          "tipo": "agua",
-          "titulo": "Trocar pelo dia na ilha: Channel Islands",
-          "descricao": "Balsa de Ventura a Santa Cruz Island (US$ 72 por pessoa) e trilha até Cavern Point, com raposas-da-ilha. O caiaque nas cavernas custa mais US$ 159 por pessoa. Ocupa o dia todo.",
-          "lugar": "channel",
-          "horas": 9,
-          "opcional": true
         }
       ],
       "alertas": [
         {
           "nivel": "info",
-          "texto": "Se trocarem pela ilha: no outono a balsa sai cerca de 4 dias por semana. Confirmar se há saída na terça, 24/11."
+          "texto": "Domingo: a PCH e os estacionamentos das praias enchem à tarde. Chegue cedo a Solstice Canyon e deixe El Matador para o fim da tarde."
         }
       ],
       "sol": {
-        "nascer": "06:38",
-        "por": "16:51"
+        "nascer": "06:22",
+        "por": "16:39"
       },
       "trajeto": [
         {
           "modo": "carro",
           "pontos": [
             [
-              34.0617,
-              -118.3046
+              33.9866,
+              -118.4687
             ],
             [
               34.0378,
@@ -434,15 +350,97 @@
               -118.8749
             ],
             [
-              34.0617,
-              -118.3046
+              33.9866,
+              -118.4687
             ]
           ]
         }
       ]
     },
     {
-      "id": "dia-8-b",
+      "id": "dia-7",
+      "rotulo": "7",
+      "data": "2026-11-23",
+      "fase": "road",
+      "planos": [
+        "B"
+      ],
+      "titulo": "Los Angeles",
+      "regiao": "Griffith Park e a costa de Venice",
+      "coord": [
+        34.1184,
+        -118.3004
+      ],
+      "capa": "hollywood",
+      "estrada": [
+        {
+          "trecho": "Venice → Griffith → Venice",
+          "tempo": "1h30 no total",
+          "horas": 1.5
+        }
+      ],
+      "resumo": "Último dia em LA, sem pressa: uma caminhada leve no Griffith Park com vista do letreiro, almoço e tarde de praia em Venice e Santa Monica, e pôr do sol na areia. Sem horário fixo e com a tarde livre para descansar.",
+      "atividades": [
+        {
+          "tipo": "trilha",
+          "titulo": "Caminhada leve no Griffith Park",
+          "descricao": "Sai do Griffith Observatory e segue pelas trilhas largas até um mirante com o letreiro e a cidade. Faça só o trecho que estiver com vontade; o Mount Hollywood (~4,5 km, +150 m) é opcional. Saindo por volta das 9h30, o parque está calmo.",
+          "stats": "~2–3 km · pouca subida",
+          "lugar": "hollywood",
+          "horas": 1.5
+        },
+        {
+          "tipo": "praia",
+          "titulo": "Venice e Santa Monica",
+          "descricao": "Almoço sem pressa perto dos canais de Venice (o hotel fica a poucos minutos a pé de Abbot Kinney), uma volta curta a pé ou de bicicleta pela ciclovia da areia e o pôr do sol sentados na praia de Santa Monica.",
+          "onde": "Venice Canals, Los Angeles",
+          "horas": 3
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "info",
+          "texto": "Dia leve de propósito (~50% do dia): saia depois do café da manhã, sem horário fixo, e pule qualquer parada que cansar."
+        },
+        {
+          "nivel": "info",
+          "texto": "Segunda-feira: o prédio do Griffith Observatory fecha, mas o terraço, o estacionamento e as trilhas ficam abertos. ⚠️ verificar perto da data."
+        }
+      ],
+      "sol": {
+        "nascer": "06:34",
+        "por": "16:49"
+      },
+      "trajeto": [
+        {
+          "modo": "carro",
+          "pontos": [
+            [
+              33.9866,
+              -118.4687
+            ],
+            [
+              34.1184,
+              -118.3004
+            ],
+            [
+              33.9847,
+              -118.4662
+            ],
+            [
+              34.0094,
+              -118.4973
+            ],
+            [
+              33.9866,
+              -118.4687
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dia-8",
       "rotulo": "8",
       "data": "2026-11-24",
       "fase": "road",
@@ -526,90 +524,7 @@
       ]
     },
     {
-      "id": "dia-9-a",
-      "rotulo": "9",
-      "data": "2026-11-25",
-      "fase": "road",
-      "planos": [
-        "A"
-      ],
-      "titulo": "LA → San Francisco",
-      "regiao": "US-101 e Monterey",
-      "coord": [
-        36.516,
-        -121.938
-      ],
-      "capa": "lobos",
-      "estrada": [
-        {
-          "trecho": "LA → SF pela US-101, com desvio a Point Lobos",
-          "tempo": "7h15",
-          "horas": 7.25
-        }
-      ],
-      "resumo": "Dia de estrada pela rota mais rápida, com uma parada em Point Lobos para ver lontras e leões-marinhos e esticar as pernas.",
-      "atividades": [
-        {
-          "tipo": "trilha",
-          "titulo": "Point Lobos",
-          "descricao": "Penhascos, enseadas, lontras e leões-marinhos.",
-          "stats": "3–5 km",
-          "lugar": "lobos",
-          "horas": 1.5
-        },
-        {
-          "tipo": "trilha",
-          "titulo": "Ou: Pinnacles National Park",
-          "descricao": "Cavernas de rochas desabadas e condores-da-califórnia. Levar lanterna de cabeça.",
-          "stats": "4 km",
-          "lugar": "pinnacles",
-          "horas": 3,
-          "opcional": true
-        },
-        {
-          "tipo": "hotel",
-          "titulo": "Check-in no Axiom Hotel",
-          "descricao": "Union Square.",
-          "onde": "Axiom Hotel, San Francisco",
-          "horas": 0
-        }
-      ],
-      "alertas": [
-        {
-          "nivel": "aviso",
-          "texto": "Véspera do Thanksgiving: trânsito pesado. Não deixar bagagem visível no carro em SF."
-        },
-        {
-          "nivel": "info",
-          "texto": "O Axiom fica a poucas quadras do Tenderloin. À noite, use Uber mesmo para trajetos curtos."
-        }
-      ],
-      "sol": {
-        "nascer": "06:54",
-        "por": "16:55"
-      },
-      "trajeto": [
-        {
-          "modo": "carro",
-          "pontos": [
-            [
-              34.0617,
-              -118.3046
-            ],
-            [
-              36.5156,
-              -121.9387
-            ],
-            [
-              37.7849,
-              -122.408
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "dia-9-b",
+      "id": "dia-9",
       "rotulo": "9",
       "data": "2026-11-25",
       "fase": "road",
@@ -670,10 +585,18 @@
         },
         {
           "tipo": "hotel",
-          "titulo": "Check-in no Axiom Hotel",
-          "descricao": "Union Square, no fim da tarde.",
-          "onde": "Axiom Hotel, San Francisco",
+          "titulo": "Check-in no Seaside Inn",
+          "descricao": "Marina, no fim da tarde. Quarto king; peça um quarto longe da Lombard Street.",
+          "onde": "Seaside Inn, 1750 Lombard Street, San Francisco",
           "horas": 0
+        },
+        {
+          "tipo": "comida",
+          "titulo": "Jantar na Chestnut Street",
+          "descricao": "Jantar barato a pé do hotel, na Marina.",
+          "onde": "The Grove, 2250 Chestnut St, San Francisco",
+          "horas": 1.5,
+          "opcional": true
         }
       ],
       "alertas": [
@@ -683,7 +606,7 @@
         },
         {
           "nivel": "info",
-          "texto": "O Axiom fica a poucas quadras do Tenderloin. À noite, use Uber mesmo para trajetos curtos."
+          "texto": "O Seaside Inn fica na Lombard Street, com trânsito e barulho à noite. Se ainda estiverem com o carro, não deixem nada visível dentro (furtos de carro são comuns em SF)."
         }
       ],
       "sol": {
@@ -728,7 +651,6 @@
       "data": "2026-11-26",
       "fase": "road",
       "planos": [
-        "A",
         "B"
       ],
       "titulo": "Thanksgiving em Marin",
@@ -824,7 +746,6 @@
       "data": "2026-11-27",
       "fase": "sf",
       "planos": [
-        "A",
         "B"
       ],
       "titulo": "San Francisco pela orla",
@@ -836,6 +757,14 @@
       "capa": "goldengate",
       "resumo": "Último dia em SF, para conhecer a cidade pela orla: leões-marinhos no Pier 39, bike pela Marina e por Crissy Field até a Golden Gate e o pôr do sol na trilha de Lands End.",
       "atividades": [
+        {
+          "tipo": "comida",
+          "titulo": "Café antes da bike",
+          "descricao": "Equator Coffees, no Fort Mason, no começo da ciclovia.",
+          "onde": "Equator Coffees, 2 Marina Blvd, San Francisco",
+          "horas": 0.5,
+          "opcional": true
+        },
         {
           "tipo": "fauna",
           "titulo": "Leões-marinhos no Pier 39",
@@ -915,7 +844,6 @@
       "data": "2026-11-28",
       "fase": "sf",
       "planos": [
-        "A",
         "B"
       ],
       "titulo": "Voo de volta",
@@ -924,20 +852,24 @@
         37.6213,
         -122.379
       ],
-      "resumo": "Uber às 04:30 para chegar ao SFO às 05:00. Voo Delta DL 1598 às 07:05, com conexão.",
+      "resumo": "Uber às 04:30 do Seaside Inn, chegada ao SFO ~04:55 e voo Delta DL 1598 às 07:05. Deixe a mala pronta na véspera.",
       "atividades": [
         {
           "tipo": "transporte",
-          "titulo": "Axiom → SFO",
-          "descricao": "Uber, cerca de 25 minutos de madrugada.",
+          "titulo": "Seaside Inn → SFO",
+          "descricao": "Uber, cerca de 25–30 minutos de madrugada. Pedir o carro às 04:20.",
           "onde": "San Francisco International Airport",
           "horas": 0.5
         }
       ],
       "alertas": [
         {
+          "nivel": "aviso",
+          "texto": "Horário reverso: voo 07:05 → embarque ~06:25 (⚠️ verificar no app da Delta) → mala e segurança a partir de 05:00 → chegada ao SFO 04:55 → saída do Seaside Inn 04:30 → acordar 03:45. Limite: sair até 04:45. O BART não é opção: o primeiro trem de sábado sai por volta das 6h (⚠️ verificar)."
+        },
+        {
           "nivel": "info",
-          "texto": "Sábado pós-Thanksgiving: o aeroporto fica cheio."
+          "texto": "Sábado pós-Thanksgiving: o aeroporto fica cheio. Confirmar terminal e se o primeiro trecho é doméstico (check-in com mala fecha ~45 min antes)."
         }
       ],
       "sol": {
@@ -1343,128 +1275,81 @@
       "nome": "Hotel del Coronado",
       "cidade": "San Diego",
       "checkin": "2026-11-17",
-      "checkout": "2026-11-22",
-      "status": "Pago pela ADP",
+      "checkout": "2026-11-21",
+      "status": "Reservado · pago pela ADP",
       "planos": [
-        "A",
         "B"
       ],
       "coord": [
         32.6809,
         -117.1782
-      ]
+      ],
+      "reservado": true,
+      "endereco": "1500 Orange Avenue, Coronado, CA",
+      "pago_usd": 0
     },
     {
-      "id": "line",
-      "nome": "The LINE LA",
-      "cidade": "Los Angeles · Koreatown",
-      "checkin": "2026-11-22",
-      "checkout": "2026-11-25",
-      "status": "A reservar",
-      "planos": [
-        "A"
-      ],
-      "xotelo_key": "g32655-d77852",
-      "precos": [
-        {
-          "site": "Booking.com",
-          "diaria": 156
-        },
-        {
-          "site": "Trip.com",
-          "diaria": 169
-        },
-        {
-          "site": "Vio.com",
-          "diaria": 170
-        },
-        {
-          "site": "Agoda.com",
-          "diaria": 189
-        }
-      ],
-      "precos_em": "2026-10-05",
-      "coord": [
-        34.0617,
-        -118.3046
-      ]
-    },
-    {
-      "id": "line-b",
-      "nome": "The LINE LA",
-      "cidade": "Los Angeles · Koreatown",
-      "checkin": "2026-11-22",
+      "id": "kinney",
+      "nome": "The Kinney – Venice Beach",
+      "cidade": "Los Angeles · Venice",
+      "checkin": "2026-11-21",
       "checkout": "2026-11-24",
-      "status": "A reservar · só 2 noites (22 a 24/11)",
+      "status": "Reservado",
       "planos": [
         "B"
       ],
-      "xotelo_key": "g32655-d77852",
-      "precos": [
-        {
-          "site": "Booking.com",
-          "diaria": 156
-        },
-        {
-          "site": "Trip.com",
-          "diaria": 169
-        },
-        {
-          "site": "Vio.com",
-          "diaria": 175
-        },
-        {
-          "site": "Agoda.com",
-          "diaria": 189
-        }
-      ],
-      "precos_em": "2026-10-05",
       "coord": [
-        34.0617,
-        -118.3046
-      ]
+        33.9866,
+        -118.4687
+      ],
+      "reservado": true,
+      "endereco": "737 Washington Boulevard, Venice Beach, Los Angeles, CA 90292",
+      "checkin_hora": "a partir das 15:00",
+      "checkout_hora": "até 11:00",
+      "pago_usd": 584.67,
+      "reembolsavel": false,
+      "obs": "Consta 1 adulto na reserva: avisar o hotel que são 2 hóspedes e que a chegada é por volta das 20h. Estacionamento à parte."
     },
     {
-      "id": "axiom",
-      "nome": "Axiom Hotel",
-      "cidade": "San Francisco · Union Square",
+      "id": "cambria",
+      "nome": "Hotel em Cambria",
+      "cidade": "Cambria, CA",
+      "checkin": "2026-11-24",
+      "checkout": "2026-11-25",
+      "status": "A reservar · escolher entre as opções abaixo",
+      "planos": [
+        "B"
+      ],
+      "coord": [
+        35.5641,
+        -121.0807
+      ],
+      "reservado": false
+    },
+    {
+      "id": "seaside",
+      "nome": "Seaside Inn",
+      "cidade": "San Francisco · Marina",
       "checkin": "2026-11-25",
       "checkout": "2026-11-28",
-      "status": "A reservar",
+      "status": "Reservado",
       "planos": [
-        "A",
         "B"
       ],
-      "xotelo_key": "g60713-d7624213",
-      "precos": [
-        {
-          "site": "Agoda.com",
-          "diaria": 122
-        },
-        {
-          "site": "Booking.com",
-          "diaria": 134
-        },
-        {
-          "site": "Vio.com",
-          "diaria": 135
-        },
-        {
-          "site": "Trip.com",
-          "diaria": 157
-        }
-      ],
-      "precos_em": "2026-10-05",
       "coord": [
-        37.784912,
-        -122.40804
-      ]
+        37.8004,
+        -122.4286
+      ],
+      "reservado": true,
+      "endereco": "1750 Lombard Street, Distrito Marina, São Francisco, CA 94123",
+      "pago_usd": 485.61,
+      "obs": "Quarto king. Pedir quarto longe da Lombard Street. Estacionamento limitado."
     }
   ],
   "busca_hoteis": [
     {
       "id": "cambria",
-      "titulo": "Hotel em Cambria (Plano B)",
+      "titulo": "Hotel em Cambria",
       "planos": [
         "B"
       ],
@@ -1562,10 +1447,13 @@
   ],
   "reservas": [
     {
-      "id": "plano",
-      "prioridade": "urgente",
-      "item": "Decidir entre os Planos A e B",
-      "detalhe": "Muda hotéis e reservas dos dias 8 e 9."
+      "id": "kinney",
+      "prioridade": "feito",
+      "item": "Hotel The Kinney, Venice (21 a 24/11)",
+      "detalhe": "Pago: US$ 584,67 por 3 diárias, não reembolsável. Constou 1 adulto: avisar o hotel que são 2 hóspedes. Chegada ~20h de sábado: avisar o hotel. Estacionamento é cobrado à parte.",
+      "planos": [
+        "B"
+      ]
     },
     {
       "id": "ceia",
@@ -1581,20 +1469,10 @@
       "url": "https://gomuirwoods.com"
     },
     {
-      "id": "channel",
-      "prioridade": "urgente",
-      "item": "Balsa e caiaque nas Channel Islands",
-      "detalhe": "Só no Plano A. Confirmar saída em 24/11.",
-      "url": "https://www.islandpackers.com/kayaking/",
-      "planos": [
-        "A"
-      ]
-    },
-    {
       "id": "cambria",
       "prioridade": "urgente",
       "item": "Hotel em Cambria (24/11)",
-      "detalhe": "Só no Plano B.",
+      "detalhe": "Noite de 24/11.",
       "planos": [
         "B"
       ]
@@ -1637,59 +1515,38 @@
       "detalhe": "Pago pela ADP."
     },
     {
-      "id": "line",
-      "prioridade": "urgente",
-      "item": "Hotel The LINE LA",
-      "detalhe": "Ainda não reservado. Plano B: 22 a 24/11 (2 noites)."
-    },
-    {
-      "id": "axiom",
-      "prioridade": "urgente",
-      "item": "Hotel Axiom (SF)",
-      "detalhe": "Ainda não reservado. 25 a 28/11."
+      "id": "seaside",
+      "prioridade": "feito",
+      "item": "Hotel Seaside Inn (SF)",
+      "detalhe": "Pago: US$ 485,61 por 3 diárias (25 a 28/11), quarto king. Pedir quarto longe da Lombard Street."
     },
     {
       "id": "carro",
-      "prioridade": "feito",
-      "item": "Carro Sixt",
-      "detalhe": "SAN 22/11 → SF 26/11. US$ 376,22 por 4 diárias, com impostos."
+      "prioridade": "urgente",
+      "item": "Carro Sixt: antecipar a retirada para 21/11",
+      "detalhe": "Reserva atual: SAN 22/11 → SF 26/11, US$ 376,22 por 4 diárias. Retirada em 21/11 exige 5 diárias. Conferir o valor da diária extra."
     },
     {
       "id": "voo",
       "prioridade": "feito",
       "item": "Voo de volta DL 1598",
-      "detalhe": "SFO 28/11, 07:05."
+      "detalhe": "SFO 28/11, 07:05. Uber do Seaside Inn às 04:30, chegada ~04:55."
     }
   ],
   "orcamento": {
     "taxa_brl": 5.62,
     "planos": {
-      "A": {
-        "total_usd": 2981.22,
-        "opcionais_usd": 862.5,
-        "itens_a_verificar": 11,
-        "categorias": {
-          "hospedagem": 1005.0,
-          "alimentacao": 715.0,
-          "carro": 376.22,
-          "transporte": 270.0,
-          "estacionamento": 250.0,
-          "gasolina": 190.0,
-          "passeio": 90.0,
-          "ingresso": 85.0
-        }
-      },
       "B": {
-        "total_usd": 2961.22,
+        "total_usd": 3419.5,
         "opcionais_usd": 380.5,
-        "itens_a_verificar": 11,
+        "itens_a_verificar": 7,
         "categorias": {
-          "hospedagem": 1025.0,
-          "alimentacao": 725.0,
-          "carro": 376.22,
-          "transporte": 270.0,
-          "gasolina": 195.0,
-          "estacionamento": 195.0,
+          "hospedagem": 1270.2799999999997,
+          "alimentacao": 810.0,
+          "carro": 470.22,
+          "transporte": 295.0,
+          "gasolina": 230.0,
+          "estacionamento": 169.0,
           "passeio": 90.0,
           "ingresso": 85.0
         }
@@ -1699,7 +1556,6 @@
       {
         "data": "2026-11-17",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "transporte",
@@ -1711,11 +1567,10 @@
       {
         "data": "2026-11-17",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "Hotel del Coronado (17 a 22/11)",
+        "item": "Hotel del Coronado (17 a 21/11)",
         "usd": 0.0,
         "status": "confirmado",
         "atividade": null
@@ -1723,7 +1578,6 @@
       {
         "data": "2026-11-17",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "alimentacao",
@@ -1735,7 +1589,6 @@
       {
         "data": "2026-11-18",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "passeio",
@@ -1747,7 +1600,6 @@
       {
         "data": "2026-11-18",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "transporte",
@@ -1759,7 +1611,6 @@
       {
         "data": "2026-11-18",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "transporte",
@@ -1771,7 +1622,6 @@
       {
         "data": "2026-11-18",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "transporte",
@@ -1783,79 +1633,72 @@
       {
         "data": "2026-11-18",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "alimentacao",
-        "item": "Refeições da acompanhante nos dias 18 a 21 (se a ADP não cobrir)",
+        "item": "Refeições da acompanhante nos dias 18 a 20 (se a ADP não cobrir)",
         "usd": 200.0,
         "status": "opcional",
         "atividade": null
       },
       {
-        "data": "2026-11-22",
+        "data": "2026-11-21",
         "planos": [
-          "A",
+          "B"
+        ],
+        "categoria": "transporte",
+        "item": "Uber Hotel del Coronado -> SAN",
+        "usd": 25.0,
+        "status": "estimado",
+        "atividade": "Retirada do carro Sixt em SAN"
+      },
+      {
+        "data": "2026-11-21",
+        "planos": [
           "B"
         ],
         "categoria": "carro",
-        "item": "Aluguel Sixt (4 diárias com impostos)",
+        "item": "Aluguel Sixt (4 diárias com impostos; a reserva atual começa em 22/11)",
         "usd": 376.22,
         "status": "confirmado",
         "atividade": "Retirada do carro Sixt em SAN"
       },
       {
-        "data": "2026-11-22",
+        "data": "2026-11-21",
         "planos": [
-          "A",
+          "B"
+        ],
+        "categoria": "carro",
+        "item": "Diária extra Sixt (retirada em 21/11; valor a confirmar)",
+        "usd": 94.0,
+        "status": "verificar",
+        "atividade": "Retirada do carro Sixt em SAN"
+      },
+      {
+        "data": "2026-11-21",
+        "planos": [
           "B"
         ],
         "categoria": "ingresso",
-        "item": "Joshua Tree NP (veículo)",
+        "item": "Joshua Tree NP (veículo; vale 7 dias)",
         "usd": 35.0,
         "status": "confirmado",
         "atividade": "Barker Dam"
       },
       {
-        "data": "2026-11-22",
+        "data": "2026-11-21",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "gasolina",
-        "item": "SAN -> Joshua Tree -> LA",
-        "usd": 50.0,
+        "item": "SAN -> Joshua Tree",
+        "usd": 30.0,
         "status": "estimado",
-        "atividade": "Estrada até LA"
+        "atividade": "Barker Dam"
       },
       {
-        "data": "2026-11-22",
+        "data": "2026-11-21",
         "planos": [
-          "A",
-          "B"
-        ],
-        "categoria": "hospedagem",
-        "item": "The LINE Hotel (noite 22)",
-        "usd": 180.0,
-        "status": "verificar",
-        "atividade": "Estrada até LA"
-      },
-      {
-        "data": "2026-11-22",
-        "planos": [
-          "A",
-          "B"
-        ],
-        "categoria": "estacionamento",
-        "item": "The LINE Hotel (noite 22)",
-        "usd": 45.0,
-        "status": "verificar",
-        "atividade": "Estrada até LA"
-      },
-      {
-        "data": "2026-11-22",
-        "planos": [
-          "A",
           "B"
         ],
         "categoria": "alimentacao",
@@ -1865,33 +1708,118 @@
         "atividade": null
       },
       {
-        "data": "2026-11-23",
+        "data": "2026-11-21",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "gasolina",
-        "item": "Koreatown -> Griffith -> Santa Monica",
+        "item": "Joshua Tree -> LA",
+        "usd": 25.0,
+        "status": "estimado",
+        "atividade": "Estrada até LA"
+      },
+      {
+        "data": "2026-11-21",
+        "planos": [
+          "B"
+        ],
+        "categoria": "hospedagem",
+        "item": "The Kinney (noite 21; total pago US$ 584.67)",
+        "usd": 194.89,
+        "status": "confirmado",
+        "atividade": "Estrada até LA"
+      },
+      {
+        "data": "2026-11-21",
+        "planos": [
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "The Kinney (noite 21)",
+        "usd": 38.0,
+        "status": "verificar",
+        "atividade": "Estrada até LA"
+      },
+      {
+        "data": "2026-11-22",
+        "planos": [
+          "B"
+        ],
+        "categoria": "gasolina",
+        "item": "Venice <-> Malibu",
+        "usd": 25.0,
+        "status": "estimado",
+        "atividade": "Solstice Canyon"
+      },
+      {
+        "data": "2026-11-22",
+        "planos": [
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "Praias e trilhas de Malibu",
         "usd": 15.0,
+        "status": "estimado",
+        "atividade": "Pôr do sol em El Matador"
+      },
+      {
+        "data": "2026-11-22",
+        "planos": [
+          "B"
+        ],
+        "categoria": "hospedagem",
+        "item": "The Kinney (noite 22)",
+        "usd": 194.89,
+        "status": "confirmado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-22",
+        "planos": [
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "The Kinney (noite 22)",
+        "usd": 38.0,
+        "status": "verificar",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-22",
+        "planos": [
+          "B"
+        ],
+        "categoria": "alimentacao",
+        "item": "Refeições do dia",
+        "usd": 85.0,
+        "status": "estimado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-23",
+        "planos": [
+          "B"
+        ],
+        "categoria": "gasolina",
+        "item": "Venice -> Griffith -> Venice",
+        "usd": 20.0,
         "status": "estimado",
         "atividade": "Venice e Santa Monica"
       },
       {
         "data": "2026-11-23",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "estacionamento",
         "item": "Griffith Observatory",
         "usd": 20.0,
         "status": "estimado",
-        "atividade": "Trilha do Griffith Park até o Mount Hollywood"
+        "atividade": "Caminhada leve no Griffith Park"
       },
       {
         "data": "2026-11-23",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "estacionamento",
@@ -1903,98 +1831,29 @@
       {
         "data": "2026-11-23",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "The LINE Hotel (noite 23)",
-        "usd": 180.0,
+        "item": "The Kinney (noite 23)",
+        "usd": 194.89,
+        "status": "confirmado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-23",
+        "planos": [
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "The Kinney (noite 23)",
+        "usd": 38.0,
         "status": "verificar",
         "atividade": null
       },
       {
         "data": "2026-11-23",
         "planos": [
-          "A",
           "B"
-        ],
-        "categoria": "estacionamento",
-        "item": "The LINE Hotel (noite 23)",
-        "usd": 45.0,
-        "status": "verificar",
-        "atividade": null
-      },
-      {
-        "data": "2026-11-23",
-        "planos": [
-          "A",
-          "B"
-        ],
-        "categoria": "alimentacao",
-        "item": "Refeições do dia",
-        "usd": 85.0,
-        "status": "estimado",
-        "atividade": null
-      },
-      {
-        "data": "2026-11-24",
-        "planos": [
-          "A"
-        ],
-        "categoria": "passeio",
-        "item": "Channel Islands: balsa + caiaque (2x US$ 231)",
-        "usd": 462.0,
-        "status": "opcional",
-        "atividade": "Trocar pelo dia na ilha: Channel Islands"
-      },
-      {
-        "data": "2026-11-24",
-        "planos": [
-          "A"
-        ],
-        "categoria": "estacionamento",
-        "item": "Praias e trilhas de Malibu",
-        "usd": 15.0,
-        "status": "estimado",
-        "atividade": "Pôr do sol em El Matador"
-      },
-      {
-        "data": "2026-11-24",
-        "planos": [
-          "A"
-        ],
-        "categoria": "gasolina",
-        "item": "LA <-> Malibu",
-        "usd": 25.0,
-        "status": "estimado",
-        "atividade": "Solstice Canyon"
-      },
-      {
-        "data": "2026-11-24",
-        "planos": [
-          "A"
-        ],
-        "categoria": "hospedagem",
-        "item": "The LINE Hotel (noite 24)",
-        "usd": 180.0,
-        "status": "verificar",
-        "atividade": null
-      },
-      {
-        "data": "2026-11-24",
-        "planos": [
-          "A"
-        ],
-        "categoria": "estacionamento",
-        "item": "The LINE Hotel (noite 24)",
-        "usd": 45.0,
-        "status": "verificar",
-        "atividade": null
-      },
-      {
-        "data": "2026-11-24",
-        "planos": [
-          "A"
         ],
         "categoria": "alimentacao",
         "item": "Refeições do dia",
@@ -2049,50 +1908,6 @@
       {
         "data": "2026-11-25",
         "planos": [
-          "A"
-        ],
-        "categoria": "gasolina",
-        "item": "LA -> SF pela US-101",
-        "usd": 70.0,
-        "status": "estimado",
-        "atividade": null
-      },
-      {
-        "data": "2026-11-25",
-        "planos": [
-          "A"
-        ],
-        "categoria": "ingresso",
-        "item": "Point Lobos (estacionamento)",
-        "usd": 10.0,
-        "status": "estimado",
-        "atividade": "Point Lobos"
-      },
-      {
-        "data": "2026-11-25",
-        "planos": [
-          "A"
-        ],
-        "categoria": "ingresso",
-        "item": "Pinnacles NP (veículo)",
-        "usd": 30.0,
-        "status": "opcional",
-        "atividade": "Ou: Pinnacles National Park"
-      },
-      {
-        "data": "2026-11-25",
-        "planos": [
-          "A"
-        ],
-        "categoria": "alimentacao",
-        "item": "Refeições do dia",
-        "usd": 90.0,
-        "status": "estimado",
-        "atividade": null
-      },
-      {
-        "data": "2026-11-25",
-        "planos": [
           "B"
         ],
         "categoria": "gasolina",
@@ -2137,31 +1952,17 @@
       {
         "data": "2026-11-25",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "Axiom Hotel (noite 25)",
-        "usd": 155.0,
-        "status": "verificar",
-        "atividade": "Check-in no Axiom Hotel"
-      },
-      {
-        "data": "2026-11-25",
-        "planos": [
-          "A",
-          "B"
-        ],
-        "categoria": "estacionamento",
-        "item": "Axiom Hotel (noite 25)",
-        "usd": 65.0,
-        "status": "verificar",
-        "atividade": "Check-in no Axiom Hotel"
+        "item": "Seaside Inn (noite 25; total pago US$ 485.61)",
+        "usd": 161.87,
+        "status": "confirmado",
+        "atividade": "Check-in no Seaside Inn"
       },
       {
         "data": "2026-11-26",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "ingresso",
@@ -2173,7 +1974,6 @@
       {
         "data": "2026-11-26",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "transporte",
@@ -2185,7 +1985,6 @@
       {
         "data": "2026-11-26",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "gasolina",
@@ -2197,7 +1996,6 @@
       {
         "data": "2026-11-26",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "alimentacao",
@@ -2209,7 +2007,6 @@
       {
         "data": "2026-11-26",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "alimentacao",
@@ -2221,7 +2018,6 @@
       {
         "data": "2026-11-26",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "transporte",
@@ -2233,19 +2029,17 @@
       {
         "data": "2026-11-26",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "Axiom Hotel (noite 26)",
-        "usd": 155.0,
-        "status": "verificar",
+        "item": "Seaside Inn (noite 26)",
+        "usd": 161.87,
+        "status": "confirmado",
         "atividade": null
       },
       {
         "data": "2026-11-27",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "passeio",
@@ -2257,7 +2051,6 @@
       {
         "data": "2026-11-27",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "transporte",
@@ -2269,7 +2062,6 @@
       {
         "data": "2026-11-27",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "transporte",
@@ -2281,7 +2073,6 @@
       {
         "data": "2026-11-27",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "passeio",
@@ -2293,19 +2084,17 @@
       {
         "data": "2026-11-27",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "Axiom Hotel (noite 27)",
-        "usd": 155.0,
-        "status": "verificar",
+        "item": "Seaside Inn (noite 27)",
+        "usd": 161.87,
+        "status": "confirmado",
         "atividade": null
       },
       {
         "data": "2026-11-27",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "alimentacao",
@@ -2317,19 +2106,17 @@
       {
         "data": "2026-11-28",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "transporte",
         "item": "Uber até o SFO",
         "usd": 55.0,
         "status": "estimado",
-        "atividade": "Axiom → SFO"
+        "atividade": "Seaside Inn → SFO"
       },
       {
         "data": "2026-11-28",
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "alimentacao",
@@ -2341,7 +2128,6 @@
       {
         "data": null,
         "planos": [
-          "A",
           "B"
         ],
         "categoria": "carro",
