@@ -1,6 +1,6 @@
 # Roteiro dia a dia
 
-> Última revisão: 11/10/2026. Plano escolhido: **B** (3 noites em LA, em Airbnb; costa central depois). Os Planos A e C foram descartados; ver o fim do arquivo.
+> Última revisão: 11/10/2026. Plano escolhido: **B** (3 noites em LA, no The Kinney (Venice); costa central depois). Os Planos A e C foram descartados; ver o fim do arquivo.
 > A versão estruturada, que alimenta o site e o mapa, é `site/data/roteiro.json`.
 > Gastos previstos por dia e por atividade: `orcamento.csv` (página **Gastos** do site).
 > Pôr do sol ~16:45. Lua cheia ~24/11 (céu estrelado em Joshua Tree fica mais fraco em 21/11).
@@ -25,7 +25,7 @@
 - Checkout no Coronado e Uber até SAN. **Retirada do carro Sixt às ~9h** (a reserva hoje é de 22/11: antecipar para 21/11, 5 diárias).
 - Estrada até o parque (~2h45). **Barker Dam** (1,8 km, fácil) e, se der tempo, Skull Rock.
 - Pôr do sol em **Keys View** (~16:40). Sair do parque até ~17h.
-- Noite: estrada até LA (~3h), chegada ~20h. Check-in por autoatendimento no **Airbnb** (vaga inclusa).
+- Noite: estrada até LA (~3h), chegada ~20h. Check-in no **The Kinney** (Venice), avisando o hotel da chegada tarde.
 - Entrada: US$ 35/veículo, válida por 7 dias. Dia pesado: ~5h45 de direção (73% do dia).
 
 ### Dia 6 · 22/11 Dom — Malibu, sem pressa
@@ -36,7 +36,7 @@
 ### Dia 7 · 23/11 Seg — Último dia em LA, sem pressa
 - Manhã tranquila, sem horário fixo. Por volta das 9h30: **caminhada leve no Griffith Park** (~2–3 km, pouca subida) até um mirante com o letreiro. Mount Hollywood (~4,5 km) é opcional.
 - Almoço sem pressa em **Venice**, volta curta pelos canais ou pela ciclovia da areia.
-- Pôr do sol sentados na praia de **Santa Monica** (~16:49), jantar leve e volta ao Airbnb.
+- Pôr do sol sentados na praia de **Santa Monica** (~16:49), jantar leve e volta ao hotel, a poucos minutos de Abbot Kinney.
 - ℹ️ Segunda: o prédio do Griffith Observatory fecha (terraço e trilhas abertos). ⚠️ verificar.
 - Ritmo: ~50% do dia (meta ≤ 65%).
 

@@ -5,6 +5,7 @@
 ## Feitas
 
 - [x] Hotel del Coronado, 17–21/11 (pago pela ADP)
+- [x] Hotel The Kinney (Venice), 21–24/11 — US$ 584,67 por 3 diárias, não reembolsável; avisar que são 2 hóspedes (consta 1 adulto) e a chegada ~20h
 - [x] Hotel Seaside Inn (SF), 25–28/11 — US$ 485,61 pagos por 3 diárias, quarto king (pedir quarto longe da Lombard Street)
 - [x] Carro Sixt: reserva SAN 22/11 → SF 26/11 — US$ 376,22 por 4 diárias, com impostos (retirada antecipada: ver pendências)
 - [x] Voo volta DL 1598, SFO 28/11 07:05
@@ -13,7 +14,6 @@
 
 | Prioridade | Item | Detalhe |
 |---|---|---|
-| 🔴 | Airbnb em LA | 21–24/11 (3 noites), Santa Monica/Venice/Culver City. Vaga inclusa e self check-in (chegada ~20h de sábado) |
 | 🔴 | Carro Sixt: retirada em 21/11 | Reserva atual é de 22/11 (4 diárias, US$ 376,22). Precisa de 5 diárias; conferir o valor da extra |
 | 🟠 | Valor real dos hotéis | O orçamento usa a diária do Booking + ~16% de impostos; trocar pelo valor da reserva em `orcamento.csv` depois de reservar |
 | 🔴 | Ceia de Thanksgiving (26/11) em SF | Restaurantes lotam; menu fixo costuma custar US$ 100–150/pessoa |

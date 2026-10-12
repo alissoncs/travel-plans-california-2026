@@ -9,7 +9,7 @@
 | Item | Status |
 |---|---|
 | Hotel San Diego (Hotel del Coronado, 17–21/11) | ✅ Pago pela ADP |
-| Airbnb LA (21–24/11, 3 noites) | ⏳ A reservar |
+| Hotel LA (The Kinney, Venice, 21–24/11) | ✅ Reservado (US$ 584,67, não reembolsável) |
 | Hotel SF (Seaside Inn, 25–28/11) | ✅ Reservado (US$ 485,61) |
 | Carro Sixt (reserva SAN 22/11 → SF 26/11) | ✅ Reservado — antecipar a retirada para 21/11 e confirmar a devolução |
 | Voo volta DL 1598 (SFO 28/11 07:05) | ✅ |

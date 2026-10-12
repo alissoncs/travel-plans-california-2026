@@ -9,7 +9,7 @@
     "plano_recomendado": "B",
     "teto_usd": 3000
   },
-  "atualizado_em": "2026-10-11 22:01",
+  "atualizado_em": "2026-10-11 22:04",
   "planos": {
     "B": {
       "nome": "Plano B",
@@ -165,7 +165,7 @@
           "horas": 3
         }
       ],
-      "resumo": "Checkout no Coronado, carro no aeroporto e estrada até o deserto. Barker Dam à tarde e pôr do sol em Keys View, sem dormir lá: ao escurecer, volta-se para LA (~3h) e o check-in é no Airbnb.",
+      "resumo": "Checkout no Coronado, carro no aeroporto e estrada até o deserto. Barker Dam à tarde e pôr do sol em Keys View, sem dormir lá: ao escurecer, volta-se para LA (~3h) e o check-in é no The Kinney, em Venice.",
       "atividades": [
         {
           "tipo": "transporte",
@@ -200,8 +200,8 @@
         {
           "tipo": "transporte",
           "titulo": "Estrada até LA",
-          "descricao": "Sai de Keys View logo depois do pôr do sol. Check-in por autoatendimento no Airbnb, com vaga inclusa.",
-          "onde": "Santa Monica, Los Angeles",
+          "descricao": "Sai de Keys View logo depois do pôr do sol. Check-in no The Kinney (a partir das 15h); avisar o hotel da chegada por volta das 20h.",
+          "onde": "The Kinney, 737 Washington Blvd, Venice",
           "horas": 0
         }
       ],
@@ -244,8 +244,8 @@
               -116.1876
             ],
             [
-              34.0259,
-              -118.4965
+              33.9866,
+              -118.4687
             ]
           ]
         }
@@ -268,12 +268,12 @@
       "capa": "solstice",
       "estrada": [
         {
-          "trecho": "Santa Monica → Malibu",
+          "trecho": "Venice → Malibu",
           "tempo": "45 min",
           "horas": 0.75
         },
         {
-          "trecho": "Malibu → Santa Monica",
+          "trecho": "Malibu → Venice",
           "tempo": "45 min",
           "horas": 0.75
         }
@@ -318,8 +318,8 @@
           "modo": "carro",
           "pontos": [
             [
-              34.0259,
-              -118.4965
+              33.9866,
+              -118.4687
             ],
             [
               34.0378,
@@ -334,8 +334,8 @@
               -118.8749
             ],
             [
-              34.0259,
-              -118.4965
+              33.9866,
+              -118.4687
             ]
           ]
         }
@@ -350,7 +350,7 @@
         "B"
       ],
       "titulo": "Los Angeles",
-      "regiao": "Griffith Park e a costa de Santa Monica",
+      "regiao": "Griffith Park e a costa de Venice",
       "coord": [
         34.1184,
         -118.3004
@@ -358,7 +358,7 @@
       "capa": "hollywood",
       "estrada": [
         {
-          "trecho": "Santa Monica → Griffith → Venice → Santa Monica",
+          "trecho": "Venice → Griffith → Venice",
           "tempo": "1h30 no total",
           "horas": 1.5
         }
@@ -376,7 +376,7 @@
         {
           "tipo": "praia",
           "titulo": "Venice e Santa Monica",
-          "descricao": "Almoço sem pressa perto dos canais de Venice, uma volta curta a pé ou de bicicleta pela ciclovia da areia e o pôr do sol sentados na praia de Santa Monica.",
+          "descricao": "Almoço sem pressa perto dos canais de Venice (o hotel fica a poucos minutos a pé de Abbot Kinney), uma volta curta a pé ou de bicicleta pela ciclovia da areia e o pôr do sol sentados na praia de Santa Monica.",
           "onde": "Venice Canals, Los Angeles",
           "horas": 3
         }
@@ -400,8 +400,8 @@
           "modo": "carro",
           "pontos": [
             [
-              34.0259,
-              -118.4965
+              33.9866,
+              -118.4687
             ],
             [
               34.1184,
@@ -416,8 +416,8 @@
               -118.4973
             ],
             [
-              34.0259,
-              -118.4965
+              33.9866,
+              -118.4687
             ]
           ]
         }
@@ -1254,18 +1254,18 @@
       ]
     },
     {
-      "id": "airbnb-la",
-      "nome": "Airbnb em Los Angeles",
-      "cidade": "Los Angeles · Santa Monica",
+      "id": "kinney",
+      "nome": "The Kinney – Venice Beach",
+      "cidade": "Los Angeles · Venice",
       "checkin": "2026-11-21",
       "checkout": "2026-11-24",
-      "status": "A reservar · 3 noites (21 a 24/11) · vaga inclusa e self check-in",
+      "status": "Reservado · US$ 584,67 (3 diárias, não reembolsável)",
       "planos": [
         "B"
       ],
       "coord": [
-        34.0259,
-        -118.4965
+        33.9866,
+        -118.4687
       ]
     },
     {
@@ -1300,48 +1300,6 @@
     }
   ],
   "busca_hoteis": [
-    {
-      "id": "airbnb-la",
-      "titulo": "Airbnb em Los Angeles",
-      "planos": [
-        "B"
-      ],
-      "cidade": "Santa Monica, CA",
-      "checkin": "2026-11-21",
-      "checkout": "2026-11-24",
-      "busca_externa": [
-        {
-          "nome": "Booking",
-          "url": "https://www.booking.com/searchresults.html?ss=Santa+Monica%2C+CA&checkin=2026-11-21&checkout=2026-11-24&group_adults=2"
-        }
-      ],
-      "encontrados": [
-        {
-          "nome": "Casa estúdio aconchegante: cozinha e pátio privativo",
-          "url": "https://www.airbnb.com.br/rooms/876440287072399248",
-          "tipo": "Casa de hóspedes inteira · 32 m² · 1 cama queen",
-          "nota": 4.95,
-          "avaliacoes": 237,
-          "coord": [
-            34.0142,
-            -118.4396
-          ],
-          "localizacao": "Washington Blvd com Centinela, entre Mar Vista, Venice e Culver City",
-          "pros": [
-            "Estacionamento grátis no local",
-            "Superhost, nota 4,95 em 237 avaliações",
-            "Casa inteira com cozinha e pátio, check-in por cofre de chaves",
-            "Venice e Abbot Kinney a ~5 km, píer de Santa Monica a ~14 km"
-          ],
-          "contras": [
-            "Preço não apareceu na página (confirmar no app, com taxa de limpeza)",
-            "Link veio com datas 22 a 24/11: conferir a noite de 21/11",
-            "Sem praia a pé; Malibu a ~45–55 min e Griffith a ~35–45 min",
-            "Colchão extra na sala, cama queen única"
-          ]
-        }
-      ]
-    },
     {
       "id": "cambria",
       "titulo": "Hotel em Cambria",
@@ -1442,10 +1400,10 @@
   ],
   "reservas": [
     {
-      "id": "airbnb-la",
-      "prioridade": "urgente",
-      "item": "Airbnb em LA (21 a 24/11, 3 noites)",
-      "detalhe": "Santa Monica (melhor), Venice ou Culver City. Exigir vaga inclusa e self check-in, porque a chegada é ~20h de sábado.",
+      "id": "kinney",
+      "prioridade": "feito",
+      "item": "Hotel The Kinney, Venice (21 a 24/11)",
+      "detalhe": "Pago: US$ 584,67 por 3 diárias, não reembolsável. Constou 1 adulto: avisar o hotel que são 2 hóspedes. Chegada ~20h de sábado: avisar o hotel. Estacionamento é cobrado à parte.",
       "planos": [
         "B"
       ]
@@ -1532,18 +1490,18 @@
     "taxa_brl": 5.62,
     "planos": {
       "B": {
-        "total_usd": 3500.83,
+        "total_usd": 3419.5,
         "opcionais_usd": 380.5,
-        "itens_a_verificar": 8,
+        "itens_a_verificar": 7,
         "categorias": {
-          "hospedagem": 1465.6099999999997,
+          "hospedagem": 1270.2799999999997,
           "alimentacao": 810.0,
           "carro": 470.22,
           "transporte": 295.0,
           "gasolina": 230.0,
+          "estacionamento": 169.0,
           "passeio": 90.0,
-          "ingresso": 85.0,
-          "estacionamento": 55.0
+          "ingresso": 85.0
         }
       }
     },
@@ -1719,9 +1677,9 @@
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "Airbnb em LA (noite 21)",
-        "usd": 220.0,
-        "status": "verificar",
+        "item": "The Kinney (noite 21; total pago US$ 584.67)",
+        "usd": 194.89,
+        "status": "confirmado",
         "atividade": "Estrada até LA"
       },
       {
@@ -1729,9 +1687,9 @@
         "planos": [
           "B"
         ],
-        "categoria": "hospedagem",
-        "item": "Airbnb em LA: taxa de limpeza (3 noites)",
-        "usd": 120.0,
+        "categoria": "estacionamento",
+        "item": "The Kinney (noite 21)",
+        "usd": 38.0,
         "status": "verificar",
         "atividade": "Estrada até LA"
       },
@@ -1741,7 +1699,7 @@
           "B"
         ],
         "categoria": "gasolina",
-        "item": "Santa Monica <-> Malibu",
+        "item": "Venice <-> Malibu",
         "usd": 25.0,
         "status": "estimado",
         "atividade": "Solstice Canyon"
@@ -1763,8 +1721,19 @@
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "Airbnb em LA (noite 22)",
-        "usd": 220.0,
+        "item": "The Kinney (noite 22)",
+        "usd": 194.89,
+        "status": "confirmado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-22",
+        "planos": [
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "The Kinney (noite 22)",
+        "usd": 38.0,
         "status": "verificar",
         "atividade": null
       },
@@ -1785,7 +1754,7 @@
           "B"
         ],
         "categoria": "gasolina",
-        "item": "Santa Monica -> Griffith -> Venice",
+        "item": "Venice -> Griffith -> Venice",
         "usd": 20.0,
         "status": "estimado",
         "atividade": "Venice e Santa Monica"
@@ -1818,8 +1787,19 @@
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "Airbnb em LA (noite 23)",
-        "usd": 220.0,
+        "item": "The Kinney (noite 23)",
+        "usd": 194.89,
+        "status": "confirmado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-23",
+        "planos": [
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "The Kinney (noite 23)",
+        "usd": 38.0,
         "status": "verificar",
         "atividade": null
       },

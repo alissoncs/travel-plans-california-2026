@@ -20,16 +20,18 @@ dia,data,plano,categoria,item,usd,status,atividade
 5,21/11,B,gasolina,SAN -> Joshua Tree,30,estimado,Barker Dam
 5,21/11,B,alimentacao,Refeições do dia,80,estimado,
 5,21/11,B,gasolina,Joshua Tree -> LA,25,estimado,Estrada até LA
-5,21/11,B,hospedagem,Airbnb em LA (noite 21),220,verificar,Estrada até LA
-5,21/11,B,hospedagem,Airbnb em LA: taxa de limpeza (3 noites),120,verificar,Estrada até LA
-6,22/11,B,gasolina,Santa Monica <-> Malibu,25,estimado,Solstice Canyon
+5,21/11,B,hospedagem,The Kinney (noite 21; total pago US$ 584.67),194.89,confirmado,Estrada até LA
+5,21/11,B,estacionamento,The Kinney (noite 21),38,verificar,Estrada até LA
+6,22/11,B,gasolina,Venice <-> Malibu,25,estimado,Solstice Canyon
 6,22/11,B,estacionamento,Praias e trilhas de Malibu,15,estimado,Pôr do sol em El Matador
-6,22/11,B,hospedagem,Airbnb em LA (noite 22),220,verificar,
+6,22/11,B,hospedagem,The Kinney (noite 22),194.89,confirmado,
+6,22/11,B,estacionamento,The Kinney (noite 22),38,verificar,
 6,22/11,B,alimentacao,Refeições do dia,85,estimado,
-7,23/11,B,gasolina,Santa Monica -> Griffith -> Venice,20,estimado,Venice e Santa Monica
+7,23/11,B,gasolina,Venice -> Griffith -> Venice,20,estimado,Venice e Santa Monica
 7,23/11,B,estacionamento,Griffith Observatory,20,estimado,Caminhada leve no Griffith Park
 7,23/11,B,estacionamento,Santa Monica,15,estimado,Venice e Santa Monica
-7,23/11,B,hospedagem,Airbnb em LA (noite 23),220,verificar,
+7,23/11,B,hospedagem,The Kinney (noite 23),194.89,confirmado,
+7,23/11,B,estacionamento,The Kinney (noite 23),38,verificar,
 7,23/11,B,alimentacao,Refeições do dia,85,estimado,
 8,24/11,B,estacionamento,Centro de Santa Barbara,5,estimado,Santa Barbara
 8,24/11,B,gasolina,LA -> Cambria,40,estimado,Morro Rock
