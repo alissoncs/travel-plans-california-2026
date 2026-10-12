@@ -1,63 +1,58 @@
 #taxa,5.62
-# plano: letras dos planos em que a linha vale (AB = ambos; A ou B = só aquele plano) | status: estimado, confirmado, opcional, verificar
+# plano: sempre B (único plano; o Plano A foi descartado em 11/10/2026) | status: estimado, confirmado, opcional, verificar
 # atividade: título exato da atividade do dia em site/data/roteiro.json (vazio = gasto do dia, como refeições)
 # Previsão para o casal (2 pessoas). Refeições já incluem imposto (~9%) e gorjeta (18-20%). Teto: US$ 3.000 por plano (viagem.teto_usd).
 # San Diego (dias 1-5): hotel e evento pagos pela ADP; refeições da acompanhante ficam como opcionais até a ADP confirmar.
 # Hotéis: diária do Booking (05/10/2026) + ~16% de impostos de hospedagem; confirmar o valor real da reserva.
 dia,data,plano,categoria,item,usd,status,atividade
-1,17/11,AB,transporte,Uber SAN -> Hotel del Coronado,25,estimado,Uber SAN → Hotel del Coronado
-1,17/11,AB,hospedagem,Hotel del Coronado (17 a 22/11),0,confirmado,
-1,17/11,AB,alimentacao,Refeições da acompanhante (se a ADP não cobrir),50,opcional,
-2,18/11,AB,passeio,Caiaque em La Jolla (incluído no evento),0,confirmado,Caiaque em La Jolla
-2,18/11,AB,transporte,Uber até Torrey Pines (ida e volta),50,estimado,Torrey Pines State Natural Reserve
-2,18/11,AB,transporte,Uber até La Jolla Cove (ida e volta),35,estimado,Leões-marinhos em La Jolla Cove
-2,18/11,AB,transporte,Uber até Sunset Cliffs (ida e volta),40,estimado,Pôr do sol em Sunset Cliffs
-2,18/11,AB,alimentacao,Refeições da acompanhante nos dias 18 a 21 (se a ADP não cobrir),200,opcional,
-6,22/11,AB,carro,Aluguel Sixt (4 diárias com impostos),376.22,confirmado,Retirada do carro Sixt em SAN
-6,22/11,AB,ingresso,Joshua Tree NP (veículo),35,confirmado,Barker Dam
-6,22/11,AB,gasolina,SAN -> Joshua Tree -> LA,50,estimado,Estrada até LA
-6,22/11,AB,hospedagem,The LINE Hotel (noite 22),180,verificar,Estrada até LA
-6,22/11,AB,estacionamento,The LINE Hotel (noite 22),45,verificar,Estrada até LA
-6,22/11,AB,alimentacao,Refeições do dia,80,estimado,
-7,23/11,AB,gasolina,Koreatown -> Griffith -> Santa Monica,15,estimado,Venice e Santa Monica
-7,23/11,AB,estacionamento,Griffith Observatory,20,estimado,Trilha do Griffith Park até o Mount Hollywood
-7,23/11,AB,estacionamento,Santa Monica,15,estimado,Venice e Santa Monica
-7,23/11,AB,hospedagem,The LINE Hotel (noite 23),180,verificar,
-7,23/11,AB,estacionamento,The LINE Hotel (noite 23),45,verificar,
-7,23/11,AB,alimentacao,Refeições do dia,85,estimado,
-8,24/11,A,passeio,Channel Islands: balsa + caiaque (2x US$ 231),462,opcional,Trocar pelo dia na ilha: Channel Islands
-8,24/11,A,estacionamento,Praias e trilhas de Malibu,15,estimado,Pôr do sol em El Matador
-8,24/11,A,gasolina,LA <-> Malibu,25,estimado,Solstice Canyon
-8,24/11,A,hospedagem,The LINE Hotel (noite 24),180,verificar,
-8,24/11,A,estacionamento,The LINE Hotel (noite 24),45,verificar,
-8,24/11,A,alimentacao,Refeições do dia,85,estimado,
+1,17/11,B,transporte,Uber SAN -> Hotel del Coronado,25,estimado,Uber SAN → Hotel del Coronado
+1,17/11,B,hospedagem,Hotel del Coronado (17 a 21/11),0,confirmado,
+1,17/11,B,alimentacao,Refeições da acompanhante (se a ADP não cobrir),50,opcional,
+2,18/11,B,passeio,Caiaque em La Jolla (incluído no evento),0,confirmado,Caiaque em La Jolla
+2,18/11,B,transporte,Uber até Torrey Pines (ida e volta),50,estimado,Torrey Pines State Natural Reserve
+2,18/11,B,transporte,Uber até La Jolla Cove (ida e volta),35,estimado,Leões-marinhos em La Jolla Cove
+2,18/11,B,transporte,Uber até Sunset Cliffs (ida e volta),40,estimado,Pôr do sol em Sunset Cliffs
+2,18/11,B,alimentacao,Refeições da acompanhante nos dias 18 a 20 (se a ADP não cobrir),200,opcional,
+5,21/11,B,transporte,Uber Hotel del Coronado -> SAN,25,estimado,Retirada do carro Sixt em SAN
+5,21/11,B,carro,Aluguel Sixt (4 diárias com impostos; a reserva atual começa em 22/11),376.22,confirmado,Retirada do carro Sixt em SAN
+5,21/11,B,carro,Diária extra Sixt (retirada em 21/11; valor a confirmar),94,verificar,Retirada do carro Sixt em SAN
+5,21/11,B,ingresso,Joshua Tree NP (veículo; vale 7 dias),35,confirmado,Barker Dam
+5,21/11,B,gasolina,SAN -> Joshua Tree,30,estimado,Barker Dam
+5,21/11,B,alimentacao,Refeições do dia,80,estimado,
+5,21/11,B,gasolina,Joshua Tree -> LA,25,estimado,Estrada até LA
+5,21/11,B,hospedagem,Airbnb em LA (noite 21),220,verificar,Estrada até LA
+5,21/11,B,hospedagem,Airbnb em LA: taxa de limpeza (3 noites),120,verificar,Estrada até LA
+6,22/11,B,gasolina,Santa Monica <-> Malibu,25,estimado,Solstice Canyon
+6,22/11,B,estacionamento,Praias e trilhas de Malibu,15,estimado,Pôr do sol em El Matador
+6,22/11,B,hospedagem,Airbnb em LA (noite 22),220,verificar,
+6,22/11,B,alimentacao,Refeições do dia,85,estimado,
+7,23/11,B,gasolina,Santa Monica -> Griffith -> Venice,20,estimado,Venice e Santa Monica
+7,23/11,B,estacionamento,Griffith Observatory,20,estimado,Caminhada leve no Griffith Park
+7,23/11,B,estacionamento,Santa Monica,15,estimado,Venice e Santa Monica
+7,23/11,B,hospedagem,Airbnb em LA (noite 23),220,verificar,
+7,23/11,B,alimentacao,Refeições do dia,85,estimado,
 8,24/11,B,estacionamento,Centro de Santa Barbara,5,estimado,Santa Barbara
 8,24/11,B,gasolina,LA -> Cambria,40,estimado,Morro Rock
 8,24/11,B,hospedagem,Hotel em Cambria (noite 24),200,verificar,Pernoite em Cambria
 8,24/11,B,alimentacao,Refeições do dia,85,estimado,
-9,25/11,A,gasolina,LA -> SF pela US-101,70,estimado,
-9,25/11,A,ingresso,Point Lobos (estacionamento),10,estimado,Point Lobos
-9,25/11,A,ingresso,Pinnacles NP (veículo),30,opcional,Ou: Pinnacles National Park
-9,25/11,A,alimentacao,Refeições do dia,90,estimado,
 9,25/11,B,gasolina,Cambria -> Big Sur -> SF,60,estimado,
 9,25/11,B,ingresso,Julia Pfeiffer Burns (uso diário),10,verificar,McWay Falls
 9,25/11,B,ingresso,Point Lobos (estacionamento),10,opcional,Point Lobos
 9,25/11,B,alimentacao,Refeições do dia (almoço no Nepenthe),100,estimado,
-9,25/11,AB,hospedagem,Axiom Hotel (noite 25),155,verificar,Check-in no Axiom Hotel
-9,25/11,AB,estacionamento,Axiom Hotel (noite 25),65,verificar,Check-in no Axiom Hotel
-10,26/11,AB,ingresso,Muir Woods (2x US$ 15) + reserva de estacionamento,40,estimado,Muir Woods às 8h
-10,26/11,AB,transporte,Pedágio da Golden Gate (volta para SF),10,estimado,Marin Headlands
-10,26/11,AB,gasolina,Marin + reabastecer na devolução,30,estimado,Devolução do carro
-10,26/11,AB,alimentacao,Café da manhã e almoço,50,estimado,
-10,26/11,AB,alimentacao,Ceia de Thanksgiving (2 pessoas; menu fixo de ~US$ 75-90 por pessoa),200,estimado,Ceia de Thanksgiving
-10,26/11,AB,transporte,Uber/Waymo para a ceia,25,estimado,Ceia de Thanksgiving
-10,26/11,AB,hospedagem,Axiom Hotel (noite 26),155,verificar,
-11,27/11,AB,passeio,Aluguel de bike (2 pessoas),90,estimado,Golden Gate Bridge de bicicleta
-11,27/11,AB,transporte,Balsa Sausalito -> SF (2 pessoas),30,opcional,Balsa Sausalito → SF
-11,27/11,AB,transporte,Uber/Waymo até Lands End e volta,30,estimado,Pôr do sol em Lands End
-11,27/11,AB,passeio,Alcatraz (2x US$ 45.25),90.50,opcional,Alcatraz
-11,27/11,AB,hospedagem,Axiom Hotel (noite 27),155,verificar,
-11,27/11,AB,alimentacao,Refeições do dia,100,estimado,
-12,28/11,AB,transporte,Uber até o SFO,55,estimado,Axiom → SFO
-12,28/11,AB,alimentacao,Lanche no aeroporto,25,estimado,
-0,-,AB,carro,Taxa one-way Sixt e serviço de pedágio (se não estiverem no total),0,verificar,
+9,25/11,B,hospedagem,Seaside Inn (noite 25; total pago US$ 485.61),161.87,confirmado,Check-in no Seaside Inn
+10,26/11,B,ingresso,Muir Woods (2x US$ 15) + reserva de estacionamento,40,estimado,Muir Woods às 8h
+10,26/11,B,transporte,Pedágio da Golden Gate (volta para SF),10,estimado,Marin Headlands
+10,26/11,B,gasolina,Marin + reabastecer na devolução,30,estimado,Devolução do carro
+10,26/11,B,alimentacao,Café da manhã e almoço,50,estimado,
+10,26/11,B,alimentacao,Ceia de Thanksgiving (2 pessoas; menu fixo de ~US$ 75-90 por pessoa),200,estimado,Ceia de Thanksgiving
+10,26/11,B,transporte,Uber/Waymo para a ceia,25,estimado,Ceia de Thanksgiving
+10,26/11,B,hospedagem,Seaside Inn (noite 26),161.87,confirmado,
+11,27/11,B,passeio,Aluguel de bike (2 pessoas),90,estimado,Golden Gate Bridge de bicicleta
+11,27/11,B,transporte,Balsa Sausalito -> SF (2 pessoas),30,opcional,Balsa Sausalito → SF
+11,27/11,B,transporte,Uber/Waymo até Lands End e volta,30,estimado,Pôr do sol em Lands End
+11,27/11,B,passeio,Alcatraz (2x US$ 45.25),90.50,opcional,Alcatraz
+11,27/11,B,hospedagem,Seaside Inn (noite 27),161.87,confirmado,
+11,27/11,B,alimentacao,Refeições do dia,100,estimado,
+12,28/11,B,transporte,Uber até o SFO,55,estimado,Seaside Inn → SFO
+12,28/11,B,alimentacao,Lanche no aeroporto,25,estimado,
+0,-,B,carro,Taxa one-way Sixt e serviço de pedágio (se não estiverem no total),0,verificar,

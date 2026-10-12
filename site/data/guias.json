@@ -167,260 +167,6 @@
         }
       ]
     },
-    "dia-2-5": {
-      "intro": [
-        "Nos dias do evento, os momentos livres costumam ser cedo pela manhã ou no fim da tarde. Sem carro, o melhor é escolher um lugar por vez e ir de Uber.",
-        "A costa de La Jolla junta falésias, piscinas naturais e animais marinhos a poucos metros da calçada."
-      ],
-      "secoes": [
-        {
-          "tipo": "fazer",
-          "titulo": "Mais para fazer",
-          "itens": [
-            {
-              "nome": "Children's Pool",
-              "texto": "Pequena praia ao sul de La Jolla Cove onde focas descansam na areia. Fica a 5 minutos a pé dos leões-marinhos.",
-              "onde": "Children's Pool, La Jolla",
-              "coord": [
-                32.84755,
-                -117.2786
-              ]
-            },
-            {
-              "nome": "Sunny Jim Cave",
-              "texto": "Escadaria por dentro da falésia até uma caverna marinha, com entrada pela Cave Store. Passeio curto e diferente.",
-              "onde": "La Jolla Cove",
-              "coord": [
-                32.85045,
-                -117.27299
-              ]
-            },
-            {
-              "nome": "Warwick's",
-              "texto": "Livraria de família em La Jolla, citada no plano original. Boa parada antes do café.",
-              "onde": "Girard Ave, La Jolla",
-              "coord": [
-                32.84543,
-                -117.27432
-              ]
-            },
-            {
-              "nome": "Piscinas naturais em Cabrillo",
-              "texto": "As marés mais baixas do outono e do inverno revelam polvos, estrelas e anêmonas. Confira a tábua de marés antes de ir.",
-              "onde": "Cabrillo National Monument",
-              "coord": [
-                32.67223,
-                -117.24094
-              ],
-              "maps": "Cabrillo National Monument Tide Pools"
-            }
-          ]
-        },
-        {
-          "tipo": "cafe",
-          "titulo": "Café",
-          "itens": [
-            {
-              "nome": "Bird Rock Coffee Roasters",
-              "texto": "Torrefação premiada de San Diego. O sanduíche de café da manhã é o mais pedido.",
-              "onde": "5627 La Jolla Blvd, La Jolla",
-              "coord": [
-                32.82594,
-                -117.27666
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "dica",
-          "titulo": "Dicas práticas",
-          "itens": [
-            {
-              "nome": "Distância dos animais",
-              "texto": "Leões-marinhos e focas são protegidos por lei federal. Fique a vários metros e nunca fique entre eles e o mar."
-            },
-            {
-              "nome": "O cheiro é normal",
-              "texto": "As pedras de La Jolla Cove têm cheiro forte por causa das aves e dos leões-marinhos."
-            },
-            {
-              "nome": "Vá de Uber",
-              "texto": "Estacionar em La Jolla é difícil. Sem carro nesses dias, o Uber resolve."
-            }
-          ]
-        }
-      ]
-    },
-    "dia-6": {
-      "intro": [
-        "Joshua Tree fica onde dois desertos se encontram, o Mojave e o Colorado. As árvores que dão nome ao parque são, na verdade, uma espécie de iúca que só cresce nesta região.",
-        "Em novembro o calor já passou: dias por volta de 18°C e noites frias. É a melhor época para trilhas entre os blocos de granito."
-      ],
-      "secoes": [
-        {
-          "tipo": "fazer",
-          "titulo": "Mais para fazer",
-          "itens": [
-            {
-              "nome": "Cholla Cactus Garden",
-              "texto": "Trilha curta entre milhares de cactos que brilham com o sol baixo. Não encoste: os espinhos se soltam com facilidade.",
-              "onde": "Cholla Cactus Garden, Joshua Tree",
-              "coord": [
-                33.9254,
-                -115.9289
-              ]
-            },
-            {
-              "nome": "Skull Rock",
-              "texto": "Rocha em forma de caveira à beira da estrada. Parada de 10 minutos.",
-              "onde": "Skull Rock, Joshua Tree",
-              "coord": [
-                33.9989,
-                -116.0597
-              ]
-            },
-            {
-              "nome": "Arch Rock",
-              "texto": "Arco natural de granito numa trilha de 2 km perto do White Tank.",
-              "onde": "Arch Rock, Joshua Tree",
-              "coord": [
-                33.9853,
-                -116.0169
-              ]
-            },
-            {
-              "nome": "Alternativa: Anza-Borrego",
-              "texto": "Parque estadual no deserto a leste de San Diego, com esculturas gigantes de metal espalhadas por Borrego Springs e um dos céus mais escuros da Califórnia. Ir por lá até Joshua Tree acrescenta cerca de 1h30 ao dia.",
-              "fontes": [
-                "yt-bmtm-california-20-paradas"
-              ],
-              "onde": "Borrego Springs",
-              "verificar": "Avaliar se cabe no dia",
-              "coord": [
-                33.25486,
-                -116.35695
-              ],
-              "maps": "Anza-Borrego Desert State Park Visitor Center"
-            }
-          ]
-        },
-        {
-          "tipo": "cafe",
-          "titulo": "Café",
-          "itens": [
-            {
-              "nome": "Joshua Tree Coffee Company",
-              "texto": "Torrefação na cidade de Joshua Tree, a caminho da entrada oeste. A melhor opção antes de entrar no parque.",
-              "onde": "Joshua Tree, CA",
-              "coord": [
-                34.12338,
-                -116.31287
-              ]
-            },
-            {
-              "nome": "Frontier Cafe",
-              "texto": "Bebidas orgânicas, sanduíches e doces feitos na casa.",
-              "onde": "Yucca Valley, CA",
-              "coord": [
-                34.11958,
-                -116.44607
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "comer",
-          "titulo": "Onde comer",
-          "itens": [
-            {
-              "nome": "Crossroads Cafe",
-              "texto": "Café da manhã e almoço clássicos na cidade de Joshua Tree. Bom para levar sanduíches para o parque.",
-              "onde": "Joshua Tree, CA",
-              "coord": [
-                34.13468,
-                -116.31697
-              ]
-            },
-            {
-              "nome": "La Copine",
-              "texto": "Brunch muito elogiado em Yucca Valley. Funciona em poucos dias da semana.",
-              "onde": "Yucca Valley, CA",
-              "verificar": "Confirmar se abre no domingo",
-              "coord": [
-                34.23833,
-                -116.44003
-              ]
-            },
-            {
-              "nome": "Jantar de chegada: tacos",
-              "texto": "Depois de 3 horas de estrada, um taco truck perto do hotel resolve o jantar. Há vários espalhados pela cidade.",
-              "fontes": [
-                "yt-la-travel-guide-10-lugares"
-              ],
-              "onde": "Koreatown, Los Angeles",
-              "maps": "taco truck, Koreatown, Los Angeles",
-              "sem_coord": true
-            }
-          ]
-        },
-        {
-          "tipo": "levar",
-          "titulo": "O que levar",
-          "itens": [
-            {
-              "nome": "Água",
-              "texto": "Pelo menos 3 litros por pessoa. Dentro do parque não há água nem lanchonete."
-            },
-            {
-              "nome": "Camadas de roupa",
-              "texto": "Pode estar 18°C ao meio-dia e perto de 5°C depois do pôr do sol.",
-              "fontes": [
-                "yt-bmtm-california-20-paradas"
-              ]
-            },
-            {
-              "nome": "Lanterna",
-              "texto": "Para a volta das trilhas no fim da tarde e para ver as estrelas."
-            }
-          ]
-        },
-        {
-          "tipo": "dica",
-          "titulo": "Dicas práticas",
-          "itens": [
-            {
-              "nome": "Mapa offline",
-              "texto": "Quase não há sinal de celular no parque. Baixe a região no Google Maps antes de sair."
-            },
-            {
-              "nome": "Abasteça antes",
-              "texto": "Encha o tanque em Yucca Valley ou Joshua Tree. Não há posto dentro do parque.",
-              "fontes": [
-                "yt-bmtm-california-20-paradas"
-              ]
-            },
-            {
-              "nome": "Entre pela West Entrance",
-              "texto": "Fica na cidade de Joshua Tree e leva direto a Hidden Valley, Barker Dam e Keys View.",
-              "onde": "Joshua Tree West Entrance Station",
-              "coord": [
-                34.0779,
-                -116.2381
-              ],
-              "maps": "Joshua Tree West Entrance Station"
-            },
-            {
-              "nome": "Passe anual dos parques",
-              "texto": "O America the Beautiful só compensa visitando muitos parques. Aqui as entradas somam US$ 65 a 95 (Joshua Tree, Muir Woods e, no Plano A, Pinnacles), menos que o passe, que em 2026 ficou bem mais caro para quem não mora nos EUA.",
-              "fontes": [
-                "yt-peterowen-norcal-top10"
-              ],
-              "verificar": "Confirmar o preço do passe para estrangeiros"
-            }
-          ]
-        }
-      ]
-    },
     "dia-7": {
       "intro": [
         "No último dia em LA, a cidade pelo lado de que vocês mais gostam: o Griffith Park, um dos maiores parques urbanos dos EUA, cheio de trilhas, e a costa de Venice e Santa Monica.",
@@ -499,185 +245,7 @@
         }
       ]
     },
-    "dia-8-a": {
-      "intro": [
-        "Malibu é conhecida pelas praias, mas o melhor dela está nas montanhas logo atrás. As Santa Monica Mountains descem direto até o Pacífico.",
-        "Em uma segunda-feira de novembro as trilhas ficam vazias e os estacionamentos têm vaga."
-      ],
-      "secoes": [
-        {
-          "tipo": "fazer",
-          "titulo": "Mais para fazer",
-          "itens": [
-            {
-              "nome": "Zuma Beach",
-              "texto": "Praia larga e aberta para caminhar no fim da tarde.",
-              "onde": "Zuma Beach, Malibu",
-              "coord": [
-                34.02144,
-                -118.83103
-              ]
-            },
-            {
-              "nome": "Malibu Pier",
-              "texto": "Píer histórico com surfistas dos dois lados.",
-              "onde": "Malibu Pier",
-              "coord": [
-                34.03643,
-                -118.67614
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "cafe",
-          "titulo": "Café",
-          "itens": [
-            {
-              "nome": "Caffe Luxxe",
-              "texto": "Café de bairro com pátio e estacionamento fácil ao longo da PCH.",
-              "onde": "Malibu",
-              "coord": [
-                34.036,
-                -118.6865
-              ]
-            },
-            {
-              "nome": "Sunlife Organics",
-              "texto": "Smoothies e bowls de açaí para depois da trilha.",
-              "onde": "3835 Cross Creek Rd, Malibu",
-              "coord": [
-                34.03607,
-                -118.68581
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "comer",
-          "titulo": "Onde comer",
-          "itens": [
-            {
-              "nome": "Malibu Farm Pier Cafe",
-              "texto": "Almoço na ponta do píer, com o mar dos dois lados.",
-              "onde": "Malibu Pier",
-              "coord": [
-                34.03563,
-                -118.67564
-              ]
-            },
-            {
-              "nome": "Neptune's Net",
-              "texto": "Barraca de frutos do mar na divisa de condados, perto de Point Mugu. Ponto clássico de motociclistas.",
-              "onde": "PCH, County Line",
-              "verificar": "Confirmar horário",
-              "coord": [
-                34.0446,
-                -118.9666
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "levar",
-          "titulo": "O que levar",
-          "itens": [
-            {
-              "nome": "2 litros de água por pessoa",
-              "texto": "Sandstone Peak tem pouca sombra."
-            },
-            {
-              "nome": "Tênis com boa sola",
-              "texto": "O trecho final até o cume é uma escalada curta em rocha."
-            }
-          ]
-        },
-        {
-          "tipo": "dica",
-          "titulo": "Dicas práticas",
-          "itens": [
-            {
-              "nome": "Trailhead certo",
-              "texto": "Sandstone Peak começa no estacionamento Mishe Mokwa, na Yerba Buena Road.",
-              "onde": "Sandstone Peak Trailhead, Yerba Buena Rd",
-              "maps": "Sandstone Peak Trailhead, Malibu",
-              "coord": [
-                34.1209,
-                -118.9319
-              ]
-            },
-            {
-              "nome": "Estacionar na PCH",
-              "texto": "Leia as placas. Muitas praias têm estacionamento pago ou horário restrito."
-            }
-          ]
-        },
-        {
-          "tipo": "fazer",
-          "titulo": "Se trocarem pela ilha (Channel Islands)",
-          "itens": [
-            {
-              "nome": "Cavern Point Loop",
-              "texto": "Loop de 3 km no alto das falésias, com vista das cavernas onde vocês remaram.",
-              "stats": "3 km",
-              "onde": "Scorpion Anchorage",
-              "coord": [
-                34.04936,
-                -119.55551
-              ]
-            },
-            {
-              "nome": "Potato Harbor",
-              "texto": "Trilha mais longa até um mirante sobre uma enseada em forma de batata.",
-              "stats": "8 km ida e volta",
-              "onde": "Santa Cruz Island",
-              "coord": [
-                34.01846,
-                -119.7751
-              ]
-            },
-            {
-              "nome": "Alternativa: Santa Catalina Island",
-              "texto": "Ilha a 35 km da costa, com balsa saindo de San Pedro ou Long Beach. Águas claras com florestas de algas, o Casino de Avalon, de 1929, e bisões soltos nas colinas. Serve de plano B se a balsa das Channel Islands não sair na terça.",
-              "onde": "Avalon, Santa Catalina Island",
-              "fontes": [
-                "yt-unseen-california"
-              ],
-              "verificar": "Confirmar horários da balsa em 24/11",
-              "coord": [
-                33.3428,
-                -118.3282
-              ]
-            },
-            {
-              "nome": "Almoço e água para o dia todo",
-              "texto": "Não há lanchonete na ilha e quase não há água potável."
-            },
-            {
-              "nome": "Remédio para enjoo",
-              "texto": "O canal pode ficar agitado. Tome antes de embarcar."
-            },
-            {
-              "nome": "Saco estanque e camadas",
-              "texto": "Para o celular no caiaque e para o vento frio na volta."
-            },
-            {
-              "nome": "Chegue 1h antes",
-              "texto": "Check-in da balsa, check-in do caiaque e café tomam tempo."
-            },
-            {
-              "nome": "Entre cedo na fila",
-              "texto": "A fila do barco começa 20 a 30 minutos antes. Os primeiros escolhem os lugares no deck."
-            },
-            {
-              "nome": "Não alimente as raposas",
-              "texto": "Elas circulam perto da área de piquenique e roubam comida de mochilas abertas."
-            }
-          ]
-        }
-      ]
-    },
-    "dia-8-b": {
+    "dia-8": {
       "intro": [
         "Um dia sem pressa pela Costa Central, a parte da Califórnia entre LA e Big Sur que muita gente pula.",
         "Termina em Cambria, uma vila de pinheiros à beira-mar, a meia hora dos elefantes-marinhos."
@@ -865,181 +433,7 @@
         }
       ]
     },
-    "dia-9-a": {
-      "intro": [
-        "Dia de estrada pela rota mais rápida. A ideia é escolher uma única parada boa para esticar as pernas, sem tentar ver tudo.",
-        "Point Lobos é mar e falésia; Pinnacles é rocha vulcânica, cavernas e condores."
-      ],
-      "secoes": [
-        {
-          "tipo": "fazer",
-          "titulo": "Mais para fazer",
-          "itens": [
-            {
-              "nome": "Cypress Grove Trail",
-              "texto": "Loop curto em Point Lobos entre ciprestes de Monterey, uma das duas florestas naturais da espécie.",
-              "stats": "1,3 km",
-              "onde": "Point Lobos",
-              "coord": [
-                36.5173,
-                -121.94776
-              ]
-            },
-            {
-              "nome": "17-Mile Drive",
-              "texto": "Estrada cênica paga entre Pacific Grove e Carmel, com campos de golfe, costões e o cipreste solitário, o Lone Cypress.",
-              "fontes": [
-                "yt-bmtm-california-20-paradas"
-              ],
-              "onde": "17-Mile Drive, Pebble Beach",
-              "verificar": "Confirmar o valor da entrada por carro",
-              "coord": [
-                36.60845,
-                -121.95308
-              ]
-            },
-            {
-              "nome": "Monterey Bay Aquarium",
-              "texto": "Um dos aquários mais famosos do mundo, com a floresta de algas e as lontras resgatadas. Bom se o tempo estiver ruim na costa.",
-              "fontes": [
-                "yt-bmtm-california-20-paradas"
-              ],
-              "onde": "Monterey Bay Aquarium",
-              "verificar": "Comprar ingresso e confirmar horário em 25/11",
-              "coord": [
-                36.61809,
-                -121.90167
-              ]
-            },
-            {
-              "nome": "Balconies Cave",
-              "texto": "Caverna de rochas desabadas pela entrada oeste de Pinnacles. Pode fechar depois de chuva forte.",
-              "stats": "4 km",
-              "onde": "Pinnacles West Entrance",
-              "coord": [
-                36.47714,
-                -121.22646
-              ]
-            },
-            {
-              "nome": "Elkhorn Slough",
-              "texto": "Estuário com lontras-marinhas perto de Moss Landing, a caminho de SF.",
-              "onde": "Moss Landing",
-              "coord": [
-                36.81247,
-                -121.77582
-              ]
-            },
-            {
-              "nome": "Opção: voltar a SF pela Highway 1",
-              "texto": "Em vez da US-101, siga a costa por Santa Cruz: Natural Bridges State Beach (arco natural e piscinas de maré), o farol de Pigeon Point e a Devil's Slide Trail, antiga estrada transformada em calçadão. Acrescenta cerca de 1 hora, e é véspera do Thanksgiving.",
-              "fontes": [
-                "yt-ctml-pch-20-paradas"
-              ],
-              "tempos": {
-                "yt-ctml-pch-20-paradas": 70
-              },
-              "onde": "Natural Bridges State Beach, Santa Cruz",
-              "coord": [
-                36.95208,
-                -122.05713
-              ],
-              "maps": "Natural Bridges State Beach, Santa Cruz"
-            }
-          ]
-        },
-        {
-          "tipo": "cafe",
-          "titulo": "Café",
-          "itens": [
-            {
-              "nome": "Carmel Coffee House & Roasting Co",
-              "texto": "Café torrado na casa, no centro de Carmel.",
-              "onde": "Ocean Ave, Carmel-by-the-Sea",
-              "coord": [
-                36.55515,
-                -121.92052
-              ]
-            },
-            {
-              "nome": "Café Carmel",
-              "texto": "Padaria e café na avenida principal.",
-              "onde": "Ocean Ave, Carmel-by-the-Sea",
-              "coord": [
-                36.55527,
-                -121.92142
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "comer",
-          "titulo": "Onde comer",
-          "itens": [
-            {
-              "nome": "La Plaza Bakery & Cafe",
-              "texto": "Padaria mexicana com pan dulce e pratos de café da manhã. Para quem for a Pinnacles.",
-              "onde": "Soledad",
-              "coord": [
-                36.4247,
-                -121.3263
-              ]
-            },
-            {
-              "nome": "Taqueria Pacheco",
-              "texto": "Tacos simples em Soledad, perto da entrada oeste do parque.",
-              "onde": "Soledad",
-              "coord": [
-                36.42826,
-                -121.33094
-              ]
-            },
-            {
-              "nome": "In-N-Out Burger",
-              "texto": "A rede de hambúrguer clássica da Califórnia aparece ao longo da US-101. Peça o Animal Style, com cebola grelhada e molho da casa.",
-              "fontes": [
-                "yt-la-travel-guide-10-lugares"
-              ],
-              "onde": "Gilroy, CA",
-              "maps": "In-N-Out Burger, Gilroy, CA",
-              "coord": [
-                37.02379,
-                -121.56419
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "dica",
-          "titulo": "Dicas práticas",
-          "itens": [
-            {
-              "nome": "Point Lobos enche cedo",
-              "texto": "O estacionamento interno é pequeno. Se lotar, estacione no acostamento da Highway 1 e entre a pé."
-            },
-            {
-              "nome": "Lanterna para Pinnacles",
-              "texto": "Nas cavernas a lanterna de cabeça é obrigatória."
-            },
-            {
-              "nome": "Union Square à noite",
-              "texto": "O Axiom fica a poucas quadras do Tenderloin. O vídeo relata ruas vazias, pessoas em situação de rua e uso de drogas no centro. À noite, prefira Uber mesmo para trajetos curtos.",
-              "fontes": [
-                "yt-spv-sf-1-dia"
-              ]
-            },
-            {
-              "nome": "Nada visível no carro",
-              "texto": "Arrombamentos de carros são comuns em SF, inclusive em mirantes. Não deixe malas nem mochilas no carro estacionado, nem por poucos minutos.",
-              "fontes": [
-                "yt-spv-sf-1-dia"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "dia-9-b": {
+    "dia-9": {
       "intro": [
         "O trecho de Big Sur entre Cambria e Carmel tem cerca de 150 km de curvas sobre o Pacífico. Não há cidades, quase não há sinal e cada mirante pede uma parada.",
         "Saindo cedo, dá para fazer tudo sem pressa e chegar a SF antes de escurecer."
@@ -1216,7 +610,7 @@
             },
             {
               "nome": "Union Square à noite",
-              "texto": "O Axiom fica a poucas quadras do Tenderloin. O vídeo relata ruas vazias, pessoas em situação de rua e uso de drogas no centro. À noite, prefira Uber mesmo para trajetos curtos.",
+              "texto": "O vídeo relata ruas vazias, pessoas em situação de rua e uso de drogas perto de Union Square e do Tenderloin. À noite, prefira Uber mesmo para trajetos curtos.",
               "fontes": [
                 "yt-spv-sf-1-dia"
               ]
@@ -1499,7 +893,7 @@
             },
             {
               "nome": "Se sobrar tempo: Chinatown",
-              "texto": "Entrada pelo Dragon Gate e uma fábrica de biscoitos da sorte. Fica a poucas quadras do Axiom.",
+              "texto": "Entrada pelo Dragon Gate e uma fábrica de biscoitos da sorte. Fica a ~15 min de Uber do Seaside Inn.",
               "onde": "Dragon Gate, Chinatown, San Francisco",
               "maps": "Chinatown Gate, San Francisco",
               "fontes": [
@@ -1674,6 +1068,365 @@
             {
               "nome": "Café no aeroporto",
               "texto": "Os quiosques do SFO abrem cedo. Tome café depois do controle de segurança."
+            }
+          ]
+        }
+      ]
+    },
+    "dia-5": {
+      "intro": [
+        "Joshua Tree fica onde dois desertos se encontram, o Mojave e o Colorado. As árvores que dão nome ao parque são, na verdade, uma espécie de iúca que só cresce nesta região.",
+        "Em novembro o calor já passou: dias por volta de 18°C e noites frias. É a melhor época para trilhas entre os blocos de granito."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Cholla Cactus Garden",
+              "texto": "Trilha curta entre milhares de cactos que brilham com o sol baixo. Não encoste: os espinhos se soltam com facilidade.",
+              "onde": "Cholla Cactus Garden, Joshua Tree",
+              "coord": [
+                33.9254,
+                -115.9289
+              ]
+            },
+            {
+              "nome": "Skull Rock",
+              "texto": "Rocha em forma de caveira à beira da estrada. Parada de 10 minutos.",
+              "onde": "Skull Rock, Joshua Tree",
+              "coord": [
+                33.9989,
+                -116.0597
+              ]
+            },
+            {
+              "nome": "Arch Rock",
+              "texto": "Arco natural de granito numa trilha de 2 km perto do White Tank.",
+              "onde": "Arch Rock, Joshua Tree",
+              "coord": [
+                33.9853,
+                -116.0169
+              ]
+            },
+            {
+              "nome": "Alternativa: Anza-Borrego",
+              "texto": "Parque estadual no deserto a leste de San Diego, com esculturas gigantes de metal espalhadas por Borrego Springs e um dos céus mais escuros da Califórnia. Ir por lá até Joshua Tree acrescenta cerca de 1h30 ao dia.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ],
+              "onde": "Borrego Springs",
+              "verificar": "Avaliar se cabe no dia",
+              "coord": [
+                33.25486,
+                -116.35695
+              ],
+              "maps": "Anza-Borrego Desert State Park Visitor Center"
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Joshua Tree Coffee Company",
+              "texto": "Torrefação na cidade de Joshua Tree, a caminho da entrada oeste. A melhor opção antes de entrar no parque.",
+              "onde": "Joshua Tree, CA",
+              "coord": [
+                34.12338,
+                -116.31287
+              ]
+            },
+            {
+              "nome": "Frontier Cafe",
+              "texto": "Bebidas orgânicas, sanduíches e doces feitos na casa.",
+              "onde": "Yucca Valley, CA",
+              "coord": [
+                34.11958,
+                -116.44607
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "Crossroads Cafe",
+              "texto": "Café da manhã e almoço clássicos na cidade de Joshua Tree. Bom para levar sanduíches para o parque.",
+              "onde": "Joshua Tree, CA",
+              "coord": [
+                34.13468,
+                -116.31697
+              ]
+            },
+            {
+              "nome": "La Copine",
+              "texto": "Brunch muito elogiado em Yucca Valley. Funciona em poucos dias da semana.",
+              "onde": "Yucca Valley, CA",
+              "verificar": "Confirmar se abre no sábado",
+              "coord": [
+                34.23833,
+                -116.44003
+              ]
+            },
+            {
+              "nome": "Jantar de chegada: tacos",
+              "texto": "Depois de 3 horas de estrada, um taco truck perto do hotel resolve o jantar. Há vários espalhados pela cidade.",
+              "fontes": [
+                "yt-la-travel-guide-10-lugares"
+              ],
+              "onde": "Koreatown, Los Angeles",
+              "maps": "taco truck, Koreatown, Los Angeles",
+              "sem_coord": true
+            }
+          ]
+        },
+        {
+          "tipo": "levar",
+          "titulo": "O que levar",
+          "itens": [
+            {
+              "nome": "Água",
+              "texto": "Pelo menos 3 litros por pessoa. Dentro do parque não há água nem lanchonete."
+            },
+            {
+              "nome": "Camadas de roupa",
+              "texto": "Pode estar 18°C ao meio-dia e perto de 5°C depois do pôr do sol.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ]
+            },
+            {
+              "nome": "Lanterna",
+              "texto": "Para a volta das trilhas no fim da tarde e para ver as estrelas."
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Mapa offline",
+              "texto": "Quase não há sinal de celular no parque. Baixe a região no Google Maps antes de sair."
+            },
+            {
+              "nome": "Abasteça antes",
+              "texto": "Encha o tanque em Yucca Valley ou Joshua Tree. Não há posto dentro do parque.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ]
+            },
+            {
+              "nome": "Entre pela West Entrance",
+              "texto": "Fica na cidade de Joshua Tree e leva direto a Hidden Valley, Barker Dam e Keys View.",
+              "onde": "Joshua Tree West Entrance Station",
+              "coord": [
+                34.0779,
+                -116.2381
+              ],
+              "maps": "Joshua Tree West Entrance Station"
+            },
+            {
+              "nome": "Passe anual dos parques",
+              "texto": "O America the Beautiful só compensa visitando muitos parques. Aqui as entradas somam US$ 65 a 95 (Joshua Tree, Muir Woods e Point Lobos), menos que o passe, que em 2026 ficou bem mais caro para quem não mora nos EUA.",
+              "fontes": [
+                "yt-peterowen-norcal-top10"
+              ],
+              "verificar": "Confirmar o preço do passe para estrangeiros"
+            }
+          ]
+        }
+      ]
+    },
+    "dia-2-4": {
+      "intro": [
+        "Nos dias do evento, os momentos livres costumam ser cedo pela manhã ou no fim da tarde. Sem carro, o melhor é escolher um lugar por vez e ir de Uber.",
+        "A costa de La Jolla junta falésias, piscinas naturais e animais marinhos a poucos metros da calçada."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Children's Pool",
+              "texto": "Pequena praia ao sul de La Jolla Cove onde focas descansam na areia. Fica a 5 minutos a pé dos leões-marinhos.",
+              "onde": "Children's Pool, La Jolla",
+              "coord": [
+                32.84755,
+                -117.2786
+              ]
+            },
+            {
+              "nome": "Sunny Jim Cave",
+              "texto": "Escadaria por dentro da falésia até uma caverna marinha, com entrada pela Cave Store. Passeio curto e diferente.",
+              "onde": "La Jolla Cove",
+              "coord": [
+                32.85045,
+                -117.27299
+              ]
+            },
+            {
+              "nome": "Warwick's",
+              "texto": "Livraria de família em La Jolla, citada no plano original. Boa parada antes do café.",
+              "onde": "Girard Ave, La Jolla",
+              "coord": [
+                32.84543,
+                -117.27432
+              ]
+            },
+            {
+              "nome": "Piscinas naturais em Cabrillo",
+              "texto": "As marés mais baixas do outono e do inverno revelam polvos, estrelas e anêmonas. Confira a tábua de marés antes de ir.",
+              "onde": "Cabrillo National Monument",
+              "coord": [
+                32.67223,
+                -117.24094
+              ],
+              "maps": "Cabrillo National Monument Tide Pools"
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Bird Rock Coffee Roasters",
+              "texto": "Torrefação premiada de San Diego. O sanduíche de café da manhã é o mais pedido.",
+              "onde": "5627 La Jolla Blvd, La Jolla",
+              "coord": [
+                32.82594,
+                -117.27666
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Distância dos animais",
+              "texto": "Leões-marinhos e focas são protegidos por lei federal. Fique a vários metros e nunca fique entre eles e o mar."
+            },
+            {
+              "nome": "O cheiro é normal",
+              "texto": "As pedras de La Jolla Cove têm cheiro forte por causa das aves e dos leões-marinhos."
+            },
+            {
+              "nome": "Vá de Uber",
+              "texto": "Estacionar em La Jolla é difícil. Sem carro nesses dias, o Uber resolve."
+            }
+          ]
+        }
+      ]
+    },
+    "dia-6": {
+      "intro": [
+        "Malibu é conhecida pelas praias, mas o melhor dela está nas montanhas logo atrás. As Santa Monica Mountains descem direto até o Pacífico.",
+        "Em um domingo de novembro as trilhas ainda têm vaga cedo; vá antes das 10h."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Zuma Beach",
+              "texto": "Praia larga e aberta para caminhar no fim da tarde.",
+              "onde": "Zuma Beach, Malibu",
+              "coord": [
+                34.02144,
+                -118.83103
+              ]
+            },
+            {
+              "nome": "Malibu Pier",
+              "texto": "Píer histórico com surfistas dos dois lados.",
+              "onde": "Malibu Pier",
+              "coord": [
+                34.03643,
+                -118.67614
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Caffe Luxxe",
+              "texto": "Café de bairro com pátio e estacionamento fácil ao longo da PCH.",
+              "onde": "Malibu",
+              "coord": [
+                34.036,
+                -118.6865
+              ]
+            },
+            {
+              "nome": "Sunlife Organics",
+              "texto": "Smoothies e bowls de açaí para depois da trilha.",
+              "onde": "3835 Cross Creek Rd, Malibu",
+              "coord": [
+                34.03607,
+                -118.68581
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "Malibu Farm Pier Cafe",
+              "texto": "Almoço na ponta do píer, com o mar dos dois lados.",
+              "onde": "Malibu Pier",
+              "coord": [
+                34.03563,
+                -118.67564
+              ]
+            },
+            {
+              "nome": "Neptune's Net",
+              "texto": "Barraca de frutos do mar na divisa de condados, perto de Point Mugu. Ponto clássico de motociclistas.",
+              "onde": "PCH, County Line",
+              "verificar": "Confirmar horário",
+              "coord": [
+                34.0446,
+                -118.9666
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "levar",
+          "titulo": "O que levar",
+          "itens": [
+            {
+              "nome": "Água e protetor solar",
+              "texto": "Solstice Canyon tem pouca sombra no meio do dia."
+            },
+            {
+              "nome": "Casaco leve",
+              "texto": "Ventava forte em Point Dume e El Matador no fim da tarde."
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Estacionar na PCH",
+              "texto": "Leia as placas. Muitas praias têm estacionamento pago ou horário restrito."
             }
           ]
         }

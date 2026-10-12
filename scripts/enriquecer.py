@@ -145,6 +145,8 @@ def hoteis(d):
         except Exception as e:
             print(f"  ✗ {h['nome']}: {e}")
     for b in d.get("busca_hoteis", []):
+        if not b.get("location_key"):
+            continue  # busca sem Tripadvisor (ex.: Airbnb): só links e `encontrados`
         q = urllib.parse.urlencode({"location_key": b["location_key"], "limit": 30, "sort": "best_value"})
         try:
             lista = get(f"https://data.xotelo.com/api/list?{q}")["result"]["list"]

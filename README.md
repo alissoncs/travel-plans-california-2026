@@ -8,12 +8,12 @@
 
 | Item | Status |
 |---|---|
-| Hotel San Diego (Hotel del Coronado, 17–22/11) | ✅ Pago pela ADP |
-| Hotel LA (The LINE, 22–25/11) | ✅ Reservado — avaliar cancelar 3ª noite (Plano B) |
-| Hotel SF (Axiom, 25–28/11) | ✅ Reservado |
-| Carro Sixt (SAN 22/11 → SF 26/11) | ✅ Reservado — confirmar horário de devolução no Thanksgiving |
+| Hotel San Diego (Hotel del Coronado, 17–21/11) | ✅ Pago pela ADP |
+| Airbnb LA (21–24/11, 3 noites) | ⏳ A reservar |
+| Hotel SF (Seaside Inn, 25–28/11) | ✅ Reservado (US$ 485,61) |
+| Carro Sixt (reserva SAN 22/11 → SF 26/11) | ✅ Reservado — antecipar a retirada para 21/11 e confirmar a devolução |
 | Voo volta DL 1598 (SFO 28/11 07:05) | ✅ |
-| Escolha Plano A × Plano B | ⏳ Pendente |
+| Plano escolhido | ✅ Plano B |
 | Reservas urgentes (Alcatraz, Muir Woods, ceia, Channel Islands) | ⏳ Ver [reservas.md](reservas.md) |
 
 ## Primeiros passos

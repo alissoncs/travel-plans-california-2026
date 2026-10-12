@@ -1,7 +1,7 @@
 "use client";
 import { Icon } from "../Icons";
 import { useTrip } from "../TripProvider";
-import { cityOf, dayMonth, dayMonthNumeric, gmaps, nightsBetween, usd, weekday } from "@/lib/format";
+import { airbnbSearch, bookingSearch, cityOf, dayMonth, dayMonthNumeric, gmaps, nightsBetween, usd, weekday } from "@/lib/format";
 
 export default function Hotels() {
   const { itinerary, plan } = useTrip();
@@ -34,6 +34,12 @@ export default function Hotels() {
               <a href={gmaps(lodging.nome, cityOf(lodging))} target="_blank" rel="noopener">
                 <Icon name="pin" /> Google Maps
               </a>
+              <a href={bookingSearch(`${lodging.nome}, ${cityOf(lodging)}`, lodging.checkin, lodging.checkout)} target="_blank" rel="noopener">
+                Buscar no Booking
+              </a>
+              <a href={airbnbSearch(`${cityOf(lodging)}, CA`, lodging.checkin, lodging.checkout)} target="_blank" rel="noopener">
+                Buscar no Airbnb
+              </a>
             </div>
             {!!lodging.precos?.length && (
               <>
@@ -58,6 +64,29 @@ export default function Hotels() {
             <h3>{search.titulo}</h3>
             <span className="muted small num">{dayMonth(search.checkin)}</span>
           </div>
+          {!!search.encontrados?.length && (
+            <div className="list">
+              {search.encontrados.map((found) => (
+                <div key={found.url} className="row">
+                  <span className="txt">
+                    <a className="t" href={found.url} target="_blank" rel="noopener">{found.nome}</a>
+                    <span className="s num">
+                      {found.tipo}
+                      {found.nota ? ` · Nota ${found.nota}` : ""}
+                      {found.avaliacoes ? ` · ${found.avaliacoes.toLocaleString("pt-BR")} avaliações` : ""} · {found.localizacao}
+                    </span>
+                    {found.pros.map((text) => (
+                      <span key={text} className="s">＋ {text}</span>
+                    ))}
+                    {found.contras.map((text) => (
+                      <span key={text} className="s">－ {text}</span>
+                    ))}
+                  </span>
+                  <span className="end rate num">{found.diaria_usd ? usd(found.diaria_usd) : "sem preço"}</span>
+                </div>
+              ))}
+            </div>
+          )}
           {search.opcoes?.length ? (
             <>
               <div className="list">
@@ -80,10 +109,13 @@ export default function Hotels() {
               <p className="fine">Menor diária por hotel, consultada em {search.precos_em && dayMonthNumeric(search.precos_em)}. Preços mudam com frequência.</p>
             </>
           ) : (
-            <p className="muted">Sem preços ainda.</p>
+            !search.encontrados?.length && <p className="muted">Sem preços ainda.</p>
           )}
           {!!search.busca_externa?.length && (
             <div className="btns">
+              <a className="btn" href={airbnbSearch(search.cidade, search.checkin, search.checkout)} target="_blank" rel="noopener">
+                Buscar no Airbnb
+              </a>
               {search.busca_externa.map((link) => (
                 <a key={link.nome} className="btn" href={link.url} target="_blank" rel="noopener">
                   Buscar no {link.nome}

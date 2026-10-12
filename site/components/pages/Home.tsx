@@ -53,9 +53,6 @@ export default function Home() {
           {itinerary.planos[plan].nome} {viagem.plano_recomendado === plan && <span className="tag">Recomendado</span>}
         </h3>
         <p className="muted small">{itinerary.planos[plan].resumo}</p>
-        <p className="small">
-          Troque o plano no seletor <b>{Object.keys(itinerary.planos).join(" / ")}</b> no topo.
-        </p>
       </div>
       <div className="section">
         <div className="section-head">
