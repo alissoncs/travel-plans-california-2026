@@ -216,21 +216,6 @@
           ]
         },
         {
-          "tipo": "cafe",
-          "titulo": "Café",
-          "itens": [
-            {
-              "nome": "Alfred Coffee",
-              "texto": "Fica dentro do The LINE e abre às 6:30. Ideal para sair cedo para a trilha.",
-              "onde": "3515 Wilshire Blvd, Koreatown",
-              "coord": [
-                34.06203,
-                -118.30114
-              ]
-            }
-          ]
-        },
-        {
           "tipo": "dica",
           "titulo": "Dicas práticas",
           "itens": [
@@ -239,6 +224,77 @@
               "texto": "LA é enorme. De manhã o lado do Griffith, à tarde a costa: assim vocês atravessam a cidade uma vez só e fogem do trânsito.",
               "fontes": [
                 "yt-la-travel-guide-10-lugares"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café e almoço perto do hotel",
+          "itens": [
+            {
+              "nome": "Menotti's Coffee Stop",
+              "texto": "Cortado e café coado na Windward Ave, a poucos minutos da Ocean Front Walk.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Menotti's Coffee Stop, 56 Windward Ave, Venice",
+              "verificar": "Confirmar horário",
+              "coord": [
+                33.9873,
+                -118.47265
+              ]
+            },
+            {
+              "nome": "3 Square Cafe + Bakery",
+              "texto": "Almoço ou café da tarde na Abbot Kinney, depois da volta do Griffith.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "3 Square Cafe, Abbot Kinney Blvd, Venice",
+              "verificar": "Confirmar horário",
+              "sem_coord": true
+            }
+          ]
+        },
+        {
+          "tipo": "fazer",
+          "titulo": "Perto do hotel (a pé)",
+          "itens": [
+            {
+              "nome": "Abbot Kinney Boulevard",
+              "texto": "A rua de lojas, galerias e cafés fica a poucos quarteirões do The Kinney. Dá para ir e voltar a pé, sem carro.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Abbot Kinney Boulevard, Venice",
+              "coord": [
+                33.99148,
+                -118.46928
+              ]
+            },
+            {
+              "nome": "Venice Sign",
+              "texto": "O letreiro sobre a Windward Avenue, na praça onde a rua encontra o mar. Boa foto antes do pôr do sol.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Venice Sign, Windward Ave, Venice",
+              "coord": [
+                33.98761,
+                -118.47236
+              ]
+            },
+            {
+              "nome": "Ocean Front Walk",
+              "texto": "A passarela da praia, com artistas, quadras e skate. Mais calma em novembro.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Venice Beach Boardwalk, Venice",
+              "coord": [
+                33.98671,
+                -118.4741
               ]
             }
           ]
@@ -630,6 +686,65 @@
               ]
             }
           ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Jantar perto do hotel (Seaside Inn)",
+          "itens": [
+            {
+              "nome": "The Grove",
+              "texto": "Café-restaurante na Chestnut Street, classificado como barato, com café da manhã, almoço e jantar. Bom para o jantar da chegada.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "The Grove, 2250 Chestnut St, San Francisco",
+              "verificar": "Confirmar horário",
+              "sem_coord": true
+            },
+            {
+              "nome": "Home Plate",
+              "texto": "Restaurante de café da manhã na Lombard, a poucos quarteirões do hotel.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Home Plate, 2150 Lombard St, San Francisco",
+              "verificar": "Confirmar horário",
+              "coord": [
+                37.79989,
+                -122.43723
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "fazer",
+          "titulo": "Perto do hotel (a pé)",
+          "itens": [
+            {
+              "nome": "Chestnut Street e Union Street",
+              "texto": "As duas ruas planas de lojas, cafés e restaurantes da Marina e de Cow Hollow ficam a ~10–15 min a pé do hotel.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Chestnut Street, Marina District, San Francisco",
+              "coord": [
+                37.80065,
+                -122.43761
+              ]
+            },
+            {
+              "nome": "Marina Green e Fort Mason",
+              "texto": "Gramados à beira da baía, com a Golden Gate ao fundo. Caminhada tranquila ao entardecer.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Marina Green, San Francisco",
+              "coord": [
+                37.8066,
+                -122.43912
+              ]
+            }
+          ]
         }
       ]
     },
@@ -764,6 +879,25 @@
               "texto": "Arrombamentos de carros são comuns em SF, inclusive em mirantes. Não deixe malas nem mochilas no carro estacionado, nem por poucos minutos.",
               "fontes": [
                 "yt-spv-sf-1-dia"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café perto do hotel",
+          "itens": [
+            {
+              "nome": "Peet's Coffee",
+              "texto": "Na Chestnut Street. Boa opção para o café antes de sair cedo para Muir Woods (reserva às 8h).",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Peet's Coffee, 2080 Chestnut St, San Francisco",
+              "verificar": "Quinta é Thanksgiving: confirmar se abre e a que horas",
+              "coord": [
+                37.80084,
+                -122.43789
               ]
             }
           ]
@@ -1045,6 +1179,64 @@
               ]
             }
           ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café antes da bike (perto do hotel)",
+          "itens": [
+            {
+              "nome": "Equator Coffees, Fort Mason",
+              "texto": "No Fort Mason, com vista da baía e da Golden Gate. Fica no caminho da ciclovia.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Equator Coffees, 2 Marina Blvd, San Francisco",
+              "verificar": "Confirmar horário",
+              "sem_coord": true
+            },
+            {
+              "nome": "Chestnut Street Coffee Roastery",
+              "texto": "Cafés do mundo e doces a preço razoável. Abre cedo, por volta das 6:30.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Chestnut Street Coffee Roastery, 2331 Chestnut St, San Francisco",
+              "verificar": "Confirmar horário",
+              "sem_coord": true
+            },
+            {
+              "nome": "Wrecking Ball Coffee Roasters",
+              "texto": "Torrefação especial na Union Street, aberta até as 16h.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Wrecking Ball Coffee Roasters, 2271 Union St, San Francisco",
+              "verificar": "Confirmar horário",
+              "coord": [
+                37.79682,
+                -122.43664
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Café da manhã perto do hotel",
+          "itens": [
+            {
+              "nome": "Home Plate",
+              "texto": "Café da manhã reforçado antes de pedalar até a Golden Gate.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Home Plate, 2150 Lombard St, San Francisco",
+              "verificar": "Confirmar horário",
+              "coord": [
+                37.79989,
+                -122.43723
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1172,16 +1364,6 @@
                 34.23833,
                 -116.44003
               ]
-            },
-            {
-              "nome": "Jantar de chegada: tacos",
-              "texto": "Depois de 3 horas de estrada, um taco truck perto do hotel resolve o jantar. Há vários espalhados pela cidade.",
-              "fontes": [
-                "yt-la-travel-guide-10-lugares"
-              ],
-              "onde": "Koreatown, Los Angeles",
-              "maps": "taco truck, Koreatown, Los Angeles",
-              "sem_coord": true
             }
           ]
         },
@@ -1238,6 +1420,33 @@
                 "yt-peterowen-norcal-top10"
               ],
               "verificar": "Confirmar o preço do passe para estrangeiros"
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Jantar perto do hotel (The Kinney)",
+          "itens": [
+            {
+              "nome": "La Isla Bonita",
+              "texto": "Taco truck fixo de Rose com 4th, famoso por tacos baratos. Dá para um jantar rápido depois da estrada, a ~15 min a pé do hotel.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "La Isla Bonita taco truck, Rose Ave, Venice",
+              "verificar": "Confirmar se abre à noite",
+              "maps": "La Isla Bonita taco truck Venice",
+              "sem_coord": true
+            },
+            {
+              "nome": "3 Square Cafe + Bakery",
+              "texto": "Na Abbot Kinney, serve café da manhã, almoço e jantar. Opção mais tranquila se o taco truck estiver fechado.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "3 Square Cafe, Abbot Kinney Blvd, Venice",
+              "verificar": "Confirmar horário de jantar",
+              "sem_coord": true
             }
           ]
         }
@@ -1427,6 +1636,57 @@
             {
               "nome": "Estacionar na PCH",
               "texto": "Leia as placas. Muitas praias têm estacionamento pago ou horário restrito."
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café da manhã perto do hotel",
+          "itens": [
+            {
+              "nome": "Menotti's Coffee Stop",
+              "texto": "Café pequeno na Windward Ave, perto da praia, com cortado elogiado. Bom para sair cedo para Malibu.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Menotti's Coffee Stop, 56 Windward Ave, Venice",
+              "verificar": "Confirmar horário de domingo",
+              "coord": [
+                33.9873,
+                -118.47265
+              ]
+            },
+            {
+              "nome": "Groundwork Coffee Co.",
+              "texto": "Casa de torrefação na Rose Ave, com mesas ao ar livre.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Groundwork Coffee, 671 Rose Ave, Venice",
+              "verificar": "Confirmar horário de domingo",
+              "coord": [
+                34.00028,
+                -118.47018
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Para levar na estrada",
+          "itens": [
+            {
+              "nome": "Gjusta",
+              "texto": "Padaria e delicatessen na Sunset Ave: sanduíches e pães para o piquenique em Solstice Canyon.",
+              "fontes": [
+                "pesquisa-2026-10"
+              ],
+              "onde": "Gjusta, 320 Sunset Ave, Venice",
+              "verificar": "Confirmar horário e filas",
+              "coord": [
+                33.99527,
+                -118.47458
+              ]
             }
           ]
         }

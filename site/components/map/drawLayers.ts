@@ -68,10 +68,6 @@ export function drawLayers(handle: MapHandle, trip: Trip, routes: DayRoutes, nav
   }
   for (const search of itinerary.busca_hoteis ?? []) {
     if (!search.planos.includes(plan)) continue;
-    for (const found of search.encontrados ?? []) {
-      if (!found.coord) continue;
-      addPin("hotels", found.coord, pinIcon(L, "pin-hotel pin-option", iconSvg("hotel")), { title: found.nome, subtitle: `Sugestão encontrada · ${found.localizacao}`, href: "/hoteis", gmapsUrl: gmaps(found.nome, search.cidade) });
-    }
     for (const option of search.opcoes ?? []) {
       if (!option.coord) continue;
       addPin("hotels", option.coord, pinIcon(L, "pin-hotel pin-option", iconSvg("hotel")), { title: option.nome, subtitle: `Opção · ${usd(option.diaria_min)} a diária`, href: "/hoteis", gmapsUrl: gmaps(option.nome, search.cidade) });

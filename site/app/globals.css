@@ -302,6 +302,7 @@ a.chip:hover { border-color: var(--muted); }
 .tips h4 { font-size: 16px; font-weight: 600; letter-spacing: 0; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
 .tips h4 .meta { font-size: 13px; font-weight: 600; color: var(--warm); }
 .tips p { color: var(--muted); font-size: 15px; }
+.booked-details { margin: 6px 0 0; padding-left: 18px; color: var(--muted); }
 .tip-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 13px; margin-top: 2px; }
 .tip-meta a { display: inline-flex; align-items: center; gap: 4px; font-weight: 500; }
 .tip-meta .ico { width: 15px; height: 15px; }

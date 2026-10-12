@@ -9,7 +9,7 @@
     "plano_recomendado": "B",
     "teto_usd": 3000
   },
-  "atualizado_em": "2026-10-11 22:04",
+  "atualizado_em": "2026-10-11 22:08",
   "planos": {
     "B": {
       "nome": "Plano B",
@@ -203,6 +203,14 @@
           "descricao": "Sai de Keys View logo depois do pôr do sol. Check-in no The Kinney (a partir das 15h); avisar o hotel da chegada por volta das 20h.",
           "onde": "The Kinney, 737 Washington Blvd, Venice",
           "horas": 0
+        },
+        {
+          "tipo": "comida",
+          "titulo": "Jantar tarde em Venice",
+          "descricao": "Taco truck ou restaurante na Abbot Kinney perto do hotel, sem pegar mais estrada. Ver as sugestões no post do dia.",
+          "onde": "La Isla Bonita taco truck, Rose Ave, Venice",
+          "horas": 1,
+          "opcional": true
         }
       ],
       "alertas": [
@@ -280,6 +288,14 @@
       ],
       "resumo": "Domingo de natureza em Malibu, sem pressa: trilha fácil em Solstice Canyon, leões-marinhos em Point Dume e o pôr do sol entre os arcos de El Matador.",
       "atividades": [
+        {
+          "tipo": "comida",
+          "titulo": "Café da manhã em Venice",
+          "descricao": "Cortado e pão na Windward Ave antes de sair para Malibu.",
+          "onde": "Menotti's Coffee Stop, Windward Ave, Venice",
+          "horas": 0.5,
+          "opcional": true
+        },
         {
           "tipo": "trilha",
           "titulo": "Solstice Canyon",
@@ -573,6 +589,14 @@
           "descricao": "Marina, no fim da tarde. Quarto king; peça um quarto longe da Lombard Street.",
           "onde": "Seaside Inn, 1750 Lombard Street, San Francisco",
           "horas": 0
+        },
+        {
+          "tipo": "comida",
+          "titulo": "Jantar na Chestnut Street",
+          "descricao": "Jantar barato a pé do hotel, na Marina.",
+          "onde": "The Grove, 2250 Chestnut St, San Francisco",
+          "horas": 1.5,
+          "opcional": true
         }
       ],
       "alertas": [
@@ -733,6 +757,14 @@
       "capa": "goldengate",
       "resumo": "Último dia em SF, para conhecer a cidade pela orla: leões-marinhos no Pier 39, bike pela Marina e por Crissy Field até a Golden Gate e o pôr do sol na trilha de Lands End.",
       "atividades": [
+        {
+          "tipo": "comida",
+          "titulo": "Café antes da bike",
+          "descricao": "Equator Coffees, no Fort Mason, no começo da ciclovia.",
+          "onde": "Equator Coffees, 2 Marina Blvd, San Francisco",
+          "horas": 0.5,
+          "opcional": true
+        },
         {
           "tipo": "fauna",
           "titulo": "Leões-marinhos no Pier 39",
@@ -1244,14 +1276,17 @@
       "cidade": "San Diego",
       "checkin": "2026-11-17",
       "checkout": "2026-11-21",
-      "status": "Pago pela ADP",
+      "status": "Reservado · pago pela ADP",
       "planos": [
         "B"
       ],
       "coord": [
         32.6809,
         -117.1782
-      ]
+      ],
+      "reservado": true,
+      "endereco": "1500 Orange Avenue, Coronado, CA",
+      "pago_usd": 0
     },
     {
       "id": "kinney",
@@ -1259,14 +1294,21 @@
       "cidade": "Los Angeles · Venice",
       "checkin": "2026-11-21",
       "checkout": "2026-11-24",
-      "status": "Reservado · US$ 584,67 (3 diárias, não reembolsável)",
+      "status": "Reservado",
       "planos": [
         "B"
       ],
       "coord": [
         33.9866,
         -118.4687
-      ]
+      ],
+      "reservado": true,
+      "endereco": "737 Washington Boulevard, Venice Beach, Los Angeles, CA 90292",
+      "checkin_hora": "a partir das 15:00",
+      "checkout_hora": "até 11:00",
+      "pago_usd": 584.67,
+      "reembolsavel": false,
+      "obs": "Consta 1 adulto na reserva: avisar o hotel que são 2 hóspedes e que a chegada é por volta das 20h. Estacionamento à parte."
     },
     {
       "id": "cambria",
@@ -1281,7 +1323,8 @@
       "coord": [
         35.5641,
         -121.0807
-      ]
+      ],
+      "reservado": false
     },
     {
       "id": "seaside",
@@ -1289,14 +1332,18 @@
       "cidade": "San Francisco · Marina",
       "checkin": "2026-11-25",
       "checkout": "2026-11-28",
-      "status": "Reservado · US$ 485,61 pagos (3 diárias) · quarto king",
+      "status": "Reservado",
       "planos": [
         "B"
       ],
       "coord": [
         37.8004,
         -122.4286
-      ]
+      ],
+      "reservado": true,
+      "endereco": "1750 Lombard Street, Distrito Marina, São Francisco, CA 94123",
+      "pago_usd": 485.61,
+      "obs": "Quarto king. Pedir quarto longe da Lombard Street. Estacionamento limitado."
     }
   ],
   "busca_hoteis": [

@@ -50,6 +50,13 @@ export interface Lodging {
   status: string;
   planos: PlanId[];
   coord?: Coord;
+  reservado?: boolean;
+  endereco?: string;
+  pago_usd?: number;
+  reembolsavel?: boolean;
+  checkin_hora?: string;
+  checkout_hora?: string;
+  obs?: string;
   precos?: { site: string; diaria: number }[];
   precos_em?: string;
 }
@@ -63,7 +70,6 @@ export interface HotelSearch {
   checkout: string;
   precos_em?: string;
   busca_externa?: { nome: string; url: string }[];
-  encontrados?: { nome: string; url: string; tipo: string; nota?: number; avaliacoes?: number; coord?: Coord; localizacao: string; diaria_usd?: number; pros: string[]; contras: string[] }[];
   opcoes?: { nome: string; nota: number; avaliacoes: number; url: string; coord?: Coord; diaria_min: number; site_min: string }[];
 }
 

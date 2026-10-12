@@ -56,8 +56,8 @@ Chaves de topo: `viagem`, `atualizado_em` 🤖, `planos`, `fases`, `dias`, `luga
 Chave curta (`torrey`, `lajolla`…). Campos: `nome`, `wiki` (título da página na Wikipedia em inglês, usado para foto e coordenada), `busca` (termo alternativo para o Commons), `coord` 🤖, `imagem` 🤖 (`img/<chave>.jpg`), `credito` 🤖, `resumo_wiki` 🤖, `wiki_url` 🤖. Lugar novo: crie com `nome` e `wiki` e rode o `enriquecer.py`.
 
 ### `hospedagens[]`, `busca_hoteis[]`, `reservas[]`
-- `hospedagens`: `id`, `nome`, `cidade`, `checkin`, `checkout`, `status` (texto livre), `planos`, `coord`. `xotelo_key` (opcional) faz o script buscar a diária.
-- `busca_hoteis`: opções de hotel ainda não reservado. `id`, `titulo`, `planos`, `location_key` (Tripadvisor, `gNNNN`), `checkin`, `checkout`, `limite`, `busca_externa[]` (links Booking/Tripadvisor); `opcoes[]` 🤖 vem do Xotelo. Sem `location_key` (ex.: busca no Airbnb) o script pula o item. `encontrados[]` (manual): anúncios achados à mão, com `nome`, `url`, `tipo`, `nota`, `avaliacoes`, `coord`, `localizacao`, `diaria_usd` (opcional), `pros[]` e `contras[]`.
+- `hospedagens`: `id`, `nome`, `cidade`, `checkin`, `checkout`, `status` (texto curto), `planos`, `coord`; se já reservado: `reservado: true`, `endereco`, `pago_usd`, `reembolsavel`, `checkin_hora`, `checkout_hora`, `obs`. A página Hotéis esconde a busca e mostra esses dados nas reservadas. `xotelo_key` (opcional) faz o script buscar a diária.
+- `busca_hoteis`: opções de hotel ainda não reservado. `id`, `titulo`, `planos`, `location_key` (Tripadvisor, `gNNNN`), `checkin`, `checkout`, `limite`, `busca_externa[]` (links Booking/Tripadvisor); `opcoes[]` 🤖 vem do Xotelo. Sem `location_key` (ex.: busca no Airbnb) o script pula o item.
 - `reservas`: checklist da página Reservas. `id`, `prioridade` (`urgente`, `importante`, `antes` ou `feito`), `item`, `detalhe`. Espelha o `reservas.md`.
 
 ### `orcamento` 🤖, `fontes`, `creditos_api`

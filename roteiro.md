@@ -27,11 +27,13 @@
 - Pôr do sol em **Keys View** (~16:40). Sair do parque até ~17h.
 - Noite: estrada até LA (~3h), chegada ~20h. Check-in no **The Kinney** (Venice), avisando o hotel da chegada tarde.
 - Entrada: US$ 35/veículo, válida por 7 dias. Dia pesado: ~5h45 de direção (73% do dia).
+- Perto do hotel (opcional, chegada tarde): taco truck **La Isla Bonita** (Rose Ave) ou **3 Square Cafe** na Abbot Kinney. ⚠️ verificar horário.
 
 ### Dia 6 · 22/11 Dom — Malibu, sem pressa
 - **Solstice Canyon** (4,7 km, fácil, cachoeira e ruínas) logo cedo.
 - **Point Dume** (leões-marinhos) e pôr do sol em **El Matador**.
 - Domingo: PCH e estacionamentos enchem à tarde. Ritmo ~54%.
+- Café perto do hotel: **Menotti's Coffee Stop** (Windward Ave) ou **Groundwork Coffee** (Rose Ave); **Gjusta** (Sunset Ave) para levar sanduíches e pães.
 
 ### Dia 7 · 23/11 Seg — Último dia em LA, sem pressa
 - Manhã tranquila, sem horário fixo. Por volta das 9h30: **caminhada leve no Griffith Park** (~2–3 km, pouca subida) até um mirante com o letreiro. Mount Hollywood (~4,5 km) é opcional.
@@ -39,6 +41,7 @@
 - Pôr do sol sentados na praia de **Santa Monica** (~16:49), jantar leve e volta ao hotel, a poucos minutos de Abbot Kinney.
 - ℹ️ Segunda: o prédio do Griffith Observatory fecha (terraço e trilhas abertos). ⚠️ verificar.
 - Ritmo: ~50% do dia (meta ≤ 65%).
+- Perto do hotel, a pé: **Abbot Kinney Blvd**, **Venice Sign** (Windward Ave) e a **Ocean Front Walk**.
 
 ---
 
@@ -47,7 +50,7 @@
 | Dia | Data | Programa |
 |---|---|---|
 | 8 | 24/11 Ter | Check-out LA sem pressa → Santa Barbara (café/caminhada) → Morro Bay. Pernoite em **Cambria / San Simeon**. ⚠️ hotel a reservar. |
-| 9 | 25/11 Qua | Elefantes-marinhos em **Piedras Blancas** → **Big Sur** pela Highway 1 (McWay Falls, Limekiln ⚠️ verificar se reabriu) → **Point Lobos** → SF no fim da tarde. ⚠️ verificar estrada e parques (incêndios Timber/Plaskett 2026). |
+| 9 | 25/11 Qua | Elefantes-marinhos em **Piedras Blancas** → **Big Sur** pela Highway 1 (McWay Falls, Limekiln ⚠️ verificar se reabriu) → **Point Lobos** → SF no fim da tarde. ⚠️ verificar estrada e parques (incêndios Timber/Plaskett 2026). Jantar a pé do **Seaside Inn**: **The Grove** (Chestnut St) ou **Home Plate** (Lombard St). |
 
 ### Dia 10 · 26/11 Qui — Thanksgiving: Marin
 - **Muir Woods** às 8h (reserva de estacionamento obrigatória em GoMuirWoods.com). Sequoias costeiras (redwoods) — não são as "sequoias gigantes" da Sierra.
@@ -55,6 +58,7 @@
 - Alternativa mais aventureira: **Point Reyes — Tomales Point** (alces-de-tule; 3/10/15 km), ~1h30 de SF.
 - Tarde: **devolução do carro**. ⚠️ confirmar horário da loja Sixt no feriado; plano B = devolver no SFO.
 - Noite: ceia de Thanksgiving (reservar!).
+- Café cedo perto do hotel: **Peet's Coffee** (Chestnut St). ⚠️ verificar se abre no feriado.
 
 ## Parte 3 — San Francisco sem carro · 27 a 28/11
 
@@ -62,6 +66,7 @@
 - **Golden Gate de bicicleta** → Sausalito → volta de balsa.
 - Alternativa/complemento: Alcatraz (se conseguir ingresso).
 - Pôr do sol na trilha **Lands End**.
+- Café antes da bike (perto do Seaside Inn): **Equator Coffees** no Fort Mason, **Chestnut Street Coffee Roastery** ou **Wrecking Ball** (Union St); café da manhã no **Home Plate**. ⚠️ verificar horários.
 
 ### Dia 12 · 28/11 Sáb — Volta
 - Acordar 03:45 · Uber do Seaside Inn às **04:30** (pedir às 04:20; limite 04:45) · SFO ~04:55 · mala e segurança · embarque ~06:25 (⚠️ verificar) · voo DL 1598 **07:05** (conexão — ⚠️ verificar terminal). BART não opera nesse horário.
