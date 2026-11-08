@@ -1,7 +1,7 @@
 # Califórnia 2026 — Viagem do casal
 
 **Período:** 17/11/2026 (Ter) → 28/11/2026 (Sáb) · 12 dias
-**Rota:** San Diego → Joshua Tree → Los Angeles / Malibu → Costa Central → San Francisco / Marin
+**Rota:** San Diego → Los Angeles (1 dia) → Santa Barbara → Cambria → Big Sur → Yosemite (2 dias) → San Francisco
 **Foco:** viagem relaxante, natureza, trilhas e passeios ao ar livre (cidades em segundo plano). Casal jovem e aventureiro.
 
 ## Status rápido

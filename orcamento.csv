@@ -13,42 +13,34 @@ dia,data,plano,categoria,item,usd,status,atividade
 2,18/11,B,transporte,Uber até La Jolla Cove (ida e volta),35,estimado,Leões-marinhos em La Jolla Cove
 2,18/11,B,transporte,Uber até Sunset Cliffs (ida e volta),40,estimado,Pôr do sol em Sunset Cliffs
 2,18/11,B,alimentacao,Refeições da acompanhante nos dias 18 a 20 (se a ADP não cobrir),200,opcional,
-5,21/11,B,transporte,Uber Hotel del Coronado -> SAN,25,estimado,Retirada do carro Sixt em SAN
 5,21/11,B,carro,Aluguel Sixt (4 diárias com impostos; a reserva atual começa em 22/11),376.22,confirmado,Retirada do carro Sixt em SAN
 5,21/11,B,carro,Diária extra Sixt (retirada em 21/11; valor a confirmar),94,verificar,Retirada do carro Sixt em SAN
-5,21/11,B,ingresso,Joshua Tree NP (veículo; vale 7 dias),35,confirmado,Barker Dam
-5,21/11,B,gasolina,SAN -> Joshua Tree,30,estimado,Barker Dam
-5,21/11,B,alimentacao,Refeições do dia,80,estimado,
-5,21/11,B,gasolina,Joshua Tree -> LA,25,estimado,Estrada até LA
-5,21/11,B,hospedagem,The Kinney (noite 21; total pago US$ 584.67),194.89,confirmado,Estrada até LA
-5,21/11,B,estacionamento,The Kinney (noite 21),38,verificar,Estrada até LA
-6,22/11,B,gasolina,Venice <-> Malibu,25,estimado,Solstice Canyon
-6,22/11,B,estacionamento,Praias e trilhas de Malibu,15,estimado,Pôr do sol em El Matador
-6,22/11,B,hospedagem,The Kinney (noite 22),194.89,confirmado,
-6,22/11,B,estacionamento,The Kinney (noite 22),38,verificar,
-6,22/11,B,alimentacao,Refeições do dia,85,estimado,
-7,23/11,B,gasolina,Venice -> Griffith -> Venice,20,estimado,Venice e Santa Monica
-7,23/11,B,estacionamento,Griffith Observatory,20,estimado,Caminhada leve no Griffith Park
-7,23/11,B,estacionamento,Santa Monica,15,estimado,Venice e Santa Monica
-7,23/11,B,hospedagem,The Kinney (noite 23),194.89,confirmado,
-7,23/11,B,estacionamento,The Kinney (noite 23),38,verificar,
-7,23/11,B,alimentacao,Refeições do dia,85,estimado,
-8,24/11,B,estacionamento,Centro de Santa Barbara,5,estimado,Santa Barbara
-8,24/11,B,gasolina,LA -> Cambria,40,estimado,Morro Rock
-8,24/11,B,hospedagem,Hotel em Cambria (noite 24),200,verificar,Pernoite em Cambria
-8,24/11,B,alimentacao,Refeições do dia,85,estimado,
-9,25/11,B,gasolina,Cambria -> Big Sur -> SF,60,estimado,
-9,25/11,B,ingresso,Julia Pfeiffer Burns (uso diário),10,verificar,McWay Falls
-9,25/11,B,ingresso,Point Lobos (estacionamento),10,opcional,Point Lobos
-9,25/11,B,alimentacao,Refeições do dia (almoço no Nepenthe),100,estimado,
-9,25/11,B,hospedagem,Seaside Inn (noite 25; total pago US$ 485.61),161.87,confirmado,Check-in no Seaside Inn
-10,26/11,B,ingresso,Muir Woods (2x US$ 15) + reserva de estacionamento,40,estimado,Muir Woods às 8h
-10,26/11,B,transporte,Pedágio da Golden Gate (volta para SF),10,estimado,Marin Headlands
-10,26/11,B,gasolina,Marin + reabastecer na devolução,30,estimado,Devolução do carro
-10,26/11,B,alimentacao,Café da manhã e almoço,50,estimado,
+5,21/11,B,gasolina,SAN -> Griffith -> Santa Monica -> Ventura,50,estimado,Griffith Park e o letreiro de Hollywood
+5,21/11,B,estacionamento,Griffith Observatory,10,estimado,Griffith Park e o letreiro de Hollywood
+5,21/11,B,estacionamento,Santa Monica Pier (lote por dia),20,estimado,Santa Monica Pier
+5,21/11,B,hospedagem,Hotel em Ventura (noite 21; a reservar),130,estimado,Check-in em Ventura
+5,21/11,B,alimentacao,Refeições do dia,85,estimado,
+6,22/11,B,gasolina,Ventura -> Santa Barbara -> Cambria,40,estimado,Santa Barbara
+6,22/11,B,estacionamento,Santa Barbara (Stearns Wharf e centro),10,estimado,Santa Barbara
+6,22/11,B,hospedagem,J. Patrick Inn em Cambria (noite 22; valor a confirmar),150,verificar,Check-in em Cambria
+6,22/11,B,alimentacao,Refeições do dia,90,estimado,
+7,23/11,B,gasolina,Cambria -> Big Sur -> Mariposa,75,estimado,Estrada até Mariposa
+7,23/11,B,estacionamento,McWay Falls (parque estadual),10,estimado,McWay Falls
+7,23/11,B,hospedagem,Hotel em Mariposa (noite 23; a reservar),140,estimado,Check-in em Mariposa
+7,23/11,B,alimentacao,Refeições do dia e compras no mercado,85,estimado,
+8,24/11,B,ingresso,Yosemite NP: US$ 35 por veículo + US$ 100 x 2 não residentes (vale 7 dias),235,estimado,Cook's Meadow
+8,24/11,B,gasolina,Mariposa <-> Yosemite Valley,15,estimado,Pôr do sol no Tunnel View
+8,24/11,B,hospedagem,Hotel em Mariposa (noite 24; a reservar),140,estimado,
+8,24/11,B,alimentacao,Refeições do dia,90,estimado,
+9,25/11,B,gasolina,Mariposa <-> Yosemite Valley,15,estimado,Mist Trail até a ponte de Vernal Fall
+9,25/11,B,hospedagem,Hotel em Mariposa (noite 25; a reservar),140,estimado,
+9,25/11,B,hospedagem,Seaside Inn noite 25 (só se o hotel não mudar o check-in para 26/11),161.87,opcional,
+9,25/11,B,alimentacao,Refeições do dia,90,estimado,
+10,26/11,B,gasolina,Mariposa -> SF + reabastecer na devolução,45,estimado,Estrada até San Francisco
+10,26/11,B,alimentacao,Café da manhã e lanche na estrada,40,estimado,
 10,26/11,B,alimentacao,Ceia de Thanksgiving (2 pessoas; menu fixo de ~US$ 75-90 por pessoa),200,estimado,Ceia de Thanksgiving
 10,26/11,B,transporte,Uber/Waymo para a ceia,25,estimado,Ceia de Thanksgiving
-10,26/11,B,hospedagem,Seaside Inn (noite 26),161.87,confirmado,
+10,26/11,B,hospedagem,Seaside Inn (noite 26),161.87,confirmado,Check-in no Seaside Inn
 11,27/11,B,passeio,Aluguel de bike (2 pessoas),90,estimado,Golden Gate Bridge de bicicleta
 11,27/11,B,transporte,Balsa Sausalito -> SF (2 pessoas),30,opcional,Balsa Sausalito → SF
 11,27/11,B,transporte,Uber/Waymo até Lands End e volta,30,estimado,Pôr do sol em Lands End
