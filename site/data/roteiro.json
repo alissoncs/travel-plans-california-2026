@@ -9,11 +9,11 @@
     "plano_recomendado": "B",
     "teto_usd": 3000
   },
-  "atualizado_em": "2026-11-08 15:03",
+  "atualizado_em": "2026-11-09 08:26",
   "planos": {
     "B": {
       "nome": "Plano B",
-      "resumo": "Um dia em LA, a costa de Santa Barbara a Big Sur, dois dias em Yosemite e a chegada a SF no Thanksgiving, com um dia inteiro na cidade. Quatro noites em hotéis novos: Ventura, Cambria, Mariposa e Seaside Inn."
+      "resumo": "Um dia em LA, a costa de Santa Barbara a Big Sur, dois dias em Yosemite e a chegada a SF no Thanksgiving, com um dia inteiro na cidade. Quatro noites em hotéis novos: Santa Barbara, Cambria, Mariposa e Seaside Inn."
     }
   },
   "fases": [
@@ -146,8 +146,8 @@
       "planos": [
         "B"
       ],
-      "titulo": "Um dia em LA → Ventura",
-      "regiao": "Griffith Park, Santa Monica e Ventura",
+      "titulo": "Um dia em LA → Santa Barbara",
+      "regiao": "Griffith Park, Santa Monica e Santa Barbara",
       "coord": [
         34.1184,
         -118.3004
@@ -165,12 +165,12 @@
           "horas": 0.75
         },
         {
-          "trecho": "Santa Monica → Ventura (sábado à noite)",
-          "tempo": "1h20",
-          "horas": 1.33
+          "trecho": "Santa Monica → Santa Barbara (sábado à noite)",
+          "tempo": "1h45",
+          "horas": 1.75
         }
       ],
-      "resumo": "Checkout no Coronado, carro no aeroporto e estrada até LA. O dia curtindo LA é só de carro: Griffith Park com vista do letreiro de Hollywood, Santa Monica Pier e pôr do sol na praia. À noite, 1h20 até Ventura, uma cidade pequena na costa, para dormir.",
+      "resumo": "Checkout no Coronado, carro no aeroporto e estrada até LA. O dia curtindo LA é só de carro: Griffith Park com vista do letreiro de Hollywood, Santa Monica Pier e pôr do sol na praia. À noite, 1h45 até Santa Barbara, uma cidade charmosa na costa, para dormir.",
       "atividades": [
         {
           "tipo": "transporte",
@@ -205,22 +205,22 @@
         {
           "tipo": "praia",
           "titulo": "Pôr do sol na praia de Santa Monica",
-          "descricao": "Sentados na areia, com o sol entrando às ~16:46. Depois, 1h20 de estrada até Ventura, no escuro.",
+          "descricao": "Sentados na areia, com o sol entrando às ~16:46. Depois, 1h45 de estrada até Santa Barbara, no escuro.",
           "onde": "Santa Monica State Beach",
           "horas": 1.5
         },
         {
           "tipo": "hotel",
-          "titulo": "Check-in em Ventura",
-          "descricao": "Hotel a reservar (1 noite, 21/11), simples e com estacionamento incluído. Chegada por volta das 19h30; avise o hotel do check-in tardio.",
-          "onde": "Ventura, CA",
+          "titulo": "Check-in em Santa Barbara",
+          "descricao": "Hotel a reservar (1 noite, 21/11), com estacionamento incluído. Chegada por volta das 19h; avise o hotel do check-in tardio.",
+          "onde": "Santa Barbara, CA",
           "horas": 0
         }
       ],
       "alertas": [
         {
           "nivel": "aviso",
-          "texto": "Dia puxado: ~4h50 de direção e a LA de sábado, com trânsito. Se estiver pesado, pule o Lake Hollywood Park e a caminhada até o letreiro e veja só o mirante do Griffith."
+          "texto": "Dia puxado: ~5h15 de direção e a LA de sábado, com trânsito. Se estiver pesado, pule o Lake Hollywood Park e a caminhada até o letreiro e veja só o mirante do Griffith."
         },
         {
           "nivel": "info",
@@ -248,8 +248,8 @@
               -118.4974
             ],
             [
-              34.2746,
-              -119.229
+              34.4208,
+              -119.6982
             ]
           ]
         }
@@ -272,11 +272,6 @@
       "capa": "morro",
       "estrada": [
         {
-          "trecho": "Ventura → Santa Barbara",
-          "tempo": "50 min",
-          "horas": 0.83
-        },
-        {
           "trecho": "Santa Barbara → Morro Bay",
           "tempo": "1h50",
           "horas": 1.83
@@ -287,12 +282,12 @@
           "horas": 0.58
         }
       ],
-      "resumo": "Domingo sem pressa pela costa: café e caminhada em Santa Barbara, lontras-marinhas em Morro Rock e uma noite numa pousada em Cambria, a meia hora dos elefantes-marinhos.",
+      "resumo": "Domingo sem pressa pela costa: café e caminhada em Santa Barbara, onde vocês dormiram, lontras-marinhas em Morro Rock e uma noite numa pousada em Cambria, a meia hora dos elefantes-marinhos.",
       "atividades": [
         {
           "tipo": "praia",
           "titulo": "Santa Barbara",
-          "descricao": "Café, Stearns Wharf e uma caminhada curta pela orla e pelo centro. A Missão de Santa Barbara fica a 5 minutos de carro.",
+          "descricao": "Café da manhã, Stearns Wharf e uma caminhada curta pela orla e pelo centro. A Missão de Santa Barbara fica a 5 minutos de carro. Saída para Cambria por volta das 11h.",
           "lugar": "stearns",
           "horas": 2
         },
@@ -326,7 +321,7 @@
         },
         {
           "nivel": "info",
-          "texto": "Domingo, ~3h15 de direção e dia leve. Se sobrar tempo e disposição, Moonstone Beach é a melhor parada do fim de tarde."
+          "texto": "Domingo, ~2h30 de direção e dia leve. Se sobrar tempo e disposição, Moonstone Beach é a melhor parada do fim de tarde."
         }
       ],
       "sol": {
@@ -338,12 +333,8 @@
           "modo": "carro",
           "pontos": [
             [
-              34.2746,
-              -119.229
-            ],
-            [
-              34.414,
-              -119.685
+              34.4208,
+              -119.6982
             ],
             [
               35.1428,
@@ -1339,9 +1330,9 @@
       "pago_usd": 0
     },
     {
-      "id": "ventura",
-      "nome": "Hotel em Ventura (a escolher)",
-      "cidade": "Ventura, CA",
+      "id": "santabarbara",
+      "nome": "Hotel em Santa Barbara (a escolher)",
+      "cidade": "Santa Barbara, CA",
       "checkin": "2026-11-21",
       "checkout": "2026-11-22",
       "status": "A reservar",
@@ -1349,8 +1340,8 @@
         "B"
       ],
       "coord": [
-        34.2746,
-        -119.229
+        34.4208,
+        -119.6982
       ],
       "reservado": false
     },
@@ -1419,13 +1410,13 @@
       "detalhe": "Mudança e cancelamento grátis até 19/11. Pedir a mudança direto ao hotel ou pelo site da reserva. Check-in das 15h às 20h, online."
     },
     {
-      "id": "ventura",
+      "id": "santabarbara",
       "prioridade": "urgente",
       "planos": [
         "B"
       ],
-      "item": "Hotel em Ventura (21/11, 1 noite)",
-      "detalhe": "Hotel simples, com estacionamento incluído e check-in tardio (~19h30). Cancelamento grátis."
+      "item": "Hotel em Santa Barbara (21/11, 1 noite)",
+      "detalhe": "Hotel com estacionamento incluído e check-in tardio (~19h). Cancelamento grátis. Diária em geral acima de US$ 150."
     },
     {
       "id": "mariposa",
@@ -1563,15 +1554,15 @@
     "taxa_brl": 5.62,
     "planos": {
       "B": {
-        "total_usd": 3173.96,
+        "total_usd": 3208.96,
         "opcionais_usd": 532.37,
         "itens_a_verificar": 3,
         "categorias": {
-          "hospedagem": 1023.74,
+          "hospedagem": 1063.74,
           "alimentacao": 805.0,
           "carro": 470.22,
           "transporte": 260.0,
-          "gasolina": 240.0,
+          "gasolina": 235.0,
           "ingresso": 235.0,
           "passeio": 90.0,
           "estacionamento": 50.0
@@ -1695,8 +1686,8 @@
           "B"
         ],
         "categoria": "gasolina",
-        "item": "SAN -> Griffith -> Santa Monica -> Ventura",
-        "usd": 50.0,
+        "item": "SAN -> Griffith -> Santa Monica -> Santa Barbara",
+        "usd": 55.0,
         "status": "estimado",
         "atividade": "Griffith Park e o letreiro de Hollywood"
       },
@@ -1728,10 +1719,10 @@
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "Hotel em Ventura (noite 21; a reservar)",
-        "usd": 130.0,
+        "item": "Hotel em Santa Barbara (noite 21; a reservar)",
+        "usd": 170.0,
         "status": "estimado",
-        "atividade": "Check-in em Ventura"
+        "atividade": "Check-in em Santa Barbara"
       },
       {
         "data": "2026-11-21",
@@ -1750,8 +1741,8 @@
           "B"
         ],
         "categoria": "gasolina",
-        "item": "Ventura -> Santa Barbara -> Cambria",
-        "usd": 40.0,
+        "item": "Santa Barbara -> Cambria",
+        "usd": 30.0,
         "status": "estimado",
         "atividade": "Santa Barbara"
       },

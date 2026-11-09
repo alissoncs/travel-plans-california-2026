@@ -1045,7 +1045,7 @@
     },
     "dia-5": {
       "intro": [
-        "O dia em LA é só de carro: o Griffith Park, com a vista do letreiro de Hollywood, e a costa de Santa Monica. Sem hotel na cidade, vocês dormem em Ventura, 1h20 ao norte.",
+        "O dia em LA é só de carro: o Griffith Park, com a vista do letreiro de Hollywood, e a costa de Santa Monica. Sem hotel na cidade, vocês dormem em Santa Barbara, 1h45 ao norte.",
         "Sábado de novembro: o Griffith enche no meio da manhã. Como a chegada é por volta das 12h, tenha paciência com o estacionamento."
       ],
       "secoes": [
@@ -1116,23 +1116,23 @@
               "texto": "Furtos de carro são comuns em LA. Leve tudo com vocês ou deixe no porta-malas antes de chegar."
             },
             {
-              "nome": "Estrada até Ventura",
-              "texto": "São ~1h20 pela US-101 no sábado à noite. Saia da praia logo depois do pôr do sol."
+              "nome": "Estrada até Santa Barbara",
+              "texto": "São ~1h45 pela US-101 no sábado à noite. Saia da praia logo depois do pôr do sol."
             }
           ]
         },
         {
           "tipo": "comer",
-          "titulo": "Jantar em Ventura",
+          "titulo": "Jantar em Santa Barbara",
           "itens": [
             {
-              "nome": "Downtown Ventura",
-              "texto": "Main Street, com cervejarias e restaurantes simples, a poucos minutos do mar.",
-              "onde": "Main Street, Ventura, CA",
+              "nome": "State Street",
+              "texto": "Rua principal do centro, com restaurantes e cafés abertos até tarde, a poucos minutos do mar.",
+              "onde": "State Street, Santa Barbara, CA",
               "verificar": "Confirmar horários no sábado",
               "coord": [
-                34.2805,
-                -119.2945
+                34.4224,
+                -119.7034
               ]
             }
           ]
