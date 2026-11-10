@@ -15,24 +15,24 @@ dia,data,plano,categoria,item,usd,status,atividade
 2,18/11,B,alimentacao,Refeições da acompanhante nos dias 18 a 20 (se a ADP não cobrir),200,opcional,
 5,21/11,B,carro,Aluguel Sixt (4 diárias com impostos; a reserva atual começa em 22/11),376.22,confirmado,Retirada do carro Sixt em SAN
 5,21/11,B,carro,Diária extra Sixt (retirada em 21/11; valor a confirmar),94,verificar,Retirada do carro Sixt em SAN
-5,21/11,B,gasolina,SAN -> Griffith -> Santa Monica -> Santa Barbara,55,estimado,Griffith Park e o letreiro de Hollywood
-5,21/11,B,estacionamento,Griffith Observatory,10,estimado,Griffith Park e o letreiro de Hollywood
-5,21/11,B,estacionamento,Santa Monica Pier (lote por dia),20,estimado,Santa Monica Pier
-5,21/11,B,hospedagem,Hotel em Santa Barbara (noite 21; a reservar),170,estimado,Check-in em Santa Barbara
-5,21/11,B,alimentacao,Refeições do dia,85,estimado,
-6,22/11,B,gasolina,Santa Barbara -> Cambria,30,estimado,Santa Barbara
-6,22/11,B,estacionamento,Santa Barbara (Stearns Wharf e centro),10,estimado,Santa Barbara
-6,22/11,B,hospedagem,J. Patrick Inn em Cambria (noite 22; valor a confirmar),150,verificar,Check-in em Cambria
-6,22/11,B,alimentacao,Refeições do dia,90,estimado,
-7,23/11,B,gasolina,Cambria -> Big Sur -> Mariposa,75,estimado,Estrada até Mariposa
-7,23/11,B,estacionamento,McWay Falls (parque estadual),10,estimado,McWay Falls
-7,23/11,B,hospedagem,Hotel em Mariposa (noite 23; a reservar),140,estimado,Check-in em Mariposa
-7,23/11,B,alimentacao,Refeições do dia e compras no mercado,85,estimado,
-8,24/11,B,ingresso,Yosemite NP: US$ 35 por veículo + US$ 100 x 2 não residentes (vale 7 dias),235,estimado,Cook's Meadow
-8,24/11,B,gasolina,Mariposa <-> Yosemite Valley,15,estimado,Pôr do sol no Tunnel View
-8,24/11,B,hospedagem,Hotel em Mariposa (noite 24; a reservar),140,estimado,
-8,24/11,B,alimentacao,Refeições do dia,90,estimado,
-9,25/11,B,gasolina,Mariposa <-> Yosemite Valley,15,estimado,Mist Trail até a ponte de Vernal Fall
+5,21/11,B,gasolina,SAN -> Thousand Oaks,35,estimado,Check-in em Thousand Oaks
+5,21/11,B,hospedagem,Hotel ou Airbnb em Thousand Oaks (noite 21; a reservar),150,verificar,Check-in em Thousand Oaks
+5,21/11,B,alimentacao,Refeições do dia,70,estimado,
+6,22/11,B,gasolina,Thousand Oaks -> Griffith -> Santa Monica -> Thousand Oaks,30,estimado,Griffith Park e o letreiro de Hollywood
+6,22/11,B,estacionamento,Griffith Observatory,10,estimado,Griffith Park e o letreiro de Hollywood
+6,22/11,B,estacionamento,Santa Monica Pier (lote por dia),20,estimado,Santa Monica Pier
+6,22/11,B,hospedagem,Hotel ou Airbnb em Thousand Oaks (noite 22; a reservar),150,verificar,
+6,22/11,B,alimentacao,Refeições do dia,85,estimado,
+7,23/11,B,gasolina,Thousand Oaks -> Santa Barbara -> Cambria,55,estimado,Santa Barbara
+7,23/11,B,estacionamento,Santa Barbara (Stearns Wharf e centro),10,estimado,Santa Barbara
+7,23/11,B,hospedagem,J. Patrick Inn em Cambria (noite 23; valor a confirmar),150,verificar,Check-in em Cambria
+7,23/11,B,alimentacao,Refeições do dia,90,estimado,
+8,24/11,B,gasolina,Cambria -> Big Sur -> Mariposa,75,estimado,Estrada até Mariposa
+8,24/11,B,estacionamento,McWay Falls (parque estadual),10,estimado,Elefantes-marinhos em Piedras Blancas
+8,24/11,B,hospedagem,Hotel em Mariposa (noite 24; a reservar),140,estimado,Check-in em Mariposa
+8,24/11,B,alimentacao,Refeições do dia e compras no mercado,85,estimado,
+9,25/11,B,ingresso,Yosemite NP: US$ 35 por veículo + US$ 100 x 2 não residentes (vale 7 dias),235,estimado,Cook's Meadow
+9,25/11,B,gasolina,Mariposa <-> Yosemite Valley,15,estimado,Pôr do sol no Tunnel View
 9,25/11,B,hospedagem,Hotel em Mariposa (noite 25; a reservar),140,estimado,
 9,25/11,B,hospedagem,Seaside Inn noite 25 (só se o hotel não mudar o check-in para 26/11),161.87,opcional,
 9,25/11,B,alimentacao,Refeições do dia,90,estimado,

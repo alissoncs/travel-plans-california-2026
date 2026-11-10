@@ -9,11 +9,11 @@
     "plano_recomendado": "B",
     "teto_usd": 3000
   },
-  "atualizado_em": "2026-11-10 00:25",
+  "atualizado_em": "2026-11-10 00:56",
   "planos": {
     "B": {
       "nome": "Plano B",
-      "resumo": "Um dia em LA, a costa de Santa Barbara a Big Sur, dois dias em Yosemite e a chegada a SF no Thanksgiving, com um dia inteiro na cidade. Quatro noites em hotéis novos: Santa Barbara, Cambria, Mariposa e Seaside Inn."
+      "resumo": "Sábado e domingo leves perto de LA (um dia no Griffith e no Santa Monica Pier), depois a costa por Santa Barbara, Cambria e Big Sur, um dia inteiro em Yosemite e a chegada a SF no Thanksgiving. Dias de estrada só de segunda a quinta."
     }
   },
   "fases": [
@@ -27,7 +27,7 @@
     {
       "id": "road",
       "nome": "Road trip",
-      "detalhe": "Carro Sixt · LA, Santa Barbara, Big Sur e Yosemite",
+      "detalhe": "Carro Sixt · LA, costa central, Big Sur e Yosemite",
       "inicio": "2026-11-21",
       "fim": "2026-11-26"
     },
@@ -146,8 +146,102 @@
       "planos": [
         "B"
       ],
-      "titulo": "Um dia em LA → Santa Barbara",
-      "regiao": "Griffith Park, Santa Monica e Santa Barbara",
+      "titulo": "Chegada perto de LA",
+      "regiao": "Thousand Oaks",
+      "coord": [
+        34.1706,
+        -118.8376
+      ],
+      "capa": "hollywood",
+      "estrada": [
+        {
+          "trecho": "Coronado → SAN → Thousand Oaks",
+          "tempo": "3h (sem pressa)",
+          "horas": 3
+        }
+      ],
+      "resumo": "Dia de descanso depois do evento: retirada do carro, ~3h de estrada até Thousand Oaks e a tarde livre. Sem programa fixo: um passeio curto, jantar e cama cedo.",
+      "atividades": [
+        {
+          "tipo": "transporte",
+          "titulo": "Retirada do carro Sixt em SAN",
+          "descricao": "Checkout no Coronado e Uber ao aeroporto. Retirada por volta das 9h. Perguntar sobre as correntes de neve para Yosemite e pedir carro com tração integral.",
+          "onde": "Sixt, San Diego International Airport",
+          "horas": 1
+        },
+        {
+          "tipo": "hotel",
+          "titulo": "Check-in em Thousand Oaks",
+          "descricao": "Hotel ou Airbnb a reservar (2 noites, 21 e 22/11), com estacionamento incluído e cancelamento grátis. Chegada por volta das 13h; peça o check-in antecipado ou guarda de malas.",
+          "onde": "Thousand Oaks, CA",
+          "horas": 0
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Paradise Falls em Wildwood Park",
+          "descricao": "Trilha curta e sombreada até uma cachoeira, no parque da cidade. Só se estiverem com vontade; a vista da cachoeira é pequena em novembro.",
+          "stats": "~4 km ida e volta · pouca subida ⚠️ verificar",
+          "onde": "Wildwood Regional Park, Thousand Oaks",
+          "horas": 1.5,
+          "opcional": true
+        },
+        {
+          "tipo": "praia",
+          "titulo": "Pôr do sol em Point Dume",
+          "descricao": "Falésia sobre o Pacífico em Malibu, a ~35 min da base. Só se o dia estiver bom.",
+          "onde": "Point Dume State Beach, Malibu",
+          "horas": 1.5,
+          "opcional": true
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "info",
+          "texto": "Dia leve: ~3h de estrada e tarde livre. Deixe o carro estacionado depois do almoço e descanse."
+        },
+        {
+          "nivel": "aviso",
+          "texto": "O carro Sixt precisa ser retirado em 21/11 (a reserva é de 22/11). Diária extra de ~US$ 94. ⚠️ confirmar."
+        }
+      ],
+      "sol": {
+        "nascer": "06:34",
+        "por": "16:48"
+      },
+      "trajeto": [
+        {
+          "modo": "carro",
+          "pontos": [
+            [
+              32.7338,
+              -117.1933
+            ],
+            [
+              33.6,
+              -117.9
+            ],
+            [
+              34.05,
+              -118.45
+            ],
+            [
+              34.1706,
+              -118.8376
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dia-6",
+      "rotulo": "6",
+      "data": "2026-11-22",
+      "fase": "road",
+      "planos": [
+        "B"
+      ],
+      "titulo": "Um dia em LA",
+      "regiao": "Griffith Park e Santa Monica (bate e volta)",
       "coord": [
         34.1184,
         -118.3004
@@ -155,34 +249,27 @@
       "capa": "hollywood",
       "estrada": [
         {
-          "trecho": "Coronado → SAN → Griffith Park",
-          "tempo": "2h45 (depois da retirada do carro)",
-          "horas": 2.75
-        },
-        {
-          "trecho": "Griffith Park → Santa Monica",
-          "tempo": "45 min",
-          "horas": 0.75
-        },
-        {
-          "trecho": "Santa Monica → Santa Barbara (sábado à noite)",
-          "tempo": "1h45",
-          "horas": 1.75
-        }
-      ],
-      "resumo": "Checkout no Coronado, carro no aeroporto e estrada até LA. O dia curtindo LA é só de carro: Griffith Park com vista do letreiro de Hollywood, Santa Monica Pier e pôr do sol na praia. À noite, 1h45 até Santa Barbara, uma cidade charmosa na costa, para dormir.",
-      "atividades": [
-        {
-          "tipo": "transporte",
-          "titulo": "Retirada do carro Sixt em SAN",
-          "descricao": "Checkout no Coronado e Uber até o aeroporto. Retirada por volta das 9h. Perguntar sobre as correntes de neve para Yosemite e pedir carro com tração integral.",
-          "onde": "Sixt, San Diego International Airport",
+          "trecho": "Thousand Oaks → Griffith Park",
+          "tempo": "1h",
           "horas": 1
         },
         {
+          "trecho": "Griffith Park → Santa Monica",
+          "tempo": "35 min",
+          "horas": 0.58
+        },
+        {
+          "trecho": "Santa Monica → Thousand Oaks (domingo à noite)",
+          "tempo": "1h",
+          "horas": 1
+        }
+      ],
+      "resumo": "Único dia em LA, de carro e sem hotel na cidade: Griffith Park com vista do letreiro de Hollywood, Santa Monica Pier e pôr do sol na praia. À noite, volta para dormir em Thousand Oaks.",
+      "atividades": [
+        {
           "tipo": "trilha",
           "titulo": "Griffith Park e o letreiro de Hollywood",
-          "descricao": "Chegada por volta das 12h. Trilha larga do Griffith Observatory até um mirante com o letreiro e a cidade. Faça só o trecho que estiver com vontade; o Mount Hollywood (~4,5 km, +150 m) é opcional.",
+          "descricao": "Chegada por volta das 9h30, antes de o estacionamento lotar. Trilha larga do Griffith Observatory até um mirante com o letreiro e a cidade. Faça só o trecho que estiver com vontade; o Mount Hollywood (~4,5 km, +150 m) é opcional.",
           "stats": "~2–3 km · pouca subida",
           "lugar": "hollywood",
           "horas": 1.5
@@ -205,22 +292,15 @@
         {
           "tipo": "praia",
           "titulo": "Pôr do sol na praia de Santa Monica",
-          "descricao": "Sentados na areia, com o sol entrando às ~16:46. Depois, 1h45 de estrada até Santa Barbara, no escuro.",
+          "descricao": "Sentados na areia, com o sol entrando às ~16:49. Depois, 1h até Thousand Oaks, no escuro.",
           "onde": "Santa Monica State Beach",
           "horas": 1.5
-        },
-        {
-          "tipo": "hotel",
-          "titulo": "Check-in em Santa Barbara",
-          "descricao": "Airbnb a reservar (1 noite, 21/11), com chave autônoma e estacionamento incluído. Chegada por volta das 19h.",
-          "onde": "Santa Barbara, CA",
-          "horas": 0
         }
       ],
       "alertas": [
         {
           "nivel": "aviso",
-          "texto": "Dia puxado: ~5h15 de direção e a LA de sábado, com trânsito. Se estiver pesado, pule o Lake Hollywood Park e a caminhada até o letreiro e veja só o mirante do Griffith."
+          "texto": "Domingo: o estacionamento do Griffith lota e a volta pode ter trânsito. Chegue cedo. ⚠️ verificar horário do observatório."
         },
         {
           "nivel": "info",
@@ -228,7 +308,7 @@
         }
       ],
       "sol": {
-        "nascer": "06:31",
+        "nascer": "06:32",
         "por": "16:46"
       },
       "trajeto": [
@@ -236,8 +316,8 @@
           "modo": "carro",
           "pontos": [
             [
-              32.7338,
-              -117.1933
+              34.1706,
+              -118.8376
             ],
             [
               34.1184,
@@ -248,17 +328,17 @@
               -118.4974
             ],
             [
-              34.4208,
-              -119.6982
+              34.1706,
+              -118.8376
             ]
           ]
         }
       ]
     },
     {
-      "id": "dia-6",
-      "rotulo": "6",
-      "data": "2026-11-22",
+      "id": "dia-7",
+      "rotulo": "7",
+      "data": "2026-11-23",
       "fase": "road",
       "planos": [
         "B"
@@ -272,31 +352,32 @@
       "capa": "morro",
       "estrada": [
         {
-          "trecho": "Santa Barbara → Morro Bay",
-          "tempo": "1h50",
-          "horas": 1.83
+          "trecho": "Thousand Oaks → Santa Barbara",
+          "tempo": "1h10",
+          "horas": 1.17
         },
         {
-          "trecho": "Morro Bay → Cambria",
-          "tempo": "35 min",
-          "horas": 0.58
+          "trecho": "Santa Barbara → Cambria",
+          "tempo": "2h45 (via Morro Bay, +15 min)",
+          "horas": 2.75
         }
       ],
-      "resumo": "Domingo sem pressa pela costa: café e caminhada em Santa Barbara, onde vocês dormiram, lontras-marinhas em Morro Rock e uma noite numa pousada em Cambria, a meia hora dos elefantes-marinhos.",
+      "resumo": "Estrada pela costa: café e caminhada em Santa Barbara, lontras-marinhas em Morro Rock se der tempo e noite numa pousada em Cambria, com a tarde livre.",
       "atividades": [
         {
           "tipo": "praia",
           "titulo": "Santa Barbara",
-          "descricao": "Café da manhã, Stearns Wharf e uma caminhada curta pela orla e pelo centro. A Missão de Santa Barbara fica a 5 minutos de carro. Saída para Cambria por volta das 11h.",
+          "descricao": "Café, Stearns Wharf e uma caminhada curta pela orla e pelo centro, das 9h às 11h. A Missão de Santa Barbara fica a 5 minutos de carro.",
           "lugar": "stearns",
           "horas": 2
         },
         {
           "tipo": "fauna",
           "titulo": "Morro Rock",
-          "descricao": "Lontras-marinhas na marina, ao pé da rocha vulcânica. Almoço de peixe na beira do cais.",
+          "descricao": "Lontras-marinhas na marina, ao pé da rocha vulcânica. Desvio de ~15 min, só se estiverem sem pressa.",
           "lugar": "morro",
-          "horas": 1.5
+          "horas": 1.5,
+          "opcional": true
         },
         {
           "tipo": "praia",
@@ -309,7 +390,7 @@
         {
           "tipo": "hotel",
           "titulo": "Check-in em Cambria",
-          "descricao": "J. Patrick Inn: check-in das 15h às 20h, feito online (o hotel manda um e-mail na manhã do dia). A reserva está em 24/11 e precisa ser mudada para 22/11.",
+          "descricao": "J. Patrick Inn: check-in das 15h às 20h, feito online (o hotel manda e-mail na manhã do dia). A reserva está em 24/11 e precisa ser mudada para 23/11.",
           "onde": "J. Patrick House Bed and Breakfast, Cambria, CA",
           "horas": 0
         }
@@ -317,15 +398,15 @@
       "alertas": [
         {
           "nivel": "urgente",
-          "texto": "A reserva do J. Patrick Inn é de 24/11. Mude para 22/11 até 19/11 (cancelamento grátis até essa data)."
+          "texto": "A reserva do J. Patrick Inn é de 24/11. Mude para 23/11 até 19/11 (cancelamento grátis até essa data)."
         },
         {
           "nivel": "info",
-          "texto": "Domingo, ~2h30 de direção e dia leve. Se sobrar tempo e disposição, Moonstone Beach é a melhor parada do fim de tarde."
+          "texto": "~3h55 de direção. Saia da base às 8h para ter café em Santa Barbara e chegar a Cambria no meio da tarde."
         }
       ],
       "sol": {
-        "nascer": "06:45",
+        "nascer": "06:46",
         "por": "16:53"
       },
       "trajeto": [
@@ -333,16 +414,16 @@
           "modo": "carro",
           "pontos": [
             [
+              34.1706,
+              -118.8376
+            ],
+            [
               34.4208,
               -119.6982
             ],
             [
               35.1428,
               -120.6413
-            ],
-            [
-              35.3694,
-              -120.8676
             ],
             [
               35.5641,
@@ -353,9 +434,9 @@
       ]
     },
     {
-      "id": "dia-7",
-      "rotulo": "7",
-      "data": "2026-11-23",
+      "id": "dia-8",
+      "rotulo": "8",
+      "data": "2026-11-24",
       "fase": "road",
       "planos": [
         "B"
@@ -420,7 +501,7 @@
         {
           "tipo": "hotel",
           "titulo": "Check-in em Mariposa",
-          "descricao": "Hotel a reservar (3 noites, 23 a 26/11). Prefira quarto com banheiro e estacionamento incluído. Chegada por volta das 18h.",
+          "descricao": "Hotel a reservar (2 noites, 24 e 25/11). Prefira quarto com banheiro e estacionamento incluído. Chegada por volta das 17h–18h.",
           "onde": "Mariposa, CA",
           "horas": 0
         }
@@ -436,11 +517,11 @@
         },
         {
           "nivel": "aviso",
-          "texto": "Obras com mão única 24h na Highway 1 (Rocky Creek Bridge até 30/11; Point Sur até 31/12), segundo o Caltrans em 09/11/2026: some 30–45 min. Conferir o QuickMap na manhã de 23/11."
+          "texto": "Obras com mão única 24h na Highway 1 (Rocky Creek Bridge até 30/11; Point Sur até 31/12), segundo o Caltrans em 09/11/2026: some 30–45 min. Conferir o QuickMap na manhã de 24/11."
         }
       ],
       "sol": {
-        "nascer": "06:51",
+        "nascer": "06:52",
         "por": "16:54"
       },
       "trajeto": [
@@ -492,9 +573,9 @@
       ]
     },
     {
-      "id": "dia-8",
-      "rotulo": "8",
-      "data": "2026-11-24",
+      "id": "dia-9",
+      "rotulo": "9",
+      "data": "2026-11-25",
       "fase": "road",
       "planos": [
         "B"
@@ -518,7 +599,7 @@
           "horas": 1
         }
       ],
-      "resumo": "Primeiro dia inteiro no vale, no seu ritmo: campos planos, cachoeiras e os paredões de granito. O pôr do sol é no Tunnel View, e a volta a Mariposa é à noite.",
+      "resumo": "Dia inteiro no vale, no seu ritmo: campos planos, cachoeiras e os paredões de granito. O pôr do sol é no Tunnel View, e a volta a Mariposa é à noite. A Mist Trail é opcional.",
       "atividades": [
         {
           "tipo": "trilha",
@@ -551,6 +632,16 @@
           "horas": 0.75
         },
         {
+          "tipo": "trilha",
+          "titulo": "Mist Trail até a ponte de Vernal Fall",
+          "descricao": "Subida curta de Happy Isles até a ponte com vista da cachoeira. Comece cedo: pode ter gelo na trilha. ⚠️ verificar.",
+          "stats": "~5 km ida e volta · +120 m",
+          "onde": "Mist Trail, Yosemite",
+          "maps": "Vernal Fall Footbridge, Yosemite",
+          "horas": 2.5,
+          "opcional": true
+        },
+        {
           "tipo": "vista",
           "titulo": "Pôr do sol no Tunnel View",
           "descricao": "El Capitan, Bridalveil e Half Dome na mesma moldura, ao fim da tarde (~16:50). Chegue 30 minutos antes.",
@@ -569,111 +660,7 @@
         },
         {
           "nivel": "info",
-          "texto": "Volta no escuro pela CA-140 (~1h): cuidado com cervos na pista. Amanhã é o segundo dia no vale."
-        }
-      ],
-      "sol": {
-        "nascer": "06:48",
-        "por": "16:42"
-      },
-      "trajeto": [
-        {
-          "modo": "carro",
-          "pontos": [
-            [
-              37.4849,
-              -119.9663
-            ],
-            [
-              37.7456,
-              -119.5936
-            ],
-            [
-              37.7158,
-              -119.6772
-            ],
-            [
-              37.7456,
-              -119.5936
-            ],
-            [
-              37.4849,
-              -119.9663
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "dia-9",
-      "rotulo": "9",
-      "data": "2026-11-25",
-      "fase": "road",
-      "planos": [
-        "B"
-      ],
-      "titulo": "Yosemite: segundo dia",
-      "regiao": "Parque Nacional de Yosemite",
-      "coord": [
-        37.7327,
-        -119.5578
-      ],
-      "capa": "yosemitefalls",
-      "estrada": [
-        {
-          "trecho": "Mariposa → Yosemite Valley",
-          "tempo": "1h (CA-140)",
-          "horas": 1
-        },
-        {
-          "trecho": "Yosemite Valley → Mariposa (à noite)",
-          "tempo": "1h (CA-140)",
-          "horas": 1
-        }
-      ],
-      "resumo": "Segundo dia no parque, com a trilha mais bonita do vale logo cedo: a Mist Trail até a ponte de Vernal Fall. Tarde tranquila no vale e, se sobrar vontade, as sequoias gigantes de Mariposa Grove.",
-      "atividades": [
-        {
-          "tipo": "trilha",
-          "titulo": "Mist Trail até a ponte de Vernal Fall",
-          "descricao": "Subida curta de Happy Isles até a ponte com vista da cachoeira. Comece cedo: pode ter gelo na trilha. ⚠️ verificar.",
-          "stats": "~5 km ida e volta · +120 m",
-          "onde": "Mist Trail, Yosemite",
-          "maps": "Vernal Fall Footbridge, Yosemite",
-          "horas": 2.5
-        },
-        {
-          "tipo": "cidade",
-          "titulo": "Ansel Adams Gallery e Village",
-          "descricao": "Galeria de fotos do vale e café no Village, para um almoço sem pressa.",
-          "onde": "Ansel Adams Gallery, Yosemite Village",
-          "horas": 1.5
-        },
-        {
-          "tipo": "vista",
-          "titulo": "Pôr do sol em Valley View",
-          "descricao": "Mirante à beira do rio Merced, com El Capitan e Bridalveil Fall no reflexo. Mais tranquilo que o Tunnel View.",
-          "onde": "Valley View, Yosemite",
-          "horas": 1
-        },
-        {
-          "tipo": "trilha",
-          "titulo": "Sequoias gigantes em Mariposa Grove",
-          "descricao": "Maior bosque de sequoias gigantes de Yosemite. Com a estrada fechada a carros, a entrada é a pé desde o Welcome Plaza. Só se saírem cedo de Mariposa (~1h10).",
-          "stats": "3–6 km",
-          "lugar": "mariposagrove",
-          "horas": 3,
-          "opcional": true
-        }
-      ],
-      "alertas": [
-        {
-          "nivel": "aviso",
-          "texto": "Se nevar, o parque exige correntes. Confira a página de estradas do NPS na manhã de 25/11. ⚠️ verificar Mariposa Grove: a estrada costuma fechar no fim de novembro."
-        },
-        {
-          "nivel": "info",
-          "texto": "Último dia no vale: abasteça o carro em Mariposa à noite, porque amanhã são ~4h30 de estrada até SF."
+          "texto": "Volta no escuro pela CA-140 (~1h): cuidado com cervos na pista. Amanhã são ~4h30 de estrada até SF: abasteça em Mariposa."
         }
       ],
       "sol": {
@@ -693,8 +680,8 @@
               -119.5936
             ],
             [
-              37.7327,
-              -119.5578
+              37.7158,
+              -119.6772
             ],
             [
               37.7456,
@@ -1296,22 +1283,6 @@
         34.41067,
         -119.68736
       ]
-    },
-    "mariposagrove": {
-      "nome": "Mariposa Grove",
-      "wiki": "Mariposa_Grove",
-      "imagem": "img/mariposagrove.jpg",
-      "resumo_wiki": "Mariposa Grove is a sequoia grove located near Wawona, California, United States, in the southernmost part of Yosemite National Park. It is the largest grove of giant sequoias in the park, with several hundred mature specimens. Two of its trees are among the 30 largest giant sequoias in the world. The grove attracts about one million visitors annually. Part of the natural area is old-growth forest",
-      "wiki_url": "https://en.wikipedia.org/wiki/Mariposa_Grove",
-      "credito": {
-        "autor": "National Park Service\n\nderivative work: Hike395 (talk)",
-        "licenca": "Public domain",
-        "url": "https://commons.wikimedia.org/wiki/File:SW_Yosemite_map.png"
-      },
-      "coord": [
-        37.51389,
-        -119.59833
-      ]
     }
   },
   "hospedagens": [
@@ -1334,29 +1305,29 @@
       "pago_usd": 0
     },
     {
-      "id": "santabarbara",
-      "nome": "Airbnb em Santa Barbara (a escolher)",
-      "cidade": "Santa Barbara, CA",
+      "id": "thousandoaks",
+      "nome": "Hotel ou Airbnb em Thousand Oaks (a escolher)",
+      "cidade": "Thousand Oaks, CA",
       "checkin": "2026-11-21",
-      "checkout": "2026-11-22",
+      "checkout": "2026-11-23",
       "status": "A reservar",
       "planos": [
         "B"
       ],
       "coord": [
-        34.4208,
-        -119.6982
+        34.1706,
+        -118.8376
       ],
       "reservado": false,
-      "obs": "Chave autônoma (cofre ou fechadura digital) para chegar às 19h–20h, estacionamento incluído e cancelamento grátis até 19/11."
+      "obs": "Hotel de rede ou Airbnb com estacionamento e cancelamento grátis. Alternativas: Westlake Village (mais caro) ou Malibu (mais bonito e bem mais caro)."
     },
     {
       "id": "cambria",
       "nome": "J. Patrick Inn",
       "cidade": "Cambria, CA",
-      "checkin": "2026-11-22",
-      "checkout": "2026-11-23",
-      "status": "Reservado para 24/11 · mudar para 22/11",
+      "checkin": "2026-11-23",
+      "checkout": "2026-11-24",
+      "status": "Reservado para 24/11 · mudar para 23/11",
       "planos": [
         "B"
       ],
@@ -1371,7 +1342,7 @@
       "id": "mariposa",
       "nome": "Hotel em Mariposa (a escolher)",
       "cidade": "Mariposa, CA",
-      "checkin": "2026-11-23",
+      "checkin": "2026-11-24",
       "checkout": "2026-11-26",
       "status": "A reservar",
       "planos": [
@@ -1411,17 +1382,17 @@
       "planos": [
         "B"
       ],
-      "item": "J. Patrick Inn: mudar de 24/11 para 22/11",
-      "detalhe": "Mudança e cancelamento grátis até 19/11. Pedir a mudança direto ao hotel ou pelo site da reserva. Check-in das 15h às 20h, online."
+      "item": "J. Patrick Inn: mudar de 24/11 para 23/11",
+      "detalhe": "Mudança e cancelamento grátis até 19/11. Check-in das 15h às 20h, online."
     },
     {
-      "id": "santabarbara",
+      "id": "thousandoaks",
       "prioridade": "urgente",
       "planos": [
         "B"
       ],
-      "item": "Airbnb em Santa Barbara (21/11, 1 noite)",
-      "detalhe": "Confirmar check-in tardio com chave autônoma (chegada ~19h), estacionamento incluído e cancelamento grátis. Diária em geral acima de US$ 150."
+      "item": "Hotel ou Airbnb em Thousand Oaks (21 a 23/11, 2 noites)",
+      "detalhe": "Hotel de rede ou Airbnb com estacionamento e cancelamento grátis. Diária de referência US$ 130–180 ⚠️ verificar. Alternativas: Westlake Village ou Malibu."
     },
     {
       "id": "mariposa",
@@ -1429,7 +1400,7 @@
       "planos": [
         "B"
       ],
-      "item": "Hotel em Mariposa (23 a 26/11, 3 noites)",
+      "item": "Hotel em Mariposa (24 a 26/11, 2 noites)",
       "detalhe": "Cidade de apoio a Yosemite pela CA-140. Quarto com banheiro e estacionamento incluído, com cancelamento grátis."
     },
     {
@@ -1486,26 +1457,6 @@
       "detalhe": "Estrada aberta desde 14/09, mas alguns parques seguem fechados após os incêndios. Conferir na semana de 16–20/11 (Caltrans e Parques Estaduais)."
     },
     {
-      "id": "yosemite-taxa",
-      "prioridade": "importante",
-      "planos": [
-        "B"
-      ],
-      "item": "Entrada em Yosemite (paga no portão)",
-      "detalhe": "US$ 35 por veículo mais US$ 100 por pessoa a partir de 16 anos (não residentes), ~US$ 235; vale 7 dias. Levar cartão. Conferido em 08/11/2026.",
-      "url": "https://www.yosemite.com/nonresident-and-international-fees/"
-    },
-    {
-      "id": "correntes",
-      "prioridade": "importante",
-      "planos": [
-        "B"
-      ],
-      "item": "Correntes de neve e a Sixt",
-      "detalhe": "Perguntar se o contrato permite correntes e pedir carro com tração integral. Checar a página de estradas do NPS de 20 a 23/11.",
-      "url": "https://www.nps.gov/yose/planyourvisit/wroads.htm"
-    },
-    {
       "id": "adp",
       "prioridade": "importante",
       "item": "ADP: cobertura da acompanhante",
@@ -1559,15 +1510,15 @@
     "taxa_brl": 5.62,
     "planos": {
       "B": {
-        "total_usd": 3208.96,
+        "total_usd": 3198.96,
         "opcionais_usd": 532.37,
-        "itens_a_verificar": 3,
+        "itens_a_verificar": 5,
         "categorias": {
-          "hospedagem": 1063.74,
-          "alimentacao": 805.0,
+          "hospedagem": 1053.74,
+          "alimentacao": 785.0,
           "carro": 470.22,
           "transporte": 260.0,
-          "gasolina": 235.0,
+          "gasolina": 255.0,
           "ingresso": 235.0,
           "passeio": 90.0,
           "estacionamento": 50.0
@@ -1691,13 +1642,46 @@
           "B"
         ],
         "categoria": "gasolina",
-        "item": "SAN -> Griffith -> Santa Monica -> Santa Barbara",
-        "usd": 55.0,
+        "item": "SAN -> Thousand Oaks",
+        "usd": 35.0,
+        "status": "estimado",
+        "atividade": "Check-in em Thousand Oaks"
+      },
+      {
+        "data": "2026-11-21",
+        "planos": [
+          "B"
+        ],
+        "categoria": "hospedagem",
+        "item": "Hotel ou Airbnb em Thousand Oaks (noite 21; a reservar)",
+        "usd": 150.0,
+        "status": "verificar",
+        "atividade": "Check-in em Thousand Oaks"
+      },
+      {
+        "data": "2026-11-21",
+        "planos": [
+          "B"
+        ],
+        "categoria": "alimentacao",
+        "item": "Refeições do dia",
+        "usd": 70.0,
+        "status": "estimado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-22",
+        "planos": [
+          "B"
+        ],
+        "categoria": "gasolina",
+        "item": "Thousand Oaks -> Griffith -> Santa Monica -> Thousand Oaks",
+        "usd": 30.0,
         "status": "estimado",
         "atividade": "Griffith Park e o letreiro de Hollywood"
       },
       {
-        "data": "2026-11-21",
+        "data": "2026-11-22",
         "planos": [
           "B"
         ],
@@ -1708,7 +1692,7 @@
         "atividade": "Griffith Park e o letreiro de Hollywood"
       },
       {
-        "data": "2026-11-21",
+        "data": "2026-11-22",
         "planos": [
           "B"
         ],
@@ -1719,18 +1703,18 @@
         "atividade": "Santa Monica Pier"
       },
       {
-        "data": "2026-11-21",
+        "data": "2026-11-22",
         "planos": [
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "Hotel em Santa Barbara (noite 21; a reservar)",
-        "usd": 170.0,
-        "status": "estimado",
-        "atividade": "Check-in em Santa Barbara"
+        "item": "Hotel ou Airbnb em Thousand Oaks (noite 22; a reservar)",
+        "usd": 150.0,
+        "status": "verificar",
+        "atividade": null
       },
       {
-        "data": "2026-11-21",
+        "data": "2026-11-22",
         "planos": [
           "B"
         ],
@@ -1741,18 +1725,18 @@
         "atividade": null
       },
       {
-        "data": "2026-11-22",
+        "data": "2026-11-23",
         "planos": [
           "B"
         ],
         "categoria": "gasolina",
-        "item": "Santa Barbara -> Cambria",
-        "usd": 30.0,
+        "item": "Thousand Oaks -> Santa Barbara -> Cambria",
+        "usd": 55.0,
         "status": "estimado",
         "atividade": "Santa Barbara"
       },
       {
-        "data": "2026-11-22",
+        "data": "2026-11-23",
         "planos": [
           "B"
         ],
@@ -1763,18 +1747,18 @@
         "atividade": "Santa Barbara"
       },
       {
-        "data": "2026-11-22",
+        "data": "2026-11-23",
         "planos": [
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "J. Patrick Inn em Cambria (noite 22; valor a confirmar)",
+        "item": "J. Patrick Inn em Cambria (noite 23; valor a confirmar)",
         "usd": 150.0,
         "status": "verificar",
         "atividade": "Check-in em Cambria"
       },
       {
-        "data": "2026-11-22",
+        "data": "2026-11-23",
         "planos": [
           "B"
         ],
@@ -1785,7 +1769,7 @@
         "atividade": null
       },
       {
-        "data": "2026-11-23",
+        "data": "2026-11-24",
         "planos": [
           "B"
         ],
@@ -1796,7 +1780,7 @@
         "atividade": "Estrada até Mariposa"
       },
       {
-        "data": "2026-11-23",
+        "data": "2026-11-24",
         "planos": [
           "B"
         ],
@@ -1804,51 +1788,7 @@
         "item": "McWay Falls (parque estadual)",
         "usd": 10.0,
         "status": "estimado",
-        "atividade": "McWay Falls"
-      },
-      {
-        "data": "2026-11-23",
-        "planos": [
-          "B"
-        ],
-        "categoria": "hospedagem",
-        "item": "Hotel em Mariposa (noite 23; a reservar)",
-        "usd": 140.0,
-        "status": "estimado",
-        "atividade": "Check-in em Mariposa"
-      },
-      {
-        "data": "2026-11-23",
-        "planos": [
-          "B"
-        ],
-        "categoria": "alimentacao",
-        "item": "Refeições do dia e compras no mercado",
-        "usd": 85.0,
-        "status": "estimado",
-        "atividade": null
-      },
-      {
-        "data": "2026-11-24",
-        "planos": [
-          "B"
-        ],
-        "categoria": "ingresso",
-        "item": "Yosemite NP: US$ 35 por veículo + US$ 100 x 2 não residentes (vale 7 dias)",
-        "usd": 235.0,
-        "status": "estimado",
-        "atividade": "Cook's Meadow"
-      },
-      {
-        "data": "2026-11-24",
-        "planos": [
-          "B"
-        ],
-        "categoria": "gasolina",
-        "item": "Mariposa <-> Yosemite Valley",
-        "usd": 15.0,
-        "status": "estimado",
-        "atividade": "Pôr do sol no Tunnel View"
+        "atividade": "Elefantes-marinhos em Piedras Blancas"
       },
       {
         "data": "2026-11-24",
@@ -1859,7 +1799,7 @@
         "item": "Hotel em Mariposa (noite 24; a reservar)",
         "usd": 140.0,
         "status": "estimado",
-        "atividade": null
+        "atividade": "Check-in em Mariposa"
       },
       {
         "data": "2026-11-24",
@@ -1867,10 +1807,21 @@
           "B"
         ],
         "categoria": "alimentacao",
-        "item": "Refeições do dia",
-        "usd": 90.0,
+        "item": "Refeições do dia e compras no mercado",
+        "usd": 85.0,
         "status": "estimado",
         "atividade": null
+      },
+      {
+        "data": "2026-11-25",
+        "planos": [
+          "B"
+        ],
+        "categoria": "ingresso",
+        "item": "Yosemite NP: US$ 35 por veículo + US$ 100 x 2 não residentes (vale 7 dias)",
+        "usd": 235.0,
+        "status": "estimado",
+        "atividade": "Cook's Meadow"
       },
       {
         "data": "2026-11-25",
@@ -1881,7 +1832,7 @@
         "item": "Mariposa <-> Yosemite Valley",
         "usd": 15.0,
         "status": "estimado",
-        "atividade": "Mist Trail até a ponte de Vernal Fall"
+        "atividade": "Pôr do sol no Tunnel View"
       },
       {
         "data": "2026-11-25",

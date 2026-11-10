@@ -174,6 +174,194 @@
     },
     "dia-7": {
       "intro": [
+        "Um dia sem pressa pela Costa Central, a parte da Califórnia entre LA e Big Sur que muita gente pula.",
+        "Termina em Cambria, uma vila de pinheiros à beira-mar, a meia hora dos elefantes-marinhos."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Santa Barbara County Courthouse",
+              "texto": "Tribunal de 1929 em estilo colonial espanhol, com murais e uma torre do relógio aberta ao público com vista 360° da cidade. Entrada gratuita.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas",
+                "yt-unseen-california"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 344
+              },
+              "onde": "Santa Barbara County Courthouse",
+              "verificar": "Confirmar horário da torre",
+              "coord": [
+                34.42433,
+                -119.70251
+              ]
+            },
+            {
+              "nome": "Montaña de Oro State Park",
+              "texto": "Bluff Trail no alto de falésias recortadas, ao sul de Morro Bay. Uma das trilhas costeiras mais bonitas do estado.",
+              "stats": "5 km",
+              "onde": "Montaña de Oro, Los Osos",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ],
+              "coord": [
+                35.29381,
+                -120.86156
+              ]
+            },
+            {
+              "nome": "El Capitán State Beach",
+              "texto": "Praia entre falésias logo ao norte de Santa Barbara, pela US-101. Golfinhos costumam nadar perto da arrebentação.",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ],
+              "onde": "El Capitán State Beach",
+              "coord": [
+                34.48737,
+                -120.01255
+              ]
+            },
+            {
+              "nome": "Caiaque em Morro Bay",
+              "texto": "Remar na baía tranquila entre lontras-marinhas, com a Morro Rock ao fundo.",
+              "onde": "Morro Bay State Park Marina",
+              "coord": [
+                35.354,
+                -120.844
+              ],
+              "maps": "Morro Bay State Park Marina"
+            },
+            {
+              "nome": "Moonstone Beach Boardwalk",
+              "texto": "Passarela de madeira sobre as pedras em Cambria. Ótima para o pôr do sol.",
+              "onde": "Moonstone Beach, Cambria",
+              "coord": [
+                35.57491,
+                -121.1137
+              ]
+            },
+            {
+              "nome": "Missão de Santa Barbara",
+              "texto": "A rainha das missões espanholas, a 5 minutos do Handlebar.",
+              "onde": "Old Mission Santa Barbara",
+              "coord": [
+                34.5982,
+                -120.13084
+              ],
+              "maps": "Old Mission Santa Barbara"
+            },
+            {
+              "nome": "Naufrágio de Cayucos",
+              "texto": "O barco de pesca Point San Luis encalhou na praia em 2017. Parada rápida entre Morro Bay e Cambria.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 614
+              },
+              "onde": "Cayucos",
+              "verificar": "Confirmar se o casco ainda está na praia",
+              "coord": [
+                35.43701,
+                -120.88311
+              ],
+              "maps": "Point San Luis shipwreck, Cayucos"
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
+            {
+              "nome": "Handlebar Coffee Roasters",
+              "texto": "Um dos dois cafés mais bem avaliados de Santa Barbara, com pátio ao sol.",
+              "onde": "Downtown Santa Barbara",
+              "coord": [
+                34.42711,
+                -119.71064
+              ]
+            },
+            {
+              "nome": "Dune Coffee Roasters",
+              "texto": "Torrefação local com clima bem Santa Barbara.",
+              "onde": "State St, Santa Barbara",
+              "coord": [
+                34.4224,
+                -119.70343
+              ]
+            },
+            {
+              "nome": "Buttercup Bakery",
+              "texto": "Padaria aconchegante no centro de Morro Bay, aberta das 7h às 15h.",
+              "onde": "Morro Bay",
+              "coord": [
+                35.3667,
+                -120.8496
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "Splash Café",
+              "texto": "Clam chowder, a sopa cremosa de mariscos da costa, servida dentro de um pão sourdough. O vídeo sugere com molho de pimenta.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 212
+              },
+              "onde": "Pismo Beach",
+              "coord": [
+                35.14006,
+                -120.64235
+              ]
+            },
+            {
+              "nome": "Giovanni's Fish Market",
+              "texto": "Fish and chips e mariscos na beira do cais, com leões-marinhos por perto.",
+              "onde": "Embarcadero, Morro Bay",
+              "coord": [
+                35.37243,
+                -120.85962
+              ]
+            },
+            {
+              "nome": "Linn's Restaurant",
+              "texto": "Famoso pela torta de olallieberry, uma amora típica da região. Bom para jantar ou para o café da manhã seguinte.",
+              "onde": "Main St, Cambria",
+              "coord": [
+                35.56433,
+                -121.0819
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Saia às 8h",
+              "texto": "Com a US-101 livre, são 1h10 até Santa Barbara. Café por lá e estrada para Cambria às 11h."
+            },
+            {
+              "nome": "Check-in em Cambria",
+              "texto": "O J. Patrick Inn faz o check-in online, das 15h às 20h; o hotel envia um e-mail na manhã do dia."
+            }
+          ]
+        }
+      ]
+    },
+    "dia-8": {
+      "intro": [
         "O trecho de Big Sur entre Cambria e Carmel tem cerca de 150 km de curvas sobre o Pacífico. Não há cidades, quase não há sinal e cada mirante pede uma parada.",
         "A saída é cedo porque o dia termina com ~3h30 de estrada até Yosemite. Escolham duas ou três paradas e deixem o resto."
       ],
@@ -252,7 +440,7 @@
                 "yt-ctml-pch-20-paradas": 104
               },
               "onde": "Point Sur State Historic Park",
-              "verificar": "Confirmar se há tour em 23/11",
+              "verificar": "Confirmar se há tour em 24/11",
               "coord": [
                 36.30691,
                 -121.89838
@@ -266,7 +454,7 @@
           "itens": [
             {
               "nome": "Big Sur Bakery",
-              "texto": "Padaria numa casa de rancho dos anos 30. Abre de quarta a segunda, das 9h às 14h. O dia 23/11 é uma segunda.",
+              "texto": "Padaria numa casa de rancho dos anos 30. Fecha às terças, e 24/11 é terça: não conte com ela. ⚠️ verificar.",
               "onde": "47540 CA-1, Big Sur",
               "coord": [
                 36.28889,
@@ -338,7 +526,7 @@
         }
       ]
     },
-    "dia-8": {
+    "dia-9": {
       "intro": [
         "Yosemite é o parque que fez nascer a ideia de parque nacional nos Estados Unidos. Em novembro o vale fica mais vazio, com as árvores ainda amarelas e, às vezes, neve nos paredões.",
         "As cachoeiras estão no ponto mais baixo do ano, e algumas podem estar secas. Em compensação, a luz do outono é bonita e o vale fica tranquilo."
@@ -372,6 +560,47 @@
               "coord": [
                 37.73272,
                 -119.6057
+              ]
+            },
+            {
+              "nome": "Mist Trail até a ponte de Vernal Fall",
+              "texto": "Subida curta até a ponte com vista para a cachoeira. Com pouca água em novembro, molha menos que na primavera.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ],
+              "onde": "Mist Trail, Yosemite",
+              "stats": "2,6 km · +120 m",
+              "verificar": "Pode ter gelo",
+              "coord": [
+                37.7275,
+                -119.545
+              ],
+              "maps": "Vernal Fall Footbridge, Yosemite"
+            },
+            {
+              "nome": "Bicicleta no vale",
+              "texto": "Ciclovias planas ligam os pontos do vale. O aluguel fica no Curry Village e no Yosemite Valley Lodge.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ],
+              "onde": "Curry Village, Yosemite",
+              "verificar": "Confirmar se o aluguel funciona em novembro",
+              "coord": [
+                37.73745,
+                -119.57136
+              ],
+              "maps": "Curry Village Bike Rental, Yosemite"
+            },
+            {
+              "nome": "Ansel Adams Gallery",
+              "texto": "Galeria do fotógrafo que imortalizou o parque, no Yosemite Village.",
+              "fontes": [
+                "yt-yosemite-3-videos"
+              ],
+              "onde": "Ansel Adams Gallery, Yosemite",
+              "coord": [
+                37.74856,
+                -119.58687
               ]
             }
           ]
@@ -508,105 +737,6 @@
               "fontes": [
                 "yt-yosemite-3-videos"
               ]
-            }
-          ]
-        }
-      ]
-    },
-    "dia-9": {
-      "intro": [
-        "O segundo dia no parque é para os lugares que o primeiro não coube: a Mist Trail até a ponte de Vernal Fall, o Village e o fim de tarde em Valley View.",
-        "Amanhã é Thanksgiving e a estrada até SF é longa, então durma cedo."
-      ],
-      "secoes": [
-        {
-          "tipo": "fazer",
-          "titulo": "Mais para fazer",
-          "itens": [
-            {
-              "nome": "Mist Trail até a ponte de Vernal Fall",
-              "texto": "Subida curta até a ponte com vista para a cachoeira. Com pouca água em novembro, molha menos que na primavera.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Mist Trail, Yosemite",
-              "stats": "2,6 km · +120 m",
-              "verificar": "Pode ter gelo",
-              "coord": [
-                37.7275,
-                -119.545
-              ],
-              "maps": "Vernal Fall Footbridge, Yosemite"
-            },
-            {
-              "nome": "Bicicleta no vale",
-              "texto": "Ciclovias planas ligam os pontos do vale. O aluguel fica no Curry Village e no Yosemite Valley Lodge.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Curry Village, Yosemite",
-              "verificar": "Confirmar se o aluguel funciona em novembro",
-              "coord": [
-                37.73745,
-                -119.57136
-              ],
-              "maps": "Curry Village Bike Rental, Yosemite"
-            },
-            {
-              "nome": "Patinação no gelo no Curry Village",
-              "texto": "Pista ao ar livre com vista para o Half Dome, que costuma abrir em meados de novembro.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Curry Village, Yosemite",
-              "verificar": "Confirmar abertura",
-              "coord": [
-                37.73745,
-                -119.57136
-              ],
-              "maps": "Curry Village Ice Rink, Yosemite"
-            },
-            {
-              "nome": "Ansel Adams Gallery",
-              "texto": "Galeria do fotógrafo que imortalizou o parque, no Yosemite Village.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Ansel Adams Gallery, Yosemite",
-              "coord": [
-                37.74856,
-                -119.58687
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "dica",
-          "titulo": "Dicas práticas",
-          "itens": [
-            {
-              "nome": "Mist Trail cedo",
-              "texto": "Comece antes das 9h: a trilha é de pedra molhada e pode ter gelo.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "verificar": "Conferir condições na semana da viagem"
-            },
-            {
-              "nome": "Estacionamento no vale",
-              "texto": "Deixe o carro num lote perto de Yosemite Village e use o ônibus gratuito do vale, se estiver rodando."
-            },
-            {
-              "nome": "Abasteça em Mariposa",
-              "texto": "Amanhã são ~4h30 de estrada. Encha o tanque à noite."
-            },
-            {
-              "nome": "Correntes e neve",
-              "texto": "Confira o NPS na manhã de 25/11 antes de sair.",
-              "fontes": [
-                "pesquisa-2026-11"
-              ],
-              "verificar": "Conferir estradas"
             }
           ]
         }
@@ -1045,8 +1175,8 @@
     },
     "dia-5": {
       "intro": [
-        "O dia em LA é só de carro: o Griffith Park, com a vista do letreiro de Hollywood, e a costa de Santa Monica. Sem hotel na cidade, vocês dormem em Santa Barbara, 1h45 ao norte.",
-        "Sábado de novembro: o Griffith enche no meio da manhã. Como a chegada é por volta das 12h, tenha paciência com o estacionamento."
+        "Sábado é dia de descanso: carro, ~3h de estrada e a tarde livre em Thousand Oaks, um subúrbio seguro e tranquilo a ~1h de LA.",
+        "A ideia é chegar com energia para o domingo em LA e a estrada de segunda."
       ],
       "secoes": [
         {
@@ -1054,49 +1184,25 @@
           "titulo": "Mais para fazer",
           "itens": [
             {
-              "nome": "Griffith Observatory",
-              "texto": "Aberto aos sábados, mas lota. O terraço tem vista da cidade e do letreiro, e é dali que sai a trilha.",
-              "fontes": [
-                "yt-la-travel-guide-10-lugares",
-                "yt-unseen-california"
-              ],
-              "onde": "Griffith Observatory, Los Angeles",
+              "nome": "Paradise Falls (Wildwood Regional Park)",
+              "texto": "Trilha sombreada até uma cachoeira dentro do parque da cidade.",
+              "onde": "Wildwood Regional Park, Thousand Oaks",
+              "stats": "~4 km",
+              "verificar": "Confirmar se a trilha está aberta e se há água"
+            },
+            {
+              "nome": "Westlake Lake",
+              "texto": "Passeio plano em volta do lago de Westlake Village, com cafés.",
+              "onde": "Westlake Village, CA",
               "coord": [
-                34.11822,
-                -118.30029
+                34.1425,
+                -118.82872
               ]
             },
             {
-              "nome": "Lake Hollywood Park",
-              "texto": "Gramado de bairro com a vista mais próxima do letreiro. Vá cedo, antes dos ônibus de turismo.",
-              "onde": "Lake Hollywood Park, Los Angeles",
-              "coord": [
-                34.12689,
-                -118.32592
-              ]
-            },
-            {
-              "nome": "Santa Monica Pier",
-              "texto": "O píer de 1909, com a roda-gigante sobre o mar. Fim natural da ciclovia que vem de Venice.",
-              "onde": "Santa Monica Pier",
-              "coord": [
-                34.0089,
-                -118.4974
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "levar",
-          "titulo": "O que levar",
-          "itens": [
-            {
-              "nome": "Casaco leve",
-              "texto": "A costa esfria depois do pôr do sol, e a volta é à noite."
-            },
-            {
-              "nome": "Água e lanche",
-              "texto": "A trilha do Griffith não tem lanchonete."
+              "nome": "Point Dume",
+              "texto": "Falésia com vista do Pacífico e praia abaixo. Pôr do sol bonito.",
+              "onde": "Point Dume State Beach, Malibu"
             }
           ]
         },
@@ -1105,35 +1211,13 @@
           "titulo": "Dicas práticas",
           "itens": [
             {
-              "nome": "Agrupe por região",
-              "texto": "Griffith de manhã, a costa à tarde: vocês atravessam a cidade uma vez só e fogem do trânsito.",
-              "fontes": [
-                "yt-la-travel-guide-10-lugares"
-              ]
+              "nome": "Check-in antecipado",
+              "texto": "Chegando às 13h, peça ao hotel para guardar as malas ou liberar o quarto mais cedo."
             },
             {
-              "nome": "Nada visível no carro",
-              "texto": "Furtos de carro são comuns em LA. Leve tudo com vocês ou deixe no porta-malas antes de chegar."
-            },
-            {
-              "nome": "Estrada até Santa Barbara",
-              "texto": "São ~1h45 pela US-101 no sábado à noite. Saia da praia logo depois do pôr do sol."
-            }
-          ]
-        },
-        {
-          "tipo": "comer",
-          "titulo": "Jantar em Santa Barbara",
-          "itens": [
-            {
-              "nome": "State Street",
-              "texto": "Rua principal do centro, com restaurantes e cafés abertos até tarde, a poucos minutos do mar.",
-              "onde": "State Street, Santa Barbara, CA",
-              "verificar": "Confirmar horários no sábado",
-              "coord": [
-                34.4224,
-                -119.7034
-              ]
+              "nome": "Jantar perto",
+              "texto": "Escolha um restaurante perto da base e durma cedo; amanhã o Griffith lota por volta das 11h.",
+              "verificar": "Confirmar restaurantes no sábado"
             }
           ]
         }
@@ -1225,8 +1309,8 @@
     },
     "dia-6": {
       "intro": [
-        "Um dia sem pressa pela Costa Central, a parte da Califórnia entre LA e Big Sur que muita gente pula.",
-        "Termina em Cambria, uma vila de pinheiros à beira-mar, a meia hora dos elefantes-marinhos."
+        "O dia em LA é só de carro: o Griffith Park, com a vista do letreiro de Hollywood, e a costa de Santa Monica. Sem hotel na cidade, vocês dormem de volta em Thousand Oaks, ~1h ao norte.",
+        "Domingo de novembro: o Griffith enche no meio da manhã. Chegue às 9h30 e faça a trilha com calma."
       ],
       "secoes": [
         {
@@ -1234,164 +1318,49 @@
           "titulo": "Mais para fazer",
           "itens": [
             {
-              "nome": "Santa Barbara County Courthouse",
-              "texto": "Tribunal de 1929 em estilo colonial espanhol, com murais e uma torre do relógio aberta ao público com vista 360° da cidade. Entrada gratuita.",
+              "nome": "Griffith Observatory",
+              "texto": "Aberto aos domingos, mas lota. O terraço tem vista da cidade e do letreiro, e é dali que sai a trilha.",
               "fontes": [
-                "yt-ctml-pch-20-paradas",
+                "yt-la-travel-guide-10-lugares",
                 "yt-unseen-california"
               ],
-              "tempos": {
-                "yt-ctml-pch-20-paradas": 344
-              },
-              "onde": "Santa Barbara County Courthouse",
-              "verificar": "Confirmar horário da torre",
+              "onde": "Griffith Observatory, Los Angeles",
               "coord": [
-                34.42433,
-                -119.70251
+                34.11822,
+                -118.30029
               ]
             },
             {
-              "nome": "Montaña de Oro State Park",
-              "texto": "Bluff Trail no alto de falésias recortadas, ao sul de Morro Bay. Uma das trilhas costeiras mais bonitas do estado.",
-              "stats": "5 km",
-              "onde": "Montaña de Oro, Los Osos",
-              "fontes": [
-                "yt-bmtm-california-20-paradas"
-              ],
+              "nome": "Lake Hollywood Park",
+              "texto": "Gramado de bairro com a vista mais próxima do letreiro. Vá cedo, antes dos ônibus de turismo.",
+              "onde": "Lake Hollywood Park, Los Angeles",
               "coord": [
-                35.29381,
-                -120.86156
+                34.12689,
+                -118.32592
               ]
             },
             {
-              "nome": "El Capitán State Beach",
-              "texto": "Praia entre falésias logo ao norte de Santa Barbara, pela US-101. Golfinhos costumam nadar perto da arrebentação.",
-              "fontes": [
-                "yt-bmtm-california-20-paradas"
-              ],
-              "onde": "El Capitán State Beach",
+              "nome": "Santa Monica Pier",
+              "texto": "O píer de 1909, com a roda-gigante sobre o mar. Fim natural da ciclovia que vem de Venice.",
+              "onde": "Santa Monica Pier",
               "coord": [
-                34.48737,
-                -120.01255
-              ]
-            },
-            {
-              "nome": "Caiaque em Morro Bay",
-              "texto": "Remar na baía tranquila entre lontras-marinhas, com a Morro Rock ao fundo.",
-              "onde": "Morro Bay State Park Marina",
-              "coord": [
-                35.354,
-                -120.844
-              ],
-              "maps": "Morro Bay State Park Marina"
-            },
-            {
-              "nome": "Moonstone Beach Boardwalk",
-              "texto": "Passarela de madeira sobre as pedras em Cambria. Ótima para o pôr do sol.",
-              "onde": "Moonstone Beach, Cambria",
-              "coord": [
-                35.57491,
-                -121.1137
-              ]
-            },
-            {
-              "nome": "Missão de Santa Barbara",
-              "texto": "A rainha das missões espanholas, a 5 minutos do Handlebar.",
-              "onde": "Old Mission Santa Barbara",
-              "coord": [
-                34.5982,
-                -120.13084
-              ],
-              "maps": "Old Mission Santa Barbara"
-            },
-            {
-              "nome": "Naufrágio de Cayucos",
-              "texto": "O barco de pesca Point San Luis encalhou na praia em 2017. Parada rápida entre Morro Bay e Cambria.",
-              "fontes": [
-                "yt-ctml-pch-20-paradas"
-              ],
-              "tempos": {
-                "yt-ctml-pch-20-paradas": 614
-              },
-              "onde": "Cayucos",
-              "verificar": "Confirmar se o casco ainda está na praia",
-              "coord": [
-                35.43701,
-                -120.88311
-              ],
-              "maps": "Point San Luis shipwreck, Cayucos"
-            }
-          ]
-        },
-        {
-          "tipo": "cafe",
-          "titulo": "Café",
-          "itens": [
-            {
-              "nome": "Handlebar Coffee Roasters",
-              "texto": "Um dos dois cafés mais bem avaliados de Santa Barbara, com pátio ao sol.",
-              "onde": "Downtown Santa Barbara",
-              "coord": [
-                34.42711,
-                -119.71064
-              ]
-            },
-            {
-              "nome": "Dune Coffee Roasters",
-              "texto": "Torrefação local com clima bem Santa Barbara.",
-              "onde": "State St, Santa Barbara",
-              "coord": [
-                34.4224,
-                -119.70343
-              ]
-            },
-            {
-              "nome": "Buttercup Bakery",
-              "texto": "Padaria aconchegante no centro de Morro Bay, aberta das 7h às 15h.",
-              "onde": "Morro Bay",
-              "coord": [
-                35.3667,
-                -120.8496
+                34.0089,
+                -118.4974
               ]
             }
           ]
         },
         {
-          "tipo": "comer",
-          "titulo": "Onde comer",
+          "tipo": "levar",
+          "titulo": "O que levar",
           "itens": [
             {
-              "nome": "Splash Café",
-              "texto": "Clam chowder, a sopa cremosa de mariscos da costa, servida dentro de um pão sourdough. O vídeo sugere com molho de pimenta.",
-              "fontes": [
-                "yt-ctml-pch-20-paradas"
-              ],
-              "tempos": {
-                "yt-ctml-pch-20-paradas": 212
-              },
-              "onde": "Pismo Beach",
-              "coord": [
-                35.14006,
-                -120.64235
-              ]
+              "nome": "Casaco leve",
+              "texto": "A costa esfria depois do pôr do sol, e a volta é à noite."
             },
             {
-              "nome": "Giovanni's Fish Market",
-              "texto": "Fish and chips e mariscos na beira do cais, com leões-marinhos por perto.",
-              "onde": "Embarcadero, Morro Bay",
-              "coord": [
-                35.37243,
-                -120.85962
-              ]
-            },
-            {
-              "nome": "Linn's Restaurant",
-              "texto": "Famoso pela torta de olallieberry, uma amora típica da região. Bom para jantar ou para o café da manhã seguinte.",
-              "onde": "Main St, Cambria",
-              "coord": [
-                35.56433,
-                -121.0819
-              ]
+              "nome": "Água e lanche",
+              "texto": "A trilha do Griffith não tem lanchonete."
             }
           ]
         },
@@ -1400,12 +1369,19 @@
           "titulo": "Dicas práticas",
           "itens": [
             {
-              "nome": "Pegue a US-101 até San Luis Obispo",
-              "texto": "É o trecho mais rápido. A Highway 1 fica para amanhã."
+              "nome": "Agrupe por região",
+              "texto": "Griffith de manhã, a costa à tarde: vocês atravessam a cidade uma vez só e fogem do trânsito.",
+              "fontes": [
+                "yt-la-travel-guide-10-lugares"
+              ]
             },
             {
-              "nome": "Check-in em Cambria",
-              "texto": "O J. Patrick Inn faz o check-in online, das 15h às 20h; o hotel envia um e-mail na manhã do dia."
+              "nome": "Nada visível no carro",
+              "texto": "Furtos de carro são comuns em LA. Leve tudo com vocês ou deixe no porta-malas antes de chegar."
+            },
+            {
+              "nome": "Volta a Thousand Oaks",
+              "texto": "São ~1h pela US-101 no domingo à noite. Saia da praia logo depois do pôr do sol."
             }
           ]
         }
@@ -1959,31 +1935,6 @@
             {
               "nome": "Domingo",
               "texto": "A orla fica mais cheia depois das 11h. Chegue cedo."
-            }
-          ]
-        }
-      ]
-    },
-    "mariposagrove": {
-      "intro": [
-        "O maior bosque de sequoias gigantes de Yosemite, com mais de 500 árvores maduras perto da entrada sul do parque."
-      ],
-      "secoes": [
-        {
-          "tipo": "dica",
-          "titulo": "Dicas",
-          "itens": [
-            {
-              "nome": "Vá cedo",
-              "texto": "O estacionamento do Welcome Plaza enche no meio do dia.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            },
-            {
-              "nome": "Inverno",
-              "texto": "Com neve, a subida até o bosque é a pé.",
-              "verificar": "Confirmar em 25/11"
             }
           ]
         }
