@@ -15,15 +15,15 @@ dia,data,plano,categoria,item,usd,status,atividade
 2,18/11,B,alimentacao,Refeições da acompanhante nos dias 18 a 20 (se a ADP não cobrir),200,opcional,
 5,21/11,B,carro,Aluguel Sixt (4 diárias com impostos; a reserva atual começa em 22/11),376.22,confirmado,Retirada do carro Sixt em SAN
 5,21/11,B,carro,Diária extra Sixt (retirada em 21/11; valor a confirmar),94,verificar,Retirada do carro Sixt em SAN
-5,21/11,B,gasolina,SAN -> Thousand Oaks,35,estimado,Check-in em Thousand Oaks
-5,21/11,B,hospedagem,Hotel ou Airbnb em Thousand Oaks (noite 21; a reservar),150,verificar,Check-in em Thousand Oaks
-5,21/11,B,alimentacao,Refeições do dia,70,estimado,
-6,22/11,B,gasolina,Thousand Oaks -> Griffith -> Santa Monica -> Thousand Oaks,30,estimado,Griffith Park e o letreiro de Hollywood
+5,21/11,B,gasolina,SAN -> Santa Monica -> Pasadena,50,estimado,Santa Monica Pier
+5,21/11,B,estacionamento,Santa Monica Pier (lote por dia),20,estimado,Santa Monica Pier
+5,21/11,B,hospedagem,Hotel em Old Pasadena (noite 21; a reservar),190,verificar,Check-in em Pasadena
+5,21/11,B,alimentacao,Almoço e jantar com bar,130,estimado,Jantar e bar em Old Pasadena
+6,22/11,B,gasolina,Pasadena <-> Griffith,15,estimado,Griffith Park e o letreiro de Hollywood
 6,22/11,B,estacionamento,Griffith Observatory,10,estimado,Griffith Park e o letreiro de Hollywood
-6,22/11,B,estacionamento,Santa Monica Pier (lote por dia),20,estimado,Santa Monica Pier
-6,22/11,B,hospedagem,Hotel ou Airbnb em Thousand Oaks (noite 22; a reservar),150,verificar,
-6,22/11,B,alimentacao,Refeições do dia,85,estimado,
-7,23/11,B,gasolina,Thousand Oaks -> Santa Barbara -> Cambria,55,estimado,Santa Barbara
+6,22/11,B,hospedagem,Hotel em Old Pasadena (noite 22; a reservar),190,verificar,
+6,22/11,B,alimentacao,Refeições do dia,110,estimado,Jantar em Old Pasadena
+7,23/11,B,gasolina,Pasadena -> Santa Barbara -> Cambria,70,estimado,Santa Barbara
 7,23/11,B,estacionamento,Santa Barbara (Stearns Wharf e centro),10,estimado,Santa Barbara
 7,23/11,B,hospedagem,J. Patrick Inn em Cambria (noite 23; valor a confirmar),150,verificar,Check-in em Cambria
 7,23/11,B,alimentacao,Refeições do dia,90,estimado,

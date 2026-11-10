@@ -9,11 +9,11 @@
     "plano_recomendado": "B",
     "teto_usd": 3000
   },
-  "atualizado_em": "2026-11-10 00:56",
+  "atualizado_em": "2026-11-10 01:02",
   "planos": {
     "B": {
       "nome": "Plano B",
-      "resumo": "Sábado e domingo leves perto de LA (um dia no Griffith e no Santa Monica Pier), depois a costa por Santa Barbara, Cambria e Big Sur, um dia inteiro em Yosemite e a chegada a SF no Thanksgiving. Dias de estrada só de segunda a quinta."
+      "resumo": "Sábado e domingo em Old Pasadena (píer ao pôr do sol, noite a pé, Griffith no domingo), depois a costa por Santa Barbara, Cambria e Big Sur, um dia inteiro em Yosemite e a chegada a SF no Thanksgiving. Dias de estrada só de segunda a quinta."
     }
   },
   "fases": [
@@ -146,21 +146,26 @@
       "planos": [
         "B"
       ],
-      "titulo": "Chegada perto de LA",
-      "regiao": "Thousand Oaks",
+      "titulo": "Santa Monica e noite em Pasadena",
+      "regiao": "Santa Monica e Old Pasadena",
       "coord": [
-        34.1706,
-        -118.8376
+        34.1456,
+        -118.148
       ],
-      "capa": "hollywood",
+      "capa": "pier",
       "estrada": [
         {
-          "trecho": "Coronado → SAN → Thousand Oaks",
-          "tempo": "3h (sem pressa)",
-          "horas": 3
+          "trecho": "Coronado → SAN → Santa Monica",
+          "tempo": "2h45 (depois da retirada do carro)",
+          "horas": 2.75
+        },
+        {
+          "trecho": "Santa Monica → Pasadena (sábado à noite)",
+          "tempo": "50 min",
+          "horas": 0.83
         }
       ],
-      "resumo": "Dia de descanso depois do evento: retirada do carro, ~3h de estrada até Thousand Oaks e a tarde livre. Sem programa fixo: um passeio curto, jantar e cama cedo.",
+      "resumo": "Carro no aeroporto e estrada até Santa Monica. Píer, almoço e pôr do sol na praia. Depois ~50 min até Old Pasadena, onde o hotel fica a pé do centro: jantar e bar sem precisar dirigir.",
       "atividades": [
         {
           "tipo": "transporte",
@@ -170,43 +175,51 @@
           "horas": 1
         },
         {
-          "tipo": "hotel",
-          "titulo": "Check-in em Thousand Oaks",
-          "descricao": "Hotel ou Airbnb a reservar (2 noites, 21 e 22/11), com estacionamento incluído e cancelamento grátis. Chegada por volta das 13h; peça o check-in antecipado ou guarda de malas.",
-          "onde": "Thousand Oaks, CA",
-          "horas": 0
-        },
-        {
-          "tipo": "trilha",
-          "titulo": "Paradise Falls em Wildwood Park",
-          "descricao": "Trilha curta e sombreada até uma cachoeira, no parque da cidade. Só se estiverem com vontade; a vista da cachoeira é pequena em novembro.",
-          "stats": "~4 km ida e volta · pouca subida ⚠️ verificar",
-          "onde": "Wildwood Regional Park, Thousand Oaks",
-          "horas": 1.5,
-          "opcional": true
+          "tipo": "praia",
+          "titulo": "Santa Monica Pier",
+          "descricao": "O píer de 1909 com a roda-gigante. Almoço tardio simples por ali e uma volta curta, sem entrar em compras.",
+          "lugar": "pier",
+          "horas": 1
         },
         {
           "tipo": "praia",
-          "titulo": "Pôr do sol em Point Dume",
-          "descricao": "Falésia sobre o Pacífico em Malibu, a ~35 min da base. Só se o dia estiver bom.",
-          "onde": "Point Dume State Beach, Malibu",
-          "horas": 1.5,
-          "opcional": true
+          "titulo": "Pôr do sol na praia de Santa Monica",
+          "descricao": "Sentados na areia, com o sol entrando às ~16:49. Depois, ~50 min até Pasadena.",
+          "onde": "Santa Monica State Beach",
+          "horas": 1.5
+        },
+        {
+          "tipo": "hotel",
+          "titulo": "Check-in em Pasadena",
+          "descricao": "Hotel a reservar (2 noites, 21 e 22/11), a no máximo 10 minutos a pé de Colorado Blvd, com estacionamento e cancelamento grátis. Chegada por volta das 18h30.",
+          "onde": "Old Pasadena, Pasadena, CA",
+          "horas": 0
+        },
+        {
+          "tipo": "comida",
+          "titulo": "Jantar e bar em Old Pasadena",
+          "descricao": "Jantar e uma noite de bar a pé, nos quarteirões em volta de Colorado Blvd e Fair Oaks. Volte caminhando ao hotel; não dirija depois de beber.",
+          "onde": "Old Pasadena, Pasadena, CA",
+          "horas": 1.5
         }
       ],
       "alertas": [
         {
-          "nivel": "info",
-          "texto": "Dia leve: ~3h de estrada e tarde livre. Deixe o carro estacionado depois do almoço e descanse."
+          "nivel": "aviso",
+          "texto": "~3h40 de estrada, com o trânsito de sábado em LA. Pegue o carro às 9h e saia do píer logo depois do pôr do sol."
         },
         {
           "nivel": "aviso",
           "texto": "O carro Sixt precisa ser retirado em 21/11 (a reserva é de 22/11). Diária extra de ~US$ 94. ⚠️ confirmar."
+        },
+        {
+          "nivel": "info",
+          "texto": "Sem dirigir à noite: o carro fica no hotel. Para voltar de algum lugar mais longe, use Uber."
         }
       ],
       "sol": {
-        "nascer": "06:34",
-        "por": "16:48"
+        "nascer": "06:31",
+        "por": "16:45"
       },
       "trajeto": [
         {
@@ -221,12 +234,12 @@
               -117.9
             ],
             [
-              34.05,
-              -118.45
+              34.0089,
+              -118.4974
             ],
             [
-              34.1706,
-              -118.8376
+              34.1456,
+              -118.148
             ]
           ]
         }
@@ -240,8 +253,8 @@
       "planos": [
         "B"
       ],
-      "titulo": "Um dia em LA",
-      "regiao": "Griffith Park e Santa Monica (bate e volta)",
+      "titulo": "Griffith e tarde em Pasadena",
+      "regiao": "Griffith Park e Old Pasadena",
       "coord": [
         34.1184,
         -118.3004
@@ -249,30 +262,25 @@
       "capa": "hollywood",
       "estrada": [
         {
-          "trecho": "Thousand Oaks → Griffith Park",
-          "tempo": "1h",
-          "horas": 1
+          "trecho": "Pasadena → Griffith Park",
+          "tempo": "30 min",
+          "horas": 0.5
         },
         {
-          "trecho": "Griffith Park → Santa Monica",
-          "tempo": "35 min",
-          "horas": 0.58
-        },
-        {
-          "trecho": "Santa Monica → Thousand Oaks (domingo à noite)",
-          "tempo": "1h",
-          "horas": 1
+          "trecho": "Griffith Park → Pasadena",
+          "tempo": "30 min",
+          "horas": 0.5
         }
       ],
-      "resumo": "Único dia em LA, de carro e sem hotel na cidade: Griffith Park com vista do letreiro de Hollywood, Santa Monica Pier e pôr do sol na praia. À noite, volta para dormir em Thousand Oaks.",
+      "resumo": "Manhã no Griffith Park, com a vista do letreiro de Hollywood, e volta a Pasadena para um brunch tardio. Tarde livre em Old Pasadena e jantar sem pressa.",
       "atividades": [
         {
           "tipo": "trilha",
           "titulo": "Griffith Park e o letreiro de Hollywood",
-          "descricao": "Chegada por volta das 9h30, antes de o estacionamento lotar. Trilha larga do Griffith Observatory até um mirante com o letreiro e a cidade. Faça só o trecho que estiver com vontade; o Mount Hollywood (~4,5 km, +150 m) é opcional.",
+          "descricao": "Chegar por volta das 9h, antes de o estacionamento lotar. Trilha larga do Griffith Observatory até um mirante com o letreiro e a cidade. O Mount Hollywood (~4,5 km, +150 m) é opcional.",
           "stats": "~2–3 km · pouca subida",
           "lugar": "hollywood",
-          "horas": 1.5
+          "horas": 2
         },
         {
           "tipo": "vista",
@@ -283,24 +291,39 @@
           "opcional": true
         },
         {
-          "tipo": "praia",
-          "titulo": "Santa Monica Pier",
-          "descricao": "O píer de 1909 com a roda-gigante. Almoço tardio simples por ali e uma volta curta, sem entrar em compras.",
-          "lugar": "pier",
+          "tipo": "comida",
+          "titulo": "Brunch em Old Pasadena",
+          "descricao": "Brunch tardio em um dos cafés do centro, depois da trilha.",
+          "onde": "Old Pasadena, Pasadena, CA",
           "horas": 1
         },
         {
-          "tipo": "praia",
-          "titulo": "Pôr do sol na praia de Santa Monica",
-          "descricao": "Sentados na areia, com o sol entrando às ~16:49. Depois, 1h até Thousand Oaks, no escuro.",
-          "onde": "Santa Monica State Beach",
+          "tipo": "cidade",
+          "titulo": "Tarde livre em Old Pasadena",
+          "descricao": "Livrarias, cafés e um passeio a pé pelas ruas de tijolinho. Sem horário.",
+          "onde": "Old Pasadena, Pasadena, CA",
+          "horas": 2
+        },
+        {
+          "tipo": "cidade",
+          "titulo": "Huntington Library e jardins",
+          "descricao": "Jardins japonês e chinês, e a biblioteca, em San Marino. Ingresso pago. ⚠️ verificar horários.",
+          "onde": "The Huntington Library, San Marino, CA",
+          "horas": 3,
+          "opcional": true
+        },
+        {
+          "tipo": "comida",
+          "titulo": "Jantar em Old Pasadena",
+          "descricao": "Segunda noite a pé, sem pressa e sem carro.",
+          "onde": "Old Pasadena, Pasadena, CA",
           "horas": 1.5
         }
       ],
       "alertas": [
         {
           "nivel": "aviso",
-          "texto": "Domingo: o estacionamento do Griffith lota e a volta pode ter trânsito. Chegue cedo. ⚠️ verificar horário do observatório."
+          "texto": "Domingo: o estacionamento do Griffith lota perto das 11h. Chegue às 9h. ⚠️ verificar horário do observatório."
         },
         {
           "nivel": "info",
@@ -316,20 +339,16 @@
           "modo": "carro",
           "pontos": [
             [
-              34.1706,
-              -118.8376
+              34.1456,
+              -118.148
             ],
             [
               34.1184,
               -118.3004
             ],
             [
-              34.0089,
-              -118.4974
-            ],
-            [
-              34.1706,
-              -118.8376
+              34.1456,
+              -118.148
             ]
           ]
         }
@@ -352,9 +371,9 @@
       "capa": "morro",
       "estrada": [
         {
-          "trecho": "Thousand Oaks → Santa Barbara",
-          "tempo": "1h10",
-          "horas": 1.17
+          "trecho": "Pasadena → Santa Barbara",
+          "tempo": "1h45",
+          "horas": 1.75
         },
         {
           "trecho": "Santa Barbara → Cambria",
@@ -402,7 +421,7 @@
         },
         {
           "nivel": "info",
-          "texto": "~3h55 de direção. Saia da base às 8h para ter café em Santa Barbara e chegar a Cambria no meio da tarde."
+          "texto": "~4h30 de direção. Saia de Pasadena às 8h para ter café em Santa Barbara e chegar a Cambria no meio da tarde."
         }
       ],
       "sol": {
@@ -414,8 +433,8 @@
           "modo": "carro",
           "pontos": [
             [
-              34.1706,
-              -118.8376
+              34.1456,
+              -118.148
             ],
             [
               34.4208,
@@ -1305,9 +1324,9 @@
       "pago_usd": 0
     },
     {
-      "id": "thousandoaks",
-      "nome": "Hotel ou Airbnb em Thousand Oaks (a escolher)",
-      "cidade": "Thousand Oaks, CA",
+      "id": "pasadena",
+      "nome": "Hotel em Old Pasadena (a escolher)",
+      "cidade": "Pasadena, CA",
       "checkin": "2026-11-21",
       "checkout": "2026-11-23",
       "status": "A reservar",
@@ -1315,11 +1334,11 @@
         "B"
       ],
       "coord": [
-        34.1706,
-        -118.8376
+        34.1456,
+        -118.148
       ],
       "reservado": false,
-      "obs": "Hotel de rede ou Airbnb com estacionamento e cancelamento grátis. Alternativas: Westlake Village (mais caro) ou Malibu (mais bonito e bem mais caro)."
+      "obs": "A pé de Colorado Blvd e Fair Oaks, com estacionamento e cancelamento grátis. Opções a conferir: Courtyard Pasadena/Old Town e Hotel Constance. Alternativa mais barata: Monrovia (Old Town)."
     },
     {
       "id": "cambria",
@@ -1386,13 +1405,13 @@
       "detalhe": "Mudança e cancelamento grátis até 19/11. Check-in das 15h às 20h, online."
     },
     {
-      "id": "thousandoaks",
+      "id": "pasadena",
       "prioridade": "urgente",
       "planos": [
         "B"
       ],
-      "item": "Hotel ou Airbnb em Thousand Oaks (21 a 23/11, 2 noites)",
-      "detalhe": "Hotel de rede ou Airbnb com estacionamento e cancelamento grátis. Diária de referência US$ 130–180 ⚠️ verificar. Alternativas: Westlake Village ou Malibu."
+      "item": "Hotel em Old Pasadena (21 a 23/11, 2 noites)",
+      "detalhe": "A no máximo 10 minutos a pé de Colorado Blvd, com estacionamento e cancelamento grátis. Diária de referência US$ 150–230 ⚠️ verificar. Alternativa mais barata: Monrovia (Old Town)."
     },
     {
       "id": "mariposa",
@@ -1510,15 +1529,15 @@
     "taxa_brl": 5.62,
     "planos": {
       "B": {
-        "total_usd": 3198.96,
+        "total_usd": 3378.96,
         "opcionais_usd": 532.37,
         "itens_a_verificar": 5,
         "categorias": {
-          "hospedagem": 1053.74,
-          "alimentacao": 785.0,
+          "hospedagem": 1133.74,
+          "alimentacao": 870.0,
           "carro": 470.22,
+          "gasolina": 270.0,
           "transporte": 260.0,
-          "gasolina": 255.0,
           "ingresso": 235.0,
           "passeio": 90.0,
           "estacionamento": 50.0
@@ -1642,10 +1661,21 @@
           "B"
         ],
         "categoria": "gasolina",
-        "item": "SAN -> Thousand Oaks",
-        "usd": 35.0,
+        "item": "SAN -> Santa Monica -> Pasadena",
+        "usd": 50.0,
         "status": "estimado",
-        "atividade": "Check-in em Thousand Oaks"
+        "atividade": "Santa Monica Pier"
+      },
+      {
+        "data": "2026-11-21",
+        "planos": [
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "Santa Monica Pier (lote por dia)",
+        "usd": 20.0,
+        "status": "estimado",
+        "atividade": "Santa Monica Pier"
       },
       {
         "data": "2026-11-21",
@@ -1653,10 +1683,10 @@
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "Hotel ou Airbnb em Thousand Oaks (noite 21; a reservar)",
-        "usd": 150.0,
+        "item": "Hotel em Old Pasadena (noite 21; a reservar)",
+        "usd": 190.0,
         "status": "verificar",
-        "atividade": "Check-in em Thousand Oaks"
+        "atividade": "Check-in em Pasadena"
       },
       {
         "data": "2026-11-21",
@@ -1664,10 +1694,10 @@
           "B"
         ],
         "categoria": "alimentacao",
-        "item": "Refeições do dia",
-        "usd": 70.0,
+        "item": "Almoço e jantar com bar",
+        "usd": 130.0,
         "status": "estimado",
-        "atividade": null
+        "atividade": "Jantar e bar em Old Pasadena"
       },
       {
         "data": "2026-11-22",
@@ -1675,8 +1705,8 @@
           "B"
         ],
         "categoria": "gasolina",
-        "item": "Thousand Oaks -> Griffith -> Santa Monica -> Thousand Oaks",
-        "usd": 30.0,
+        "item": "Pasadena <-> Griffith",
+        "usd": 15.0,
         "status": "estimado",
         "atividade": "Griffith Park e o letreiro de Hollywood"
       },
@@ -1696,20 +1726,9 @@
         "planos": [
           "B"
         ],
-        "categoria": "estacionamento",
-        "item": "Santa Monica Pier (lote por dia)",
-        "usd": 20.0,
-        "status": "estimado",
-        "atividade": "Santa Monica Pier"
-      },
-      {
-        "data": "2026-11-22",
-        "planos": [
-          "B"
-        ],
         "categoria": "hospedagem",
-        "item": "Hotel ou Airbnb em Thousand Oaks (noite 22; a reservar)",
-        "usd": 150.0,
+        "item": "Hotel em Old Pasadena (noite 22; a reservar)",
+        "usd": 190.0,
         "status": "verificar",
         "atividade": null
       },
@@ -1720,9 +1739,9 @@
         ],
         "categoria": "alimentacao",
         "item": "Refeições do dia",
-        "usd": 85.0,
+        "usd": 110.0,
         "status": "estimado",
-        "atividade": null
+        "atividade": "Jantar em Old Pasadena"
       },
       {
         "data": "2026-11-23",
@@ -1730,8 +1749,8 @@
           "B"
         ],
         "categoria": "gasolina",
-        "item": "Thousand Oaks -> Santa Barbara -> Cambria",
-        "usd": 55.0,
+        "item": "Pasadena -> Santa Barbara -> Cambria",
+        "usd": 70.0,
         "status": "estimado",
         "atividade": "Santa Barbara"
       },

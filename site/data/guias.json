@@ -350,7 +350,7 @@
           "itens": [
             {
               "nome": "Saia às 8h",
-              "texto": "Com a US-101 livre, são 1h10 até Santa Barbara. Café por lá e estrada para Cambria às 11h."
+              "texto": "Com a US-101 livre, são 1h45 até Santa Barbara. Café por lá e estrada para Cambria às 11h."
             },
             {
               "nome": "Check-in em Cambria",
@@ -1175,8 +1175,8 @@
     },
     "dia-5": {
       "intro": [
-        "Sábado é dia de descanso: carro, ~3h de estrada e a tarde livre em Thousand Oaks, um subúrbio seguro e tranquilo a ~1h de LA.",
-        "A ideia é chegar com energia para o domingo em LA e a estrada de segunda."
+        "A noite de sábado é para curtir sem carro: o hotel fica a pé do centro de Old Pasadena, com dezenas de restaurantes, cervejarias e bares em poucos quarteirões.",
+        "Antes disso, o Santa Monica Pier e o pôr do sol na praia. De lá são ~50 min até Pasadena."
       ],
       "secoes": [
         {
@@ -1184,25 +1184,38 @@
           "titulo": "Mais para fazer",
           "itens": [
             {
-              "nome": "Paradise Falls (Wildwood Regional Park)",
-              "texto": "Trilha sombreada até uma cachoeira dentro do parque da cidade.",
-              "onde": "Wildwood Regional Park, Thousand Oaks",
-              "stats": "~4 km",
-              "verificar": "Confirmar se a trilha está aberta e se há água"
-            },
-            {
-              "nome": "Westlake Lake",
-              "texto": "Passeio plano em volta do lago de Westlake Village, com cafés.",
-              "onde": "Westlake Village, CA",
+              "nome": "Santa Monica Pier",
+              "texto": "O píer de 1909 com a roda-gigante. O pôr do sol, às ~16:49, é o ponto alto do dia.",
+              "onde": "Santa Monica Pier, Santa Monica, CA",
               "coord": [
-                34.1425,
-                -118.82872
+                34.0089,
+                -118.4974
               ]
             },
             {
-              "nome": "Point Dume",
-              "texto": "Falésia com vista do Pacífico e praia abaixo. Pôr do sol bonito.",
-              "onde": "Point Dume State Beach, Malibu"
+              "nome": "Third Street Promenade",
+              "texto": "Rua de pedestres a poucos quarteirões do píer, com restaurantes e lojas.",
+              "onde": "Third Street Promenade, Santa Monica, CA",
+              "coord": [
+                34.01765,
+                -118.49844
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Jantar e bar em Old Pasadena",
+          "itens": [
+            {
+              "nome": "Colorado Boulevard e Fair Oaks",
+              "texto": "O miolo de Old Pasadena, com restaurantes, cervejarias e bares de coquetel em poucos quarteirões. Fácil voltar a pé ao hotel.",
+              "onde": "Old Pasadena, Pasadena, CA",
+              "verificar": "Reservar mesa no sábado à noite",
+              "coord": [
+                34.14585,
+                -118.14981
+              ]
             }
           ]
         },
@@ -1211,13 +1224,16 @@
           "titulo": "Dicas práticas",
           "itens": [
             {
-              "nome": "Check-in antecipado",
-              "texto": "Chegando às 13h, peça ao hotel para guardar as malas ou liberar o quarto mais cedo."
+              "nome": "Hotel a pé",
+              "texto": "Escolha um hotel a até 10 minutos a pé de Colorado Blvd. O carro fica estacionado a noite toda."
             },
             {
-              "nome": "Jantar perto",
-              "texto": "Escolha um restaurante perto da base e durma cedo; amanhã o Griffith lota por volta das 11h.",
-              "verificar": "Confirmar restaurantes no sábado"
+              "nome": "Não dirija depois de beber",
+              "texto": "Para qualquer trecho fora do centro, use Uber ou Lyft."
+            },
+            {
+              "nome": "Nada visível no carro",
+              "texto": "Furtos de carro são comuns em LA: leve tudo ou deixe no porta-malas antes de chegar."
             }
           ]
         }
@@ -1309,8 +1325,8 @@
     },
     "dia-6": {
       "intro": [
-        "O dia em LA é só de carro: o Griffith Park, com a vista do letreiro de Hollywood, e a costa de Santa Monica. Sem hotel na cidade, vocês dormem de volta em Thousand Oaks, ~1h ao norte.",
-        "Domingo de novembro: o Griffith enche no meio da manhã. Chegue às 9h30 e faça a trilha com calma."
+        "O Griffith é o programa de domingo de manhã, com a vista do letreiro de Hollywood. De Pasadena são ~30 min de carro.",
+        "Domingo de novembro: o parque enche perto das 11h. Chegue às 9h, faça a trilha com calma e volte a Pasadena para um brunch tardio."
       ],
       "secoes": [
         {
@@ -1351,20 +1367,6 @@
           ]
         },
         {
-          "tipo": "levar",
-          "titulo": "O que levar",
-          "itens": [
-            {
-              "nome": "Casaco leve",
-              "texto": "A costa esfria depois do pôr do sol, e a volta é à noite."
-            },
-            {
-              "nome": "Água e lanche",
-              "texto": "A trilha do Griffith não tem lanchonete."
-            }
-          ]
-        },
-        {
           "tipo": "dica",
           "titulo": "Dicas práticas",
           "itens": [
@@ -1380,8 +1382,42 @@
               "texto": "Furtos de carro são comuns em LA. Leve tudo com vocês ou deixe no porta-malas antes de chegar."
             },
             {
-              "nome": "Volta a Thousand Oaks",
-              "texto": "São ~1h pela US-101 no domingo à noite. Saia da praia logo depois do pôr do sol."
+              "nome": "Volta a Pasadena",
+              "texto": "São ~30 min, e a tarde é livre."
+            }
+          ]
+        },
+        {
+          "tipo": "fazer",
+          "titulo": "Em Pasadena à tarde",
+          "itens": [
+            {
+              "nome": "Old Pasadena",
+              "texto": "Quarteirões de tijolinho com cafés, livrarias e lojas. Sem hora para nada.",
+              "onde": "Old Pasadena, Pasadena, CA",
+              "coord": [
+                34.14806,
+                -118.14035
+              ]
+            },
+            {
+              "nome": "Rose Bowl e Arroyo Seco",
+              "texto": "Estádio histórico no meio de um parque, com um circuito plano de ~5 km ao redor.",
+              "onde": "Rose Bowl, Pasadena",
+              "coord": [
+                34.1613,
+                -118.1676
+              ]
+            },
+            {
+              "nome": "Gamble House",
+              "texto": "Casa de 1908 em estilo Arts and Crafts, feita toda em madeira. Visita por tour.",
+              "onde": "Gamble House, Pasadena, CA",
+              "verificar": "Confirmar horários e tour",
+              "coord": [
+                34.15162,
+                -118.16095
+              ]
             }
           ]
         }
