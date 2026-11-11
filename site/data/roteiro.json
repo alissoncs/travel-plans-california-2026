@@ -1,7 +1,7 @@
 {
   "viagem": {
     "titulo": "Califórnia 2026",
-    "subtitulo": "LA, costa central, Big Sur e Yosemite, de San Diego a San Francisco",
+    "subtitulo": "Santa Monica, Santa Barbara, costa central, Big Sur e San Francisco, de San Diego a SF",
     "inicio": "2026-11-17",
     "fim": "2026-11-28",
     "perfil": "Casal jovem e aventureiro · viagem relaxante, focada em natureza",
@@ -9,11 +9,11 @@
     "plano_recomendado": "B",
     "teto_usd": 3000
   },
-  "atualizado_em": "2026-11-10 01:02",
+  "atualizado_em": "2026-11-10 19:47",
   "planos": {
     "B": {
       "nome": "Plano B",
-      "resumo": "Sábado e domingo em Old Pasadena (píer ao pôr do sol, noite a pé, Griffith no domingo), depois a costa por Santa Barbara, Cambria e Big Sur, um dia inteiro em Yosemite e a chegada a SF no Thanksgiving. Dias de estrada só de segunda a quinta."
+      "resumo": "Sábado em Santa Monica (píer e pôr do sol) e noite em Pasadena, Griffith no domingo e Santa Barbara como base por 2 noites (trilha em Inspiration Point, opções na manga), Cambria, Big Sur e SF no Thanksgiving. Yosemite fica como decisão para a viagem."
     }
   },
   "fases": [
@@ -27,7 +27,7 @@
     {
       "id": "road",
       "nome": "Road trip",
-      "detalhe": "Carro Sixt · LA, costa central, Big Sur e Yosemite",
+      "detalhe": "Carro Sixt · Santa Monica, Santa Barbara, costa central e Big Sur",
       "inicio": "2026-11-21",
       "fim": "2026-11-26"
     },
@@ -146,11 +146,15 @@
       "planos": [
         "B"
       ],
+      "sol": {
+        "nascer": "06:31",
+        "por": "16:45"
+      },
       "titulo": "Santa Monica e noite em Pasadena",
-      "regiao": "Santa Monica e Old Pasadena",
+      "regiao": "Santa Monica e Pasadena",
       "coord": [
         34.1456,
-        -118.148
+        -118.087
       ],
       "capa": "pier",
       "estrada": [
@@ -165,12 +169,12 @@
           "horas": 0.83
         }
       ],
-      "resumo": "Carro no aeroporto e estrada até Santa Monica. Píer, almoço e pôr do sol na praia. Depois ~50 min até Old Pasadena, onde o hotel fica a pé do centro: jantar e bar sem precisar dirigir.",
+      "resumo": "Carro no aeroporto e estrada até Santa Monica. Píer, almoço e pôr do sol na praia. Depois ~50 min até o Hyland Inn, em Pasadena, para dormir perto do Griffith.",
       "atividades": [
         {
           "tipo": "transporte",
           "titulo": "Retirada do carro Sixt em SAN",
-          "descricao": "Checkout no Coronado e Uber ao aeroporto. Retirada por volta das 9h. Perguntar sobre as correntes de neve para Yosemite e pedir carro com tração integral.",
+          "descricao": "Checkout no Coronado e Uber ao aeroporto. Retirada por volta das 9h.",
           "onde": "Sixt, San Diego International Airport",
           "horas": 1
         },
@@ -184,21 +188,21 @@
         {
           "tipo": "praia",
           "titulo": "Pôr do sol na praia de Santa Monica",
-          "descricao": "Sentados na areia, com o sol entrando às ~16:49. Depois, ~50 min até Pasadena.",
+          "descricao": "Sentados na areia, com o sol entrando às ~16:45. Saia por volta das 17h15 para Pasadena (~50 min).",
           "onde": "Santa Monica State Beach",
-          "horas": 1.5
+          "horas": 1
         },
         {
           "tipo": "hotel",
-          "titulo": "Check-in em Pasadena",
-          "descricao": "Hotel a reservar (2 noites, 21 e 22/11), a no máximo 10 minutos a pé de Colorado Blvd, com estacionamento e cancelamento grátis. Chegada por volta das 18h30.",
-          "onde": "Old Pasadena, Pasadena, CA",
+          "titulo": "Check-in no Hyland Inn",
+          "descricao": "Hotel já reservado (21 a 22/11), com estacionamento grátis. Check-in a partir das 15h; chegada por volta das 18h30.",
+          "onde": "Hyland Inn near Pasadena Civic Center, 2462 E Colorado Blvd, Pasadena, CA",
           "horas": 0
         },
         {
           "tipo": "comida",
-          "titulo": "Jantar e bar em Old Pasadena",
-          "descricao": "Jantar e uma noite de bar a pé, nos quarteirões em volta de Colorado Blvd e Fair Oaks. Volte caminhando ao hotel; não dirija depois de beber.",
+          "titulo": "Jantar em Pasadena",
+          "descricao": "O hotel fica a mais de 1 milha de Old Pasadena: vá de Uber, ou jante perto do hotel e durma cedo para o Griffith.",
           "onde": "Old Pasadena, Pasadena, CA",
           "horas": 1.5
         }
@@ -214,13 +218,9 @@
         },
         {
           "nivel": "info",
-          "texto": "Sem dirigir à noite: o carro fica no hotel. Para voltar de algum lugar mais longe, use Uber."
+          "texto": "Furtos de carro são comuns em LA: não deixe nada visível dentro do carro, nem por poucos minutos."
         }
       ],
-      "sol": {
-        "nascer": "06:31",
-        "por": "16:45"
-      },
       "trajeto": [
         {
           "modo": "carro",
@@ -239,7 +239,7 @@
             ],
             [
               34.1456,
-              -118.148
+              -118.087
             ]
           ]
         }
@@ -253,8 +253,12 @@
       "planos": [
         "B"
       ],
-      "titulo": "Griffith e tarde em Pasadena",
-      "regiao": "Griffith Park e Old Pasadena",
+      "sol": {
+        "nascer": "06:32",
+        "por": "16:46"
+      },
+      "titulo": "Griffith e chegada a Santa Barbara",
+      "regiao": "Griffith Park e Santa Barbara",
       "coord": [
         34.1184,
         -118.3004
@@ -263,92 +267,96 @@
       "estrada": [
         {
           "trecho": "Pasadena → Griffith Park",
-          "tempo": "30 min",
+          "tempo": "25–30 min",
           "horas": 0.5
         },
         {
-          "trecho": "Griffith Park → Pasadena",
-          "tempo": "30 min",
-          "horas": 0.5
+          "trecho": "Griffith Park → Santa Barbara (US-101)",
+          "tempo": "1h45–2h",
+          "horas": 1.9
         }
       ],
-      "resumo": "Manhã no Griffith Park, com a vista do letreiro de Hollywood, e volta a Pasadena para um brunch tardio. Tarde livre em Old Pasadena e jantar sem pressa.",
+      "resumo": "Manhã no Griffith Park, com a vista do letreiro de Hollywood, e estrada para Santa Barbara. Tarde e jantar na cidade que será a base dos próximos dias.",
       "atividades": [
         {
           "tipo": "trilha",
           "titulo": "Griffith Park e o letreiro de Hollywood",
-          "descricao": "Chegar por volta das 9h, antes de o estacionamento lotar. Trilha larga do Griffith Observatory até um mirante com o letreiro e a cidade. O Mount Hollywood (~4,5 km, +150 m) é opcional.",
+          "descricao": "Chegar por volta das 9h, antes de o estacionamento lotar (domingo enche perto das 11h). Trilha larga do Griffith Observatory até um mirante com o letreiro e a cidade. O Mount Hollywood (~4,5 km, +150 m) é opcional.",
           "stats": "~2–3 km · pouca subida",
           "lugar": "hollywood",
-          "horas": 2
+          "horas": 2.5
         },
         {
           "tipo": "vista",
           "titulo": "Letreiro de perto no Lake Hollywood Park",
-          "descricao": "Gramado de bairro com a vista mais próxima do letreiro, a ~15 min do Griffith. Parada rápida, só se sobrar vontade.",
+          "descricao": "Gramado de bairro com a vista mais próxima do letreiro, a ~15 min do Griffith. Só se sobrar vontade.",
           "onde": "Lake Hollywood Park, Los Angeles",
           "horas": 0.5,
           "opcional": true
         },
         {
           "tipo": "comida",
-          "titulo": "Brunch em Old Pasadena",
-          "descricao": "Brunch tardio em um dos cafés do centro, depois da trilha.",
-          "onde": "Old Pasadena, Pasadena, CA",
+          "titulo": "Almoço em Santa Barbara",
+          "descricao": "Chegada por volta das 14h. Almoço na Funk Zone ou na State Street.",
+          "onde": "Funk Zone, Santa Barbara, CA",
           "horas": 1
         },
         {
-          "tipo": "cidade",
-          "titulo": "Tarde livre em Old Pasadena",
-          "descricao": "Livrarias, cafés e um passeio a pé pelas ruas de tijolinho. Sem horário.",
-          "onde": "Old Pasadena, Pasadena, CA",
-          "horas": 2
+          "tipo": "hotel",
+          "titulo": "Check-in no Beachside Inn",
+          "descricao": "Hotel reservado (22 e 23/11), com estacionamento próprio e café da manhã incluídos. Depósito de US$ 150 em cartão. Chegada prevista às 19h; se chegar cedo, peça para guardar as malas.",
+          "onde": "Beachside Inn, 336 W Cabrillo Blvd, Santa Barbara, CA",
+          "horas": 0
         },
         {
-          "tipo": "cidade",
-          "titulo": "Huntington Library e jardins",
-          "descricao": "Jardins japonês e chinês, e a biblioteca, em San Marino. Ingresso pago. ⚠️ verificar horários.",
-          "onde": "The Huntington Library, San Marino, CA",
-          "horas": 3,
+          "tipo": "praia",
+          "titulo": "Tarde livre na orla",
+          "descricao": "Butterfly Beach ou uma volta pela Cabrillo Boulevard, sem horário.",
+          "onde": "Butterfly Beach, Santa Barbara, CA",
+          "horas": 1.5,
           "opcional": true
         },
         {
           "tipo": "comida",
-          "titulo": "Jantar em Old Pasadena",
-          "descricao": "Segunda noite a pé, sem pressa e sem carro.",
-          "onde": "Old Pasadena, Pasadena, CA",
+          "titulo": "Jantar na Funk Zone",
+          "descricao": "Jantar entre as salas de degustação e os restaurantes dos galpões perto do porto, a ~15 min a pé do hotel.",
+          "onde": "Funk Zone, Santa Barbara, CA",
           "horas": 1.5
         }
       ],
       "alertas": [
         {
           "nivel": "aviso",
-          "texto": "Domingo: o estacionamento do Griffith lota perto das 11h. Chegue às 9h. ⚠️ verificar horário do observatório."
+          "texto": "Beachside Inn: o hotel espera você por volta das 19h, então o check-in pode ser mais tarde que a chegada. Se chegar mais cedo (~14h30), deixe o carro e as malas ali. Cancelamento grátis até 24 h antes da chegada."
+        },
+        {
+          "nivel": "aviso",
+          "texto": "Domingo: o estacionamento do Griffith lota perto das 11h. Chegue às 9h, e saia do parque até ~11h30 para chegar a Santa Barbara com luz. ⚠️ verificar horário do observatório."
         },
         {
           "nivel": "info",
           "texto": "Furtos de carro são comuns em LA: não deixe nada visível dentro do carro, nem por poucos minutos."
         }
       ],
-      "sol": {
-        "nascer": "06:32",
-        "por": "16:46"
-      },
       "trajeto": [
         {
           "modo": "carro",
           "pontos": [
             [
               34.1456,
-              -118.148
+              -118.087
             ],
             [
               34.1184,
               -118.3004
             ],
             [
-              34.1456,
-              -118.148
+              34.2805,
+              -119.2945
+            ],
+            [
+              34.4208,
+              -119.6982
             ]
           ]
         }
@@ -362,91 +370,131 @@
       "planos": [
         "B"
       ],
-      "titulo": "Santa Barbara e Cambria",
-      "regiao": "Costa Central",
+      "sol": {
+        "nascer": "06:40",
+        "por": "16:50"
+      },
+      "titulo": "Inspiration Point e dia livre em Santa Barbara",
+      "regiao": "Santa Barbara",
       "coord": [
-        35.3694,
-        -120.8676
+        34.4466,
+        -119.7052
       ],
-      "capa": "morro",
+      "capa": "stearns",
       "estrada": [
         {
-          "trecho": "Pasadena → Santa Barbara",
-          "tempo": "1h45",
-          "horas": 1.75
-        },
-        {
-          "trecho": "Santa Barbara → Cambria",
-          "tempo": "2h45 (via Morro Bay, +15 min)",
-          "horas": 2.75
+          "trecho": "Deslocamentos locais",
+          "tempo": "~30 min",
+          "horas": 0.5
         }
       ],
-      "resumo": "Estrada pela costa: café e caminhada em Santa Barbara, lontras-marinhas em Morro Rock se der tempo e noite numa pousada em Cambria, com a tarde livre.",
+      "resumo": "Dia de trilha sem pressa: Inspiration Point, com a vista da cidade, do mar e das Channel Islands. O resto do dia fica aberto: Channel Islands, Los Padres ou Botanic Garden, se você quiser.",
       "atividades": [
         {
-          "tipo": "praia",
-          "titulo": "Santa Barbara",
-          "descricao": "Café, Stearns Wharf e uma caminhada curta pela orla e pelo centro, das 9h às 11h. A Missão de Santa Barbara fica a 5 minutos de carro.",
-          "lugar": "stearns",
-          "horas": 2
+          "tipo": "trilha",
+          "titulo": "Inspiration Point (Tunnel Trail)",
+          "descricao": "Subida gradual pelo chaparral até a vista da cidade, do Pacífico e das Channel Islands em dia limpo. Saia cedo: o estacionamento é pequeno e a fiscalização é rígida. ⚠️ a Tunnel Trail ficou fechada para reparos a partir de 08/09/2025; confirme se reabriu. Alternativa: Rattlesnake Canyon ou a Jesusita Trail até o mesmo mirante.",
+          "stats": "~5,6 km · +290 m",
+          "onde": "Tunnel Trailhead, Santa Barbara, CA",
+          "maps": "Tunnel Trail trailhead, Santa Barbara, CA",
+          "horas": 2.5
         },
         {
-          "tipo": "fauna",
-          "titulo": "Morro Rock",
-          "descricao": "Lontras-marinhas na marina, ao pé da rocha vulcânica. Desvio de ~15 min, só se estiverem sem pressa.",
-          "lugar": "morro",
+          "tipo": "trilha",
+          "titulo": "Seven Falls",
+          "descricao": "Extensão pelo mesmo caminho, até as quedas em um cânion. Em novembro, depois da estação seca, pode estar sem água: só vale depois de chuva. ⚠️ verificar.",
+          "onde": "Seven Falls, Santa Barbara, CA",
           "horas": 1.5,
           "opcional": true
         },
         {
+          "tipo": "comida",
+          "titulo": "Almoço na Funk Zone",
+          "descricao": "Sem pressa, depois da trilha. Os galpões do porto têm de tacos a frutos do mar.",
+          "onde": "Funk Zone, Santa Barbara, CA",
+          "horas": 1.5
+        },
+        {
           "tipo": "praia",
-          "titulo": "Pôr do sol em Moonstone Beach",
-          "descricao": "Passarela de madeira sobre as pedras em Cambria, ótima para o pôr do sol (~16:53).",
-          "onde": "Moonstone Beach, Cambria",
-          "horas": 1,
+          "titulo": "Stearns Wharf e orla",
+          "descricao": "Café, o píer de madeira de 1872 e uma caminhada curta pela orla. A Missão de Santa Barbara fica a 5 minutos de carro.",
+          "lugar": "stearns",
+          "horas": 1.5
+        },
+        {
+          "tipo": "comida",
+          "titulo": "Jantar de despedida em Santa Barbara",
+          "descricao": "Última noite na cidade. Segunda-feira: parte dos restaurantes e das degustações fecha. ⚠️ verificar horário.",
+          "onde": "State Street, Santa Barbara, CA",
+          "horas": 1.5
+        },
+        {
+          "tipo": "vista",
+          "titulo": "Douglas Family Preserve",
+          "descricao": "Campo aberto sobre as falésias, com vista do mar. Passeio plano.",
+          "stats": "2–4 km · plano",
+          "onde": "Douglas Family Preserve, Santa Barbara, CA",
+          "horas": 1.5,
           "opcional": true
         },
         {
-          "tipo": "hotel",
-          "titulo": "Check-in em Cambria",
-          "descricao": "J. Patrick Inn: check-in das 15h às 20h, feito online (o hotel manda e-mail na manhã do dia). A reserva está em 24/11 e precisa ser mudada para 23/11.",
-          "onde": "J. Patrick House Bed and Breakfast, Cambria, CA",
-          "horas": 0
+          "tipo": "agua",
+          "titulo": "Channel Islands de barco (opção na manga)",
+          "descricao": "Passeio de um dia saindo do porto de Santa Barbara ou de Ventura, com golfinhos e leões-marinhos. ⚠️ verificar se opera nessa segunda-feira e reservar antes.",
+          "lugar": "channel",
+          "horas": 6,
+          "opcional": true
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Los Padres National Forest (opção na manga)",
+          "descricao": "A floresta mais perto de Santa Barbara, com trilhas de montanha a 15–45 min: Cold Spring, Rattlesnake Canyon e, mais longe, as fontes termais de Gaviota. ⚠️ verificar trilhas abertas e acesso.",
+          "onde": "Los Padres National Forest, Santa Barbara, CA",
+          "horas": 4,
+          "opcional": true
+        },
+        {
+          "tipo": "vista",
+          "titulo": "Santa Barbara Botanic Garden",
+          "descricao": "Trilhas planas entre plantas nativas. Ingresso pago. ⚠️ verificar horário e preço.",
+          "onde": "Santa Barbara Botanic Garden, CA",
+          "horas": 2,
+          "opcional": true
         }
       ],
       "alertas": [
         {
-          "nivel": "urgente",
-          "texto": "A reserva do J. Patrick Inn é de 24/11. Mude para 23/11 até 19/11 (cancelamento grátis até essa data)."
+          "nivel": "aviso",
+          "texto": "Confirme a trilha antes: a página da Santa Barbara Parks & Recreation e a da Los Padres National Forest dizem se a Tunnel Trail está aberta. O estacionamento do trailhead é pequeno, com reboque para quem estaciona fora da linha."
         },
         {
           "nivel": "info",
-          "texto": "~4h30 de direção. Saia de Pasadena às 8h para ter café em Santa Barbara e chegar a Cambria no meio da tarde."
+          "texto": "Dia sem agenda fixa. Decida de manhã: ficar em Santa Barbara, ir ao mar (Channel Islands) ou à montanha (Los Padres). Só o Channel Islands pede reserva antecipada: decida até a noite de domingo."
+        },
+        {
+          "nivel": "info",
+          "texto": "As sequoias gigantes (Sequoia National Park) ficam a ~4h30–5h de Santa Barbara em cada sentido: não cabem num dia. Para árvores grandes, o Muir Woods (26/11) ou o Yosemite, se você decidir ir."
+        },
+        {
+          "nivel": "info",
+          "texto": "Termine a trilha até ~15h30. O pôr do sol é às ~16:53. Amanhã são ~2h45 até Cambria."
         }
       ],
-      "sol": {
-        "nascer": "06:46",
-        "por": "16:53"
-      },
       "trajeto": [
         {
           "modo": "carro",
           "pontos": [
             [
-              34.1456,
-              -118.148
-            ],
-            [
               34.4208,
               -119.6982
             ],
             [
-              35.1428,
-              -120.6413
+              34.4466,
+              -119.7052
             ],
             [
-              35.5641,
-              -121.0807
+              34.4208,
+              -119.6982
             ]
           ]
         }
@@ -460,11 +508,100 @@
       "planos": [
         "B"
       ],
-      "titulo": "Big Sur → Mariposa",
-      "regiao": "Highway 1 e Vale Central",
+      "sol": {
+        "nascer": "06:49",
+        "por": "16:53"
+      },
+      "titulo": "Morro Bay e Cambria",
+      "regiao": "Costa Central",
       "coord": [
-        36.15781,
-        -121.67214
+        35.5641,
+        -121.0807
+      ],
+      "capa": "morro",
+      "estrada": [
+        {
+          "trecho": "Santa Barbara → Cambria",
+          "tempo": "2h45 (via Morro Bay, +15 min)",
+          "horas": 2.75
+        }
+      ],
+      "resumo": "Estrada curta pela costa. Lontras-marinhas em Morro Rock, tarde livre em Cambria e pôr do sol em Moonstone Beach. Check-in no J. Patrick Inn, já reservado.",
+      "atividades": [
+        {
+          "tipo": "fauna",
+          "titulo": "Morro Rock",
+          "descricao": "Lontras-marinhas na marina, ao pé da rocha vulcânica. Desvio de ~15 min.",
+          "lugar": "morro",
+          "horas": 1.5
+        },
+        {
+          "tipo": "praia",
+          "titulo": "Pôr do sol em Moonstone Beach",
+          "descricao": "Passarela de madeira sobre as pedras em Cambria, ótima para o pôr do sol (~16:54).",
+          "onde": "Moonstone Beach, Cambria",
+          "horas": 1,
+          "opcional": true
+        },
+        {
+          "tipo": "hotel",
+          "titulo": "Check-in em Cambria",
+          "descricao": "J. Patrick Inn, reservado para 24/11: check-in das 15h às 20h, feito online (o hotel manda e-mail na manhã do dia).",
+          "onde": "J. Patrick House Bed and Breakfast, Cambria, CA",
+          "horas": 0
+        }
+      ],
+      "alertas": [
+        {
+          "nivel": "info",
+          "texto": "~2h45 de direção. Saia de Santa Barbara por volta das 10h, com parada em Morro Bay, e chegue a Cambria no meio da tarde."
+        },
+        {
+          "nivel": "info",
+          "texto": "Ponto de decisão do Yosemite: se quiser ir, decida até a noite de 24/11 e veja \"Reservas\". O caminho para Mariposa sai de Cambria pelo interior, em ~4h, e muda os dias 25 e 26."
+        }
+      ],
+      "trajeto": [
+        {
+          "modo": "carro",
+          "pontos": [
+            [
+              34.4208,
+              -119.6982
+            ],
+            [
+              35.1428,
+              -120.6413
+            ],
+            [
+              35.3659,
+              -120.8644
+            ],
+            [
+              35.5641,
+              -121.0807
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dia-9",
+      "rotulo": "9",
+      "data": "2026-11-25",
+      "fase": "road",
+      "planos": [
+        "B"
+      ],
+      "sol": {
+        "nascer": "07:00",
+        "por": "16:52"
+      },
+      "titulo": "Big Sur e chegada a San Francisco",
+      "regiao": "Highway 1 e San Francisco",
+      "coord": [
+        37.8004,
+        -122.4286
       ],
       "capa": "mcway",
       "estrada": [
@@ -474,12 +611,12 @@
           "horas": 2.5
         },
         {
-          "trecho": "Carmel → Mariposa",
-          "tempo": "3h30 (US-101, I-5 e CA-140)",
-          "horas": 3.5
+          "trecho": "Carmel → San Francisco (véspera de Thanksgiving)",
+          "tempo": "2h30 (até 3h com trânsito)",
+          "horas": 3
         }
       ],
-      "resumo": "Dia mais longo da viagem: saída cedo de Cambria, elefantes-marinhos, McWay Falls e a ponte de Bixby Creek pela Highway 1. Depois, ~3h30 até Mariposa, chegando no escuro.",
+      "resumo": "Dia de estrada cênica: elefantes-marinhos, McWay Falls e a ponte de Bixby Creek pela Highway 1, almoço em Carmel e chegada a SF no fim da tarde, para dormir no Seaside Inn.",
       "atividades": [
         {
           "tipo": "fauna",
@@ -506,29 +643,37 @@
         {
           "tipo": "comida",
           "titulo": "Almoço em Carmel-by-the-Sea",
-          "descricao": "Almoço rápido na cidade antes de pegar a estrada para o interior. Evite passar das 13h30.",
+          "descricao": "Almoço rápido na cidade antes de pegar a estrada para SF. Saia de Carmel até as 13h30.",
           "onde": "Carmel-by-the-Sea, CA",
           "horas": 1
         },
         {
           "tipo": "transporte",
-          "titulo": "Estrada até Mariposa",
-          "descricao": "Carmel pela CA-156 e a US-101 até a I-5 e Merced, e depois a CA-140. Abasteça em Merced: dentro do vale não há posto.",
-          "onde": "Mariposa, CA",
+          "titulo": "Estrada até San Francisco",
+          "descricao": "Carmel pela US-101 até San Jose e a I-280 até SF. Abasteça antes de entrar na cidade e leve lanche.",
+          "onde": "San Francisco, CA",
           "horas": 0
         },
         {
           "tipo": "hotel",
-          "titulo": "Check-in em Mariposa",
-          "descricao": "Hotel a reservar (2 noites, 24 e 25/11). Prefira quarto com banheiro e estacionamento incluído. Chegada por volta das 17h–18h.",
-          "onde": "Mariposa, CA",
+          "titulo": "Check-in no Seaside Inn",
+          "descricao": "Marina, por volta das 17h, reservado de 25 a 28/11. Quarto king; peça um quarto longe da Lombard Street. Estacionamento limitado: confirme a vaga.",
+          "onde": "Seaside Inn, 1750 Lombard Street, San Francisco",
           "horas": 0
+        },
+        {
+          "tipo": "fauna",
+          "titulo": "Point Lobos State Natural Reserve",
+          "descricao": "Trilhas curtas sobre as falésias, com leões-marinhos e lontras. Fecha no pôr do sol. Só se der tempo: soma ~1h30.",
+          "onde": "Point Lobos State Natural Reserve, Carmel, CA",
+          "horas": 1.5,
+          "opcional": true
         }
       ],
       "alertas": [
         {
           "nivel": "aviso",
-          "texto": "~6h de direção. Saia às 7h30 e deixe Bixby até 12h. Os últimos 40 minutos são de serra no escuro, com cervos na pista. ⚠️ verificar a previsão e as estradas de Yosemite na semana de 16–20/11."
+          "texto": "~5h30 de direção na véspera de Thanksgiving, com trânsito pesado perto de SF. Saia de Cambria às 8h e deixe Bixby até 12h. Se atrasar, encurte o almoço e pule o Point Lobos."
         },
         {
           "nivel": "aviso",
@@ -536,13 +681,13 @@
         },
         {
           "nivel": "aviso",
-          "texto": "Obras com mão única 24h na Highway 1 (Rocky Creek Bridge até 30/11; Point Sur até 31/12), segundo o Caltrans em 09/11/2026: some 30–45 min. Conferir o QuickMap na manhã de 24/11."
+          "texto": "Obras com mão única 24h na Highway 1 (Rocky Creek Bridge até 30/11; Point Sur até 31/12), segundo o Caltrans em 09/11/2026: some 30–45 min. Conferir o QuickMap na manhã de 25/11."
+        },
+        {
+          "nivel": "info",
+          "texto": "Ponto de decisão do Yosemite: se for ao parque, este dia vira Cambria → Mariposa pelo interior (~4h). Veja \"Reservas\"."
         }
       ],
-      "sol": {
-        "nascer": "06:52",
-        "por": "16:54"
-      },
       "trajeto": [
         {
           "modo": "carro",
@@ -568,147 +713,20 @@
               -121.9233
             ],
             [
-              36.6777,
-              -121.6555
+              36.9,
+              -121.75
             ],
             [
-              37.0058,
-              -121.5683
+              37.3382,
+              -121.8863
             ],
             [
-              37.0583,
-              -120.8499
+              37.7749,
+              -122.4194
             ],
             [
-              37.3022,
-              -120.483
-            ],
-            [
-              37.4849,
-              -119.9663
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "dia-9",
-      "rotulo": "9",
-      "data": "2026-11-25",
-      "fase": "road",
-      "planos": [
-        "B"
-      ],
-      "titulo": "Yosemite Valley",
-      "regiao": "Parque Nacional de Yosemite",
-      "coord": [
-        37.7456,
-        -119.5936
-      ],
-      "capa": "elcapitan",
-      "estrada": [
-        {
-          "trecho": "Mariposa → Yosemite Valley",
-          "tempo": "1h (CA-140)",
-          "horas": 1
-        },
-        {
-          "trecho": "Yosemite Valley → Mariposa (à noite)",
-          "tempo": "1h (CA-140)",
-          "horas": 1
-        }
-      ],
-      "resumo": "Dia inteiro no vale, no seu ritmo: campos planos, cachoeiras e os paredões de granito. O pôr do sol é no Tunnel View, e a volta a Mariposa é à noite. A Mist Trail é opcional.",
-      "atividades": [
-        {
-          "tipo": "trilha",
-          "titulo": "Cook's Meadow",
-          "descricao": "Passarelas de madeira sobre o campo, com Half Dome e Yosemite Falls ao fundo. Comece cedo, com a luz baixa.",
-          "stats": "1,6 km · plano",
-          "lugar": "yosemite",
-          "horas": 1
-        },
-        {
-          "tipo": "trilha",
-          "titulo": "Lower Yosemite Fall",
-          "descricao": "Loop curto até a base da cachoeira mais alta da América do Norte. Em novembro pode estar quase seca.",
-          "stats": "1,6 km",
-          "lugar": "yosemitefalls",
-          "horas": 1
-        },
-        {
-          "tipo": "vista",
-          "titulo": "El Capitan Meadow",
-          "descricao": "Campo aos pés do paredão de 900 m. Com binóculo dá para ver os escaladores.",
-          "lugar": "elcapitan",
-          "horas": 1
-        },
-        {
-          "tipo": "vista",
-          "titulo": "Bridalveil Fall",
-          "descricao": "Trilha de 20 minutos até a base da cachoeira, a caminho do Tunnel View.",
-          "lugar": "bridalveil",
-          "horas": 0.75
-        },
-        {
-          "tipo": "trilha",
-          "titulo": "Mist Trail até a ponte de Vernal Fall",
-          "descricao": "Subida curta de Happy Isles até a ponte com vista da cachoeira. Comece cedo: pode ter gelo na trilha. ⚠️ verificar.",
-          "stats": "~5 km ida e volta · +120 m",
-          "onde": "Mist Trail, Yosemite",
-          "maps": "Vernal Fall Footbridge, Yosemite",
-          "horas": 2.5,
-          "opcional": true
-        },
-        {
-          "tipo": "vista",
-          "titulo": "Pôr do sol no Tunnel View",
-          "descricao": "El Capitan, Bridalveil e Half Dome na mesma moldura, ao fim da tarde (~16:50). Chegue 30 minutos antes.",
-          "lugar": "tunnelview",
-          "horas": 1
-        }
-      ],
-      "alertas": [
-        {
-          "nivel": "aviso",
-          "texto": "Taxa de entrada para estrangeiros: US$ 35 por veículo mais US$ 100 por pessoa a partir de 16 anos, ~US$ 235 para o casal. Vale 7 dias e é paga na entrada. Conferido em 08/11/2026."
-        },
-        {
-          "nivel": "aviso",
-          "texto": "Tioga Road e Glacier Point Road ficam fechadas em novembro; o vale segue aberto, mas o parque pode exigir correntes com neve. ⚠️ verificar a página de estradas do NPS."
-        },
-        {
-          "nivel": "info",
-          "texto": "Volta no escuro pela CA-140 (~1h): cuidado com cervos na pista. Amanhã são ~4h30 de estrada até SF: abasteça em Mariposa."
-        }
-      ],
-      "sol": {
-        "nascer": "06:49",
-        "por": "16:41"
-      },
-      "trajeto": [
-        {
-          "modo": "carro",
-          "pontos": [
-            [
-              37.4849,
-              -119.9663
-            ],
-            [
-              37.7456,
-              -119.5936
-            ],
-            [
-              37.7158,
-              -119.6772
-            ],
-            [
-              37.7456,
-              -119.5936
-            ],
-            [
-              37.4849,
-              -119.9663
+              37.8004,
+              -122.4286
             ]
           ]
         }
@@ -722,28 +740,40 @@
       "planos": [
         "B"
       ],
-      "titulo": "Thanksgiving: de Yosemite a SF",
-      "regiao": "Vale Central e San Francisco",
+      "sol": {
+        "nascer": "07:02",
+        "por": "16:52"
+      },
+      "titulo": "Thanksgiving em Marin",
+      "regiao": "Muir Woods e Marin Headlands",
       "coord": [
-        37.8004,
-        -122.4286
+        37.8912,
+        -122.5717
       ],
-      "capa": "tunnelview",
+      "capa": "goldengate",
       "estrada": [
         {
-          "trecho": "Mariposa → San Francisco (feriado)",
-          "tempo": "4h30",
-          "horas": 4.5
+          "trecho": "Seaside Inn → Muir Woods → Marin Headlands → SF",
+          "tempo": "~1h15 no total, com pouco trânsito",
+          "horas": 1.25
         }
       ],
-      "resumo": "Estrada tranquila no feriado, quando o trânsito é menor que na véspera. Chegando por volta das 14h, dá tempo de devolver o carro, fazer o check-in no Seaside Inn e jantar a ceia de Thanksgiving.",
+      "resumo": "Manhã entre as sequoias costeiras de Muir Woods e a vista da Golden Gate nos Marin Headlands. À tarde, devolução do carro e ceia de Thanksgiving.",
       "atividades": [
         {
-          "tipo": "transporte",
-          "titulo": "Estrada até San Francisco",
-          "descricao": "Saia de Mariposa às 9h30, pela CA-140, CA-99 e I-580 até a Bay Bridge. Abasteça em Merced ou Tracy.",
-          "onde": "San Francisco, CA",
-          "horas": 0
+          "tipo": "trilha",
+          "titulo": "Muir Woods",
+          "descricao": "Sequoias costeiras (redwoods), não as sequoias gigantes da Sierra. Chegue às 8h: a reserva de estacionamento é obrigatória no GoMuirWoods.com. ⚠️ verificar se abre no feriado.",
+          "stats": "circuito plano de 1–3 km",
+          "onde": "Muir Woods National Monument, Mill Valley, CA",
+          "horas": 1.5
+        },
+        {
+          "tipo": "vista",
+          "titulo": "Marin Headlands",
+          "descricao": "Hawk Hill, com a vista da Golden Gate, e a Rodeo Beach.",
+          "onde": "Marin Headlands, Sausalito, CA",
+          "horas": 1.5
         },
         {
           "tipo": "transporte",
@@ -753,48 +783,45 @@
           "horas": 1
         },
         {
-          "tipo": "hotel",
-          "titulo": "Check-in no Seaside Inn",
-          "descricao": "Marina, por volta das 15h. Quarto king; peça um quarto longe da Lombard Street. A reserva é de 25/11: peça ao hotel para mudar o check-in para 26/11.",
-          "onde": "Seaside Inn, 1750 Lombard Street, San Francisco",
-          "horas": 0
-        },
-        {
           "tipo": "comida",
           "titulo": "Ceia de Thanksgiving",
-          "descricao": "Reservar com antecedência, no horário mais tarde possível.",
+          "descricao": "Reservar com antecedência, no horário mais tarde possível, com cancelamento grátis.",
           "horas": 2.5
+        },
+        {
+          "tipo": "trilha",
+          "titulo": "Point Reyes: Tomales Point (opção na manga)",
+          "descricao": "Alternativa mais aventureira, com alces-de-tule: 3, 10 ou 15 km, a ~1h30 de SF. ⚠️ verificar se o parque abre no feriado.",
+          "onde": "Tomales Point Trail, Point Reyes National Seashore",
+          "horas": 5,
+          "opcional": true
         }
       ],
       "alertas": [
         {
           "nivel": "urgente",
-          "texto": "Reservar a ceia e confirmar com a Sixt a loja e o horário de devolução no feriado."
+          "texto": "Reservar a ceia e o estacionamento do Muir Woods, e confirmar com a Sixt a loja e o horário de devolução no feriado."
         },
         {
           "nivel": "aviso",
-          "texto": "Alguns postos e restaurantes fecham no Thanksgiving. Abasteça na quarta à noite e leve lanche para a estrada."
+          "texto": "Alguns postos e restaurantes fecham no Thanksgiving. Abasteça antes de devolver o carro e leve lanche."
         }
       ],
-      "sol": {
-        "nascer": "07:01",
-        "por": "16:52"
-      },
       "trajeto": [
         {
           "modo": "carro",
           "pontos": [
             [
-              37.4849,
-              -119.9663
+              37.8004,
+              -122.4286
             ],
             [
-              37.3022,
-              -120.483
+              37.8912,
+              -122.5717
             ],
             [
-              37.7397,
-              -121.4252
+              37.8267,
+              -122.4995
             ],
             [
               37.8004,
@@ -1324,29 +1351,52 @@
       "pago_usd": 0
     },
     {
-      "id": "pasadena",
-      "nome": "Hotel em Old Pasadena (a escolher)",
+      "id": "hyland",
+      "nome": "Hyland Inn near Pasadena Civic Center",
       "cidade": "Pasadena, CA",
       "checkin": "2026-11-21",
-      "checkout": "2026-11-23",
-      "status": "A reservar",
+      "checkout": "2026-11-22",
+      "status": "Reservado · R$ 734 (~US$ 130,60)",
       "planos": [
         "B"
       ],
       "coord": [
         34.1456,
-        -118.148
+        -118.087
       ],
-      "reservado": false,
-      "obs": "A pé de Colorado Blvd e Fair Oaks, com estacionamento e cancelamento grátis. Opções a conferir: Courtyard Pasadena/Old Town e Hotel Constance. Alternativa mais barata: Monrovia (Old Town)."
+      "reservado": true,
+      "endereco": "2462 E Colorado Blvd, Pasadena, CA 91107",
+      "checkin_hora": "a partir das 15h",
+      "checkout_hora": "até 11h",
+      "obs": "Estacionamento grátis. Café da manhã: ⚠️ confirmar. Fica a mais de 1 milha de Old Pasadena: Uber para jantar fora.",
+      "pago_usd": 130.6
+    },
+    {
+      "id": "beachside",
+      "nome": "Beachside Inn",
+      "cidade": "Santa Barbara, CA",
+      "checkin": "2026-11-22",
+      "checkout": "2026-11-24",
+      "status": "Reservado (22 a 24/11) · US$ 371,13 no total",
+      "planos": [
+        "B"
+      ],
+      "coord": [
+        34.4113,
+        -119.698
+      ],
+      "reservado": true,
+      "obs": "Quarto Queen Poolside (US$ 160 e US$ 165 por noite, mais US$ 46,13 de impostos). Estacionamento próprio e café da manhã incluídos. Chegada prevista às 19h. Depósito de US$ 150 no check-in, só em cartão de crédito/débito (sem dinheiro nem Apple Pay). Cancelamento grátis até 24 h antes da chegada; depois, cobra a 1ª noite. Idade mínima 21. Upgrade possível: King Signature, +US$ 20 por noite.",
+      "pago_usd": 371.13,
+      "endereco": "336 W Cabrillo Blvd, Santa Barbara, CA 93101"
     },
     {
       "id": "cambria",
       "nome": "J. Patrick Inn",
       "cidade": "Cambria, CA",
-      "checkin": "2026-11-23",
-      "checkout": "2026-11-24",
-      "status": "Reservado para 24/11 · mudar para 23/11",
+      "checkin": "2026-11-24",
+      "checkout": "2026-11-25",
+      "status": "Reservado (24/11)",
       "planos": [
         "B"
       ],
@@ -1358,28 +1408,12 @@
       "obs": "Check-in das 15h às 20h, feito online (o hotel envia e-mail na manhã do dia). Cancelamento e mudança grátis até 19/11."
     },
     {
-      "id": "mariposa",
-      "nome": "Hotel em Mariposa (a escolher)",
-      "cidade": "Mariposa, CA",
-      "checkin": "2026-11-24",
-      "checkout": "2026-11-26",
-      "status": "A reservar",
-      "planos": [
-        "B"
-      ],
-      "coord": [
-        37.4849,
-        -119.9663
-      ],
-      "reservado": false
-    },
-    {
       "id": "seaside",
       "nome": "Seaside Inn",
       "cidade": "San Francisco · Marina",
-      "checkin": "2026-11-26",
+      "checkin": "2026-11-25",
       "checkout": "2026-11-28",
-      "status": "Reservado (25 a 28/11) · pedir para mudar o check-in para 26/11",
+      "status": "Reservado (25 a 28/11)",
       "planos": [
         "B"
       ],
@@ -1390,46 +1424,84 @@
       "reservado": true,
       "endereco": "1750 Lombard Street, Distrito Marina, São Francisco, CA 94123",
       "pago_usd": 485.61,
-      "obs": "Quarto king. Pedir quarto longe da Lombard Street. Estacionamento limitado. A reserva é de 25 a 28/11 (US$ 485,61 por 3 noites); pedir ao hotel para começar em 26/11. ⚠️ verificar a política de mudança."
+      "obs": "Quarto king. Pedir quarto longe da Lombard Street. Estacionamento limitado: confirmar vaga para o carro nas noites de 25 e 26/11."
     }
   ],
   "busca_hoteis": [],
   "reservas": [
     {
-      "id": "cambria-data",
-      "prioridade": "urgente",
+      "id": "sb-hotel",
+      "prioridade": "feito",
       "planos": [
         "B"
       ],
-      "item": "J. Patrick Inn: mudar de 24/11 para 23/11",
-      "detalhe": "Mudança e cancelamento grátis até 19/11. Check-in das 15h às 20h, online."
+      "item": "Beachside Inn, Santa Barbara, 22 a 24/11 (2 noites)",
+      "detalhe": "Reservado: Queen Poolside, US$ 371,13 no total. Café e estacionamento incluídos. Cancelamento grátis até 24 h antes da chegada (até ~19h de 21/11, sábado). Depósito de US$ 150 no check-in, só em cartão. Chegada prevista às 19h."
     },
     {
-      "id": "pasadena",
-      "prioridade": "urgente",
+      "id": "hyland",
+      "prioridade": "feito",
       "planos": [
         "B"
       ],
-      "item": "Hotel em Old Pasadena (21 a 23/11, 2 noites)",
-      "detalhe": "A no máximo 10 minutos a pé de Colorado Blvd, com estacionamento e cancelamento grátis. Diária de referência US$ 150–230 ⚠️ verificar. Alternativa mais barata: Monrovia (Old Town)."
+      "item": "Hyland Inn, Pasadena, 21/11 (1 noite)",
+      "detalhe": "Reservado: R$ 734 (~US$ 130,60). Estacionamento grátis."
     },
     {
-      "id": "mariposa",
-      "prioridade": "urgente",
+      "id": "cambria",
+      "prioridade": "feito",
       "planos": [
         "B"
       ],
-      "item": "Hotel em Mariposa (24 a 26/11, 2 noites)",
-      "detalhe": "Cidade de apoio a Yosemite pela CA-140. Quarto com banheiro e estacionamento incluído, com cancelamento grátis."
+      "item": "J. Patrick Inn, Cambria, 24/11",
+      "detalhe": "Reservado. Check-in online das 15h às 20h. Cancelamento grátis até 19/11."
     },
     {
-      "id": "seaside-data",
+      "id": "seaside-estac",
+      "prioridade": "importante",
+      "planos": [
+        "B"
+      ],
+      "item": "Seaside Inn: vaga para o carro (25 e 26/11)",
+      "detalhe": "O estacionamento do hotel é limitado. Confirmar vaga e preço, ou achar garagem perto."
+    },
+    {
+      "id": "muirwoods",
       "prioridade": "urgente",
       "planos": [
         "B"
       ],
-      "item": "Seaside Inn: mudar o check-in de 25/11 para 26/11",
-      "detalhe": "A reserva é de 25 a 28/11. Se o hotel não mudar, a noite de 25/11 (~US$ 162) fica paga sem uso. ⚠️ verificar a política."
+      "item": "Muir Woods: estacionamento (26/11, 8h)",
+      "detalhe": "Reserva obrigatória em GoMuirWoods.com. ⚠️ verificar se o parque abre no Thanksgiving.",
+      "url": "https://gomuirwoods.com"
+    },
+    {
+      "id": "tunnel",
+      "prioridade": "antes",
+      "planos": [
+        "B"
+      ],
+      "item": "Conferir a Tunnel Trail (Inspiration Point)",
+      "detalhe": "Fechada para reparos desde 08/09/2025, sem data de reabertura achada. Conferir na semana de 16–20/11 no site da Santa Barbara Parks & Recreation. Alternativa: Rattlesnake Canyon ou Jesusita Trail."
+    },
+    {
+      "id": "yosemite-decisao",
+      "prioridade": "importante",
+      "planos": [
+        "B"
+      ],
+      "item": "Decidir o Yosemite (até a noite de 24/11)",
+      "detalhe": "Se for: dia 25 Cambria → Mariposa (~4h pelo interior); dia 26 inteiro em Yosemite; dia 27 Mariposa → SF e Lands End; dia 28 voo. Reservar Mariposa (25 e 26/11) na hora, com cancelamento grátis; pedir ao Seaside para mover o check-in para 27/11 (senão ~US$ 324 sem uso); +1 diária Sixt; cancelar ceia e Muir Woods; entrada ~US$ 235."
+    },
+    {
+      "id": "channel",
+      "prioridade": "antes",
+      "planos": [
+        "B"
+      ],
+      "item": "Channel Islands (opcional, 23/11)",
+      "detalhe": "Barco de um dia saindo de Santa Barbara ou Ventura. ⚠️ verificar se opera na segunda e reservar antes.",
+      "url": "https://www.islandpackers.com"
     },
     {
       "id": "sixt",
@@ -1448,21 +1520,21 @@
     },
     {
       "id": "yosemite-taxa",
-      "prioridade": "importante",
+      "prioridade": "antes",
       "planos": [
         "B"
       ],
-      "item": "Entrada em Yosemite (paga no portão)",
+      "item": "Entrada em Yosemite (só se decidir ir)",
       "detalhe": "US$ 35 por veículo mais US$ 100 por pessoa a partir de 16 anos (não residentes), ~US$ 235; vale 7 dias. Levar cartão. Conferido em 08/11/2026.",
       "url": "https://www.yosemite.com/nonresident-and-international-fees/"
     },
     {
       "id": "correntes",
-      "prioridade": "importante",
+      "prioridade": "antes",
       "planos": [
         "B"
       ],
-      "item": "Correntes de neve e a Sixt",
+      "item": "Correntes de neve e a Sixt (só se for ao Yosemite)",
       "detalhe": "Perguntar se o contrato permite correntes e pedir carro com tração integral. Checar a página de estradas do NPS de 20 a 23/11.",
       "url": "https://www.nps.gov/yose/planyourvisit/wroads.htm"
     },
@@ -1507,12 +1579,6 @@
       "detalhe": "Pago pela ADP."
     },
     {
-      "id": "seaside",
-      "prioridade": "feito",
-      "item": "Hotel Seaside Inn (SF)",
-      "detalhe": "Pago: US$ 485,61 por 3 diárias (25 a 28/11), quarto king. Pedir quarto longe da Lombard Street."
-    },
-    {
       "id": "carro",
       "prioridade": "urgente",
       "item": "Carro Sixt: antecipar a retirada para 21/11",
@@ -1523,24 +1589,32 @@
       "prioridade": "feito",
       "item": "Voo de volta DL 1598",
       "detalhe": "SFO 28/11, 07:05. Uber do Seaside Inn às 04:30, chegada ~04:55."
+    },
+    {
+      "id": "beachside-checkin",
+      "prioridade": "antes",
+      "planos": [
+        "B"
+      ],
+      "item": "Beachside Inn: levar cartão de crédito no check-in",
+      "detalhe": "Depósito de US$ 150 para extras, só em cartão de crédito ou débito físico (não aceita dinheiro nem Apple Pay). O hotel foi avisado da chegada às 19h. Idade mínima 21."
     }
   ],
   "orcamento": {
     "taxa_brl": 5.62,
     "planos": {
       "B": {
-        "total_usd": 3378.96,
-        "opcionais_usd": 532.37,
-        "itens_a_verificar": 5,
+        "total_usd": 3187.56,
+        "opcionais_usd": 610.5,
+        "itens_a_verificar": 4,
         "categorias": {
-          "hospedagem": 1133.74,
-          "alimentacao": 870.0,
+          "hospedagem": 1137.3400000000001,
+          "alimentacao": 875.0,
           "carro": 470.22,
-          "gasolina": 270.0,
-          "transporte": 260.0,
-          "ingresso": 235.0,
+          "transporte": 280.0,
+          "gasolina": 275.0,
           "passeio": 90.0,
-          "estacionamento": 50.0
+          "estacionamento": 60.0
         }
       }
     },
@@ -1662,7 +1736,7 @@
         ],
         "categoria": "gasolina",
         "item": "SAN -> Santa Monica -> Pasadena",
-        "usd": 50.0,
+        "usd": 55.0,
         "status": "estimado",
         "atividade": "Santa Monica Pier"
       },
@@ -1683,10 +1757,10 @@
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "Hotel em Old Pasadena (noite 21; a reservar)",
-        "usd": 190.0,
-        "status": "verificar",
-        "atividade": "Check-in em Pasadena"
+        "item": "Hyland Inn (noite 21; R$ 734 pagos)",
+        "usd": 130.6,
+        "status": "confirmado",
+        "atividade": "Check-in no Hyland Inn"
       },
       {
         "data": "2026-11-21",
@@ -1694,10 +1768,21 @@
           "B"
         ],
         "categoria": "alimentacao",
-        "item": "Almoço e jantar com bar",
-        "usd": 130.0,
+        "item": "Almoço e jantar",
+        "usd": 110.0,
         "status": "estimado",
-        "atividade": "Jantar e bar em Old Pasadena"
+        "atividade": "Jantar em Pasadena"
+      },
+      {
+        "data": "2026-11-21",
+        "planos": [
+          "B"
+        ],
+        "categoria": "transporte",
+        "item": "Uber até o jantar (ida e volta)",
+        "usd": 20.0,
+        "status": "estimado",
+        "atividade": "Jantar em Pasadena"
       },
       {
         "data": "2026-11-22",
@@ -1705,8 +1790,8 @@
           "B"
         ],
         "categoria": "gasolina",
-        "item": "Pasadena <-> Griffith",
-        "usd": 15.0,
+        "item": "Pasadena -> Griffith -> Santa Barbara",
+        "usd": 55.0,
         "status": "estimado",
         "atividade": "Griffith Park e o letreiro de Hollywood"
       },
@@ -1727,10 +1812,10 @@
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "Hotel em Old Pasadena (noite 22; a reservar)",
-        "usd": 190.0,
-        "status": "verificar",
-        "atividade": null
+        "item": "Beachside Inn (noite 22: US$ 160 + impostos)",
+        "usd": 182.71,
+        "status": "confirmado",
+        "atividade": "Check-in no Beachside Inn"
       },
       {
         "data": "2026-11-22",
@@ -1738,10 +1823,10 @@
           "B"
         ],
         "categoria": "alimentacao",
-        "item": "Refeições do dia",
+        "item": "Almoço e jantar",
         "usd": 110.0,
         "status": "estimado",
-        "atividade": "Jantar em Old Pasadena"
+        "atividade": "Jantar na Funk Zone"
       },
       {
         "data": "2026-11-23",
@@ -1749,10 +1834,10 @@
           "B"
         ],
         "categoria": "gasolina",
-        "item": "Pasadena -> Santa Barbara -> Cambria",
-        "usd": 70.0,
+        "item": "Hotel <-> Tunnel Trailhead",
+        "usd": 10.0,
         "status": "estimado",
-        "atividade": "Santa Barbara"
+        "atividade": "Inspiration Point (Tunnel Trail)"
       },
       {
         "data": "2026-11-23",
@@ -1760,10 +1845,10 @@
           "B"
         ],
         "categoria": "estacionamento",
-        "item": "Santa Barbara (Stearns Wharf e centro)",
+        "item": "Stearns Wharf e orla",
         "usd": 10.0,
         "status": "estimado",
-        "atividade": "Santa Barbara"
+        "atividade": "Stearns Wharf e orla"
       },
       {
         "data": "2026-11-23",
@@ -1771,13 +1856,68 @@
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "J. Patrick Inn em Cambria (noite 23; valor a confirmar)",
+        "item": "Beachside Inn (noite 23: US$ 165 + impostos)",
+        "usd": 188.42,
+        "status": "confirmado",
+        "atividade": null
+      },
+      {
+        "data": "2026-11-23",
+        "planos": [
+          "B"
+        ],
+        "categoria": "alimentacao",
+        "item": "Refeições do dia",
+        "usd": 100.0,
+        "status": "estimado",
+        "atividade": "Jantar de despedida em Santa Barbara"
+      },
+      {
+        "data": "2026-11-23",
+        "planos": [
+          "B"
+        ],
+        "categoria": "passeio",
+        "item": "Channel Islands de barco (2 pessoas; valor a confirmar)",
+        "usd": 200.0,
+        "status": "opcional",
+        "atividade": "Channel Islands de barco (opção na manga)"
+      },
+      {
+        "data": "2026-11-23",
+        "planos": [
+          "B"
+        ],
+        "categoria": "ingresso",
+        "item": "Santa Barbara Botanic Garden (2 pessoas; valor a confirmar)",
+        "usd": 40.0,
+        "status": "opcional",
+        "atividade": "Santa Barbara Botanic Garden"
+      },
+      {
+        "data": "2026-11-24",
+        "planos": [
+          "B"
+        ],
+        "categoria": "gasolina",
+        "item": "Santa Barbara -> Cambria",
+        "usd": 45.0,
+        "status": "estimado",
+        "atividade": "Morro Rock"
+      },
+      {
+        "data": "2026-11-24",
+        "planos": [
+          "B"
+        ],
+        "categoria": "hospedagem",
+        "item": "J. Patrick Inn em Cambria (noite 24; valor a confirmar)",
         "usd": 150.0,
         "status": "verificar",
         "atividade": "Check-in em Cambria"
       },
       {
-        "data": "2026-11-23",
+        "data": "2026-11-24",
         "planos": [
           "B"
         ],
@@ -1788,18 +1928,18 @@
         "atividade": null
       },
       {
-        "data": "2026-11-24",
+        "data": "2026-11-25",
         "planos": [
           "B"
         ],
         "categoria": "gasolina",
-        "item": "Cambria -> Big Sur -> Mariposa",
-        "usd": 75.0,
+        "item": "Cambria -> Big Sur -> San Francisco",
+        "usd": 80.0,
         "status": "estimado",
-        "atividade": "Estrada até Mariposa"
+        "atividade": "Estrada até San Francisco"
       },
       {
-        "data": "2026-11-24",
+        "data": "2026-11-25",
         "planos": [
           "B"
         ],
@@ -1810,70 +1950,15 @@
         "atividade": "Elefantes-marinhos em Piedras Blancas"
       },
       {
-        "data": "2026-11-24",
-        "planos": [
-          "B"
-        ],
-        "categoria": "hospedagem",
-        "item": "Hotel em Mariposa (noite 24; a reservar)",
-        "usd": 140.0,
-        "status": "estimado",
-        "atividade": "Check-in em Mariposa"
-      },
-      {
-        "data": "2026-11-24",
-        "planos": [
-          "B"
-        ],
-        "categoria": "alimentacao",
-        "item": "Refeições do dia e compras no mercado",
-        "usd": 85.0,
-        "status": "estimado",
-        "atividade": null
-      },
-      {
-        "data": "2026-11-25",
-        "planos": [
-          "B"
-        ],
-        "categoria": "ingresso",
-        "item": "Yosemite NP: US$ 35 por veículo + US$ 100 x 2 não residentes (vale 7 dias)",
-        "usd": 235.0,
-        "status": "estimado",
-        "atividade": "Cook's Meadow"
-      },
-      {
-        "data": "2026-11-25",
-        "planos": [
-          "B"
-        ],
-        "categoria": "gasolina",
-        "item": "Mariposa <-> Yosemite Valley",
-        "usd": 15.0,
-        "status": "estimado",
-        "atividade": "Pôr do sol no Tunnel View"
-      },
-      {
         "data": "2026-11-25",
         "planos": [
           "B"
         ],
         "categoria": "hospedagem",
-        "item": "Hotel em Mariposa (noite 25; a reservar)",
-        "usd": 140.0,
-        "status": "estimado",
-        "atividade": null
-      },
-      {
-        "data": "2026-11-25",
-        "planos": [
-          "B"
-        ],
-        "categoria": "hospedagem",
-        "item": "Seaside Inn noite 25 (só se o hotel não mudar o check-in para 26/11)",
+        "item": "Seaside Inn (noite 25)",
         "usd": 161.87,
-        "status": "opcional",
-        "atividade": null
+        "status": "confirmado",
+        "atividade": "Check-in no Seaside Inn"
       },
       {
         "data": "2026-11-25",
@@ -1882,9 +1967,9 @@
         ],
         "categoria": "alimentacao",
         "item": "Refeições do dia",
-        "usd": 90.0,
+        "usd": 100.0,
         "status": "estimado",
-        "atividade": null
+        "atividade": "Almoço em Carmel-by-the-Sea"
       },
       {
         "data": "2026-11-26",
@@ -1892,10 +1977,21 @@
           "B"
         ],
         "categoria": "gasolina",
-        "item": "Mariposa -> SF + reabastecer na devolução",
-        "usd": 45.0,
+        "item": "Marin + reabastecer na devolução",
+        "usd": 30.0,
         "status": "estimado",
-        "atividade": "Estrada até San Francisco"
+        "atividade": "Marin Headlands"
+      },
+      {
+        "data": "2026-11-26",
+        "planos": [
+          "B"
+        ],
+        "categoria": "estacionamento",
+        "item": "Muir Woods (reserva de estacionamento; valor a confirmar)",
+        "usd": 10.0,
+        "status": "verificar",
+        "atividade": "Muir Woods"
       },
       {
         "data": "2026-11-26",
@@ -1903,7 +1999,7 @@
           "B"
         ],
         "categoria": "alimentacao",
-        "item": "Café da manhã e lanche na estrada",
+        "item": "Café da manhã e lanche",
         "usd": 40.0,
         "status": "estimado",
         "atividade": null
@@ -1939,7 +2035,7 @@
         "item": "Seaside Inn (noite 26)",
         "usd": 161.87,
         "status": "confirmado",
-        "atividade": "Check-in no Seaside Inn"
+        "atividade": null
       },
       {
         "data": "2026-11-27",
@@ -2066,6 +2162,10 @@
     {
       "nome": "NPS: estradas e correntes em Yosemite",
       "url": "https://www.nps.gov/yose/planyourvisit/wroads.htm"
+    },
+    {
+      "nome": "Santa Barbara Parks & Recreation: Tunnel Trail",
+      "url": "https://sbparksandrec.santabarbaraca.gov/node/2694"
     }
   ],
   "creditos_api": [

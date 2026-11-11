@@ -81,6 +81,11 @@
       "tipo": "pesquisa",
       "titulo": "Pesquisa na web (NPS, Yosemite.com): taxa de estrangeiros e estradas de inverno",
       "data": "2026-11-08"
+    },
+    "pesquisa-2026-11-sb": {
+      "tipo": "pesquisa",
+      "titulo": "Pesquisa na web: hotéis e trilhas em Santa Barbara (Tunnel Trail, Funk Zone)",
+      "data": "2026-11-10"
     }
   },
   "dias": {
@@ -174,10 +179,54 @@
     },
     "dia-7": {
       "intro": [
-        "Um dia sem pressa pela Costa Central, a parte da Califórnia entre LA e Big Sur que muita gente pula.",
-        "Termina em Cambria, uma vila de pinheiros à beira-mar, a meia hora dos elefantes-marinhos."
+        "Dia de trilha. O Inspiration Point é a vista mais impressionante de Santa Barbara: a cidade, o mar e, em dia limpo, as Channel Islands.",
+        "Confirme antes se a Tunnel Trail está aberta: ela fechou para reparos em 08/09/2025 e não achei a data de reabertura. O resto do dia fica aberto."
       ],
       "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Trilhas",
+          "itens": [
+            {
+              "nome": "Inspiration Point (Tunnel Trail)",
+              "texto": "Subida gradual pelo chaparral até o mirante. O estacionamento do trailhead é pequeno e a fiscalização rígida: chegue antes das 9h e estacione dentro da linha.",
+              "stats": "~5,6 km · +290 m",
+              "onde": "Tunnel Trailhead, Santa Barbara, CA",
+              "maps": "Tunnel Trail trailhead, Santa Barbara, CA",
+              "fontes": [
+                "pesquisa-2026-11-sb"
+              ],
+              "verificar": "Trilha fechada para reparos desde 08/09/2025; confirmar se reabriu"
+            },
+            {
+              "nome": "Rattlesnake Canyon",
+              "texto": "Alternativa mais sombreada, que também leva a Inspiration Point por outro caminho. Mais discreta e com riacho quando chove.",
+              "onde": "Rattlesnake Canyon Trailhead, Santa Barbara, CA",
+              "fontes": [
+                "pesquisa-2026-11-sb"
+              ]
+            },
+            {
+              "nome": "Seven Falls",
+              "texto": "Quedas d'água em um cânion, pelo mesmo caminho da Tunnel Trail. No fim da estação seca pode estar sem água: só vale depois de chuva.",
+              "onde": "Seven Falls, Santa Barbara, CA",
+              "verificar": "Ver a previsão e o acesso",
+              "coord": [
+                34.47456,
+                -119.7051
+              ]
+            },
+            {
+              "nome": "Butterfly Beach",
+              "texto": "Praia tranquila para fechar a tarde, com vista das ilhas ao pôr do sol.",
+              "onde": "Butterfly Beach, Santa Barbara, CA",
+              "coord": [
+                34.4176,
+                -119.64901
+              ]
+            }
+          ]
+        },
         {
           "tipo": "fazer",
           "titulo": "Mais para fazer",
@@ -200,50 +249,6 @@
               ]
             },
             {
-              "nome": "Montaña de Oro State Park",
-              "texto": "Bluff Trail no alto de falésias recortadas, ao sul de Morro Bay. Uma das trilhas costeiras mais bonitas do estado.",
-              "stats": "5 km",
-              "onde": "Montaña de Oro, Los Osos",
-              "fontes": [
-                "yt-bmtm-california-20-paradas"
-              ],
-              "coord": [
-                35.29381,
-                -120.86156
-              ]
-            },
-            {
-              "nome": "El Capitán State Beach",
-              "texto": "Praia entre falésias logo ao norte de Santa Barbara, pela US-101. Golfinhos costumam nadar perto da arrebentação.",
-              "fontes": [
-                "yt-bmtm-california-20-paradas"
-              ],
-              "onde": "El Capitán State Beach",
-              "coord": [
-                34.48737,
-                -120.01255
-              ]
-            },
-            {
-              "nome": "Caiaque em Morro Bay",
-              "texto": "Remar na baía tranquila entre lontras-marinhas, com a Morro Rock ao fundo.",
-              "onde": "Morro Bay State Park Marina",
-              "coord": [
-                35.354,
-                -120.844
-              ],
-              "maps": "Morro Bay State Park Marina"
-            },
-            {
-              "nome": "Moonstone Beach Boardwalk",
-              "texto": "Passarela de madeira sobre as pedras em Cambria. Ótima para o pôr do sol.",
-              "onde": "Moonstone Beach, Cambria",
-              "coord": [
-                35.57491,
-                -121.1137
-              ]
-            },
-            {
               "nome": "Missão de Santa Barbara",
               "texto": "A rainha das missões espanholas, a 5 minutos do Handlebar.",
               "onde": "Old Mission Santa Barbara",
@@ -254,21 +259,37 @@
               "maps": "Old Mission Santa Barbara"
             },
             {
-              "nome": "Naufrágio de Cayucos",
-              "texto": "O barco de pesca Point San Luis encalhou na praia em 2017. Parada rápida entre Morro Bay e Cambria.",
+              "nome": "Douglas Family Preserve",
+              "texto": "Campo aberto sobre as falésias, com vista do mar. Passeio plano.",
+              "stats": "2–4 km",
+              "onde": "Douglas Family Preserve, Santa Barbara, CA",
               "fontes": [
-                "yt-ctml-pch-20-paradas"
+                "pesquisa-2026-11-sb"
               ],
-              "tempos": {
-                "yt-ctml-pch-20-paradas": 614
-              },
-              "onde": "Cayucos",
-              "verificar": "Confirmar se o casco ainda está na praia",
               "coord": [
-                35.43701,
-                -120.88311
-              ],
-              "maps": "Point San Luis shipwreck, Cayucos"
+                34.40173,
+                -119.73844
+              ]
+            },
+            {
+              "nome": "Santa Barbara Botanic Garden",
+              "texto": "Trilhas planas entre plantas nativas, com a Missão ao fundo. Ingresso pago.",
+              "onde": "Santa Barbara Botanic Garden, CA",
+              "verificar": "Confirmar horário e preço",
+              "coord": [
+                34.45618,
+                -119.70968
+              ]
+            },
+            {
+              "nome": "Channel Islands de barco",
+              "texto": "Passeio de um dia saindo de Santa Barbara ou Ventura. Reservar antes.",
+              "onde": "Santa Barbara Harbor, CA",
+              "verificar": "Confirmar se opera na segunda-feira em novembro",
+              "coord": [
+                34.40549,
+                -119.69165
+              ]
             }
           ]
         },
@@ -293,7 +314,101 @@
                 34.4224,
                 -119.70343
               ]
+            }
+          ]
+        },
+        {
+          "tipo": "comer",
+          "titulo": "Onde comer",
+          "itens": [
+            {
+              "nome": "Funk Zone e State Street",
+              "texto": "Almoço depois da trilha na Funk Zone e jantar na State Street, tudo a pé do centro.",
+              "onde": "Funk Zone, Santa Barbara, CA"
+            }
+          ]
+        },
+        {
+          "tipo": "dica",
+          "titulo": "Dicas práticas",
+          "itens": [
+            {
+              "nome": "Termine até as 15h30",
+              "texto": "O pôr do sol é às ~16:46, e a trilha escurece rápido no cânion."
             },
+            {
+              "nome": "Segunda-feira",
+              "texto": "Parte dos restaurantes e das degustações fecha. Veja o horário antes de escolher o jantar."
+            }
+          ]
+        }
+      ]
+    },
+    "dia-8": {
+      "intro": [
+        "Um dia curto pela Costa Central, a parte da Califórnia entre LA e Big Sur que muita gente pula.",
+        "Termina em Cambria, uma vila de pinheiros à beira-mar, a meia hora dos elefantes-marinhos."
+      ],
+      "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Montaña de Oro State Park",
+              "texto": "Bluff Trail no alto de falésias recortadas, ao sul de Morro Bay. Uma das trilhas costeiras mais bonitas do estado.",
+              "stats": "5 km",
+              "onde": "Montaña de Oro, Los Osos",
+              "fontes": [
+                "yt-bmtm-california-20-paradas"
+              ],
+              "coord": [
+                35.29381,
+                -120.86156
+              ]
+            },
+            {
+              "nome": "Caiaque em Morro Bay",
+              "texto": "Remar na baía tranquila entre lontras-marinhas, com a Morro Rock ao fundo.",
+              "onde": "Morro Bay State Park Marina",
+              "coord": [
+                35.354,
+                -120.844
+              ],
+              "maps": "Morro Bay State Park Marina"
+            },
+            {
+              "nome": "Moonstone Beach Boardwalk",
+              "texto": "Passarela de madeira sobre as pedras em Cambria. Ótima para o pôr do sol.",
+              "onde": "Moonstone Beach, Cambria",
+              "coord": [
+                35.57491,
+                -121.1137
+              ]
+            },
+            {
+              "nome": "Naufrágio de Cayucos",
+              "texto": "O barco de pesca Point San Luis encalhou na praia em 2017. Parada rápida entre Morro Bay e Cambria.",
+              "fontes": [
+                "yt-ctml-pch-20-paradas"
+              ],
+              "tempos": {
+                "yt-ctml-pch-20-paradas": 614
+              },
+              "onde": "Cayucos",
+              "verificar": "Confirmar se o casco ainda está na praia",
+              "coord": [
+                35.43701,
+                -120.88311
+              ],
+              "maps": "Point San Luis shipwreck, Cayucos"
+            }
+          ]
+        },
+        {
+          "tipo": "cafe",
+          "titulo": "Café",
+          "itens": [
             {
               "nome": "Buttercup Bakery",
               "texto": "Padaria aconchegante no centro de Morro Bay, aberta das 7h às 15h.",
@@ -349,8 +464,8 @@
           "titulo": "Dicas práticas",
           "itens": [
             {
-              "nome": "Saia às 8h",
-              "texto": "Com a US-101 livre, são 1h45 até Santa Barbara. Café por lá e estrada para Cambria às 11h."
+              "nome": "Saia às 10h",
+              "texto": "Com a US-101 livre, são ~2h45 até Cambria, com parada em Morro Bay."
             },
             {
               "nome": "Check-in em Cambria",
@@ -360,10 +475,10 @@
         }
       ]
     },
-    "dia-8": {
+    "dia-9": {
       "intro": [
         "O trecho de Big Sur entre Cambria e Carmel tem cerca de 150 km de curvas sobre o Pacífico. Não há cidades, quase não há sinal e cada mirante pede uma parada.",
-        "A saída é cedo porque o dia termina com ~3h30 de estrada até Yosemite. Escolham duas ou três paradas e deixem o resto."
+        "A saída é cedo porque o dia termina em SF, na véspera de Thanksgiving. Escolham duas ou três paradas e deixem o resto."
       ],
       "secoes": [
         {
@@ -440,7 +555,7 @@
                 "yt-ctml-pch-20-paradas": 104
               },
               "onde": "Point Sur State Historic Park",
-              "verificar": "Confirmar se há tour em 24/11",
+              "verificar": "Confirmar se há tour em 25/11",
               "coord": [
                 36.30691,
                 -121.89838
@@ -454,7 +569,7 @@
           "itens": [
             {
               "nome": "Big Sur Bakery",
-              "texto": "Padaria numa casa de rancho dos anos 30. Fecha às terças, e 24/11 é terça: não conte com ela. ⚠️ verificar.",
+              "texto": "Padaria numa casa de rancho dos anos 30. ⚠️ verificar horário na quarta (25/11).",
               "onde": "47540 CA-1, Big Sur",
               "coord": [
                 36.28889,
@@ -499,8 +614,8 @@
               ]
             },
             {
-              "nome": "Estrada até Mariposa",
-              "texto": "Saia de Carmel até as 13h30. A CA-140 tem ~40 min de curvas no escuro, com cervos na pista; abasteça em Merced."
+              "nome": "Estrada até SF",
+              "texto": "Saia de Carmel até as 13h30. A véspera de Thanksgiving enche as estradas perto de SF: leve lanche e abasteça antes de entrar na cidade."
             },
             {
               "nome": "Use os pullouts",
@@ -518,224 +633,12 @@
               ]
             },
             {
-              "nome": "Mariposa à noite",
-              "texto": "A cidade é pequena e jantar tarde é difícil. Compre lanche e água no caminho.",
-              "onde": "Mariposa, CA"
-            }
-          ]
-        }
-      ]
-    },
-    "dia-9": {
-      "intro": [
-        "Yosemite é o parque que fez nascer a ideia de parque nacional nos Estados Unidos. Em novembro o vale fica mais vazio, com as árvores ainda amarelas e, às vezes, neve nos paredões.",
-        "As cachoeiras estão no ponto mais baixo do ano, e algumas podem estar secas. Em compensação, a luz do outono é bonita e o vale fica tranquilo."
-      ],
-      "secoes": [
-        {
-          "tipo": "fazer",
-          "titulo": "Mais para fazer",
-          "itens": [
-            {
-              "nome": "Bridalveil Fall",
-              "texto": "Trilha de 20 minutos até a base, logo na entrada do vale. Boa parada antes do Tunnel View.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Bridalveil Fall, Yosemite",
+              "nome": "Estacionamento no Seaside Inn",
+              "texto": "O estacionamento do hotel é limitado. Confirme a vaga com antecedência.",
+              "onde": "Seaside Inn, 1750 Lombard Street, San Francisco",
               "coord": [
-                37.7166,
-                -119.6464
-              ]
-            },
-            {
-              "nome": "Céu estrelado",
-              "texto": "Sem poluição luminosa, o vale é ótimo para ver estrelas. Saia do hotel uns minutos e olhe para cima.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "verificar": "Lua quase cheia nesta noite",
-              "onde": "Yosemite Valley",
-              "maps": "El Capitan Meadow, Yosemite",
-              "coord": [
-                37.73272,
-                -119.6057
-              ]
-            },
-            {
-              "nome": "Mist Trail até a ponte de Vernal Fall",
-              "texto": "Subida curta até a ponte com vista para a cachoeira. Com pouca água em novembro, molha menos que na primavera.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Mist Trail, Yosemite",
-              "stats": "2,6 km · +120 m",
-              "verificar": "Pode ter gelo",
-              "coord": [
-                37.7275,
-                -119.545
-              ],
-              "maps": "Vernal Fall Footbridge, Yosemite"
-            },
-            {
-              "nome": "Bicicleta no vale",
-              "texto": "Ciclovias planas ligam os pontos do vale. O aluguel fica no Curry Village e no Yosemite Valley Lodge.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Curry Village, Yosemite",
-              "verificar": "Confirmar se o aluguel funciona em novembro",
-              "coord": [
-                37.73745,
-                -119.57136
-              ],
-              "maps": "Curry Village Bike Rental, Yosemite"
-            },
-            {
-              "nome": "Ansel Adams Gallery",
-              "texto": "Galeria do fotógrafo que imortalizou o parque, no Yosemite Village.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "onde": "Ansel Adams Gallery, Yosemite",
-              "coord": [
-                37.74856,
-                -119.58687
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "cafe",
-          "titulo": "Café",
-          "itens": [
-            {
-              "nome": "Degnan's Kitchen",
-              "texto": "Delicatessen no Yosemite Village, com café e sanduíches para levar na estrada.",
-              "onde": "Yosemite Village",
-              "coord": [
-                37.74802,
-                -119.58547
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "comer",
-          "titulo": "Onde comer",
-          "itens": [
-            {
-              "nome": "Base Camp Eatery",
-              "texto": "Praça de alimentação do Yosemite Valley Lodge, prática para o jantar da chegada.",
-              "onde": "Yosemite Valley Lodge",
-              "coord": [
-                37.74326,
-                -119.59842
-              ]
-            },
-            {
-              "nome": "The Ahwahnee",
-              "texto": "Hotel histórico de 1927 com um salão de jantar de pé-direito altíssimo. Vale ao menos um drinque no bar.",
-              "onde": "The Ahwahnee, Yosemite Valley",
-              "verificar": "Reservar o jantar",
-              "coord": [
-                37.7461,
-                -119.5753
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "levar",
-          "titulo": "O que levar",
-          "itens": [
-            {
-              "nome": "Roupa de frio",
-              "texto": "À noite o vale fica abaixo de zero em novembro. Leve gorro, luvas e casaco."
-            },
-            {
-              "nome": "Tênis de trilha",
-              "texto": "Os caminhos podem ter gelo nas partes sombreadas.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            },
-            {
-              "nome": "Comida para a estrada",
-              "texto": "Entre Fresno e o parque há poucas opções. Dentro do vale não há posto de gasolina."
-            }
-          ]
-        },
-        {
-          "tipo": "dica",
-          "titulo": "Fechado ou fora de época em novembro",
-          "itens": [
-            {
-              "nome": "Half Dome",
-              "texto": "Os cabos de aço do trecho final são retirados em outubro, e a subida exige permissão por sorteio. Não dá para fazer nesta época.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            },
-            {
-              "nome": "Glacier Point e Tioga Pass",
-              "texto": "As estradas costumam fechar com a primeira neve, entre novembro e maio.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ],
-              "verificar": "Confirmar situação da Glacier Point Road"
-            },
-            {
-              "nome": "Firefall",
-              "texto": "O fenômeno do pôr do sol na Horsetail Fall acontece só em fevereiro.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            },
-            {
-              "nome": "Rafting e banho no rio",
-              "texto": "Só de maio a julho.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            },
-            {
-              "nome": "Esqui em Badger Pass",
-              "texto": "A temporada começa em dezembro.",
-              "fontes": [
-                "yt-yosemite-3-videos"
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "dica",
-          "titulo": "Dicas práticas",
-          "itens": [
-            {
-              "nome": "Taxa para estrangeiros",
-              "texto": "Em 2026 Yosemite cobra US$ 35 por veículo mais US$ 100 por pessoa a partir de 16 anos de não residentes: ~US$ 235 para o casal, válido por 7 dias.",
-              "fontes": [
-                "pesquisa-2026-11"
-              ]
-            },
-            {
-              "nome": "Correntes e tração",
-              "texto": "Todos os carros precisam levar correntes na temporada de neve, mesmo com tração integral. Se nevar, o parque exige as correntes.",
-              "fontes": [
-                "pesquisa-2026-11"
-              ],
-              "verificar": "Conferir condições na semana da viagem"
-            },
-            {
-              "nome": "Saia do vale com tempo",
-              "texto": "A volta pela CA-140 tem ~1h de curvas e, à noite, cervos na pista. Comece a voltar logo depois do Tunnel View."
-            },
-            {
-              "nome": "Binóculo",
-              "texto": "Em El Capitan Meadow dá para acompanhar os escaladores, que passam dias no paredão.",
-              "fontes": [
-                "yt-yosemite-3-videos"
+                37.8009,
+                -122.43045
               ]
             }
           ]
@@ -744,10 +647,37 @@
     },
     "dia-10": {
       "intro": [
-        "Thanksgiving é o maior feriado americano. As estradas esvaziam e a viagem até SF é mais tranquila do que na véspera.",
-        "Vocês chegam por volta das 14h, devolvem o carro, fazem o check-in no Seaside Inn e jantam a ceia."
+        "Thanksgiving é o maior feriado americano. As ruas esvaziam, e a manhã em Marin é tranquila.",
+        "Muir Woods às 8h, vista da Golden Gate nos Marin Headlands e, à tarde, a devolução do carro e a ceia."
       ],
       "secoes": [
+        {
+          "tipo": "fazer",
+          "titulo": "Mais para fazer",
+          "itens": [
+            {
+              "nome": "Muir Woods",
+              "texto": "Sequoias costeiras (redwoods), não as sequoias gigantes da Sierra. Reserva de estacionamento obrigatória no GoMuirWoods.com.",
+              "onde": "Muir Woods National Monument, Mill Valley, CA",
+              "verificar": "Confirmar se abre no Thanksgiving"
+            },
+            {
+              "nome": "Marin Headlands",
+              "texto": "Hawk Hill, com a vista da Golden Gate, e a Rodeo Beach.",
+              "onde": "Marin Headlands, Sausalito, CA",
+              "coord": [
+                37.85568,
+                -122.53372
+              ]
+            },
+            {
+              "nome": "Point Reyes: Tomales Point",
+              "texto": "Alternativa mais aventureira, com alces-de-tule. Trilha de 3, 10 ou 15 km, a ~1h30 de SF.",
+              "onde": "Tomales Point Trail, Point Reyes National Seashore",
+              "verificar": "Confirmar se abre no feriado"
+            }
+          ]
+        },
         {
           "tipo": "comer",
           "titulo": "Onde comer",
@@ -1205,7 +1135,7 @@
         },
         {
           "tipo": "comer",
-          "titulo": "Jantar e bar em Old Pasadena",
+          "titulo": "Jantar em Pasadena",
           "itens": [
             {
               "nome": "Colorado Boulevard e Fair Oaks",
@@ -1224,12 +1154,12 @@
           "titulo": "Dicas práticas",
           "itens": [
             {
-              "nome": "Hotel a pé",
-              "texto": "Escolha um hotel a até 10 minutos a pé de Colorado Blvd. O carro fica estacionado a noite toda."
+              "nome": "Hyland Inn",
+              "texto": "Fica a mais de 1 milha de Old Pasadena, na Colorado Blvd Leste, perto da I-210. Estacionamento grátis. Para jantar no centro, use Uber."
             },
             {
               "nome": "Não dirija depois de beber",
-              "texto": "Para qualquer trecho fora do centro, use Uber ou Lyft."
+              "texto": "Para qualquer trecho fora do hotel, use Uber ou Lyft."
             },
             {
               "nome": "Nada visível no carro",
@@ -1325,8 +1255,8 @@
     },
     "dia-6": {
       "intro": [
-        "O Griffith é o programa de domingo de manhã, com a vista do letreiro de Hollywood. De Pasadena são ~30 min de carro.",
-        "Domingo de novembro: o parque enche perto das 11h. Chegue às 9h, faça a trilha com calma e volte a Pasadena para um brunch tardio."
+        "O Griffith é o programa de domingo de manhã, com a vista do letreiro de Hollywood. De Pasadena são ~25–30 min de carro.",
+        "Depois, estrada para Santa Barbara (~1h45–2h) e jantar na Funk Zone."
       ],
       "secoes": [
         {
@@ -1382,41 +1312,23 @@
               "texto": "Furtos de carro são comuns em LA. Leve tudo com vocês ou deixe no porta-malas antes de chegar."
             },
             {
-              "nome": "Volta a Pasadena",
-              "texto": "São ~30 min, e a tarde é livre."
+              "nome": "Saia do Griffith até 11h30",
+              "texto": "Para chegar a Santa Barbara com luz. O Beachside Inn espera você às 19h, mas aceita malas antes."
             }
           ]
         },
         {
-          "tipo": "fazer",
-          "titulo": "Em Pasadena à tarde",
+          "tipo": "comer",
+          "titulo": "Jantar em Santa Barbara",
           "itens": [
             {
-              "nome": "Old Pasadena",
-              "texto": "Quarteirões de tijolinho com cafés, livrarias e lojas. Sem hora para nada.",
-              "onde": "Old Pasadena, Pasadena, CA",
+              "nome": "Funk Zone",
+              "texto": "Galpões perto do porto com salas de degustação, cervejarias e restaurantes. O Presidio fica a ~2 km: vá de Uber.",
+              "onde": "Funk Zone, Santa Barbara, CA",
+              "verificar": "Reservar mesa no domingo à noite",
               "coord": [
-                34.14806,
-                -118.14035
-              ]
-            },
-            {
-              "nome": "Rose Bowl e Arroyo Seco",
-              "texto": "Estádio histórico no meio de um parque, com um circuito plano de ~5 km ao redor.",
-              "onde": "Rose Bowl, Pasadena",
-              "coord": [
-                34.1613,
-                -118.1676
-              ]
-            },
-            {
-              "nome": "Gamble House",
-              "texto": "Casa de 1908 em estilo Arts and Crafts, feita toda em madeira. Visita por tour.",
-              "onde": "Gamble House, Pasadena, CA",
-              "verificar": "Confirmar horários e tour",
-              "coord": [
-                34.15162,
-                -118.16095
+                34.41322,
+                -119.68901
               ]
             }
           ]

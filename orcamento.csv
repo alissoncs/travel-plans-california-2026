@@ -15,32 +15,34 @@ dia,data,plano,categoria,item,usd,status,atividade
 2,18/11,B,alimentacao,Refeições da acompanhante nos dias 18 a 20 (se a ADP não cobrir),200,opcional,
 5,21/11,B,carro,Aluguel Sixt (4 diárias com impostos; a reserva atual começa em 22/11),376.22,confirmado,Retirada do carro Sixt em SAN
 5,21/11,B,carro,Diária extra Sixt (retirada em 21/11; valor a confirmar),94,verificar,Retirada do carro Sixt em SAN
-5,21/11,B,gasolina,SAN -> Santa Monica -> Pasadena,50,estimado,Santa Monica Pier
+5,21/11,B,gasolina,SAN -> Santa Monica -> Pasadena,55,estimado,Santa Monica Pier
 5,21/11,B,estacionamento,Santa Monica Pier (lote por dia),20,estimado,Santa Monica Pier
-5,21/11,B,hospedagem,Hotel em Old Pasadena (noite 21; a reservar),190,verificar,Check-in em Pasadena
-5,21/11,B,alimentacao,Almoço e jantar com bar,130,estimado,Jantar e bar em Old Pasadena
-6,22/11,B,gasolina,Pasadena <-> Griffith,15,estimado,Griffith Park e o letreiro de Hollywood
+5,21/11,B,hospedagem,Hyland Inn (noite 21; R$ 734 pagos),130.6,confirmado,Check-in no Hyland Inn
+5,21/11,B,alimentacao,Almoço e jantar,110,estimado,Jantar em Pasadena
+5,21/11,B,transporte,Uber até o jantar (ida e volta),20,estimado,Jantar em Pasadena
+6,22/11,B,gasolina,Pasadena -> Griffith -> Santa Barbara,55,estimado,Griffith Park e o letreiro de Hollywood
 6,22/11,B,estacionamento,Griffith Observatory,10,estimado,Griffith Park e o letreiro de Hollywood
-6,22/11,B,hospedagem,Hotel em Old Pasadena (noite 22; a reservar),190,verificar,
-6,22/11,B,alimentacao,Refeições do dia,110,estimado,Jantar em Old Pasadena
-7,23/11,B,gasolina,Pasadena -> Santa Barbara -> Cambria,70,estimado,Santa Barbara
-7,23/11,B,estacionamento,Santa Barbara (Stearns Wharf e centro),10,estimado,Santa Barbara
-7,23/11,B,hospedagem,J. Patrick Inn em Cambria (noite 23; valor a confirmar),150,verificar,Check-in em Cambria
-7,23/11,B,alimentacao,Refeições do dia,90,estimado,
-8,24/11,B,gasolina,Cambria -> Big Sur -> Mariposa,75,estimado,Estrada até Mariposa
-8,24/11,B,estacionamento,McWay Falls (parque estadual),10,estimado,Elefantes-marinhos em Piedras Blancas
-8,24/11,B,hospedagem,Hotel em Mariposa (noite 24; a reservar),140,estimado,Check-in em Mariposa
-8,24/11,B,alimentacao,Refeições do dia e compras no mercado,85,estimado,
-9,25/11,B,ingresso,Yosemite NP: US$ 35 por veículo + US$ 100 x 2 não residentes (vale 7 dias),235,estimado,Cook's Meadow
-9,25/11,B,gasolina,Mariposa <-> Yosemite Valley,15,estimado,Pôr do sol no Tunnel View
-9,25/11,B,hospedagem,Hotel em Mariposa (noite 25; a reservar),140,estimado,
-9,25/11,B,hospedagem,Seaside Inn noite 25 (só se o hotel não mudar o check-in para 26/11),161.87,opcional,
-9,25/11,B,alimentacao,Refeições do dia,90,estimado,
-10,26/11,B,gasolina,Mariposa -> SF + reabastecer na devolução,45,estimado,Estrada até San Francisco
-10,26/11,B,alimentacao,Café da manhã e lanche na estrada,40,estimado,
+6,22/11,B,hospedagem,Beachside Inn (noite 22: US$ 160 + impostos),182.71,confirmado,Check-in no Beachside Inn
+6,22/11,B,alimentacao,Almoço e jantar,110,estimado,Jantar na Funk Zone
+7,23/11,B,gasolina,Hotel <-> Tunnel Trailhead,10,estimado,Inspiration Point (Tunnel Trail)
+7,23/11,B,estacionamento,Stearns Wharf e orla,10,estimado,Stearns Wharf e orla
+7,23/11,B,hospedagem,Beachside Inn (noite 23: US$ 165 + impostos),188.42,confirmado,
+7,23/11,B,alimentacao,Refeições do dia,100,estimado,Jantar de despedida em Santa Barbara
+7,23/11,B,passeio,Channel Islands de barco (2 pessoas; valor a confirmar),200,opcional,Channel Islands de barco (opção na manga)
+7,23/11,B,ingresso,Santa Barbara Botanic Garden (2 pessoas; valor a confirmar),40,opcional,Santa Barbara Botanic Garden
+8,24/11,B,gasolina,Santa Barbara -> Cambria,45,estimado,Morro Rock
+8,24/11,B,hospedagem,J. Patrick Inn em Cambria (noite 24; valor a confirmar),150,verificar,Check-in em Cambria
+8,24/11,B,alimentacao,Refeições do dia,90,estimado,
+9,25/11,B,gasolina,Cambria -> Big Sur -> San Francisco,80,estimado,Estrada até San Francisco
+9,25/11,B,estacionamento,McWay Falls (parque estadual),10,estimado,Elefantes-marinhos em Piedras Blancas
+9,25/11,B,hospedagem,Seaside Inn (noite 25),161.87,confirmado,Check-in no Seaside Inn
+9,25/11,B,alimentacao,Refeições do dia,100,estimado,Almoço em Carmel-by-the-Sea
+10,26/11,B,gasolina,Marin + reabastecer na devolução,30,estimado,Marin Headlands
+10,26/11,B,estacionamento,Muir Woods (reserva de estacionamento; valor a confirmar),10,verificar,Muir Woods
+10,26/11,B,alimentacao,Café da manhã e lanche,40,estimado,
 10,26/11,B,alimentacao,Ceia de Thanksgiving (2 pessoas; menu fixo de ~US$ 75-90 por pessoa),200,estimado,Ceia de Thanksgiving
 10,26/11,B,transporte,Uber/Waymo para a ceia,25,estimado,Ceia de Thanksgiving
-10,26/11,B,hospedagem,Seaside Inn (noite 26),161.87,confirmado,Check-in no Seaside Inn
+10,26/11,B,hospedagem,Seaside Inn (noite 26),161.87,confirmado,
 11,27/11,B,passeio,Aluguel de bike (2 pessoas),90,estimado,Golden Gate Bridge de bicicleta
 11,27/11,B,transporte,Balsa Sausalito -> SF (2 pessoas),30,opcional,Balsa Sausalito → SF
 11,27/11,B,transporte,Uber/Waymo até Lands End e volta,30,estimado,Pôr do sol em Lands End
